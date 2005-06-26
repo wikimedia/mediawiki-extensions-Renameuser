@@ -88,6 +88,19 @@ function wfSpecialRenameuser() {
 			$olduser = User::newFromName( $oldusername );
 			$newuser = User::newFromName( $newusername );
 
+			if ( // It won't be an object if for instance "|" is supplied as a value
+			     !is_object($newuser) ||
+			     !is_object($newuser) ||
+			     // These tests are the same as those done on newly
+			     // registered usernames, see LoginForm::addNewAccountInternal()
+			     $wgUser->isIP( $newusername ) ||
+			     strpos( $newusername, '/' ) !== false ||
+			     strlen( $newusername ) > $wgMaxNameChars ||
+			     $newusername != ucfirst( $newusername ) ) {
+				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newusername ) );
+				return;
+			}
+			
 			if ($olduser->idForName() == 0) {
 				$wgOut->addWikiText( wfMsg( 'renameusererrordoesnotexist', $oldusername ) );
 				return;
@@ -95,12 +108,6 @@ function wfSpecialRenameuser() {
 			
 			if ($newuser->idForName() != 0) {
 				$wgOut->addWikiText( wfMsg( 'renameusererrorexists', $newusername ) );
-				return;
-			}
-
-			if ( $wgUser->isIP( $newusername ) || strpos( $newusername, '/' ) !== false ||
-			     strlen( $newusername ) > $wgMaxNameChars || $newusername != ucfirst( $newusername ) ) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newuser->getName() ) );
 				return;
 			}
 
