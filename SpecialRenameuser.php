@@ -23,6 +23,7 @@ function wfSpecialRenameuser() {
 			'renameusernew' => 'New username: ',
 			'renameusererrordoesnotexist' => 'The username "$1" does not exist',
 			'renameusererrorexists' => 'The username "$1" already exits',
+			'renameusererrorinvalid' => 'The username "$1" is invalid',
 			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
 		)
 	);
@@ -35,7 +36,7 @@ function wfSpecialRenameuser() {
 		
 		function execute() {
 			global $wgOut, $wgUser, $wgTitle, $wgRequest;
-			global $wgVersion;
+			global $wgVersion, $wgMaxNameChars;
 
 			$this->setHeaders();
 
@@ -55,7 +56,7 @@ function wfSpecialRenameuser() {
 			}
 			
 			$oldusername = trim( $wgRequest->getText( 'oldusername' ) );
-			$newusername = trim( $wgRequest->getText( 'newusername' ) );
+			$newusername = strtr( trim( $wgRequest->getText( 'newusername' ) ), '_', ' ' );
 
 			$action = $wgTitle->escapeLocalUrl();
 			$renameuserold = wfMsgHtml( 'renameuserold' );
@@ -94,6 +95,12 @@ function wfSpecialRenameuser() {
 			
 			if ($newuser->idForName() != 0) {
 				$wgOut->addWikiText( wfMsg( 'renameusererrorexists', $newusername ) );
+				return;
+			}
+
+			if ( $wgUser->isIP( $newusername ) || strpos( $newusername, '/' ) !== false ||
+			     strlen( $newusername ) > $wgMaxNameChars || $newusername != ucfirst( $newusername ) ) {
+				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newuser->getName() ) );
 				return;
 			}
 
