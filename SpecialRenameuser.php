@@ -16,12 +16,16 @@ $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 function wfSpecialRenameuser() {
 	global $IP, $wgMessageCache;
 	
-	$wgMessageCache->addMessage( 'renameuser', 'Rename user' );
-	$wgMessageCache->addMessage( 'renameuserold', 'Current username: ' );
-	$wgMessageCache->addMessage( 'renameusernew', 'New username: ' );
-	$wgMessageCache->addMessage( 'renameusererrordoesnotexist', 'The username "$1" does not exist');
-	$wgMessageCache->addMessage( 'renameusererrorexists', 'The username "$1" already exits');
-	$wgMessageCache->addMessage( 'renameusersuccess', 'The user "$1" has been renamed to "$2"' );
+	$wgMessageCache->addMessages(
+		array(
+			'renameuser' => 'Rename user',
+			'renameuserold' => 'Current username: ',
+			'renameusernew' => 'New username: ',
+			'renameusererrordoesnotexist' => 'The username "$1" does not exist',
+			'renameusererrorexists' => 'The username "$1" already exits',
+			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
+		)
+	);
 
 	require_once( "$IP/includes/SpecialPage.php" );
 	class Renameuser extends SpecialPage {
@@ -158,6 +162,7 @@ function wfSpecialRenameuser() {
 			$qnew = $dbw->addQuotes( $this->new );
 
 			foreach ($this->tables as $table => $field) {
+				$table = $dbw->tableName( $table );
 				$sql = "UPDATE LOW_PRIORITY $table SET $field = $qnew WHERE $field = $qold";
 				$dbw->query($sql, $fname);
 			}
