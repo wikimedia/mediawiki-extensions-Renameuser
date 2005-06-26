@@ -15,6 +15,7 @@ $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 
 function wfSpecialRenameuser() {
 	global $IP, $wgMessageCache;
+	
 	$wgMessageCache->addMessage( 'renameuser', 'Rename user' );
 	$wgMessageCache->addMessage( 'renameuserold', 'Current username: ' );
 	$wgMessageCache->addMessage( 'renameusernew', 'New username: ' );
@@ -28,7 +29,7 @@ function wfSpecialRenameuser() {
 			SpecialPage::SpecialPage('Renameuser', 'userrights');
 		}
 		
-		function execute( $par = null ) {
+		function execute() {
 			global $wgOut, $wgUser, $wgTitle, $wgRequest;
 			global $wgVersion;
 
@@ -123,7 +124,13 @@ function wfSpecialRenameuser() {
 		  * @access private
 		  */
 		var $tables;
-		
+
+		/**
+		 * Constructor
+		 *
+		 * @param string $old The old username
+		 * @param string $new The new username
+		 */
 		function RenameuserSQL($old, $new) {
 			$this->old = $old;
 			$this->new = $new;
@@ -138,9 +145,10 @@ function wfSpecialRenameuser() {
 			);
 		}
 
+		/**
+		 * Do the rename operation
+		 */
 		function rename() {
-			global $wgOut;
-			
 			$fname = 'RenameuserSQL::rename';
 			wfProfileIn( $fname );
 			
@@ -155,7 +163,6 @@ function wfSpecialRenameuser() {
 			}
 			wfProfileOut( $fname );
 		}
-		// UPDATE LOW_PRIORITY user SET user_name = "Arnfjörð" WHERE user_name = "Ævar Arnfjörð Bjarmason";
 	}
 	SpecialPage::addPage( new Renameuser );
 }
