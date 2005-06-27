@@ -1,7 +1,7 @@
 <?php
 if (!defined('MEDIAWIKI')) die();
 /**
- * A Special Page extension to rename users, runnable by users with userrights
+ * A Special Page extension to rename users, runnable by users with renameuser
  * righs
  *
  * @package MediaWiki
@@ -31,7 +31,7 @@ function wfSpecialRenameuser() {
 	require_once( "$IP/includes/SpecialPage.php" );
 	class Renameuser extends SpecialPage {
 		function Renameuser() {
-			SpecialPage::SpecialPage('Renameuser', 'userrights');
+			SpecialPage::SpecialPage('Renameuser', 'renameuser');
 		}
 		
 		function execute() {
@@ -40,8 +40,8 @@ function wfSpecialRenameuser() {
 
 			$this->setHeaders();
 
-			if ( ! $wgUser->isAllowed( 'userrights' ) ) {
-				$wgOut->permissionRequired( 'userrights' );
+			if ( ! $wgUser->isAllowed( 'renameuser' ) ) {
+				$wgOut->permissionRequired( 'renameuser' );
 				return;
 			}
 
