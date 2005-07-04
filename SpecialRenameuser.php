@@ -35,7 +35,7 @@ function wfSpecialRenameuser() {
 		}
 		
 		function execute() {
-			global $wgOut, $wgUser, $wgTitle, $wgRequest;
+			global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang;
 			global $wgVersion, $wgMaxNameChars;
 
 			$this->setHeaders();
@@ -55,8 +55,8 @@ function wfSpecialRenameuser() {
 				return;
 			}
 			
-			$oldusername = trim( $wgRequest->getText( 'oldusername' ) );
-			$newusername = strtr( trim( $wgRequest->getText( 'newusername' ) ), '_', ' ' );
+			$oldusername = $wgContLang->ucfirst( strtr( trim( $wgRequest->getText( 'oldusername' ) ), '_', ' ' ) );
+			$newusername = $wgContLang->ucfirst( strtr( trim( $wgRequest->getText( 'newusername' ) ), '_', ' ' ) );
 
 			$action = $wgTitle->escapeLocalUrl();
 			$renameuserold = wfMsgHtml( 'renameuserold' );
