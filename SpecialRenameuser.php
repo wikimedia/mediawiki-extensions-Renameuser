@@ -25,6 +25,7 @@ function wfSpecialRenameuser() {
 			'renameusererrorexists' => 'The username "$1" already exits',
 			'renameusererrorinvalid' => 'The username "$1" is invalid',
 			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
+			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 		)
 	);
 
@@ -50,7 +51,7 @@ function wfSpecialRenameuser() {
 				return;
 			}
 
-			if ((float)$wgVersion != 1.5) {
+			if ($wgVersion != 1.5) {
 				$wgOut->versionRequired( 1.5 );
 				return;
 			}
@@ -106,6 +107,10 @@ function wfSpecialRenameuser() {
 
 			$rename = new RenameuserSQL($oldusername, $newusername);
 			$rename->rename();
+			
+			$log = new LogPage( '' );
+			$log->addEntry( '', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername ) );
+			
 			$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername, $newusername ) );
 		}
 	}
