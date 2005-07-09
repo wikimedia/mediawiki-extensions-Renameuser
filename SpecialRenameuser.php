@@ -24,6 +24,7 @@ function wfSpecialRenameuser() {
 			'renameusererrordoesnotexist' => 'The username "$1" does not exist',
 			'renameusererrorexists' => 'The username "$1" already exits',
 			'renameusererrorinvalid' => 'The username "$1" is invalid',
+			'renameusererrortoomany' => 'The username "$1" has too many contributions, renaming would adversely affect site performance.',
 			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
 			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 		)
@@ -38,6 +39,8 @@ function wfSpecialRenameuser() {
 		function execute() {
 			global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang;
 			global $wgVersion, $wgMaxNameChars;
+
+			$fname = 'Renameuser::execute';
 
 			$this->setHeaders();
 
@@ -101,7 +104,8 @@ function wfSpecialRenameuser() {
 				return;
 			}
 			
-			if ($olduser->idForName() == 0) {
+			$uid = $olduser->idForName();
+			if ($uid == 0) {
 				$wgOut->addWikiText( wfMsg( 'renameusererrordoesnotexist', $oldusername ) );
 				return;
 			}
@@ -111,7 +115,16 @@ function wfSpecialRenameuser() {
 				return;
 			}
 
-			$rename = new RenameuserSQL($oldusername, $newusername);
+			// Check edit count
+			$dbr =& wfGetDB( DB_READ );
+			$numEdits = $dbr->selectField( 'revision', 'count(*)', 
+				array( 'rev_user' => $uid ), $fname );
+			if ( $numEdits > 5000 ) {
+				$wgOut->addWikiText( wfMsg( 'renameusererrortoomany', $oldusername ) );
+				return;
+			}
+
+			$rename = new RenameuserSQL($oldusername, $newusername, $uid );
 			$rename->rename();
 			
 			$log = new LogPage( '' );
@@ -140,6 +153,14 @@ function wfSpecialRenameuser() {
 		var $new;
 		
 		/**
+		  * The user ID
+		  *
+		  * @var integer
+		  * @access private
+		  */
+		var $uid;
+
+		/**
 		  * The the tables => fields to be updated
 		  *
 		  * @var array
@@ -153,9 +174,11 @@ function wfSpecialRenameuser() {
 		 * @param string $old The old username
 		 * @param string $new The new username
 		 */
-		function RenameuserSQL($old, $new) {
+		function RenameuserSQL($old, $new, $uid) {
 			$this->old = $old;
 			$this->new = $new;
+			$this->uid = $uid;
+
 			$this->tables = array(
 				// 1.5 schema
 				'user' => 'user_name',
@@ -171,6 +194,7 @@ function wfSpecialRenameuser() {
 		 * Do the rename operation
 		 */
 		function rename() {
+			global $wgMemc, $wgDBname;
 			$fname = 'RenameuserSQL::rename';
 			wfProfileIn( $fname );
 			
@@ -184,6 +208,17 @@ function wfSpecialRenameuser() {
 				$sql = "UPDATE LOW_PRIORITY $table SET $field = $qnew WHERE $field = $qold";
 				$dbw->query($sql, $fname);
 			}
+
+			# Update user_touched and clear user cache
+
+			$dbw->update( 'user', 
+				/*SET*/ array( 'user_touched' => $dbw->timestamp() ), 
+				/*WHERE*/ array( 'user_name' => $this->new ),
+				$fname
+		  	);
+			$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
+
+
 			wfProfileOut( $fname );
 		}
 	}
