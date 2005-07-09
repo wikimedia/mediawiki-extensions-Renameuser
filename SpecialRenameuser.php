@@ -63,6 +63,8 @@ function wfSpecialRenameuser() {
 			$renameuserold = wfMsgHtml( 'renameuserold' );
 			$renameusernew = wfMsgHtml( 'renameusernew' );
 			$go = wfMsgHtml( 'go' );
+			$token = $wgUser->editToken();
+
 			$wgOut->addHTML( "
 <form id='renameuser' method='post' action=\"$action\">
 	<table>
@@ -79,8 +81,12 @@ function wfSpecialRenameuser() {
 			<td align='right'><input type='submit' name='submit' value=\"$go\" /></td>
 		</tr>
 	</table>
+	<input type='hidden' name='token' value='$token' />
 </form>");
 			// Sanity checks
+			if ( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) 
+				return;
+
 			if ($oldusername == '' || $newusername == '' || $oldusername == $newusername)
 				return;
 			
