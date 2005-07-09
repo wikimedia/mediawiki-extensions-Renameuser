@@ -13,6 +13,11 @@ if (!defined('MEDIAWIKI')) die();
 
 $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 
+/**
+ * The maximum number of edits a user can have and still be allowed renaming
+ */
+define( 'RENAMEUSER_CONTRIBLIMIT', 5000 );
+
 function wfSpecialRenameuser() {
 	global $IP, $wgMessageCache;
 	
@@ -24,7 +29,8 @@ function wfSpecialRenameuser() {
 			'renameusererrordoesnotexist' => 'The username "$1" does not exist',
 			'renameusererrorexists' => 'The username "$1" already exits',
 			'renameusererrorinvalid' => 'The username "$1" is invalid',
-			'renameusererrortoomany' => 'The username "$1" has too many contributions, renaming would adversely affect site performance.',
+			'renameusererrortoomany' => 'The user "$1" has $2 contributions, renaming a user with ' . 
+						    'more than $3 contributions would adversely affect site performance',
 			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
 			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 		)
@@ -37,7 +43,7 @@ function wfSpecialRenameuser() {
 		}
 		
 		function execute() {
-			global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang;
+			global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
 			global $wgVersion, $wgMaxNameChars;
 
 			$fname = 'Renameuser::execute';
@@ -116,11 +122,14 @@ function wfSpecialRenameuser() {
 			}
 
 			// Check edit count
-			$dbr =& wfGetDB( DB_READ );
-			$numEdits = $dbr->selectField( 'revision', 'count(*)', 
-				array( 'rev_user' => $uid ), $fname );
-			if ( $numEdits > 5000 ) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrortoomany', $oldusername ) );
+			if ( ( $contribs = User::edits( $uid ) ) > RENAMEUSER_CONTRIBLIMIT ) {
+				$wgOut->addWikiText(
+					wfMsg( 'renameusererrortoomany',
+						$oldusername,
+						$wgLang->formatNum( $contribs ),
+						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
+					)
+				);
 				return;
 			}
 
@@ -195,7 +204,9 @@ function wfSpecialRenameuser() {
 		 */
 		function rename() {
 			global $wgMemc, $wgDBname;
+			
 			$fname = 'RenameuserSQL::rename';
+			
 			wfProfileIn( $fname );
 			
 			$dbw =& wfGetDB( DB_MASTER );
@@ -210,14 +221,12 @@ function wfSpecialRenameuser() {
 			}
 
 			# Update user_touched and clear user cache
-
 			$dbw->update( 'user', 
 				/*SET*/ array( 'user_touched' => $dbw->timestamp() ), 
 				/*WHERE*/ array( 'user_name' => $this->new ),
 				$fname
 		  	);
 			$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
-
 
 			wfProfileOut( $fname );
 		}
