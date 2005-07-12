@@ -12,7 +12,11 @@ if (!defined('MEDIAWIKI')) die();
  */
 
 $wgExtensionFunctions[] = 'wfSpecialRenameuser';
-
+$wgExtensionCredits['specialpage'][] = array(
+	'name' => 'Renameuser',
+	'author' => 'Ævar Arnfjörð Bjarmason',
+	'url' => 'http://meta.wikimedia.org/wiki/Renameuser'
+);
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
  * set it to 0 to disable the limit.
