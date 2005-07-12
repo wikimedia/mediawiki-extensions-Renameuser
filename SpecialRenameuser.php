@@ -14,7 +14,8 @@ if (!defined('MEDIAWIKI')) die();
 $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 
 /**
- * The maximum number of edits a user can have and still be allowed renaming
+ * The maximum number of edits a user can have and still be allowed renaming,
+ * set it to 0 to disable the limit.
  */
 define( 'RENAMEUSER_CONTRIBLIMIT', 5000 );
 
@@ -122,16 +123,17 @@ function wfSpecialRenameuser() {
 			}
 
 			// Check edit count
-			if ( ( $contribs = User::edits( $uid ) ) > RENAMEUSER_CONTRIBLIMIT ) {
-				$wgOut->addWikiText(
-					wfMsg( 'renameusererrortoomany',
-						$oldusername,
-						$wgLang->formatNum( $contribs ),
-						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
-					)
-				);
-				return;
-			}
+			if ( RENAMEUSER_CONTRIBLIMIT != 0 )
+				if ( ( $contribs = User::edits( $uid ) ) > RENAMEUSER_CONTRIBLIMIT ) {
+					$wgOut->addWikiText(
+						wfMsg( 'renameusererrortoomany',
+							$oldusername,
+							$wgLang->formatNum( $contribs ),
+							$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
+						)
+					);
+					return;
+				}
 
 			$rename = new RenameuserSQL($oldusername, $newusername, $uid );
 			$rename->rename();
