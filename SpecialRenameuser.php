@@ -31,12 +31,12 @@ function wfSpecialRenameuser() {
 			'renameuser' => 'Rename user',
 			'renameuserold' => 'Current username: ',
 			'renameusernew' => 'New username: ',
-			'renameusererrordoesnotexist' => 'The username "$1" does not exist',
-			'renameusererrorexists' => 'The username "$1" already exits',
-			'renameusererrorinvalid' => 'The username "$1" is invalid',
-			'renameusererrortoomany' => 'The user "$1" has $2 contributions, renaming a user with ' . 
-						    'more than $3 contributions would adversely affect site performance',
-			'renameusersuccess' => 'The user "$1" has been renamed to "$2"',
+			'renameusererrordoesnotexist' => 'The username "<nowiki>$1</nowiki>" does not exist',
+			'renameusererrorexists' => 'The username "<nowiki>$1</nowiki>" already exits',
+			'renameusererrorinvalid' => 'The username "<nowiki>$1</nowiki>" is invalid',
+			'renameusererrortoomany' => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more ' .
+							'than $3 contributions could adversely affect site performance',
+			'renameusersuccess' => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
 			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 		)
 	);
@@ -217,19 +217,19 @@ function wfSpecialRenameuser() {
 			
 			$dbw =& wfGetDB( DB_MASTER );
 
-			$qold = $dbw->addQuotes( $this->old );
-			$qnew = $dbw->addQuotes( $this->new );
-
 			foreach ($this->tables as $table => $field) {
-				$table = $dbw->tableName( $table );
-				$sql = "UPDATE LOW_PRIORITY $table SET $field = $qnew WHERE $field = $qold";
-				$dbw->query($sql, $fname);
+				$dbw->update( $table,
+					array( $field => $this->new ),
+					array( $field => $this->old ),
+					$fname,
+					array( $dbw->lowPriorityOption() )
+				);
 			}
 
 			# Update user_touched and clear user cache
 			$dbw->update( 'user', 
-				/*SET*/ array( 'user_touched' => $dbw->timestamp() ), 
-				/*WHERE*/ array( 'user_name' => $this->new ),
+				array( 'user_touched' => $dbw->timestamp() ), 
+				array( 'user_name' => $this->new ),
 				$fname
 		  	);
 			$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
