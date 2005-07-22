@@ -24,7 +24,7 @@ $wgExtensionCredits['specialpage'][] = array(
 define( 'RENAMEUSER_CONTRIBLIMIT', 5000 );
 
 function wfSpecialRenameuser() {
-	global $IP, $wgMessageCache;
+	global $IP, $wgMessageCache, $wgHooks;
 	
 	$wgMessageCache->addMessages(
 		array(
@@ -37,9 +37,16 @@ function wfSpecialRenameuser() {
 			'renameusererrortoomany' => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more ' .
 							'than $3 contributions could adversely affect site performance',
 			'renameusersuccess' => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
+			
+			'renameuserlogpage' => 'User rename log',
+			'renameuserlogpagetext' => 'This is a log of changes to user names',
 			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 		)
 	);
+
+	$wgHooks['LogPageValidTypes'][] = 'wfSpecialRenameuserAddLogType';
+	$wgHooks['LogPageLogName'][] = 'wfSpecialRenameuserAddLogName';
+	$wgHooks['LogPageLogHeader'][] = 'wfSpecialRenameuserAddLogHeader';
 
 	require_once( "$IP/includes/SpecialPage.php" );
 	class Renameuser extends SpecialPage {
@@ -139,11 +146,11 @@ function wfSpecialRenameuser() {
 					return;
 				}
 
-			$rename = new RenameuserSQL($oldusername, $newusername, $uid );
+			$rename = new RenameuserSQL( $oldusername, $newusername, $uid );
 			$rename->rename();
 			
-			$log = new LogPage( '' );
-			$log->addEntry( '', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername ) );
+			$log = new LogPage( 'renameuser' );
+			$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername ) );
 			
 			$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername, $newusername ) );
 		}
@@ -238,4 +245,17 @@ function wfSpecialRenameuser() {
 		}
 	}
 	SpecialPage::addPage( new Renameuser );
+}
+
+function wfSpecialRenameuserAddLogType( &$types ) {
+	if ( !in_array( 'renameuser', $types ) )
+		$types[] = 'renameuser';
+}
+
+function wfSpecialRenameuserAddLogName( &$names ) {
+	$names['renameuser'] = 'renameuserlogpage';
+}
+
+function wfSpecialRenameuserAddLogHeader( &$headers ) {
+	$headers['renameuser'] = 'renameuserlogpagetext';
 }
