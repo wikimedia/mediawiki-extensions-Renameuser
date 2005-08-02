@@ -72,8 +72,8 @@ function wfSpecialRenameuser() {
 				return;
 			}
 
-			if ($wgVersion != 1.5) {
-				$wgOut->versionRequired( 1.5 );
+			if ( version_compare( $wgVersion, '1.5beta2', '<' ) ) {
+				$wgOut->versionRequired( '1.5beta2' );
 				return;
 			}
 			
