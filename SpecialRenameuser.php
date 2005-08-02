@@ -31,6 +31,8 @@ function wfSpecialRenameuser() {
 			'renameuser' => 'Rename user',
 			'renameuserold' => 'Current username: ',
 			'renameusernew' => 'New username: ',
+			'renameusersubmit' => 'Submit',
+			
 			'renameusererrordoesnotexist' => 'The username "<nowiki>$1</nowiki>" does not exist',
 			'renameusererrorexists' => 'The username "<nowiki>$1</nowiki>" already exits',
 			'renameusererrorinvalid' => 'The username "<nowiki>$1</nowiki>" is invalid',
@@ -40,7 +42,7 @@ function wfSpecialRenameuser() {
 			
 			'renameuserlogpage' => 'User rename log',
 			'renameuserlogpagetext' => 'This is a log of changes to user names',
-			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
+			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 		)
 	);
 
@@ -83,7 +85,7 @@ function wfSpecialRenameuser() {
 			$action = $wgTitle->escapeLocalUrl();
 			$renameuserold = wfMsgHtml( 'renameuserold' );
 			$renameusernew = wfMsgHtml( 'renameusernew' );
-			$go = wfMsgHtml( 'go' );
+			$submit = wfMsgHtml( 'renameusersubmit' );
 			$token = $wgUser->editToken();
 
 			$wgOut->addHTML( "
@@ -99,7 +101,7 @@ function wfSpecialRenameuser() {
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
-			<td align='right'><input type='submit' name='submit' value=\"$go\" /></td>
+			<td align='right'><input type='submit' name='submit' value=\"$submit\" /></td>
 		</tr>
 	</table>
 	<input type='hidden' name='token' value='$token' />
@@ -134,23 +136,23 @@ function wfSpecialRenameuser() {
 			}
 
 			// Check edit count
-			if ( RENAMEUSER_CONTRIBLIMIT != 0 )
-				if ( ( $contribs = User::edits( $uid ) ) > RENAMEUSER_CONTRIBLIMIT ) {
-					$wgOut->addWikiText(
-						wfMsg( 'renameusererrortoomany',
-							$oldusername,
-							$wgLang->formatNum( $contribs ),
-							$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
-						)
-					);
-					return;
-				}
+			$contribs = User::edits( $uid );
+			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
+				$wgOut->addWikiText(
+					wfMsg( 'renameusererrortoomany',
+						$oldusername,
+						$wgLang->formatNum( $contribs ),
+						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
+					)
+				);
+				return;
+			}
 
 			$rename = new RenameuserSQL( $oldusername, $newusername, $uid );
 			$rename->rename();
 			
 			$log = new LogPage( 'renameuser' );
-			$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername ) );
+			$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername, $contribs ) );
 			
 			$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername, $newusername ) );
 		}
@@ -239,6 +241,7 @@ function wfSpecialRenameuser() {
 				array( 'user_name' => $this->new ),
 				$fname
 		  	);
+			
 			$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
 
 			wfProfileOut( $fname );
