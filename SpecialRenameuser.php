@@ -119,7 +119,12 @@ function wfSpecialRenameuser() {
 			$newuser = User::newFromName( $newusername );
 
 			// It won't be an object if for instance "|" is supplied as a value
-			if ( !is_object( $newuser ) || !is_object( $newuser ) ) {
+			if ( !is_object( $olduser ) ) {
+				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $oldusername ) );
+				return;
+			}
+
+			if ( !is_object( $newuser ) ) {
 				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newusername ) );
 				return;
 			}
