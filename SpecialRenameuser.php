@@ -33,8 +33,8 @@ function wfSpecialRenameuser() {
 			'renameusernew' => 'New username: ',
 			'renameusersubmit' => 'Submit',
 			
-			'renameusererrordoesnotexist' => 'The username "<nowiki>$1</nowiki>" does not exist',
-			'renameusererrorexists' => 'The username "<nowiki>$1</nowiki>" already exits',
+			'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist',
+			'renameusererrorexists' => 'The user "<nowiki>$1</nowiki>" already exits',
 			'renameusererrorinvalid' => 'The username "<nowiki>$1</nowiki>" is invalid',
 			'renameusererrortoomany' => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more ' .
 							'than $3 contributions could adversely affect site performance',
@@ -64,7 +64,7 @@ function wfSpecialRenameuser() {
 
 			$this->setHeaders();
 
-			if ( ! $wgUser->isAllowed( 'renameuser' ) ) {
+			if ( !$wgUser->isAllowed( 'renameuser' ) ) {
 				$wgOut->permissionRequired( 'renameuser' );
 				return;
 			}
@@ -79,12 +79,14 @@ function wfSpecialRenameuser() {
 				return;
 			}
 			
-			$oldusername = $wgContLang->ucfirst( strtr( trim( $wgRequest->getText( 'oldusername' ) ), '_', ' ' ) );
-			$newusername = $wgContLang->ucfirst( strtr( trim( $wgRequest->getText( 'newusername' ) ), '_', ' ' ) );
+			$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ) );
+			$newusername = Title::newFromText( $wgRequest->getText( 'newusername' ) );
 
 			$action = $wgTitle->escapeLocalUrl();
 			$renameuserold = wfMsgHtml( 'renameuserold' );
 			$renameusernew = wfMsgHtml( 'renameusernew' );
+			$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
+			$nun = is_object( $newusername ) ? $newusername->getText() : '';
 			$submit = wfMsgHtml( 'renameusersubmit' );
 			$token = $wgUser->editToken();
 
@@ -93,11 +95,11 @@ function wfSpecialRenameuser() {
 	<table>
 		<tr>
 			<td align='right'>$renameuserold</td>
-			<td align='left'><input tabindex='1' type='text' size='20' name='oldusername' value=\"" . htmlspecialchars($oldusername) . "\" /></td>
+			<td align='left'><input tabindex='1' type='text' size='20' name='oldusername' value=\"$oun\" /></td>
 		</tr>
 		<tr>
 			<td align='right'>$renameusernew</td>
-			<td align='left'><input tabindex='1' type='text' size='20' name='newusername' value=\"" . htmlspecialchars($newusername) . "\"/></td>
+			<td align='left'><input tabindex='1' type='text' size='20' name='newusername' value=\"$nun\"/></td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
@@ -110,33 +112,33 @@ function wfSpecialRenameuser() {
 			if ( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) 
 				return;
 
-			if ($oldusername == '' || $newusername == '' || $oldusername == $newusername)
+			if ( !is_object( $oldusername ) || !is_object( $newusername ) || $oldusername->getText() == $newusername->getText() )
 				return;
 			
 			$wgOut->addHTML( '<hr />' );
 			
-			$olduser = User::newFromName( $oldusername );
-			$newuser = User::newFromName( $newusername );
+			$olduser = User::newFromName( $oldusername->getText() );
+			$newuser = User::newFromName( $newusername->getText() );
 
 			// It won't be an object if for instance "|" is supplied as a value
 			if ( !is_object( $olduser ) ) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $oldusername ) );
+				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $oldusername->getText() ) );
 				return;
 			}
 
 			if ( !is_object( $newuser ) ) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newusername ) );
+				$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newusername->getText() ) );
 				return;
 			}
 			
 			$uid = $olduser->idForName();
 			if ($uid == 0) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrordoesnotexist', $oldusername ) );
+				$wgOut->addWikiText( wfMsg( 'renameusererrordoesnotexist', $oldusername->getText() ) );
 				return;
 			}
 			
 			if ($newuser->idForName() != 0) {
-				$wgOut->addWikiText( wfMsg( 'renameusererrorexists', $newusername ) );
+				$wgOut->addWikiText( wfMsg( 'renameusererrorexists', $newusername->getText() ) );
 				return;
 			}
 
@@ -145,7 +147,7 @@ function wfSpecialRenameuser() {
 			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
 				$wgOut->addWikiText(
 					wfMsg( 'renameusererrortoomany',
-						$oldusername,
+						$oldusername->getText(),
 						$wgLang->formatNum( $contribs ),
 						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
 					)
@@ -153,13 +155,13 @@ function wfSpecialRenameuser() {
 				return;
 			}
 
-			$rename = new RenameuserSQL( $oldusername, $newusername, $uid );
+			$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
 			$rename->rename();
 			
 			$log = new LogPage( 'renameuser' );
-			$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername, $newusername, $contribs ) );
+			$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername->getText(), $newusername->getText(), $contribs ) );
 			
-			$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername, $newusername ) );
+			$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
 		}
 	}
 
@@ -240,13 +242,13 @@ function wfSpecialRenameuser() {
 				);
 			}
 
-			# Update user_touched and clear user cache
 			$dbw->update( 'user', 
 				array( 'user_touched' => $dbw->timestamp() ), 
 				array( 'user_name' => $this->new ),
 				$fname
 		  	);
 			
+			// Clear the user cache
 			$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
 
 			wfProfileOut( $fname );
