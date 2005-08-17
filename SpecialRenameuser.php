@@ -260,12 +260,15 @@ function wfSpecialRenameuser() {
 function wfSpecialRenameuserAddLogType( &$types ) {
 	if ( !in_array( 'renameuser', $types ) )
 		$types[] = 'renameuser';
+	return true;
 }
 
 function wfSpecialRenameuserAddLogName( &$names ) {
 	$names['renameuser'] = 'renameuserlogpage';
+	return true;
 }
 
 function wfSpecialRenameuserAddLogHeader( &$headers ) {
 	$headers['renameuser'] = 'renameuserlogpagetext';
+	return true;
 }
