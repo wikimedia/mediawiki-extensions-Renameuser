@@ -91,6 +91,7 @@ function wfSpecialRenameuser() {
 			$token = $wgUser->editToken();
 
 			$wgOut->addHTML( "
+<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->
 <form id='renameuser' method='post' action=\"$action\">
 	<table>
 		<tr>
