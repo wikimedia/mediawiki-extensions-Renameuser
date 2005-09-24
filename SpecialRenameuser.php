@@ -11,6 +11,9 @@ if (!defined('MEDIAWIKI')) die();
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+$wgAvailableRights[] = 'renameuser';
+$wgGroupPermissions['bureaucrat']['renameuser'] = true;
+
 $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
@@ -50,7 +53,7 @@ function wfSpecialRenameuser() {
 	$wgHooks['LogPageLogName'][] = 'wfSpecialRenameuserAddLogName';
 	$wgHooks['LogPageLogHeader'][] = 'wfSpecialRenameuserAddLogHeader';
 
-	require_once( "$IP/includes/SpecialPage.php" );
+	require_once "$IP/includes/SpecialPage.php";
 	class Renameuser extends SpecialPage {
 		function Renameuser() {
 			SpecialPage::SpecialPage('Renameuser', 'renameuser');
