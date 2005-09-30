@@ -46,6 +46,7 @@ function wfSpecialRenameuser() {
 			
 			'renameuserlogpage' => 'User rename log',
 			'renameuserlogpagetext' => 'This is a log of changes to user names',
+			'renameuserlogentry' => '',
 			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 		)
 	);
@@ -53,6 +54,7 @@ function wfSpecialRenameuser() {
 	$wgHooks['LogPageValidTypes'][] = 'wfSpecialRenameuserAddLogType';
 	$wgHooks['LogPageLogName'][] = 'wfSpecialRenameuserAddLogName';
 	$wgHooks['LogPageLogHeader'][] = 'wfSpecialRenameuserAddLogHeader';
+	$wgHooks['LogPageActionText'][] = 'wfSpecialRenameuserAddActionText';
 
 	require_once "$IP/includes/SpecialPage.php";
 	class Renameuser extends SpecialPage {
@@ -275,5 +277,10 @@ function wfSpecialRenameuserAddLogName( &$names ) {
 
 function wfSpecialRenameuserAddLogHeader( &$headers ) {
 	$headers['renameuser'] = 'renameuserlogpagetext';
+	return true;
+}
+
+function wfSpecialRenameuserAddActionText( &$actions ) {
+	$actions['renameuser/renameuser'] = 'renameuserlogentry';
 	return true;
 }
