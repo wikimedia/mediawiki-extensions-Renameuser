@@ -25,7 +25,8 @@ $wgExtensionCredits['specialpage'][] = array(
  * The maximum number of edits a user can have and still be allowed renaming,
  * set it to 0 to disable the limit.
  */
-define( 'RENAMEUSER_CONTRIBLIMIT', 5000 );
+//define( 'RENAMEUSER_CONTRIBLIMIT', 6800 );
+define( 'RENAMEUSER_CONTRIBLIMIT', 20000 );
 
 function wfSpecialRenameuser() {
 	global $IP, $wgMessageCache, $wgHooks;
@@ -150,16 +151,18 @@ function wfSpecialRenameuser() {
 			}
 
 			// Check edit count
-			$contribs = User::edits( $uid );
-			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
-				$wgOut->addWikiText(
-					wfMsg( 'renameusererrortoomany',
-						$oldusername->getText(),
-						$wgLang->formatNum( $contribs ),
-						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
-					)
-				);
-				return;
+			if ( !$wgUser->isAllowed( 'siteadmin' ) ) {
+				$contribs = User::edits( $uid );
+				if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
+					$wgOut->addWikiText(
+						wfMsg( 'renameusererrortoomany',
+							$oldusername->getText(),
+							$wgLang->formatNum( $contribs ),
+							$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
+						)
+					);
+					return;
+				}
 			}
 
 			$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
@@ -221,10 +224,15 @@ function wfSpecialRenameuser() {
 				// 1.5 schema
 				'user' => 'user_name',
 				'revision' => 'rev_user_text',
-				'archive' => 'ar_user_text',
+				
+				// Badly indexed table, can be very slow, and who cares if it's wrong
+				/*'archive' => 'ar_user_text',*/
+				
 				'image' => 'img_user_text',
 				'oldimage' => 'oi_user_text',
-				'recentchanges' => 'rc_user_text'
+
+				// Very hot table, causes lag and deadlocks to update like this
+				/*'recentchanges' => 'rc_user_text'*/
 			);
 		}
 
@@ -244,8 +252,8 @@ function wfSpecialRenameuser() {
 				$dbw->update( $table,
 					array( $field => $this->new ),
 					array( $field => $this->old ),
-					$fname,
-					array( $dbw->lowPriorityOption() )
+					$fname
+					#,array( $dbw->lowPriorityOption() )
 				);
 			}
 
