@@ -125,7 +125,8 @@ function wfSpecialRenameuser() {
 			
 			$wgOut->addHTML( '<hr />' );
 			
-			$olduser = User::newFromName( $oldusername->getText() );
+			// Supress username validation of old username
+			$olduser = User::newFromName( $oldusername->getText(), false );
 			$newuser = User::newFromName( $newusername->getText() );
 
 			// It won't be an object if for instance "|" is supplied as a value
