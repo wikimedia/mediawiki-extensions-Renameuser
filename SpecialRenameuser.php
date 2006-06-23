@@ -52,10 +52,12 @@ function wfSpecialRenameuser() {
 		)
 	);
 
-	$wgHooks['LogPageValidTypes'][] = 'wfSpecialRenameuserAddLogType';
-	$wgHooks['LogPageLogName'][] = 'wfSpecialRenameuserAddLogName';
-	$wgHooks['LogPageLogHeader'][] = 'wfSpecialRenameuserAddLogHeader';
-	$wgHooks['LogPageActionText'][] = 'wfSpecialRenameuserAddActionText';
+	# Add a new log type
+	global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
+	$wgLogTypes[]                          = 'renameuser';
+	$wgLogNames['renameuser']              = 'renameuserlogpage';
+	$wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
+	$wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
 
 	require_once "$IP/includes/SpecialPage.php";
 	class Renameuser extends SpecialPage {
@@ -272,24 +274,4 @@ function wfSpecialRenameuser() {
 	}
 	SpecialPage::addPage( new Renameuser );
 }
-
-function wfSpecialRenameuserAddLogType( &$types ) {
-	if ( !in_array( 'renameuser', $types ) )
-		$types[] = 'renameuser';
-	return true;
-}
-
-function wfSpecialRenameuserAddLogName( &$names ) {
-	$names['renameuser'] = 'renameuserlogpage';
-	return true;
-}
-
-function wfSpecialRenameuserAddLogHeader( &$headers ) {
-	$headers['renameuser'] = 'renameuserlogpagetext';
-	return true;
-}
-
-function wfSpecialRenameuserAddActionText( &$actions ) {
-	$actions['renameuser/renameuser'] = 'renameuserlogentry';
-	return true;
-}
+?>
