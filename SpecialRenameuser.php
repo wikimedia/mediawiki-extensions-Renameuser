@@ -21,6 +21,10 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ævar Arnfjörð Bjarmason',
 	'url' => 'http://meta.wikimedia.org/wiki/Renameuser'
 );
+
+# Internationlization file
+require_once( 'SpecialRenameuser.i18n.php' );
+
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
  * set it to 0 to disable the limit.
@@ -42,27 +46,10 @@ if ( !function_exists( 'extAddSpecialPage' ) ) {
 extAddSpecialPage( dirname(__FILE__) . '/SpecialRenameuser_body.php', 'Renameuser', 'Renameuser' );
 
 function wfSpecialRenameuser() {
-	global $wgMessageCache;
-
-	$wgMessageCache->addMessages(
-		array(
-			'renameuser' => 'Rename user',
-			'renameuserold' => 'Current username: ',
-			'renameusernew' => 'New username: ',
-			'renameusersubmit' => 'Submit',
-			
-			'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist',
-			'renameusererrorexists' => 'The user "<nowiki>$1</nowiki>" already exits',
-			'renameusererrorinvalid' => 'The username "<nowiki>$1</nowiki>" is invalid',
-			'renameusererrortoomany' => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more ' .
-							'than $3 contributions could adversely affect site performance',
-			'renameusersuccess' => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
-			
-			'renameuserlogpage' => 'User rename log',
-			'renameuserlogpagetext' => 'This is a log of changes to user names',
-			'renameuserlogentry' => '',
-			'renameuserlog' => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
-		)
-	);
+	# Add messages
+	global $wgMessageCache, $wgRenameuserMessages;
+	foreach( $wgRenameuserMessages as $key => $value ) {
+		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
+	}
 }
 ?>

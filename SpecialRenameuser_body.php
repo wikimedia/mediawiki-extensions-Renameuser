@@ -44,11 +44,11 @@ class Renameuser extends SpecialPage {
 <form id='renameuser' method='post' action=\"$action\">
 <table>
 	<tr>
-		<td align='right'>$renameuserold</td>
+		<td align='right'>$renameuserold </td>
 		<td align='left'><input tabindex='1' type='text' size='20' name='oldusername' value=\"$oun\" /></td>
 	</tr>
 	<tr>
-		<td align='right'>$renameusernew</td>
+		<td align='right'>$renameusernew </td>
 		<td align='left'><input tabindex='1' type='text' size='20' name='newusername' value=\"$nun\"/></td>
 	</tr>
 	<tr>
