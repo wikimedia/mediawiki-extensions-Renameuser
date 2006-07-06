@@ -73,4 +73,21 @@ $wgRenameuserMessages['id'] = array(
 	'renameuserlogpagetext' => 'Di bawah ini adalah log penggantian nama pengguna',
 	'renameuserlog'         => 'Mengganti nama pengguna "[[User:$1|$1]]" (yang telah memiliki $3 suntingan) menjadi "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['ja'] = array(
+	'renameuser'       => '利用者名の変更',
+	'renameuserold'    => '現在の利用者名:',
+	'renameusernew'    => '新しい利用者名:',
+	'renameusersubmit' => '変更',
+	
+	'renameusererrordoesnotexist' => '利用者“<nowiki>$1</nowiki>”は存在しません。',
+	'renameusererrorexists'       => '利用者“<nowiki>$1</nowiki>”は既に存在しています。',
+	'renameusererrorinvalid'      => '利用者名“<nowiki>$1</nowiki>”は無効な値です。',
+	'renameusererrortoomany'      => '利用者“$1”には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameusersuccess'           => '利用者“<nowiki>$1</nowiki>”を“<nowiki>$2</nowiki>”に変更しました。',
+	
+	'renameuserlogpage'     => '利用者名変更記録',
+	'renameuserlogpagetext' => 'これは利用者名の変更を記録したものです。',
+	'renameuserlog'         => '利用者 “[[User:$1|$1]]” (投稿数 $3回) を “[[User:$2|$2]]” へ変更しました。',
+);
+
 ?>
