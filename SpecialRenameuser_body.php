@@ -23,8 +23,8 @@ class Renameuser extends SpecialPage {
 			return;
 		}
 
-		if ( version_compare( $wgVersion, '1.5beta2', '<' ) ) {
-			$wgOut->versionRequired( '1.5beta2' );
+		if ( version_compare( $wgVersion, '1.7.0', '<' ) ) {
+			$wgOut->versionRequired( '1.7.0' );
 			return;
 		}
 		
@@ -167,16 +167,17 @@ class RenameuserSQL {
 			// 1.5 schema
 			'user' => 'user_name',
 			'revision' => 'rev_user_text',
-			
-			// Badly indexed table, can be very slow, and who cares if it's wrong
-			/*'archive' => 'ar_user_text',*/
-			
 			'image' => 'img_user_text',
 			'oldimage' => 'oi_user_text',
 
 			// Very hot table, causes lag and deadlocks to update like this
 			/*'recentchanges' => 'rc_user_text'*/
 		);
+		
+		global $wgRenameUserQuick;
+		if( !$wgRenameUserQuick )
+			$this->tables['archive'] = 'ar_user_text';
+		
 	}
 
 	/**

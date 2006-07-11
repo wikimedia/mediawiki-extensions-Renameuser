@@ -22,7 +22,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://meta.wikimedia.org/wiki/Renameuser'
 );
 
-# Internationlization file
+# Internationalisation file
 require_once( 'SpecialRenameuser.i18n.php' );
 
 /**
@@ -38,6 +38,13 @@ $wgLogTypes[]                          = 'renameuser';
 $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
+
+/**
+ * If this is set to true, then the archive table (deleted revisions) will
+ * not be updated. Defaults to the value of $wgMiserMode, since if that's on,
+ * then it's probably desirable to have this switched on too.
+ */
+$wgRenameUserQuick = $wgMiserMode;
 
 # Register the special page
 if ( !function_exists( 'extAddSpecialPage' ) ) {
