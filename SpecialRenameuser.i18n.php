@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalization file for Renameuser extension.
+ * Internationalisation file for Renameuser extension.
  *
  * @package MediaWiki
  * @subpackage Extensions
