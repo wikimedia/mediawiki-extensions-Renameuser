@@ -112,7 +112,7 @@ class Renameuser extends SpecialPage {
 		$rename->rename();
 		
 		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $wgTitle, wfMsg( 'renameuserlog', $oldusername->getText(), $newusername->getText(), $contribs ) );
+		$log->addEntry( 'renameuser', $wgTitle, wfMsgForContent( 'renameuserlog', $oldusername->getText(), $newusername->getText(), $wgContLang->formatNum( $contribs ) ) );
 		
 		$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
 	}
