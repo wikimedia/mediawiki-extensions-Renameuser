@@ -89,5 +89,20 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuserlogpagetext' => 'これは利用者名の変更を記録したものです。',
 	'renameuserlog'         => '利用者 “[[User:$1|$1]]” (投稿数 $3回) を “[[User:$2|$2]]” へ変更しました。',
 );
+$wgRenameuserMessages['nl'] = array(
+	'renameuser'       => 'Gebruiker hernoemen',
+	'renameuserold'    => 'Huidige gebruikersnaam:',
+	'renameusernew'    => 'Nieuwe gebruikersnaam:',
+	'renameusersubmit' => 'Hernoemen',
 
+	'renameusererrordoesnotexist' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat niet',
+	'renameusererrorexists'       => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al',
+	'renameusererrorinvalid'      => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig',
+	'renameusererrortoomany'      => 'Gebruiker "<nowiki>$1</nowiki>" heeft $2 bewerkingen. Het hernoemen van gebruikers met meer dan $3 bewerkingen kan de snelheid van de wiki nadelig beïnvloeden.',
+	'renameusersuccess'           => 'Gebruiker "<nowiki>$1</nowiki>" is hernoemd naar "<nowiki>$2</nowiki>"',
+
+	'renameuserlogpage'     => 'Logboek gebruikersnaamwijzigingen',
+	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
+	'renameuserlog'         => 'Gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) is hernoemd naar "[[User:$2|$2]]"',
+);
 ?>
