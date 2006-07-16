@@ -23,9 +23,6 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 # Internationalisation file
-if ( !function_exists( 'extAddMessages' ) ) {
-	require( dirname(__FILE__) . '/../ExtensionFunctions.php' );
-}
 require_once( 'SpecialRenameuser.i18n.php' );
 
 /**
@@ -57,7 +54,9 @@ extAddSpecialPage( dirname(__FILE__) . '/SpecialRenameuser_body.php', 'Renameuse
 
 function wfSpecialRenameuser() {
 	# Add messages
-	global $wgRenameuserMessages;
-	extAddMessages( $wgRenameuserMessages );
+	global $wgMessageCache, $wgRenameuserMessages;
+	foreach( $wgRenameuserMessages as $key => $value ) {
+		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
+	}
 }
 ?>
