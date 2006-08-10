@@ -121,4 +121,11 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores',
 	'renameuserlog'         => 'Renomeado o utilizador "[[{{ns:user}}:$1|$1]]" (que possuia $3 edições) para "[[{{ns:user}}:$2|$2]]"',
 );
+$wgRenameuserMessages['wa'] = array(
+	'renameuser' => 'Rilomer èn uzeu',
+	
+	'renameuserlog' => 'L\' uzeu «[[Uzeu:$1|$1]]» (k\' aveut ddja fwait $3 candjmints) a stî rlomé a «[[Uzeu:$2|$2]]»',
+	'renameuserlogpage' => 'Djournå des candjmints d\' no d\' uzeus',
+	'renameuserlogpagetext' => 'Chal pa dzo c\' est ene djivêye des uzeus k\' ont candjî leu no d\' elodjaedje.',
+);
 ?>
