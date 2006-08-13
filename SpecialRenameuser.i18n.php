@@ -105,6 +105,22 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
 	'renameuserlog'         => 'Gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) is hernoemd naar "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['pl'] = array(
+	'renameuser'       => 'Zmień nazwę użytkownika',
+	'renameuserold'    => 'Obecna nazwa użytkownika:',
+	'renameusernew'    => 'Nowa nazwa użytkownika:',
+	'renameusersubmit' => 'Zmień',
+	
+	'renameusererrordoesnotexist' => 'Użytkownik "<nowiki>$1</nowiki>" nie istnieje',
+	'renameusererrorexists'       => 'Użytkownik "<nowiki>$1</nowiki>" już istnieje',
+	'renameusererrorinvalid'      => 'Nazwa użytkownika "<nowiki>$1</nowiki>" jest nieprawidłowa',
+	'renameusererrortoomany'      => 'Użytkownik "<nowiki>$1</nowiki>" ma $2 edycji. Zmiana nazwy użytkownika mającego powyżej $3 edycji może wpłynąć na wydajność serwisu.',
+	'renameusersuccess'           => 'Nazwa użytkownika "<nowiki>$1</nowiki>" została zmieniona na "<nowiki>$2</nowiki>"',
+	
+	'renameuserlogpage'     => 'Zmiany nazw użytkowników',
+	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
+	'renameuserlog'         => 'Zmieniono nazwę użytkownika "[[User:$1|$1]]" (mającego $3 edycji) na "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['pt'] = array(
 	'renameuser'       => 'Renomear utilizador',
 	'renameuserold'    => 'Nome de utilizador actual:',
