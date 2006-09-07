@@ -144,4 +144,54 @@ $wgRenameuserMessages['wa'] = array(
 	'renameuserlogpage' => 'Djournå des candjmints d\' no d\' uzeus',
 	'renameuserlogpagetext' => 'Chal pa dzo c\' est ene djivêye des uzeus k\' ont candjî leu no d\' elodjaedje.',
 );
+$wgRenameuserMessages['zh-cn'] = array(
+	'renameuser'       => '用户重命名',
+	'renameuserold'    => '当前用户名：',
+	'renameusernew'    => '新用户名：',
+	'renameusersubmit' => '提交',
+	
+	'renameusererrordoesnotexist' => '用户"<nowiki>$1</nowiki>"不存在',
+	'renameusererrorexists'       => '用户"<nowiki>$1</nowiki>"已存在',
+	'renameusererrorinvalid'      => '用户名"<nowiki>$1</nowiki>"不可用',
+	'renameusererrortoomany'      => '用户"<nowiki>$1</nowiki>"贡献了$2次，重命名一个超过$3次的用户会影响站点性能',
+	'renameusersuccess'           => '用户"<nowiki>$1</nowiki>"已经更名为"<nowiki>$2</nowiki>"',
+	
+	'renameuserlogpage'     => '用户名变更日志',
+	'renameuserlogpagetext' => '这是用户名更改的日志',
+	'renameuserlog'         => '已重命名用户 "[[User:$1|$1]]" (拥有$3次编辑) 为 "[[User:$2|$2]]"',
+);
+$wgRenameuserMessages['zh-tw'] = array(
+	'renameuser'       => '用戶重新命名',
+	'renameuserold'    => '現時用戶名：',
+	'renameusernew'    => '新用戶名：',
+	'renameusersubmit' => '提交',
+	
+	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"不存在',
+	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已存在',
+	'renameusererrorinvalid'      => '用戶名"<nowiki>$1</nowiki>"不可用',
+	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻了$2次，重新命名一個超過$3次的用戶會影響網站效能',
+	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經更名為"<nowiki>$2</nowiki>"',
+	
+	'renameuserlogpage'     => '用戶名變更日誌',
+	'renameuserlogpagetext' => '這是用戶名更改的日誌',
+	'renameuserlog'         => '已重新命名用戶 "[[User:$1|$1]]" (擁有$3次編輯) 為 "[[User:$2|$2]]"',
+);
+$wgRenameuserMessages['zh-yue'] = array(
+	'renameuser'       => '改用戶名',
+	'renameuserold'    => '現時嘅用戶名：',
+	'renameusernew'    => '新嘅用戶名：',
+	'renameusersubmit' => '遞交',
+	
+	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"唔存在',
+	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已經存在',
+	'renameusererrorinvalid'      => '用戶名"<nowiki>$1</nowiki>"唔正確',
+	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻咗$2次，對改一個超過$3次的用戶名嘅用戶可能會影響網站嘅效能',
+	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經改咗名做"<nowiki>$2</nowiki>"',
+	
+	'renameuserlogpage'     => '用戶改名日誌',
+	'renameuserlogpagetext' => '呢個係改用戶名嘅日誌',
+	'renameuserlog'         => '已經將用戶 "[[User:$1|$1]]" (擁有$3次編輯) 改名做 "[[User:$2|$2]]"',
+);
+$wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-tw'];
+$wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-cn'];
 ?>
