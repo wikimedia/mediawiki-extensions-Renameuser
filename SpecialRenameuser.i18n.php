@@ -137,6 +137,22 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores',
 	'renameuserlog'         => 'Renomeado o utilizador "[[{{ns:user}}:$1|$1]]" (que possuia $3 edições) para "[[{{ns:user}}:$2|$2]]"',
 );
+$wgRenameuserMessages['ru'] = array(
+	'renameuser'       => 'Переименовать участника',
+	'renameuserold'    => 'Имя в настоящий момент:',
+	'renameusernew'    => 'Новое имя:',
+	'renameusersubmit' => 'Выполнить',
+	
+	'renameusererrordoesnotexist' => 'Участника с именем «<nowiki>$1</nowiki>» не зарегистрировано',
+	'renameusererrorexists'       => 'Участник с именем «<nowiki>$1</nowiki>» уже зарегистрирован',
+	'renameusererrorinvalid'      => 'Недопустимое имя участника: <nowiki>$1</nowiki>',
+	'renameusererrortoomany'      => 'Участник <nowiki>$1</nowiki> внёс $2 правок, переименование участника с более чем $3 правками может оказать негативное влияние на доступ к сайту',
+	'renameusersuccess'           => 'Участник «<nowiki>$1</nowiki>» был переименован в «<nowiki>$2</nowiki>»',
+	
+	'renameuserlogpage'     => 'Журнал переименований участников',
+	'renameuserlogpagetext' => 'Это журнал произведённых переименований зарегистрированных участников',
+	'renameuserlog'         => 'Участник «[[User:$1|$1]]» (имеющий $3 правок) переименован в «[[User:$2|$2]]»',
+);
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	
