@@ -25,6 +25,22 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserlogentry'    => '', # Don't translate this
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['cs'] = array(
+	'renameuser'       => 'Přejmenovat uživatele',
+  'renameusernew'    => 'Nové uživatelské jméno:',
+  'renameuserold'    => 'Stávající uživatelské jméno:',
+  'renameusersubmit' => 'Přejmenovat',
+  
+  'renameusererrordoesnotexist' => 'Uživatel se jménem „<nowiki>$1</nowiki>“ neexistuje',
+  'renameusererrorexists'       => 'Uživatel se jménem „<nowiki>$1</nowiki>“ již existuje',
+  'renameusererrorinvalid'      => 'Uživatelské jméno „<nowiki>$1</nowiki>“ nelze použít',
+  'renameusererrortoomany'      => 'Uživatel „<nowiki>$1</nowiki>“ má $2 příspěvků, přejmenování uživatelů s více než $3 příspěvky je zakázáno, neboť by příliš zatěžovalo systém.',
+  'renameusersuccess'           => 'Uživatel „<nowiki>$1</nowiki>“ byl úspěšně přejmenován na „<nowiki>$2</nowiki>“',
+    
+  'renameuserlogpage'     => 'Kniha přejmenování uživatelů',  
+  'renameuserlogpagetext' => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
+  'renameuserlog'         => 'Přejmenován uživatel „[[{{ns:user}}:$1|$1]]“ ($3 editací) na „[[{{ns:user}}:$2|$2]]“',
+);
 $wgRenameuserMessages['de'] = array(
 	'renameuser'       => 'Benutzername umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
