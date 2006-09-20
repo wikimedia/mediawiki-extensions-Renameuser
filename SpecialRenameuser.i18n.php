@@ -26,7 +26,7 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['de'] = array(
-	'renameuser'       => 'Benutzer umbenennen',
+	'renameuser'       => 'Benutzername umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
 	'renameusernew'    => 'Neuer Benutzername:',
 	'renameusersubmit' => 'Umbenennen',
@@ -35,11 +35,11 @@ $wgRenameuserMessages['de'] = array(
 	'renameusererrorexists'       => 'Der Benutzername "<nowiki>$1</nowiki>" existiert bereits.',
 	'renameusererrorinvalid'      => 'Der Benutzername "<nowiki>$1</nowiki>" ist ungültig.',
 	'renameusererrortoomany'      => 'Der Benutzer "<nowiki>$1</nowiki>" hat $2 Seitenänderungen. Die Namensänderung eines Benutzers mit mehr als $3 Seitenänderungen kann die Serverleistung nachteilig beeinflussen.',
-	'renameusersuccess'           => 'Der Benutzer "<nowiki>$1</nowiki>" wurde erfolgreich umbenannt in "<nowiki>$2</nowiki>".',
+	'renameusersuccess'           => 'Der Benutzername "<nowiki>$1</nowiki>" wurde erfolgreich umbenannt in "<nowiki>$2</nowiki>".',
 	
 	'renameuserlogpage'     => 'Benutzernamenänderungs-Logbuch',
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
-	'renameuserlog'         => 'Benutzer "[[{{ns:user}}:$1|$1]]" (mit $3 Seitenänderungen) umbenannt nach "[[{{ns:user}}:$2|$2]]".',
+	'renameuserlog'         => 'Benutzername "[[{{ns:user}}:$1|$1]]" (mit $3 Seitenänderungen) umbenannt nach "[[{{ns:user}}:$2|$2]]".',
 );
 $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
