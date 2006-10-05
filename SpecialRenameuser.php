@@ -30,7 +30,7 @@ require_once( 'SpecialRenameuser.i18n.php' );
  * set it to 0 to disable the limit.
  */
 //define( 'RENAMEUSER_CONTRIBLIMIT', 6800 );
-define( 'RENAMEUSER_CONTRIBLIMIT', 20000 );
+define( 'RENAMEUSER_CONTRIBLIMIT', 200000 );
 
 # Add a new log type
 global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
