@@ -169,6 +169,22 @@ $wgRenameuserMessages['ru'] = array(
 	'renameuserlogpagetext' => 'Это журнал произведённых переименований зарегистрированных участников',
 	'renameuserlog'         => 'Участник «[[User:$1|$1]]» (имеющий $3 правок) переименован в «[[User:$2|$2]]»',
 );
+$wgRenameuserMessages['sk'] = array(
+	'renameuser'       => 'Premenovať používateľa',
+	'renameuserold'    => 'Súčasné používateľské meno:',
+	'renameusernew'    => 'Nové používateľské meno:',
+	'renameusersubmit' => 'Odoslať',
+	
+	'renameusererrordoesnotexist' => 'Používateľ "<nowiki>$1</nowiki>" neexistuje',
+	'renameusererrorexists'       => 'Používateľ "<nowiki>$1</nowiki>" už existuje',
+	'renameusererrorinvalid'      => 'Používateľské meno "<nowiki>$1</nowiki>" je neplatné',
+	'renameusererrortoomany'      => 'Používateľ "<nowiki>$1</nowiki>" má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
+	'renameusersuccess'           => 'Používateľ "<nowiki>$1</nowiki>" bol premenovaný na "<nowiki>$2</nowiki>"',
+	
+	'renameuserlogpage'     => 'Záznam premenovaní používateľov',
+	'renameuserlogpagetext' => 'Toto je záznam premenovaní používateľov',
+	'renameuserlog'         => 'Bol premenovaný používateľ "[[User:$1|$1]]" (mal $3 úpravy) na "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	
