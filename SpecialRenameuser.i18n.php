@@ -105,6 +105,55 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuserlogpagetext' => 'これは利用者名の変更を記録したものです。',
 	'renameuserlog'         => '利用者 “[[User:$1|$1]]” (投稿数 $3回) を “[[User:$2|$2]]” へ変更しました。',
 );
+$wgRenameuserMessages['kk-kz'] = array(
+	'renameuser'       => 'Қатысушыны қайта атау',
+	'renameuserold'    => 'Қатысушының ағымдық аты:',
+	'renameusernew'    => 'Қатысушының жаңа аты:',
+	'renameusersubmit' => 'Жіберу',
+
+	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» деген қатысушы жоқ',
+	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» деген қатысушы бар түге ',
+	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» қатысушы аты жарамсыз ',
+	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» қатысушы $2 үлес берген, $3 арта үлесі бар қатысушыны қайта атауы торап өнімділігіне ықпал етеді',
+	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 түзетуі бар) атын «[[{{ns:user}}:$2|$2]]» дегенге ауыстырды',
+
+	'renameuserlogpage'     => 'Қатысушыны қайта атау журналы',
+	'renameuserlogpagetext' => 'Бұл қатысушы атындағы өзгерістер журналы',
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 түзетуі бар) атын «[[{{ns:user}}:$2|$2]]» атына ауыстырды',
+);
+$wgRenameuserMessages['kk-tr'] = array(
+	'renameuser'       => 'Qatıswşını qaýta ataw',
+	'renameuserold'    => 'Qatıswşınıñ ağımdıq atı:',
+	'renameusernew'    => 'Qatıswşınıñ jaña atı:',
+	'renameusersubmit' => 'Jiberw',
+
+	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» degen qatıswşı joq',
+	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» degen qatıswşı bar tüge ',
+	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» qatıswşı atı jaramsız ',
+	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» qatıswşı $2 üles bergen, $3 arta ülesi bar qatıswşını qaýta atawı torap önimdiligine ıqpal etedi',
+	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 tüzetwi bar) atın «[[{{ns:user}}:$2|$2]]» degenge awıstırdı',
+
+	'renameuserlogpage'     => 'Qatıswşını qaýta ataw jwrnalı',
+	'renameuserlogpagetext' => 'Bul qatıswşı atındağı özgerister jwrnalı',
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 tüzetwi bar) atın «[[{{ns:user}}:$2|$2]]» atına awıstırdı',
+);
+$wgRenameuserMessages['kk-cn'] = array(
+	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
+	'renameuserold'    => 'قاتىسۋشىنىڭ اعىمدىق اتى:',
+	'renameusernew'    => 'قاتىسۋشىنىڭ جاڭا اتى:',
+	'renameusersubmit' => 'جٴىبەرۋ',
+
+	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى جوق',
+	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٴۇگە ',
+	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» قاتىسۋشى اتى جارامسىز ',
+	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٴۇلەس بەرگەن, $3 ارتا ٴۇلەسٴى بار قاتىسۋشىنى قايتا اتاۋى توراپ ٴونٴىمدٴىلٴىگٴىنە ىقپال ەتەدٴى',
+	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىستىردى',
+
+	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
+	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٴوزگەرٴىستەر جۋرنالى',
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) اتىن «[[{{ns:user}}:$2|$2]]» اتىنا اۋىستىردى',
+);
+$wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
 $wgRenameuserMessages['nl'] = array(
 	'renameuser'       => 'Gebruiker hernoemen',
 	'renameuserold'    => 'Huidige gebruikersnaam:',
