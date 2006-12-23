@@ -57,6 +57,22 @@ $wgRenameuserMessages['de'] = array(
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
 	'renameuserlog'         => 'Benutzername "[[{{ns:user}}:$1|$1]]" (mit $3 Seitenänderungen) umbenannt nach "[[{{ns:user}}:$2|$2]]".',
 );
+$wgRenameuserMessages['fi'] = array(
+	'renameuser'       => 'Käyttäjätunnuksen vaihto',
+	'renameuserold'    => 'Nykyinen tunnus:',
+	'renameusernew'    => 'Uusi tunnus:',
+	'renameusersubmit' => 'Nimeä',
+	
+	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
+	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
+	'renameusererrorinvalid'      => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
+	'renameusererrortoomany'      => 'Tunnukella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameusersuccess'           => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
+	
+	'renameuserlogpage'     => 'Tunnusten vaihdot',
+	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
+	'renameuserlog'         => 'Käyttäjän ”[[User:$1|$1]]” (tehnyt $3 muokkausta) tunnus on nyt ”[[User:$2|$2]]”',
+);
 $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
