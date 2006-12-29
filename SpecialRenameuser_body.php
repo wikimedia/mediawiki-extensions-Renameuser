@@ -138,20 +138,29 @@ class Renameuser extends SpecialPage {
 				__METHOD__
 			);
 
+			$output = '';
+			$skin =& $wgUser->getSkin();
 			while ( $row = $dbr->fetchObject( $pages ) ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDbKey(), $row->page_title ) );
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
-					$wgOut->addWikiText( wfMsg( 'renameuser page exists', $newPage->getPrefixedText() ) );
+					$link = $skin->makeKnownLinkObj( $oldPage );
+					$output .= '<li>' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
-					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser move log', $oldusername->getText(), $newusername->getText() ) );
-					if ($success === true) {
-						$wgOut->addWikiText( wfMsg( 'renameuser page moved', $oldPage->getPrefixedText(), $newPage->getPrefixedText() ) );
+					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
+					if( $success === true ) {
+						$oldLink = $skin->makeKnownLinkObj( $oldPage );
+						$newLink = $skin->makeKnownLinkObj( $newPage );
+						$output .= '<li>' . wfMsgHtml( 'renameuser-page-moved', $oldLink, $newLink ) . '</li>';
 					} else {
-						$wgOut->addWikiText( wfMsg( 'renameuser page unmoved', $oldPage->getPrefixedText(), $newPage->getPrefixedText() ) );
+						$oldLink = $skin->makeKnownLinkObj( $oldPage );
+						$newLink = $skin->makeLinkObj( $newPage );
+						$output .= '<li>' . wfMsgHtml( 'renameuser-page-unmoved', $oldLink, $newLink ) . '</li>';
 					}
 				}
 			}
+			if( $output )
+				$wgOut->addHtml( '<ul>' . $output . '</ul>' );
 		}
 	}
 }
