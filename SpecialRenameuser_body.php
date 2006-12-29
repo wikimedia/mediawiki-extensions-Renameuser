@@ -56,7 +56,7 @@ class Renameuser extends SpecialPage {
 			$wgOut->addHTML( "
 	<tr>
 		<td>&nbsp;</td>
-		<td><input tabindex='3' type='checkbox' name='movepages' value='1' /> $movepages</td>
+		<td><input tabindex='3' type='checkbox' name='movepages' checked='checked' /> $movepages</td>
 	</tr>" );
 		}
 
@@ -126,7 +126,7 @@ class Renameuser extends SpecialPage {
 
 		$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
 
-		if ( $wgRequest->getBool( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
+		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
 			$pages = $dbr->select(
 				'page',
