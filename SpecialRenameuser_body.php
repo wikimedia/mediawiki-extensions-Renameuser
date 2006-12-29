@@ -34,6 +34,7 @@ class Renameuser extends SpecialPage {
 		$action = $wgTitle->escapeLocalUrl();
 		$renameuserold = wfMsgHtml( 'renameuserold' );
 		$renameusernew = wfMsgHtml( 'renameusernew' );
+		$movepages = wfMsgHtml( 'renameusermove' );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$submit = wfMsgHtml( 'renameusersubmit' );
@@ -49,11 +50,20 @@ class Renameuser extends SpecialPage {
 	</tr>
 	<tr>
 		<td align='right'>$renameusernew </td>
-		<td align='left'><input tabindex='1' type='text' size='20' name='newusername' value=\"$nun\"/></td>
-	</tr>
+		<td align='left'><input tabindex='2' type='text' size='20' name='newusername' value=\"$nun\"/></td>
+	</tr>" );
+		if ( $wgUser->isAllowed( 'move' ) ) {
+			$wgOut->addHTML( "
 	<tr>
 		<td>&nbsp;</td>
-		<td align='right'><input type='submit' name='submit' value=\"$submit\" /></td>
+		<td><input tabindex='3' type='checkbox' name='movepages' value='1' /> $movepages</td>
+	</tr>" );
+		}
+
+		$wgOut->addHTML( "
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type='submit' name='submit' value=\"$submit\" /></td>
 	</tr>
 </table>
 <input type='hidden' name='token' value='$token' />
@@ -67,7 +77,7 @@ class Renameuser extends SpecialPage {
 		
 		$wgOut->addHTML( '<hr />' );
 		
-		// Supress username validation of old username
+		// Suppress username validation of old username
 		$olduser = User::newFromName( $oldusername->getText(), false );
 		$newuser = User::newFromName( $newusername->getText() );
 
@@ -110,11 +120,39 @@ class Renameuser extends SpecialPage {
 
 		$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
 		$rename->rename();
-		
+
 		$log = new LogPage( 'renameuser' );
 		$log->addEntry( 'renameuser', $wgTitle, wfMsgForContent( 'renameuserlog', $oldusername->getText(), $newusername->getText(), $wgContLang->formatNum( $contribs ) ) );
-		
+
 		$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
+
+		if ( $wgRequest->getBool( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
+			$dbr =& wfGetDB( DB_SLAVE );
+			$pages = $dbr->select(
+				'page',
+				array( 'page_namespace', 'page_title' ),
+				array(
+					'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
+					'(page_title LIKE "' . $dbr->escapeLike( $oldusername->getDbKey() . '/' ) . '%" OR page_title = "' . $oldusername->getDbKey() . '")'
+				),
+				__METHOD__
+			);
+
+			while ( $row = $dbr->fetchObject( $pages ) ) {
+				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
+				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDbKey(), $row->page_title ) );
+				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
+					$wgOut->addWikiText( wfMsg( 'renameuser page exists', $newPage->getPrefixedText() ) );
+				} else {
+					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser move log', $oldusername->getText(), $newusername->getText() ) );
+					if ($success === true) {
+						$wgOut->addWikiText( wfMsg( 'renameuser page moved', $oldPage->getPrefixedText(), $newPage->getPrefixedText() ) );
+					} else {
+						$wgOut->addWikiText( wfMsg( 'renameuser page unmoved', $oldPage->getPrefixedText(), $newPage->getPrefixedText() ) );
+					}
+				}
+			}
+		}
 	}
 }
 

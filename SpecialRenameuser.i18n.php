@@ -12,6 +12,7 @@ $wgRenameuserMessages['en'] = array(
 	'renameuser'       => 'Rename user',
 	'renameuserold'    => 'Current username:',
 	'renameusernew'    => 'New username:',
+	'renameusermove'   => 'Move user and talk pages to new name',
 	'renameusersubmit' => 'Submit',
 	
 	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist',
@@ -20,10 +21,15 @@ $wgRenameuserMessages['en'] = array(
 	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance',
 	'renameusersuccess'           => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
 	
+	'renameuser page exists'         => 'The page [[$1]] already exists and cannot be automatically overwritten.',
+	'renameuser page moved'          => 'The page [[$1]] has been moved to [[$2]].',
+	'renameuser page unmoved'        => 'The page [[$1]] could not be moved to [[$2]].',
+
 	'renameuserlogpage'     => 'User rename log',
 	'renameuserlogpagetext' => 'This is a log of changes to user names',
 	'renameuserlogentry'    => '', # Don't translate this
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
+	'renameuser move log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['cs'] = array(
 	'renameuser'       => 'Přejmenovat uživatele',
