@@ -56,7 +56,10 @@ class Renameuser extends SpecialPage {
 			$wgOut->addHTML( "
 	<tr>
 		<td>&nbsp;</td>
-		<td><input tabindex='3' type='checkbox' name='movepages' checked='checked' /> $movepages</td>
+		<td>
+			<input tabindex='3' type='checkbox' name='movepages' id='movepages' checked='checked' />
+			<label for='movepages'>$movepages</label>
+		</td>
 	</tr>" );
 		}
 
