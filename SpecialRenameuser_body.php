@@ -234,7 +234,7 @@ class RenameuserSQL {
 	 * Do the rename operation
 	 */
 	function rename() {
-		global $wgMemc, $wgDBname;
+		global $wgMemc, $wgDBname, $wgAuth;
 		
 		$fname = 'RenameuserSQL::rename';
 		
@@ -259,6 +259,10 @@ class RenameuserSQL {
 		
 		// Clear the user cache
 		$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
+		
+		// Inform authentication plugin of the change
+		$user = User::newFromId( $this->uid );
+		$wgAuth->updateExternalDB( $user );
 
 		wfProfileOut( $fname );
 	}
