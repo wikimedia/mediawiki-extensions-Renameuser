@@ -89,6 +89,7 @@ $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
 	'renameusernew'    => 'שם משתמש חדש:',
+	'renameusermove'   => 'העבר את דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
 	'renameusersubmit' => 'שנה שם משתמש',
 	
 	'renameusererrordoesnotexist' => 'המשתמש "<nowiki>$1</nowiki>" אינו קיים.',
@@ -97,9 +98,14 @@ $wgRenameuserMessages['he'] = array(
 	'renameusererrortoomany'      => 'למשתמש "<nowiki>$1</nowiki>" יש $2 תרומות; שינוי שם משתמש של משתמש עם יותר מ־$3 תרומות עלול להשפיע לרעה על ביצועי האתר.',
 	'renameusersuccess'           => 'שם המשתמש של המשתמש "<nowiki>$1</nowiki>" שונה לשם "<nowiki>$2</nowiki>"',
 	
+	'renameuser-page-exists'  => 'הדף $1 כבר קיים ולא ניתן לדרוס אותו אוטומטית.',
+	'renameuser-page-moved'   => 'הדף $1 הועבר לשם $2.',
+	'renameuser-page-unmoved' => 'אי אפשר היה להעביר את הדף $1 לשם $2.',
+	
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
 	'renameuserlog'         => 'שינה את שם המשתמש "[[{{ns:user}}:$1|$1]]" (שהיו לו $3 עריכות) לשם "[[{{ns:user}}:$2|$2]]"',
+	'renameuser-move-log'   => 'העביר את הדף אוטומטית בעת שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 $wgRenameuserMessages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
