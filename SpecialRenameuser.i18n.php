@@ -51,14 +51,14 @@ $wgRenameuserMessages['de'] = array(
 	'renameuser'       => 'Benutzername umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
 	'renameusernew'    => 'Neuer Benutzername:',
-	'renameusermove'   => 'Verschiebe Benutzer-/Diskussionseite inkl. Unterseiten auf den neuen Benutzernamen',
+	'renameusermove'   => 'Verschiebe Benutzer-/Diskussionsseite inkl. Unterseiten auf den neuen Benutzernamen',
 	'renameusersubmit' => 'Umbenennen',
 
 	'renameusererrordoesnotexist' => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert nicht.',
 	'renameusererrorexists'       => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert bereits.',
 	'renameusererrorinvalid'      => 'Der Benutzername „<nowiki>$1</nowiki>“ ist ungültig.',
-	'renameusererrortoomany'      => 'Der Benutzer „<nowiki>$1</nowiki>“ hat $2 Seitenänderungen. Die Namensänderung eines Benutzers mit mehr als $3 Seitenänderungen kann die Serverleistung nachteilig beeinflussen.',
-	'renameusersuccess'           => 'Der Benutzername „<nowiki>$1</nowiki>“ wurde erfolgreich umbenannt in „<nowiki>$2</nowiki>“.',
+	'renameusererrortoomany'      => 'Der Benutzer „<nowiki>$1</nowiki>“ hat $2 Bearbeitungen. Die Namensänderung eines Benutzers mit mehr als $3 Bearbeitungen kann die Serverleistung nachteilig beeinflussen.',
+	'renameusersuccess'           => 'Der Benutzer „<nowiki>$1</nowiki>“ wurde erfolgreich umbenannt in „<nowiki>$2</nowiki>“.',
 
 	'renameuser-page-exists'         => 'Die Seite $1 existiert bereits und kann nicht automatisch überschrieben werden.',
 	'renameuser-page-moved'          => 'Die Seite $1 wurde nach $2 verschoben.',
@@ -66,8 +66,8 @@ $wgRenameuserMessages['de'] = array(
 
 	'renameuserlogpage'     => 'Benutzernamenänderungs-Logbuch',
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
-	'renameuserlog'         => 'Benutzername „[[{{ns:user}}:$1|$1]]“ (mit $3 Seitenänderungen) umbenannt nach „[[{{ns:user}}:$2|$2]]“.',
-	'renameuser-move-log'   => 'Durch die Umbennung von „[[{{ns:user}}:$1|$1]]“ nach „[[{{ns:user}}:$2|$2]]“ automatisch verschobene Seite.',
+	'renameuserlog'         => 'Benutzer „[[{{ns:user}}:$1|$1]]“ (mit $3 Bearbeitungen) umbenannt nach „[[{{ns:user}}:$2|$2]]“.',
+	'renameuser-move-log'   => 'Durch die Umbenennung von „[[{{ns:user}}:$1|$1]]“ nach „[[{{ns:user}}:$2|$2]]“ automatisch verschobene Seite.',
 );
 $wgRenameuserMessages['fi'] = array(
 	'renameuser'       => 'Käyttäjätunnuksen vaihto',
