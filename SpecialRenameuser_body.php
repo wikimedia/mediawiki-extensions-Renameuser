@@ -52,7 +52,7 @@ class Renameuser extends SpecialPage {
 		<td align='right'>$renameusernew </td>
 		<td align='left'><input tabindex='2' type='text' size='20' name='newusername' value=\"$nun\"/></td>
 	</tr>" );
-		if ( $wgUser->isAllowed( 'move' ) ) {
+		if ( $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$wgOut->addHTML( "
 	<tr>
 		<td>&nbsp;</td>
@@ -129,7 +129,7 @@ class Renameuser extends SpecialPage {
 
 		$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
 
-		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
+		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
 			$pages = $dbr->select(
 				'page',
