@@ -111,6 +111,7 @@ $wgRenameuserMessages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
 	'renameuserold'    => 'Nama sekarang:',
 	'renameusernew'    => 'Nama baru:',
+	'renameusermove'   => 'Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru',
 	'renameusersubmit' => 'Simpan',
 	
 	'renameusererrordoesnotexist' => 'Pengguna "<nowiki>$1</nowiki>" tidak ada',
@@ -122,6 +123,7 @@ $wgRenameuserMessages['id'] = array(
 	'renameuserlogpage'     => 'Log penggantian nama pengguna',
 	'renameuserlogpagetext' => 'Di bawah ini adalah log penggantian nama pengguna',
 	'renameuserlog'         => 'Mengganti nama pengguna "[[User:$1|$1]]" (yang telah memiliki $3 suntingan) menjadi "[[User:$2|$2]]"',
+	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['it'] = array(
 	'renameuser'       => 'Modifica del nome utente',
