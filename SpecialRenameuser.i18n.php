@@ -242,6 +242,7 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuser'       => 'Renomear utilizador',
 	'renameuserold'    => 'Nome de utilizador actual:',
 	'renameusernew'    => 'Novo nome de utilizador:',
+	'renameusermove'   => 'Mover as páginas de utilizador páginas de discussão de utilizador e sub-páginas para o novo nome',
 	'renameusersubmit' => 'Enviar',
 	
 	'renameusererrordoesnotexist' => 'O utilizador "<nowiki>$1</nowiki>" não existe',
@@ -249,10 +250,16 @@ $wgRenameuserMessages['pt'] = array(
 	'renameusererrorinvalid'      => 'O nome de utilizador "<nowiki>$1</nowiki>" é inválido',
 	'renameusererrortoomany'      => 'O utilizador "<nowiki>$1</nowiki>" possui $2 contribuições. Renomear um utilizador com mais de $3 contribuições pode afectar o desempenho do site',
 	'renameusersuccess'           => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>"',
+
+	'renameuser-page-exists'         => 'A página $1 atualmente já existe e não poderá ser sobre-escrita automaticamente.',
+	'renameuser-page-moved'          => 'A página $1 foi movida com sucesso para $2.',
+	'renameuser-page-unmoved'        => 'Não foi possível mover a página $1 para $2.',
 	
 	'renameuserlogpage'     => 'Registo de renomeação de utilizadores',
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores',
 	'renameuserlog'         => 'Renomeado o utilizador "[[{{ns:user}}:$1|$1]]" (que possuia $3 edições) para "[[{{ns:user}}:$2|$2]]"',
+	'renameuser-move-log'   => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+
 );
 $wgRenameuserMessages['ru'] = array(
 	'renameuser'       => 'Переименовать участника',
