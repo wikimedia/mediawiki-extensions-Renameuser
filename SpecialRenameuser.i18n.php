@@ -85,6 +85,28 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
 	'renameuserlog'         => 'Käyttäjän ”[[User:$1|$1]]” (tehnyt $3 muokkausta) tunnus on nyt ”[[User:$2|$2]]”',
 );
+$wgRenameuserMessages['fr'] = array(
+	'renameuser'       => 'Renommer l’utilisateur',
+	'renameuserold'    => 'Nom actuel de l’utilisateur :',
+	'renameusernew'    => 'Nouveau nom de l’utilisateur :',
+	'renameusermove'   => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
+	'renameusersubmit' => 'Renommer',
+	
+	'renameusererrordoesnotexist' => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
+	'renameusererrorexists'       => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » existe déjà',
+	'renameusererrorinvalid'      => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
+	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
+	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a bien été renommé en « <nowiki>$2</nowiki> »"',
+	
+	'renameuser-page-exists'         => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
+	'renameuser-page-moved'          => 'La page $1 a été déplacée vers $2.',
+	'renameuser-page-unmoved'        => 'La page $1 ne peut pas être renommée en $2.',
+
+	'renameuserlogpage'     => 'Historique des renommages d’utilisateur',
+	'renameuserlogpagetext' => 'Ceci est l’historique des changements de nom des utilisateurs.',
+	'renameuserlog'         => 'L’utilisateur « [[Utilisateur:$1|$1]] » (qui avait $3 éditions à son actif) a été renommé « [[Utilisateur:$2|$2]] ».',
+	'renameuser-move-log'   => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
+);
 $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
