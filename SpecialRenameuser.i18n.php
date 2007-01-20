@@ -2,8 +2,7 @@
 /**
  * Internationalisation file for Renameuser extension.
  *
- * @package MediaWiki
- * @subpackage Extensions
+ * @addtogroup Extensions
 */
 
 $wgRenameuserMessages = array();
