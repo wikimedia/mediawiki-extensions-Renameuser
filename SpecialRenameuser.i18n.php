@@ -47,7 +47,7 @@ $wgRenameuserMessages['cs'] = array(
 	'renameuserlog'         => 'Přejmenován uživatel „[[{{ns:user}}:$1|$1]]“ ($3 editací) na „[[{{ns:user}}:$2|$2]]“',
 );
 $wgRenameuserMessages['de'] = array(
-	'renameuser'       => 'Benutzername umbenennen',
+	'renameuser'       => 'Benutzer umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
 	'renameusernew'    => 'Neuer Benutzername:',
 	'renameusermove'   => 'Verschiebe Benutzer-/Diskussionsseite inkl. Unterseiten auf den neuen Benutzernamen',
