@@ -330,6 +330,7 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuser'       => 'Premenovať používateľa',
 	'renameuserold'    => 'Súčasné používateľské meno:',
 	'renameusernew'    => 'Nové používateľské meno:',
+	'renameusermove'   => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
 	'renameusersubmit' => 'Odoslať',
 	
 	'renameusererrordoesnotexist' => 'Používateľ "<nowiki>$1</nowiki>" neexistuje',
@@ -338,9 +339,14 @@ $wgRenameuserMessages['sk'] = array(
 	'renameusererrortoomany'      => 'Používateľ "<nowiki>$1</nowiki>" má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
 	'renameusersuccess'           => 'Používateľ "<nowiki>$1</nowiki>" bol premenovaný na "<nowiki>$2</nowiki>"',
 	
+	'renameuser-page-exists'         => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
+	'renameuser-page-moved'          => 'Stránka $1 bola presunutá na $2.',
+	'renameuser-page-unmoved'        => 'Stránku $1 nebolo možné presunúť na $2.',
+
 	'renameuserlogpage'     => 'Záznam premenovaní používateľov',
 	'renameuserlogpagetext' => 'Toto je záznam premenovaní používateľov',
 	'renameuserlog'         => 'Bol premenovaný používateľ "[[User:$1|$1]]" (mal $3 úpravy) na "[[User:$2|$2]]"',
+	'renameuser-move-log'   => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
