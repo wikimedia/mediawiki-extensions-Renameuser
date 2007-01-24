@@ -348,6 +348,28 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuserlog'         => 'Bol premenovaný používateľ "[[User:$1|$1]]" (mal $3 úpravy) na "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['sv'] = array(
+	'renameuser'       => 'Döp om användare',
+	'renameuserold'    => 'Nuvarande användarnamn:',
+	'renameusernew'    => 'Nytt användarnamn:',
+	'renameusermove'   => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
+	'renameusersubmit' => 'Döp om',
+	
+	'renameusererrordoesnotexist' => 'Det finns ingen användare med namnet "<nowiki>$1</nowiki>"',
+	'renameusererrorexists'       => 'Det finns redan en användare med namnet "<nowiki>$1</nowiki>"',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" är inte ett giltigt användarnamn',
+	'renameusererrortoomany'      => 'Användaren "<nowiki>$1</nowiki>" har gjort $2 bidrag. Omdöpning av användare som gjort mer än $3 redigeringar kan påverka sajtens prestanda negativt.',
+	'renameusersuccess'           => 'Användaren "<nowiki>$1</nowiki>" har döpts om till "<nowiki>$2</nowiki>"',
+	
+	'renameuser-page-exists'         => 'Sidan $1 finns redan och kan inte skrivas över automatiskt.',
+	'renameuser-page-moved'          => 'Sidan $1 flyttades till $2.',
+	'renameuser-page-unmoved'        => 'Sidan $1 kunde inte flyttas till $2.',
+
+	'renameuserlogpage'     => 'Logg över användarnamnsbyten',
+	'renameuserlogpagetext' => 'Det här är en logg över ändringar av användarnamn',
+	'renameuserlog'         => 'Döpte om "[[User:$1|$1]]" (som hade gjort $3 redigeringar) till "[[User:$2|$2]]"',
+	'renameuser-move-log'   => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	
