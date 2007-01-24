@@ -30,6 +30,28 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['br'] = array(
+	'renameuser'       => 'Adenvel an implijer',
+	'renameuserold'    => 'Anv a-vremañ an implijer :',
+	'renameusernew'    => 'Anv implijer nevez :',
+	'renameusermove'   => 'Kas ar pajennoù implijer ha kaozeal (hag o ispajennoù) betek o anv nevez',
+	'renameusersubmit' => 'Adenvel',
+
+	'renameusererrordoesnotexist' => 'An implijer "<nowiki>$1</nowiki>" n\'eus ket anezhañ',
+	'renameusererrorexists'       => 'Krouet eo bet an anv implijer "<nowiki>$1</nowiki>" dija',
+	'renameusererrorinvalid'      => 'Faziek eo an anv implijer "<nowiki>$1</nowiki>"',
+	'renameusererrortoomany'      => 'Deuet ez eus $2 degasadenn gant an implijer "<nowiki>$1</nowiki>"; adenvel un implijer degaset gantañ ouzhpenn $3 degasadenn a c\'hall noazout ouzh startijenn mont en-dro al lec\'hienn a-bezh',
+	'renameusersuccess'           => 'Deuet eo an implijer "<nowiki>$1</nowiki>" da vezañ "<nowiki>$2</nowiki>"',
+
+	'renameuser-page-exists'         => 'Bez\' ez eus eus ar bajenn $1 dija, n\'haller ket hec\'h erlec\'hiañ ent emgefreek.',
+	'renameuser-page-moved'          => 'Adkaset eo bet ar bajenn $1 da $2.',
+	'renameuser-page-unmoved'        => 'N\'eus ket bet gallet adkas ar bajenn $1 da $2.',
+
+	'renameuserlogpage'     => 'Roll an implijerien bet adanvet',
+	'renameuserlogpagetext' => 'Setu istor an implijerien bet cheñchet o anv ganto',
+	'renameuserlog'         => 'Adanvet eo bet an implijer "[[Implijer:$1|$1]]" (savet gantañ $3 degasadenn) e "[[implijer:$2|$2]]"',
+	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
+);
 $wgRenameuserMessages['cs'] = array(
 	'renameuser'       => 'Přejmenovat uživatele',
 	'renameusernew'    => 'Nové uživatelské jméno:',
