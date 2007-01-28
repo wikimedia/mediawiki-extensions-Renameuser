@@ -153,8 +153,8 @@ $wgRenameuserMessages['he'] = array(
 
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
-	'renameuserlog'         => 'שינה את שם המשתמש "[[{{ns:user}}:$1|$1]]" (שהיו לו $3 עריכות) לשם "[[{{ns:user}}:$2|$2]]"',
-	'renameuser-move-log'   => 'העביר את הדף אוטומטית בעת שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
+	'renameuserlog'         => 'שינה את שם המשתמש "[[{{ns:user}}:$1|$1]]" (שיש לו $3 עריכות) לשם "[[{{ns:user}}:$2|$2]]"',
+	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 $wgRenameuserMessages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
