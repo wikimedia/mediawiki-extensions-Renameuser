@@ -123,7 +123,7 @@ $wgRenameuserMessages['fr'] = array(
 	'renameusererrorexists'       => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » existe déjà',
 	'renameusererrorinvalid'      => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
 	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
-	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a bien été renommé en « <nowiki>$2</nowiki> »"',
+	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a bien été renommé en « <nowiki>$2</nowiki> »',
 
 	'renameuser-page-exists'         => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved'          => 'La page $1 a été déplacée vers $2.',
