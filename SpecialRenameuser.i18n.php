@@ -52,6 +52,25 @@ $wgRenameuserMessages['br'] = array(
 	'renameuserlog'         => 'Adanvet eo bet an implijer "[[Implijer:$1|$1]]" (savet gantañ $3 degasadenn) e "[[implijer:$2|$2]]"',
 	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
 );
+$wgRenameuserMessages['ca'] = array(
+	'renameuser'=> 'Reanomena l\'usuari',
+	'renameuserold'=> 'Nom d\'usuari actual:',
+	'renameusernew'=> 'Nou nom d\'usuari:',
+	'renameusermove'=> 'Reanomena la pàgina d\'usuari, la de discussió i les subpàgines que tingui al nou nom',
+	'renameusersubmit'=> 'Tramet',
+	'renameusererrordoesnotexist'=> 'L\'usuari «<nowiki>$1</nowiki>» no existeix',
+	'renameusererrorexists'=> 'L\'usuari «<nowiki>$1</nowiki>» ja existeix',
+	'renameusererrorinvalid'=> 'El nom d\'usuari «<nowiki>$1</nowiki>» no és vàlid',
+	'renameusererrortoomany'=> 'L\'usuari «<nowiki>$1</nowiki>» té $2 contribucions. Canviar el nom a un usuari amb més de $3 contribucions pot causar problemes',
+	'renameusersuccess'=> 'L\'usuari «<nowiki>$1</nowiki>» s\'ha reanomenat com a «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists'=> 'La pàgina «$1» ja existeix i no pot ser sobreescrita automàticament',
+	'renameuser-page-moved'=> 'La pàgina «$1» s\'ha reanomenat com a «$2».',
+	'renameuser-page-unmoved'=> 'La pàgina $1 no s\'ha pogut reanomenar com a «$2».',
+	'renameuserlogpage'=> 'Registre del canvi de nom d\'usuari',
+	'renameuserlogpagetext'=> 'Aquest és un registre dels canvis als noms d\'usuari',
+	'renameuserlog'=> 'S\'ha reanomenat l\'usuari «[[User:$1|$1]]» (amb $3 contribucions) a «[[User:$2|$2]]»',
+	'renameuser-move-log'=> 'S\'ha reanomenat automàticament la pàgina mentre es reanomenava l\'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»',
+);
 $wgRenameuserMessages['cs'] = array(
 	'renameuser'       => 'Přejmenovat uživatele',
 	'renameusernew'    => 'Nové uživatelské jméno:',
