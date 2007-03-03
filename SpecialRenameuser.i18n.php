@@ -175,6 +175,25 @@ $wgRenameuserMessages['he'] = array(
 	'renameuserlog'         => 'שינה את שם המשתמש "[[{{ns:user}}:$1|$1]]" (שיש לו $3 עריכות) לשם "[[{{ns:user}}:$2|$2]]"',
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
+$wgRenameuserMessages['hsb'] = array(
+	'renameuser'=> 'Wužiwarja přemjenować',
+	'renameuserold'=> 'Tuchwilne wužiwarske mjeno:',
+	'renameusernew'=> 'Nowe wužiwarske mjeno:',
+	'renameusermove'=> 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
+	'renameusersubmit'=> 'Składować',
+	'renameusererrordoesnotexist'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
+	'renameusererrorexists'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
+	'renameusererrorinvalid'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
+	'renameusererrortoomany'=> 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
+	'renameusersuccess'=> 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
+	'renameuser-page-exists'=> 'Strona $1 hižo eksistuje a njemóže so awtomatisce přepisować.',
+	'renameuser-page-moved'=> 'Strona $1 bu pod nowy titul $2 přesunjena.',
+	'renameuser-page-unmoved'=> 'Njemóžno stronu $1 pod titul $2 přesunyć.',
+	'renameuserlogpage'=> 'Protokol přemjenowanja wužiwarjow',
+	'renameuserlogpagetext'=> 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
+	'renameuserlog'=> 'je wužiwarja „[[{{ns:user}}:$1|$1]]“ (z $3 wobdźěłanjemi) přemjenował na „[[{{ns:user}}:$2|$2]]“.',
+	'renameuser-move-log'=> 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
+);
 $wgRenameuserMessages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
 	'renameuserold'    => 'Nama sekarang:',
