@@ -272,51 +272,72 @@ $wgRenameuserMessages['ko'] = array(
 );
 $wgRenameuserMessages['kk-kz'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
-	'renameuserold'    => 'Қатысушының ағымдық аты:',
-	'renameusernew'    => 'Қатысушының жаңа аты:',
+	'renameuserold'    => 'Ағымдағы қатысушы аты:',
+	'renameusernew'    => 'Жаңа қатысушы аты:',
+	'renameusermove'   => 'Қатысушының жеке және талқылау беттерін (және де олардың төменгі беттерін) жаңа атауға жылжыту',
 	'renameusersubmit' => 'Жіберу',
 
 	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» деген қатысушы жоқ',
 	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» деген қатысушы бар түге ',
 	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» қатысушы аты жарамсыз ',
 	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» қатысушы $2 үлес берген, $3 арта үлесі бар қатысушыны қайта атауы торап өнімділігіне ықпал етеді',
-	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 түзетуі бар) атын «[[{{ns:user}}:$2|$2]]» дегенге ауыстырды',
+	'renameusersuccess'           => '«<nowiki>$1</nowiki>» деген қатысушы аты «<nowiki>$2</nowiki>» дегенге ауыстырылды',
+
+	'renameuser-page-exists'         => '$1 деген бет бар түге, және өздік түрде оның үстіне ештеңе жазылмайды.',
+	'renameuser-page-moved'          => '$1 деген бет $2 деген бетке жылжытылды.',
+	'renameuser-page-unmoved'        => '$1 деген бет $2 деген бетке жылжытылмады.',
 
 	'renameuserlogpage'     => 'Қатысушыны қайта атау журналы',
 	'renameuserlogpagetext' => 'Бұл қатысушы атындағы өзгерістер журналы',
-	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 түзетуі бар) атын «[[{{ns:user}}:$2|$2]]» атына ауыстырды',
+
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 түзетуі бар) деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысты',
+	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 $wgRenameuserMessages['kk-tr'] = array(
 	'renameuser'       => 'Qatıswşını qaýta ataw',
-	'renameuserold'    => 'Qatıswşınıñ ağımdıq atı:',
-	'renameusernew'    => 'Qatıswşınıñ jaña atı:',
+	'renameuserold'    => 'Ağımdağı qatıswşı atı:',
+	'renameusernew'    => 'Jaña qatıswşı atı:',
+	'renameusermove'   => 'Qatıswşınıñ jeke jäne talqılaw betterin (jäne de olardıñ tömengi betterin) jaña atawğa jıljıtw',
 	'renameusersubmit' => 'Jiberw',
 
 	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» degen qatıswşı joq',
 	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» degen qatıswşı bar tüge ',
 	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» qatıswşı atı jaramsız ',
 	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» qatıswşı $2 üles bergen, $3 arta ülesi bar qatıswşını qaýta atawı torap önimdiligine ıqpal etedi',
-	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 tüzetwi bar) atın «[[{{ns:user}}:$2|$2]]» degenge awıstırdı',
+	'renameusersuccess'           => '«<nowiki>$1</nowiki>» degen qatıswşı atı «<nowiki>$2</nowiki>» degenge awıstırıldı',
+
+	'renameuser-page-exists'         => '$1 degen bet bar tüge, jäne özdik türde onıñ üstine eşteñe jazılmaýdı.',
+	'renameuser-page-moved'          => '$1 degen bet $2 degen betke jıljıtıldı.',
+	'renameuser-page-unmoved'        => '$1 degen bet $2 degen betke jıljıtılmadı.',
 
 	'renameuserlogpage'     => 'Qatıswşını qaýta ataw jwrnalı',
 	'renameuserlogpagetext' => 'Bul qatıswşı atındağı özgerister jwrnalı',
-	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 tüzetwi bar) atın «[[{{ns:user}}:$2|$2]]» atına awıstırdı',
+
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 tüzetwi bar) degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awıstı',
+	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
 $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
-	'renameuserold'    => 'قاتىسۋشىنىڭ اعىمدىق اتى:',
-	'renameusernew'    => 'قاتىسۋشىنىڭ جاڭا اتى:',
+	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
+	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
+	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٴانە تالقىلاۋ بەتتەرٴىن (جٴانە دە ولاردىڭ تٴومەنگٴى بەتتەرٴىن) جاڭا اتاۋعا جىلجىتۋ',
 	'renameusersubmit' => 'جٴىبەرۋ',
 
 	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى جوق',
 	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٴۇگە ',
 	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» قاتىسۋشى اتى جارامسىز ',
 	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٴۇلەس بەرگەن, $3 ارتا ٴۇلەسٴى بار قاتىسۋشىنى قايتا اتاۋى توراپ ٴونٴىمدٴىلٴىگٴىنە ىقپال ەتەدٴى',
-	'renameusersuccess'           => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىستىردى',
+	'renameusersuccess'           => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى اتى «<nowiki>$2</nowiki>» دەگەنگە اۋىستىرىلدى',
+
+	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٴۇگە, جٴانە ٴوزدٴىك تٴۇردە ونىڭ ٴۇستٴىنە ەشتەڭە جازىلمايدى.',
+	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
+	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
 
 	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
 	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٴوزگەرٴىستەر جۋرنالى',
-	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) اتىن «[[{{ns:user}}:$2|$2]]» اتىنا اۋىستىردى',
+
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىستى',
+	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٴوزدٴىك تٴۇردە جىلجىتىلدى',
 );
 $wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
 $wgRenameuserMessages['nl'] = array(
