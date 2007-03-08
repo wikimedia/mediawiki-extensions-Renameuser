@@ -466,6 +466,7 @@ $wgRenameuserMessages['zh-cn'] = array(
 	'renameuser'       => '用户重命名',
 	'renameuserold'    => '当前用户名：',
 	'renameusernew'    => '新用户名：',
+	'renameusermove'   => '移动用户页及其对话页（包括各子页）到新的名字',
 	'renameusersubmit' => '提交',
 
 	'renameusererrordoesnotexist' => '用户"<nowiki>$1</nowiki>"不存在',
@@ -474,14 +475,20 @@ $wgRenameuserMessages['zh-cn'] = array(
 	'renameusererrortoomany'      => '用户"<nowiki>$1</nowiki>"贡献了$2次，重命名一个超过$3次的用户会影响站点性能',
 	'renameusersuccess'           => '用户"<nowiki>$1</nowiki>"已经更名为"<nowiki>$2</nowiki>"',
 
+	'renameuser-page-exists'         => '$1这一页己经存在，不能自动覆写。',
+	'renameuser-page-moved'          => '$1这一页已经移动到$2。',
+	'renameuser-page-unmoved'        => '$1这一页不能移动到$2。',
+
 	'renameuserlogpage'     => '用户名变更日志',
 	'renameuserlogpagetext' => '这是用户名更改的日志',
 	'renameuserlog'         => '已重命名用户 "[[User:$1|$1]]" (拥有$3次编辑) 为 "[[User:$2|$2]]"',
+	'renameuser-move-log'   => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 );
 $wgRenameuserMessages['zh-tw'] = array(
 	'renameuser'       => '用戶重新命名',
 	'renameuserold'    => '現時用戶名：',
 	'renameusernew'    => '新用戶名：',
+	'renameusermove'   => '移動用戶頁及其對話頁（包括各子頁）到新的名字',
 	'renameusersubmit' => '提交',
 
 	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"不存在',
@@ -490,14 +497,20 @@ $wgRenameuserMessages['zh-tw'] = array(
 	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻了$2次，重新命名一個超過$3次的用戶會影響網站效能',
 	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經更名為"<nowiki>$2</nowiki>"',
 
+	'renameuser-page-exists'         => '$1這一頁己經存在，不能自動覆寫。',
+	'renameuser-page-moved'          => '$1這一頁已經移動到$2。',
+	'renameuser-page-unmoved'        => '$1這一頁不能移動到$2。',
+
 	'renameuserlogpage'     => '用戶名變更日誌',
 	'renameuserlogpagetext' => '這是用戶名更改的日誌',
 	'renameuserlog'         => '已重新命名用戶 "[[User:$1|$1]]" (擁有$3次編輯) 為 "[[User:$2|$2]]"',
+	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 );
 $wgRenameuserMessages['zh-yue'] = array(
 	'renameuser'       => '改用戶名',
 	'renameuserold'    => '現時嘅用戶名：',
 	'renameusernew'    => '新嘅用戶名：',
+	'renameusermove'   => '搬用戶頁同埋佢嘅對話頁（同埋佢哋嘅細頁）到新名',
 	'renameusersubmit' => '遞交',
 
 	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"唔存在',
@@ -506,9 +519,14 @@ $wgRenameuserMessages['zh-yue'] = array(
 	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻咗$2次，對改一個超過$3次的用戶名嘅用戶可能會影響網站嘅效能',
 	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經改咗名做"<nowiki>$2</nowiki>"',
 
+	'renameuser-page-exists'         => '$1呢一版已經存在，唔可以自動重寫。',
+	'renameuser-page-moved'          => '$1呢一版已經搬到去$2。',
+	'renameuser-page-unmoved'        => '$1呢一版唔能夠搬到去$2。',
+
 	'renameuserlogpage'     => '用戶改名日誌',
 	'renameuserlogpagetext' => '呢個係改用戶名嘅日誌',
 	'renameuserlog'         => '已經將用戶 "[[User:$1|$1]]" (擁有$3次編輯) 改名做 "[[User:$2|$2]]"',
+	'renameuser-move-log'   => '當由"[[User:$1|$1]]"改名做"[[User:$2|$2]]"嗰陣已經自動搬咗用戶頁',
 );
 $wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-tw'];
 $wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-cn'];
