@@ -220,6 +220,7 @@ $wgRenameuserMessages['it'] = array(
 	'renameuser'       => 'Modifica del nome utente',
 	'renameuserold'    => 'Nome utente attuale:',
 	'renameusernew'    => 'Nuovo nome utente:',
+	'renameusermove'   => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
 	'renameusersubmit' => 'Invia',
 
 	'renameusererrordoesnotexist' => 'Il nome utente "<nowiki>$1</nowiki>" non esiste',
@@ -228,9 +229,14 @@ $wgRenameuserMessages['it'] = array(
 	'renameusererrortoomany'      => 'Il nome utente "<nowiki>$1</nowiki>" ha $2 contributi. Modificare il nome di un utente con più di $3 contributi potrebbe incidere negativamente sulle prestazioni del sito',
 	'renameusersuccess'           => 'Il nome utente "<nowiki>$1</nowiki>" è stato modificato in "<nowiki>$2</nowiki>"',
 
+	'renameuser-page-exists'         => 'La pagina $1 esiste già; impossibile sovrascriverla automaticamente.',
+	'renameuser-page-moved'          => 'La pagina $1 è stata spostata a $2.',
+	'renameuser-page-unmoved'        => 'Impossibile spostare la pagina $1 a $2.',
+
 	'renameuserlogpage'     => 'Utenti rinominati',
 	'renameuserlogpagetext' => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
 	'renameuserlog'         => 'Rinominato l\'utente "[[User:$1|$1]]" (che ha $3 contributi) in "[[User:$2|$2]]"',
+	'renameuser-move-log'   => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['ja'] = array(
 	'renameuser'       => '利用者名の変更',
