@@ -362,6 +362,25 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
 	'renameuserlog'         => 'Gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) is hernoemd naar "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['oc'] = array(
+	'renameuser' => 'Renomenar l\'utilizaire',
+	'renameuserold' => 'Nom actual de l\'utilizaire :',
+	'renameusernew' => 'Nom novèl de l\'utilizaire :',
+	'renameusermove' => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
+	'renameusersubmit' => 'Sometre',
+	'renameusererrordoesnotexist' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » es pas valid',
+	'renameusererrorexists' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » existís ja',
+	'renameusererrorinvalid' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » existís pas',
+	'renameusererrortoomany' => 'L\'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu\'a mai de $3 contribucions a son actiu pòt afectar las performanças del siti.',
+	'renameusersuccess' => 'L\'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »',
+	'renameuser-page-exists' => 'La pagina $1 existís ja e pòt pas èsser remplaçada automaticament.',
+	'renameuser-page-moved' => 'La pagina $1 es estada desplaçada vèrs $2.',
+	'renameuser-page-unmoved' => 'La pagina $1 pòt pas èsser renomenada en $2.',
+	'renameuserlogpage' => 'Istoric dels renomenatges d\'utilizaire',
+	'renameuserlogpagetext' => 'Aquò es l\'istoric dels cambiaments de nom dels utilizaires',
+	'renameuserlog' => 'L\'utilizaire « [[Utilizaire:$1|$1]] » (qu\'aviá $3 edicions a son actiu) es estat renomenat « [[Utilizaire:$2|$2]] ».',
+	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
+);
 $wgRenameuserMessages['pl'] = array(
 	'renameuser'       => 'Zmień nazwę użytkownika',
 	'renameuserold'    => 'Obecna nazwa użytkownika:',
