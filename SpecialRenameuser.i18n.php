@@ -194,6 +194,21 @@ $wgRenameuserMessages['hsb'] = array(
 	'renameuserlog'=> 'je wužiwarja „[[{{ns:user}}:$1|$1]]“ (z $3 wobdźěłanjemi) přemjenował na „[[{{ns:user}}:$2|$2]]“.',
 	'renameuser-move-log'=> 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
+$wgRenameuserMessages['hu'] = array(
+	'renameuser'       => 'Szerkesztő átnevezése',
+
+	'renameusererrordoesnotexist' => '„<nowiki>$1</nowiki>” nevű szerkesztő nem létezik',
+	'renameusererrorexists'       => '„<nowiki>$1</nowiki>” nevű szerkesztő már létezik',
+	'renameusererrorinvalid'      => 'A „<nowiki>$1</nowiki>” felhasználónév hibás',
+
+	'renameuser-page-exists'         => '$1 már létezik és nem lehet automatikusan felülírni.',
+	'renameuser-page-moved'          => '$1 átmozgatva a következőre: $2.',
+	'renameuser-page-unmoved'        => '$1-t nem lehet átnevezni a következőre: $2.',
+
+	'renameuserlogpage'     => 'Felhasználó-átnevezési napló',
+	'renameuser-move-log'   => '„[[User:$1|$1]]” „[[User:$2|$2]]”-re való átnevezése közben automatikusan átnevezett oldal',
+);
+
 $wgRenameuserMessages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
 	'renameuserold'    => 'Nama sekarang:',
