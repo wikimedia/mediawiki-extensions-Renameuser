@@ -38,6 +38,10 @@ class Renameuser extends SpecialPage {
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$submit = wfMsgHtml( 'renameusersubmit' );
 		$token = $wgUser->editToken();
+		$is_checked = "checked='checked'";
+		if ( $wgRequest->wasPosted() && ! $wgRequest->getCheck( 'movepages' ) ) {
+			$is_checked = '';
+		}
 
 		$wgOut->addHTML( "
 <!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->
@@ -56,7 +60,7 @@ class Renameuser extends SpecialPage {
 	<tr>
 		<td>&nbsp;</td>
 		<td>
-			<input tabindex='3' type='checkbox' name='movepages' id='movepages' checked='checked' />
+			<input tabindex='3' type='checkbox' name='movepages' id='movepages' $is_checked />
 			<label for='movepages'>$movepages</label>
 		</td>
 	</tr>" );
@@ -155,12 +159,15 @@ class Renameuser extends SpecialPage {
 
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
+			$oldkey = $oldusername->getDBKey();
 			$pages = $dbr->select(
 				'page',
 				array( 'page_namespace', 'page_title' ),
 				array(
 					'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
-					'(page_title LIKE "' . $dbr->escapeLike( $oldusername->getDbKey() . '/' ) . '%" OR page_title = "' . $oldusername->getDbKey() . '")'
+					'(page_title LIKE ' . 
+						$dbr->addQuotes( $dbr->escapeLike( $oldusername->getDbKey() ) . '/%' ) . 
+						' OR page_title = ' . $dbr->addQuotes( $oldusername->getDbKey() ) . ')'
 				),
 				__METHOD__
 			);
