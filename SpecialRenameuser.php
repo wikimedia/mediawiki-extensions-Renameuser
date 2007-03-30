@@ -18,7 +18,7 @@ $wgExtensionFunctions[] = 'wfSpecialRenameuser';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
 	'author' => 'Ævar Arnfjörð Bjarmason',
-	'url' => 'http://meta.wikimedia.org/wiki/Renameuser',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
 	'description' => 'Rename a user (need \'\'renameuser\'\' right)',
 );
 

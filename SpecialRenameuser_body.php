@@ -4,10 +4,10 @@ class Renameuser extends SpecialPage {
 	function Renameuser() {
 		SpecialPage::SpecialPage('Renameuser', 'renameuser');
 	}
-	
+
 	function execute() {
 		global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
-		global $wgVersion, $wgMaxNameChars;
+		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
 
 		$fname = 'Renameuser::execute';
 
@@ -27,10 +27,9 @@ class Renameuser extends SpecialPage {
 			$wgOut->versionRequired( '1.7.0' );
 			return;
 		}
-		
-		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ) );
-		$newusername = Title::newFromText( $wgRequest->getText( 'newusername' ) );
 
+		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ), NS_USER );
+		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER ); // Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
 		$action = $wgTitle->escapeLocalUrl();
 		$renameuserold = wfMsgHtml( 'renameuserold' );
 		$renameusernew = wfMsgHtml( 'renameusernew' );
@@ -77,32 +76,57 @@ class Renameuser extends SpecialPage {
 
 		if ( !is_object( $oldusername ) || !is_object( $newusername ) || $oldusername->getText() == $newusername->getText() )
 			return;
-		
+
 		$wgOut->addHTML( '<hr />' );
-		
+
 		// Suppress username validation of old username
 		$olduser = User::newFromName( $oldusername->getText(), false );
 		$newuser = User::newFromName( $newusername->getText() );
 
 		// It won't be an object if for instance "|" is supplied as a value
 		if ( !is_object( $olduser ) ) {
-			$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $oldusername->getText() ) );
+			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameusererrorinvalid', $oldusername->getText() ) . "</div>" );
 			return;
 		}
 
 		if ( !is_object( $newuser ) ) {
-			$wgOut->addWikiText( wfMsg( 'renameusererrorinvalid', $newusername->getText() ) );
+			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameusererrorinvalid', $newusername->getText() ) . "</div>" );
 			return;
 		}
-		
-		$uid = $olduser->idForName();
+
+		// Check for the existence of lowercase oldusername in database.
+		// Until r19631 it was possible to rename a user to a name with first character as lowercase
+		if ( $wgRequest->getText( 'oldusername' ) !== $wgContLang->ucfirst( $wgRequest->getText( 'oldusername' ) ) ) {
+			// oldusername was entered as lowercase -> check for existence in table 'user'
+			$dbr_lc = wfGetDB( DB_SLAVE );
+			$s = trim( $wgRequest->getText( 'oldusername' ) );
+			$uid = $dbr_lc->selectField( 'user', 'user_id', array( 'user_name' => $s ), __METHOD__ );
+			if ( $uid === false ) {
+				if ( !$wgCapitalLinks ) {
+					$uid = 0; // We are on a lowercase wiki but lowercase username does not exists
+				} else {
+					$uid = $olduser->idForName(); // We are on a standard uppercase wiki, use normal 
+				}
+			} else {
+				// username with lowercase exists
+				// Title::newFromText was nice, but forces uppercase
+				// for older rename accidents on lowercase wikis we need the lowercase username as entered in the form
+				$oldusername->mTextform = $wgRequest->getText( 'oldusername' );
+				$oldusername->mUrlform = $wgRequest->getText( 'oldusername' );
+				$oldusername->mDbkeyform = $wgRequest->getText( 'oldusername' );
+			}
+		} else {
+			// oldusername was entered as upperase -> standard procedure
+			$uid = $olduser->idForName();
+		}
+
 		if ($uid == 0) {
-			$wgOut->addWikiText( wfMsg( 'renameusererrordoesnotexist', $oldusername->getText() ) );
+			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameusererrordoesnotexist' , $oldusername->getText() ) . "</div>" );
 			return;
 		}
-		
+
 		if ($newuser->idForName() != 0) {
-			$wgOut->addWikiText( wfMsg( 'renameusererrorexists', $newusername->getText() ) );
+			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameusererrorexists', $newusername->getText() ) . "</div>" );
 			return;
 		}
 
@@ -110,13 +134,13 @@ class Renameuser extends SpecialPage {
 		if ( !$wgUser->isAllowed( 'siteadmin' ) ) {
 			$contribs = User::edits( $uid );
 			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
-				$wgOut->addWikiText(
+				$wgOut->addWikiText( "<div class=\"errorbox\">" . 
 					wfMsg( 'renameusererrortoomany',
 						$oldusername->getText(),
 						$wgLang->formatNum( $contribs ),
 						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
 					)
-				);
+				 . "</div>" );
 				return;
 			}
 		}
