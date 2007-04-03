@@ -495,6 +495,10 @@ $wgRenameuserMessages['sv'] = array(
 	'renameuserlog'         => 'Döpte om "[[User:$1|$1]]" (som hade gjort $3 redigeringar) till "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['ur'] = array(
+	'renameuser'       => 'صارف کا نام تبدیل کریں',
+	'renameuserlog'    => 'صارف "[[User:$1|$1]]" کا نام  "[[User:$2|$2]]" سے تبدیل کردیا گیا ہے۔ (جن کی $3 ترامیم تھیں)',
+);
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 
