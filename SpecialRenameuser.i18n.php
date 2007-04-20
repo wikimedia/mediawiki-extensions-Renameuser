@@ -30,6 +30,25 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['ar'] = array(
+	'renameuser' => 'أعد تسمية مستخدم',
+	'renameuserold' => 'اسم المستخدم الحالي:',
+	'renameusernew' => 'الاسم الجديد:',
+	'renameusermove' => 'انقل صفحات المستخدم ونقاشه (بالصفحات الفرعية) إلى الاسم الجديد',
+	'renameusersubmit' => 'تنفيذ',
+	'renameusererrordoesnotexist' => 'لا يوجد مستخدم بالاسم "<nowiki>$1</nowiki>"',
+	'renameusererrorexists' => 'المستخدم "<nowiki>$1</nowiki>" يوجد بالفعل',
+	'renameusererrorinvalid' => 'اسم المستخدم "<nowiki>$1</nowiki>" خاطئ',
+	'renameusererrortoomany' => 'يمتلك المستخدم "<nowiki>$1</nowiki>" $2 مساهمة، إعادة تسمية مستخدم يمتلك أكثر من $3 مساهمة قد يؤثر سلبا على اداء الموقع.',
+	'renameusersuccess' => 'تمت إعادة تسمية المستخدم "<nowiki>$1</nowiki>" إلى "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'الصفحة $1 موجودة بالفعل ولا يمكن إنشاء أخرى مكانها أوتوماتيكيا.',
+	'renameuser-page-moved' => 'تم نقل الصفحة $1 إلى $2.',
+	'renameuser-page-unmoved' => 'لم يتمكن من نقل الصفحة $1 إلى $2.',
+	'renameuserlogpage' => 'سجل تغيير أسماء المستخدمين',
+	'renameuserlogpagetext' => 'هذا سجل بالتغييرات في أسماء المستخدمين',
+	'renameuserlog' => 'أعيد تسمية المستخدم "[[مستخدم:$1|$1]]" (والذي كان لديه $3 مساهمة) إلى "[[مستخدم:$2|$2]]"',
+	'renameuser-move-log' => 'تم نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[مستخدم:$1|$1]]" إلى "[[مستخدم:$2|$2]]"',
+);
 $wgRenameuserMessages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
