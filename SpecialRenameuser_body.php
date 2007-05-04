@@ -178,7 +178,7 @@ class Renameuser extends SpecialPage {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDbKey(), $row->page_title ) );
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
-					$link = $skin->makeKnownLinkObj( $oldPage );
+					$link = $skin->makeKnownLinkObj( $newPage );
 					$output .= '<li>' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
 					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
