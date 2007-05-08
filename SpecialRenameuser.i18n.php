@@ -383,6 +383,14 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٴوزدٴىك تٴۇردە جىلجىتىلدى',
 );
 $wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
+$wgRenameuserMessages['ku'] = array(
+	'renameuser'        => 'Navî bikarhênerê biguherîne',
+	'renameuserold'     => 'Navî niha:',
+	'renameusernew'     => 'Navî nuh:',
+	'renameusersuccess' => 'Navî bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
+	'renameusersubmit'  => 'Bike',
+	'renameuserlog'     => 'Navî bikarhênerê "[[User:$1|$1]]" (yê $3 beşdarîyên xwe hebû) kir "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['nl'] = array(
 	'renameuser'       => 'Gebruiker hernoemen',
 	'renameuserold'    => 'Huidige gebruikersnaam:',
