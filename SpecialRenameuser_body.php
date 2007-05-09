@@ -28,52 +28,73 @@ class Renameuser extends SpecialPage {
 			return;
 		}
 
+		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
 		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ), NS_USER );
 		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER ); // Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
 		$action = $wgTitle->escapeLocalUrl();
-		$renameuserold = wfMsgHtml( 'renameuserold' );
-		$renameusernew = wfMsgHtml( 'renameusernew' );
-		$movepages = wfMsgHtml( 'renameusermove' );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
-		$submit = wfMsgHtml( 'renameusersubmit' );
 		$token = $wgUser->editToken();
-		$is_checked = "checked='checked'";
+		$is_checked = true;
 		if ( $wgRequest->wasPosted() && ! $wgRequest->getCheck( 'movepages' ) ) {
-			$is_checked = '';
+			$is_checked = false;
 		}
 
 		$wgOut->addHTML( "
-<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->
-<form id='renameuser' method='post' action=\"$action\">
-<table>
-	<tr>
-		<td align='right'>$renameuserold </td>
-		<td align='left'><input tabindex='1' type='text' size='20' name='oldusername' value=\"$oun\" /></td>
-	</tr>
-	<tr>
-		<td align='right'>$renameusernew </td>
-		<td align='left'><input tabindex='2' type='text' size='20' name='newusername' value=\"$nun\"/></td>
-	</tr>" );
+			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
+			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action, 'id' => 'renameuser' ) ) .
+			Xml::openElement( 'table' ) .
+			"<tr>
+				<td align='right'>" .
+					Xml::label( wfMsgHtml( 'renameuserold' ), 'oldusername' ) .
+				"</td>
+				<td align='left'>" .
+					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
+					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
+				"</td>
+			</tr>
+			<tr>
+				<td align='right'>" .
+					Xml::label( wfMsgHtml( 'renameusernew' ), 'newusername' ) .
+				"</td>
+				<td align='left'>" .
+					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '3' ) ) .
+				"</td>
+			</tr>"
+		);
 		if ( $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$wgOut->addHTML( "
-	<tr>
-		<td>&nbsp;</td>
-		<td>
-			<input tabindex='3' type='checkbox' name='movepages' id='movepages' $is_checked />
-			<label for='movepages'>$movepages</label>
-		</td>
-	</tr>" );
+				<tr>
+					<td>
+						&nbsp;
+					</td>
+					<td>" .
+						Xml::checkLabel( wfMsgHtml( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
+					"</td>
+				</tr>"
+			);
 		}
 
 		$wgOut->addHTML( "
-	<tr>
-		<td>&nbsp;</td>
-		<td><input type='submit' name='submit' value=\"$submit\" /></td>
-	</tr>
-</table>
-<input type='hidden' name='token' value='$token' />
-</form>");
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+				<td>" .
+					Xml::submitButton( wfMsgHtml( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
+				"</td>
+			</tr>" .
+			Xml::closeElement( 'table' ) .
+			Xml::hidden( 'token', $token ) .
+			Xml::closeElement( 'form' ) . "\n"
+		);
+
+		// Show block log if requested
+		if ( $showBlockLog && is_object( $oldusername ) ) {
+			$this->showLogExtract ( $oldusername, 'block', $wgOut ) ;
+			return;
+		}
+
 		// Sanity checks
 		if ( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) 
 			return;
@@ -196,6 +217,20 @@ class Renameuser extends SpecialPage {
 			if( $output )
 				$wgOut->addHtml( '<ul>' . $output . '</ul>' );
 		}
+	}
+
+	function showLogExtract( $username, $type, &$out ) {
+		global $wgOut;
+		# Show relevant lines from the logs:
+		$wgOut->addHtml( "<h2>" . htmlspecialchars( LogPage::logName( $type ) ) . "</h2>\n" );
+
+		$logViewer = new LogViewer(
+			new LogReader(
+				new FauxRequest(
+					array( 'page' => $username->getPrefixedText(),
+					       'type' => $type ) ) ) );
+		$logViewer->showList( $out );
+
 	}
 }
 
