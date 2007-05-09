@@ -46,7 +46,7 @@ class Renameuser extends SpecialPage {
 			Xml::openElement( 'table' ) .
 			"<tr>
 				<td align='right'>" .
-					Xml::label( wfMsgHtml( 'renameuserold' ), 'oldusername' ) .
+					Xml::label( wfMsg( 'renameuserold' ), 'oldusername' ) .
 				"</td>
 				<td align='left'>" .
 					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
@@ -55,7 +55,7 @@ class Renameuser extends SpecialPage {
 			</tr>
 			<tr>
 				<td align='right'>" .
-					Xml::label( wfMsgHtml( 'renameusernew' ), 'newusername' ) .
+					Xml::label( wfMsg( 'renameusernew' ), 'newusername' ) .
 				"</td>
 				<td align='left'>" .
 					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '3' ) ) .
@@ -69,7 +69,7 @@ class Renameuser extends SpecialPage {
 						&nbsp;
 					</td>
 					<td>" .
-						Xml::checkLabel( wfMsgHtml( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
+						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
 					"</td>
 				</tr>"
 			);
@@ -81,7 +81,7 @@ class Renameuser extends SpecialPage {
 					&nbsp;
 				</td>
 				<td>" .
-					Xml::submitButton( wfMsgHtml( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
+					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
