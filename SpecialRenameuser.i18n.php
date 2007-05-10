@@ -291,28 +291,7 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuserlog' => '利用者 “[[User:$1|$1]]” (投稿数 $3回) を “[[User:$2|$2]]” へ変更しました。',
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
-$wgRenameuserMessages['ko'] = array(
-	'renameuser'       => '사용자 이름 변경',
-	'renameuserold'    => '기존 사용자 이름:',
-	'renameusernew'    => '새 이름:',
-	'renameusermove'   => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
-	'renameusersubmit' => '변경',
 
-	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
-	'renameusererrorexists'       => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
-	'renameusererrorinvalid'      => '‘<nowiki>$1</nowiki>’ 사용자 이름이 잘못되었습니다.',
-	'renameusererrortoomany'      => '‘<nowiki>$1</nowiki>’ 사용자는 $2번의 기여를 했습니다. $3번을 넘는 기여를 한 사용자의 이름을 변경하는 것은 성능 저하를 일으킬 수 있습니다.',
-	'renameusersuccess'           => '‘<nowiki>$1</nowiki>’ 사용자가 ‘<nowiki>$2</nowiki>’(으)로 변경되었습니다.',
-
-	'renameuser-page-exists'         => '$1 문서가 이미 존재하여 자동으로 이동하지 못했습니다.',
-	'renameuser-page-moved'          => '$1 문서를 $2(으)로 이동했습니다.',
-	'renameuser-page-unmoved'        => '$1 문서를 $2(으)로 이동하지 못했습니다.',
-
-	'renameuserlogpage'     => '이름 변경 기록',
-	'renameuserlogpagetext' => '사용자 이름 변경 기록입니다.',
-	'renameuserlog'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 변경함($3개의 기여)',
-	'renameuser-move-log'   => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
-);
 $wgRenameuserMessages['kk-kz'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
@@ -363,26 +342,49 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
 	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
-	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٴانە تالقىلاۋ بەتتەرٴىن (جٴانە دە ولاردىڭ تٴومەنگٴى بەتتەرٴىن) جاڭا اتاۋعا جىلجىتۋ',
-	'renameusersubmit' => 'جٴىبەرۋ',
+	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٵنە تالقىلاۋ بەتتەرٸن (جٵنە دە ولاردىڭ تٶمەنگٸ بەتتەرٸن) جاڭا اتاۋعا جىلجىتۋ',
+	'renameusersubmit' => 'جٸبەرۋ',
 
 	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى جوق',
-	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٴۇگە ',
+	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٷگە ',
 	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» قاتىسۋشى اتى جارامسىز ',
-	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٴۇلەس بەرگەن, $3 ارتا ٴۇلەسٴى بار قاتىسۋشىنى قايتا اتاۋى توراپ ٴونٴىمدٴىلٴىگٴىنە ىقپال ەتەدٴى',
+	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٷلەس بەرگەن, $3 ارتا ٷلەسٸ بار قاتىسۋشىنى قايتا اتاۋى توراپ ٶنٸمدٸلٸگٸنە ىقپال ەتەدٸ',
 	'renameusersuccess'           => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى اتى «<nowiki>$2</nowiki>» دەگەنگە اۋىستىرىلدى',
 
-	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٴۇگە, جٴانە ٴوزدٴىك تٴۇردە ونىڭ ٴۇستٴىنە ەشتەڭە جازىلمايدى.',
+	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٷگە, جٵنە ٶزدٸك تٷردە ونىڭ ٷستٸنە ەشتەڭە جازىلمايدى.',
 	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
 	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
 
 	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
-	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٴوزگەرٴىستەر جۋرنالى',
+	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٶزگەرٸستەر جۋرنالى',
 
-	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 تٴۇزەتۋٴى بار) دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىستى',
-	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٴوزدٴىك تٴۇردە جىلجىتىلدى',
+	'renameuserlog'         => '«[[{{ns:user}}:$1|$1]]» ($3 تٷزەتۋٸ بار) دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىستى',
+	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
 $wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
+
+$wgRenameuserMessages['ko'] = array(
+	'renameuser'       => '사용자 이름 변경',
+	'renameuserold'    => '기존 사용자 이름:',
+	'renameusernew'    => '새 이름:',
+	'renameusermove'   => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
+	'renameusersubmit' => '변경',
+
+	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
+	'renameusererrorexists'       => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
+	'renameusererrorinvalid'      => '‘<nowiki>$1</nowiki>’ 사용자 이름이 잘못되었습니다.',
+	'renameusererrortoomany'      => '‘<nowiki>$1</nowiki>’ 사용자는 $2번의 기여를 했습니다. $3번을 넘는 기여를 한 사용자의 이름을 변경하는 것은 성능 저하를 일으킬 수 있습니다.',
+	'renameusersuccess'           => '‘<nowiki>$1</nowiki>’ 사용자가 ‘<nowiki>$2</nowiki>’(으)로 변경되었습니다.',
+
+	'renameuser-page-exists'         => '$1 문서가 이미 존재하여 자동으로 이동하지 못했습니다.',
+	'renameuser-page-moved'          => '$1 문서를 $2(으)로 이동했습니다.',
+	'renameuser-page-unmoved'        => '$1 문서를 $2(으)로 이동하지 못했습니다.',
+
+	'renameuserlogpage'     => '이름 변경 기록',
+	'renameuserlogpagetext' => '사용자 이름 변경 기록입니다.',
+	'renameuserlog'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 변경함($3개의 기여)',
+	'renameuser-move-log'   => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
+);
 $wgRenameuserMessages['ku'] = array(
 	'renameuser'        => 'Navî bikarhênerê biguherîne',
 	'renameuserold'     => 'Navî niha:',
