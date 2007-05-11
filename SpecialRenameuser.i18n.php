@@ -505,6 +505,20 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuserlog'         => 'Bol premenovaný používateľ "[[User:$1|$1]]" (mal $3 úpravy) na "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
+
+$wgRenameuserMessages['su'] = array(
+	'renameuser' => 'Ganti ngaran pamaké',
+	'renameuserold' => 'Ngaran pamaké ayeuna:',
+	'renameusernew' => 'Ngaran pamaké anyar:',
+	'renameusermove' => 'Pindahkeun kaca pamaké jeung obrolanna (jeung sub-kacanna) ka ngaran anyar',
+	'renameusersubmit' => 'Kirim',
+	'renameusererrordoesnotexist' => 'Euweuh pamaké nu ngaranna "<nowiki>$1</nowiki>"',
+	'renameusererrorexists' => 'Pamaké "<nowiki>$1</nowiki>" geus aya',
+	'renameusererrorinvalid' => 'Ngaran pamaké "<nowiki>$1</nowiki>" teu sah',
+	'renameusererrortoomany' => 'Pamaké "<nowiki>$1</nowiki>" boga $2 kontribusi, ngaganti ngaran pamaké nu boga kontribusi leuwih ti $3 bakal mangaruhan kinerja loka',
+	'renameusersuccess' => 'Pamaké "<nowiki>$1</nowiki>" geus diganti ngaranna jadi "<nowiki>$2</nowiki>"',
+);
+
 $wgRenameuserMessages['sv'] = array(
 	'renameuser'       => 'Döp om användare',
 	'renameuserold'    => 'Nuvarande användarnamn:',
