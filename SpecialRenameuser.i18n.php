@@ -247,7 +247,7 @@ $wgRenameuserMessages['id'] = array(
 
 	'renameuserlogpage'     => 'Log penggantian nama pengguna',
 	'renameuserlogpagetext' => 'Di bawah ini adalah log penggantian nama pengguna',
-	'renameuserlog'         => 'Mengganti nama pengguna "[[User:$1|$1]]" (yang telah memiliki $3 suntingan) menjadi "[[User:$2|$2]]"',
+	'renameuserlog'         => 'mengganti nama pengguna "[[User:$1|$1]]" (yang telah memiliki $3 suntingan) menjadi "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['it'] = array(
