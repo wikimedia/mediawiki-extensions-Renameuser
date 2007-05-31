@@ -292,6 +292,19 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
 
+$wgRenameuserMessages['ka'] = array(
+	'renameuser'       => 'მომხმარებლის სახელის გამოცვლა',
+	'renameuserold'    => 'მიმდინარე მომხმარებლის სახელი:',
+	'renameusernew'    => 'ახალი მომხმარებლის სახელი:',
+	'renameusersubmit' => 'გაგზავნა',
+
+	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
+	'renameusererrorexists'       => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
+	'renameusererrorinvalid'      => 'მომხმარებლის სახელი "<nowiki>$1</nowiki>" არასწორია',
+	'renameusersuccess'           => 'მომხმარებლის სახელი - "<nowiki>$1</nowiki>", შეიცვალა "<nowiki>$2</nowiki>"-ით',
+
+);
+
 $wgRenameuserMessages['kk-kz'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
