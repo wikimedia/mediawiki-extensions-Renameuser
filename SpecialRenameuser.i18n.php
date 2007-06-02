@@ -294,15 +294,25 @@ $wgRenameuserMessages['ja'] = array(
 
 $wgRenameuserMessages['ka'] = array(
 	'renameuser'       => 'მომხმარებლის სახელის გამოცვლა',
-	'renameuserold'    => 'მიმდინარე მომხმარებლის სახელი:',
+	'renameuserold'    => 'ამჟამინდელი მომხმარებლის სახელი:',
 	'renameusernew'    => 'ახალი მომხმარებლის სახელი:',
+	'renameusermove'   => 'მომხმარებლისა და განხილვის გვერდების (და მათი დაქვემდებარებული გვერდების) გადატანა ახალ დასახელებაზე',
 	'renameusersubmit' => 'გაგზავნა',
 
 	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
 	'renameusererrorexists'       => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
 	'renameusererrorinvalid'      => 'მომხმარებლის სახელი "<nowiki>$1</nowiki>" არასწორია',
+	'renameusererrortoomany'      => 'მომხმარებელს "<nowiki>$1</nowiki>" გაკეთებული აქვს $2 რედაქცია. სახელის შეცვლამ მომხმარებლისათვის, რომელიც $3-ზე მეტ რედაქციას ითვლის, შესაძლოა ზიანი მიაყენოს საიტის ქმედითობას',
 	'renameusersuccess'           => 'მომხმარებლის სახელი - "<nowiki>$1</nowiki>", შეიცვალა "<nowiki>$2</nowiki>"-ით',
 
+	'renameuser-page-exists'         => 'გვერდი $1 უკვე არსებობს და მისი ავტომატურად შენაცვლება შეუძლებელია.',
+	'renameuser-page-moved'          => 'გვერდი $1 გადატანილია $2-ზე.',
+	'renameuser-page-unmoved'        => 'არ მოხერხდა გვერდის $1 გადატანა $2-ზე.',
+
+	'renameuserlogpage'     => 'მომხმარებლის სახელის გადარქმევის რეგისტრაციის ჟურნალი',
+	'renameuserlogpagetext' => 'ეს არის ჟურნალი, სადაც აღრიცხულია მომხმარებლის სახელთა ცვლილებები',
+	'renameuserlog'         => 'მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელი (რომელსაც გაკეთებული ჰქონდა $3 რედაქცია) შეიცვალა "[[{{ns:user}}:$2|$2]]-ით"',
+	'renameuser-move-log'   => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელის შეცვლისას "[[{{ns:user}}:$2|$2]]-ით"',
 );
 
 $wgRenameuserMessages['kk-kz'] = array(
