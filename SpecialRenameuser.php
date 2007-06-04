@@ -24,6 +24,7 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # Internationalisation file
 require_once( 'SpecialRenameuser.i18n.php' );
+require_once( 'SpecialRenameuser_body.php' );
 
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
@@ -50,10 +51,11 @@ $wgRenameUserQuick = $wgMiserMode;
 if ( !function_exists( 'extAddSpecialPage' ) ) {
 	require( dirname(__FILE__) . '/../ExtensionFunctions.php' );
 }
-extAddSpecialPage( dirname(__FILE__) . '/SpecialRenameuser_body.php', 'Renameuser', 'Renameuser' );
 
 function wfSpecialRenameuser() {
 	# Add messages
+	//extAddSpecialPage( dirname(__FILE__) . '/SpecialRenameuser_body.php', 'Renameuser', 'Renameuser' );
+	SpecialPage::AddPage(new Renameuser());	
 	global $wgMessageCache, $wgRenameuserMessages;
 	foreach( $wgRenameuserMessages as $key => $value ) {
 		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
