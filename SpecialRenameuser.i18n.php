@@ -148,7 +148,7 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuserlogpage'     => 'Tunnusten vaihdot',
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
 	'renameuserlog'         => 'Käyttäjän ”[[User:$1|$1]]” (tehnyt $3 muokkausta) tunnus on nyt ”[[User:$2|$2]]”',
-	'renameuser-move-log'   => 'Siiretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+	'renameuser-move-log'   => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
 $wgRenameuserMessages['fr'] = array(
 	'renameuser'       => 'Renommer l’utilisateur',
