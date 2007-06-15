@@ -432,6 +432,25 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
 	'renameuserlog'         => 'Gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) is hernoemd naar "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['no'] = array(
+	'renameuser' => 'Omdøp bruker',
+	'renameuserold' => 'Nåværende navn:',
+	'renameusernew' => 'Nytt brukernavn:',
+	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameusersubmit' => 'Omdøp',
+	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke',
+	'renameusererrorexists' => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
+	'renameusererrorinvalid' => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig',
+	'renameusererrortoomany' => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å omdøpe brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
+	'renameusersuccess' => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists' => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
+	'renameuser-page-moved' => 'Siden $1 har blitt flyttet til $2.',
+	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
+	'renameuserlogpage' => 'Omdøpingslogg',
+	'renameuserlogpagetext' => 'Dette er en logg over endringer i brukernavn.',
+	'renameuserlog' => 'Omdøpte brukeren «[[User:$1|$1]]» (som hadde $3 redigeringer) til «[[User:$2|$2]]»',
+	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+);
 $wgRenameuserMessages['oc'] = array(
 	'renameuser' => 'Renomenar l\'utilizaire',
 	'renameuserold' => 'Nom actual de l\'utilizaire :',
