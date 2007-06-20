@@ -547,6 +547,22 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuserlog'         => 'Bol premenovaný používateľ "[[User:$1|$1]]" (mal $3 úpravy) na "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['sq'] = array(
+	'renameuser'                  => 'Ndërrim përdoruesi',
+	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
+	'renameusererrorexists'       => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
+	'renameusererrorinvalid'      => 'Emri "<nowiki>$1</nowiki>" nuk është i lejuar',
+	'renameusererrortoomany'      => 'Përdoruesi "<nowiki>$1</nowiki>" ka dhënë $2 kontribute. Ndryshimi i emrit të një përdoruesi me më shumë se $3 kontribute mund të ndikojë rëndë tek rendimenti i shërbyesave.',
+	'renameuserlog'               => 'i ndërrojë emrin përdoruesit "[[User:$1|$1]]" (me $3 kontribute) tek "[[User:$2|$2]]"',
+	'renameuserlogentry'          => '.',
+	'renameuserlogpage'           => 'Regjistri i emër-ndryshimeve',
+	'renameuserlogpagetext'       => 'Ky është një regjistër i ndryshimeve së emrave të përdoruesve',
+	'renameusermove'              => 'Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri',
+	'renameusernew'               => 'Emri i ri',
+	'renameuserold'               => 'Emri i tanishëm',
+	'renameusersubmit'            => 'Ndryshoje',
+	'renameusersuccess'           => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
+);
 
 $wgRenameuserMessages['su'] = array(
 	'renameuser' => 'Ganti ngaran pamaké',
