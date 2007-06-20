@@ -5,7 +5,7 @@ class Renameuser extends SpecialPage {
 		SpecialPage::SpecialPage('Renameuser', 'renameuser');
 	}
 
-	function execute() {
+	function execute( $par ) {
 		global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
 		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
 
