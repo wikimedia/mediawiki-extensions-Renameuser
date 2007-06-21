@@ -39,6 +39,9 @@ $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
 
+$wgJobClasses['renameUser'] = 'RenameUserJob';
+$wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
+
 /**
  * If this is set to true, then the archive table (deleted revisions) will
  * not be updated. Defaults to the value of $wgMiserMode, since if that's on,

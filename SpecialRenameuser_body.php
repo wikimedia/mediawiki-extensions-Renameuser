@@ -279,18 +279,23 @@ class RenameuserSQL {
 		$this->new = $new;
 		$this->uid = $uid;
 
+		// 1.5 schema
 		$this->tables = array(
-			// 1.5 schema
-			'user' => 'user_name',
-			'revision' => 'rev_user_text',
 			'image' => 'img_user_text',
-			'oldimage' => 'oi_user_text',
-
-			// Very hot table, causes lag and deadlocks to update like this
-			/*'recentchanges' => 'rc_user_text'*/
+			'oldimage' => 'oi_user_text'
 		);
+		$this->tablesJob = array();
+		// See if this is for large tables on large, busy, wikis
+		if( wfQueriesMustScale() ) {
+			$this->tablesJob['revision'] = array('rev_user_text','rev_id');
+			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
+		} else {
+			$this->tables['revision'] = 'rev_user_text';
+			$this->tables['recentchanges'] = 'rc_user_text';
+		}
 		
 		global $wgRenameUserQuick;
+		// As of 1.10, usernames are not indexed here; too slow for large wikis
 		if( !$wgRenameUserQuick )
 			$this->tables['archive'] = 'ar_user_text';
 		
@@ -307,8 +312,16 @@ class RenameuserSQL {
 		wfProfileIn( $fname );
 		
 		$dbw =& wfGetDB( DB_MASTER );
+		// Rename and touch the user before re-attributing edits,
+		// this avoids users still being login in and making new edits while
+		// being renamed, which leaves edits at the old name.
+		$dbw->update( 'user',
+			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ), 
+			array( 'user_name' => $this->old ),
+			$fname
+		);
 
-		foreach ($this->tables as $table => $field) {
+		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
 				array( $field => $this->new ),
 				array( $field => $this->old ),
@@ -316,16 +329,60 @@ class RenameuserSQL {
 				#,array( $dbw->lowPriorityOption() )
 			);
 		}
-
-		$dbw->update( 'user', 
-			array( 'user_touched' => $dbw->timestamp() ), 
-			array( 'user_name' => $this->new ),
-			$fname
-		);
 		
+		foreach( $this->tablesJob as $table => $params ) {
+			$res = $dbw->select( $table,
+					array( $params[0], $params[1] ),
+					array( $params[0] => $this->old )
+				);
+			
+			global $wgUpdateRowsPerJob;
+	
+			$batchSize = 500; // Lets not flood the job table!
+			$jobSize = $wgUpdateRowsPerJob; // How many rows per job?
+
+			$key = $params[1];
+			$jobParams = array();
+			$jobParams['table'] = $table;
+			$jobParams['column'] = $params[0];
+			$jobParams['uniqueKey'] = $key;
+			$jobParams['oldname'] = $this->old;
+			$jobParams['newname'] = $this->new;
+
+			$jobParams['keyId'] = array();
+			$jobRows = 0;
+			$done = false;
+			while ( !$done ) {
+				$jobs = array();
+				for ( $i = 0; $i < $batchSize; $i++ ) {
+					$row = $dbw->fetchObject( $res );
+					if ( !$row ) {
+						# If there are any job rows left, add it to the queue as a job
+						if( $jobRows > 0 ) {
+							$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
+							$jobRows = 0;
+							$jobParams['keyId'] = array();
+						}
+						$done = true;
+						break;
+					}
+					$jobParams['keyId'][] = $row->$key;
+					$jobRows++;
+					# Once a job has $jobSize rows, add it to the queue
+					if( $jobRows >= $jobSize ) {
+						$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
+						$jobRows = 0;
+						$jobParams['keyId'] = array();
+					}
+				}
+				Job::batchInsert( $jobs );
+			}
+			$dbw->freeResult( $res );
+		}
+
 		// Clear the user cache
 		$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
-		
+
 		// Inform authentication plugin of the change
 		$user = User::newFromId( $this->uid );
 		$wgAuth->updateExternalDB( $user );
