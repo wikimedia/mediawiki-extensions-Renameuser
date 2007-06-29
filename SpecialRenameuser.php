@@ -62,4 +62,4 @@ function wfSpecialRenameuser() {
 		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
 	}
 }
-?>
+

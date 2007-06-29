@@ -678,4 +678,4 @@ $wgRenameuserMessages['zh-yue'] = array(
 );
 $wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-tw'];
 $wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-cn'];
-?>
+
