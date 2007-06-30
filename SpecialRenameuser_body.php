@@ -286,7 +286,7 @@ class RenameuserSQL {
 		);
 		$this->tablesJob = array();
 		// See if this is for large tables on large, busy, wikis
-		if( wfQueriesMustScale() ) {
+		if( function_exists('wfQueriesMustScale') && wfQueriesMustScale() ) {
 			$this->tablesJob['revision'] = array('rev_user_text','rev_id');
 			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
 		} else {
