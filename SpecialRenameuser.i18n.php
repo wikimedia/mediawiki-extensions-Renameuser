@@ -486,6 +486,26 @@ $wgRenameuserMessages['pl'] = array(
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
 	'renameuserlog'         => 'Zmieniono nazwę użytkownika "[[User:$1|$1]]" (mającego $3 edycji) na "[[User:$2|$2]]"',
 );
+/* Piedmontese (Bèrto 'd Sèra) */
+$wgRenameuserMessages['pms'] = array(
+	'renameuser' => 'Arbatié n\'utent',
+	'renameuserold' => 'Stranòm corent:',
+	'renameusernew' => 'Stranòm neuv:',
+	'renameusermove' => 'Tramuda ëdcò la pàgina utent e cola dle ciaciarade (con tute soe sotapàgine) a lë stranòm neuv',
+	'renameusersubmit' => 'Falo',
+	'renameusererrordoesnotexist' => 'A-i é pa gnun utent ch\'as ës-ciama "<nowiki>$1</nowiki>"',
+	'renameusererrorexists' => 'N\'utent ch\'as ës-ciama "<nowiki>$1</nowiki>" a-i é già',
+	'renameusererrorinvalid' => 'Lë stranòm "<nowiki>$1</nowiki>" a l\'é nen bon',
+	'renameusererrortoomany' => 'L\'utent "<nowiki>$1</nowiki>" a l\'ha fait $2 modìfiche, ch\'a ten-a present che arbatié n\'utent ch\'a l\'abia pì che $3 modìfiche a podrìa feje un brut efet a le prestassion dël sit.',
+	'renameusersuccess' => 'L\'utent "<nowiki>$1</nowiki>" a l\'é stait arbatià an "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'La pàgina $1 a-i é già e as peul nen passe-ie dzora n\'aotomàtich.',
+	'renameuser-page-moved' => 'La pàgina $1 a l\'ha fait San Martin a $2.',
+	'renameuser-page-unmoved' => 'La pàgina $1 a l\'é pa podusse tramudé a $2.',
+	'renameuserlogpage' => 'Registr dj\'arbatiagi',
+	'renameuserlogpagetext' => 'Sossì a l\'é un registr dle modìfiche djë stranòm dj\'utent',
+	'renameuserlog' => 'L\'utent "[[User:$1|$1]]" (ch\'a l\'avìa $3 modìfiche) a l\'é stait arbatià an "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Pàgina utent tramudà n\'aotomàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['pt'] = array(
 	'renameuser'       => 'Renomear utilizador',
 	'renameuserold'    => 'Nome de utilizador actual:',
