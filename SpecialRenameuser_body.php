@@ -288,7 +288,8 @@ class RenameuserSQL {
 		// 1.5 schema
 		$this->tables = array(
 			'image' => 'img_user_text',
-			'oldimage' => 'oi_user_text'
+			'oldimage' => 'oi_user_text',
+			'archive' => 'ar_user_text'
 		);
 		$this->tablesJob = array();
 		// See if this is for large tables on large, busy, wikis
@@ -299,11 +300,6 @@ class RenameuserSQL {
 			$this->tables['revision'] = 'rev_user_text';
 			$this->tables['recentchanges'] = 'rc_user_text';
 		}
-		
-		global $wgRenameUserQuick;
-		// As of 1.10, usernames are not indexed here; too slow for large wikis
-		if( !$wgRenameUserQuick )
-			$this->tables['archive'] = 'ar_user_text';
 		
 	}
 
@@ -317,7 +313,7 @@ class RenameuserSQL {
 		
 		$dbw =& wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
-		// this avoids users still being login in and making new edits while
+		// this avoids users still being logged in and making new edits while
 		// being renamed, which leaves edits at the old name.
 		$dbw->update( 'user',
 			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ), 

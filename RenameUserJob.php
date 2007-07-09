@@ -1,8 +1,7 @@
 <?php
 
 /**
- * Custom job to perform updates on less important tables
- * in busier environments
+ * Custom job to perform updates on tables in busier environments
  */
 class RenameUserJob extends Job {
 

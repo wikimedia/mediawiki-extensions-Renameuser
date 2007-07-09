@@ -44,13 +44,6 @@ $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
 
-/**
- * If this is set to true, then the archive table (deleted revisions) will
- * not be updated. Defaults to the value of $wgMiserMode, since if that's on,
- * then it's probably desirable to have this switched on too.
- */
-$wgRenameUserQuick = $wgMiserMode;
-
 function wfSpecialRenameuser() {
 	# Add messages
 	global $wgMessageCache, $wgRenameuserMessages;
