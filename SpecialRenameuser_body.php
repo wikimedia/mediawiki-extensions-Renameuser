@@ -1,15 +1,26 @@
 <?php
 
-class Renameuser extends SpecialPage {
-	function Renameuser() {
-		SpecialPage::SpecialPage('Renameuser', 'renameuser');
+/**
+ * Special page allows authorised users to rename
+ * user accounts
+ */
+class SpecialRenameuser extends SpecialPage {
+
+	/**
+	 * Constructor
+	 */
+	public function __construct() {
+		parent::__construct( 'Renameuser', 'renameuser' );
 	}
 
-	function execute( $par ) {
+	/**
+	 * Show the special page
+	 *
+	 * @param mixed $par Parameter passed to the page
+	 */
+	public function execute( $par ) {
 		global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
 		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
-
-		$fname = 'Renameuser::execute';
 
 		$this->setHeaders();
 
@@ -20,11 +31,6 @@ class Renameuser extends SpecialPage {
 
 		if ( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
-			return;
-		}
-
-		if ( version_compare( $wgVersion, '1.7.0', '<' ) ) {
-			$wgOut->versionRequired( '1.7.0' );
 			return;
 		}
 
@@ -65,8 +71,8 @@ class Renameuser extends SpecialPage {
 		if ( $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$wgOut->addHTML( "
 				<tr>
-					<td>
-						&nbsp;
+					<td>&nbsp;
+						
 					</td>
 					<td>" .
 						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
@@ -77,8 +83,8 @@ class Renameuser extends SpecialPage {
 
 		$wgOut->addHTML( "
 			<tr>
-				<td>
-					&nbsp;
+				<td>&nbsp;
+					
 				</td>
 				<td>" .
 					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
@@ -307,9 +313,7 @@ class RenameuserSQL {
 	function rename() {
 		global $wgMemc, $wgDBname, $wgAuth;
 		
-		$fname = 'RenameuserSQL::rename';
-		
-		wfProfileIn( $fname );
+		wfProfileIn( __METHOD__ );
 		
 		$dbw =& wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
@@ -318,14 +322,14 @@ class RenameuserSQL {
 		$dbw->update( 'user',
 			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ), 
 			array( 'user_name' => $this->old ),
-			$fname
+			__METHOD__
 		);
 
 		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
 				array( $field => $this->new ),
 				array( $field => $this->old ),
-				$fname
+				__METHOD__
 				#,array( $dbw->lowPriorityOption() )
 			);
 		}
@@ -380,14 +384,12 @@ class RenameuserSQL {
 			$dbw->freeResult( $res );
 		}
 
-		// Clear the user cache
-		$wgMemc->delete( "$wgDBname:user:id:{$this->uid}" );
-
-		// Inform authentication plugin of the change
+		// Clear caches and inform authentication plugins
 		$user = User::newFromId( $this->uid );
+		$user->invalidateCache();
 		$wgAuth->updateExternalDB( $user );
 
-		wfProfileOut( $fname );
+		wfProfileOut( __METHOD__ );
 	}
 }
 

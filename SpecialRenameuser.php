@@ -39,8 +39,10 @@ $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
 
-$wgJobClasses['renameUser'] = 'RenameUserJob';
+$wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
+$wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
+$wgJobClasses['renameUser'] = 'RenameUserJob';
 
 /**
  * If this is set to true, then the archive table (deleted revisions) will
@@ -49,12 +51,6 @@ $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
  */
 $wgRenameUserQuick = $wgMiserMode;
 
-# Register the special page
-if ( !function_exists( 'extAddSpecialPage' ) ) {
-	require( dirname(__FILE__) . '/../ExtensionFunctions.php' );
-}
-extAddSpecialPage( dirname(__FILE__) . '/SpecialRenameuser_body.php', 'Renameuser', 'Renameuser' );
-
 function wfSpecialRenameuser() {
 	# Add messages
 	global $wgMessageCache, $wgRenameuserMessages;
@@ -62,4 +58,3 @@ function wfSpecialRenameuser() {
 		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
 	}
 }
-
