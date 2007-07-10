@@ -30,6 +30,11 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserlog'         => 'Renamed the user "[[User:$1|$1]]" (which had $3 edits) to "[[User:$2|$2]]"',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['af'] = array(
+	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
+	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
+);
 $wgRenameuserMessages['ar'] = array(
 	'renameuser' => 'أعد تسمية مستخدم',
 	'renameuserold' => 'اسم المستخدم الحالي:',
