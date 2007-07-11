@@ -51,8 +51,8 @@ $wgRenameuserMessages['ar'] = array(
 	'renameuser-page-unmoved' => 'لم يتمكن من نقل الصفحة $1 إلى $2.',
 	'renameuserlogpage' => 'سجل تغيير أسماء المستخدمين',
 	'renameuserlogpagetext' => 'هذا سجل بالتغييرات في أسماء المستخدمين',
-	'renameuserlog' => 'أعيد تسمية المستخدم "[[مستخدم:$1|$1]]" (والذي كان لديه $3 مساهمة) إلى "[[مستخدم:$2|$2]]"',
-	'renameuser-move-log' => 'تم نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[مستخدم:$1|$1]]" إلى "[[مستخدم:$2|$2]]"',
+	'renameuserlog' => 'أعيد تسمية المستخدم "[[User:$1|$1]]" (والذي كان لديه $3 مساهمة) إلى "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'تم نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
