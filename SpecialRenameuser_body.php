@@ -175,6 +175,11 @@ class SpecialRenameuser extends SpecialPage {
 				return;
 			}
 		}
+		
+		// Give other affected extensions a chance to validate or abort
+		if( !wfRunHooks( 'RenameUserAbort', array( $uid, $oldusername->getText(), $newusername->getText() ) ) ) {
+			return;
+		}
 
 		$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
 		$rename->rename();
@@ -384,6 +389,7 @@ class RenameuserSQL {
 		$user = User::newFromId( $this->uid );
 		$user->invalidateCache();
 		$wgAuth->updateExternalDB( $user );
+		wfRunHooks( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
 
 		wfProfileOut( __METHOD__ );
 	}
