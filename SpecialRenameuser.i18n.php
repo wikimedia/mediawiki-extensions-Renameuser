@@ -422,20 +422,23 @@ $wgRenameuserMessages['ku'] = array(
 	'renameuserlog'     => 'Navî bikarhênerê "[[User:$1|$1]]" (yê $3 beşdarîyên xwe hebû) kir "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['nl'] = array(
-	'renameuser'       => 'Gebruiker hernoemen',
-	'renameuserold'    => 'Huidige gebruikersnaam:',
-	'renameusernew'    => 'Nieuwe gebruikersnaam:',
+	'renameuser' => 'Gebruiker hernoemen',
+	'renameuserold' => 'Huidige gebruikersnaam:',
+	'renameusernew' => 'Nieuwe gebruikersnaam:',
+	'renameusermove' => 'Hernoem de gebruikerspagina en overlegpagina en eventuele subpagina\'s naar de nieuwe gebruikersnaam',
 	'renameusersubmit' => 'Hernoemen',
-
 	'renameusererrordoesnotexist' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat niet',
-	'renameusererrorexists'       => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al',
-	'renameusererrorinvalid'      => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig',
-	'renameusererrortoomany'      => 'Gebruiker "<nowiki>$1</nowiki>" heeft $2 bewerkingen. Het hernoemen van gebruikers met meer dan $3 bewerkingen kan de snelheid van de wiki nadelig beïnvloeden.',
-	'renameusersuccess'           => 'Gebruiker "<nowiki>$1</nowiki>" is hernoemd naar "<nowiki>$2</nowiki>"',
-
-	'renameuserlogpage'     => 'Logboek gebruikersnaamwijzigingen',
+	'renameusererrorexists' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al',
+	'renameusererrorinvalid' => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig',
+	'renameusererrortoomany' => 'De gebruiker "<nowiki>$1</nowiki>" heeft $2 bewerkingen gedaan; het hernoemen van een gebruiker met meer dan $3 bijdragen kan de prestaties van de site nadelig beïnvloeden',
+	'renameusersuccess' => 'De gebruiker "<nowiki>$1</nowiki>" is hernoemd naar "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'De pagina $1 bestaat al en kan niet automatisch overschreven worden.',
+	'renameuser-page-moved' => 'De pagina $1 is hernoemd naar $2.',
+	'renameuser-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
+	'renameuserlogpage' => 'Logboek gebruikersnaamwijzigingen',
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
-	'renameuserlog'         => 'Gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) is hernoemd naar "[[User:$2|$2]]"',
+	'renameuserlog' => 'Hernoem de gebruiker "[[User:$1|$1]]" (met $3 bewerkingen) naar "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['no'] = array(
 	'renameuser' => 'Omdøp bruker',
