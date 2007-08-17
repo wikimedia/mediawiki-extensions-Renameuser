@@ -41,30 +41,40 @@ class SpecialRenameuser extends SpecialPage {
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $wgUser->editToken();
+		$reason = $wgRequest->getText( 'reason' );
 		$is_checked = true;
 		if ( $wgRequest->wasPosted() && ! $wgRequest->getCheck( 'movepages' ) ) {
 			$is_checked = false;
 		}
+		$align = $wgContLang->isRtl() ? 'left' : 'right';
 
 		$wgOut->addHTML( "
 			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action, 'id' => 'renameuser' ) ) .
 			Xml::openElement( 'table' ) .
 			"<tr>
-				<td align='right'>" .
+				<td align='$align'>" .
 					Xml::label( wfMsg( 'renameuserold' ), 'oldusername' ) .
 				"</td>
-				<td align='left'>" .
+				<td>" .
 					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
 					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
 				"</td>
 			</tr>
 			<tr>
-				<td align='right'>" .
+				<td align='$align'>" .
 					Xml::label( wfMsg( 'renameusernew' ), 'newusername' ) .
 				"</td>
-				<td align='left'>" .
+				<td>" .
 					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '3' ) ) .
+				"</td>
+			</tr>
+			<tr>
+				<td align='$align'>" .
+					Xml::label( wfMsg( 'renameuserreason' ), 'reason' ) .
+				"</td>
+				<td>" .
+					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '4' ) ) .
 				"</td>
 			</tr>"
 		);
@@ -72,10 +82,9 @@ class SpecialRenameuser extends SpecialPage {
 			$wgOut->addHTML( "
 				<tr>
 					<td>&nbsp;
-						
 					</td>
 					<td>" .
-						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
+						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '5' ) ) .
 					"</td>
 				</tr>"
 			);
@@ -84,10 +93,9 @@ class SpecialRenameuser extends SpecialPage {
 		$wgOut->addHTML( "
 			<tr>
 				<td>&nbsp;
-					
 				</td>
 				<td>" .
-					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
+					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '6', 'id' => 'submit' ) ) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
@@ -185,9 +193,9 @@ class SpecialRenameuser extends SpecialPage {
 		$rename->rename();
 
 		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgForContent( 'renameuserlog', $oldusername->getText(), $newusername->getText(), $wgContLang->formatNum( $contribs ) ) );
+		$log->addEntry( 'renameuser', $oldusername, wfMsgForContent( 'renameuser-log', $wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
 
-		$wgOut->addWikiText( wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
+		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) . "</div>" );
 
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
