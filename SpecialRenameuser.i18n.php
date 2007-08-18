@@ -184,6 +184,7 @@ $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
 	'renameusernew'    => 'שם משתמש חדש:',
+	'renameuserreason' => 'סיבה לשינוי השם:',
 	'renameusermove'   => 'העבר את דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
 	'renameusersubmit' => 'שנה שם משתמש',
 
@@ -199,7 +200,8 @@ $wgRenameuserMessages['he'] = array(
 
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
-	'renameuser-log'        => 'שיש לו $1 עריכות. $2',
+	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" לשם "[[{{ns:user}}:$2|$2]]"',
+	'renameuser-log'        => '$1 עריכות. סיבה: $2',
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 $wgRenameuserMessages['hsb'] = array(
