@@ -162,6 +162,7 @@ $wgRenameuserMessages['fr'] = array(
 	'renameuser'       => 'Renommer l’utilisateur',
 	'renameuserold'    => 'Nom actuel de l’utilisateur :',
 	'renameusernew'    => 'Nouveau nom de l’utilisateur :',
+	'renameuserreason' => 'Motif du renommage :',
 	'renameusermove'   => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
 	'renameusersubmit' => 'Renommer',
 
