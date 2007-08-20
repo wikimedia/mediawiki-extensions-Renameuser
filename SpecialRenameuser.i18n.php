@@ -178,7 +178,8 @@ $wgRenameuserMessages['fr'] = array(
 
 	'renameuserlogpage'     => 'Historique des renommages d’utilisateur',
 	'renameuserlogpagetext' => 'Ceci est l’historique des changements de nom des utilisateurs.',
-	'renameuser-log'        => 'Qqui avait $1 éditions à son actif. $2',
+	'renameuserlogentry'    => 'a renommé $1 vers [[User:$2]]',
+	'renameuser-log'        => '$1 éditions. Motif : $2',
 	'renameuser-move-log'   => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
 $wgRenameuserMessages['he'] = array(
