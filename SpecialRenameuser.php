@@ -45,9 +45,8 @@ $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
 
 function wfSpecialRenameuser() {
-	# Add messages
 	global $wgMessageCache, $wgRenameuserMessages;
-	foreach( $wgRenameuserMessages as $key => $value ) {
-		$wgMessageCache->addMessages( $wgRenameuserMessages[$key], $key );
+	foreach( $wgRenameuserMessages as $lang => $messages ) {
+		$wgMessageCache->addMessages( $messages, $lang );
 	}
 }
