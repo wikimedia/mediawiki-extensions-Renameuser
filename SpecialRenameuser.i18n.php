@@ -707,6 +707,7 @@ $wgRenameuserMessages['zh-hant'] = array(
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 );
+$wgRenameuserMessages['zh'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-cn'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-hant'];
 $wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-hans'];
