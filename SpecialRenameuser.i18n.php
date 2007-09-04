@@ -331,6 +331,7 @@ $wgRenameuserMessages['kk-kz'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
 	'renameusernew'    => 'Жаңа қатысушы аты:',
+	'renameuserreason' => 'Қайта атау себебі:',
 	'renameusermove'   => 'Қатысушының жеке және талқылау беттерін (және де олардың төменгі беттерін) жаңа атауға жылжыту',
 	'renameusersubmit' => 'Жіберу',
 
@@ -346,7 +347,7 @@ $wgRenameuserMessages['kk-kz'] = array(
 
 	'renameuserlogpage'     => 'Қатысушыны қайта атау журналы',
 	'renameuserlogpagetext' => 'Бұл қатысушы атындағы өзгерістер журналы',
-
+	'renameuserlogentry'    => '$1 атауын [[{{ns:user}}:$2]] дегенге өзгертті',
 	'renameuser-log'        => '$1 түзетуі бар. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
@@ -354,6 +355,7 @@ $wgRenameuserMessages['kk-tr'] = array(
 	'renameuser'       => 'Qatıswşını qaýta ataw',
 	'renameuserold'    => 'Ağımdağı qatıswşı atı:',
 	'renameusernew'    => 'Jaña qatıswşı atı:',
+	'renameuserreason' => 'Qaýta ataw sebebi:',
 	'renameusermove'   => 'Qatıswşınıñ jeke jäne talqılaw betterin (jäne de olardıñ tömengi betterin) jaña atawğa jıljıtw',
 	'renameusersubmit' => 'Jiberw',
 
@@ -369,7 +371,7 @@ $wgRenameuserMessages['kk-tr'] = array(
 
 	'renameuserlogpage'     => 'Qatıswşını qaýta ataw jwrnalı',
 	'renameuserlogpagetext' => 'Bul qatıswşı atındağı özgerister jwrnalı',
-
+	'renameuserlogentry'    => '$1 atawın [[{{ns:user}}:$2]] degenge özgertti',
 	'renameuser-log'        => '$1 tüzetwi bar. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
@@ -377,6 +379,7 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
 	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
+	'renameuserreason' => 'قايتا اتاۋ سەبەبٸ:',
 	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٵنە تالقىلاۋ بەتتەرٸن (جٵنە دە ولاردىڭ تٶمەنگٸ بەتتەرٸن) جاڭا اتاۋعا جىلجىتۋ',
 	'renameusersubmit' => 'جٸبەرۋ',
 
@@ -389,7 +392,7 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٷگە, جٵنە ٶزدٸك تٷردە ونىڭ ٷستٸنە ەشتەڭە جازىلمايدى.',
 	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
 	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
-
+	'renameuserlogentry'    => '$1 اتاۋىن [[{{ns:user}}:$2]] دەگەنگە ٶزگەرتتٸ',
 	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
 	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٶزگەرٸستەر جۋرنالى',
 
