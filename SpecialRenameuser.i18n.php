@@ -55,6 +55,14 @@ $wgRenameuserMessages['ar'] = array(
 	'renameuser-log' => 'والذي كان لديه $1 مساهمة. $2"',
 	'renameuser-move-log' => 'تم نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['bcl'] = array(
+	'renameusersubmit' => 'Isumitir',
+	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayô man',
+	'renameusererrorexists' => 'An parágamit "<nowiki>$1</nowiki>" yaon na',
+	'renameuser-page-moved' => 'An pahinang $1 piglipat sa $2.',
+	'renameuser-page-unmoved' => 'An pahinang $1 dai kayang mailipat sa $2.',
+	'renameuser-log' => '$1 mga hira. Rason: $2',
+);
 $wgRenameuserMessages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
@@ -136,6 +144,28 @@ $wgRenameuserMessages['de'] = array(
 	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
 	'renameuser-move-log'   => 'Durch die Umbenennung von „[[{{ns:user}}:$1|$1]]“ nach „[[{{ns:user}}:$2|$2]]“ automatisch verschobene Seite.',
 );
+$wgRenameuserMessages['eo'] = array(
+	'renameuser' => 'Alinomigu uzanton',
+	'renameuserold' => 'Aktuala uzantonomo:',
+	'renameusernew' => 'Nova uzantonomo:',
+	'renameuserreason' => 'Kialo por alinomigo:',
+	'renameusermove' => 'Movu uzantan kaj diskutan paĝojn (kaj ties subpaĝojn) al la nova nomo',
+	'renameusersubmit' => 'Ek',
+	'renameusererrordoesnotexist' => 'La uzanto "<nowiki>$1</nowiki>" ne ekzistas',
+	'renameusererrorexists' => 'La uzanto "<nowiki>$1</nowiki>" jam ekzistas',
+	'renameusererrorinvalid' => 'La uzantonomo "<nowiki>$1</nowiki>" estas malvalida',
+	'renameusererrortoomany' => 'La uzanto "<nowiki>$1</nowiki>" havas $2 kontribuojn. Alinamigo de uzanto kun pli ol $3 kontribuoj povus malbone influi paĝaran funkciadon',
+	'renameusersuccess' => 'La uzanto "<nowiki>$1</nowiki>" estas alinomita al "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'La paĝo $1 jam ekzistas kaj ne povas esti aŭtomate anstataŭata.',
+	'renameuser-page-moved' => 'La paĝo $1 estis movita al $2.',
+	'renameuser-page-unmoved' => 'La paĝo $1 ne povis esti movita al $2.',
+	'renameuserlogpage' => 'Uzantoalinomada loglibro
+
+<!--aŭ: Loglibro pri alinomigoj de uzantoj-->',
+	'renameuserlogpagetext' => 'Ĉi tio estas loglibro pri ŝanĝoj de uzantonomoj',
+	'renameuser-log' => '$1 redaktoj. Kialo: $2',
+	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['fi'] = array(
 	'renameuser'       => 'Käyttäjätunnuksen vaihto',
 	'renameuserold'    => 'Nykyinen tunnus:',
@@ -207,23 +237,24 @@ $wgRenameuserMessages['he'] = array(
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 $wgRenameuserMessages['hsb'] = array(
-	'renameuser'=> 'Wužiwarja přemjenować',
-	'renameuserold'=> 'Tuchwilne wužiwarske mjeno:',
-	'renameusernew'=> 'Nowe wužiwarske mjeno:',
-	'renameusermove'=> 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
-	'renameusersubmit'=> 'Składować',
-	'renameusererrordoesnotexist'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
-	'renameusererrorexists'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
-	'renameusererrorinvalid'=> 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
-	'renameusererrortoomany'=> 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
-	'renameusersuccess'=> 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
-	'renameuser-page-exists'=> 'Strona $1 hižo eksistuje a njemóže so awtomatisce přepisować.',
-	'renameuser-page-moved'=> 'Strona $1 bu pod nowy titul $2 přesunjena.',
-	'renameuser-page-unmoved'=> 'Njemóžno stronu $1 pod titul $2 přesunyć.',
-	'renameuserlogpage'=> 'Protokol přemjenowanja wužiwarjow',
-	'renameuserlogpagetext'=> 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
-	'renameuser-log'=> 'z $1 wobdźěłanjemi. $2',
-	'renameuser-move-log'=> 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
+	'renameuser' => 'Wužiwarja přemjenować',
+	'renameuserold' => 'Tuchwilne wužiwarske mjeno:',
+	'renameusernew' => 'Nowe wužiwarske mjeno:',
+	'renameuserreason' => 'Přičina za přemjenowanje:',
+	'renameusermove' => 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
+	'renameusersubmit' => 'Składować',
+	'renameusererrordoesnotexist' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
+	'renameusererrorexists' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
+	'renameusererrorinvalid' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
+	'renameusererrortoomany' => 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
+	'renameusersuccess' => 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
+	'renameuser-page-exists' => 'Strona $1 hižo eksistuje a njemóže so awtomatisce přepisować.',
+	'renameuser-page-moved' => 'Strona $1 bu pod nowy titul $2 přesunjena.',
+	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
+	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
+	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
+	'renameuser-log' => 'z $1 wobdźěłanjemi. $2',
+	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
 $wgRenameuserMessages['hu'] = array(
 	'renameuser'       => 'Szerkesztő átnevezése',
@@ -489,20 +520,19 @@ $wgRenameuserMessages['oc'] = array(
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
 $wgRenameuserMessages['pl'] = array(
-	'renameuser'       => 'Zmień nazwę użytkownika',
-	'renameuserold'    => 'Obecna nazwa użytkownika:',
-	'renameusernew'    => 'Nowa nazwa użytkownika:',
+	'renameuser' => 'Zmień nazwę użytkownika',
+	'renameuserold' => 'Obecna nazwa użytkownika:',
+	'renameusernew' => 'Nowa nazwa użytkownika:',
+	'renameuserreason' => 'Przyczyna zmiany nazwy:',
 	'renameusersubmit' => 'Zmień',
-
 	'renameusererrordoesnotexist' => 'Użytkownik "<nowiki>$1</nowiki>" nie istnieje',
-	'renameusererrorexists'       => 'Użytkownik "<nowiki>$1</nowiki>" już istnieje',
-	'renameusererrorinvalid'      => 'Nazwa użytkownika "<nowiki>$1</nowiki>" jest nieprawidłowa',
-	'renameusererrortoomany'      => 'Użytkownik "<nowiki>$1</nowiki>" ma $2 edycji. Zmiana nazwy użytkownika mającego powyżej $3 edycji może wpłynąć na wydajność serwisu.',
-	'renameusersuccess'           => 'Nazwa użytkownika "<nowiki>$1</nowiki>" została zmieniona na "<nowiki>$2</nowiki>"',
-
-	'renameuserlogpage'     => 'Zmiany nazw użytkowników',
+	'renameusererrorexists' => 'Użytkownik "<nowiki>$1</nowiki>" już istnieje w bazie',
+	'renameusererrorinvalid' => 'Niepoprawna nazwa użytkownika "<nowiki>$1</nowiki>"',
+	'renameusererrortoomany' => 'Użytkownik "<nowiki>$1</nowiki>" ma $2 edycji. Zmiana nazwy użytkownika mającego powyżej $3 edycji może wpłynąć na wydajność serwisu.',
+	'renameusersuccess' => 'Nazwa użytkownika "<nowiki>$1</nowiki>" została zmieniona na "<nowiki>$2</nowiki>"',
+	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
-	'renameuser-log'        => 'mającego $1 edycji. $2',
+	'renameuser-log' => 'mającego $1 edycji. $2',
 );
 /* Piedmontese (Bèrto 'd Sèra) */
 $wgRenameuserMessages['pms'] = array(
