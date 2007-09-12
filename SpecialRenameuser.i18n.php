@@ -294,6 +294,18 @@ $wgRenameuserMessages['id'] = array(
 	'renameuser-log'        => 'yang telah memiliki $1 suntingan. $2',
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['is'] = array(
+	'renameuser' => 'Breyta notandanafni',
+	'renameuserold' => 'Núverandi notandanafn:',
+	'renameusernew' => 'Nýja notandanafnið:',
+	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
+	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
+	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
+	'renameuser-page-moved' => 'Síðan $1 hefur verið færð á $2.',
+	'renameuser-page-unmoved' => 'Ekki var hægt að færa síðuna $1 á $2.',
+	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
+	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
+);
 $wgRenameuserMessages['it'] = array(
 	'renameuser'       => 'Modifica del nome utente',
 	'renameuserold'    => 'Nome utente attuale:',
