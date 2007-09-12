@@ -647,6 +647,7 @@ $wgRenameuserMessages['sv'] = array(
 	'renameuser'       => 'Döp om användare',
 	'renameuserold'    => 'Nuvarande användarnamn:',
 	'renameusernew'    => 'Nytt användarnamn:',
+	'renameuserreason' => 'Anledning till namnbytet:',
 	'renameusermove'   => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
 	'renameusersubmit' => 'Döp om',
 
@@ -662,6 +663,7 @@ $wgRenameuserMessages['sv'] = array(
 
 	'renameuserlogpage'     => 'Logg över användarnamnsbyten',
 	'renameuserlogpagetext' => 'Det här är en logg över ändringar av användarnamn',
+	'renameuserlogentry'    => 'döpte om $1 till [[User:$2]]',
 	'renameuser-log'        => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log'   => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
