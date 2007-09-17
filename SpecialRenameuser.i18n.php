@@ -172,6 +172,24 @@ $wgRenameuserMessages['eo'] = array(
 	'renameuser-log' => '$1 redaktoj. Kialo: $2',
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['es'] = array(
+	'renameuser' => 'Renombrar usuario',
+	'renameuserold' => 'Nombre actual:',
+	'renameusernew' => 'Nuevo nombre de usuario:',
+	'renameusermove' => 'Trasladar las páginas de usuario y de discusión (y sus subpáginas) al nuevo nombre',
+	'renameusersubmit' => 'Enviar',
+	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
+	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
+	'renameusererrorinvalid' => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
+	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 contribuciones, cambiar el nombre de un usuario con más de $3 contribuciones podría afectar notablemente al rendimiento del sitio',
+	'renameusersuccess' => 'El usuario «<nowiki>$1</nowiki>» ha sido renombrado a «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists' => 'La página $1 ya existe y no puede ser reemplazada automáticamente.',
+	'renameuser-page-moved' => 'La página $1 ha sido trasladada a $2.',
+	'renameuser-page-unmoved' => 'La página $1 no pudo ser trasladada a $2.',
+	'renameuserlogpage' => 'Registro de cambios de nombre de usuarios',
+	'renameuserlogpagetext' => 'Este es un registro de cambios de nombres de usuarios',
+	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['fi'] = array(
 	'renameuser'       => 'Käyttäjätunnuksen vaihto',
 	'renameuserold'    => 'Nykyinen tunnus:',
@@ -708,10 +726,23 @@ $wgRenameuserMessages['ur'] = array(
 );
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
-
-	'renameuser-log' => 'k\' aveut ddja fwait $1 candjmints. $2',
+	'renameuserold' => 'No d\' elodjaedje pol moumint:',
+	'renameusernew' => 'Novea no d\' elodjaedje:',
+	'renameuserreason' => 'Råjhon pol rilomaedje:',
+	'renameusermove' => 'Displaecî les pådjes d\' uzeu et d\' copene (eyet leus dzo-pådjes) viè l\' novea no',
+	'renameusersubmit' => 'Evoye',
+	'renameusererrordoesnotexist' => 'L\' uzeu «<nowiki>$1</nowiki>» n\' egzistêye nén',
+	'renameusererrorexists' => 'L\' uzeu «<nowiki>$1</nowiki>» egzistêye dedja',
+	'renameusererrorinvalid' => 'Li no d\' elodjaedje «<nowiki>$1</nowiki>» n\' est nén on no valide',
+	'renameusererrortoomany' => 'L\' uzeu «<nowiki>$1</nowiki>» a $2 contribouwaedjes, rilomer èn uzeu avou pus di $3 contribouwaedjes pout aveur des consecwinces sol performance del waibe',
+	'renameusersuccess' => 'L\' uzeu «<nowiki>$1</nowiki>» a stî rlomé a «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists' => 'Li pådje $1 egzistêye dedja et n\' pout nén esse otomaticmint spotcheye.',
+	'renameuser-page-moved' => 'Li pådje $1 a stî displaeceye viè $2.',
+	'renameuser-page-unmoved' => 'Li pådje $1 èn pout nén esse displaeceye viè $2.',
 	'renameuserlogpage' => 'Djournå des candjmints d\' no d\' uzeus',
 	'renameuserlogpagetext' => 'Chal pa dzo c\' est ene djivêye des uzeus k\' ont candjî leu no d\' elodjaedje.',
+	'renameuser-log' => 'k\' aveut ddja fwait $1 candjmints. $2',
+	'renameuser-move-log' => 'Pådje displaeceye otomaticmint tot rlomant l\' uzeu «[[User:$1|$1]]» viè «[[User:$2|$2]]»',
 );
 $wgRenameuserMessages['yue'] = array(
 	'renameuser'       => '改用戶名',
