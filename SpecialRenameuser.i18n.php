@@ -236,6 +236,9 @@ $wgRenameuserMessages['fr'] = array(
 	'renameuser-log'        => '$1 éditions. Motif : $2',
 	'renameuser-move-log'   => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
+$wgRenameuserMessages['gl'] = array(
+	'renameuser-move-log' => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
@@ -277,6 +280,7 @@ $wgRenameuserMessages['hsb'] = array(
 	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
 	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
 	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
+	'renameuserlogentry' => 'je $1 do [[User:$2]] přemjenował',
 	'renameuser-log' => 'z $1 wobdźěłanjemi. $2',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
