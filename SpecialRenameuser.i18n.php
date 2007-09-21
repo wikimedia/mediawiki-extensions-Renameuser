@@ -191,26 +191,25 @@ $wgRenameuserMessages['es'] = array(
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['fi'] = array(
-	'renameuser'       => 'Käyttäjätunnuksen vaihto',
-	'renameuserold'    => 'Nykyinen tunnus:',
-	'renameusernew'    => 'Uusi tunnus:',
-	'renameusermove'   => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
+	'renameuser' => 'Käyttäjätunnuksen vaihto',
+	'renameuserold' => 'Nykyinen tunnus',
+	'renameusernew' => 'Uusi tunnus',
+	'renameuserreason' => 'Kommentti',
+	'renameusermove' => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
 	'renameusersubmit' => 'Nimeä',
-
-	'renameuser-page-exists'      => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
-	'renameuser-page-moved'       => 'Sivu $1 siirrettiin nimelle $2.',
-	'renameuser-page-unmoved'     => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
-
 	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
-	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
-	'renameusererrorinvalid'      => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
-	'renameusererrortoomany'      => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
-	'renameusersuccess'           => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
-
-	'renameuserlogpage'     => 'Tunnusten vaihdot',
+	'renameusererrorexists' => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
+	'renameusererrorinvalid' => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
+	'renameusererrortoomany' => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameusersuccess' => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
+	'renameuser-page-exists' => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
+	'renameuser-page-moved' => 'Sivu $1 siirrettiin nimelle $2.',
+	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
+	'renameuserlogpage' => 'Tunnusten vaihdot',
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuser-log'        => 'Tehnyt $1 muokkausta. $2”',
-	'renameuser-move-log'   => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi [[User:$2|$2]]',
+	'renameuser-log' => 'Tehnyt $1 muokkausta. $2”',
+	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
 $wgRenameuserMessages['fr'] = array(
 	'renameuser'       => 'Renommer l’utilisateur',
