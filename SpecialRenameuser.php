@@ -22,8 +22,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'description' => 'Rename a user (need \'\'renameuser\'\' right)',
 );
 
-# Internationalisation file
-require_once( 'SpecialRenameuser.i18n.php' );
 
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
@@ -44,9 +42,20 @@ $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
 
+$wgHooks['LoadAllMessages'][] = 'wfSpecialRenameuserMessages';
+
 function wfSpecialRenameuser() {
-	global $wgMessageCache, $wgRenameuserMessages;
+	global $wgVersion;
+	if ( version_compare( $wgVersion, "1.8", '<' ) ) {
+		wfSpecialRenameuserMessages();
+	}
+}
+
+function wfSpecialRenameuserMessages() {
+	require( 'SpecialRenameuser.i18n.php' );
+	global $wgMessageCache;
 	foreach( $wgRenameuserMessages as $lang => $messages ) {
 		$wgMessageCache->addMessages( $messages, $lang );
 	}
+	return true;
 }

@@ -22,6 +22,7 @@ class SpecialRenameuser extends SpecialPage {
 		global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
 		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
 
+		wfSpecialRenameuserMessages();
 		$this->setHeaders();
 
 		if ( !$wgUser->isAllowed( 'renameuser' ) ) {
