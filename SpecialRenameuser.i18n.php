@@ -534,6 +534,7 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuser-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'renameuserlogpage' => 'Logboek gebruikersnaamwijzigingen',
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
+	'renameuserlogentry' => 'heeft $1 hernoemd naar [[User:$2|$2]]',
 	'renameuser-log' => '$1 bewerkingen. $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
