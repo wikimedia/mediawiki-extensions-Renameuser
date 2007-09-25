@@ -358,16 +358,16 @@ $wgRenameuserMessages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameusermove' => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
 	'renameusersubmit' => '変更',
-	'renameusererrordoesnotexist' => '利用者“<nowiki>$1</nowiki>”は存在しません。',
-	'renameusererrorexists' => '利用者“<nowiki>$1</nowiki>”は既に存在しています。',
-	'renameusererrorinvalid' => '利用者名“<nowiki>$1</nowiki>”は無効な値です。',
-	'renameusererrortoomany' => '利用者“$1”には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
-	'renameusersuccess' => '利用者“<nowiki>$1</nowiki>”を“<nowiki>$2</nowiki>”に変更しました。',
+	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
+	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
+	'renameusererrorinvalid' => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
+	'renameusererrortoomany' => '利用者 “<nowiki>$1</nowiki>” には、$2 の投稿履歴があります。$3 以上の投稿履歴のある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameusersuccess' => '利用者 “<nowiki>$1</nowiki>” を “<nowiki>$2</nowiki>” に変更しました。',
 	'renameuser-page-exists' => '$1 が既に存在しているため、自動で上書きできませんでした。',
 	'renameuser-page-moved' => '$1 を $2 に移動しました。',
 	'renameuser-page-unmoved' => '$1 を $2 に移動できませんでした。',
 	'renameuserlogpage' => '利用者名変更記録',
-	'renameuserlogpagetext' => 'これは利用者名の変更を記録したものです。',
+	'renameuserlogpagetext' => 'これは、利用者名の変更を記録したものです。',
 	'renameuser-log' => '投稿数 $1回. $2',
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
@@ -498,6 +498,9 @@ $wgRenameuserMessages['ku'] = array(
 	'renameusersuccess' => 'Navî bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
 	'renameusersubmit'  => 'Bike',
 	'renameuser-log'    => 'yê $1 beşdarîyên xwe hebû. $2',
+);
+$wgRenameuserMessages['la'] = array(
+	'renameusernew' => 'Novum nomen usoris:',
 );
 $wgRenameuserMessages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
