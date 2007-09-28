@@ -500,7 +500,12 @@ $wgRenameuserMessages['ku'] = array(
 	'renameuser-log'    => 'yê $1 beşdarîyên xwe hebû. $2',
 );
 $wgRenameuserMessages['la'] = array(
+	'renameuser' => 'Usorem renominare',
 	'renameusernew' => 'Novum nomen usoris:',
+	'renameuserlogpage' => 'Index renominationum usorum',
+	'renameuserlogpagetext' => 'Hic est index renominationum usorum',
+	'renameuserlogentry' => 'renominavit $1 in [[{{ns:user}}:$2]]',
+	'renameuser-log' => '$1 recensiones. Causa: $2',
 );
 $wgRenameuserMessages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
