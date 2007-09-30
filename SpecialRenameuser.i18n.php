@@ -263,6 +263,9 @@ $wgRenameuserMessages['he'] = array(
 	'renameuser-log'        => '$1 עריכות. סיבה: $2',
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
+$wgRenameuserMessages['hr'] = array(
+	'renameuser' => 'Promijeni ime suradnika',
+);
 $wgRenameuserMessages['hsb'] = array(
 	'renameuser' => 'Wužiwarja přemjenować',
 	'renameuserold' => 'Tuchwilne wužiwarske mjeno:',
@@ -639,6 +642,24 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores',
 	'renameuser-log' => 'que possuia $1 edições. Motivo: $2',
 	'renameuser-move-log' => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+);
+$wgRenameuserMessages['ro'] = array(
+	'renameuser' => 'Redenumeşte utilizator',
+	'renameuserold' => 'Numele de utilizator existent:',
+	'renameusernew' => 'Numele de utilizator nou:',
+	'renameusermove' => 'Mută pagina de utilizator şi pagina de discuţii (şi subpaginile lor) la noul nume',
+	'renameusersubmit' => 'Trimite',
+	'renameusererrordoesnotexist' => 'Utilizatorul "$1" nu există',
+	'renameusererrorexists' => 'Utilizatorul "$1" există deja',
+	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid',
+	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 contribuţii, redenumirea unui utilizator cu mai mult de $3 contribuţii ar putea afecta performanţa sitului',
+	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
+	'renameuser-page-exists' => 'Pagina $1 există deja şi nu poate fi suprascrisă automat.',
+	'renameuser-page-moved' => 'Pagina $1 a fost mutată la $2.',
+	'renameuser-page-unmoved' => 'Pagina $1 nu poate fi mutată la $2.',
+	'renameuserlogpage' => 'Raport redenumiri utilizatori',
+	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
+	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[Utilizator:$1|$1]]" la "[[Utilizator:$2|$2]]"',
 );
 $wgRenameuserMessages['ru'] = array(
 	'renameuser'       => 'Переименовать участника',
