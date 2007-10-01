@@ -149,7 +149,7 @@ $wgRenameuserMessages['de'] = array(
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
 	'renameuserlogentry'    => 'hat „$1“ umbenannt nach „[[{{ns:user}}:$2]]“',
 	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
-	'renameuser-move-log'   => 'Durch die Umbenennung von „[[{{ns:user}}:$1|$1]]“ nach „[[{{ns:user}}:$2|$2]]“ automatisch verschobene Seite.',
+	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1|$1]]“ nach „[[{{ns:user}}:$2|$2]]“ automatisch verschobene Seite.',
 );
 $wgRenameuserMessages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
