@@ -183,7 +183,7 @@ class SpecialRenameuser extends SpecialPage {
 				return;
 			}
 		}
-		
+
 		// Give other affected extensions a chance to validate or abort
 		if( !wfRunHooks( 'RenameUserAbort', array( $uid, $oldusername->getText(), $newusername->getText() ) ) ) {
 			return;
@@ -195,7 +195,7 @@ class SpecialRenameuser extends SpecialPage {
 		$log = new LogPage( 'renameuser' );
 		$log->addEntry( 'renameuser', $oldusername, wfMsgForContent( 'renameuser-log', $wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
 
-		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) . "</div>" );
+		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) . "</div><br style=\"clear:both\" />" );
 
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
@@ -258,11 +258,11 @@ class RenameuserSQL {
 	/**
 	  * The old username
 	  *
-	  * @var string 
+	  * @var string
 	  * @access private
 	  */
 	var $old;
-	
+
 	/**
 	  * The new username
 	  *
@@ -270,7 +270,7 @@ class RenameuserSQL {
 	  * @access private
 	  */
 	var $new;
-	
+
 	/**
 	  * The user ID
 	  *
@@ -313,7 +313,7 @@ class RenameuserSQL {
 			$this->tables['revision'] = 'rev_user_text';
 			$this->tables['recentchanges'] = 'rc_user_text';
 		}
-		
+
 	}
 
 	/**
@@ -321,9 +321,9 @@ class RenameuserSQL {
 	 */
 	function rename() {
 		global $wgMemc, $wgDBname, $wgAuth;
-		
+
 		wfProfileIn( __METHOD__ );
-		
+
 		$dbw =& wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
@@ -342,15 +342,15 @@ class RenameuserSQL {
 				#,array( $dbw->lowPriorityOption() )
 			);
 		}
-		
+
 		foreach( $this->tablesJob as $table => $params ) {
 			$res = $dbw->select( $table,
 					array( $params[0], $params[1] ),
 					array( $params[0] => $this->old )
 				);
-			
+
 			global $wgUpdateRowsPerJob;
-	
+
 			$batchSize = 500; // Lets not flood the job table!
 			$jobSize = $wgUpdateRowsPerJob; // How many rows per job?
 
@@ -402,5 +402,3 @@ class RenameuserSQL {
 		wfProfileOut( __METHOD__ );
 	}
 }
-
-
