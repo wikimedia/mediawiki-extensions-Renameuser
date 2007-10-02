@@ -251,7 +251,7 @@ $wgRenameuserMessages['he'] = array(
 	'renameusererrorexists'       => 'המשתמש "<nowiki>$1</nowiki>" כבר קיים.',
 	'renameusererrorinvalid'      => 'שם המשתמש "<nowiki>$1</nowiki>" אינו תקין.',
 	'renameusererrortoomany'      => 'למשתמש "<nowiki>$1</nowiki>" יש $2 תרומות; שינוי שם משתמש של משתמש עם יותר מ־$3 תרומות עלול להשפיע לרעה על ביצועי האתר.',
-	'renameusersuccess'           => 'שם המשתמש של המשתמש "<nowiki>$1</nowiki>" שונה לשם "<nowiki>$2</nowiki>"',
+	'renameusersuccess'           => 'שם המשתמש של "<nowiki>$1</nowiki>" שונה לשם "<nowiki>$2</nowiki>"',
 
 	'renameuser-page-exists'  => 'הדף $1 כבר קיים ולא ניתן לדרוס אותו אוטומטית.',
 	'renameuser-page-moved'   => 'הדף $1 הועבר לשם $2.',
