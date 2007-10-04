@@ -729,28 +729,25 @@ $wgRenameuserMessages['su'] = array(
 );
 
 $wgRenameuserMessages['sv'] = array(
-	'renameuser'       => 'Döp om användare',
-	'renameuserold'    => 'Nuvarande användarnamn:',
-	'renameusernew'    => 'Nytt användarnamn:',
+	'renameuser' => 'Byt användarnamn',
+	'renameuserold' => 'Nuvarande användarnamn:',
+	'renameusernew' => 'Nytt användarnamn:',
 	'renameuserreason' => 'Anledning till namnbytet:',
-	'renameusermove'   => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
-	'renameusersubmit' => 'Döp om',
-
-	'renameusererrordoesnotexist' => 'Det finns ingen användare med namnet "<nowiki>$1</nowiki>"',
-	'renameusererrorexists'       => 'Det finns redan en användare med namnet "<nowiki>$1</nowiki>"',
-	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" är inte ett giltigt användarnamn',
-	'renameusererrortoomany'      => 'Användaren "<nowiki>$1</nowiki>" har gjort $2 bidrag. Omdöpning av användare som gjort mer än $3 redigeringar kan påverka sajtens prestanda negativt.',
-	'renameusersuccess'           => 'Användaren "<nowiki>$1</nowiki>" har döpts om till "<nowiki>$2</nowiki>"',
-
-	'renameuser-page-exists'         => 'Sidan $1 finns redan och kan inte skrivas över automatiskt.',
-	'renameuser-page-moved'          => 'Sidan $1 flyttades till $2.',
-	'renameuser-page-unmoved'        => 'Sidan $1 kunde inte flyttas till $2.',
-
-	'renameuserlogpage'     => 'Logg över användarnamnsbyten',
-	'renameuserlogpagetext' => 'Det här är en logg över ändringar av användarnamn',
-	'renameuserlogentry'    => 'döpte om $1 till [[User:$2]]',
-	'renameuser-log'        => 'som hade gjort $1 redigeringar. $2',
-	'renameuser-move-log'   => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+	'renameusermove' => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
+	'renameusersubmit' => 'Byt',
+	'renameusererrordoesnotexist' => 'Användaren "<nowiki>$1</nowiki>" finns inte',
+	'renameusererrorexists' => 'Användarnamnet "<nowiki>$1</nowiki>" finns redan',
+	'renameusererrorinvalid' => 'Användarnamnet "<nowiki>$1</nowiki>" är felaktigt',
+	'renameusererrortoomany' => 'Användaren "<nowiki>$1</nowiki>" har $2 redigeringar. Att byta namn på en användare som gjort mer än $3 redigeringar kan påverka webbplatsens prestanda negativt.',
+	'renameusersuccess' => 'Användaren "<nowiki>$1</nowiki>" har döpts om till "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Sidan $1 finns redan och kan inte skrivas över automatiskt.',
+	'renameuser-page-moved' => 'Sidan $1 flyttades till $2.',
+	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
+	'renameuserlogpage' => 'Omdöpningslogg',
+	'renameuserlogpagetext' => 'Detta är en logg över byten av användarnamn',
+	'renameuserlogentry' => 'döpte om $1 till [[User:$2]]',
+	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
+	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['ur'] = array(
 	'renameuser'       => 'صارف کا نام تبدیل کریں',
