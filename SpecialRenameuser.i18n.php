@@ -191,6 +191,9 @@ $wgRenameuserMessages['es'] = array(
 	'renameuserlogpagetext' => 'Este es un registro de cambios de nombres de usuarios',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['ext'] = array(
+	'renameuser-page-moved' => 'S´á moviu la páhina $1 a $2.',
+);
 $wgRenameuserMessages['fi'] = array(
 	'renameuser' => 'Käyttäjätunnuksen vaihto',
 	'renameuserold' => 'Nykyinen tunnus',
@@ -211,6 +214,9 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi [[User:$2|$2]]',
 	'renameuser-log' => 'Tehnyt $1 muokkausta. $2”',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+);
+$wgRenameuserMessages['fo'] = array(
+	'renameusernew' => 'Nýtt brúkaranavn:',
 );
 $wgRenameuserMessages['fr'] = array(
 	'renameuser'       => 'Renommer l’utilisateur',
@@ -599,9 +605,14 @@ $wgRenameuserMessages['pl'] = array(
 	'renameusererrorinvalid' => 'Niepoprawna nazwa użytkownika "<nowiki>$1</nowiki>"',
 	'renameusererrortoomany' => 'Użytkownik "<nowiki>$1</nowiki>" ma $2 edycji. Zmiana nazwy użytkownika mającego powyżej $3 edycji może wpłynąć na wydajność serwisu.',
 	'renameusersuccess' => 'Nazwa użytkownika "<nowiki>$1</nowiki>" została zmieniona na "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Strona "$1" już istnieje i nie może być automatycznie nadpisana.',
+	'renameuser-page-moved' => 'Strona "$1" została przeniesiona do "$2".',
+	'renameuser-page-unmoved' => 'Strona "$1" nie mogła zostać przeniesiona do "$2".',
 	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
+	'renameuserlogentry' => 'zmienił/a użytkownikowi $1 nazwę na [[User:$2|$2]]',
 	'renameuser-log' => 'mającego $1 edycji. $2',
+	'renameuser-move-log' => 'Automatyczne przenosiny stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 /* Piedmontese (Bèrto 'd Sèra) */
 $wgRenameuserMessages['pms'] = array(
@@ -678,26 +689,25 @@ $wgRenameuserMessages['ru'] = array(
 	'renameuser-log'        => 'имеющий $1 правок. $2',
 );
 $wgRenameuserMessages['sk'] = array(
-	'renameuser'       => 'Premenovať používateľa',
-	'renameuserold'    => 'Súčasné používateľské meno:',
-	'renameusernew'    => 'Nové používateľské meno:',
-	'renameusermove'   => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
+	'renameuser' => 'Premenovať používateľa',
+	'renameuserold' => 'Súčasné používateľské meno:',
+	'renameusernew' => 'Nové používateľské meno:',
+	'renameuserreason' => 'Dôvod premenovania:',
+	'renameusermove' => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
 	'renameusersubmit' => 'Odoslať',
-
 	'renameusererrordoesnotexist' => 'Používateľ "<nowiki>$1</nowiki>" neexistuje',
-	'renameusererrorexists'       => 'Používateľ "<nowiki>$1</nowiki>" už existuje',
-	'renameusererrorinvalid'      => 'Používateľské meno "<nowiki>$1</nowiki>" je neplatné',
-	'renameusererrortoomany'      => 'Používateľ "<nowiki>$1</nowiki>" má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
-	'renameusersuccess'           => 'Používateľ "<nowiki>$1</nowiki>" bol premenovaný na "<nowiki>$2</nowiki>"',
-
-	'renameuser-page-exists'         => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
-	'renameuser-page-moved'          => 'Stránka $1 bola presunutá na $2.',
-	'renameuser-page-unmoved'        => 'Stránku $1 nebolo možné presunúť na $2.',
-
-	'renameuserlogpage'     => 'Záznam premenovaní používateľov',
+	'renameusererrorexists' => 'Používateľ "<nowiki>$1</nowiki>" už existuje',
+	'renameusererrorinvalid' => 'Používateľské meno "<nowiki>$1</nowiki>" je neplatné',
+	'renameusererrortoomany' => 'Používateľ "<nowiki>$1</nowiki>" má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
+	'renameusersuccess' => 'Používateľ "<nowiki>$1</nowiki>" bol premenovaný na "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
+	'renameuser-page-moved' => 'Stránka $1 bola presunutá na $2.',
+	'renameuser-page-unmoved' => 'Stránku $1 nebolo možné presunúť na $2.',
+	'renameuserlogpage' => 'Záznam premenovaní používateľov',
 	'renameuserlogpagetext' => 'Toto je záznam premenovaní používateľov',
-	'renameuser-log'        => 'mal $1 úpravy. $2',
-	'renameuser-move-log'   => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
+	'renameuserlogentry' => 'premenoval používateľa $1 na [[User:$2]]',
+	'renameuser-log' => 'mal $1 úpravy. $2',
+	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['sq'] = array(
 	'renameuser'                  => 'Ndërrim përdoruesi',
