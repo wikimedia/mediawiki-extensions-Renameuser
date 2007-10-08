@@ -509,6 +509,7 @@ $wgRenameuserMessages['ku'] = array(
 $wgRenameuserMessages['la'] = array(
 	'renameuser' => 'Usorem renominare',
 	'renameusernew' => 'Novum nomen usoris:',
+	'renameusererrordoesnotexist' => 'Usor "<nowiki>$1</nowiki>" non existit',
 	'renameuserlogpage' => 'Index renominationum usorum',
 	'renameuserlogpagetext' => 'Hic est index renominationum usorum',
 	'renameuserlogentry' => 'renominavit $1 in [[{{ns:user}}:$2]]',
