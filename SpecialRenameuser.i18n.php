@@ -514,6 +514,11 @@ $wgRenameuserMessages['la'] = array(
 	'renameuserlogentry' => 'renominavit $1 in [[{{ns:user}}:$2]]',
 	'renameuser-log' => '$1 recensiones. Causa: $2',
 );
+$wgRenameuserMessages['nan'] = array(
+	'renameuser'       => 'Kái iōng-chiá ê miâ',
+	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
+	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
+);
 $wgRenameuserMessages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
 	'renameuserold' => 'Brukernaam nu:',
@@ -849,6 +854,7 @@ $wgRenameuserMessages['zh-hant'] = array(
 $wgRenameuserMessages['zh'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-cn'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-hant'];
+$wgRenameuserMessages['zh-min-nan'] = $wgRenameuserMessages['nan'];
 $wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-tw'] = $wgRenameuserMessages['zh-hant'];
 $wgRenameuserMessages['zh-yue'] = $wgRenameuserMessages['yue'];
