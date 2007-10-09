@@ -219,17 +219,17 @@ class SpecialRenameuser extends SpecialPage {
 				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDbKey(), $row->page_title ) );
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
 					$link = $skin->makeKnownLinkObj( $newPage );
-					$output .= '<li>' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
+					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
 					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
 					if( $success === true ) {
 						$oldLink = $skin->makeKnownLinkObj( $oldPage );
 						$newLink = $skin->makeKnownLinkObj( $newPage );
-						$output .= '<li>' . wfMsgHtml( 'renameuser-page-moved', $oldLink, $newLink ) . '</li>';
+						$output .= '<li class="mw-renameuser-pm">' . wfMsgHtml( 'renameuser-page-moved', $oldLink, $newLink ) . '</li>';
 					} else {
 						$oldLink = $skin->makeKnownLinkObj( $oldPage );
 						$newLink = $skin->makeLinkObj( $newPage );
-						$output .= '<li>' . wfMsgHtml( 'renameuser-page-unmoved', $oldLink, $newLink ) . '</li>';
+						$output .= '<li class="mw-renameuser-pu">' . wfMsgHtml( 'renameuser-page-unmoved', $oldLink, $newLink ) . '</li>';
 					}
 				}
 			}
