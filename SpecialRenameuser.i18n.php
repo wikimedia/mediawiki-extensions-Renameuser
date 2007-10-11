@@ -59,11 +59,11 @@ $wgRenameuserMessages['ar'] = array(
 );
 $wgRenameuserMessages['bcl'] = array(
 	'renameusersubmit' => 'Isumitir',
-	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayô man',
+	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayò man',
 	'renameusererrorexists' => 'An parágamit "<nowiki>$1</nowiki>" yaon na',
-	'renameuser-page-moved' => 'An pahinang $1 piglipat sa $2.',
-	'renameuser-page-unmoved' => 'An pahinang $1 dai kayang mailipat sa $2.',
-	'renameuser-log' => '$1 mga hira. Rason: $2',
+	'renameuser-page-moved' => 'An páhinang $1 piglipat sa $2.',
+	'renameuser-page-unmoved' => 'An páhinang $1 dai mailipat sa $2.',
+	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
 $wgRenameuserMessages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
