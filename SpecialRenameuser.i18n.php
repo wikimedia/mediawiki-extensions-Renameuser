@@ -151,6 +151,9 @@ $wgRenameuserMessages['de'] = array(
 	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
 	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
 );
+$wgRenameuserMessages['el'] = array(
+	'renameuserlogentry' => '$1 μετονομάστηκε σε [[User:$2]]',
+);
 $wgRenameuserMessages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
 	'renameuserold' => 'Aktuala uzantonomo:',
@@ -334,6 +337,7 @@ $wgRenameuserMessages['is'] = array(
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
 	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
 	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
+	'renameuser-page-exists' => 'Síða sem heitir $1 er nú þegar til og það er ekki hægt að búa til nýja grein með sama heiti.',
 	'renameuser-page-moved' => 'Síðan $1 hefur verið færð á $2.',
 	'renameuser-page-unmoved' => 'Ekki var hægt að færa síðuna $1 á $2.',
 	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
