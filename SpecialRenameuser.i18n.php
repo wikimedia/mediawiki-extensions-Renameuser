@@ -27,7 +27,7 @@ $wgRenameuserMessages['en'] = array(
 
 	'renameuserlogpage'     => 'User rename log',
 	'renameuserlogpagetext' => 'This is a log of changes to user names',
-	'renameuserlogentry'    => 'has renamed $1 to [[User:$2]]',
+	'renameuserlogentry'    => 'has renamed $1 to $2',
 	'renameuser-log'        => '$1 edits. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
@@ -53,7 +53,7 @@ $wgRenameuserMessages['ar'] = array(
 	'renameuser-page-unmoved' => 'لم يتمكن من نقل الصفحة $1 إلى $2.',
 	'renameuserlogpage' => 'سجل تغيير أسماء المستخدمين',
 	'renameuserlogpagetext' => 'هذا سجل بالتغييرات في أسماء المستخدمين',
-	'renameuserlogentry' => 'أعاد تسمية $1 باسم [[User:$2]]',
+	'renameuserlogentry' => 'أعاد تسمية $1 باسم $2',
 	'renameuser-log' => '$1 تعديل. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
@@ -123,7 +123,7 @@ $wgRenameuserMessages['cs'] = array(
 	'renameuser-page-unmoved' => 'Stránku $1 se nepodařilo přesunout na $2.',
 	'renameuserlogpage' => 'Kniha přejmenování uživatelů',
 	'renameuserlogpagetext' => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
-	'renameuserlogentry' => 'přejmenovává $1 na [[User:$2|$2]]',
+	'renameuserlogentry' => 'přejmenovává $1 na $2',
 	'renameuser-log' => '$1 editací. $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
@@ -147,7 +147,7 @@ $wgRenameuserMessages['de'] = array(
 
 	'renameuserlogpage'     => 'Benutzernamenänderungs-Logbuch',
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
-	'renameuserlogentry'    => 'hat „$1“ in „[[{{ns:user}}:$2]]“ umbenannt',
+	'renameuserlogentry'    => 'hat „$1“ in „$2“ umbenannt',
 	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
 	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
 );
@@ -211,7 +211,7 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
 	'renameuserlogpage' => 'Tunnusten vaihdot',
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi [[User:$2|$2]]',
+	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi $2',
 	'renameuser-log' => 'Tehnyt $1 muokkausta. $2”',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
@@ -235,7 +235,7 @@ $wgRenameuserMessages['fr'] = array(
 	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
 	'renameuserlogpage' => 'Historique des renommages d\'utilisateur',
 	'renameuserlogpagetext' => 'Ceci est l\'historique des changements de noms d\'utilisateur',
-	'renameuserlogentry' => 'a renommé $1 vers [[User:$2]]',
+	'renameuserlogentry' => 'a renommé $1 vers $2',
 	'renameuser-log' => '$1 éditions. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
@@ -262,7 +262,7 @@ $wgRenameuserMessages['he'] = array(
 
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
-	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" לשם "[[{{ns:user}}:$2|$2]]"',
+	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" לשם "$2"',
 	'renameuser-log'        => '$1 עריכות. סיבה: $2',
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
@@ -286,7 +286,7 @@ $wgRenameuserMessages['hsb'] = array(
 	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
 	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
 	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
-	'renameuserlogentry' => 'je $1 do [[User:$2]] přemjenował',
+	'renameuserlogentry' => 'je $1 do $2 přemjenował',
 	'renameuser-log' => 'z $1 wobdźěłanjemi. $2',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
@@ -356,7 +356,7 @@ $wgRenameuserMessages['it'] = array(
 	'renameuser-page-unmoved' => 'Impossibile spostare la pagina $1 a $2.',
 	'renameuserlogpage' => 'Utenti rinominati',
 	'renameuserlogpagetext' => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
-	'renameuserlogentry' => 'ha rinominato $1 in [[Utente:$2]]',
+	'renameuserlogentry' => 'ha rinominato $1 in $2',
 	'renameuser-log' => 'Che ha $1 contributi. $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
@@ -423,7 +423,7 @@ $wgRenameuserMessages['kk-kz'] = array(
 
 	'renameuserlogpage'     => 'Қатысушыны қайта атау журналы',
 	'renameuserlogpagetext' => 'Бұл қатысушы атындағы өзгерістер журналы',
-	'renameuserlogentry'    => '$1 атауын [[{{ns:user}}:$2]] дегенге өзгертті',
+	'renameuserlogentry'    => '$1 атауын $2 дегенге өзгертті',
 	'renameuser-log'        => '$1 түзетуі бар. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
@@ -447,7 +447,7 @@ $wgRenameuserMessages['kk-tr'] = array(
 
 	'renameuserlogpage'     => 'Qatıswşını qaýta ataw jwrnalı',
 	'renameuserlogpagetext' => 'Bul qatıswşı atındağı özgerister jwrnalı',
-	'renameuserlogentry'    => '$1 atawın [[{{ns:user}}:$2]] degenge özgertti',
+	'renameuserlogentry'    => '$1 atawın $2 degenge özgertti',
 	'renameuser-log'        => '$1 tüzetwi bar. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
@@ -468,7 +468,7 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٷگە, جٵنە ٶزدٸك تٷردە ونىڭ ٷستٸنە ەشتەڭە جازىلمايدى.',
 	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
 	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
-	'renameuserlogentry'    => '$1 اتاۋىن [[{{ns:user}}:$2]] دەگەنگە ٶزگەرتتٸ',
+	'renameuserlogentry'    => '$1 اتاۋىن $2 دەگەنگە ٶزگەرتتٸ',
 	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
 	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٶزگەرٸستەر جۋرنالى',
 
@@ -513,7 +513,7 @@ $wgRenameuserMessages['la'] = array(
 	'renameusererrordoesnotexist' => 'Usor "<nowiki>$1</nowiki>" non existit',
 	'renameuserlogpage' => 'Index renominationum usorum',
 	'renameuserlogpagetext' => 'Hic est index renominationum usorum',
-	'renameuserlogentry' => 'renominavit $1 in [[{{ns:user}}:$2]]',
+	'renameuserlogentry' => 'renominavit $1 in $2',
 	'renameuser-log' => '$1 recensiones. Causa: $2',
 );
 $wgRenameuserMessages['nan'] = array(
@@ -556,7 +556,7 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuser-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'renameuserlogpage' => 'Logboek gebruikersnaamwijzigingen',
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
-	'renameuserlogentry' => 'heeft $1 hernoemd naar [[User:$2|$2]]',
+	'renameuserlogentry' => 'heeft $1 hernoemd naar $2',
 	'renameuser-log' => '$1 bewerkingen. $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
@@ -614,7 +614,7 @@ $wgRenameuserMessages['pl'] = array(
 	'renameuser-page-unmoved' => 'Strona "$1" nie mogła zostać przeniesiona do "$2".',
 	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
-	'renameuserlogentry' => 'zmienił/a użytkownikowi $1 nazwę na [[User:$2|$2]]',
+	'renameuserlogentry' => 'zmienił/a użytkownikowi $1 nazwę na $2',
 	'renameuser-log' => 'mającego $1 edycji. $2',
 	'renameuser-move-log' => 'Automatyczne przenosiny stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
@@ -709,7 +709,7 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuser-page-unmoved' => 'Stránku $1 nebolo možné presunúť na $2.',
 	'renameuserlogpage' => 'Záznam premenovaní používateľov',
 	'renameuserlogpagetext' => 'Toto je záznam premenovaní používateľov',
-	'renameuserlogentry' => 'premenoval používateľa $1 na [[User:$2]]',
+	'renameuserlogentry' => 'premenoval používateľa $1 na $2',
 	'renameuser-log' => 'mal $1 úpravy. $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
@@ -759,7 +759,7 @@ $wgRenameuserMessages['sv'] = array(
 	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
 	'renameuserlogpage' => 'Omdöpningslogg',
 	'renameuserlogpagetext' => 'Detta är en logg över byten av användarnamn',
-	'renameuserlogentry' => 'döpte om $1 till [[User:$2]]',
+	'renameuserlogentry' => 'döpte om $1 till $2',
 	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
