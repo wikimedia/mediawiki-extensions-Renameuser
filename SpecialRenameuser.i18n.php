@@ -271,6 +271,24 @@ $wgRenameuserMessages['he'] = array(
 );
 $wgRenameuserMessages['hr'] = array(
 	'renameuser' => 'Promijeni ime suradnika',
+	'renameuserold' => 'Trenutno suradničko ime:',
+	'renameusernew' => 'Novo suradničko ime:',
+	'renameuserreason' => 'Razlog za promjenu imena:',
+	'renameusermove' => 'Premjesti suradnikove stranice (glavnu, stranicu za razgovor i podstranice, ako postoje) na novo ime',
+	'renameusersubmit' => 'Potvrdi',
+	'renameusererrordoesnotexist' => 'Suradnik "<nowiki>$1</nowiki>" ne postoji (suradničko ime nije zauzeto).',
+	'renameusererrorexists' => 'Suradničko ime "<nowiki>$1</nowiki>" već postoji',
+	'renameusererrorinvalid' => 'Suradničko ime "<nowiki>$1</nowiki>" nije valjano',
+	'renameusererrortoomany' => 'Suradnik "<nowiki>$1</nowiki>" ima $2 uređivanja, preimenovanje suradnika s više od $3 uređivanja moglo bi usporiti ovaj wiki',
+	'renameusersuccess' => 'Suradnik "<nowiki>$1</nowiki>" je preimenovan u "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može biti prepisana.',
+	'renameuser-page-moved' => 'Suradnikova stranica $1 je premještena, sad se zove: $2.',
+	'renameuser-page-unmoved' => 'Stranica $1 ne može biti preimenovana u $2.',
+	'renameuserlogpage' => 'Evidencija preimenovanja suradnika',
+	'renameuserlogpagetext' => 'Ovo je evidencija promjena suradničkih imena',
+	'renameuserlogentry' => 'je promijenio suradničko ime $1 u $2',
+	'renameuser-log' => '$1 uređivanja. Razlog: $2',
+	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['hsb'] = array(
 	'renameuser' => 'Wužiwarja přemjenować',
