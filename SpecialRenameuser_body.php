@@ -311,7 +311,7 @@ class RenameuserSQL {
 			#$this->tablesJob['revision'] = array('rev_user_text','rev_id');
 			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
 		} else {
-			$this->tables['revision'] = 'rev_user_text';
+			#$this->tables['revision'] = 'rev_user_text';
 			$this->tables['recentchanges'] = 'rc_user_text';
 		}
 
