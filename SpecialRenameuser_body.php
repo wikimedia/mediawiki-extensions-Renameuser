@@ -302,12 +302,13 @@ class RenameuserSQL {
 		$this->tables = array(
 			'image' => 'img_user_text',
 			'oldimage' => 'oi_user_text',
-			'archive' => 'ar_user_text'
+			'archive' => 'ar_user_text',
+			'revision' => 'rev_user_text'
 		);
 		$this->tablesJob = array();
 		// See if this is for large tables on large, busy, wikis
 		if( function_exists('wfQueriesMustScale') && wfQueriesMustScale() ) {
-			$this->tablesJob['revision'] = array('rev_user_text','rev_id');
+			#$this->tablesJob['revision'] = array('rev_user_text','rev_id');
 			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
 		} else {
 			$this->tables['revision'] = 'rev_user_text';
