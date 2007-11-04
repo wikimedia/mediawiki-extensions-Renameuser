@@ -123,7 +123,7 @@ $wgRenameuserMessages['cs'] = array(
 	'renameuser-page-unmoved' => 'Stránku $1 se nepodařilo přesunout na $2.',
 	'renameuserlogpage' => 'Kniha přejmenování uživatelů',
 	'renameuserlogpagetext' => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
-	'renameuserlogentry' => 'přejmenovává $1 na $2',
+	'renameuserlogentry' => 'přejmenovává $1 na [[User:$2|$2]]',
 	'renameuser-log' => '$1 editací. $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
