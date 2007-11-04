@@ -74,7 +74,7 @@ class SpecialRenameuser extends SpecialPage {
 					Xml::label( wfMsg( 'renameuserreason' ), 'reason' ) .
 				"</td>
 				<td>" .
-					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '4' ) ) .
+					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '4', 'maxlength' => 255 ) ) .
 				"</td>
 			</tr>"
 		);
