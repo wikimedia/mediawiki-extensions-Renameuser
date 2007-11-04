@@ -656,6 +656,7 @@ $wgRenameuserMessages['oc'] = array(
 	'renameuser' => 'Renomenar l\'utilizaire',
 	'renameuserold' => 'Nom actual de l\'utilizaire :',
 	'renameusernew' => 'Nom novèl de l\'utilizaire :',
+	'renameuserreason' => 'Motiu del renomenatge :',
 	'renameusermove' => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
 	'renameusersubmit' => 'Sometre',
 	'renameusererrordoesnotexist' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » es pas valid',
