@@ -197,6 +197,27 @@ $wgRenameuserMessages['es'] = array(
 $wgRenameuserMessages['ext'] = array(
 	'renameuser-page-moved' => 'S´á moviu la páhina $1 a $2.',
 );
+$wgRenameuserMessages['fa'] = array(
+	'renameuser' => 'تغییر نام کاربری',
+	'renameuserold' => 'نام کاربری فعلی:',
+	'renameusernew' => 'نام کاربری جدید:',
+	'renameuserreason' => 'علت تغییر نام کاربری:',
+	'renameusermove' => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
+	'renameusersubmit' => 'ثبت',
+	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
+	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
+	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
+	'renameusererrortoomany' => 'کاربر «<nowiki>$1</nowiki>» دارای $2 مشارکت است؛ تغییر نام کاربران با بیش از $3 ویرایش ممکن است عملکرد وبگاه را دچار مشکل کند.',
+	'renameusersuccess' => 'نام کاربر «<nowiki>$1</nowiki>» به «<nowiki>$2</nowiki>» تغییر یافت.',
+	'renameuser-page-exists' => 'صفحهٔ $1 از قبل وجود داشته و به طور خودکار قابل بازنویسی نیست.',
+	'renameuser-page-moved' => 'صفحهٔ $1 به $2 انتقال داده شد.',
+	'renameuser-page-unmoved' => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
+	'renameuserlogpage' => 'سیاهه تغییر نام کاربر',
+	'renameuserlogpagetext' => 'این سیاههٔ تغییر نام کاربران است',
+	'renameuserlogentry' => 'نام $1 را به $2 تغییر داد',
+	'renameuser-log' => '$1 ویرایش. دلیل: $2',
+	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
+);
 $wgRenameuserMessages['fi'] = array(
 	'renameuser' => 'Käyttäjätunnuksen vaihto',
 	'renameuserold' => 'Nykyinen tunnus',
@@ -214,7 +235,7 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
 	'renameuserlogpage' => 'Tunnusten vaihdot',
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi $2',
+	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi [[User:$2|$2]]',
 	'renameuser-log' => 'Tehnyt $1 muokkausta. $2”',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
