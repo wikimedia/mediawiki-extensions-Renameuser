@@ -14,17 +14,14 @@ $wgRenameuserMessages['en'] = array(
 	'renameuserreason' => 'Reason for rename:',
 	'renameusermove'   => 'Move user and talk pages (and their subpages) to new name',
 	'renameusersubmit' => 'Submit',
-
 	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist',
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists',
 	'renameusererrorinvalid'      => 'The username "<nowiki>$1</nowiki>" is invalid',
 	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance',
 	'renameusersuccess'           => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
-
 	'renameuser-page-exists'         => 'The page $1 already exists and cannot be automatically overwritten.',
 	'renameuser-page-moved'          => 'The page $1 has been moved to $2.',
 	'renameuser-page-unmoved'        => 'The page $1 could not be moved to $2.',
-
 	'renameuserlogpage'     => 'User rename log',
 	'renameuserlogpagetext' => 'This is a log of changes to user names',
 	'renameuserlogentry'    => 'has renamed $1 to $2',
@@ -537,24 +534,20 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
 $wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
-
 $wgRenameuserMessages['ko'] = array(
 	'renameuser'       => '사용자 이름 변경',
 	'renameuserold'    => '기존 사용자 이름:',
 	'renameusernew'    => '새 이름:',
 	'renameusermove'   => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
 	'renameusersubmit' => '변경',
-
 	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
 	'renameusererrorexists'       => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
 	'renameusererrorinvalid'      => '‘<nowiki>$1</nowiki>’ 사용자 이름이 잘못되었습니다.',
 	'renameusererrortoomany'      => '‘<nowiki>$1</nowiki>’ 사용자는 $2번의 기여를 했습니다. $3번을 넘는 기여를 한 사용자의 이름을 변경하는 것은 성능 저하를 일으킬 수 있습니다.',
 	'renameusersuccess'           => '‘<nowiki>$1</nowiki>’ 사용자가 ‘<nowiki>$2</nowiki>’(으)로 변경되었습니다.',
-
 	'renameuser-page-exists'         => '$1 문서가 이미 존재하여 자동으로 이동하지 못했습니다.',
 	'renameuser-page-moved'          => '$1 문서를 $2(으)로 이동했습니다.',
 	'renameuser-page-unmoved'        => '$1 문서를 $2(으)로 이동하지 못했습니다.',
-
 	'renameuserlogpage'     => '이름 변경 기록',
 	'renameuserlogpagetext' => '사용자 이름 변경 기록입니다.',
 	'renameuser-log'        => '$1개의 기여. $2',
@@ -673,7 +666,7 @@ $wgRenameuserMessages['oc'] = array(
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
 $wgRenameuserMessages['pl'] = array(
-	'renameuser' => 'Zmień nazwę użytkownika',
+	'renameuser' => 'Zmiana nazwy użytkownika',
 	'renameuserold' => 'Obecna nazwa użytkownika:',
 	'renameusernew' => 'Nowa nazwa użytkownika:',
 	'renameuserreason' => 'Przyczyna zmiany nazwy:',
@@ -689,9 +682,9 @@ $wgRenameuserMessages['pl'] = array(
 	'renameuser-page-unmoved' => 'Strona "$1" nie mogła zostać przeniesiona do "$2".',
 	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
-	'renameuserlogentry' => 'zmienił/a użytkownikowi $1 nazwę na [[User:$2|$2]]',
+	'renameuserlogentry' => 'zmieniono użytkownikowi $1 nazwę na [[User:$2|$2]]',
 	'renameuser-log' => 'mającego $1 edycji. $2',
-	'renameuser-move-log' => 'Automatyczne przenosiny stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 /* Piedmontese (Bèrto 'd Sèra) */
 $wgRenameuserMessages['pms'] = array(
@@ -840,6 +833,14 @@ $wgRenameuserMessages['sv'] = array(
 	'renameuserlogentry' => 'döpte om $1 till $2',
 	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+);
+$wgRenameuserMessages['tr'] = array(
+	'renameuserold' => 'Şu anda ki kullanıcı adı:',
+	'renameusernew' => 'Yeni kullanıcı adı:',
+	'renameusersubmit' => 'Gönder',
+	'renameusersuccess' => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
+	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
+	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
 );
 $wgRenameuserMessages['ur'] = array(
 	'renameuser'       => 'صارف کا نام تبدیل کریں',
