@@ -124,6 +124,19 @@ $wgRenameuserMessages['cs'] = array(
 	'renameuser-log' => '$1 editací. $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
+$wgRenameuserMessages['cu'] = array(
+	'renameuser' => 'Прѣименѹи польѕевател҄ь',
+	'renameuserold' => 'Нынѣщьнѥѥ имѧ:',
+	'renameusernew' => 'Ново имѧ:',
+	'renameuserreason' => 'Какъ съмыслъ:',
+	'renameusermove' => 'Нарьци тако польѕевател страницѫ, бесѣдѫ и ихъ подъстраницѧ',
+	'renameusersubmit' => 'Еи',
+	'renameusererrordoesnotexist' => 'Польѕевател «<nowiki>$1</nowiki>» нѣстъ',
+	'renameusererrorexists' => 'Польѕевател҄ь «<nowiki>$1</nowiki>» ѥстъ ю',
+	'renameusererrorinvalid' => 'Имѧ «<nowiki>$1</nowiki>» нѣстъ годѣ',
+	'renameusererrortoomany' => 'Польѕевател҄ь «<nowiki>$1</nowiki>» $2 {{PLURAL:$2|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ. Аще польѕевател прѣименѹѥши кыи болѥ $3 {{PLURAL:$3|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ, то зълѣ бѫдетъ.',
+	'renameuserlogentry' => 'нарече $1 именьмь $2',
+);
 $wgRenameuserMessages['de'] = array(
 	'renameuser'       => 'Benutzer umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
