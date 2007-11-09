@@ -202,6 +202,8 @@ $wgRenameuserMessages['es'] = array(
 	'renameuser-page-unmoved' => 'La página $1 no pudo ser trasladada a $2.',
 	'renameuserlogpage' => 'Registro de cambios de nombre de usuarios',
 	'renameuserlogpagetext' => 'Este es un registro de cambios de nombres de usuarios',
+	'renameuserlogentry' => 'ha renombrado a $1 a [[Usuario:$2]]',
+	'renameuser-log' => '$1 ediciones. Motivo: $2',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 $wgRenameuserMessages['ext'] = array(
