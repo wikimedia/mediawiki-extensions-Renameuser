@@ -677,6 +677,7 @@ $wgRenameuserMessages['oc'] = array(
 	'renameuser-page-unmoved' => 'La pagina $1 pòt pas èsser renomenada en $2.',
 	'renameuserlogpage' => 'Istoric dels renomenatges d\'utilizaire',
 	'renameuserlogpagetext' => 'Aquò es l\'istoric dels cambiaments de nom dels utilizaires',
+	'renameuserlogentry' => 'a renomenat $1 en $2',
 	'renameuser-log' => 'qu\'aviá $1 edicions a son actiu. $2',
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
@@ -698,7 +699,7 @@ $wgRenameuserMessages['pl'] = array(
 	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
 	'renameuserlogentry' => 'zmieniono użytkownikowi $1 nazwę na [[User:$2|$2]]',
-	'renameuser-log' => 'mającego $1 edycji. $2',
+	'renameuser-log' => '$1 edycji. Powód: $2',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 /* Piedmontese (Bèrto 'd Sèra) */
