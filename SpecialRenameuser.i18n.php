@@ -190,6 +190,7 @@ $wgRenameuserMessages['es'] = array(
 	'renameuser' => 'Renombrar usuario',
 	'renameuserold' => 'Nombre actual:',
 	'renameusernew' => 'Nuevo nombre de usuario:',
+	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Trasladar las páginas de usuario y de discusión (y sus subpáginas) al nuevo nombre',
 	'renameusersubmit' => 'Enviar',
 	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
