@@ -746,6 +746,9 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuser-log' => 'que possuia $1 edições. Motivo: $2',
 	'renameuser-move-log' => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['rmy'] = array(
+	'renameusersubmit' => 'De le jeneske aver nav',
+);
 $wgRenameuserMessages['ro'] = array(
 	'renameuser' => 'Redenumeşte utilizator',
 	'renameuserold' => 'Numele de utilizator existent:',
