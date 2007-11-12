@@ -598,6 +598,19 @@ $wgRenameuserMessages['la'] = array(
 	'renameuser-log' => '$1 recensiones. Causa: $2',
 	'renameuser-move-log' => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['mk'] = array(
+	'renameuser' => 'Преименувај корисник',
+	'renameuserold' => 'Сегашно корисничко име:',
+	'renameusernew' => 'Ново корисничко име:',
+	'renameusersubmit' => 'Внеси',
+	'renameusererrordoesnotexist' => 'Корисникот "<nowiki>$1</nowiki>" не постои',
+	'renameusererrorexists' => 'Корисникот "<nowiki>$1</nowiki>" веќе постои',
+	'renameusererrorinvalid' => 'Корисничкото име "<nowiki>$1</nowiki>" не е валидно',
+	'renameusererrortoomany' => 'Корисникот "<nowiki>$1</nowiki>" има $2 придонеси, преименување на корисник со повеќе од $3 придонеси може негативно да се одрази на перформансите на сајтот',
+	'renameusersuccess' => 'Корисникот "<nowiki>$1</nowiki>" е преименуван во "<nowiki>$2</nowiki>"',
+	'renameuserlogpage' => 'Историја на преименувања на корисници',
+	'renameuserlogpagetext' => 'Ово е историја на преименувања на корисници',
+);
 $wgRenameuserMessages['nan'] = array(
 	'renameuser'       => 'Kái iōng-chiá ê miâ',
 	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
