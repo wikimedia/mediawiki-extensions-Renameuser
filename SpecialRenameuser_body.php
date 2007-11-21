@@ -221,7 +221,7 @@ class SpecialRenameuser extends SpecialPage {
 					$link = $skin->makeKnownLinkObj( $newPage );
 					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
-					$success = $oldPage->moveTo( $newPage, false, wfMsg( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
+					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
 					if( $success === true ) {
 						$oldLink = $skin->makeKnownLinkObj( $oldPage );
 						$newLink = $skin->makeKnownLinkObj( $newPage );
