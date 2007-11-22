@@ -833,6 +833,21 @@ $wgRenameuserMessages['sq'] = array(
 	'renameusersuccess'           => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
 );
 
+$wgRenameuserMessages['stq'] = array(
+	'renameuser' => 'Benutsernoome annerje',
+	'renameuserold' => 'Benutsernoomer bithäär:',
+	'renameusernew' => 'Näie Benutsernoome:',
+	'renameuserreason' => 'Gruund foar Uumenaame:',
+	'renameusererrordoesnotexist' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant nit',
+	'renameusererrorexists' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant al',
+	'renameusererrorinvalid' => 'Die Benutsernoome "<nowiki>$1</nowiki>" is uungultich',
+	'renameusererrortoomany' => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 Edits. Ju Noomensannerenge fon aan Benutser mäd moor as $3 Edits kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
+	'renameusersuccess' => 'Die Benutser "<nowiki>$1</nowiki>" wuude mäd Ärfoulch uumenaamd in "<nowiki>$2</nowiki>"',
+	'renameuserlogpage' => 'Benutsernoomenannerengs-Logbouk',
+	'renameuserlogpagetext' => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
+	'renameuserlogentry' => 'Benutser "$1" uumenaamd in "$2"',
+);
+
 $wgRenameuserMessages['su'] = array(
 	'renameuser' => 'Ganti ngaran pamaké',
 	'renameuserold' => 'Ngaran pamaké ayeuna:',
