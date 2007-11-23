@@ -162,6 +162,7 @@ $wgRenameuserMessages['de'] = array(
 	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
 );
 $wgRenameuserMessages['el'] = array(
+	'renameusernew' => 'Νέο όνομα χρήστη:',
 	'renameuserlogentry' => '$1 μετονομάστηκε σε [[User:$2]]',
 );
 $wgRenameuserMessages['eo'] = array(
