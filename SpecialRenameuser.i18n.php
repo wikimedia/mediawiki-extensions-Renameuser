@@ -103,6 +103,11 @@ $wgRenameuserMessages['ca'] = array(
 	'renameuser-log'=> 'Amb $1 contribucions. $2',
 	'renameuser-move-log'=> 'S\'ha reanomenat automàticament la pàgina mentre es reanomenava l\'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»',
 );
+$wgRenameuserMessages['cdo'] = array(
+	'renameuserold'    => 'Hiêng-sì-câi gì ê̤ṳng-hô-miàng:',
+	'renameusernew'    => 'Sĭng ê̤ṳng-hô-miàng:',
+	'renameuser-page-moved'          => 'Ciā hiĕk $1 ī-gĭng ké̤ṳk iè gáu $2.',
+);
 $wgRenameuserMessages['cs'] = array(
 	'renameuser' => 'Přejmenovat uživatele',
 	'renameuserold' => 'Stávající uživatelské jméno:',
@@ -917,8 +922,9 @@ $wgRenameuserMessages['wa'] = array(
 );
 $wgRenameuserMessages['yue'] = array(
 	'renameuser'       => '改用戶名',
-	'renameuserold'    => '現時嘅用戶名：',
-	'renameusernew'    => '新嘅用戶名：',
+	'renameuserold'    => '現時嘅用戶名:',
+	'renameusernew'    => '新嘅用戶名:',
+	'renameuserreason' => '改名嘅原因:',
 	'renameusermove'   => '搬用戶頁同埋佢嘅對話頁（同埋佢哋嘅細頁）到新名',
 	'renameusersubmit' => '遞交',
 
@@ -934,6 +940,7 @@ $wgRenameuserMessages['yue'] = array(
 
 	'renameuserlogpage'     => '用戶改名日誌',
 	'renameuserlogpagetext' => '呢個係改用戶名嘅日誌',
+	'renameuserlogentry'    => '已經幫 $1 改咗名做 $2',
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"改名做"[[User:$2|$2]]"嗰陣已經自動搬咗用戶頁',
 );
@@ -941,6 +948,7 @@ $wgRenameuserMessages['zh-hans'] = array(
 	'renameuser'       => '用户重命名',
 	'renameuserold'    => '当前用户名：',
 	'renameusernew'    => '新用户名：',
+	'renameuserreason' => '重命名的原因:',
 	'renameusermove'   => '移动用户页及其对话页（包括各子页）到新的名字',
 	'renameusersubmit' => '提交',
 
@@ -956,13 +964,15 @@ $wgRenameuserMessages['zh-hans'] = array(
 
 	'renameuserlogpage'     => '用户名变更日志',
 	'renameuserlogpagetext' => '这是用户名更改的日志',
+	'renameuserlogentry'    => '已经把 $1 重命名为 $2',
 	'renameuser-log'        => '拥有$1次编辑. $2',
 	'renameuser-move-log'   => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 );
 $wgRenameuserMessages['zh-hant'] = array(
 	'renameuser'       => '用戶重新命名',
-	'renameuserold'    => '現時用戶名：',
-	'renameusernew'    => '新用戶名：',
+	'renameuserold'    => '現時用戶名:',
+	'renameusernew'    => '新用戶名:',
+	'renameuserreason' => '重新命名的原因:',
 	'renameusermove'   => '移動用戶頁及其對話頁（包括各子頁）到新的名字',
 	'renameusersubmit' => '提交',
 
@@ -978,6 +988,7 @@ $wgRenameuserMessages['zh-hant'] = array(
 
 	'renameuserlogpage'     => '用戶名變更日誌',
 	'renameuserlogpagetext' => '這是用戶名更改的日誌',
+	'renameuserlogentry'    => '已經把 $1 重新命名為 $2',
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 );
