@@ -213,6 +213,11 @@ $wgRenameuserMessages['es'] = array(
 	'renameuser-log' => '$1 ediciones. Motivo: $2',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['et'] = array(
+	'renameuser' => 'Muuda kasutajanime',
+	'renameuserold' => 'Praegune kasutajanimi:',
+	'renameusernew' => 'Uus kasutajanimi:',
+);
 $wgRenameuserMessages['ext'] = array(
 	'renameuser-page-moved' => 'S´á moviu la páhina $1 a $2.',
 );
