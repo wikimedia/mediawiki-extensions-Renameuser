@@ -54,6 +54,9 @@ $wgRenameuserMessages['ar'] = array(
 	'renameuser-log' => '$1 تعديل. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
+$wgRenameuserMessages['arc'] = array(
+	'renameusersubmit' => 'ܡܨܝܘܬܐ',
+);
 $wgRenameuserMessages['bcl'] = array(
 	'renameusersubmit' => 'Isumitir',
 	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayò man',
