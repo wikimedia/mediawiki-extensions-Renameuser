@@ -564,6 +564,9 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
 $wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
+$wgRenameuserMessages['kn'] = array(
+	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
+);
 $wgRenameuserMessages['ko'] = array(
 	'renameuser'       => '사용자 이름 변경',
 	'renameuserold'    => '기존 사용자 이름:',
@@ -653,7 +656,7 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuserold' => 'Huidige gebruikersnaam:',
 	'renameusernew' => 'Nieuwe gebruikersnaam:',
 	'renameuserreason' => 'Reden voor hernoemen:',
-	'renameusermove' => 'Hernoem de gebruikerspagina en overlegpagina en eventuele subpagina\'s naar de nieuwe gebruikersnaam',
+	'renameusermove' => 'De gebruikerspagina en overlegpagina (en eventuele subpagina\'s) hernoemen naar de nieuwe gebruikersnaam',
 	'renameusersubmit' => 'Hernoemen',
 	'renameusererrordoesnotexist' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat niet.',
 	'renameusererrorexists' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al.',
@@ -665,7 +668,7 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuser-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'renameuserlogpage' => 'Logboek gebruikersnaamwijzigingen',
 	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn',
-	'renameuserlogentry' => 'heeft $1 hernoemd naar [[User:$2|$2]]',
+	'renameuserlogentry' => 'heeft $1 hernoemd naar $2',
 	'renameuser-log' => '$1 bewerkingen. $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
