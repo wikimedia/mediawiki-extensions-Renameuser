@@ -688,7 +688,8 @@ $wgRenameuserMessages['no'] = array(
 	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
 	'renameuserlogpage' => 'Omdøpingslogg',
 	'renameuserlogpagetext' => 'Dette er en logg over endringer i brukernavn.',
-	'renameuser-log' => 'som hadde $1 redigeringer. $2',
+	'renameuserlogentry' => 'har omdøpt $1 til $2',
+	'renameuser-log' => '$1 redigeringer. Grunn: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
 $wgRenameuserMessages['oc'] = array(
