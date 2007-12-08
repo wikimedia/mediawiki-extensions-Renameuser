@@ -65,6 +65,27 @@ $wgRenameuserMessages['bcl'] = array(
 	'renameuser-page-unmoved' => 'An páhinang $1 dai mailipat sa $2.',
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
+$wgRenameuserMessages['bg'] = array(
+	'renameuser' => 'Преименуване на потребител',
+	'renameuserold' => 'Текущо потребителско име:',
+	'renameusernew' => 'Ново потребителско име:',
+	'renameuserreason' => 'Причина за преименуването:',
+	'renameusermove' => 'Преместване под новото име на потребителската лична страница и беседа (както и техните подстраници)',
+	'renameusersubmit' => 'Изпълнение',
+	'renameusererrordoesnotexist' => 'Потребителят „<nowiki>$1</nowiki>“ не съществува.',
+	'renameusererrorexists' => 'Потребителят „<nowiki>$1</nowiki>“ вече съществува.',
+	'renameusererrorinvalid' => 'Потребителското име „<nowiki>$1</nowiki>“ е невалидно.',
+	'renameusererrortoomany' => 'Потребителят „<nowiki>$1</nowiki>“ има $2 приноса. Преименуването на потребители с повече от $3 приноса, може да се отрази зле на производителността на сайта.',
+	'renameusersuccess' => 'Потребителят „<nowiki>$1</nowiki>“ беше преименуван на „<nowiki>$2</nowiki>“',
+	'renameuser-page-exists' => 'Страницата $1 вече съществува и не може да бъде автоматично заместена.',
+	'renameuser-page-moved' => 'Страницата $1 беше преместена като $2.',
+	'renameuser-page-unmoved' => 'Страницата $1 не можа да бъде преместена като $2.',
+	'renameuserlogpage' => 'Дневник на преименуванията',
+	'renameuserlogpagetext' => 'Това е дневник на преименуванията на потребители',
+	'renameuserlogentry' => 'преименува $1 на $2',
+	'renameuser-log' => '$1 редакции. Причина: $2',
+	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
+);
 $wgRenameuserMessages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
