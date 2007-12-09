@@ -933,6 +933,11 @@ $wgRenameuserMessages['ur'] = array(
 	'renameuser'       => 'صارف کا نام تبدیل کریں',
 	'renameuser-log'   => 'جن کی $1 ترامیم تھیں. $2',
 );
+$wgRenameuserMessages['vec'] = array(
+	'renameuser' => 'Rinomina utente',
+	'renameuserold' => 'Vecio nome utente:',
+	'renameusernew' => 'Novo nome utente:',
+);
 $wgRenameuserMessages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	'renameuserold' => 'No d\' elodjaedje pol moumint:',
