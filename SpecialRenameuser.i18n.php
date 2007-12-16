@@ -190,6 +190,17 @@ $wgRenameuserMessages['de'] = array(
 	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
 	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
 );
+
+/** Greek (Ελληνικά)
+ * @author Consta
+ * @author MF-Warburg
+ */
+$wgRenameuserMessages['el'] = array(
+	'renameusernew'      => 'Νέο όνομα χρήστη:',
+	'renameuserlogentry' => '$1 μετονομάστηκε σε [[User:$2]]',
+	'renameuser-log'     => '$1 επεξεργασίες. Λόγος: $2',
+);
+
 $wgRenameuserMessages['ja'] = array(
 	'renameuser' => '利用者名の変更',
 	'renameuserold' => '現在の利用者名:',
