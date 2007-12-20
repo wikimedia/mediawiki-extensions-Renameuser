@@ -539,7 +539,7 @@ $wgRenameuserMessages['ka'] = array(
 	'renameuser-move-log'   => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელის შეცვლისას "[[{{ns:user}}:$2|$2]]-ით"',
 );
 
-$wgRenameuserMessages['kk-kz'] = array(
+$wgRenameuserMessages['kk-cyrl'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
 	'renameusernew'    => 'Жаңа қатысушы аты:',
@@ -563,7 +563,7 @@ $wgRenameuserMessages['kk-kz'] = array(
 	'renameuser-log'        => '$1 түзетуі бар. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
-$wgRenameuserMessages['kk-tr'] = array(
+$wgRenameuserMessages['kk-latn'] = array(
 	'renameuser'       => 'Qatıswşını qaýta ataw',
 	'renameuserold'    => 'Ağımdağı qatıswşı atı:',
 	'renameusernew'    => 'Jaña qatıswşı atı:',
@@ -587,7 +587,7 @@ $wgRenameuserMessages['kk-tr'] = array(
 	'renameuser-log'        => '$1 tüzetwi bar. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
-$wgRenameuserMessages['kk-cn'] = array(
+$wgRenameuserMessages['kk-arab'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
 	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
@@ -611,7 +611,6 @@ $wgRenameuserMessages['kk-cn'] = array(
 	'renameuser-log'        => '$1 تٷزەتۋٸ بار. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
-$wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-kz'];
 $wgRenameuserMessages['kn'] = array(
 	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
 );
@@ -1057,6 +1056,14 @@ $wgRenameuserMessages['zh-hant'] = array(
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 );
+
+# Kazakh fallback
+$wgRenameuserMessages['kk-kz'] = $wgRenameuserMessages['kk-cyrl'];
+$wgRenameuserMessages['kk-tr'] = $wgRenameuserMessages['kk-latn'];
+$wgRenameuserMessages['kk-cn'] = $wgRenameuserMessages['kk-arab'];
+$wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-cyrl'];
+
+# Chinese fallback
 $wgRenameuserMessages['zh'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-cn'] = $wgRenameuserMessages['zh-hans'];
 $wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-hant'];
