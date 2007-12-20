@@ -947,6 +947,23 @@ $wgRenameuserMessages['sv'] = array(
 	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
+
+/** Tonga (faka-Tonga)
+ * @author SPQRobin
+ */
+$wgRenameuserMessages['to'] = array(
+	'renameuser'                  => 'Liliu hingoa ʻo e ʻetita',
+	'renameuserold'               => 'Hingoa motuʻa ʻo e ʻetita:',
+	'renameusernew'               => 'Hingoa foʻou ʻo e ʻetita:',
+	'renameusersubmit'            => 'Fai ā liliuhingoa',
+	'renameusererrordoesnotexist' => 'Ko e ʻetita "<nowiki>$1</nowiki>" ʻoku ʻikai toka tuʻu ia',
+	'renameusererrorexists'       => 'Ko e ʻetita "<nowiki>$1</nowiki>" ʻoku toka tuʻu ia',
+	'renameusererrorinvalid'      => 'ʻOku taʻeʻaonga ʻa e hingoa fakaʻetita ko "<nowiki>$1</nowiki>"',
+	'renameusersuccess'           => 'Ko e ʻetita "<nowiki>$1</nowiki>" kuo liliuhingoa ia kia "<nowiki>$2</nowiki>"',
+	'renameuserlogpage'           => 'Tohinoa ʻo e liliu he hingoa ʻo e ʻetita',
+	'renameuserlogpagetext'       => 'Ko e tohinoa ʻeni ʻo e ngaahi liliu ki he hingoa ʻo e kau ʻetita',
+);
+
 $wgRenameuserMessages['tr'] = array(
 	'renameuserold' => 'Şu anda ki kullanıcı adı:',
 	'renameusernew' => 'Yeni kullanıcı adı:',
