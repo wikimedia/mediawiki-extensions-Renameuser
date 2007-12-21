@@ -845,22 +845,32 @@ $wgRenameuserMessages['ro'] = array(
 	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[Utilizator:$1|$1]]" la "[[Utilizator:$2|$2]]"',
 );
-$wgRenameuserMessages['ru'] = array(
-	'renameuser'       => 'Переименовать участника',
-	'renameuserold'    => 'Имя в настоящий момент:',
-	'renameusernew'    => 'Новое имя:',
-	'renameusersubmit' => 'Выполнить',
 
+/** Russian (Русский)
+ * @author .:Ajvol:.
+ */
+$wgRenameuserMessages['ru'] = array(
+	'renameuser'                  => 'Переименовать участника',
+	'renameuserold'               => 'Имя в настоящий момент:',
+	'renameusernew'               => 'Новое имя:',
+	'renameuserreason'            => 'Причина переименования:',
+	'renameusermove'              => 'Переименовать также страницу участника, личное обсуждение и их подстраницы',
+	'renameusersubmit'            => 'Выполнить',
 	'renameusererrordoesnotexist' => 'Участника с именем «<nowiki>$1</nowiki>» не зарегистрировано',
 	'renameusererrorexists'       => 'Участник с именем «<nowiki>$1</nowiki>» уже зарегистрирован',
 	'renameusererrorinvalid'      => 'Недопустимое имя участника: <nowiki>$1</nowiki>',
 	'renameusererrortoomany'      => 'Участник <nowiki>$1</nowiki> внёс $2 правок, переименование участника с более чем $3 правками может оказать негативное влияние на доступ к сайту',
 	'renameusersuccess'           => 'Участник «<nowiki>$1</nowiki>» был переименован в «<nowiki>$2</nowiki>»',
-
-	'renameuserlogpage'     => 'Журнал переименований участников',
-	'renameuserlogpagetext' => 'Это журнал произведённых переименований зарегистрированных участников',
-	'renameuser-log'        => 'имеющий $1 правок. $2',
+	'renameuser-page-exists'      => 'Страница $1 уже существует и не может быть перезаписана автоматически.',
+	'renameuser-page-moved'       => 'Страница $1 была переименована в $2.',
+	'renameuser-page-unmoved'     => 'Страница $1 не может быть переименована в $2.',
+	'renameuserlogpage'           => 'Журнал переименований участников',
+	'renameuserlogpagetext'       => 'Это журнал произведённых переименований зарегистрированных участников',
+	'renameuserlogentry'          => 'переименовал $1 в [[$2]]',
+	'renameuser-log'              => 'имеющий $1 правок. $2',
+	'renameuser-move-log'         => 'Автоматическое переименование страницы в связи с переименованием учётной записи [[Участник:$1|$1]] в [[Участник:$2|$2]]',
 );
+
 $wgRenameuserMessages['sk'] = array(
 	'renameuser' => 'Premenovať používateľa',
 	'renameuserold' => 'Súčasné používateľské meno:',
