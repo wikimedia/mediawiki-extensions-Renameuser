@@ -338,6 +338,18 @@ $wgRenameuserMessages['fr'] = array(
 	'renameuser-log' => '$1 éditions. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
+
+/** Irish (Gaeilge)
+ * @author SPQRobin
+ */
+$wgRenameuserMessages['ga'] = array(
+	'renameuser'             => 'Athainmnigh úsáideoir',
+	'renameuserold'          => 'Ainm reatha úsáideora:',
+	'renameusernew'          => 'Ainm nua úsáideora:',
+	'renameusersuccess'      => 'Athainmníodh úsáideoir "<nowiki>$1</nowiki>" mar "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Tá leathanach "$1" ann chean féin; ní féidir ábhar a scríobh thairis go huathoibríoch.',
+);
+
 $wgRenameuserMessages['gl'] = array(
 	'renameuser' => 'Mudar o nome de usuario',
 	'renameuserold' => 'Nome de usuario actual:',
@@ -908,19 +920,30 @@ $wgRenameuserMessages['sq'] = array(
 	'renameusersuccess'           => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Maartenvdbent
+ * @author Pyt
+ */
 $wgRenameuserMessages['stq'] = array(
-	'renameuser' => 'Benutsernoome annerje',
-	'renameuserold' => 'Benutsernoomer bithäär:',
-	'renameusernew' => 'Näie Benutsernoome:',
-	'renameuserreason' => 'Gruund foar Uumenaame:',
+	'renameuser'                  => 'Benutsernoome annerje',
+	'renameuserold'               => 'Benutsernoomer bithäär:',
+	'renameusernew'               => 'Näie Benutsernoome:',
+	'renameuserreason'            => 'Gruund foar Uumenaame:',
+	'renameusermove'              => 'Ferschuuwe Benutser-/Diskussionssiede inkl. Unnersieden ap dän näie Benutsernoome',
+	'renameusersubmit'            => 'Uumbenaame',
 	'renameusererrordoesnotexist' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant nit',
-	'renameusererrorexists' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant al',
-	'renameusererrorinvalid' => 'Die Benutsernoome "<nowiki>$1</nowiki>" is uungultich',
-	'renameusererrortoomany' => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 Edits. Ju Noomensannerenge fon aan Benutser mäd moor as $3 Edits kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
-	'renameusersuccess' => 'Die Benutser "<nowiki>$1</nowiki>" wuude mäd Ärfoulch uumenaamd in "<nowiki>$2</nowiki>"',
-	'renameuserlogpage' => 'Benutsernoomenannerengs-Logbouk',
-	'renameuserlogpagetext' => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
-	'renameuserlogentry' => 'Benutser "$1" uumenaamd in "$2"',
+	'renameusererrorexists'       => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant al',
+	'renameusererrorinvalid'      => 'Die Benutsernoome "<nowiki>$1</nowiki>" is uungultich',
+	'renameusererrortoomany'      => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 Edits. Ju Noomensannerenge fon aan Benutser mäd moor as $3 Edits kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
+	'renameusersuccess'           => 'Die Benutser "<nowiki>$1</nowiki>" wuude mäd Ärfoulch uumenaamd in "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists'      => 'Ju Siede $1 bestoant al un kon nit automatisk uurschrieuwen wäide.',
+	'renameuser-page-moved'       => 'Ju Siede $1 wuude ätter $2 ferschäuwen.',
+	'renameuser-page-unmoved'     => 'Ju Siede $1 kuude nit ätter $2 ferschäuwen wäide.',
+	'renameuserlogpage'           => 'Benutsernoomenannerengs-Logbouk',
+	'renameuserlogpagetext'       => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
+	'renameuserlogentry'          => 'Benutser "$1" uumenaamd in "$2"',
+	'renameuser-log'              => '$1 Beoarbaidengen. Gruund: $2',
+	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[{{ns:user}}:$1]]“ ätter „[[{{ns:user}}:$2]]“ automatisk ferschäuwene Siede.',
 );
 
 $wgRenameuserMessages['su'] = array(
