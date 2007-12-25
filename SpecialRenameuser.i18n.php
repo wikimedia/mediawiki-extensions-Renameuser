@@ -599,6 +599,7 @@ $wgRenameuserMessages['kk-latn'] = array(
 	'renameuser-log'        => '$1 tüzetwi bar. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
+
 $wgRenameuserMessages['kk-arab'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
@@ -623,9 +624,11 @@ $wgRenameuserMessages['kk-arab'] = array(
 	'renameuser-log'        => '$1 تٷزەتۋٸ بار. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
+
 $wgRenameuserMessages['kn'] = array(
 	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
 );
+
 $wgRenameuserMessages['ko'] = array(
 	'renameuser'       => '사용자 이름 변경',
 	'renameuserold'    => '기존 사용자 이름:',
@@ -674,6 +677,32 @@ $wgRenameuserMessages['la'] = array(
 	'renameuser-log' => '$1 recensiones. Causa: $2',
 	'renameuser-move-log' => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
 );
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$wgRenameuserMessages['lb'] = array(
+	'renameuser'                  => 'Benotzer ëmbenennen',
+	'renameuserold'               => 'Aktuelle Benotzernumm:',
+	'renameusernew'               => 'Neie Benotzernumm:',
+	'renameuserreason'            => "Grond fir d'Ëmbenennung:",
+	'renameusermove'              => 'Benotzer- an Diskussiounssäiten (an déi jeweileg Ënnersäiten) op den neie Benotzernumm réckelen',
+	'renameusersubmit'            => 'Ëmbenennen',
+	'renameusererrordoesnotexist' => 'De Benotzer "<nowiki>$1</nowiki>" gëtt et net.',
+	'renameusererrorexists'       => 'De Benotzer "<nowiki>$1</nowiki>" gët et schonn.',
+	'renameusererrorinvalid'      => 'De Benotzernumm "<nowiki>$1</nowiki>" kann net benotzt ginn.',
+	'renameusererrortoomany'      => 'De benotzer "<nowiki>$1</nowiki>" huet $2 Ännerunge gemaach. D¨¨annerung vum Benotzernumm vun engem Benotzer mat méi wéi $3 Ännerungen kann d\'Vitesse vum Site staark beaflossen (De Server gëtt lues).',
+	'renameusersuccess'           => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
+	'renameuser-page-exists'      => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
+	'renameuser-page-moved'       => "D'Säit $1 gouf op $2 geréckelt.",
+	'renameuser-page-unmoved'     => "D'Säit $1 konnt net op $2 geréckelt ginn.",
+	'renameuserlogpage'           => 'Logbuch vun den Ännerungen vum Benotzernumm',
+	'renameuserlogpagetext'       => "An dësem Logbuch ginn d'Ännerungen vum Benotzernumm festgehal.",
+	'renameuserlogentry'          => 'huet de Benotzer $1 als Benotzer $2 ëmbenannt',
+	'renameuser-log'              => '$1 Ännerungen. Grond: $2',
+	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
+);
+
 $wgRenameuserMessages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
 	'renameuserold' => 'Сегашно корисничко име:',
@@ -687,11 +716,13 @@ $wgRenameuserMessages['mk'] = array(
 	'renameuserlogpage' => 'Историја на преименувања на корисници',
 	'renameuserlogpagetext' => 'Ово е историја на преименувања на корисници',
 );
+
 $wgRenameuserMessages['nan'] = array(
 	'renameuser'       => 'Kái iōng-chiá ê miâ',
 	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
+
 $wgRenameuserMessages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
 	'renameuserold' => 'Brukernaam nu:',
