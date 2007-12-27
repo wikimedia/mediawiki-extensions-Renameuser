@@ -500,8 +500,8 @@ $wgRenameuserMessages['is'] = array(
 	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
 	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
 );
-$wgRenameu
-serMessages['it'] = array(
+
+$wgRenameuserMessages['it'] = array(
 	'renameuser' => 'Modifica del nome utente',
 	'renameuserold' => 'Nome utente attuale:',
 	'renameusernew' => 'Nuovo nome utente:',
