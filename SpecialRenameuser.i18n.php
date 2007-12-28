@@ -5,9 +5,9 @@
  * @addtogroup Extensions
 */
 
-$wgRenameuserMessages = array();
+$messages = array();
 
-$wgRenameuserMessages['en'] = array(
+$messages['en'] = array(
 	'renameuser'       => 'Rename user',
 	'renameuserold'    => 'Current username:',
 	'renameusernew'    => 'New username:',
@@ -28,12 +28,12 @@ $wgRenameuserMessages['en'] = array(
 	'renameuser-log'        => '$1 edits. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['af'] = array(
+$messages['af'] = array(
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
 );
-$wgRenameuserMessages['ar'] = array(
+$messages['ar'] = array(
 	'renameuser' => 'إعادة تسمية مستخدم',
 	'renameuserold' => 'اسم المستخدم الحالي:',
 	'renameusernew' => 'الاسم الجديد:',
@@ -54,10 +54,10 @@ $wgRenameuserMessages['ar'] = array(
 	'renameuser-log' => '$1 تعديل. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['arc'] = array(
+$messages['arc'] = array(
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
 );
-$wgRenameuserMessages['bcl'] = array(
+$messages['bcl'] = array(
 	'renameusersubmit' => 'Isumitir',
 	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayò man',
 	'renameusererrorexists' => 'An parágamit "<nowiki>$1</nowiki>" yaon na',
@@ -65,7 +65,7 @@ $wgRenameuserMessages['bcl'] = array(
 	'renameuser-page-unmoved' => 'An páhinang $1 dai mailipat sa $2.',
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
-$wgRenameuserMessages['bg'] = array(
+$messages['bg'] = array(
 	'renameuser' => 'Преименуване на потребител',
 	'renameuserold' => 'Текущо потребителско име:',
 	'renameusernew' => 'Ново потребителско име:',
@@ -86,7 +86,7 @@ $wgRenameuserMessages['bg'] = array(
 	'renameuser-log' => '$1 редакции. Причина: $2',
 	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['br'] = array(
+$messages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
 	'renameusernew'    => 'Anv implijer nevez :',
@@ -108,7 +108,7 @@ $wgRenameuserMessages['br'] = array(
 	'renameuser-log'        => 'Ssavet gantañ $1 degasadenn. $2',
 	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
 );
-$wgRenameuserMessages['ca'] = array(
+$messages['ca'] = array(
 	'renameuser'=> 'Reanomena l\'usuari',
 	'renameuserold'=> 'Nom d\'usuari actual:',
 	'renameusernew'=> 'Nou nom d\'usuari:',
@@ -127,12 +127,12 @@ $wgRenameuserMessages['ca'] = array(
 	'renameuser-log'=> 'Amb $1 contribucions. $2',
 	'renameuser-move-log'=> 'S\'ha reanomenat automàticament la pàgina mentre es reanomenava l\'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»',
 );
-$wgRenameuserMessages['cdo'] = array(
+$messages['cdo'] = array(
 	'renameuserold'    => 'Hiêng-sì-câi gì ê̤ṳng-hô-miàng:',
 	'renameusernew'    => 'Sĭng ê̤ṳng-hô-miàng:',
 	'renameuser-page-moved'          => 'Ciā hiĕk $1 ī-gĭng ké̤ṳk iè gáu $2.',
 );
-$wgRenameuserMessages['cs'] = array(
+$messages['cs'] = array(
 	'renameuser' => 'Přejmenovat uživatele',
 	'renameuserold' => 'Stávající uživatelské jméno:',
 	'renameusernew' => 'Nové uživatelské jméno:',
@@ -153,7 +153,7 @@ $wgRenameuserMessages['cs'] = array(
 	'renameuser-log' => '$1 editací. $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
-$wgRenameuserMessages['cu'] = array(
+$messages['cu'] = array(
 	'renameuser' => 'Прѣименѹи польѕевател҄ь',
 	'renameuserold' => 'Нынѣщьнѥѥ имѧ:',
 	'renameusernew' => 'Ново имѧ:',
@@ -166,7 +166,7 @@ $wgRenameuserMessages['cu'] = array(
 	'renameusererrortoomany' => 'Польѕевател҄ь «<nowiki>$1</nowiki>» $2 {{PLURAL:$2|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ. Аще польѕевател прѣименѹѥши кыи болѥ $3 {{PLURAL:$3|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ, то зълѣ бѫдетъ.',
 	'renameuserlogentry' => 'нарече $1 именьмь $2',
 );
-$wgRenameuserMessages['de'] = array(
+$messages['de'] = array(
 	'renameuser'       => 'Benutzer umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
 	'renameusernew'    => 'Neuer Benutzername:',
@@ -195,7 +195,7 @@ $wgRenameuserMessages['de'] = array(
  * @author Consta
  * @author MF-Warburg
  */
-$wgRenameuserMessages['el'] = array(
+$messages['el'] = array(
 	'renameusernew'      => 'Νέο όνομα χρήστη:',
 	'renameuserlogentry' => '$1 μετονομάστηκε σε [[User:$2]]',
 	'renameuser-log'     => '$1 επεξεργασίες. Λόγος: $2',
@@ -206,7 +206,7 @@ $wgRenameuserMessages['el'] = array(
  * @author Broad-Sky
  * @author Marine-Blue
  */
-$wgRenameuserMessages['ja'] = array(
+$messages['ja'] = array(
 	'renameuser'                  => '利用者名の変更',
 	'renameuserold'               => '現在の利用者名:',
 	'renameusernew'               => '新しい利用者名:',
@@ -227,7 +227,7 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuser-move-log'         => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
 
-$wgRenameuserMessages['eo'] = array(
+$messages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
 	'renameuserold' => 'Aktuala uzantonomo:',
 	'renameusernew' => 'Nova uzantonomo:',
@@ -250,7 +250,7 @@ $wgRenameuserMessages['eo'] = array(
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['es'] = array(
+$messages['es'] = array(
 	'renameuser' => 'Renombrar usuario',
 	'renameuserold' => 'Nombre actual:',
 	'renameusernew' => 'Nuevo nombre de usuario:',
@@ -272,17 +272,17 @@ $wgRenameuserMessages['es'] = array(
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['et'] = array(
+$messages['et'] = array(
 	'renameuser' => 'Muuda kasutajanime',
 	'renameuserold' => 'Praegune kasutajanimi:',
 	'renameusernew' => 'Uus kasutajanimi:',
 );
 
-$wgRenameuserMessages['ext'] = array(
+$messages['ext'] = array(
 	'renameuser-page-moved' => 'S´á moviu la páhina $1 a $2.',
 );
 
-$wgRenameuserMessages['fa'] = array(
+$messages['fa'] = array(
 	'renameuser' => 'تغییر نام کاربری',
 	'renameuserold' => 'نام کاربری فعلی:',
 	'renameusernew' => 'نام کاربری جدید:',
@@ -304,7 +304,7 @@ $wgRenameuserMessages['fa'] = array(
 	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
 );
 
-$wgRenameuserMessages['fi'] = array(
+$messages['fi'] = array(
 	'renameuser' => 'Käyttäjätunnuksen vaihto',
 	'renameuserold' => 'Nykyinen tunnus',
 	'renameusernew' => 'Uusi tunnus',
@@ -326,27 +326,27 @@ $wgRenameuserMessages['fi'] = array(
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
 
-$wgRenameuserMessages['fo'] = array(
+$messages['fo'] = array(
 	'renameusernew' => 'Nýtt brúkaranavn:',
 );
 
-$wgRenameuserMessages['fr'] = array(
-	'renameuser' => 'Renommer l\'utilisateur',
-	'renameuserold' => 'Nom actuel de l\'utilisateur :',
-	'renameusernew' => 'Nouveau nom de l\'utilisateur :',
+$messages['fr'] = array(
+	'renameuser' => 'Renommer l’utilisateur',
+	'renameuserold' => 'Nom actuel de l’utilisateur :',
+	'renameusernew' => 'Nouveau nom de l’utilisateur :',
 	'renameuserreason' => 'Motif du renommage :',
 	'renameusermove' => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
 	'renameusersubmit' => 'Soumettre',
-	'renameusererrordoesnotexist' => 'L\'utilisateur « <nowiki>$1</nowiki> » n\'existe pas',
-	'renameusererrorexists' => 'L\'utilisateur « <nowiki>$1</nowiki> » existe déjà',
-	'renameusererrorinvalid' => 'Le nom d\'utilisateur « <nowiki>$1</nowiki> » n\'est pas valide',
-	'renameusererrortoomany' => 'L\'utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
-	'renameusersuccess' => 'L\'utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
+	'renameusererrordoesnotexist' => 'L’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
+	'renameusererrorexists' => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
+	'renameusererrorinvalid' => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
+	'renameusererrortoomany' => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
+	'renameusersuccess' => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
 	'renameuser-page-exists' => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved' => 'La page $1 a été déplacée vers $2.',
 	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
-	'renameuserlogpage' => 'Historique des renommages d\'utilisateur',
-	'renameuserlogpagetext' => 'Ceci est l\'historique des changements de noms d\'utilisateur',
+	'renameuserlogpage' => 'Historique des renommages d’utilisateur',
+	'renameuserlogpagetext' => 'Ceci est l’historique des changements de noms d\'utilisateur',
 	'renameuserlogentry' => 'a renommé $1 vers $2',
 	'renameuser-log' => '$1 éditions. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
@@ -355,7 +355,7 @@ $wgRenameuserMessages['fr'] = array(
 /** Irish (Gaeilge)
  * @author SPQRobin
  */
-$wgRenameuserMessages['ga'] = array(
+$messages['ga'] = array(
 	'renameuser'             => 'Athainmnigh úsáideoir',
 	'renameuserold'          => 'Ainm reatha úsáideora:',
 	'renameusernew'          => 'Ainm nua úsáideora:',
@@ -363,7 +363,7 @@ $wgRenameuserMessages['ga'] = array(
 	'renameuser-page-exists' => 'Tá leathanach "$1" ann chean féin; ní féidir ábhar a scríobh thairis go huathoibríoch.',
 );
 
-$wgRenameuserMessages['gl'] = array(
+$messages['gl'] = array(
 	'renameuser' => 'Mudar o nome de usuario',
 	'renameuserold' => 'Nome de usuario actual:',
 	'renameusernew' => 'Novo nome de usuario:',
@@ -385,7 +385,7 @@ $wgRenameuserMessages['gl'] = array(
 	'renameuser-move-log' => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['he'] = array(
+$messages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
 	'renameuserold'    => 'שם משתמש נוכחי:',
 	'renameusernew'    => 'שם משתמש חדש:',
@@ -410,7 +410,7 @@ $wgRenameuserMessages['he'] = array(
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 
-$wgRenameuserMessages['hr'] = array(
+$messages['hr'] = array(
 	'renameuser' => 'Promijeni ime suradnika',
 	'renameuserold' => 'Trenutno suradničko ime:',
 	'renameusernew' => 'Novo suradničko ime:',
@@ -432,7 +432,7 @@ $wgRenameuserMessages['hr'] = array(
 	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['hsb'] = array(
+$messages['hsb'] = array(
 	'renameuser' => 'Wužiwarja přemjenować',
 	'renameuserold' => 'Tuchwilne wužiwarske mjeno:',
 	'renameusernew' => 'Nowe wužiwarske mjeno:',
@@ -454,7 +454,7 @@ $wgRenameuserMessages['hsb'] = array(
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
 
-$wgRenameuserMessages['hu'] = array(
+$messages['hu'] = array(
 	'renameuser'       => 'Szerkesztő átnevezése',
 
 	'renameusererrordoesnotexist' => '„<nowiki>$1</nowiki>” nevű szerkesztő nem létezik',
@@ -469,7 +469,7 @@ $wgRenameuserMessages['hu'] = array(
 	'renameuser-move-log'   => '„[[User:$1|$1]]” „[[User:$2|$2]]”-re való átnevezése közben automatikusan átnevezett oldal',
 );
 
-$wgRenameuserMessages['id'] = array(
+$messages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
 	'renameuserold'    => 'Nama sekarang:',
 	'renameusernew'    => 'Nama baru:',
@@ -492,7 +492,7 @@ $wgRenameuserMessages['id'] = array(
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['is'] = array(
+$messages['is'] = array(
 	'renameuser' => 'Breyta notandanafni',
 	'renameuserold' => 'Núverandi notandanafn:',
 	'renameusernew' => 'Nýja notandanafnið:',
@@ -506,7 +506,7 @@ $wgRenameuserMessages['is'] = array(
 	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
 );
 
-$wgRenameuserMessages['it'] = array(
+$messages['it'] = array(
 	'renameuser' => 'Modifica del nome utente',
 	'renameuserold' => 'Nome utente attuale:',
 	'renameusernew' => 'Nuovo nome utente:',
@@ -527,7 +527,7 @@ $wgRenameuserMessages['it'] = array(
 	'renameuser-log' => 'Che ha $1 contributi. $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['ja'] = array(
+$messages['ja'] = array(
 	'renameuser' => '利用者名の変更',
 	'renameuserold' => '現在の利用者名:',
 	'renameusernew' => '新しい利用者名:',
@@ -547,7 +547,7 @@ $wgRenameuserMessages['ja'] = array(
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
 
-$wgRenameuserMessages['ka'] = array(
+$messages['ka'] = array(
 	'renameuser'       => 'მომხმარებლის სახელის გამოცვლა',
 	'renameuserold'    => 'ამჟამინდელი მომხმარებლის სახელი:',
 	'renameusernew'    => 'ახალი მომხმარებლის სახელი:',
@@ -570,7 +570,7 @@ $wgRenameuserMessages['ka'] = array(
 	'renameuser-move-log'   => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელის შეცვლისას "[[{{ns:user}}:$2|$2]]-ით"',
 );
 
-$wgRenameuserMessages['kk-cyrl'] = array(
+$messages['kk-cyrl'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
 	'renameusernew'    => 'Жаңа қатысушы аты:',
@@ -595,7 +595,7 @@ $wgRenameuserMessages['kk-cyrl'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 
-$wgRenameuserMessages['kk-latn'] = array(
+$messages['kk-latn'] = array(
 	'renameuser'       => 'Qatıswşını qaýta ataw',
 	'renameuserold'    => 'Ağımdağı qatıswşı atı:',
 	'renameusernew'    => 'Jaña qatıswşı atı:',
@@ -620,7 +620,7 @@ $wgRenameuserMessages['kk-latn'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
 
-$wgRenameuserMessages['kk-arab'] = array(
+$messages['kk-arab'] = array(
 	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
 	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
@@ -645,11 +645,11 @@ $wgRenameuserMessages['kk-arab'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
 
-$wgRenameuserMessages['kn'] = array(
+$messages['kn'] = array(
 	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
 );
 
-$wgRenameuserMessages['ko'] = array(
+$messages['ko'] = array(
 	'renameuser'       => '사용자 이름 변경',
 	'renameuserold'    => '기존 사용자 이름:',
 	'renameusernew'    => '새 이름:',
@@ -669,7 +669,7 @@ $wgRenameuserMessages['ko'] = array(
 	'renameuser-move-log'   => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 );
 
-$wgRenameuserMessages['ku'] = array(
+$messages['ku'] = array(
 	'renameuser'        => 'Navî bikarhênerê biguherîne',
 	'renameuserold'     => 'Navî niha:',
 	'renameusernew'     => 'Navî nuh:',
@@ -678,7 +678,7 @@ $wgRenameuserMessages['ku'] = array(
 	'renameuser-log'    => 'yê $1 beşdarîyên xwe hebû. $2',
 );
 
-$wgRenameuserMessages['la'] = array(
+$messages['la'] = array(
 	'renameuser' => 'Usorem renominare',
 	'renameuserold' => 'Praesente nomen usoris:',
 	'renameusernew' => 'Novum nomen usoris:',
@@ -703,7 +703,7 @@ $wgRenameuserMessages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
-$wgRenameuserMessages['lb'] = array(
+$messages['lb'] = array(
 	'renameuser'                  => 'Benotzer ëmbenennen',
 	'renameuserold'               => 'Aktuelle Benotzernumm:',
 	'renameusernew'               => 'Neie Benotzernumm:',
@@ -725,7 +725,7 @@ $wgRenameuserMessages['lb'] = array(
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 );
 
-$wgRenameuserMessages['mk'] = array(
+$messages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
 	'renameuserold' => 'Сегашно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
@@ -742,18 +742,18 @@ $wgRenameuserMessages['mk'] = array(
 /** Latvian (Latviešu)
  * @author SPQRobin
  */
-$wgRenameuserMessages['lv'] = array(
+$messages['lv'] = array(
 	'renameuserlogpage'     => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
 );
 
-$wgRenameuserMessages['nan'] = array(
+$messages['nan'] = array(
 	'renameuser'       => 'Kái iōng-chiá ê miâ',
 	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
 
-$wgRenameuserMessages['nds'] = array(
+$messages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
 	'renameuserold' => 'Brukernaam nu:',
 	'renameusernew' => 'Nee Brukernaam:',
@@ -771,7 +771,7 @@ $wgRenameuserMessages['nds'] = array(
 	'renameuserlogpagetext' => 'Dit is dat Logbook för ännerte Brukernaams',
 	'renameuser-move-log' => 'Siet bi dat Ännern vun’n Brukernaam \'\'[[{{ns:2}}:$1|$1]]\'\' na \'\'[[{{ns:2}}:$2|$2]]\'\' automaatsch schaven',
 );
-$wgRenameuserMessages['nl'] = array(
+$messages['nl'] = array(
 	'renameuser' => 'Gebruiker hernoemen',
 	'renameuserold' => 'Huidige gebruikersnaam:',
 	'renameusernew' => 'Nieuwe gebruikersnaam:',
@@ -792,7 +792,7 @@ $wgRenameuserMessages['nl'] = array(
 	'renameuser-log' => '$1 bewerkingen. $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['no'] = array(
+$messages['no'] = array(
 	'renameuser' => 'Omdøp bruker',
 	'renameuserold' => 'Nåværende navn:',
 	'renameusernew' => 'Nytt brukernavn:',
@@ -812,7 +812,7 @@ $wgRenameuserMessages['no'] = array(
 	'renameuser-log' => '$1 redigeringer. Grunn: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
-$wgRenameuserMessages['oc'] = array(
+$messages['oc'] = array(
 	'renameuser' => 'Renomenar l\'utilizaire',
 	'renameuserold' => 'Nom actual de l\'utilizaire :',
 	'renameusernew' => 'Nom novèl de l\'utilizaire :',
@@ -833,7 +833,7 @@ $wgRenameuserMessages['oc'] = array(
 	'renameuser-log' => 'qu\'aviá $1 edicions a son actiu. $2',
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
-$wgRenameuserMessages['pl'] = array(
+$messages['pl'] = array(
 	'renameuser' => 'Zmiana nazwy użytkownika',
 	'renameuserold' => 'Obecna nazwa użytkownika:',
 	'renameusernew' => 'Nowa nazwa użytkownika:',
@@ -856,7 +856,7 @@ $wgRenameuserMessages['pl'] = array(
 );
 
 /* Piedmontese (Bèrto 'd Sèra) */
-$wgRenameuserMessages['pms'] = array(
+$messages['pms'] = array(
 	'renameuser' => 'Arbatié n\'utent',
 	'renameuserold' => 'Stranòm corent:',
 	'renameusernew' => 'Stranòm neuv:',
@@ -881,7 +881,7 @@ $wgRenameuserMessages['pms'] = array(
 /** Portuguese (Português)
  * @author 555
  */
-$wgRenameuserMessages['pt'] = array(
+$messages['pt'] = array(
 	'renameuser'                  => 'Renomear utilizador',
 	'renameuserold'               => 'Nome de utilizador actual:',
 	'renameusernew'               => 'Novo nome de utilizador:',
@@ -903,11 +903,11 @@ $wgRenameuserMessages['pt'] = array(
 	'renameuser-move-log'         => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 );
 
-$wgRenameuserMessages['rmy'] = array(
+$messages['rmy'] = array(
 	'renameusersubmit' => 'De le jeneske aver nav',
 );
 
-$wgRenameuserMessages['ro'] = array(
+$messages['ro'] = array(
 	'renameuser' => 'Redenumeşte utilizator',
 	'renameuserold' => 'Numele de utilizator existent:',
 	'renameusernew' => 'Numele de utilizator nou:',
@@ -929,7 +929,7 @@ $wgRenameuserMessages['ro'] = array(
 /** Russian (Русский)
  * @author .:Ajvol:.
  */
-$wgRenameuserMessages['ru'] = array(
+$messages['ru'] = array(
 	'renameuser'                  => 'Переименовать участника',
 	'renameuserold'               => 'Имя в настоящий момент:',
 	'renameusernew'               => 'Новое имя:',
@@ -951,7 +951,7 @@ $wgRenameuserMessages['ru'] = array(
 	'renameuser-move-log'         => 'Автоматическое переименование страницы в связи с переименованием учётной записи [[Участник:$1|$1]] в [[Участник:$2|$2]]',
 );
 
-$wgRenameuserMessages['sk'] = array(
+$messages['sk'] = array(
 	'renameuser' => 'Premenovať používateľa',
 	'renameuserold' => 'Súčasné používateľské meno:',
 	'renameusernew' => 'Nové používateľské meno:',
@@ -972,7 +972,7 @@ $wgRenameuserMessages['sk'] = array(
 	'renameuser-log' => 'mal $1 úpravy. $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
-$wgRenameuserMessages['sq'] = array(
+$messages['sq'] = array(
 	'renameuser'                  => 'Ndërrim përdoruesi',
 	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
 	'renameusererrorexists'       => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
@@ -992,7 +992,7 @@ $wgRenameuserMessages['sq'] = array(
  * @author Maartenvdbent
  * @author Pyt
  */
-$wgRenameuserMessages['stq'] = array(
+$messages['stq'] = array(
 	'renameuser'                  => 'Benutsernoome annerje',
 	'renameuserold'               => 'Benutsernoomer bithäär:',
 	'renameusernew'               => 'Näie Benutsernoome:',
@@ -1014,7 +1014,7 @@ $wgRenameuserMessages['stq'] = array(
 	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[{{ns:user}}:$1]]“ ätter „[[{{ns:user}}:$2]]“ automatisk ferschäuwene Siede.',
 );
 
-$wgRenameuserMessages['su'] = array(
+$messages['su'] = array(
 	'renameuser' => 'Ganti ngaran pamaké',
 	'renameuserold' => 'Ngaran pamaké ayeuna:',
 	'renameusernew' => 'Ngaran pamaké anyar:',
@@ -1027,7 +1027,7 @@ $wgRenameuserMessages['su'] = array(
 	'renameusersuccess' => 'Pamaké "<nowiki>$1</nowiki>" geus diganti ngaranna jadi "<nowiki>$2</nowiki>"',
 );
 
-$wgRenameuserMessages['sv'] = array(
+$messages['sv'] = array(
 	'renameuser' => 'Byt användarnamn',
 	'renameuserold' => 'Nuvarande användarnamn:',
 	'renameusernew' => 'Nytt användarnamn:',
@@ -1052,7 +1052,7 @@ $wgRenameuserMessages['sv'] = array(
 /** Tonga (faka-Tonga)
  * @author SPQRobin
  */
-$wgRenameuserMessages['to'] = array(
+$messages['to'] = array(
 	'renameuser'                  => 'Liliu hingoa ʻo e ʻetita',
 	'renameuserold'               => 'Hingoa motuʻa ʻo e ʻetita:',
 	'renameusernew'               => 'Hingoa foʻou ʻo e ʻetita:',
@@ -1065,7 +1065,7 @@ $wgRenameuserMessages['to'] = array(
 	'renameuserlogpagetext'       => 'Ko e tohinoa ʻeni ʻo e ngaahi liliu ki he hingoa ʻo e kau ʻetita',
 );
 
-$wgRenameuserMessages['tr'] = array(
+$messages['tr'] = array(
 	'renameuserold' => 'Şu anda ki kullanıcı adı:',
 	'renameusernew' => 'Yeni kullanıcı adı:',
 	'renameusersubmit' => 'Gönder',
@@ -1073,16 +1073,16 @@ $wgRenameuserMessages['tr'] = array(
 	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
 );
-$wgRenameuserMessages['ur'] = array(
+$messages['ur'] = array(
 	'renameuser'       => 'صارف کا نام تبدیل کریں',
 	'renameuser-log'   => 'جن کی $1 ترامیم تھیں. $2',
 );
-$wgRenameuserMessages['vec'] = array(
+$messages['vec'] = array(
 	'renameuser' => 'Rinomina utente',
 	'renameuserold' => 'Vecio nome utente:',
 	'renameusernew' => 'Novo nome utente:',
 );
-$wgRenameuserMessages['wa'] = array(
+$messages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	'renameuserold' => 'No d\' elodjaedje pol moumint:',
 	'renameusernew' => 'Novea no d\' elodjaedje:',
@@ -1102,7 +1102,7 @@ $wgRenameuserMessages['wa'] = array(
 	'renameuser-log' => 'k\' aveut ddja fwait $1 candjmints. $2',
 	'renameuser-move-log' => 'Pådje displaeceye otomaticmint tot rlomant l\' uzeu «[[User:$1|$1]]» viè «[[User:$2|$2]]»',
 );
-$wgRenameuserMessages['yue'] = array(
+$messages['yue'] = array(
 	'renameuser'       => '改用戶名',
 	'renameuserold'    => '現時嘅用戶名:',
 	'renameusernew'    => '新嘅用戶名:',
@@ -1126,7 +1126,7 @@ $wgRenameuserMessages['yue'] = array(
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"改名做"[[User:$2|$2]]"嗰陣已經自動搬咗用戶頁',
 );
-$wgRenameuserMessages['zh-hans'] = array(
+$messages['zh-hans'] = array(
 	'renameuser'       => '用户重命名',
 	'renameuserold'    => '当前用户名：',
 	'renameusernew'    => '新用户名：',
@@ -1150,7 +1150,7 @@ $wgRenameuserMessages['zh-hans'] = array(
 	'renameuser-log'        => '拥有$1次编辑. $2',
 	'renameuser-move-log'   => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 );
-$wgRenameuserMessages['zh-hant'] = array(
+$messages['zh-hant'] = array(
 	'renameuser'       => '用戶重新命名',
 	'renameuserold'    => '現時用戶名:',
 	'renameusernew'    => '新用戶名:',
@@ -1176,16 +1176,16 @@ $wgRenameuserMessages['zh-hant'] = array(
 );
 
 # Kazakh fallback
-$wgRenameuserMessages['kk-kz'] = $wgRenameuserMessages['kk-cyrl'];
-$wgRenameuserMessages['kk-tr'] = $wgRenameuserMessages['kk-latn'];
-$wgRenameuserMessages['kk-cn'] = $wgRenameuserMessages['kk-arab'];
-$wgRenameuserMessages['kk'] = $wgRenameuserMessages['kk-cyrl'];
+$messages['kk-kz'] = $messages['kk-cyrl'];
+$messages['kk-tr'] = $messages['kk-latn'];
+$messages['kk-cn'] = $messages['kk-arab'];
+$messages['kk'] = $messages['kk-cyrl'];
 
 # Chinese fallback
-$wgRenameuserMessages['zh'] = $wgRenameuserMessages['zh-hans'];
-$wgRenameuserMessages['zh-cn'] = $wgRenameuserMessages['zh-hans'];
-$wgRenameuserMessages['zh-hk'] = $wgRenameuserMessages['zh-hant'];
-$wgRenameuserMessages['zh-min-nan'] = $wgRenameuserMessages['nan'];
-$wgRenameuserMessages['zh-sg'] = $wgRenameuserMessages['zh-hans'];
-$wgRenameuserMessages['zh-tw'] = $wgRenameuserMessages['zh-hant'];
-$wgRenameuserMessages['zh-yue'] = $wgRenameuserMessages['yue'];
+$messages['zh'] = $messages['zh-hans'];
+$messages['zh-cn'] = $messages['zh-hans'];
+$messages['zh-hk'] = $messages['zh-hant'];
+$messages['zh-min-nan'] = $messages['nan'];
+$messages['zh-sg'] = $messages['zh-hans'];
+$messages['zh-tw'] = $messages['zh-hant'];
+$messages['zh-yue'] = $messages['yue'];
