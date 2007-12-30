@@ -330,26 +330,29 @@ $messages['fo'] = array(
 	'renameusernew' => 'Nýtt brúkaranavn:',
 );
 
+/** French (Français)
+ * @author Hégésippe Cormier
+ */
 $messages['fr'] = array(
-	'renameuser' => 'Renommer l’utilisateur',
-	'renameuserold' => 'Nom actuel de l’utilisateur :',
-	'renameusernew' => 'Nouveau nom de l’utilisateur :',
-	'renameuserreason' => 'Motif du renommage :',
-	'renameusermove' => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
-	'renameusersubmit' => 'Soumettre',
+	'renameuser'                  => 'Renommer l’utilisateur',
+	'renameuserold'               => 'Nom actuel de l’utilisateur :',
+	'renameusernew'               => 'Nouveau nom de l’utilisateur :',
+	'renameuserreason'            => 'Motif du renommage :',
+	'renameusermove'              => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
+	'renameusersubmit'            => 'Soumettre',
 	'renameusererrordoesnotexist' => 'L’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
-	'renameusererrorexists' => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
-	'renameusererrorinvalid' => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
-	'renameusererrortoomany' => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
-	'renameusersuccess' => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
-	'renameuser-page-exists' => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
-	'renameuser-page-moved' => 'La page $1 a été déplacée vers $2.',
-	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
-	'renameuserlogpage' => 'Historique des renommages d’utilisateur',
-	'renameuserlogpagetext' => 'Ceci est l’historique des changements de noms d\'utilisateur',
-	'renameuserlogentry' => 'a renommé $1 vers $2',
-	'renameuser-log' => '$1 éditions. Motif : $2',
-	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
+	'renameusererrorexists'       => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
+	'renameusererrorinvalid'      => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
+	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
+	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
+	'renameuser-page-exists'      => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
+	'renameuser-page-moved'       => 'La page $1 a été déplacée vers $2.',
+	'renameuser-page-unmoved'     => 'La page $1 ne peut pas être renommée en $2.',
+	'renameuserlogpage'           => 'Historique des renommages d’utilisateur',
+	'renameuserlogpagetext'       => "Ceci est l’historique des changements de noms d'utilisateur",
+	'renameuserlogentry'          => 'a renommé $1 vers $2',
+	'renameuser-log'              => '$1 éditions. Motif : $2',
+	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
 
 /** Irish (Gaeilge)
