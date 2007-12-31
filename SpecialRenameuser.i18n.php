@@ -1094,15 +1094,28 @@ $messages['tr'] = array(
 	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
 );
+
 $messages['ur'] = array(
 	'renameuser'       => 'صارف کا نام تبدیل کریں',
 	'renameuser-log'   => 'جن کی $1 ترامیم تھیں. $2',
 );
+
 $messages['vec'] = array(
 	'renameuser' => 'Rinomina utente',
 	'renameuserold' => 'Vecio nome utente:',
 	'renameusernew' => 'Novo nome utente:',
 );
+
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'renameuser'     => 'Votanemön gebani',
+	'renameuserold'  => 'Gebananem anuik:',
+	'renameusernew'  => 'Gebananem nulik:',
+	'renameuser-log' => 'Redakams $1. Kod: $2',
+);
+
 $messages['wa'] = array(
 	'renameuser' => 'Rilomer èn uzeu',
 	'renameuserold' => 'No d\' elodjaedje pol moumint:',
@@ -1123,6 +1136,7 @@ $messages['wa'] = array(
 	'renameuser-log' => 'k\' aveut ddja fwait $1 candjmints. $2',
 	'renameuser-move-log' => 'Pådje displaeceye otomaticmint tot rlomant l\' uzeu «[[User:$1|$1]]» viè «[[User:$2|$2]]»',
 );
+
 $messages['yue'] = array(
 	'renameuser'       => '改用戶名',
 	'renameuserold'    => '現時嘅用戶名:',
@@ -1147,6 +1161,7 @@ $messages['yue'] = array(
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"改名做"[[User:$2|$2]]"嗰陣已經自動搬咗用戶頁',
 );
+
 $messages['zh-hans'] = array(
 	'renameuser'       => '用户重命名',
 	'renameuserold'    => '当前用户名：',
@@ -1171,6 +1186,7 @@ $messages['zh-hans'] = array(
 	'renameuser-log'        => '拥有$1次编辑. $2',
 	'renameuser-move-log'   => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 );
+
 $messages['zh-hant'] = array(
 	'renameuser'       => '用戶重新命名',
 	'renameuserold'    => '現時用戶名:',
