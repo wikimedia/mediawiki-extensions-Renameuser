@@ -28,11 +28,13 @@ $messages['en'] = array(
 	'renameuser-log'        => '$1 edits. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
+
 $messages['af'] = array(
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
 );
+
 $messages['ar'] = array(
 	'renameuser' => 'إعادة تسمية مستخدم',
 	'renameuserold' => 'اسم المستخدم الحالي:',
@@ -54,9 +56,11 @@ $messages['ar'] = array(
 	'renameuser-log' => '$1 تعديل. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 );
+
 $messages['arc'] = array(
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
 );
+
 $messages['bcl'] = array(
 	'renameusersubmit' => 'Isumitir',
 	'renameusererrordoesnotexist' => 'An parágamit "<nowiki>$1</nowiki>" mayò man',
@@ -65,6 +69,7 @@ $messages['bcl'] = array(
 	'renameuser-page-unmoved' => 'An páhinang $1 dai mailipat sa $2.',
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
+
 $messages['bg'] = array(
 	'renameuser' => 'Преименуване на потребител',
 	'renameuserold' => 'Текущо потребителско име:',
@@ -86,6 +91,7 @@ $messages['bg'] = array(
 	'renameuser-log' => '$1 редакции. Причина: $2',
 	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 );
+
 $messages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
@@ -108,6 +114,7 @@ $messages['br'] = array(
 	'renameuser-log'        => 'Ssavet gantañ $1 degasadenn. $2',
 	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
 );
+
 $messages['ca'] = array(
 	'renameuser'=> 'Reanomena l\'usuari',
 	'renameuserold'=> 'Nom d\'usuari actual:',
@@ -132,6 +139,7 @@ $messages['cdo'] = array(
 	'renameusernew'    => 'Sĭng ê̤ṳng-hô-miàng:',
 	'renameuser-page-moved'          => 'Ciā hiĕk $1 ī-gĭng ké̤ṳk iè gáu $2.',
 );
+
 $messages['cs'] = array(
 	'renameuser' => 'Přejmenovat uživatele',
 	'renameuserold' => 'Stávající uživatelské jméno:',
@@ -153,6 +161,7 @@ $messages['cs'] = array(
 	'renameuser-log' => '$1 editací. $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
+
 $messages['cu'] = array(
 	'renameuser' => 'Прѣименѹи польѕевател҄ь',
 	'renameuserold' => 'Нынѣщьнѥѥ имѧ:',
@@ -166,6 +175,7 @@ $messages['cu'] = array(
 	'renameusererrortoomany' => 'Польѕевател҄ь «<nowiki>$1</nowiki>» $2 {{PLURAL:$2|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ. Аще польѕевател прѣименѹѥши кыи болѥ $3 {{PLURAL:$3|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ, то зълѣ бѫдетъ.',
 	'renameuserlogentry' => 'нарече $1 именьмь $2',
 );
+
 $messages['de'] = array(
 	'renameuser'       => 'Benutzer umbenennen',
 	'renameuserold'    => 'Bisheriger Benutzername:',
@@ -774,6 +784,7 @@ $messages['nds'] = array(
 	'renameuserlogpagetext' => 'Dit is dat Logbook för ännerte Brukernaams',
 	'renameuser-move-log' => 'Siet bi dat Ännern vun’n Brukernaam \'\'[[{{ns:2}}:$1|$1]]\'\' na \'\'[[{{ns:2}}:$2|$2]]\'\' automaatsch schaven',
 );
+
 $messages['nl'] = array(
 	'renameuser' => 'Gebruiker hernoemen',
 	'renameuserold' => 'Huidige gebruikersnaam:',
@@ -795,26 +806,32 @@ $messages['nl'] = array(
 	'renameuser-log' => '$1 bewerkingen. $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
+
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
 $messages['no'] = array(
-	'renameuser' => 'Omdøp bruker',
-	'renameuserold' => 'Nåværende navn:',
-	'renameusernew' => 'Nytt brukernavn:',
-	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
-	'renameusersubmit' => 'Omdøp',
+	'renameuser'                  => 'Omdøp bruker',
+	'renameuserold'               => 'Nåværende navn:',
+	'renameusernew'               => 'Nytt brukernavn:',
+	'renameuserreason'            => 'Grunn for omdøping:',
+	'renameusermove'              => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameusersubmit'            => 'Omdøp',
 	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke',
-	'renameusererrorexists' => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
-	'renameusererrorinvalid' => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig',
-	'renameusererrortoomany' => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å omdøpe brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
-	'renameusersuccess' => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>»',
-	'renameuser-page-exists' => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
-	'renameuser-page-moved' => 'Siden $1 har blitt flyttet til $2.',
-	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
-	'renameuserlogpage' => 'Omdøpingslogg',
-	'renameuserlogpagetext' => 'Dette er en logg over endringer i brukernavn.',
-	'renameuserlogentry' => 'har omdøpt $1 til $2',
-	'renameuser-log' => '$1 redigeringer. Grunn: $2',
-	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+	'renameusererrorexists'       => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
+	'renameusererrorinvalid'      => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig',
+	'renameusererrortoomany'      => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å omdøpe brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
+	'renameusersuccess'           => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists'      => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
+	'renameuser-page-moved'       => 'Siden $1 har blitt flyttet til $2.',
+	'renameuser-page-unmoved'     => 'Siden $1 kunne ikke flyttes til $2.',
+	'renameuserlogpage'           => 'Omdøpingslogg',
+	'renameuserlogpagetext'       => 'Dette er en logg over endringer i brukernavn.',
+	'renameuserlogentry'          => 'har omdøpt $1 til $2',
+	'renameuser-log'              => '$1 redigeringer. Grunn: $2',
+	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
+
 $messages['oc'] = array(
 	'renameuser' => 'Renomenar l\'utilizaire',
 	'renameuserold' => 'Nom actual de l\'utilizaire :',
@@ -836,6 +853,7 @@ $messages['oc'] = array(
 	'renameuser-log' => 'qu\'aviá $1 edicions a son actiu. $2',
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
+
 $messages['pl'] = array(
 	'renameuser' => 'Zmiana nazwy użytkownika',
 	'renameuserold' => 'Obecna nazwa użytkownika:',
