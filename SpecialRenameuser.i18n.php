@@ -949,6 +949,7 @@ $messages['ro'] = array(
 
 /** Russian (Русский)
  * @author .:Ajvol:.
+ * @author Siebrand
  */
 $messages['ru'] = array(
 	'renameuser'                  => 'Переименовать участника',
@@ -969,7 +970,7 @@ $messages['ru'] = array(
 	'renameuserlogpagetext'       => 'Это журнал произведённых переименований зарегистрированных участников',
 	'renameuserlogentry'          => 'переименовал $1 в [[$2]]',
 	'renameuser-log'              => 'имеющий $1 правок. $2',
-	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[Участник:$1]]» в «[[Участник:$2]]»',
+	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 );
 
 $messages['sk'] = array(
