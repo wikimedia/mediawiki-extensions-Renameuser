@@ -212,32 +212,6 @@ $messages['el'] = array(
 	'renameuser-log'     => '$1 επεξεργασίες. Λόγος: $2',
 );
 
-/** Japanese (日本語)
- * @author Suisui
- * @author Broad-Sky
- * @author Marine-Blue
- */
-$messages['ja'] = array(
-	'renameuser'                  => '利用者名の変更',
-	'renameuserold'               => '現在の利用者名:',
-	'renameusernew'               => '新しい利用者名:',
-	'renameuserreason'            => '変更理由:',
-	'renameusermove'              => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
-	'renameusersubmit'            => '変更',
-	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
-	'renameusererrorexists'       => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
-	'renameusererrorinvalid'      => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
-	'renameusererrortoomany'      => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
-	'renameusersuccess'           => '利用者 "[[User:$1|$1]]" を "[[User:$2|$2]]" に変更しました。',
-	'renameuser-page-exists'      => '$1 が既に存在しているため、自動で上書きできませんでした。',
-	'renameuser-page-moved'       => '$1 を $2 に移動しました。',
-	'renameuser-page-unmoved'     => '$1 を $2 に移動できませんでした。',
-	'renameuserlogpage'           => '利用者名変更記録',
-	'renameuserlogpagetext'       => 'これは、利用者名の変更を記録したものです。',
-	'renameuser-log'              => '投稿数 $1回. $2',
-	'renameuser-move-log'         => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
-);
-
 $messages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
 	'renameuserold' => 'Aktuala uzantonomo:',
@@ -552,24 +526,30 @@ $messages['it'] = array(
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
+/** Japanese (日本語)
+ * @author Suisui
+ * @author Broad-Sky
+ * @author Marine-Blue
+ */
 $messages['ja'] = array(
-	'renameuser' => '利用者名の変更',
-	'renameuserold' => '現在の利用者名:',
-	'renameusernew' => '新しい利用者名:',
-	'renameusermove' => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
-	'renameusersubmit' => '変更',
+	'renameuser'                  => '利用者名の変更',
+	'renameuserold'               => '現在の利用者名:',
+	'renameusernew'               => '新しい利用者名:',
+	'renameuserreason'            => '変更理由:',
+	'renameusermove'              => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
+	'renameusersubmit'            => '変更',
 	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
-	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
-	'renameusererrorinvalid' => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
-	'renameusererrortoomany' => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
-	'renameusersuccess' => '利用者 "[[User:$1|$1]]" を "[[User:$2|$2]]" に変更しました。',
-	'renameuser-page-exists' => '$1 が既に存在しているため、自動で上書きできませんでした。',
-	'renameuser-page-moved' => '$1 を $2 に移動しました。',
-	'renameuser-page-unmoved' => '$1 を $2 に移動できませんでした。',
-	'renameuserlogpage' => '利用者名変更記録',
-	'renameuserlogpagetext' => 'これは、利用者名の変更を記録したものです。',
-	'renameuser-log' => '投稿数 $1回. $2',
-	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
+	'renameusererrorexists'       => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
+	'renameusererrorinvalid'      => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
+	'renameusererrortoomany'      => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameusersuccess'           => '利用者 "[[User:$1|$1]]" を "[[User:$2|$2]]" に変更しました。',
+	'renameuser-page-exists'      => '$1 が既に存在しているため、自動で上書きできませんでした。',
+	'renameuser-page-moved'       => '$1 を $2 に移動しました。',
+	'renameuser-page-unmoved'     => '$1 を $2 に移動できませんでした。',
+	'renameuserlogpage'           => '利用者名変更記録',
+	'renameuserlogpagetext'       => 'これは、利用者名の変更を記録したものです。',
+	'renameuser-log'              => '投稿数 $1回. $2',
+	'renameuser-move-log'         => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
 
 $messages['ka'] = array(
