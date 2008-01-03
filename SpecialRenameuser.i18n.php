@@ -134,6 +134,7 @@ $messages['ca'] = array(
 	'renameuser-log'=> 'Amb $1 contribucions. $2',
 	'renameuser-move-log'=> 'S\'ha reanomenat automàticament la pàgina mentre es reanomenava l\'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»',
 );
+
 $messages['cdo'] = array(
 	'renameuserold'    => 'Hiêng-sì-câi gì ê̤ṳng-hô-miàng:',
 	'renameusernew'    => 'Sĭng ê̤ṳng-hô-miàng:',
@@ -467,19 +468,29 @@ $messages['hsb'] = array(
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
 
+/** Hungarian (Magyar)
+ * @author Bdanee
+ */
 $messages['hu'] = array(
-	'renameuser'       => 'Szerkesztő átnevezése',
-
+	'renameuser'                  => 'Szerkesztő átnevezése',
+	'renameuserold'               => 'Jelenlegi felhasználónév:',
+	'renameusernew'               => 'Új felhasználónév:',
+	'renameuserreason'            => 'Átnevezés oka:',
+	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új névre',
+	'renameusersubmit'            => 'Elküld',
 	'renameusererrordoesnotexist' => '„<nowiki>$1</nowiki>” nevű szerkesztő nem létezik',
 	'renameusererrorexists'       => '„<nowiki>$1</nowiki>” nevű szerkesztő már létezik',
 	'renameusererrorinvalid'      => 'A „<nowiki>$1</nowiki>” felhasználónév hibás',
-
-	'renameuser-page-exists'         => '$1 már létezik és nem lehet automatikusan felülírni.',
-	'renameuser-page-moved'          => '$1 átmozgatva a következőre: $2.',
-	'renameuser-page-unmoved'        => '$1-t nem lehet átnevezni a következőre: $2.',
-
-	'renameuserlogpage'     => 'Felhasználó-átnevezési napló',
-	'renameuser-move-log'   => '„[[User:$1|$1]]” „[[User:$2|$2]]”-re való átnevezése közben automatikusan átnevezett oldal',
+	'renameusererrortoomany'      => '„<nowiki>$1</nowiki>” szerkesztőnek $2 szerkesztése van, $3 szerkesztésnél többel rendelkező felhasználók átnevezése rossz hatással lehet az oldal működésére',
+	'renameusersuccess'           => '„<nowiki>$1</nowiki>” sikeresen át lett nevezve „<nowiki>$2</nowiki>” névre.',
+	'renameuser-page-exists'      => '$1 már létezik és nem lehet automatikusan felülírni.',
+	'renameuser-page-moved'       => '$1 átmozgatva a következőre: $2.',
+	'renameuser-page-unmoved'     => '$1-t nem lehet átnevezni a következőre: $2.',
+	'renameuserlogpage'           => 'Felhasználó-átnevezési napló',
+	'renameuserlogpagetext'       => 'Ez a felhasználói nevek változtatásának naplója.',
+	'renameuserlogentry'          => 'átnevezte $1 azonosítóját (az új név: [[User:$2]])',
+	'renameuser-log'              => '$1 szerkesztése van. Indoklás: $2',
+	'renameuser-move-log'         => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 );
 
 $messages['id'] = array(
@@ -540,6 +551,7 @@ $messages['it'] = array(
 	'renameuser-log' => 'Che ha $1 contributi. $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
+
 $messages['ja'] = array(
 	'renameuser' => '利用者名の変更',
 	'renameuserold' => '現在の利用者名:',
@@ -994,6 +1006,7 @@ $messages['sk'] = array(
 	'renameuser-log' => 'mal $1 úpravy. $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
+
 $messages['sq'] = array(
 	'renameuser'                  => 'Ndërrim përdoruesi',
 	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
