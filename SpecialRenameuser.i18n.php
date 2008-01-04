@@ -1003,6 +1003,16 @@ $messages['sq'] = array(
 	'renameusersuccess'           => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
 );
 
+/** ћирилица (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'renameuserold'    => 'Тренутно корисничко име:',
+	'renameusernew'    => 'Ново корисничко име:',
+	'renameuserreason' => 'Разлог преименовања:',
+	'renameuser-log'   => '$1 измена. Разлог: $2',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Maartenvdbent
  * @author Pyt
