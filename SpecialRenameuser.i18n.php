@@ -115,30 +115,30 @@ $messages['br'] = array(
 	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
 );
 
+/** Catalan (Català)
+ * @author Toniher
+ * @author SMP
+ */
 $messages['ca'] = array(
-	'renameuser'=> 'Reanomena l\'usuari',
-	'renameuserold'=> 'Nom d\'usuari actual:',
-	'renameusernew'=> 'Nou nom d\'usuari:',
-	'renameusermove'=> 'Reanomena la pàgina d\'usuari, la de discussió i les subpàgines que tingui al nou nom',
-	'renameusersubmit'=> 'Tramet',
-	'renameusererrordoesnotexist'=> 'L\'usuari «<nowiki>$1</nowiki>» no existeix',
-	'renameusererrorexists'=> 'L\'usuari «<nowiki>$1</nowiki>» ja existeix',
-	'renameusererrorinvalid'=> 'El nom d\'usuari «<nowiki>$1</nowiki>» no és vàlid',
-	'renameusererrortoomany'=> 'L\'usuari «<nowiki>$1</nowiki>» té $2 contribucions. Canviar el nom a un usuari amb més de $3 contribucions pot causar problemes',
-	'renameusersuccess'=> 'L\'usuari «<nowiki>$1</nowiki>» s\'ha reanomenat com a «<nowiki>$2</nowiki>»',
-	'renameuser-page-exists'=> 'La pàgina «$1» ja existeix i no pot ser sobreescrita automàticament',
-	'renameuser-page-moved'=> 'La pàgina «$1» s\'ha reanomenat com a «$2».',
-	'renameuser-page-unmoved'=> 'La pàgina $1 no s\'ha pogut reanomenar com a «$2».',
-	'renameuserlogpage'=> 'Registre del canvi de nom d\'usuari',
-	'renameuserlogpagetext'=> 'Aquest és un registre dels canvis als noms d\'usuari',
-	'renameuser-log'=> 'Amb $1 contribucions. $2',
-	'renameuser-move-log'=> 'S\'ha reanomenat automàticament la pàgina mentre es reanomenava l\'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»',
-);
-
-$messages['cdo'] = array(
-	'renameuserold'    => 'Hiêng-sì-câi gì ê̤ṳng-hô-miàng:',
-	'renameusernew'    => 'Sĭng ê̤ṳng-hô-miàng:',
-	'renameuser-page-moved'          => 'Ciā hiĕk $1 ī-gĭng ké̤ṳk iè gáu $2.',
+	'renameuser'                  => "Reanomena l'usuari",
+	'renameuserold'               => "Nom d'usuari actual:",
+	'renameusernew'               => "Nou nom d'usuari:",
+	'renameuserreason'            => 'Motiu pel canvi:',
+	'renameusermove'              => "Reanomena la pàgina d'usuari, la de discussió i les subpàgines que tingui al nou nom",
+	'renameusersubmit'            => 'Tramet',
+	'renameusererrordoesnotexist' => "L'usuari «<nowiki>$1</nowiki>» no existeix",
+	'renameusererrorexists'       => "L'usuari «<nowiki>$1</nowiki>» ja existeix",
+	'renameusererrorinvalid'      => "El nom d'usuari «<nowiki>$1</nowiki>» no és vàlid",
+	'renameusererrortoomany'      => "L'usuari «<nowiki>$1</nowiki>» té $2 contribucions. Canviar el nom a un usuari amb més de $3 contribucions pot causar problemes",
+	'renameusersuccess'           => "L'usuari «<nowiki>$1</nowiki>» s'ha reanomenat com a «<nowiki>$2</nowiki>»",
+	'renameuser-page-exists'      => 'La pàgina «$1» ja existeix i no pot ser sobreescrita automàticament',
+	'renameuser-page-moved'       => "La pàgina «$1» s'ha reanomenat com a «$2».",
+	'renameuser-page-unmoved'     => "La pàgina $1 no s'ha pogut reanomenar com a «$2».",
+	'renameuserlogpage'           => "Registre del canvi de nom d'usuari",
+	'renameuserlogpagetext'       => "Aquest és un registre dels canvis als noms d'usuari",
+	'renameuserlogentry'          => 'ha canviat el nom de $1 a $2',
+	'renameuser-log'              => '$1 contribucions. Motiu: $2',
+	'renameuser-move-log'         => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 );
 
 $messages['cs'] = array(
