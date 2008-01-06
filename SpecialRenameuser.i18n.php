@@ -444,23 +444,23 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Bdanee
- * @author KossuthRad
  */
 $messages['hu'] = array(
-	'renameuser'                  => 'User átnevezése',
+	'renameuser'                  => 'Felhasználó átnevezése',
 	'renameuserold'               => 'Jelenlegi felhasználónév:',
 	'renameusernew'               => 'Új felhasználónév:',
 	'renameuserreason'            => 'Átnevezés oka:',
 	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új névre',
 	'renameusersubmit'            => 'Elküld',
-	'renameusererrordoesnotexist' => 'A user "<nowiki>$1</nowiki>" nem létezik',
-	'renameusererrorexists'       => 'A user "<nowiki>$1</nowiki>" már létezik',
-	'renameusererrorinvalid'      => 'A "<nowiki>$1</nowiki>" usernév érvénytelen',
+	'renameusererrordoesnotexist' => 'Nem létezik „<nowiki>$1</nowiki>” nevű felhasználó',
+	'renameusererrorexists'       => 'Már létezik „<nowiki>$1</nowiki>” nevű felhasználó',
+	'renameusererrorinvalid'      => 'A felhasználónév („<nowiki>$1</nowiki>”) érvénytelen',
 	'renameusererrortoomany'      => '„<nowiki>$1</nowiki>” szerkesztőnek $2 szerkesztése van, $3 szerkesztésnél többel rendelkező felhasználók átnevezése rossz hatással lehet az oldal működésére',
 	'renameusersuccess'           => '„<nowiki>$1</nowiki>” sikeresen át lett nevezve „<nowiki>$2</nowiki>” névre.',
-	'renameuser-page-exists'      => 'A $1-es oldal már létezik és nem lehetett autómatikusan újraírni.',
-	'renameuser-page-moved'       => 'A $1-es oldal a $2-hez lett mozgatva.',
-	'renameuser-page-unmoved'     => 'A $1-es oldalt nem lehetett a $2-hez mozgatni.',
+	'renameuser-page-exists'      => '$1 már létezik, és nem lehet automatikusan felülírni.',
+	'renameuser-page-moved'       => '$1 át lett nevezve $2 névre',
+	'renameuser-page-unmoved'     => '$1-t nem sikerült $2 névre nevezi',
+	'renameuserlogpage'           => 'Felhasználóátnevezési-napló',
 	'renameuserlogpagetext'       => 'Ez a felhasználói nevek változtatásának naplója.',
 	'renameuserlogentry'          => 'átnevezte $1 azonosítóját (az új név: [[User:$2]])',
 	'renameuser-log'              => '$1 szerkesztése van. Indoklás: $2',
