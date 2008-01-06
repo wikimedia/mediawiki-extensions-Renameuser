@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation file for Renameuser extension.
+ * Internationalisation file for extension Renameuser.
  *
  * @addtogroup Extensions
 */
@@ -450,7 +450,7 @@ $messages['hu'] = array(
 	'renameuserold'               => 'Jelenlegi felhasználónév:',
 	'renameusernew'               => 'Új felhasználónév:',
 	'renameuserreason'            => 'Átnevezés oka:',
-	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új névre',
+	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új név alá',
 	'renameusersubmit'            => 'Elküld',
 	'renameusererrordoesnotexist' => 'Nem létezik „<nowiki>$1</nowiki>” nevű felhasználó',
 	'renameusererrorexists'       => 'Már létezik „<nowiki>$1</nowiki>” nevű felhasználó',
@@ -575,6 +575,31 @@ $messages['ka'] = array(
 	'renameuser-move-log'   => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელის შეცვლისას "[[{{ns:user}}:$2|$2]]-ით"',
 );
 
+$messages['kk-arab'] = array(
+	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
+	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
+	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
+	'renameuserreason' => 'قايتا اتاۋ سەبەبٸ:',
+	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٵنە تالقىلاۋ بەتتەرٸن (جٵنە دە ولاردىڭ تٶمەنگٸ بەتتەرٸن) جاڭا اتاۋعا جىلجىتۋ',
+	'renameusersubmit' => 'جٸبەرۋ',
+
+	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى جوق',
+	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٷگە ',
+	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» قاتىسۋشى اتى جارامسىز ',
+	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٷلەس بەرگەن, $3 ارتا ٷلەسٸ بار قاتىسۋشىنى قايتا اتاۋى توراپ ٶنٸمدٸلٸگٸنە ىقپال ەتەدٸ',
+	'renameusersuccess'           => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى اتى «<nowiki>$2</nowiki>» دەگەنگە اۋىستىرىلدى',
+
+	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٷگە, جٵنە ٶزدٸك تٷردە ونىڭ ٷستٸنە ەشتەڭە جازىلمايدى.',
+	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
+	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
+	'renameuserlogentry'    => '$1 اتاۋىن $2 دەگەنگە ٶزگەرتتٸ',
+	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
+	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٶزگەرٸستەر جۋرنالى',
+
+	'renameuser-log'        => '$1 تٷزەتۋٸ بار. $2',
+	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
+);
+
 $messages['kk-cyrl'] = array(
 	'renameuser'       => 'Қатысушыны қайта атау',
 	'renameuserold'    => 'Ағымдағы қатысушы аты:',
@@ -623,31 +648,6 @@ $messages['kk-latn'] = array(
 	'renameuserlogentry'    => '$1 atawın $2 degenge özgertti',
 	'renameuser-log'        => '$1 tüzetwi bar. $2',
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
-);
-
-$messages['kk-arab'] = array(
-	'renameuser'       => 'قاتىسۋشىنى قايتا اتاۋ',
-	'renameuserold'    => 'اعىمداعى قاتىسۋشى اتى:',
-	'renameusernew'    => 'جاڭا قاتىسۋشى اتى:',
-	'renameuserreason' => 'قايتا اتاۋ سەبەبٸ:',
-	'renameusermove'   => 'قاتىسۋشىنىڭ جەكە جٵنە تالقىلاۋ بەتتەرٸن (جٵنە دە ولاردىڭ تٶمەنگٸ بەتتەرٸن) جاڭا اتاۋعا جىلجىتۋ',
-	'renameusersubmit' => 'جٸبەرۋ',
-
-	'renameusererrordoesnotexist' => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى جوق',
-	'renameusererrorexists'       => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى بار تٷگە ',
-	'renameusererrorinvalid'      => '«<nowiki>$1</nowiki>» قاتىسۋشى اتى جارامسىز ',
-	'renameusererrortoomany'      => '«<nowiki>$1</nowiki>» قاتىسۋشى $2 ٷلەس بەرگەن, $3 ارتا ٷلەسٸ بار قاتىسۋشىنى قايتا اتاۋى توراپ ٶنٸمدٸلٸگٸنە ىقپال ەتەدٸ',
-	'renameusersuccess'           => '«<nowiki>$1</nowiki>» دەگەن قاتىسۋشى اتى «<nowiki>$2</nowiki>» دەگەنگە اۋىستىرىلدى',
-
-	'renameuser-page-exists'         => '$1 دەگەن بەت بار تٷگە, جٵنە ٶزدٸك تٷردە ونىڭ ٷستٸنە ەشتەڭە جازىلمايدى.',
-	'renameuser-page-moved'          => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلدى.',
-	'renameuser-page-unmoved'        => '$1 دەگەن بەت $2 دەگەن بەتكە جىلجىتىلمادى.',
-	'renameuserlogentry'    => '$1 اتاۋىن $2 دەگەنگە ٶزگەرتتٸ',
-	'renameuserlogpage'     => 'قاتىسۋشىنى قايتا اتاۋ جۋرنالى',
-	'renameuserlogpagetext' => 'بۇل قاتىسۋشى اتىنداعى ٶزگەرٸستەر جۋرنالى',
-
-	'renameuser-log'        => '$1 تٷزەتۋٸ بار. $2',
-	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت ٶزدٸك تٷردە جىلجىتىلدى',
 );
 
 $messages['kn'] = array(
@@ -730,6 +730,14 @@ $messages['lb'] = array(
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 );
 
+/** Latvian (Latviešu)
+ * @author SPQRobin
+ */
+$messages['lv'] = array(
+	'renameuserlogpage'     => 'Lietotāju pārdēvēšanas reģistrs',
+	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
+);
+
 $messages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
 	'renameuserold' => 'Сегашно корисничко име:',
@@ -742,14 +750,6 @@ $messages['mk'] = array(
 	'renameusersuccess' => 'Корисникот "<nowiki>$1</nowiki>" е преименуван во "<nowiki>$2</nowiki>"',
 	'renameuserlogpage' => 'Историја на преименувања на корисници',
 	'renameuserlogpagetext' => 'Ово е историја на преименувања на корисници',
-);
-
-/** Latvian (Latviešu)
- * @author SPQRobin
- */
-$messages['lv'] = array(
-	'renameuserlogpage'     => 'Lietotāju pārdēvēšanas reģistrs',
-	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
 );
 
 $messages['nan'] = array(
@@ -1217,10 +1217,10 @@ $messages['zh-hant'] = array(
 );
 
 # Kazakh fallback
+$messages['kk'] = $messages['kk-cyrl'];
+$messages['kk-cn'] = $messages['kk-arab'];
 $messages['kk-kz'] = $messages['kk-cyrl'];
 $messages['kk-tr'] = $messages['kk-latn'];
-$messages['kk-cn'] = $messages['kk-arab'];
-$messages['kk'] = $messages['kk-cyrl'];
 
 # Chinese fallback
 $messages['zh'] = $messages['zh-hans'];
