@@ -207,9 +207,10 @@ $messages['de'] = array(
  * @author MF-Warburg
  */
 $messages['el'] = array(
-	'renameusernew'      => 'Νέο όνομα χρήστη:',
-	'renameuserlogentry' => '$1 μετονομάστηκε σε [[User:$2]]',
-	'renameuser-log'     => '$1 επεξεργασίες. Λόγος: $2',
+	'renameusernew'               => 'Νέο όνομα χρήστη:',
+	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
+	'renameuserlogentry'          => '$1 μετονομάστηκε σε [[User:$2]]',
+	'renameuser-log'              => '$1 επεξεργασίες. Λόγος: $2',
 );
 
 $messages['eo'] = array(
@@ -1216,13 +1217,10 @@ $messages['zh-hant'] = array(
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 );
 
-# Kazakh fallback
 $messages['kk'] = $messages['kk-cyrl'];
 $messages['kk-cn'] = $messages['kk-arab'];
 $messages['kk-kz'] = $messages['kk-cyrl'];
 $messages['kk-tr'] = $messages['kk-latn'];
-
-# Chinese fallback
 $messages['zh'] = $messages['zh-hans'];
 $messages['zh-cn'] = $messages['zh-hans'];
 $messages['zh-hk'] = $messages['zh-hant'];
