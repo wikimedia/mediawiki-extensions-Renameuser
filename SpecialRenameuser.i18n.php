@@ -141,26 +141,30 @@ $messages['ca'] = array(
 	'renameuser-move-log'         => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 );
 
+/** Czech (Česky)
+ * @author Li-sung
+ * @author Martin Kozák
+ */
 $messages['cs'] = array(
-	'renameuser' => 'Přejmenovat uživatele',
-	'renameuserold' => 'Stávající uživatelské jméno:',
-	'renameusernew' => 'Nové uživatelské jméno:',
-	'renameuserreason' => 'Důvod přejmenování:',
-	'renameusermove' => 'Přesunout uživatelské a diskusní stránky (a jejich podstránky) na nové jméno',
-	'renameusersubmit' => 'Přejmenovat',
+	'renameuser'                  => 'Přejmenovat uživatele',
+	'renameuserold'               => 'Stávající uživatelské jméno:',
+	'renameusernew'               => 'Nové uživatelské jméno:',
+	'renameuserreason'            => 'Důvod přejmenování:',
+	'renameusermove'              => 'Přesunout uživatelské a diskusní stránky (a jejich podstránky) na nové jméno',
+	'renameusersubmit'            => 'Přejmenovat',
 	'renameusererrordoesnotexist' => 'Uživatel se jménem „<nowiki>$1</nowiki>“ neexistuje',
-	'renameusererrorexists' => 'Uživatel se jménem „<nowiki>$1</nowiki>“ již existuje',
-	'renameusererrorinvalid' => 'Uživatelské jméno „<nowiki>$1</nowiki>“ nelze použít',
-	'renameusererrortoomany' => 'Uživatel „<nowiki>$1</nowiki>“ má $2 příspěvků, přejmenování uživatelů s více než $3 příspěvky je zakázáno, neboť by příliš zatěžovalo systém.\'',
-	'renameusersuccess' => 'Uživatel „<nowiki>$1</nowiki>“ byl úspěšně přejmenován na „<nowiki>$2</nowiki>“',
-	'renameuser-page-exists' => 'Stránka $1 již existuje a nelze ji automaticky přepsat.',
-	'renameuser-page-moved' => 'Stránka $1 byla přesunuta na $2.',
-	'renameuser-page-unmoved' => 'Stránku $1 se nepodařilo přesunout na $2.',
-	'renameuserlogpage' => 'Kniha přejmenování uživatelů',
-	'renameuserlogpagetext' => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
-	'renameuserlogentry' => 'přejmenovává $1 na [[User:$2|$2]]',
-	'renameuser-log' => '$1 editací. $2',
-	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
+	'renameusererrorexists'       => 'Uživatel se jménem „<nowiki>$1</nowiki>“ již existuje',
+	'renameusererrorinvalid'      => 'Uživatelské jméno „<nowiki>$1</nowiki>“ nelze použít',
+	'renameusererrortoomany'      => "Uživatel „<nowiki>$1</nowiki>“ má $2 příspěvků, přejmenování uživatelů s více než $3 příspěvky je zakázáno, neboť by příliš zatěžovalo systém.'",
+	'renameusersuccess'           => 'Uživatel „<nowiki>$1</nowiki>“ byl úspěšně přejmenován na „<nowiki>$2</nowiki>“',
+	'renameuser-page-exists'      => 'Stránka $1 již existuje a nelze ji automaticky přepsat.',
+	'renameuser-page-moved'       => 'Stránka $1 byla přesunuta na $2.',
+	'renameuser-page-unmoved'     => 'Stránku $1 se nepodařilo přesunout na $2.',
+	'renameuserlogpage'           => 'Kniha přejmenování uživatelů',
+	'renameuserlogpagetext'       => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
+	'renameuserlogentry'          => 'přejmenovává $1 na $2',
+	'renameuser-log'              => '$1 editací. $2',
+	'renameuser-move-log'         => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
 
 $messages['cu'] = array(
@@ -966,26 +970,30 @@ $messages['ru'] = array(
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 );
 
+/** Slovak (Slovenčina)
+ * @author Helix84
+ * @author Robbot
+ */
 $messages['sk'] = array(
-	'renameuser' => 'Premenovať používateľa',
-	'renameuserold' => 'Súčasné používateľské meno:',
-	'renameusernew' => 'Nové používateľské meno:',
-	'renameuserreason' => 'Dôvod premenovania:',
-	'renameusermove' => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
-	'renameusersubmit' => 'Odoslať',
-	'renameusererrordoesnotexist' => 'Používateľ "<nowiki>$1</nowiki>" neexistuje',
-	'renameusererrorexists' => 'Používateľ "<nowiki>$1</nowiki>" už existuje',
-	'renameusererrorinvalid' => 'Používateľské meno "<nowiki>$1</nowiki>" je neplatné',
-	'renameusererrortoomany' => 'Používateľ "<nowiki>$1</nowiki>" má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
-	'renameusersuccess' => 'Používateľ "<nowiki>$1</nowiki>" bol premenovaný na "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists' => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
-	'renameuser-page-moved' => 'Stránka $1 bola presunutá na $2.',
-	'renameuser-page-unmoved' => 'Stránku $1 nebolo možné presunúť na $2.',
-	'renameuserlogpage' => 'Záznam premenovaní používateľov',
-	'renameuserlogpagetext' => 'Toto je záznam premenovaní používateľov',
-	'renameuserlogentry' => 'premenoval používateľa $1 na [[User:$2]]',
-	'renameuser-log' => 'mal $1 úpravy. $2',
-	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa "[[User:$1|$1]]" na "[[User:$2|$2]]"',
+	'renameuser'                  => 'Premenovať používateľa',
+	'renameuserold'               => 'Súčasné používateľské meno:',
+	'renameusernew'               => 'Nové používateľské meno:',
+	'renameuserreason'            => 'Dôvod premenovania:',
+	'renameusermove'              => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
+	'renameusersubmit'            => 'Odoslať',
+	'renameusererrordoesnotexist' => 'Používateľ „<nowiki>$1</nowiki>“  neexistuje',
+	'renameusererrorexists'       => 'Používateľ „<nowiki>$1</nowiki>“ už existuje',
+	'renameusererrorinvalid'      => 'Používateľské meno „<nowiki>$1</nowiki>“ je neplatné',
+	'renameusererrortoomany'      => 'Používateľ „<nowiki>$1</nowiki>“ má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
+	'renameusersuccess'           => 'Používateľ „<nowiki>$1</nowiki>“ bol premenovaný na „<nowiki>$2</nowiki>“',
+	'renameuser-page-exists'      => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
+	'renameuser-page-moved'       => 'Stránka $1 bola presunutá na $2.',
+	'renameuser-page-unmoved'     => 'Stránku $1 nebolo možné presunúť na $2.',
+	'renameuserlogpage'           => 'Záznam premenovaní používateľov',
+	'renameuserlogpagetext'       => 'Toto je záznam premenovaní používateľov',
+	'renameuserlogentry'          => 'premenoval používateľa $1 na [[User:$2]]',
+	'renameuser-log'              => 'mal $1 úpravy. $2',
+	'renameuser-move-log'         => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
 
 $messages['sq'] = array(
