@@ -1,5 +1,13 @@
 <?php
 
+if ( !defined( 'MEDIAWIKI' ) ) {
+	echo "RenameUser extension\n";
+	exit( 1 );
+}
+
+# Add messages
+wfLoadExtensionMessages( 'Renameuser' );
+
 /**
  * Special page allows authorised users to rename
  * user accounts
@@ -21,8 +29,6 @@ class SpecialRenameuser extends SpecialPage {
 	public function execute( $par ) {
 		global $wgOut, $wgUser, $wgTitle, $wgRequest, $wgContLang, $wgLang;
 		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
-
-		wfLoadExtensionMessages( 'Renameuser' );
 
 		$this->setHeaders();
 
