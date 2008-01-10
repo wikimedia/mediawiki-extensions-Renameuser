@@ -1016,10 +1016,24 @@ $messages['sq'] = array(
  * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
-	'renameuserold'    => 'Тренутно корисничко име:',
-	'renameusernew'    => 'Ново корисничко име:',
-	'renameuserreason' => 'Разлог преименовања:',
-	'renameuser-log'   => '$1 измена. Разлог: $2',
+	'renameuser'                  => 'Преименуј корисника',
+	'renameuserold'               => 'Тренутно корисничко име:',
+	'renameusernew'               => 'Ново корисничко име:',
+	'renameuserreason'            => 'Разлог преименовања:',
+	'renameusermove'              => 'Премести корисничку страницу и страницу за разговор (и њихове подстранице) на ново име',
+	'renameusersubmit'            => 'Прихвати',
+	'renameusererrordoesnotexist' => 'Корисник "<nowiki>$1</nowiki>" не постоји',
+	'renameusererrorexists'       => 'Корисник "<nowiki>$1</nowiki>" већ постоји',
+	'renameusererrorinvalid'      => 'Погрешно корисничко име: "<nowiki>$1</nowiki>"',
+	'renameusererrortoomany'      => 'Корисник "<nowiki>$1</nowiki>" има $2 прилога, преименовање корисника са више од $3 прилога може да утиче на перформансе сајта',
+	'renameusersuccess'           => 'Корисник "<nowiki>$1</nowiki>" је преименован на "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists'      => 'Страница $1 већ постоји и не може бити аутоматски преснимљена.',
+	'renameuser-page-moved'       => 'Страница $1 је премештена на $2.',
+	'renameuser-page-unmoved'     => 'Страница $1 не може бити премештена на $2.',
+	'renameuserlogpage'           => 'Историја преименовања корисника',
+	'renameuserlogpagetext'       => 'Ово је историја измена преименовања корисника',
+	'renameuserlogentry'          => 'је преименовао $1 у $2',
+	'renameuser-log'              => '$1 измена. Разлог: $2',
 );
 
 /** Seeltersk (Seeltersk)
@@ -1099,12 +1113,17 @@ $messages['to'] = array(
 	'renameuserlogpagetext'       => 'Ko e tohinoa ʻeni ʻo e ngaahi liliu ki he hingoa ʻo e kau ʻetita',
 );
 
+/** Turkish (Türkçe)
+ * @author Uğur Başak
+ * @author SPQRobin
+ */
 $messages['tr'] = array(
-	'renameuserold' => 'Şu anda ki kullanıcı adı:',
-	'renameusernew' => 'Yeni kullanıcı adı:',
-	'renameusersubmit' => 'Gönder',
-	'renameusersuccess' => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
-	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
+	'renameuser'            => 'Kullanıcı adı değiştir',
+	'renameuserold'         => 'Şu anda ki kullanıcı adı:',
+	'renameusernew'         => 'Yeni kullanıcı adı:',
+	'renameusersubmit'      => 'Gönder',
+	'renameusersuccess'     => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
+	'renameuserlogpage'     => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
 );
 
