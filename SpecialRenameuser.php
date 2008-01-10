@@ -14,7 +14,6 @@ if (!defined('MEDIAWIKI')) die();
 $wgAvailableRights[] = 'renameuser';
 $wgGroupPermissions['bureaucrat']['renameuser'] = true;
 
-$wgExtensionFunctions[] = 'wfSpecialRenameuser';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
 	'author' => 'Ævar Arnfjörð Bjarmason',
@@ -44,7 +43,3 @@ $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameu
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
-
-function wfSpecialRenameuser() {
-	wfLoadExtensionMessages( 'Renameuser' );
-}
