@@ -141,6 +141,13 @@ $messages['ca'] = array(
 	'renameuser-move-log'         => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 );
 
+/** Chechen (Нохчийн)
+ * @author SPQRobin
+ */
+$messages['ce'] = array(
+	'renameuser' => 'Юзер цIе хийца',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  * @author Martin Kozák
@@ -1140,12 +1147,16 @@ $messages['vec'] = array(
 
 /** Volapük (Volapük)
  * @author Malafaya
+ * @author Smeira
  */
 $messages['vo'] = array(
-	'renameuser'     => 'Votanemön gebani',
-	'renameuserold'  => 'Gebananem anuik:',
-	'renameusernew'  => 'Gebananem nulik:',
-	'renameuser-log' => 'Redakams $1. Kod: $2',
+	'renameuser'              => 'Votanemön gebani',
+	'renameuserold'           => 'Gebananem anuik:',
+	'renameusernew'           => 'Gebananem nulik:',
+	'renameuser-page-exists'  => 'Pad: $1 ya dabinon e no kanon pamoükön itjäfidiko.',
+	'renameuser-page-moved'   => 'Pad: $1 petopätükon ad pad: $2.',
+	'renameuser-page-unmoved' => 'No eplöpos ad topätükön padi: $1 ad pad: $2.',
+	'renameuser-log'          => 'Redakams $1. Kod: $2',
 );
 
 $messages['wa'] = array(
