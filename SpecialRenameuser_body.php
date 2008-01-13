@@ -136,19 +136,8 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
-		if ( !is_object( $newuser ) ) {
+		if ( !is_object( $newuser ) || !User::isCreatableName( $newuser->getName() ) ) {
 			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameusererrorinvalid', $newusername->getText() ) . "</div>" );
-			return;
-		}
-
-		// Usernames that are invalid for creation should not be allowed as re-
-		// name targets either.
-		if( !User::isCreatableName( $newuser->getName() ) ) {
-			$wgOut->addWikiText(
-				"<div class=\"errorbox\">"
-				. wfMsg( 'renameuser-error-uncreatable', $newusername->getText() )
-				. "</div>"
-			);
 			return;
 		}
 

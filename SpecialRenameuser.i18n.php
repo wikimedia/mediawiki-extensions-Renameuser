@@ -18,7 +18,6 @@ $messages['en'] = array(
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists',
 	'renameusererrorinvalid'      => 'The username "<nowiki>$1</nowiki>" is invalid',
 	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance',
-	'renameuser-error-uncreatable' => 'The username "<nowiki>$1</nowiki>" is not valid for creation',
 	'renameusersuccess'           => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'         => 'The page $1 already exists and cannot be automatically overwritten.',
 	'renameuser-page-moved'          => 'The page $1 has been moved to $2.',
