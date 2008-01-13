@@ -141,6 +141,17 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
+		// Usernames that are invalid for creation should not be allowed as re-
+		// name targets either.
+		if( !User::isCreatableName( $newuser->getName() ) ) {
+			$wgOut->addWikiText(
+				"<div class=\"errorbox\">"
+				. wfMsg( 'renameuser-error-uncreatable', $newusername->getText() )
+				. "</div>"
+			);
+			return;
+		}
+
 		// Check for the existence of lowercase oldusername in database.
 		// Until r19631 it was possible to rename a user to a name with first character as lowercase
 		if ( $wgRequest->getText( 'oldusername' ) !== $wgContLang->ucfirst( $wgRequest->getText( 'oldusername' ) ) ) {
