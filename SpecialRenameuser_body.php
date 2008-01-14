@@ -201,7 +201,7 @@ class SpecialRenameuser extends SpecialPage {
 		$rename->rename();
 
 		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgForContent( 'renameuser-log', $wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ), $wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
 
 		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) . "</div><br style=\"clear:both\" />" );
 

@@ -25,7 +25,7 @@ $messages['en'] = array(
 	'renameuserlogpage'     => 'User rename log',
 	'renameuserlogpagetext' => 'This is a log of changes to user names',
 	'renameuserlogentry'    => 'has renamed $1 to $2',
-	'renameuser-log'        => '$1 edits. Reason: $2',
+	'renameuser-log'        => '{{PLURAL:$1|1 edit|$1 edits}}. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
 
@@ -209,7 +209,7 @@ $messages['de'] = array(
 	'renameuserlogpage'     => 'Benutzernamenänderungs-Logbuch',
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
 	'renameuserlogentry'    => 'hat „$1“ in „$2“ umbenannt',
-	'renameuser-log'        => '$1 Bearbeitungen. Grund: $2',
+	'renameuser-log'        => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
 	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
 );
 
