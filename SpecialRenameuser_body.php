@@ -207,15 +207,15 @@ class SpecialRenameuser extends SpecialPage {
 
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
 			$dbr =& wfGetDB( DB_SLAVE );
-			$oldkey = $oldusername->getDBKey();
+			$oldkey = $oldusername->getDBkey();
 			$pages = $dbr->select(
 				'page',
 				array( 'page_namespace', 'page_title' ),
 				array(
 					'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
 					'(page_title LIKE ' . 
-						$dbr->addQuotes( $dbr->escapeLike( $oldusername->getDbKey() ) . '/%' ) . 
-						' OR page_title = ' . $dbr->addQuotes( $oldusername->getDbKey() ) . ')'
+						$dbr->addQuotes( $dbr->escapeLike( $oldusername->getDBkey() ) . '/%' ) . 
+						' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ) . ')'
 				),
 				__METHOD__
 			);
@@ -224,7 +224,7 @@ class SpecialRenameuser extends SpecialPage {
 			$skin =& $wgUser->getSkin();
 			while ( $row = $dbr->fetchObject( $pages ) ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
-				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDbKey(), $row->page_title ) );
+				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
 					$link = $skin->makeKnownLinkObj( $newPage );
 					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
