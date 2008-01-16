@@ -117,7 +117,7 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
-		if( $wgRequest->getText( 'oldusername' ) === '' || $wgRequest->getText( 'newusername' ) === '' ) {
+		if( $wgRequest->getText( 'token' ) === '' ) {
 			# They probably haven't even submitted the form, so don't go further.
 			return;
 		} elseif( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
