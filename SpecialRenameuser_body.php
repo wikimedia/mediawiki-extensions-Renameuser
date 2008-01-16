@@ -117,11 +117,14 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
-		// Sanity checks
-		if ( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
+		if( $wgRequest->getText( 'oldusername' ) === '' || $wgRequest->getText( 'newusername' ) === '' ) {
+			# They probably haven't even submitted the form, so don't go further.
+			return;
+		} elseif( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
 			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameuser-error-request' ) . "</div>" );
 			return;
 		} elseif( !is_object( $oldusername ) ) {
+			// FIXME: This is bogus.  Invalid titles need to be rename-able! (bug 12654)
 			$wgOut->addWikiText(
 				"<div class=\"errorbox\">"
 				. wfMsg( 'renameusererrorinvalid', $wgRequest->getText( 'oldusername' ) )
@@ -129,7 +132,6 @@ class SpecialRenameuser extends SpecialPage {
 			);
 			return;
 		} elseif( !is_object( $newusername ) ) {
-			// FIXME: This is bogus.  Invalid titles need to be rename-able! (bug 12654)
 			$wgOut->addWikiText(
 				"<div class=\"errorbox\">"
 				. wfMsg( 'renameusererrorinvalid', $wgRequest->getText( 'newusername' ) )
