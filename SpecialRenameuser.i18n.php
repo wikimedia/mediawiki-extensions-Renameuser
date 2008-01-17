@@ -351,6 +351,8 @@ $messages['fo'] = array(
 );
 
 /** French (Français)
+ * @author Siebrand
+ * @author Grondin
  * @author Hégésippe Cormier
  */
 $messages['fr'] = array(
@@ -364,6 +366,8 @@ $messages['fr'] = array(
 	'renameusererrorexists'       => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
 	'renameusererrorinvalid'      => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
 	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
+	'renameuser-error-request'    => 'Un problème existe avec la réception de la requête. Revenez en arrière et essayez à nouveau.',
+	'renameuser-error-same-user'  => 'Vous ne pouvez pas renommer un utilisateur avec la même chose auparavant.',
 	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
 	'renameuser-page-exists'      => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved'       => 'La page $1 a été déplacée vers $2.',
@@ -441,6 +445,7 @@ $messages['he'] = array(
 
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
+ * @author Dnik
  */
 $messages['hr'] = array(
 	'renameuser'                  => 'Promijeni ime suradnika',
@@ -453,6 +458,8 @@ $messages['hr'] = array(
 	'renameusererrorexists'       => 'Suradničko ime "<nowiki>$1</nowiki>" već postoji',
 	'renameusererrorinvalid'      => 'Suradničko ime "<nowiki>$1</nowiki>" nije valjano',
 	'renameusererrortoomany'      => 'Suradnik "<nowiki>$1</nowiki>" ima $2 uređivanja, preimenovanje suradnika s više od $3 uređivanja moglo bi usporiti ovaj wiki',
+	'renameuser-error-request'    => 'Pojavio se problem sa zaprimanjem zahtjeva. Molimo, vratite se i probajte ponovo.',
+	'renameuser-error-same-user'  => 'Ne možete promijeniti ime suradnika u isto kao prethodno.',
 	'renameusersuccess'           => 'Suradnik "<nowiki>$1</nowiki>" je preimenovan u "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'Stranica $1 već postoji i ne može biti prepisana.',
 	'renameuser-page-moved'       => 'Suradnikova stranica $1 je premještena, sad se zove: $2.',
@@ -460,7 +467,7 @@ $messages['hr'] = array(
 	'renameuserlogpage'           => 'Evidencija preimenovanja suradnika',
 	'renameuserlogpagetext'       => 'Ovo je evidencija promjena suradničkih imena',
 	'renameuserlogentry'          => 'je promijenio suradničko ime $1 u $2',
-	'renameuser-log'              => '$1 uređivanja. Razlog: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
 	'renameuser-move-log'         => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 );
 
@@ -1141,26 +1148,32 @@ $messages['su'] = array(
 	'renameusersuccess' => 'Pamaké "<nowiki>$1</nowiki>" geus diganti ngaranna jadi "<nowiki>$2</nowiki>"',
 );
 
+/** Swedish (Svenska)
+ * @author Habj
+ * @author Lejonel
+ */
 $messages['sv'] = array(
-	'renameuser' => 'Byt användarnamn',
-	'renameuserold' => 'Nuvarande användarnamn:',
-	'renameusernew' => 'Nytt användarnamn:',
-	'renameuserreason' => 'Anledning till namnbytet:',
-	'renameusermove' => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
-	'renameusersubmit' => 'Byt',
+	'renameuser'                  => 'Byt användarnamn',
+	'renameuserold'               => 'Nuvarande användarnamn:',
+	'renameusernew'               => 'Nytt användarnamn:',
+	'renameuserreason'            => 'Anledning till namnbytet:',
+	'renameusermove'              => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
+	'renameusersubmit'            => 'Byt',
 	'renameusererrordoesnotexist' => 'Användaren "<nowiki>$1</nowiki>" finns inte',
-	'renameusererrorexists' => 'Användarnamnet "<nowiki>$1</nowiki>" finns redan',
-	'renameusererrorinvalid' => 'Användarnamnet "<nowiki>$1</nowiki>" är felaktigt',
-	'renameusererrortoomany' => 'Användaren "<nowiki>$1</nowiki>" har $2 redigeringar. Att byta namn på en användare som gjort mer än $3 redigeringar kan påverka webbplatsens prestanda negativt.',
-	'renameusersuccess' => 'Användaren "<nowiki>$1</nowiki>" har döpts om till "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists' => 'Sidan $1 finns redan och kan inte skrivas över automatiskt.',
-	'renameuser-page-moved' => 'Sidan $1 flyttades till $2.',
-	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
-	'renameuserlogpage' => 'Omdöpningslogg',
-	'renameuserlogpagetext' => 'Detta är en logg över byten av användarnamn',
-	'renameuserlogentry' => 'döpte om $1 till $2',
-	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
-	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+	'renameusererrorexists'       => 'Användarnamnet "<nowiki>$1</nowiki>" finns redan',
+	'renameusererrorinvalid'      => 'Användarnamnet "<nowiki>$1</nowiki>" är felaktigt',
+	'renameusererrortoomany'      => 'Användaren "<nowiki>$1</nowiki>" har $2 redigeringar. Att byta namn på en användare som gjort mer än $3 redigeringar kan påverka webbplatsens prestanda negativt.',
+	'renameuser-error-request'    => 'Ett problem inträffade i hanteringen av begäran. Gå tillbaks och försök igen.',
+	'renameuser-error-same-user'  => 'Du kan inte döpa om en användare till det namn hon redan har.',
+	'renameusersuccess'           => 'Användaren "<nowiki>$1</nowiki>" har döpts om till "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists'      => 'Sidan $1 finns redan och kan inte skrivas över automatiskt.',
+	'renameuser-page-moved'       => 'Sidan $1 flyttades till $2.',
+	'renameuser-page-unmoved'     => 'Sidan $1 kunde inte flyttas till $2.',
+	'renameuserlogpage'           => 'Omdöpningslogg',
+	'renameuserlogpagetext'       => 'Detta är en logg över byten av användarnamn',
+	'renameuserlogentry'          => 'döpte om $1 till $2',
+	'renameuser-log'              => 'som hade gjort $1 redigeringar. $2',
+	'renameuser-move-log'         => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 );
 
 /** Tonga (faka-Tonga)
