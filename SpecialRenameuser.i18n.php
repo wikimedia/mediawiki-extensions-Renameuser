@@ -38,8 +38,8 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
- * @author Mido
  * @author Meno25
+ * @author Mido
  */
 $messages['ar'] = array(
 	'renameuser'                  => 'إعادة تسمية مستخدم',
@@ -52,6 +52,8 @@ $messages['ar'] = array(
 	'renameusererrorexists'       => 'المستخدم "<nowiki>$1</nowiki>" موجود بالفعل',
 	'renameusererrorinvalid'      => 'اسم المستخدم "<nowiki>$1</nowiki>" غير صحيح',
 	'renameusererrortoomany'      => 'يمتلك المستخدم "<nowiki>$1</nowiki>" $2 مساهمة، إعادة تسمية مستخدم يمتلك أكثر من $3 مساهمة قد يؤثر سلبا على أداء الموقع.',
+	'renameuser-error-request'    => 'حدثت مشكلة أثناء استقبال الطلب. من فضلك عد وحاول مرة ثانية.',
+	'renameuser-error-same-user'  => 'لا يمكنك إعادة تسمية مستخدم بنفس الاسم كما كان من قبل.',
 	'renameusersuccess'           => 'تمت إعادة تسمية المستخدم "<nowiki>$1</nowiki>" إلى "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'الصفحة $1 موجودة بالفعل ولا يمكن إنشاء أخرى مكانها أوتوماتيكيا.',
 	'renameuser-page-moved'       => 'تم نقل الصفحة $1 إلى $2.',
@@ -462,26 +464,32 @@ $messages['hr'] = array(
 	'renameuser-move-log'         => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Dundak
+ * @author Michawiki
+ */
 $messages['hsb'] = array(
-	'renameuser' => 'Wužiwarja přemjenować',
-	'renameuserold' => 'Tuchwilne wužiwarske mjeno:',
-	'renameusernew' => 'Nowe wužiwarske mjeno:',
-	'renameuserreason' => 'Přičina za přemjenowanje:',
-	'renameusermove' => 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
-	'renameusersubmit' => 'Składować',
+	'renameuser'                  => 'Wužiwarja přemjenować',
+	'renameuserold'               => 'Tuchwilne wužiwarske mjeno:',
+	'renameusernew'               => 'Nowe wužiwarske mjeno:',
+	'renameuserreason'            => 'Přičina za přemjenowanje:',
+	'renameusermove'              => 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
+	'renameusersubmit'            => 'Składować',
 	'renameusererrordoesnotexist' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
-	'renameusererrorexists' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
-	'renameusererrorinvalid' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
-	'renameusererrortoomany' => 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
-	'renameusersuccess' => 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
-	'renameuser-page-exists' => 'Strona $1 hižo eksistuje a njemóže so awtomatisce přepisować.',
-	'renameuser-page-moved' => 'Strona $1 bu pod nowy titul $2 přesunjena.',
-	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
-	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
-	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
-	'renameuserlogentry' => 'je $1 do [[User:$2]] přemjenował',
-	'renameuser-log' => 'z $1 wobdźěłanjemi. $2',
-	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
+	'renameusererrorexists'       => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
+	'renameusererrorinvalid'      => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
+	'renameusererrortoomany'      => 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
+	'renameuser-error-request'    => 'Problem je při přijimanju požadanja wustupił. Prošu dźi wróćo a spytaj hišće raz.',
+	'renameuser-error-same-user'  => 'Njemóžeš wužiwarja do samsneje wěcy kaž prjedy přemjenować.',
+	'renameusersuccess'           => 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
+	'renameuser-page-exists'      => 'Strona $1 hižo eksistuje a njemóže so awtomatisce přepisować.',
+	'renameuser-page-moved'       => 'Strona $1 bu pod nowy titul $2 přesunjena.',
+	'renameuser-page-unmoved'     => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
+	'renameuserlogpage'           => 'Protokol přemjenowanja wužiwarjow',
+	'renameuserlogpagetext'       => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
+	'renameuserlogentry'          => 'je $1 do [[User:$2]] přemjenował',
+	'renameuser-log'              => 'z $1 wobdźěłanjemi. $2',
+	'renameuser-move-log'         => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
 );
 
 /** Hungarian (Magyar)
@@ -840,6 +848,8 @@ $messages['nl'] = array(
 	'renameusererrorexists'       => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al.',
 	'renameusererrorinvalid'      => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig.',
 	'renameusererrortoomany'      => 'De gebruiker "<nowiki>$1</nowiki>" heeft $2 bewerkingen gedaan; het hernoemen van een gebruiker met meer dan $3 bijdragen kan de prestaties van de site nadelig beïnvloeden',
+	'renameuser-error-request'    => 'Er was een probleem bij het ontvangen van de aanvraag.  Gelieve terug te gaan en opnieuwe te proberen.',
+	'renameuser-error-same-user'  => 'U kan geen gebruiker hernoemen naar dezelfde naam.',
 	'renameusersuccess'           => 'De gebruiker "<nowiki>$1</nowiki>" is hernoemd naar "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists'      => 'De pagina $1 bestaat al en kan niet automatisch overschreven worden.',
 	'renameuser-page-moved'       => 'De pagina $1 is hernoemd naar $2.',
@@ -1039,6 +1049,8 @@ $messages['sk'] = array(
 	'renameusererrorexists'       => 'Používateľ „<nowiki>$1</nowiki>“ už existuje',
 	'renameusererrorinvalid'      => 'Používateľské meno „<nowiki>$1</nowiki>“ je neplatné',
 	'renameusererrortoomany'      => 'Používateľ „<nowiki>$1</nowiki>“ má $2 príspevkov, premenovanie používateľa s počtom príspevkov väčším ako $3 by sa mohlo nepriaznivo odraziť na výkone stránky',
+	'renameuser-error-request'    => 'Pri prijímaní vašej požiadavky nastal problém. Prosím, vráťte sa a skúste to znova.',
+	'renameuser-error-same-user'  => 'Nemôžete premenovať používateľa na rovnaké meno ako mal predtým.',
 	'renameusersuccess'           => 'Používateľ „<nowiki>$1</nowiki>“ bol premenovaný na „<nowiki>$2</nowiki>“',
 	'renameuser-page-exists'      => 'Stránka $1 už existuje a nie je možné ju automaticky prepísať.',
 	'renameuser-page-moved'       => 'Stránka $1 bola presunutá na $2.',
