@@ -412,7 +412,7 @@ $messages['gl'] = array(
 	'renameuserlogpage'           => 'Rexistro de usuarios que mudaron o nome',
 	'renameuserlogpagetext'       => 'Este é un rexistro dos cambios dos nomes de usuarios',
 	'renameuserlogentry'          => 'mudou o nome $1 a $2',
-	'renameuser-log'              => '$1 edicións. Razón: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 edición|$1 edicións}}. Razón: $2',
 	'renameuser-move-log'         => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
@@ -893,26 +893,31 @@ $messages['no'] = array(
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
 
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
 $messages['oc'] = array(
-	'renameuser' => 'Renomenar l\'utilizaire',
-	'renameuserold' => 'Nom actual de l\'utilizaire :',
-	'renameusernew' => 'Nom novèl de l\'utilizaire :',
-	'renameuserreason' => 'Motiu del renomenatge :',
-	'renameusermove' => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
-	'renameusersubmit' => 'Sometre',
-	'renameusererrordoesnotexist' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » es pas valid',
-	'renameusererrorexists' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » existís ja',
-	'renameusererrorinvalid' => 'Lo nom d\'utilizaire « <nowiki>$1</nowiki> » existís pas',
-	'renameusererrortoomany' => 'L\'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu\'a mai de $3 contribucions a son actiu pòt afectar las performanças del siti.',
-	'renameusersuccess' => 'L\'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »',
-	'renameuser-page-exists' => 'La pagina $1 existís ja e pòt pas èsser remplaçada automaticament.',
-	'renameuser-page-moved' => 'La pagina $1 es estada desplaçada vèrs $2.',
-	'renameuser-page-unmoved' => 'La pagina $1 pòt pas èsser renomenada en $2.',
-	'renameuserlogpage' => 'Istoric dels renomenatges d\'utilizaire',
-	'renameuserlogpagetext' => 'Aquò es l\'istoric dels cambiaments de nom dels utilizaires',
-	'renameuserlogentry' => 'a renomenat $1 en $2',
-	'renameuser-log' => 'qu\'aviá $1 edicions a son actiu. $2',
-	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
+	'renameuser'                  => "Renomenar l'utilizaire",
+	'renameuserold'               => "Nom actual de l'utilizaire :",
+	'renameusernew'               => "Nom novèl de l'utilizaire :",
+	'renameuserreason'            => 'Motiu del renomenatge :',
+	'renameusermove'              => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
+	'renameusersubmit'            => 'Sometre',
+	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
+	'renameusererrorexists'       => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís ja",
+	'renameusererrorinvalid'      => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís pas",
+	'renameusererrortoomany'      => "L'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu'a mai de $3 contribucions a son actiu pòt afectar las performanças del siti.",
+	'renameuser-error-request'    => 'Un problèma existís amb la recepcion de la requèsta. Tornatz en rèire e ensajatz tornamai.',
+	'renameuser-error-same-user'  => 'Podètz pas renomenar un utilizaire amb la meteissa causa deperabans.',
+	'renameusersuccess'           => "L'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »",
+	'renameuser-page-exists'      => 'La pagina $1 existís ja e pòt pas èsser remplaçada automaticament.',
+	'renameuser-page-moved'       => 'La pagina $1 es estada desplaçada vèrs $2.',
+	'renameuser-page-unmoved'     => 'La pagina $1 pòt pas èsser renomenada en $2.',
+	'renameuserlogpage'           => "Istoric dels renomenatges d'utilizaire",
+	'renameuserlogpagetext'       => "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
+	'renameuserlogentry'          => 'a renomenat $1 en $2',
+	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
+	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 );
 
 /** Polish (Polski)
@@ -990,6 +995,33 @@ $messages['pt'] = array(
 	'renameuserlogentry'          => 'renomeou $1 para $2',
 	'renameuser-log'              => 'que possuia $1 edições. Motivo: $2',
 	'renameuser-move-log'         => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+);
+
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'renameuser'                  => 'Ruraqpa sutinta hukchay',
+	'renameuserold'               => 'Kunan ruraqpa sutin:',
+	'renameusernew'               => 'Musuq ruraqpa sutin:',
+	'renameuserreason'            => 'Imarayku ruraqpa sutinta hukchasqa:',
+	'renameusermove'              => "Ruraqpa p'anqanta, rimachinanta (urin p'anqankunatapas) musuq sutinman astay",
+	'renameusersubmit'            => 'Kachay',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa manam kanchu.',
+	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa kachkanñam.',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" nisqa sutiqa manam allinchu.',
+	'renameusererrortoomany'      => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa $2 llamk\'apusqayuqmi. $3-manta aswan llamk\'apusqayuq ruraqpa sutinta hukchayqa llika tiyaypa rikch\'akuyninpaq mana allinchá kanman.',
+	'renameuser-error-request'    => 'Manam atinichu mañasqaykita chaskiyta.  Ama hina kaspa, ñawpaqman kutimuspa musuqmanta ruraykachay.',
+	'renameuser-error-same-user'  => 'Manam atinkichu ruraqpa sutinta ñawpaq suti hinalla sutinman hukchayta.',
+	'renameusersuccess'           => 'Ruraqpa "<nowiki>$1</nowiki>" nisqa sutinqa "<nowiki>$2</nowiki>" nisqa sutinman hukchasqañam.',
+	'renameuser-page-exists'      => '"<nowiki>$1</nowiki>" sutiyuq p\'anqaqa kachkanñam. Manam atinallachu kikinmanta huknachay.',
+	'renameuser-page-moved'       => '"<nowiki>$1</nowiki>" ñawpa sutiyuq ruraqpa p\'anqanqa "<nowiki>$2</nowiki>" nisqa musuq p\'anqanman astasqañam.',
+	'renameuser-page-unmoved'     => 'Manam atinichu "<nowiki>$1</nowiki>" ñawpa sutiyuq ruraqpa p\'anqanta "<nowiki>$2</nowiki>" nisqa musuq p\'anqanman astayta.',
+	'renameuserlogpage'           => "Ruraqpa sutin hukchay hallch'a",
+	'renameuserlogpagetext'       => "Kayqa ruraqkunap sutinkunata hukchaymanta hallch'am",
+	'renameuserlogentry'          => 'hukchan $1-pa sutinta $2 sutiman',
+	'renameuser-log'              => "{{PLURAL:$1|1 llamk'apusqa|$1 llamk'apusqakuna}}, kayrayku: $2",
+	'renameuser-move-log'         => '"[[User:$1|$1]]" ruraqpa sutinta "[[User:$2|$2]]" sutiman hukchaspa kikinmanta ruraqpa p\'anqatapas astan',
 );
 
 $messages['rmy'] = array(
