@@ -379,6 +379,33 @@ $messages['fr'] = array(
 	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'renameuser'                  => 'Renomar l’utilisator',
+	'renameuserold'               => 'Nom d’ora de l’utilisator :',
+	'renameusernew'               => 'Novél nom de l’utilisator :',
+	'renameuserreason'            => 'Rêson du renomâjo :',
+	'renameusermove'              => 'Dèplaciér totes les pâges de l’utilisator vers lo novél nom',
+	'renameusersubmit'            => 'Sometre',
+	'renameusererrordoesnotexist' => 'L’utilisator « <nowiki>$1</nowiki> » ègziste pas.',
+	'renameusererrorexists'       => 'L’utilisator « <nowiki>$1</nowiki> » ègziste ja.',
+	'renameusererrorinvalid'      => 'Lo nom d’utilisator « <nowiki>$1</nowiki> » est envalido.',
+	'renameusererrortoomany'      => 'L’utilisator « <nowiki>$1</nowiki> » at $2 contribucions. Renomar un utilisator povent sè prèvalêr de més de $3 contribucions pôt afèctar les pèrformences du seto.',
+	'renameuser-error-request'    => 'Un problèmo ègziste avouéc la rècèpcion de la requéta. Tornâd arriér et pués tornâd èprovar.',
+	'renameuser-error-same-user'  => 'Vos pouede pas renomar un utilisator avouéc la méma chousa dês devant.',
+	'renameusersuccess'           => 'L’utilisator « <nowiki>$1</nowiki> » at étâ renomâ en « <nowiki>$2</nowiki> ».',
+	'renameuser-page-exists'      => 'La pâge $1 ègziste ja et pôt pas étre ôtomaticament remplaciê.',
+	'renameuser-page-moved'       => 'La pâge $1 at étâ dèplaciê vers $2.',
+	'renameuser-page-unmoved'     => 'La pâge $1 pôt pas étre renomâ en $2.',
+	'renameuserlogpage'           => 'Historico des renomâjos d’utilisator',
+	'renameuserlogpagetext'       => 'Cen est l’historico des changements de noms d’utilisator.',
+	'renameuserlogentry'          => 'at renomâ $1 en $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 èdicion|$1 èdicions}}. Rêson : $2',
+	'renameuser-move-log'         => 'Pâge ôtomaticament dèplaciê pendent lo renomâjo de l’utilisator « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+);
+
 /** Irish (Gaeilge)
  * @author SPQRobin
  */
@@ -1208,6 +1235,17 @@ $messages['sv'] = array(
 	'renameuserlogentry'          => 'döpte om $1 till $2',
 	'renameuser-log'              => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log'         => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+);
+
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'renameuserold'           => "Naran uza-na'in atuál:",
+	'renameusernew'           => "Naran uza-na'in foun:",
+	'renameusermove'          => "Book pájina uza-na'in no diskusaun (no sub-pájina) ba naran foun",
+	'renameuser-page-moved'   => 'Book tiha pájina $1 ba $2.',
+	'renameuser-page-unmoved' => 'La bele book pájina $1 ba $2.',
 );
 
 /** Tonga (faka-Tonga)
