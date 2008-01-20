@@ -817,7 +817,7 @@ $messages['lb'] = array(
 	'renameuserlogpage'           => 'Logbuch vun den Ännerungen vum Benotzernumm',
 	'renameuserlogpagetext'       => "An dësem Logbuch ginn d'Ännerungen vum Benotzernumm festgehal.",
 	'renameuserlogentry'          => 'huet de Benotzer $1 als Benotzer $2 ëmbenannt',
-	'renameuser-log'              => '$1 Ännerungen. Grond: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 );
 
@@ -952,6 +952,7 @@ $messages['oc'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author WarX
+ * @author Sp5uhe
  * @author Wpedzich
  */
 $messages['pl'] = array(
@@ -972,7 +973,7 @@ $messages['pl'] = array(
 	'renameuserlogpage'           => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext'       => 'To jest rejestr zmian nazw użytkowników',
 	'renameuserlogentry'          => 'zmieniono użytkownikowi $1 nazwę na [[User:$2|$2]]',
-	'renameuser-log'              => '$1 edycji. Powód: $2',
+	'renameuser-log'              => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
 	'renameuser-move-log'         => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 );
 
