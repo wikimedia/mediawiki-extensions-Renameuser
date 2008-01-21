@@ -107,6 +107,28 @@ $messages['bg'] = array(
 	'renameuser-move-log'         => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'renameuser'                  => 'ব্যবহারকারী নামান্তর করো',
+	'renameuserold'               => 'বর্তমান ব্যবহারকারী নাম:',
+	'renameusernew'               => 'নতুন ব্যবহারকারী নাম:',
+	'renameuserreason'            => 'নামান্তরের কারণ:',
+	'renameusermove'              => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
+	'renameusersubmit'            => 'জমা দিন',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
+	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" ব্যবহারকারী নামটি ঠিক নয়।',
+	'renameuser-error-same-user'  => 'আপনি পূর্বের নামে নামান্তর করতে পারবেন না।',
+	'renameusersuccess'           => 'ব্যবহারকারী "<nowiki>$1</nowiki>" থেকে "<nowiki>$2</nowiki>" তে নামান্তরিত করা হয়েছে।',
+	'renameuser-page-moved'       => 'পাতাটি $1 থেকে $2 তে সরিয়ে নেওয়া হয়েছে।',
+	'renameuser-page-unmoved'     => 'পাতাটি $1 থেকে $2 তে সরিয়ে নেওয়া যাবে না।',
+	'renameuserlogpage'           => 'ব্যবহারকারী নামান্তরের লগ',
+	'renameuserlogpagetext'       => 'এটি ব্যাবহারকারী নামের পরিবর্তনের লগ',
+	'renameuserlogentry'          => '$1 থেকে $2 তে নামান্তর করা হয়েছে',
+);
+
 $messages['br'] = array(
 	'renameuser'       => 'Adenvel an implijer',
 	'renameuserold'    => 'Anv a-vremañ an implijer :',
