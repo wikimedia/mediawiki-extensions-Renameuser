@@ -18,7 +18,7 @@ $messages['en'] = array(
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists.',
 	'renameusererrorinvalid'      => 'The username "<nowiki>$1</nowiki>" is invalid.',
 	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance.',
-	'renameuser-error-request'    => 'There was a problem with receiving the request.  Please go back and try again.',
+	'renameuser-error-request'    => 'There was a problem with receiving the request. Please go back and try again.',
 	'renameuser-error-same-user'  => 'You cannot rename a user to the same thing as before.',
 	'renameusersuccess'           => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists'  => 'The page $1 already exists and cannot be automatically overwritten.',
@@ -235,6 +235,8 @@ $messages['de'] = array(
 	'renameusererrorexists'       => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert bereits.',
 	'renameusererrorinvalid'      => 'Der Benutzername „<nowiki>$1</nowiki>“ ist ungültig.',
 	'renameusererrortoomany'      => 'Der Benutzer „<nowiki>$1</nowiki>“ hat $2 Bearbeitungen. Die Namensänderung eines Benutzers mit mehr als $3 Bearbeitungen kann die Serverleistung nachteilig beeinflussen.',
+	'renameuser-error-request'    => 'Es gab ein Problem beim Empfang der Anfrage. Bitte nochmal versuchen.',
+	'renameuser-error-same-user'  => 'Alter und neuer Benutzername sind identisch.',
 	'renameusersuccess'           => 'Der Benutzer „<nowiki>$1</nowiki>“ wurde erfolgreich in „<nowiki>$2</nowiki>“ umbenannt.',
 
 	'renameuser-page-exists'         => 'Die Seite $1 existiert bereits und kann nicht automatisch überschrieben werden.',
