@@ -163,6 +163,26 @@ $messages['ce'] = array(
 	'renameuser' => 'Юзер цIе хийца',
 );
 
+/** Crimean Turkish (Latin) (Qırımtatarca (Latin))
+ * @author Alessandro
+ */
+$messages['crh-latn'] = array(
+	'renameuserlogpage'     => 'Qullanıcı adı deñişikligi jurnalı',
+	'renameuserlogpagetext' => 'Aşağıda bulunğan cedvel adı deñiştirilgen qullanıcılarnı köstere',
+	'renameuserlogentry'    => '$1 adını deñiştirdi, yañı ad: [[$2]]',
+	'renameuser-log'        => '{{PLURAL:$1|1|$1}} deñişiklik yapqan. Sebeb: $2',
+);
+
+/** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
+ * @author Alessandro
+ */
+$messages['crh-cyrl'] = array(
+	'renameuserlogpage'     => 'Къулланыджы ады денъишиклиги журналы',
+	'renameuserlogpagetext' => 'Ашагъыда булунгъан джедвель ады денъиштирильген къулланыджыларны косьтере',
+	'renameuserlogentry'    => '$1 адыны денъиштирди, янъы ад: [[$2]]',
+	'renameuser-log'        => '{{PLURAL:$1|1|$1}} денъишиклик япкъан. Себеп: $2',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  * @author Martin Kozák
