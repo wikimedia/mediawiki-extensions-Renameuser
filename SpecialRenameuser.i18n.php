@@ -120,13 +120,17 @@ $messages['bn'] = array(
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
 	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" ব্যবহারকারী নামটি ঠিক নয়।',
+	'renameuser-error-request'    => 'এই অনুরোধ গ্রহণে সমস্যা ছিল। দয়াকরে পেছনে যান এবং আবার চেষ্টা করুন।',
 	'renameuser-error-same-user'  => 'আপনি পূর্বের নামে নামান্তর করতে পারবেন না।',
 	'renameusersuccess'           => 'ব্যবহারকারী "<nowiki>$1</nowiki>" থেকে "<nowiki>$2</nowiki>" তে নামান্তরিত করা হয়েছে।',
+	'renameuser-page-exists'      => 'পাতা $1 বিদ্যমান এবং সয়ঙ্ক্রিয়ভাবে এটির উপর লেখা যাবে না',
 	'renameuser-page-moved'       => 'পাতাটি $1 থেকে $2 তে সরিয়ে নেওয়া হয়েছে।',
 	'renameuser-page-unmoved'     => 'পাতাটি $1 থেকে $2 তে সরিয়ে নেওয়া যাবে না।',
 	'renameuserlogpage'           => 'ব্যবহারকারী নামান্তরের লগ',
 	'renameuserlogpagetext'       => 'এটি ব্যাবহারকারী নামের পরিবর্তনের লগ',
 	'renameuserlogentry'          => '$1 থেকে $2 তে নামান্তর করা হয়েছে',
+	'renameuser-log'              => '{{PLURAL:$1|1 সম্পাদনা|$1 সম্পাদনাসমূহ}}। কারণ: $2',
+	'renameuser-move-log'         => 'যখন ব্যবহারকারী "[[User:$1|$1]]" থেকে "[[User:$2|$2]]" তে নামান্তরিত হবে তখন সয়ঙ্ক্রিয়ভাবে পাতা সরিয়ে নেওয়া হয়েছে',
 );
 
 $messages['br'] = array(
@@ -220,6 +224,8 @@ $messages['cs'] = array(
 	'renameusererrorexists'       => 'Uživatel se jménem „<nowiki>$1</nowiki>“ již existuje',
 	'renameusererrorinvalid'      => 'Uživatelské jméno „<nowiki>$1</nowiki>“ nelze použít',
 	'renameusererrortoomany'      => "Uživatel „<nowiki>$1</nowiki>“ má $2 příspěvků, přejmenování uživatelů s více než $3 příspěvky je zakázáno, neboť by příliš zatěžovalo systém.'",
+	'renameuser-error-request'    => 'Při přijímání požadavku došlo k chybě. Vraťte se a zkuste to znovu.',
+	'renameuser-error-same-user'  => 'Nové uživatelské jméno je stejné jako dosavadní.',
 	'renameusersuccess'           => 'Uživatel „<nowiki>$1</nowiki>“ byl úspěšně přejmenován na „<nowiki>$2</nowiki>“',
 	'renameuser-page-exists'      => 'Stránka $1 již existuje a nelze ji automaticky přepsat.',
 	'renameuser-page-moved'       => 'Stránka $1 byla přesunuta na $2.',
