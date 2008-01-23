@@ -69,6 +69,33 @@ $messages['arc'] = array(
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'renameuser'                  => 'Renomar usuariu',
+	'renameuserold'               => "Nome d'usuariu actual:",
+	'renameusernew'               => "Nome d'usuariu nuevu:",
+	'renameuserreason'            => 'Motivu del cambéu de nome:',
+	'renameusermove'              => "Treslladar les páxines d'usuariu y d'alderique (y toles subpáxines) al nome nuevu",
+	'renameusersubmit'            => 'Executar',
+	'renameusererrordoesnotexist' => 'L\'usuariu "<nowiki>$1</nowiki>" nun esiste.',
+	'renameusererrorexists'       => 'L\'usuariu "<nowiki>$1</nowiki>" yá esiste.',
+	'renameusererrorinvalid'      => 'El nome d\'usuariu "<nowiki>$1</nowiki>" nun ye válidu.',
+	'renameusererrortoomany'      => 'L\'usuariu "<nowiki>$1</nowiki>" tien $2 contribuciones; renomar a un usuariu con más de $3 contribuciones podría afeutar al rindimientu del sitiu.',
+	'renameuser-error-request'    => 'Hebo un problema al recibir el pidimientu. Por favor vuelve atrás y inténtalo otra vuelta.',
+	'renameuser-error-same-user'  => 'Nun pues renomar un usuariu al mesmu nome que tenía.',
+	'renameusersuccess'           => 'L\'usuariu "<nowiki>$1</nowiki>" foi renomáu como "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'La páxina $1 yá esiste y nun pue ser sobreescrita automáticamente.',
+	'renameuser-page-moved'       => 'La páxina $1 treslladóse a $2.',
+	'renameuser-page-unmoved'     => 'La páxina $1 nun pudo treslladase a $2.',
+	'renameuserlogpage'           => "Rexistru de cambeos de nome d'usuariu",
+	'renameuserlogpagetext'       => "Esti ye un rexistru de los cambeos de nomes d'usuariu",
+	'renameuserlogentry'          => 'renomó a $1 como $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivu: $2',
+	'renameuser-move-log'         => 'Treslladóse la páxina automáticamente al renomar al usuariu "[[User:$1|$1]]" como "[[User:$2|$2]]"',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -1343,17 +1370,31 @@ $messages['vec'] = array(
 );
 
 /** Volapük (Volapük)
- * @author Malafaya
  * @author Smeira
+ * @author Malafaya
  */
 $messages['vo'] = array(
-	'renameuser'              => 'Votanemön gebani',
-	'renameuserold'           => 'Gebananem anuik:',
-	'renameusernew'           => 'Gebananem nulik:',
-	'renameuser-page-exists'  => 'Pad: $1 ya dabinon e no kanon pamoükön itjäfidiko.',
-	'renameuser-page-moved'   => 'Pad: $1 petopätükon ad pad: $2.',
-	'renameuser-page-unmoved' => 'No eplöpos ad topätükön padi: $1 ad pad: $2.',
-	'renameuser-log'          => 'Redakams $1. Kod: $2',
+	'renameuser'                  => 'Votanemön gebani',
+	'renameuserold'               => 'Gebananem anuik:',
+	'renameusernew'               => 'Gebananem nulik:',
+	'renameuserreason'            => 'Kod votanemama:',
+	'renameusermove'              => 'Topätükön padi e bespikapadi gebana (e donapadis onsik) ad nem nulik',
+	'renameusersubmit'            => 'Sedön',
+	'renameusererrordoesnotexist' => 'Geban: "<nowiki>$1</nowiki>" no dabinon.',
+	'renameusererrorexists'       => 'Geban: "<nowiki>$1</nowiki>" ya dabinon.',
+	'renameusererrorinvalid'      => 'Gebananem: "<nowiki>$1</nowiki>" no lonöfon.',
+	'renameusererrortoomany'      => 'Geban: "<nowiki>$1</nowiki>" labon keblünotis $2. Votanemam gebana labü keblünots plu $3 ba oflunon negudiko jäfidi bevüresodatopäda at.',
+	'renameuser-error-request'    => 'Ädabinon säkäd pö daget bega. Geikolös, begö! e steifülolös dönu.',
+	'renameuser-error-same-user'  => 'No kanol votanemön gebani ad nem ot.',
+	'renameusersuccess'           => 'Geban: "<nowiki>$1</nowiki>" pevotanemon ad "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Pad: $1 ya dabinon e no kanon pamoükön itjäfidiko.',
+	'renameuser-page-moved'       => 'Pad: $1 petopätükon ad pad: $2.',
+	'renameuser-page-unmoved'     => 'No eplöpos ad topätükön padi: $1 ad pad: $2.',
+	'renameuserlogpage'           => 'Jenotalised votanemamas',
+	'renameuserlogpagetext'       => 'Is palisedons votükams gebananemas.',
+	'renameuserlogentry'          => 'evotanemon eli $1 ad $2',
+	'renameuser-log'              => '{{PLURAL:$1|redakam 1|redakams $1}}. Kod: $2',
+	'renameuser-move-log'         => 'Pad petopätükon itjäfidiko dü votanemama gebana: "[[User:$1|$1]]" ad "[[User:$2|$2]]"',
 );
 
 $messages['wa'] = array(
