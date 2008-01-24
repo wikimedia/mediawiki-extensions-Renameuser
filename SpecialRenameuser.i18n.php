@@ -1272,7 +1272,7 @@ $messages['stq'] = array(
 	'renameuserlogpage'           => 'Benutsernoomenannerengs-Logbouk',
 	'renameuserlogpagetext'       => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
 	'renameuserlogentry'          => 'Benutser "$1" uumenaamd in "$2"',
-	'renameuser-log'              => '$1 Beoarbaidengen. Gruund: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 Beoarbaidenge|$1 Beoarbaidengen}}. Gruund: $2',
 	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[{{ns:user}}:$1]]“ ätter „[[{{ns:user}}:$2]]“ automatisk ferschäuwene Siede.',
 );
 
