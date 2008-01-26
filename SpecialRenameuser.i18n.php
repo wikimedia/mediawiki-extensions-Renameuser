@@ -898,6 +898,24 @@ $messages['lb'] = array(
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Matasg
+ */
+$messages['lt'] = array(
+	'renameuser'                  => 'Pervadinti naudotoją',
+	'renameuserold'               => 'Esamas naudotojo vardas:',
+	'renameusernew'               => 'Naujas naudotojo vardas:',
+	'renameuserreason'            => 'Priežastis pervadinimui:',
+	'renameusererrordoesnotexist' => 'Naudotojas "<nowiki>$1</nowiki>" neegzistuoja.',
+	'renameusererrorexists'       => 'Naudotojas "<nowiki>$1</nowiki>" jau egzistuoja.',
+	'renameusererrorinvalid'      => 'Naudotojo vardas "<nowiki>$1</nowiki>" netinkamas.',
+	'renameuserlogpage'           => 'Naudotojų pervadinimo sąrašas',
+	'renameuserlogpagetext'       => 'Tai yra naudotojų vardų pakeitimų sąrašas',
+	'renameuserlogentry'          => 'buvo pervadintas $1 į $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 redagavimas|$1 redagavimų(ai)}}. Priežastis: $2',
+	'renameuser-move-log'         => 'Puslapis automatiškai perkeltas, kai buvo pervadinamas naudotojas "[[User:$1|$1]]" į "[[User:$2|$2]]"',
+);
+
 /** Latvian (Latviešu)
  * @author SPQRobin
  */
@@ -1265,6 +1283,8 @@ $messages['stq'] = array(
 	'renameusererrorexists'       => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant al',
 	'renameusererrorinvalid'      => 'Die Benutsernoome "<nowiki>$1</nowiki>" is uungultich',
 	'renameusererrortoomany'      => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 Edits. Ju Noomensannerenge fon aan Benutser mäd moor as $3 Edits kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
+	'renameuser-error-request'    => 'Dät roat n Problem bie dän Ämpfang fon ju Anfroage. Fersäik jädden nochmoal.',
+	'renameuser-error-same-user'  => 'Oolde un näie Benutsernoome sunt identisk.',
 	'renameusersuccess'           => 'Die Benutser "<nowiki>$1</nowiki>" wuude mäd Ärfoulch uumenaamd in "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'Ju Siede $1 bestoant al un kon nit automatisk uurschrieuwen wäide.',
 	'renameuser-page-moved'       => 'Ju Siede $1 wuude ätter $2 ferschäuwen.',
@@ -1315,6 +1335,15 @@ $messages['sv'] = array(
 	'renameuserlogentry'          => 'döpte om $1 till $2',
 	'renameuser-log'              => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log'         => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'renameuserold'    => 'ప్రస్తుత వాడుకరి పేరు:',
+	'renameusernew'    => 'కొత్త వాడుకరి పేరు:',
+	'renameuserreason' => 'పేరు మార్చడానికి కారణం:',
 );
 
 /** Tetum (Tetun)
