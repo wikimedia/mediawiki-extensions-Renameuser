@@ -655,18 +655,25 @@ $messages['id'] = array(
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
 
+/** Icelandic (Íslenska)
+ * @author Cessator
+ * @author לערי ריינהארט
+ * @author Spacebirdy
+ * @author S.Örvarr.S
+ */
 $messages['is'] = array(
-	'renameuser' => 'Breyta notandanafni',
-	'renameuserold' => 'Núverandi notandanafn:',
-	'renameusernew' => 'Nýja notandanafnið:',
+	'renameuser'                  => 'Breyta notandanafni',
+	'renameuserold'               => 'Núverandi notandanafn:',
+	'renameusernew'               => 'Nýja notandanafnið:',
+	'renameusersubmit'            => 'Senda',
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
-	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
-	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
-	'renameuser-page-exists' => 'Síða sem heitir $1 er nú þegar til og það er ekki hægt að búa til nýja grein með sama heiti.',
-	'renameuser-page-moved' => 'Síðan $1 hefur verið færð á $2.',
-	'renameuser-page-unmoved' => 'Ekki var hægt að færa síðuna $1 á $2.',
-	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
-	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
+	'renameusererrorexists'       => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
+	'renameusererrorinvalid'      => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
+	'renameuser-page-exists'      => 'Síða sem heitir $1 er nú þegar til og það er ekki hægt að búa til nýja grein með sama heiti.',
+	'renameuser-page-moved'       => 'Síðan $1 hefur verið færð á $2.',
+	'renameuser-page-unmoved'     => 'Ekki var hægt að færa síðuna $1 á $2.',
+	'renameuserlogpage'           => 'Skrá yfir nafnabreytingar notenda',
+	'renameuserlogpagetext'       => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
 );
 
 $messages['it'] = array(
@@ -1340,12 +1347,31 @@ $messages['sv'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Mpradeep
  * @author Veeven
  */
 $messages['te'] = array(
-	'renameuserold'    => 'ప్రస్తుత వాడుకరి పేరు:',
-	'renameusernew'    => 'కొత్త వాడుకరి పేరు:',
-	'renameuserreason' => 'పేరు మార్చడానికి కారణం:',
+	'renameuser'                  => 'సభ్యనామం మార్పు',
+	'renameuserold'               => 'ప్రస్తుత వాడుకరి పేరు:',
+	'renameusernew'               => 'కొత్త వాడుకరి పేరు:',
+	'renameuserreason'            => 'పేరు మార్చడానికి కారణం:',
+	'renameusermove'              => 'సభ్యుని పేజీ, చర్చాపేజీలను (వాటి ఉపపేజీలతో సహా) కొత్త పేరుకు తరలించండి',
+	'renameusersubmit'            => 'పంపించు',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" పేరుగల వాడుకరి లేరు.',
+	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" పేరుతో వాడుకరి ఇప్పటికే ఉన్నారు.',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" అనే సభ్యనామం సరైనది కాదు.',
+	'renameusererrortoomany'      => 'సభ్యులు "<nowiki>$1</nowiki>" $2 రచనలు చేసారు. $3 కంటే ఎక్కువ రచనలు చేసిన సభ్యుని పేరు మార్చడం వలన సైటు పనితీరుపై ప్రతికూల ప్రభావం పడగలదు.',
+	'renameuser-error-request'    => 'మీ అభ్యర్థనను స్వీకరించేటప్పుడు ఒక సమస్య తలెత్తింది. దయచేసి వెనక్కు వెళ్లి ఇంకోసారి ప్రయత్నించండి.',
+	'renameuser-error-same-user'  => 'సభ్యనామాన్ని ఇంతకు ముందు ఉన్న సభ్యనామంతోనే మార్చడం కుదరదు.',
+	'renameusersuccess'           => '"<nowiki>$1</nowiki>" అనే సభ్యనామాన్ని "<nowiki>$2</nowiki>"గా మార్చేసాం.',
+	'renameuser-page-exists'      => '$1 పేజీ ఇప్పటికే ఉంది, కాబట్టి ఆటోమాటిగ్గా దానిపై కొత్తపేజీని రుద్దడం కుదరదు.',
+	'renameuser-page-moved'       => '$1 పేజీని $2 పేజీకి తరలించాం.',
+	'renameuser-page-unmoved'     => '$1 పేజీని $2 పేజీకి తరలించలేక పోయాం.',
+	'renameuserlogpage'           => 'సభ్యనామాల మార్పు లాగ్',
+	'renameuserlogpagetext'       => 'సభ్యనామాల మార్పు లాగ్ ఇది',
+	'renameuserlogentry'          => '$1ను $2గా పేరు మార్చారు',
+	'renameuser-log'              => '{{PLURAL:$1|ఒక దిద్దుబాటు|$1 దిద్దుబాట్లు}}. కారణం: $2',
+	'renameuser-move-log'         => '"[[సభ్యులు:$1|$1]]" పేరును "[[సభ్యులు:$2|$2]]"కు మార్చడంతో పేజీని ఆటోమాటిగ్గా తరలించాం',
 );
 
 /** Tetum (Tetun)
