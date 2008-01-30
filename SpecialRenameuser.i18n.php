@@ -318,6 +318,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Tlustulimu
+ * @author Yekrats
  */
 $messages['eo'] = array(
 	'renameuser'                  => 'Alinomigu uzanton',
@@ -338,7 +339,7 @@ $messages['eo'] = array(
 
 <!--aŭ: Loglibro pri alinomigoj de uzantoj-->',
 	'renameuserlogpagetext'       => 'Ĉi tio estas loglibro pri ŝanĝoj de uzantonomoj',
-	'renameuser-log'              => '$1 redaktoj. Kialo: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj||. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 );
 
@@ -509,6 +510,7 @@ $messages['gl'] = array(
 	'renameusererrorexists'       => 'O usuario "<nowiki>$1</nowiki>"  xa existe',
 	'renameusererrorinvalid'      => 'O nome de usuario "<nowiki>$1</nowiki>" non é válido',
 	'renameusererrortoomany'      => 'O usuario "<nowiki>$1</nowiki>" ten $2 contribucións, mudando o nome dun usuario con máis de $3 contribucións podería afectar negativamente á execución do sitio',
+	'renameuser-error-request'    => 'Houbo un problema coa recepción da solitidude. Volte atrás e ténteo de novo.',
 	'renameusersuccess'           => 'O usuario "<nowiki>$1</nowiki>" mudou o nome a "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'A páxina $1 xa existe e non pode ser automaticamente sobreescrita.',
 	'renameuser-page-moved'       => 'A páxina $1 foi movida a $2.',
@@ -1396,6 +1398,15 @@ $messages['vec'] = array(
 	'renameuser' => 'Rinomina utente',
 	'renameuserold' => 'Vecio nome utente:',
 	'renameusernew' => 'Novo nome utente:',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'renameuser'    => 'Đổi tên thành viên',
+	'renameuserold' => 'Tên hiệu hiện nay:',
+	'renameusernew' => 'Tên hiệu mới:',
 );
 
 /** Volapük (Volapük)
