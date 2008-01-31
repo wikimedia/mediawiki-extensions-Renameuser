@@ -380,26 +380,32 @@ $messages['ext'] = array(
 	'renameuser-page-moved' => 'S´á moviu la páhina $1 a $2.',
 );
 
+/** فارسی (فارسی)
+ * @author Huji
+ */
 $messages['fa'] = array(
-	'renameuser' => 'تغییر نام کاربری',
-	'renameuserold' => 'نام کاربری فعلی:',
-	'renameusernew' => 'نام کاربری جدید:',
-	'renameuserreason' => 'علت تغییر نام کاربری:',
-	'renameusermove' => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
-	'renameusersubmit' => 'ثبت',
+	'renameuser'                  => 'تغییر نام کاربری',
+	'renameuserold'               => 'نام کاربری فعلی:',
+	'renameusernew'               => 'نام کاربری جدید:',
+	'renameuserreason'            => 'علت تغییر نام کاربری:',
+	'renameusermove'              => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
+	'renameusersubmit'            => 'ثبت',
 	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
-	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
-	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
-	'renameusererrortoomany' => 'کاربر «<nowiki>$1</nowiki>» دارای $2 مشارکت است؛ تغییر نام کاربران با بیش از $3 ویرایش ممکن است عملکرد وبگاه را دچار مشکل کند.',
-	'renameusersuccess' => 'نام کاربر «<nowiki>$1</nowiki>» به «<nowiki>$2</nowiki>» تغییر یافت.',
-	'renameuser-page-exists' => 'صفحهٔ $1 از قبل وجود داشته و به طور خودکار قابل بازنویسی نیست.',
-	'renameuser-page-moved' => 'صفحهٔ $1 به $2 انتقال داده شد.',
-	'renameuser-page-unmoved' => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
-	'renameuserlogpage' => 'سیاهه تغییر نام کاربر',
-	'renameuserlogpagetext' => 'این سیاههٔ تغییر نام کاربران است',
-	'renameuserlogentry' => 'نام $1 را به $2 تغییر داد',
-	'renameuser-log' => '$1 ویرایش. دلیل: $2',
-	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
+	'renameusererrorexists'       => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
+	'renameusererrorinvalid'      => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
+	'renameusererrortoomany'      => 'کاربر «<nowiki>$1</nowiki>» دارای $2 مشارکت است؛ تغییر نام کاربران با بیش از $3 ویرایش ممکن است عملکرد وبگاه را دچار مشکل کند.',
+	'renameuser-error-request'    => 'در دریافت درخواست مشکلی پیش آمد. لطفاً به صفحهٔ قبل بازگردید و دوباره تلاش کنید.',
+	'renameuser-error-same-user'  => 'شما نمی‌توانید نام یک کاربر را به همان نام قبلی‌اش تغییر دهید.',
+	'renameusersuccess'           => 'نام کاربر «<nowiki>$1</nowiki>» به «<nowiki>$2</nowiki>» تغییر یافت.',
+	'renameuser-page-exists'      => 'صفحهٔ $1 از قبل وجود داشته و به طور خودکار قابل بازنویسی نیست.',
+	'renameuser-page-moved'       => 'صفحهٔ $1 به $2 انتقال داده شد.',
+	'renameuser-page-unmoved'     => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
+	'renameuserlogpage'           => 'سیاهه تغییر نام کاربر',
+	'renameuserlogpagetext'       => 'این سیاههٔ تغییر نام کاربران است',
+	'renameuserlogentry'          => 'نام $1 را به $2 تغییر داد',
+	'renameuser-log'              => '$1 ویرایش. دلیل: $2',
+	'renameuser-move-log'         => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
+
 );
 
 $messages['fi'] = array(
