@@ -410,26 +410,30 @@ $messages['fa'] = array(
 
 );
 
+/** Finnish (Suomi)
+ * @author Crt
+ * @author Nike
+ */
 $messages['fi'] = array(
-	'renameuser' => 'Käyttäjätunnuksen vaihto',
-	'renameuserold' => 'Nykyinen tunnus',
-	'renameusernew' => 'Uusi tunnus',
-	'renameuserreason' => 'Kommentti',
-	'renameusermove' => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
-	'renameusersubmit' => 'Nimeä',
+	'renameuser'                  => 'Käyttäjätunnuksen vaihto',
+	'renameuserold'               => 'Nykyinen tunnus',
+	'renameusernew'               => 'Uusi tunnus',
+	'renameuserreason'            => 'Kommentti',
+	'renameusermove'              => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
+	'renameusersubmit'            => 'Nimeä',
 	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
-	'renameusererrorexists' => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
-	'renameusererrorinvalid' => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
-	'renameusererrortoomany' => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
-	'renameusersuccess' => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
-	'renameuser-page-exists' => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
-	'renameuser-page-moved' => 'Sivu $1 siirrettiin nimelle $2.',
-	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
-	'renameuserlogpage' => 'Tunnusten vaihdot',
-	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi [[User:$2|$2]]',
-	'renameuser-log' => 'Tehnyt $1 muokkausta. $2”',
-	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
+	'renameusererrorinvalid'      => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
+	'renameusererrortoomany'      => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameusersuccess'           => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
+	'renameuser-page-exists'      => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
+	'renameuser-page-moved'       => 'Sivu $1 siirrettiin nimelle $2.',
+	'renameuser-page-unmoved'     => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
+	'renameuserlogpage'           => 'Tunnusten vaihdot',
+	'renameuserlogpagetext'       => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
+	'renameuserlogentry'          => 'on nimennyt käyttäjän $1 käyttäjäksi $2',
+	'renameuser-log'              => 'Tehnyt {{PLURAL:$1|yhden muokkauksen|$1 muokkausta}}. $2',
+	'renameuser-move-log'         => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
 
 $messages['fo'] = array(
@@ -471,6 +475,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'renameuser'                  => 'Renomar l’utilisator',
+	'renameuser-desc'             => "Renome un utilisator (at fôta des drêts de ''renameuser'').",
 	'renameuserold'               => 'Nom d’ora de l’utilisator :',
 	'renameusernew'               => 'Novél nom de l’utilisator :',
 	'renameuserreason'            => 'Rêson du renomâjo :',
@@ -564,6 +569,7 @@ $messages['he'] = array(
  */
 $messages['hr'] = array(
 	'renameuser'                  => 'Promijeni ime suradnika',
+	'renameuser-desc'             => "Preimenuj suradnika (potrebna su ''renameuser'' prava)",
 	'renameuserold'               => 'Trenutno suradničko ime:',
 	'renameusernew'               => 'Novo suradničko ime:',
 	'renameuserreason'            => 'Razlog za promjenu imena:',
@@ -592,6 +598,7 @@ $messages['hr'] = array(
  */
 $messages['hsb'] = array(
 	'renameuser'                  => 'Wužiwarja přemjenować',
+	'renameuser-desc'             => "Wužiwarja přemjenować (požada prawo ''renameuser'')",
 	'renameuserold'               => 'Tuchwilne wužiwarske mjeno:',
 	'renameusernew'               => 'Nowe wužiwarske mjeno:',
 	'renameuserreason'            => 'Přičina za přemjenowanje:',
@@ -619,6 +626,7 @@ $messages['hsb'] = array(
  */
 $messages['hu'] = array(
 	'renameuser'                  => 'Felhasználó átnevezése',
+	'renameuser-desc'             => "Lehetővé teszi egy felhasználó átnevezését (''renameuser'' jog szükséges)",
 	'renameuserold'               => 'Jelenlegi felhasználónév:',
 	'renameusernew'               => 'Új felhasználónév:',
 	'renameuserreason'            => 'Átnevezés oka:',
@@ -896,6 +904,7 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'renameuser'                  => 'Benotzer ëmbenennen',
+	'renameuser-desc'             => "Ëmbennen vun engem Benotzer (Dir braucht dofir  ''renameuser''-Rechter)",
 	'renameuserold'               => 'Aktuelle Benotzernumm:',
 	'renameusernew'               => 'Neie Benotzernumm:',
 	'renameuserreason'            => "Grond fir d'Ëmbenennung:",
@@ -988,6 +997,7 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'renameuser'                  => 'Gebruiker hernoemen',
+	'renameuser-desc'             => "Voegt een [[Special:Renameuser|speciale pagina]] toe om een gebruiker te hernoemen (u heeft hiervoor het recht ''renameuser'' nodig)",
 	'renameuserold'               => 'Huidige gebruikersnaam:',
 	'renameusernew'               => 'Nieuwe gebruikersnaam:',
 	'renameuserreason'            => 'Reden voor hernoemen:',
@@ -1333,6 +1343,7 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'renameuser'                  => 'Byt användarnamn',
+	'renameuser-desc'             => "Ger möjlighet att döpa om användare (kräver behörigheten ''renameuser'')",
 	'renameuserold'               => 'Nuvarande användarnamn:',
 	'renameusernew'               => 'Nytt användarnamn:',
 	'renameuserreason'            => 'Anledning till namnbytet:',
