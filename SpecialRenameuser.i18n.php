@@ -9,6 +9,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'renameuser'       => 'Rename user',
+	'renameuser-desc' => 'Rename a user (need \'\'renameuser\'\' right)',
 	'renameuserold'    => 'Current username:',
 	'renameusernew'    => 'New username:',
 	'renameuserreason' => 'Reason for rename:',
@@ -441,6 +442,7 @@ $messages['fo'] = array(
  */
 $messages['fr'] = array(
 	'renameuser'                  => 'Renommer l’utilisateur',
+	'renameuser-desc'             => 'Renomme un utilisateur (nécessite les droits de \'\'renameuser\'\')',
 	'renameuserold'               => 'Nom actuel de l’utilisateur :',
 	'renameusernew'               => 'Nouveau nom de l’utilisateur :',
 	'renameuserreason'            => 'Motif du renommage :',
