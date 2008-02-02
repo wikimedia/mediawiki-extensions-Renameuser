@@ -75,6 +75,7 @@ $messages['arc'] = array(
  */
 $messages['ast'] = array(
 	'renameuser'                  => 'Renomar usuariu',
+	'renameuser-desc'             => "Renoma un usuariu (necesita'l permisu ''renameuser'')",
 	'renameuserold'               => "Nome d'usuariu actual:",
 	'renameusernew'               => "Nome d'usuariu nuevu:",
 	'renameuserreason'            => 'Motivu del cambéu de nome:',
@@ -243,6 +244,7 @@ $messages['crh-cyrl'] = array(
  */
 $messages['cs'] = array(
 	'renameuser'                  => 'Přejmenovat uživatele',
+	'renameuser-desc'             => "Přejmenování uživatele (vyžadováno oprávnění ''renameuser'')",
 	'renameuserold'               => 'Stávající uživatelské jméno:',
 	'renameusernew'               => 'Nové uživatelské jméno:',
 	'renameuserreason'            => 'Důvod přejmenování:',
@@ -1226,6 +1228,30 @@ $messages['ru'] = array(
 	'renameuserlogentry'          => 'переименовал $1 в [[$2]]',
 	'renameuser-log'              => 'имеющий $1 правок. $2',
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
+);
+
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'renameuser'                  => 'Кыттааччы аатын уларыт',
+	'renameuserold'               => 'Билиҥҥи аата:',
+	'renameusernew'               => 'Саҥа аата:',
+	'renameuserreason'            => 'Аатын уларыппыт төрүөтэ:',
+	'renameusermove'              => 'Кыттааччы аатын кытта кэпсэтэр сирин, уонна атын сирэйдэрин ааттарын уларыт',
+	'renameusersubmit'            => 'Толор',
+	'renameusererrordoesnotexist' => 'Маннык ааттаах кыттааччы «<nowiki>$1</nowiki>» бэлиэтэммэтэх.',
+	'renameusererrorexists'       => 'Маннык ааттаах кыттааччы "<nowiki>$1</nowiki>" номнуо баар.',
+	'renameusererrorinvalid'      => 'Маннык аат "<nowiki>$1</nowiki>" көҥуллэммэт.',
+	'renameuser-error-same-user'  => 'Кыттааччы аатын урукку аатыгар уларытар табыллыбат.',
+	'renameusersuccess'           => '"<nowiki>$1</nowiki>" кыттааччы мантан ыла "<nowiki>$2</nowiki>" диэн ааттанна.',
+	'renameuser-page-exists'      => '$1 сирэй номнуо баар онон аптамаатынан хат суруллар кыаҕа суох.',
+	'renameuser-page-moved'       => '$1 сирэй маннык ааттаммыт $2.',
+	'renameuser-page-unmoved'     => '$1 сирэй маннык $2 ааттанар кыаҕа суох.',
+	'renameuserlogpage'           => 'Кыттааччылар ааттарын уларытыыларын сурунаала',
+	'renameuserlogpagetext'       => 'Бу бэлиэтэммит кыттааччылар ааттарын уларытыыларын сурунаала',
+	'renameuserlogentry'          => '$1 аата маннык буолла [[$2]]',
+	'renameuser-log'              => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
 );
 
 /** Slovak (Slovenčina)
