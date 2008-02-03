@@ -1128,11 +1128,12 @@ $messages['pms'] = array(
 );
 
 /** Portuguese (Português)
- * @author 555
  * @author Malafaya
+ * @author 555
  */
 $messages['pt'] = array(
 	'renameuser'                  => 'Renomear utilizador',
+	'renameuser-desc'             => "Renomear um utilizador (requer privilégio ''renameuser'')",
 	'renameuserold'               => 'Nome de utilizador actual:',
 	'renameusernew'               => 'Novo nome de utilizador:',
 	'renameuserreason'            => 'Motivo de renomear:',
@@ -1142,6 +1143,7 @@ $messages['pt'] = array(
 	'renameusererrorexists'       => 'O utilizador "<nowiki>$1</nowiki>" já existe',
 	'renameusererrorinvalid'      => 'O nome de utilizador "<nowiki>$1</nowiki>" é inválido',
 	'renameusererrortoomany'      => 'O utilizador "<nowiki>$1</nowiki>" possui $2 contribuições. Renomear um utilizador com mais de $3 contribuições pode afectar o desempenho do site',
+	'renameuser-error-request'    => 'Houve um problema ao receber este pedido. Por favor, volte atrás e tente de novo.',
 	'renameuser-error-same-user'  => 'Não pode renomear um utilizador para o mesmo nome anterior.',
 	'renameusersuccess'           => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'A página $1 atualmente já existe e não poderá ser sobre-escrita automaticamente.',
@@ -1607,6 +1609,13 @@ $messages['zh-hant'] = array(
 	'renameuserlogentry'    => '已經把 $1 重新命名為 $2',
 	'renameuser-log'        => '擁有$1次編輯. $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
+);
+
+/** Zulu (isiZulu)
+ * @author SPQRobin
+ */
+$messages['zu'] = array(
+	'renameusersubmit' => 'Yisa',
 );
 
 $messages['de-formal'] = $messages['de'];
