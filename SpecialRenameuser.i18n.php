@@ -1129,6 +1129,7 @@ $messages['pms'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Malafaya
  */
 $messages['pt'] = array(
 	'renameuser'                  => 'Renomear utilizador',
@@ -1141,6 +1142,7 @@ $messages['pt'] = array(
 	'renameusererrorexists'       => 'O utilizador "<nowiki>$1</nowiki>" já existe',
 	'renameusererrorinvalid'      => 'O nome de utilizador "<nowiki>$1</nowiki>" é inválido',
 	'renameusererrortoomany'      => 'O utilizador "<nowiki>$1</nowiki>" possui $2 contribuições. Renomear um utilizador com mais de $3 contribuições pode afectar o desempenho do site',
+	'renameuser-error-same-user'  => 'Não pode renomear um utilizador para o mesmo nome anterior.',
 	'renameusersuccess'           => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'A página $1 atualmente já existe e não poderá ser sobre-escrita automaticamente.',
 	'renameuser-page-moved'       => 'A página $1 foi movida com sucesso para $2.',
@@ -1208,6 +1210,7 @@ $messages['ro'] = array(
  */
 $messages['ru'] = array(
 	'renameuser'                  => 'Переименовать участника',
+	'renameuser-desc'             => "Переименование участника (требуются права ''renameuser'')",
 	'renameuserold'               => 'Имя в настоящий момент:',
 	'renameusernew'               => 'Новое имя:',
 	'renameuserreason'            => 'Причина переименования:',
@@ -1260,6 +1263,7 @@ $messages['sah'] = array(
  */
 $messages['sk'] = array(
 	'renameuser'                  => 'Premenovať používateľa',
+	'renameuser-desc'             => "Premenovať používateľa (vyžaduje právo ''renameuser'')",
 	'renameuserold'               => 'Súčasné používateľské meno:',
 	'renameusernew'               => 'Nové používateľské meno:',
 	'renameuserreason'            => 'Dôvod premenovania:',
