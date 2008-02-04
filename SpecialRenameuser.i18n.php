@@ -721,11 +721,12 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Suisui
- * @author Broad-Sky
  * @author Marine-Blue
+ * @author Broad-Sky
  */
 $messages['ja'] = array(
 	'renameuser'                  => '利用者名の変更',
+	'renameuser-desc'             => "利用者名変更 (''利用者名変更'' の権限が必要です)",
 	'renameuserold'               => '現在の利用者名:',
 	'renameusernew'               => '新しい利用者名:',
 	'renameuserreason'            => '変更理由:',
@@ -741,6 +742,7 @@ $messages['ja'] = array(
 	'renameuser-page-unmoved'     => '$1 を $2 に移動できませんでした。',
 	'renameuserlogpage'           => '利用者名変更記録',
 	'renameuserlogpagetext'       => 'これは、利用者名の変更を記録したものです。',
+	'renameuserlogentry'          => '$1 を $2 へ利用者名変更しました。',
 	'renameuser-log'              => '投稿数 $1回. $2',
 	'renameuser-move-log'         => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 );
@@ -994,6 +996,14 @@ $messages['nds'] = array(
 	'renameuser-move-log' => 'Siet bi dat Ännern vun’n Brukernaam \'\'[[{{ns:2}}:$1|$1]]\'\' na \'\'[[{{ns:2}}:$2|$2]]\'\' automaatsch schaven',
 );
 
+/** Nepali (नेपाली)
+ * @author SPQRobin
+ */
+$messages['ne'] = array(
+	'renameuserold' => 'अहिलेको प्रयोगकर्ता नाम:',
+	'renameusernew' => 'नयाँ प्रयोगकर्ता नाम:',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
@@ -1242,6 +1252,7 @@ $messages['ru'] = array(
  */
 $messages['sah'] = array(
 	'renameuser'                  => 'Кыттааччы аатын уларыт',
+	'renameuser-desc'             => "Кыттааччы аатын уларытыы (''renameuser'' бырааба наада)",
 	'renameuserold'               => 'Билиҥҥи аата:',
 	'renameusernew'               => 'Саҥа аата:',
 	'renameuserreason'            => 'Аатын уларыппыт төрүөтэ:',
@@ -1250,6 +1261,8 @@ $messages['sah'] = array(
 	'renameusererrordoesnotexist' => 'Маннык ааттаах кыттааччы «<nowiki>$1</nowiki>» бэлиэтэммэтэх.',
 	'renameusererrorexists'       => 'Маннык ааттаах кыттааччы "<nowiki>$1</nowiki>" номнуо баар.',
 	'renameusererrorinvalid'      => 'Маннык аат "<nowiki>$1</nowiki>" көҥуллэммэт.',
+	'renameusererrortoomany'      => '<nowiki>$1</nowiki> кыттааччы $2 көннөрүүнү киллэрбит, $3 тахса көннөрүүнү оҥорбут кыттааччы аатын уларытыы саайка киириини хааччахтыан сөп.',
+	'renameuser-error-request'    => 'Запрос тутуута моһуоктанна. Бука диэн төнүн уонна хатылаа.',
 	'renameuser-error-same-user'  => 'Кыттааччы аатын урукку аатыгар уларытар табыллыбат.',
 	'renameusersuccess'           => '"<nowiki>$1</nowiki>" кыттааччы мантан ыла "<nowiki>$2</nowiki>" диэн ааттанна.',
 	'renameuser-page-exists'      => '$1 сирэй номнуо баар онон аптамаатынан хат суруллар кыаҕа суох.',
@@ -1259,6 +1272,7 @@ $messages['sah'] = array(
 	'renameuserlogpagetext'       => 'Бу бэлиэтэммит кыттааччылар ааттарын уларытыыларын сурунаала',
 	'renameuserlogentry'          => '$1 аата маннык буолла [[$2]]',
 	'renameuser-log'              => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
+	'renameuser-move-log'         => '«[[User:$1|$1]]» аата «[[User:$2|$2]]» буолбутунан аптамаатынан',
 );
 
 /** Slovak (Slovenčina)
