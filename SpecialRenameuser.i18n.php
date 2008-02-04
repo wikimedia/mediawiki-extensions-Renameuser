@@ -517,6 +517,7 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'renameuser'                  => 'Mudar o nome de usuario',
+	'renameuser-desc'             => "Renomear un usuario (precisa dereito de ''renomear usuarios'')",
 	'renameuserold'               => 'Nome de usuario actual:',
 	'renameusernew'               => 'Novo nome de usuario:',
 	'renameuserreason'            => 'Razón para mudar o nome:',
@@ -527,6 +528,7 @@ $messages['gl'] = array(
 	'renameusererrorinvalid'      => 'O nome de usuario "<nowiki>$1</nowiki>" non é válido',
 	'renameusererrortoomany'      => 'O usuario "<nowiki>$1</nowiki>" ten $2 contribucións, mudando o nome dun usuario con máis de $3 contribucións podería afectar negativamente á execución do sitio',
 	'renameuser-error-request'    => 'Houbo un problema coa recepción da solitidude. Volte atrás e ténteo de novo.',
+	'renameuser-error-same-user'  => 'Non pode renomear a un usuario ao mesmo nome que tiña antes.',
 	'renameusersuccess'           => 'O usuario "<nowiki>$1</nowiki>" mudou o nome a "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'A páxina $1 xa existe e non pode ser automaticamente sobreescrita.',
 	'renameuser-page-moved'       => 'A páxina $1 foi movida a $2.',
