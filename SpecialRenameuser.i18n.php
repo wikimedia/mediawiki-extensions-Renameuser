@@ -141,6 +141,7 @@ $messages['bg'] = array(
  */
 $messages['bn'] = array(
 	'renameuser'                  => 'ব্যবহারকারী নামান্তর করো',
+	'renameuser-desc'             => "একজন ব্যবহারকারীকে নামান্তর করুন (''ব্যবহাকারী নামান্তর'' অধিকার প্রয়োজন)",
 	'renameuserold'               => 'বর্তমান ব্যবহারকারী নাম:',
 	'renameusernew'               => 'নতুন ব্যবহারকারী নাম:',
 	'renameuserreason'            => 'নামান্তরের কারণ:',
@@ -1039,6 +1040,7 @@ $messages['nl'] = array(
  */
 $messages['no'] = array(
 	'renameuser'                  => 'Omdøp bruker',
+	'renameuser-desc'             => "Døp om en bruker (trenger ''renameuser''-rettigheter)",
 	'renameuserold'               => 'Nåværende navn:',
 	'renameusernew'               => 'Nytt brukernavn:',
 	'renameuserreason'            => 'Grunn for omdøping:',
@@ -1048,6 +1050,8 @@ $messages['no'] = array(
 	'renameusererrorexists'       => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
 	'renameusererrorinvalid'      => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig',
 	'renameusererrortoomany'      => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å omdøpe brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
+	'renameuser-error-request'    => 'Det var et problem med å motte forespørselen. Gå tilbake og prøv igjen.',
+	'renameuser-error-same-user'  => 'Du kan ikke gi en bruker samme navn som han/hun allerede har.',
 	'renameusersuccess'           => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>»',
 	'renameuser-page-exists'      => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
 	'renameuser-page-moved'       => 'Siden $1 har blitt flyttet til $2.',
@@ -1055,7 +1059,7 @@ $messages['no'] = array(
 	'renameuserlogpage'           => 'Omdøpingslogg',
 	'renameuserlogpagetext'       => 'Dette er en logg over endringer i brukernavn.',
 	'renameuserlogentry'          => 'har omdøpt $1 til $2',
-	'renameuser-log'              => '$1 redigeringer. Grunn: $2',
+	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
 
@@ -1158,13 +1162,13 @@ $messages['pt'] = array(
 	'renameuser-error-request'    => 'Houve um problema ao receber este pedido. Por favor, volte atrás e tente de novo.',
 	'renameuser-error-same-user'  => 'Não pode renomear um utilizador para o mesmo nome anterior.',
 	'renameusersuccess'           => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists'      => 'A página $1 atualmente já existe e não poderá ser sobre-escrita automaticamente.',
+	'renameuser-page-exists'      => 'A página $1 já existe e não poderá ser sobre-escrita automaticamente.',
 	'renameuser-page-moved'       => 'A página $1 foi movida com sucesso para $2.',
 	'renameuser-page-unmoved'     => 'Não foi possível mover a página $1 para $2.',
 	'renameuserlogpage'           => 'Registo de renomeação de utilizadores',
 	'renameuserlogpagetext'       => 'Este é um registo de alterações efectuadas a nomes de utilizadores',
 	'renameuserlogentry'          => 'renomeou $1 para $2',
-	'renameuser-log'              => 'que possuia $1 edições. Motivo: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log'         => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 );
 
@@ -1420,6 +1424,7 @@ $messages['sv'] = array(
  */
 $messages['te'] = array(
 	'renameuser'                  => 'సభ్యనామం మార్పు',
+	'renameuser-desc'             => "వాడుకరి పేరు మార్చండి (''renameuser'' అన్న అధికారం కావాలి)",
 	'renameuserold'               => 'ప్రస్తుత వాడుకరి పేరు:',
 	'renameusernew'               => 'కొత్త వాడుకరి పేరు:',
 	'renameuserreason'            => 'పేరు మార్చడానికి కారణం:',
