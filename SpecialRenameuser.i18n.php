@@ -1458,6 +1458,22 @@ $messages['tet'] = array(
 	'renameuser-page-unmoved' => 'La bele book pájina $1 ba $2.',
 );
 
+/** Tajik (Тоҷикӣ)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'renameuser'                  => 'Тағйири номи корбарӣ',
+	'renameuserold'               => 'Номи корбари феълӣ:',
+	'renameusernew'               => 'Номи корбари ҷадид:',
+	'renameuserreason'            => 'Иллати тағйири номи корбарӣ:',
+	'renameusermove'              => 'Саҳифаи корбарӣ ва саҳифаи баҳси корбар (ва зерсаҳифаҳои он)ро интиқол бидеҳ',
+	'renameusersubmit'            => 'Сабт',
+	'renameusererrordoesnotexist' => 'Номи корбарӣ "<nowiki>$1</nowiki>" вуҷуд надорад.',
+	'renameusererrorexists'       => 'Номи корбарӣ "<nowiki>$1</nowiki>" истифода шудааст.',
+	'renameusererrorinvalid'      => 'Номи корбарӣ "<nowiki>$1</nowiki>" ғайри миҷоз аст.',
+	'renameusererrortoomany'      => 'Корбар "<nowiki>$1</nowiki>" $2 ҳиссагузориҳо дорад, тағйири номи корбаре, ки беш аз $3 ҳиссагузориҳо дорад ва ба амал кардани сомона таъсире мушкилӣ метавонад расонад.',
+);
+
 /** Tonga (faka-Tonga)
  * @author SPQRobin
  */
