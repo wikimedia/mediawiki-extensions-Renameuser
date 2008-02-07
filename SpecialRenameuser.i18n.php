@@ -44,6 +44,7 @@ $messages['af'] = array(
  */
 $messages['ar'] = array(
 	'renameuser'                  => 'إعادة تسمية مستخدم',
+	'renameuser-desc'             => "إعادة تسمية مستخدم (يحتاج إلى صلاحية ''renameuser'')",
 	'renameuserold'               => 'اسم المستخدم الحالي:',
 	'renameusernew'               => 'الاسم الجديد:',
 	'renameuserreason'            => 'السبب لإعادة التسمية:',
@@ -1305,7 +1306,7 @@ $messages['sk'] = array(
 	'renameuserlogpage'           => 'Záznam premenovaní používateľov',
 	'renameuserlogpagetext'       => 'Toto je záznam premenovaní používateľov',
 	'renameuserlogentry'          => 'premenoval používateľa $1 na [[User:$2]]',
-	'renameuser-log'              => 'mal $1 úpravy. $2',
+	'renameuser-log'              => 'mal {{PLURAL:$1|1 úpravu|$1 úpravy|$1 úprav}}. Dôvod: $2',
 	'renameuser-move-log'         => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 );
 
@@ -1531,6 +1532,7 @@ $messages['vi'] = array(
  */
 $messages['vo'] = array(
 	'renameuser'                  => 'Votanemön gebani',
+	'renameuser-desc'             => "Votanemön gebani (gität: ''renameuser'' zesüdon)",
 	'renameuserold'               => 'Gebananem anuik:',
 	'renameusernew'               => 'Gebananem nulik:',
 	'renameuserreason'            => 'Kod votanemama:',
