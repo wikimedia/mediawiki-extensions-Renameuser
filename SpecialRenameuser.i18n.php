@@ -390,6 +390,7 @@ $messages['ext'] = array(
  */
 $messages['fa'] = array(
 	'renameuser'                  => 'تغییر نام کاربری',
+	'renameuser-desc'             => "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از اختیارات ''تغییرنام'' است)",
 	'renameuserold'               => 'نام کاربری فعلی:',
 	'renameusernew'               => 'نام کاربری جدید:',
 	'renameuserreason'            => 'علت تغییر نام کاربری:',
