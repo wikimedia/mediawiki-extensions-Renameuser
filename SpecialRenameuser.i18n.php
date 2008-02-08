@@ -352,6 +352,7 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Icvav
  * @author Spacebirdy
+ * @author Lin linao
  * @author Alhen
  */
 $messages['es'] = array(
@@ -365,6 +366,7 @@ $messages['es'] = array(
 	'renameusererrorexists'       => 'El usuario «<nowiki>$1</nowiki>» ya existe',
 	'renameusererrorinvalid'      => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
 	'renameusererrortoomany'      => 'El usuario «<nowiki>$1</nowiki>» tiene $2 contribuciones, cambiar el nombre de un usuario con más de $3 contribuciones podría afectar notablemente al rendimiento del sitio',
+	'renameuser-error-same-user'  => 'No puedes renombrar a un usuario con el nombre que ya tenía.',
 	'renameusersuccess'           => 'El usuario «<nowiki>$1</nowiki>» ha sido renombrado a «<nowiki>$2</nowiki>»',
 	'renameuser-page-exists'      => 'La página $1 ya existe y no puede ser reemplazada automáticamente.',
 	'renameuser-page-moved'       => 'La página $1 ha sido trasladada a $2.',
@@ -1657,3 +1659,4 @@ $messages['zh-hant'] = array(
 $messages['zu'] = array(
 	'renameusersubmit' => 'Yisa',
 );
+
