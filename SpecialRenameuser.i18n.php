@@ -32,10 +32,19 @@ $messages['en'] = array(
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author SPQRobin
+ */
 $messages['af'] = array(
+	'renameuser'                  => 'Hernoem gebruiker',
+	'renameuserold'               => 'Huidige gebruikersnaam:',
+	'renameusernew'               => 'Nuwe gebruikersnaam:',
+	'renameuserreason'            => 'Rede vir hernoeming:',
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
+	'renameusersuccess'           => 'Die gebruiker "<nowiki>$1</nowiki>" is hernoem na "<nowiki>$2</nowiki>".',
+	'renameuserlogpage'           => 'Logboek van gebruikershernoemings',
 );
 
 /** Arabic (العربية)
@@ -1476,6 +1485,7 @@ $messages['tg'] = array(
 	'renameusererrorexists'       => 'Номи корбарӣ "<nowiki>$1</nowiki>" истифода шудааст.',
 	'renameusererrorinvalid'      => 'Номи корбарӣ "<nowiki>$1</nowiki>" ғайри миҷоз аст.',
 	'renameusererrortoomany'      => 'Корбар "<nowiki>$1</nowiki>" $2 ҳиссагузориҳо дорад, тағйири номи корбаре, ки беш аз $3 ҳиссагузориҳо дорад ва ба амал кардани сомона таъсире мушкилӣ метавонад расонад.',
+	'renameuserlogpage'           => 'Гузориши тағйири номи корбар',
 );
 
 /** Tonga (faka-Tonga)
