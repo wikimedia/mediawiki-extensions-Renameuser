@@ -945,6 +945,34 @@ $messages['lb'] = array(
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 );
 
+/** Limburgish (Limburgs)
+ * @author Ooswesthoesbes
+ */
+$messages['li'] = array(
+	'renameuser'                  => 'Hernöm gebroeker',
+	'renameuser-desc'             => "Voog 'n [[Special:Renameuser|speciaal pazjwna]] toe óm 'ne gebroeker te hernömme (doe höbs hiej ''renameuser''-rech veur neudig)",
+	'renameuserold'               => 'Hujige gebroekersnaam:',
+	'renameusernew'               => 'Nuje gebroekersnaam:',
+	'renameuserreason'            => 'Ree veur hernömme:',
+	'renameusermove'              => "De gebroekerspazjena en euverlèkpazjena (en eventueel subpazjena's) hernömmme nao de nuje gebroekersnaam",
+	'renameusersubmit'            => 'Hernöm',
+	'renameusererrordoesnotexist' => 'De gebroeker "<nowiki>$1</nowiki>" besteit neet.',
+	'renameusererrorexists'       => 'De gebroeker "<nowiki>$1</nowiki>" besteit al.',
+	'renameusererrorinvalid'      => 'De gebroekersnaam "<nowiki>$1</nowiki>" is óngeljig.',
+	'renameusererrortoomany'      => 'De gebroeker "<nowiki>$1</nowiki>" haet $2 bewèrkinge gedaon; \'t hernömme van \'ne gebroeker mit meer es $3 biedraag kan de perstasie van de site naodeilig beïnvloeje.',
+	'renameuser-error-request'    => "d'r Woor 'n perbleem bie 't óntvange vanne aanvraog. Lèvver trök te gaon en opnuuj te perbere/",
+	'renameuser-error-same-user'  => 'Doe kans gein gebroekers hernömme nao dezelvendje naam.',
+	'renameusersuccess'           => 'De gebroeker "<nowiki>$1</nowiki>" is hernömp nao "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'De pazjena $1 besteit al en kan neet automatisch euversjreve waere,',
+	'renameuser-page-moved'       => 'De pagina $1 is hernömp nao $2.',
+	'renameuser-page-unmoved'     => 'De pagina $1 kon neet hernömp waere nao $2.',
+	'renameuserlogpage'           => 'Logbook gebroekersnaamwieziginge',
+	'renameuserlogpagetext'       => 'Hiejónger staon gebroekersname die verangerdj zeen',
+	'renameuserlogentry'          => 'haet $1 hernömp nao $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 bewerking|$1 bewerkinge}}. Ree: $2',
+	'renameuser-move-log'         => 'Automatisch hernömp bie \'t wiezige van gebroeker "[[User:$1|$1]]" nao "[[User:$2|$2]]"',
+);
+
 /** Lithuanian (Lietuvių)
  * @author Matasg
  */
