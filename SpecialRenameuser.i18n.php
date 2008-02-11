@@ -126,6 +126,7 @@ $messages['bcl'] = array(
  */
 $messages['bg'] = array(
 	'renameuser'                  => 'Преименуване на потребител',
+	'renameuser-desc'             => 'Добавя възможност за преименуване на потребители',
 	'renameuserold'               => 'Текущо потребителско име:',
 	'renameusernew'               => 'Ново потребителско име:',
 	'renameuserreason'            => 'Причина за преименуването:',
