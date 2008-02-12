@@ -751,6 +751,8 @@ $messages['ja'] = array(
 	'renameusererrorexists'       => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
 	'renameusererrorinvalid'      => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
 	'renameusererrortoomany'      => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameuser-error-request'    => 'リクエストを正常に受け付けることが出来ませんでした。戻ってから再度お試しください。',
+	'renameuser-error-same-user'  => '現在と同じユーザー名に変更することは出来ません。',
 	'renameusersuccess'           => '利用者 "[[User:$1|$1]]" を "[[User:$2|$2]]" に変更しました。',
 	'renameuser-page-exists'      => '$1 が既に存在しているため、自動で上書きできませんでした。',
 	'renameuser-page-moved'       => '$1 を $2 に移動しました。',
@@ -1103,6 +1105,17 @@ $messages['no'] = array(
 	'renameuserlogentry'          => 'har omdøpt $1 til $2',
 	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+);
+
+/** Northern Sotho (Sesotho sa Leboa)
+ * @author Mohau
+ */
+$messages['nso'] = array(
+	'renameuser'            => 'Fetola leina la mošomiši',
+	'renameuserold'         => 'Leina la bjale la mošomiši:',
+	'renameusernew'         => 'Leina le lempsha la mošomiši:',
+	'renameuserreason'      => 'Lebaka lago fetola leina:',
+	'renameuser-page-moved' => 'Letlakala $1 le hudušitšwe go $2',
 );
 
 /** Occitan (Occitan)
