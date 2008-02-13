@@ -1123,6 +1123,7 @@ $messages['nso'] = array(
  */
 $messages['oc'] = array(
 	'renameuser'                  => "Renomenar l'utilizaire",
+	'renameuser-desc'             => "Renomena un utilizaire (necessita los dreches de ''renameuser'')",
 	'renameuserold'               => "Nom actual de l'utilizaire :",
 	'renameusernew'               => "Nom novèl de l'utilizaire :",
 	'renameuserreason'            => 'Motiu del renomenatge :',
