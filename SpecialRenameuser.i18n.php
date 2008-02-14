@@ -937,6 +937,7 @@ $messages['lb'] = array(
 	'renameusererrorexists'       => 'De Benotzer "<nowiki>$1</nowiki>" gët et schonn.',
 	'renameusererrorinvalid'      => 'De Benotzernumm "<nowiki>$1</nowiki>" kann net benotzt ginn.',
 	'renameusererrortoomany'      => 'De benotzer "<nowiki>$1</nowiki>" huet $2 Ännerunge gemaach. D¨¨annerung vum Benotzernumm vun engem Benotzer mat méi wéi $3 Ännerungen kann d\'Vitesse vum Site staark beaflossen (De Server gëtt lues).',
+	'renameuser-error-same-user'  => 'Dir kënnt kee Benotzer ëmbenennen an him dee selweschte Numm erëmginn.',
 	'renameusersuccess'           => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
 	'renameuser-page-exists'      => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
 	'renameuser-page-moved'       => "D'Säit $1 gouf op $2 geréckelt.",
@@ -1148,12 +1149,13 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
- * @author WarX
  * @author Sp5uhe
+ * @author WarX
  * @author Wpedzich
  */
 $messages['pl'] = array(
 	'renameuser'                  => 'Zmiana nazwy użytkownika',
+	'renameuser-desc'             => "Zmiana nazwy użytkownika (wymaga posiadania uprawnień ''renameuser'')",
 	'renameuserold'               => 'Obecna nazwa użytkownika:',
 	'renameusernew'               => 'Nowa nazwa użytkownika:',
 	'renameuserreason'            => 'Przyczyna zmiany nazwy:',
@@ -1163,6 +1165,8 @@ $messages['pl'] = array(
 	'renameusererrorexists'       => 'Użytkownik "<nowiki>$1</nowiki>" już istnieje w bazie',
 	'renameusererrorinvalid'      => 'Niepoprawna nazwa użytkownika "<nowiki>$1</nowiki>"',
 	'renameusererrortoomany'      => 'Użytkownik "<nowiki>$1</nowiki>" ma $2 edycji. Zmiana nazwy użytkownika mającego powyżej $3 edycji może wpłynąć na wydajność serwisu.',
+	'renameuser-error-request'    => 'Wystąpił problem z odbiorem żądania. Cofnij się i spróbuj jeszcze raz.',
+	'renameuser-error-same-user'  => 'Nie możesz zmienić nazwy użytkownika na taką samą jaka była wcześniej.',
 	'renameusersuccess'           => 'Nazwa użytkownika "<nowiki>$1</nowiki>" została zmieniona na "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'Strona "$1" już istnieje i nie może być automatycznie nadpisana.',
 	'renameuser-page-moved'       => 'Strona "$1" została przeniesiona do "$2".',
@@ -1573,12 +1577,32 @@ $messages['vec'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'renameuser'    => 'Đổi tên thành viên',
-	'renameuserold' => 'Tên hiệu hiện nay:',
-	'renameusernew' => 'Tên hiệu mới:',
+	'renameuser'                  => 'Đổi tên thành viên',
+	'renameuser-desc'             => "Đổi tên thành viên (cần có quyền ''renameuser'')",
+	'renameuserold'               => 'Tên hiệu hiện nay:',
+	'renameusernew'               => 'Tên hiệu mới:',
+	'renameuserreason'            => 'Lý do đổi tên:',
+	'renameusermove'              => 'Di chuyển trang thành viên và thảo luận thành viên (cùng với trang con của nó) sang tên mới',
+	'renameusersubmit'            => 'Thực hiện',
+	'renameusererrordoesnotexist' => 'Thành viên “<nowiki>$1</nowiki>” không tồn tại.',
+	'renameusererrorexists'       => 'Thành viên “<nowiki>$1</nowiki>” đã hiện hữu.',
+	'renameusererrorinvalid'      => 'Tên thành viên “<nowiki>$1</nowiki>” không hợp lệ.',
+	'renameusererrortoomany'      => 'Thành viên “<nowiki>$1</nowiki>” có $2 đóng góp, đổi tên thành viên có hơn $3 đóng góp có thể ảnh hưởng xấu đến hiệu năng của trang.',
+	'renameuser-error-request'    => 'Có trục trặc trong tiếp nhận yêu cầu. Xin hãy quay lại và thử lần nữa.',
+	'renameuser-error-same-user'  => 'Bạn không thể đổi tên thành viên sang tên y hệt như vậy.',
+	'renameusersuccess'           => 'Thành viên “<nowiki>$1</nowiki>” đã được đổi tên thành “<nowiki>$2</nowiki>”.',
+	'renameuser-page-exists'      => 'Trang $1 đã tồn tại và không thể bị tự động ghi đè.',
+	'renameuser-page-moved'       => 'Trang $1 đã được di chuyển đến $2.',
+	'renameuser-page-unmoved'     => 'Trang $1 không thể di chuyển đến $2.',
+	'renameuserlogpage'           => 'Nhật trình đổi tên thành viên',
+	'renameuserlogpagetext'       => 'Đây là nhật trình ghi lại các thay đổi đối với tên thành viên',
+	'renameuserlogentry'          => 'đã đổi tên $1 thành $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
+	'renameuser-move-log'         => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
 );
 
 /** Volapük (Volapük)
