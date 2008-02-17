@@ -1084,17 +1084,17 @@ $messages['nl'] = array(
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
-	'renameuser'                  => 'Omdøp bruker',
+	'renameuser'                  => 'Døp om bruker',
 	'renameuser-desc'             => "Døp om en bruker (trenger ''renameuser''-rettigheter)",
 	'renameuserold'               => 'Nåværende navn:',
 	'renameusernew'               => 'Nytt brukernavn:',
 	'renameuserreason'            => 'Grunn for omdøping:',
 	'renameusermove'              => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
-	'renameusersubmit'            => 'Omdøp',
+	'renameusersubmit'            => 'Døp om',
 	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke',
 	'renameusererrorexists'       => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
 	'renameusererrorinvalid'      => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig',
-	'renameusererrortoomany'      => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å omdøpe brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
+	'renameusererrortoomany'      => 'Brukeren «<nowiki>$1</nowiki>» har $2&nbsp;redigeringer. Å døpe om brukere med mer enn $3&nbsp;redigeringer kan kunne påvirke sidens ytelse.',
 	'renameuser-error-request'    => 'Det var et problem med å motte forespørselen. Gå tilbake og prøv igjen.',
 	'renameuser-error-same-user'  => 'Du kan ikke gi en bruker samme navn som han/hun allerede har.',
 	'renameusersuccess'           => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>»',
@@ -1103,7 +1103,7 @@ $messages['no'] = array(
 	'renameuser-page-unmoved'     => 'Siden $1 kunne ikke flyttes til $2.',
 	'renameuserlogpage'           => 'Omdøpingslogg',
 	'renameuserlogpagetext'       => 'Dette er en logg over endringer i brukernavn.',
-	'renameuserlogentry'          => 'har omdøpt $1 til $2',
+	'renameuserlogentry'          => 'har døp om $1 til $2',
 	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
