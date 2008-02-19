@@ -979,12 +979,16 @@ $messages['li'] = array(
 
 /** Lithuanian (Lietuvių)
  * @author Matasg
+ * @author Hugo.arg
  */
 $messages['lt'] = array(
 	'renameuser'                  => 'Pervadinti naudotoją',
+	'renameuser-desc'             => "Pervadinti naudotoją (reikia ''pervadintojo'' teisių)",
 	'renameuserold'               => 'Esamas naudotojo vardas:',
 	'renameusernew'               => 'Naujas naudotojo vardas:',
 	'renameuserreason'            => 'Priežastis pervadinimui:',
+	'renameusermove'              => 'Perkelti naudotoją ir aptarimo puslapius (bei jo subpuslapius) prie naujo vardo',
+	'renameusersubmit'            => 'Patvirtinti',
 	'renameusererrordoesnotexist' => 'Naudotojas "<nowiki>$1</nowiki>" neegzistuoja.',
 	'renameusererrorexists'       => 'Naudotojas "<nowiki>$1</nowiki>" jau egzistuoja.',
 	'renameusererrorinvalid'      => 'Naudotojo vardas "<nowiki>$1</nowiki>" netinkamas.',
