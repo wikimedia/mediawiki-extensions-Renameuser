@@ -219,7 +219,7 @@ $messages['ca'] = array(
 	'renameuserlogpage'           => "Registre del canvi de nom d'usuari",
 	'renameuserlogpagetext'       => "Aquest és un registre dels canvis als noms d'usuari",
 	'renameuserlogentry'          => 'ha canviat el nom de $1 a $2',
-	'renameuser-log'              => '$1 contribucions. Motiu: $2',
+	'renameuser-log'              => '{{PLURAL:$1|Una contribució|$1 contribucions}}. Motiu: $2',
 	'renameuser-move-log'         => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 );
 
