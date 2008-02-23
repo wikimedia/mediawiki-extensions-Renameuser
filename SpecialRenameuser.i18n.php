@@ -1207,6 +1207,14 @@ $messages['pms'] = array(
 	'renameuser-move-log'         => 'Pàgina utent tramudà n\'aotomàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'renameusernew'     => 'نوی کارن-نوم:',
+	'renameuserlogpage' => 'د کارن-نوم يادښت',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  * @author 555
