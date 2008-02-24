@@ -459,12 +459,13 @@ $messages['fo'] = array(
 
 /** French (Français)
  * @author Siebrand
+ * @author Urhixidur
  * @author Grondin
  * @author Hégésippe Cormier
  */
 $messages['fr'] = array(
 	'renameuser'                  => 'Renommer l’utilisateur',
-	'renameuser-desc'             => 'Renomme un utilisateur (nécessite les droits de \'\'renameuser\'\')',
+	'renameuser-desc'             => "Renomme un utilisateur (nécessite les droits de ''renameuser'')",
 	'renameuserold'               => 'Nom actuel de l’utilisateur :',
 	'renameusernew'               => 'Nouveau nom de l’utilisateur :',
 	'renameuserreason'            => 'Motif du renommage :',
@@ -473,9 +474,9 @@ $messages['fr'] = array(
 	'renameusererrordoesnotexist' => 'L’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
 	'renameusererrorexists'       => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
 	'renameusererrorinvalid'      => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
-	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut affecter les performances du site.',
+	'renameusererrortoomany'      => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contributions. Renommer un utilisateur ayant plus de $3 contributions à son actif peut momentanément affecter les performances du site.',
 	'renameuser-error-request'    => 'Un problème existe avec la réception de la requête. Revenez en arrière et essayez à nouveau.',
-	'renameuser-error-same-user'  => 'Vous ne pouvez pas renommer un utilisateur avec la même chose auparavant.',
+	'renameuser-error-same-user'  => 'Vous ne pouvez pas renommer un utilisateur du même nom qu’auparavant.',
 	'renameusersuccess'           => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
 	'renameuser-page-exists'      => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved'       => 'La page $1 a été déplacée vers $2.',
@@ -712,26 +713,34 @@ $messages['is'] = array(
 	'renameuserlogpagetext'       => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
 );
 
+/** Italian (Italiano)
+ * @author BrokenArrow
+ * @author .anaconda
+ * @author Gianfranco
+ */
 $messages['it'] = array(
-	'renameuser' => 'Modifica del nome utente',
-	'renameuserold' => 'Nome utente attuale:',
-	'renameusernew' => 'Nuovo nome utente:',
-	'renameuserreason' => 'Motivo del cambio nome',
-	'renameusermove' => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
-	'renameusersubmit' => 'Invia',
+	'renameuser'                  => 'Modifica del nome utente',
+	'renameuser-desc'             => "Funzione per rinominare un utente (richiede i diritti di ''renameuser'')",
+	'renameuserold'               => 'Nome utente attuale:',
+	'renameusernew'               => 'Nuovo nome utente:',
+	'renameuserreason'            => 'Motivo del cambio nome',
+	'renameusermove'              => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
+	'renameusersubmit'            => 'Invia',
 	'renameusererrordoesnotexist' => 'Il nome utente "<nowiki>$1</nowiki>" non esiste',
-	'renameusererrorexists' => 'Il nome utente "<nowiki>$1</nowiki>" esiste già',
-	'renameusererrorinvalid' => 'Il nome utente "<nowiki>$1</nowiki>" non è valido',
-	'renameusererrortoomany' => 'Il nome utente "<nowiki>$1</nowiki>" ha $2 contributi. Modificare il nome di un utente con più di $3 contributi potrebbe incidere negativamente sulle prestazioni del sito',
-	'renameusersuccess' => 'Il nome utente "<nowiki>$1</nowiki>" è stato modificato in "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists' => 'La pagina $1 esiste già; impossibile sovrascriverla automaticamente.',
-	'renameuser-page-moved' => 'La pagina $1 è stata spostata a $2.',
-	'renameuser-page-unmoved' => 'Impossibile spostare la pagina $1 a $2.',
-	'renameuserlogpage' => 'Utenti rinominati',
-	'renameuserlogpagetext' => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
-	'renameuserlogentry' => 'ha rinominato $1 in [[Utente:$2]]',
-	'renameuser-log' => 'Che ha $1 contributi. $2',
-	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'renameusererrorexists'       => 'Il nome utente "<nowiki>$1</nowiki>" esiste già',
+	'renameusererrorinvalid'      => 'Il nome utente "<nowiki>$1</nowiki>" non è valido',
+	'renameusererrortoomany'      => 'Il nome utente "<nowiki>$1</nowiki>" ha $2 contributi. Modificare il nome di un utente con più di $3 contributi potrebbe incidere negativamente sulle prestazioni del sito',
+	'renameuser-error-request'    => 'Si è verificato un problema nella ricezione della richiesta. Tornare indietro e riprovare.',
+	'renameuser-error-same-user'  => 'Non è possibile rinominare un utente allo stesso nome che aveva già.',
+	'renameusersuccess'           => 'Il nome utente "<nowiki>$1</nowiki>" è stato modificato in "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists'      => 'La pagina $1 esiste già; impossibile sovrascriverla automaticamente.',
+	'renameuser-page-moved'       => 'La pagina $1 è stata spostata a $2.',
+	'renameuser-page-unmoved'     => 'Impossibile spostare la pagina $1 a $2.',
+	'renameuserlogpage'           => 'Utenti rinominati',
+	'renameuserlogpagetext'       => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
+	'renameuserlogentry'          => 'ha rinominato $1 in [[Utente:$2]]',
+	'renameuser-log'              => 'Che ha $1 contributi. $2',
+	'renameuser-move-log'         => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
 /** Japanese (日本語)
@@ -862,6 +871,33 @@ $messages['kk-latn'] = array(
 	'renameuser-move-log'   => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'renameuser'                  => 'ប្តូរឈ្មោះ អ្នកប្រើប្រាស់',
+	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''បណ្តូរឈ្មោះអ្នកប្រើប្រាស់'')",
+	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់ បច្ចុប្បន្ន ៖',
+	'renameusernew'               => 'ឈ្មោះអ្នកប្រើប្រាស់ ថ្មី ៖',
+	'renameuserreason'            => 'ហេតុផល ចំពោះបណ្តូរឈ្មោះ ៖',
+	'renameusermove'              => 'ប្តូរទីតាំង អ្នកប្រើប្រាស់ និង ទំព័រពិភាក្សា(និងទំព័ររង របស់ពួកគេ) ទៅឈ្មោះថ្មី',
+	'renameusersubmit'            => 'ដាក់ស្នើ',
+	'renameusererrordoesnotexist' => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មិនមាន ។',
+	'renameusererrorexists'       => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មានហើយ ។',
+	'renameusererrorinvalid'      => 'ឈ្មោះអ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មិនត្រឹមត្រូវ ។',
+	'renameuser-error-request'    => 'មានបញ្ហា ចំពោះការទទួលសំណើ។ សូមត្រលប់ក្រោយ ហើយព្យាយាមម្តងទៀត ។',
+	'renameuser-error-same-user'  => 'អ្នកមិនអាច ប្តូរឈ្មោះអ្នកប្រើប្រាស់ ទៅជាឈ្មោះ ដូចមុន នោះទេ។',
+	'renameusersuccess'           => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" ត្រូវបានប្តូរឈ្មោះទៅ "<nowiki>$2</nowiki>"។',
+	'renameuser-page-exists'      => 'ទំព័រ $1 មានហើយ, មិនអាចសរសេរ ជាន់ពីលើ ដោយស្វ័យប្រវត្តិ ទេ។',
+	'renameuser-page-moved'       => 'ទំព័រ $1 ត្រូវបានប្តូរទីតាំង ទៅ $2 ។',
+	'renameuser-page-unmoved'     => 'ទំព័រ $1 មិនអាចត្រូវបាន ប្តូរទីតាំង ទៅ $2 ។',
+	'renameuserlogpage'           => 'កំណត់ហេតុ ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuserlogpagetext'       => 'នេះជា កំណត់ហេតុ នៃបំលាស់ប្តូរ នៃ ឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuserlogentry'          => 'បានប្តូរឈ្មោះ $1 ជា $2',
+	'renameuser-log'              => '{{PLURAL:$1|កំណែប្រែ}}។ ហេតុផល៖ $2',
+	'renameuser-move-log'         => 'បានប្តូរទីតាំង ទំព័រ ដោយស្វ័យប្រវត្តិ កាលបើប្តូរឈ្មោះ អ្នកប្រើប្រាស់ "[[User:$1|$1]]" ទៅ "[[User:$2|$2]]"',
+);
+
 $messages['kn'] = array(
 	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
 );
@@ -926,8 +962,8 @@ $messages['la'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'renameuser'                  => 'Benotzer ëmbenennen',
-	'renameuser-desc'             => "Ëmbennen vun engem Benotzer (Dir braucht dofir  ''renameuser''-Rechter)",
+	'renameuser'                  => 'Benotzernumm änneren',
+	'renameuser-desc'             => "Benotzernumm änneren (Dir braucht dofir  ''renameuser''-Rechter)",
 	'renameuserold'               => 'Aktuelle Benotzernumm:',
 	'renameusernew'               => 'Neie Benotzernumm:',
 	'renameuserreason'            => "Grond fir d'Ëmbenennung:",
@@ -937,7 +973,7 @@ $messages['lb'] = array(
 	'renameusererrorexists'       => 'De Benotzer "<nowiki>$1</nowiki>" gët et schonn.',
 	'renameusererrorinvalid'      => 'De Benotzernumm "<nowiki>$1</nowiki>" kann net benotzt ginn.',
 	'renameusererrortoomany'      => 'De benotzer "<nowiki>$1</nowiki>" huet $2 Ännerunge gemaach. D¨¨annerung vum Benotzernumm vun engem Benotzer mat méi wéi $3 Ännerungen kann d\'Vitesse vum Site staark beaflossen (De Server gëtt lues).',
-	'renameuser-error-same-user'  => 'Dir kënnt kee Benotzer ëmbenennen an him dee selweschte Numm erëmginn.',
+	'renameuser-error-same-user'  => 'Dir kënnt kee Benotzernumm änneren, an him dee selweschte Numm erëmginn.',
 	'renameusersuccess'           => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
 	'renameuser-page-exists'      => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
 	'renameuser-page-moved'       => "D'Säit $1 gouf op $2 geréckelt.",
@@ -1545,6 +1581,14 @@ $messages['tg'] = array(
 	'renameusererrorinvalid'      => 'Номи корбарӣ "<nowiki>$1</nowiki>" ғайри миҷоз аст.',
 	'renameusererrortoomany'      => 'Корбар "<nowiki>$1</nowiki>" $2 ҳиссагузориҳо дорад, тағйири номи корбаре, ки беш аз $3 ҳиссагузориҳо дорад ва ба амал кардани сомона таъсире мушкилӣ метавонад расонад.',
 	'renameuserlogpage'           => 'Гузориши тағйири номи корбар',
+);
+
+/** Thai (ไทย)
+ * @author Passawuth
+ */
+$messages['th'] = array(
+	'renameuser-error-request' => 'มีปัญหาเกิดขึ้นเกี่ยวกับการรับคำเรียกร้องของคุณ กรุณากลับไปที่หน้าเดิม และ พยายามอีกครั้ง',
+	'renameusersuccess'        => 'ผู้ใช้:<nowiki>$1</nowiki> ถูกเปลี่ยนชื่อเป็น ผู้ใช้:<nowiki>$2</nowiki> เรียบร้อยแล้ว',
 );
 
 /** Tonga (faka-Tonga)
