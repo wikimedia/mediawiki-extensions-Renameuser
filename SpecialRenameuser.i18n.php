@@ -669,10 +669,15 @@ $messages['hu'] = array(
 	'renameuser-move-log'         => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
 $messages['id'] = array(
 	'renameuser'       => 'Penggantian nama pengguna',
+	'renameuser-desc'  => 'Mengganti nama pengguna (perlu hak akses \'\'renameuser\'\')',
 	'renameuserold'    => 'Nama sekarang:',
 	'renameusernew'    => 'Nama baru:',
+	'renameuserreason' => 'Alasan penggantian nama:',
 	'renameusermove'   => 'Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru',
 	'renameusersubmit' => 'Simpan',
 
@@ -680,6 +685,8 @@ $messages['id'] = array(
 	'renameusererrorexists'       => 'Pengguna "<nowiki>$1</nowiki>" telah ada',
 	'renameusererrorinvalid'      => 'Nama pengguna "<nowiki>$1</nowiki>" tidak sah',
 	'renameusererrortoomany'      => 'Pengguna "<nowiki>$1</nowiki>" telah memiliki $2 suntingan. Penggantian nama pengguna dengan lebih dari $3 suntingan dapat mempengaruhi kinerja situs',
+	'renameuser-error-request'    => 'Ada masalah dalam pemrosesan permintaan. Silakan kembali dan coba lagi.',
+	'renameuser-error-same-user'  => 'Anda tak dapat mengganti nama pengguna sama seperti asalnya.',
 	'renameusersuccess'           => 'Pengguna "<nowiki>$1</nowiki>" telah diganti namanya menjadi "<nowiki>$2</nowiki>"',
 
 	'renameuser-page-exists'         => 'Halaman $1 telah ada dan tidak dapat ditimpa secara otomatis.',
@@ -688,6 +695,7 @@ $messages['id'] = array(
 
 	'renameuserlogpage'     => 'Log penggantian nama pengguna',
 	'renameuserlogpagetext' => 'Di bawah ini adalah log penggantian nama pengguna',
+	'renameuserlogentry'    => 'telah mengganti nama $1 menjadi $2',
 	'renameuser-log'        => 'yang telah memiliki $1 suntingan. $2',
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
