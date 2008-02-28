@@ -123,6 +123,7 @@ $messages['bcl'] = array(
 /** Bulgarian (Български)
  * @author Spiritia
  * @author DCLXVI
+ * @author Borislav
  */
 $messages['bg'] = array(
 	'renameuser'                  => 'Преименуване на потребител',
@@ -141,7 +142,7 @@ $messages['bg'] = array(
 	'renameuser-page-moved'       => 'Страницата $1 беше преместена като $2.',
 	'renameuser-page-unmoved'     => 'Страницата $1 не можа да бъде преместена като $2.',
 	'renameuserlogpage'           => 'Дневник на преименуванията',
-	'renameuserlogpagetext'       => 'Това е дневник на преименуванията на потребители',
+	'renameuserlogpagetext'       => 'В този дневник се записват преименуванията на потребители.',
 	'renameuserlogentry'          => 'преименува $1 на $2',
 	'renameuser-log'              => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
