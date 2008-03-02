@@ -122,8 +122,8 @@ $messages['bcl'] = array(
 
 /** Bulgarian (Български)
  * @author Spiritia
- * @author DCLXVI
  * @author Borislav
+ * @author DCLXVI
  */
 $messages['bg'] = array(
 	'renameuser'                  => 'Преименуване на потребител',
@@ -136,7 +136,7 @@ $messages['bg'] = array(
 	'renameusererrordoesnotexist' => 'Потребителят „<nowiki>$1</nowiki>“ не съществува.',
 	'renameusererrorexists'       => 'Потребителят „<nowiki>$1</nowiki>“ вече съществува.',
 	'renameusererrorinvalid'      => 'Потребителското име „<nowiki>$1</nowiki>“ е невалидно.',
-	'renameusererrortoomany'      => 'Потребителят „<nowiki>$1</nowiki>“ има $2 приноса. Преименуването на потребители с повече от $3 приноса, може да се отрази зле на производителността на сайта.',
+	'renameusererrortoomany'      => 'Потребителят „<nowiki>$1</nowiki>“ има $2 редакции. Преименуването на потребители, имащи повече от $3 редакции, може да се отрази лошо върху производителността на сайта.',
 	'renameusersuccess'           => 'Потребителят „<nowiki>$1</nowiki>“ беше преименуван на „<nowiki>$2</nowiki>“',
 	'renameuser-page-exists'      => 'Страницата $1 вече съществува и не може да бъде автоматично заместена.',
 	'renameuser-page-moved'       => 'Страницата $1 беше преместена като $2.',
@@ -393,6 +393,26 @@ $messages['et'] = array(
 	'renameuser' => 'Muuda kasutajanime',
 	'renameuserold' => 'Praegune kasutajanimi:',
 	'renameusernew' => 'Uus kasutajanimi:',
+);
+
+/** Basque (Euskara)
+ * @author SPQRobin
+ */
+$messages['eu'] = array(
+	'renameuser'              => 'Lankide bati izena aldatu',
+	'renameuserold'           => 'Oraingo lankide izena:',
+	'renameusernew'           => 'Lankide izen berria:',
+	'renameuserreason'        => 'Izena aldatzeko arrazoia:',
+	'renameusersubmit'        => 'Bidali',
+	'renameusererrorexists'   => '"<nowiki>$1</nowiki>" lankidea existitzen da',
+	'renameusererrorinvalid'  => '"<nowiki>$1</nowiki>" lankide izena baliogabekoa da',
+	'renameusererrortoomany'  => '"<nowiki>$1</nowiki>" lankideak $2 ekarpen ditu, $3 baino ekarpen gehiago dituen lankide baten izena aldatzeak gunearen errendimenduan eragin txarrak izan ditzake',
+	'renameusersuccess'       => '"<nowiki>$1</nowiki>" lankidearen izen berria "<nowiki>$2</nowiki>" da',
+	'renameuser-page-exists'  => 'Badago $1 orrialdea, eta ezin da automatikoki gainidatzi.',
+	'renameuser-page-moved'   => '$1 orrialde $2(e)ra mugitu da.',
+	'renameuser-page-unmoved' => 'Ezin izan da $1 orrialdea $2(e)ra mugitu.',
+	'renameuserlogpage'       => 'Erabiltzaileen izen aldaketa erregistroa',
+	'renameuserlogpagetext'   => 'Erabiltzaileen izen aldaketen erregistroa da hau',
 );
 
 $messages['ext'] = array(
@@ -885,7 +905,7 @@ $messages['kk-latn'] = array(
  */
 $messages['km'] = array(
 	'renameuser'                  => 'ប្តូរឈ្មោះ អ្នកប្រើប្រាស់',
-	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''បណ្តូរឈ្មោះអ្នកប្រើប្រាស់'')",
+	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''ប្តូរឈ្មោះ អ្នកប្រើប្រាស់'')",
 	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់ បច្ចុប្បន្ន ៖',
 	'renameusernew'               => 'ឈ្មោះអ្នកប្រើប្រាស់ ថ្មី ៖',
 	'renameuserreason'            => 'ហេតុផល ចំពោះបណ្តូរឈ្មោះ ៖',
