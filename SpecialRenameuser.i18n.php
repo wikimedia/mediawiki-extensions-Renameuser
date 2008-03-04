@@ -1149,7 +1149,7 @@ $messages['nl'] = array(
 	'renameuser-move-log'         => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -1172,7 +1172,7 @@ $messages['no'] = array(
 	'renameuser-page-unmoved'     => 'Siden $1 kunne ikke flyttes til $2.',
 	'renameuserlogpage'           => 'Omdøpingslogg',
 	'renameuserlogpagetext'       => 'Dette er en logg over endringer i brukernavn.',
-	'renameuserlogentry'          => 'har døp om $1 til $2',
+	'renameuserlogentry'          => 'endret navn på $1 til $2',
 	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
@@ -1202,7 +1202,7 @@ $messages['oc'] = array(
 	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
 	'renameusererrorexists'       => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís ja",
 	'renameusererrorinvalid'      => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís pas",
-	'renameusererrortoomany'      => "L'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu'a mai de $3 contribucions a son actiu pòt afectar las performanças del siti.",
+	'renameusererrortoomany'      => "L'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu'a mai de $3 contribucions a son actiu pòt afectar las performanças del sit.",
 	'renameuser-error-request'    => 'Un problèma existís amb la recepcion de la requèsta. Tornatz en rèire e ensajatz tornamai.',
 	'renameuser-error-same-user'  => 'Podètz pas renomenar un utilizaire amb la meteissa causa deperabans.',
 	'renameusersuccess'           => "L'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »",
@@ -1648,6 +1648,13 @@ $messages['tr'] = array(
 	'renameusersuccess'     => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
 	'renameuserlogpage'     => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
+);
+
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'renameuserlogentry' => 'перейменував $1 на $2',
 );
 
 $messages['ur'] = array(
