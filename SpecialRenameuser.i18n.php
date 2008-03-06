@@ -1610,6 +1610,8 @@ $messages['tg'] = array(
 	'renameusererrorinvalid'      => 'Номи корбарӣ "<nowiki>$1</nowiki>" ғайри миҷоз аст.',
 	'renameusererrortoomany'      => 'Корбар "<nowiki>$1</nowiki>" $2 ҳиссагузориҳо дорад, тағйири номи корбаре, ки беш аз $3 ҳиссагузориҳо дорад ва ба амал кардани сомона таъсире мушкилӣ метавонад расонад.',
 	'renameuserlogpage'           => 'Гузориши тағйири номи корбар',
+	'renameuserlogentry'          => 'номи $1ро ба $2 тағйир дод',
+	'renameuser-log'              => '{{PLURAL:$1|1 вироиш|$1 вироишҳо}}. Далел: $2',
 );
 
 /** Thai (ไทย)
