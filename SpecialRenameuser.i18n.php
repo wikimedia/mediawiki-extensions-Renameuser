@@ -1602,6 +1602,7 @@ $messages['tet'] = array(
  */
 $messages['tg'] = array(
 	'renameuser'                  => 'Тағйири номи корбарӣ',
+	'renameuser-desc'             => "Номи як корбарро тағйир медиҳад (ниёзманд ба ихтиёроти ''тағйирином'' аст)",
 	'renameuserold'               => 'Номи корбари феълӣ:',
 	'renameusernew'               => 'Номи корбари ҷадид:',
 	'renameuserreason'            => 'Иллати тағйири номи корбарӣ:',
@@ -1611,9 +1612,16 @@ $messages['tg'] = array(
 	'renameusererrorexists'       => 'Номи корбарӣ "<nowiki>$1</nowiki>" истифода шудааст.',
 	'renameusererrorinvalid'      => 'Номи корбарӣ "<nowiki>$1</nowiki>" ғайри миҷоз аст.',
 	'renameusererrortoomany'      => 'Корбар "<nowiki>$1</nowiki>" $2 ҳиссагузориҳо дорад, тағйири номи корбаре, ки беш аз $3 ҳиссагузориҳо дорад ва ба амал кардани сомона таъсире мушкилӣ метавонад расонад.',
+	'renameuser-error-same-user'  => 'Шумо наметавонед номи як корбарро ба ҳамон номи қаблиаш тағйир диҳед.',
+	'renameusersuccess'           => 'Номи корбар "<nowiki>$1</nowiki>" ба "<nowiki>$2</nowiki>" тағйир ёфт.',
+	'renameuser-page-exists'      => 'Саҳифаи $1 аллакай вуҷуд дорда ва ба таври худкор қобили бознависӣ нест.',
+	'renameuser-page-moved'       => 'Саҳифаи $1 ба $2 кӯчонида шуд.',
+	'renameuser-page-unmoved'     => 'Имкони кӯчонидани саҳифаи $1 ба $2 вуҷуд надорад.',
 	'renameuserlogpage'           => 'Гузориши тағйири номи корбар',
+	'renameuserlogpagetext'       => 'Ин гузориши тағйири номи корбарон аст',
 	'renameuserlogentry'          => 'номи $1ро ба $2 тағйир дод',
 	'renameuser-log'              => '{{PLURAL:$1|1 вироиш|$1 вироишҳо}}. Далел: $2',
+	'renameuser-move-log'         => 'Саҳифа дар вақти тағйири номи корбар  "[[User:$1|$1]]" ба "[[User:$2|$2]]" ба таври худкор кӯчонида шуд',
 );
 
 /** Thai (ไทย)
