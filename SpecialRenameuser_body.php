@@ -59,7 +59,9 @@ class SpecialRenameuser extends SpecialPage {
 		$wgOut->addHTML( "
 			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action, 'id' => 'renameuser' ) ) .
-			Xml::openElement( 'table' ) .
+			Xml::openElement( 'fieldset' ) .
+			Xml::element( 'legend', null, wfMsg( 'renameuser' ) ) .
+			Xml::openElement( 'table', array( 'id' => 'mw-renameuser-table' ) ) .
 			"<tr>
 				<td align='$align'>" .
 					Xml::label( wfMsg( 'renameuserold' ), 'oldusername' ) .
@@ -107,6 +109,7 @@ class SpecialRenameuser extends SpecialPage {
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
+			Xml::closeElement( 'fieldset' ) .
 			Xml::hidden( 'token', $token ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
@@ -268,7 +271,7 @@ class SpecialRenameuser extends SpecialPage {
 	function showLogExtract( $username, $type, &$out ) {
 		global $wgOut;
 		# Show relevant lines from the logs:
-		$wgOut->addHtml( "<h2>" . htmlspecialchars( LogPage::logName( $type ) ) . "</h2>\n" );
+		$wgOut->addHtml( Xml::element( 'h2', null, LogPage::logName( $type ) ) . "\n" );
 
 		$logViewer = new LogViewer(
 			new LogReader(
