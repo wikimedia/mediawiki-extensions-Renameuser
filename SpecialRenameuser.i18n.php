@@ -228,13 +228,13 @@ $messages['br'] = array(
 );
 
 /** Catalan (Català)
- * @author Toniher
  * @author SMP
  * @author Juanpabl
+ * @author Toniher
  */
 $messages['ca'] = array(
 	'renameuser'                  => "Reanomena l'usuari",
-	'renameuser-desc'             => "Renombrar un usuario (amenista os dreitos de ''renameuser'')",
+	'renameuser-desc'             => "Reanomena un usuari (necessita drets de ''renameuser'')",
 	'renameuserold'               => "Nom d'usuari actual:",
 	'renameusernew'               => "Nou nom d'usuari:",
 	'renameuserreason'            => 'Motiu pel canvi:',
@@ -1124,23 +1124,27 @@ $messages['nan'] = array(
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
 $messages['nds'] = array(
-	'renameuser' => 'Brukernaam ännern',
-	'renameuserold' => 'Brukernaam nu:',
-	'renameusernew' => 'Nee Brukernaam:',
-	'renameusermove' => 'Brukersieden op’n ne’en Naam schuven',
-	'renameusersubmit' => 'Ännern',
-	'renameusererrordoesnotexist' => 'Bruker \'\'<nowiki>$1</nowiki>\'\' gifft dat nich',
-	'renameusererrorexists' => 'Bruker \'\'<nowiki>$1</nowiki>\'\' gifft dat al',
-	'renameusererrorinvalid' => 'Brukernaam \'\'<nowiki>$1</nowiki>\'\' geiht nich',
-	'renameusererrortoomany' => 'Bruker \'\'<nowiki>$1</nowiki>\'\' hett $2 Bidrääg. Den Naam ännern kann bi Brukers mit mehr as $3 Bidrääg de Software lahm maken',
-	'renameusersuccess' => 'Brukernaam \'\'<nowiki>$1</nowiki>\'\' op \'\'<nowiki>$2</nowiki>\'\' ännert',
-	'renameuser-page-exists' => 'Siet $1 gifft dat al un kann nichautomaatsch överschreven warrn.',
-	'renameuser-page-moved' => 'Siet $1 schaven na $2.',
-	'renameuser-page-unmoved' => 'Siet $1 kunn nich na $2 schaven warrn.',
-	'renameuserlogpage' => 'Ännerte-Brukernaams-Logbook',
-	'renameuserlogpagetext' => 'Dit is dat Logbook för ännerte Brukernaams',
-	'renameuser-move-log' => 'Siet bi dat Ännern vun’n Brukernaam \'\'[[{{ns:2}}:$1|$1]]\'\' na \'\'[[{{ns:2}}:$2|$2]]\'\' automaatsch schaven',
+	'renameuser'                  => 'Brukernaam ännern',
+	'renameuserold'               => 'Brukernaam nu:',
+	'renameusernew'               => 'Nee Brukernaam:',
+	'renameusermove'              => 'Brukersieden op’n ne’en Naam schuven',
+	'renameusersubmit'            => 'Ännern',
+	'renameusererrordoesnotexist' => "Bruker ''<nowiki>$1</nowiki>'' gifft dat nich",
+	'renameusererrorexists'       => "Bruker ''<nowiki>$1</nowiki>'' gifft dat al",
+	'renameusererrorinvalid'      => "Brukernaam ''<nowiki>$1</nowiki>'' geiht nich",
+	'renameusererrortoomany'      => "Bruker ''<nowiki>$1</nowiki>'' hett $2 Bidrääg. Den Naam ännern kann bi Brukers mit mehr as $3 Bidrääg de Software lahm maken",
+	'renameusersuccess'           => "Brukernaam ''<nowiki>$1</nowiki>'' op ''<nowiki>$2</nowiki>'' ännert",
+	'renameuser-page-exists'      => 'Siet $1 gifft dat al un kann nichautomaatsch överschreven warrn.',
+	'renameuser-page-moved'       => 'Siet $1 schaven na $2.',
+	'renameuser-page-unmoved'     => 'Siet $1 kunn nich na $2 schaven warrn.',
+	'renameuserlogpage'           => 'Ännerte-Brukernaams-Logbook',
+	'renameuserlogpagetext'       => 'Dit is dat Logbook för ännerte Brukernaams',
+	'renameuserlogentry'          => 'hett „$1“ ne’en Naam „$2“ geven',
+	'renameuser-move-log'         => "Siet bi dat Ännern vun’n Brukernaam ''[[{{ns:2}}:$1|$1]]'' na ''[[{{ns:2}}:$2|$2]]'' automaatsch schaven",
 );
 
 /** Nepali (नेपाली)
