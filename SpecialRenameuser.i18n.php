@@ -387,6 +387,7 @@ $messages['eo'] = array(
 
 <!--aŭ: Loglibro pri alinomigoj de uzantoj-->',
 	'renameuserlogpagetext'       => 'Ĉi tio estas loglibro pri ŝanĝoj de uzantonomoj',
+	'renameuserlogentry'          => 'estas renomigita $1 al $2',
 	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj||. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 );
@@ -1118,6 +1119,34 @@ $messages['mk'] = array(
 	'renameuserlogpagetext' => 'Ово е историја на преименувања на корисници',
 );
 
+/** Marathi (मराठी)
+ * @author Kaustubh
+ */
+$messages['mr'] = array(
+	'renameuser'                  => 'सदस्यनाम बदला',
+	'renameuser-desc'             => "सदस्यनाम बदला (यासाठी तुम्हाला ''सदस्यनाम बदलण्याचे अधिकार'' असणे आवश्यक आहे)",
+	'renameuserold'               => 'सध्याचे सदस्यनाम:',
+	'renameusernew'               => 'नवीन सदस्यनाम:',
+	'renameuserreason'            => 'नाम बदलण्याचे कारण:',
+	'renameusermove'              => 'सदस्य तसेच सदस्य चर्चापान (तसेच त्यांची उपपाने) नवीन सदस्यनामाकडे स्थानांतरीत करा',
+	'renameusersubmit'            => 'पाठवा',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" नावाचा सदस्य अस्तित्वात नाही.',
+	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" नावाचा सदस्य अगोदरच अस्तित्वात आहे',
+	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" हे नाव चुकीचे आहे.',
+	'renameusererrortoomany'      => '"<nowiki>$1</nowiki>" या सदस्याने $2 संपादने केलेली आहेत, $3 पेक्षा जास्त संपादने केलेल्या सदस्यांचे नाव बदलल्यास संकेतस्थळावर प्रश्न निर्माण होऊ शकतात.',
+	'renameuser-error-request'    => 'हे काम करताना त्रुटी आढळलेली आहे. कृपया मागे जाऊन परत प्रयत्न करा.',
+	'renameuser-error-same-user'  => 'तुम्ही एखाद्या सदस्याला परत पूर्वीच्या नावाकडे बदलू शकत नाही',
+	'renameusersuccess'           => '"<nowiki>$1</nowiki>" या सदस्याचे नाव "<nowiki>$2</nowiki>" ला बदललेले आहे.',
+	'renameuser-page-exists'      => '$1 हे पान अगोदरच अस्तित्वात आहे व आपोआप पुनर्लेखन करता येत नाही.',
+	'renameuser-page-moved'       => '$1 हे पान $2 मथळ्याखाली स्थानांतरीत केले.',
+	'renameuser-page-unmoved'     => '$1 हे पान $2 मथळ्याखाली स्थानांतरीत करू शकत नाही.',
+	'renameuserlogpage'           => 'सदस्यनाम बदल यादी',
+	'renameuserlogpagetext'       => 'ही सदस्यनामांमध्ये केलेल्या बदलांची यादी आहे.',
+	'renameuserlogentry'          => '$1 ला $2 केले',
+	'renameuser-log'              => '{{PLURAL:$1|१ संपादन|$1 संपादने}}. कारण: $2',
+	'renameuser-move-log'         => '"[[User:$1|$1]]" ला "[[User:$2|$2]]" बदलताना आपोआप सदस्य पान स्थानांतरीत केलेले आहे.',
+);
+
 $messages['nan'] = array(
 	'renameuser'       => 'Kái iōng-chiá ê miâ',
 	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
@@ -1312,6 +1341,7 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'renameuserold'     => 'اوسنی کارن-نوم:',
 	'renameusernew'     => 'نوی کارن-نوم:',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 );
