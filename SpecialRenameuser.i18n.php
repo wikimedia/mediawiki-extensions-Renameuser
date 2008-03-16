@@ -495,6 +495,7 @@ $messages['fi'] = array(
 	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
 	'renameusererrorinvalid'      => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
 	'renameusererrortoomany'      => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameuser-error-same-user'  => 'Et voi nimetä käyttäjää uudelleen samaksi kuin hän jo on.',
 	'renameusersuccess'           => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
 	'renameuser-page-exists'      => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
 	'renameuser-page-moved'       => 'Sivu $1 siirrettiin nimelle $2.',
@@ -832,6 +833,20 @@ $messages['ja'] = array(
 	'renameuserlogentry'          => '$1 を $2 へ利用者名変更しました。',
 	'renameuser-log'              => '投稿数 $1回. $2',
 	'renameuser-move-log'         => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
+);
+
+/** Jutish (Jysk)
+ * @author Huslåke
+ */
+$messages['jut'] = array(
+	'renameuser'       => 'Gæf æ bruger en ny navn',
+	'renameuser-desc'  => "Gæf en bruger en ny navn (''renameuser'' regt er nøteg)",
+	'renameuserold'    => 'Nuværende brugernavn:',
+	'renameusernew'    => 'Ny brugernavn:',
+	'renameuserreason' => "Før hvat dett'er dun:",
+	'renameusermove'   => 'Flyt bruger og diskusje sider (og deres substrøk) til ny navn',
+	'renameusersubmit' => 'Gå til',
+	'renameuser-log'   => '{{PLURAL:$1|en redigærenge|$1 redigærenger}}. Resån: $2',
 );
 
 $messages['ka'] = array(
@@ -1257,8 +1272,8 @@ $messages['nso'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'renameuser'                  => "Renomenar l'utilizaire",
-	'renameuser-desc'             => "Renomena un utilizaire (necessita los dreches de ''renameuser'')",
+	'renameuser'                  => "Tornar nomenar l'utilizaire",
+	'renameuser-desc'             => "Torna nomenar un utilizaire (necessita los dreches de ''renameuser'')",
 	'renameuserold'               => "Nom actual de l'utilizaire :",
 	'renameusernew'               => "Nom novèl de l'utilizaire :",
 	'renameuserreason'            => 'Motiu del renomenatge :',
@@ -1267,9 +1282,9 @@ $messages['oc'] = array(
 	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
 	'renameusererrorexists'       => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís ja",
 	'renameusererrorinvalid'      => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís pas",
-	'renameusererrortoomany'      => "L'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Renomenar un utilizaire qu'a mai de $3 contribucions a son actiu pòt afectar las performanças del sit.",
+	'renameusererrortoomany'      => "L'utilizaire « <nowiki>$1</nowiki> » a $2 contribucions. Tornar nomenar un utilizaire qu'a mai de $3 contribucions a son actiu pòt afectar las performanças del sit.",
 	'renameuser-error-request'    => 'Un problèma existís amb la recepcion de la requèsta. Tornatz en rèire e ensajatz tornamai.',
-	'renameuser-error-same-user'  => 'Podètz pas renomenar un utilizaire amb la meteissa causa deperabans.',
+	'renameuser-error-same-user'  => 'Podètz pas tornar nomenar un utilizaire amb la meteissa causa deperabans.',
 	'renameusersuccess'           => "L'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »",
 	'renameuser-page-exists'      => 'La pagina $1 existís ja e pòt pas èsser remplaçada automaticament.',
 	'renameuser-page-moved'       => 'La pagina $1 es estada desplaçada vèrs $2.',
