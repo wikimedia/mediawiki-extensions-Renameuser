@@ -388,7 +388,7 @@ $messages['eo'] = array(
 <!--aŭ: Loglibro pri alinomigoj de uzantoj-->',
 	'renameuserlogpagetext'       => 'Ĉi tio estas loglibro pri ŝanĝoj de uzantonomoj',
 	'renameuserlogentry'          => 'estas renomigita $1 al $2',
-	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj||. Kialo: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 );
 
@@ -836,17 +836,32 @@ $messages['ja'] = array(
 );
 
 /** Jutish (Jysk)
+ * @author Ælsån
  * @author Huslåke
  */
 $messages['jut'] = array(
-	'renameuser'       => 'Gæf æ bruger en ny navn',
-	'renameuser-desc'  => "Gæf en bruger en ny navn (''renameuser'' regt er nøteg)",
-	'renameuserold'    => 'Nuværende brugernavn:',
-	'renameusernew'    => 'Ny brugernavn:',
-	'renameuserreason' => "Før hvat dett'er dun:",
-	'renameusermove'   => 'Flyt bruger og diskusje sider (og deres substrøk) til ny navn',
-	'renameusersubmit' => 'Gå til',
-	'renameuser-log'   => '{{PLURAL:$1|en redigærenge|$1 redigærenger}}. Resån: $2',
+	'renameuser'                  => 'Gæf æ bruger en ny navn',
+	'renameuser-desc'             => "Gæf en bruger en ny navn (''renameuser'' regt er nøteg)",
+	'renameuserold'               => 'Nuværende brugernavn:',
+	'renameusernew'               => 'Ny brugernavn:',
+	'renameuserreason'            => "Før hvat dett'er dun:",
+	'renameusermove'              => 'Flyt bruger og diskusje sider (og deres substrøk) til ny navn',
+	'renameusersubmit'            => 'Gå til',
+	'renameusererrordoesnotexist' => 'Æ bruger "<nowiki>$1</nowiki>" bestä ekke.',
+	'renameusererrorexists'       => 'Æ bruger "<nowiki>$1</nowiki>" er ål.',
+	'renameusererrorinvalid'      => 'Æ brugernavn "<nowiki>$1</nowiki>" er ogyldegt.',
+	'renameusererrortoomany'      => 'Æ bruger "<nowiki>$1</nowiki>" har $2 biidråg, hernåmende en bruger ve mære als $3 biidråg ken æ site performans slektes hvinse gæve.',
+	'renameuser-error-request'    => 'Her har en pråblæm ve enkriige der anfråge. Gå hen og pråbær nurmål.',
+	'renameuser-error-same-user'  => 'Du kenst ekke hernåm æ bruger til æselbste nåm als dafør.',
+	'renameusersuccess'           => 'Æ bruger "<nowiki>$1</nowiki>" er hernåmt til "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Æ pæge $1 er ål og ken ekke åtåmatisk åverflyttet være.',
+	'renameuser-page-moved'       => 'Æ pæge $1 er flyttet til $2.',
+	'renameuser-page-unmoved'     => 'Æ pæge $1 kon ekke flyttet være til $2.',
+	'renameuserlogpage'           => 'Bruger hernåm log',
+	'renameuserlogpagetext'       => "Dett'er en log der ændrenger til brugernavner",
+	'renameuserlogentry'          => 'har hernåmt $1 til $2',
+	'renameuser-log'              => '{{PLURAL:$1|en redigærenge|$1 redigærenger}}. Resån: $2',
+	'renameuser-move-log'         => 'Åtåmatisk flyttet pæge hviil hernåm der bruger "[[User:$1|$1]]" til "[[User:$2|$2]]"',
 );
 
 $messages['ka'] = array(
