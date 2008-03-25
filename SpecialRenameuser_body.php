@@ -45,7 +45,6 @@ class SpecialRenameuser extends SpecialPage {
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
 		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ), NS_USER );
 		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER ); // Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
-		$action = $wgTitle->escapeLocalUrl();
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $wgUser->editToken();
@@ -54,36 +53,35 @@ class SpecialRenameuser extends SpecialPage {
 		if ( $wgRequest->wasPosted() && ! $wgRequest->getCheck( 'movepages' ) ) {
 			$is_checked = false;
 		}
-		$align = $wgContLang->isRtl() ? 'left' : 'right';
 
 		$wgOut->addHTML( "
 			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action, 'id' => 'renameuser' ) ) .
+			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $wgTitle->getLocalUrl(), 'id' => 'renameuser' ) ) .
 			Xml::openElement( 'fieldset' ) .
 			Xml::element( 'legend', null, wfMsg( 'renameuser' ) ) .
 			Xml::openElement( 'table', array( 'id' => 'mw-renameuser-table' ) ) .
 			"<tr>
-				<td align='$align'>" .
+				<td class='mw-label'>" .
 					Xml::label( wfMsg( 'renameuserold' ), 'oldusername' ) .
 				"</td>
-				<td>" .
+				<td class='mw-input'>" .
 					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
 					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
 				"</td>
 			</tr>
 			<tr>
-				<td align='$align'>" .
+				<td class='mw-label'>" .
 					Xml::label( wfMsg( 'renameusernew' ), 'newusername' ) .
 				"</td>
-				<td>" .
+				<td class='mw-input'>" .
 					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '3' ) ) .
 				"</td>
 			</tr>
 			<tr>
-				<td align='$align'>" .
+				<td class='mw-label'>" .
 					Xml::label( wfMsg( 'renameuserreason' ), 'reason' ) .
 				"</td>
-				<td>" .
+				<td class='mw-input'>" .
 					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '4', 'maxlength' => 255 ) ) .
 				"</td>
 			</tr>"
@@ -93,7 +91,7 @@ class SpecialRenameuser extends SpecialPage {
 				<tr>
 					<td>&nbsp;
 					</td>
-					<td>" .
+					<td class='mw-input'>" .
 						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '5' ) ) .
 					"</td>
 				</tr>"
@@ -104,7 +102,7 @@ class SpecialRenameuser extends SpecialPage {
 			<tr>
 				<td>&nbsp;
 				</td>
-				<td>" .
+				<td class='mw-submit'>" .
 					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '6', 'id' => 'submit' ) ) .
 				"</td>
 			</tr>" .
@@ -145,8 +143,6 @@ class SpecialRenameuser extends SpecialPage {
 			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameuser-error-same-user' ) . "</div>" );
 			return;
 		}
-
-		$wgOut->addHTML( '<hr />' );
 
 		// Suppress username validation of old username
 		$olduser = User::newFromName( $oldusername->getText(), false );
@@ -253,7 +249,7 @@ class SpecialRenameuser extends SpecialPage {
 				} else {
 					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
 					if( $success === true ) {
-						$oldLink = $skin->makeKnownLinkObj( $oldPage );
+						$oldLink = $skin->makeKnownLinkObj( $oldPage, '', 'redirect=no' );
 						$newLink = $skin->makeKnownLinkObj( $newPage );
 						$output .= '<li class="mw-renameuser-pm">' . wfMsgHtml( 'renameuser-page-moved', $oldLink, $newLink ) . '</li>';
 					} else {
