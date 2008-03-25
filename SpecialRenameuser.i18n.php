@@ -15,13 +15,13 @@ $messages['en'] = array(
 	'renameuserreason' => 'Reason for rename:',
 	'renameusermove'   => 'Move user and talk pages (and their subpages) to new name',
 	'renameusersubmit' => 'Submit',
-	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist.',
-	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists.',
-	'renameusererrorinvalid'      => 'The username "<nowiki>$1</nowiki>" is invalid.',
-	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance.',
+	'renameusererrordoesnotexist' => 'The user “<nowiki>$1</nowiki>” does not exist.',
+	'renameusererrorexists'       => 'The user “<nowiki>$1</nowiki>” already exists.',
+	'renameusererrorinvalid'      => 'The username “<nowiki>$1</nowiki>” is invalid.',
+	'renameusererrortoomany'      => 'The user “<nowiki>$1</nowiki>” has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance.',
 	'renameuser-error-request'    => 'There was a problem with receiving the request. Please go back and try again.',
 	'renameuser-error-same-user'  => 'You cannot rename a user to the same thing as before.',
-	'renameusersuccess'           => 'The user "<nowiki>$1</nowiki>" has been renamed to "<nowiki>$2</nowiki>".',
+	'renameusersuccess'           => 'The user “<nowiki>$1</nowiki>” has been renamed to “<nowiki>$2</nowiki>”.',
 	'renameuser-page-exists'  => 'The page $1 already exists and cannot be automatically overwritten.',
 	'renameuser-page-moved'   => 'The page $1 has been moved to $2.',
 	'renameuser-page-unmoved' => 'The page $1 could not be moved to $2.',
@@ -29,7 +29,7 @@ $messages['en'] = array(
 	'renameuserlogpagetext' => 'This is a log of changes to user names',
 	'renameuserlogentry'    => 'has renamed $1 to $2',
 	'renameuser-log'        => '{{PLURAL:$1|1 edit|$1 edits}}. Reason: $2',
-	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
+	'renameuser-move-log'   => 'Automatically moved page while renaming the user “[[User:$1|$1]]” to “[[User:$2|$2]]”',
 );
 
 /** Afrikaans (Afrikaans)
