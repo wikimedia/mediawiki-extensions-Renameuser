@@ -1625,17 +1625,33 @@ $messages['stq'] = array(
 	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[{{ns:user}}:$1]]“ ätter „[[{{ns:user}}:$2]]“ automatisk ferschäuwene Siede.',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Kandar
+ * @author Irwangatot
+ */
 $messages['su'] = array(
-	'renameuser' => 'Ganti ngaran pamaké',
-	'renameuserold' => 'Ngaran pamaké ayeuna:',
-	'renameusernew' => 'Ngaran pamaké anyar:',
-	'renameusermove' => 'Pindahkeun kaca pamaké jeung obrolanna (jeung sub-kacanna) ka ngaran anyar',
-	'renameusersubmit' => 'Kirim',
+	'renameuser'                  => 'Ganti ngaran pamaké',
+	'renameuser-desc'             => "Ganti ngaran pamaké (perlu kawenangan ''renameuser'')",
+	'renameuserold'               => 'Ngaran pamaké ayeuna:',
+	'renameusernew'               => 'Ngaran pamaké anyar:',
+	'renameuserreason'            => 'Alesan ganti ngaran:',
+	'renameusermove'              => 'Pindahkeun kaca pamaké jeung obrolanna (jeung sub-kacanna) ka ngaran anyar',
+	'renameusersubmit'            => 'Kirim',
 	'renameusererrordoesnotexist' => 'Euweuh pamaké nu ngaranna "<nowiki>$1</nowiki>"',
-	'renameusererrorexists' => 'Pamaké "<nowiki>$1</nowiki>" geus aya',
-	'renameusererrorinvalid' => 'Ngaran pamaké "<nowiki>$1</nowiki>" teu sah',
-	'renameusererrortoomany' => 'Pamaké "<nowiki>$1</nowiki>" boga $2 kontribusi, ngaganti ngaran pamaké nu boga kontribusi leuwih ti $3 bakal mangaruhan kinerja loka',
-	'renameusersuccess' => 'Pamaké "<nowiki>$1</nowiki>" geus diganti ngaranna jadi "<nowiki>$2</nowiki>"',
+	'renameusererrorexists'       => 'Pamaké "<nowiki>$1</nowiki>" geus aya',
+	'renameusererrorinvalid'      => 'Ngaran pamaké "<nowiki>$1</nowiki>" teu sah',
+	'renameusererrortoomany'      => 'Pamaké "<nowiki>$1</nowiki>" boga $2 kontribusi, ngaganti ngaran pamaké nu boga kontribusi leuwih ti $3 bakal mangaruhan kinerja loka',
+	'renameuser-error-request'    => 'Aya gangguan nalika nampa paménta. Coba balik deui, terus cobaan deui.',
+	'renameuser-error-same-user'  => 'Anjeun teu bisa ngaganti ngaran pamaké ka ngaran nu éta-éta kénéh.',
+	'renameusersuccess'           => 'Pamaké "<nowiki>$1</nowiki>" geus diganti ngaranna jadi "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists'      => 'Kaca $1 geus aya sarta teu bisa ditimpah kitu baé.',
+	'renameuser-page-moved'       => 'Kaca $1 geus dipindahkeun ka $2.',
+	'renameuser-page-unmoved'     => 'Kaca $1 teu bisa dipindahkeun ka $2.',
+	'renameuserlogpage'           => 'Log ganti ngaran',
+	'renameuserlogpagetext'       => 'Ieu minangka log parobahan ngaran pamaké',
+	'renameuserlogentry'          => 'geus ngaganti ngaran $1 jadi $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 édit|$1 édit}}. Alesan: $2',
+	'renameuser-move-log'         => 'Otomatis mindahkeun kaca nalika ngaganti ngaran "[[User:$1|$1]]" jadi "[[User:$2|$2]]"',
 );
 
 /** Swedish (Svenska)
