@@ -1291,7 +1291,7 @@ $messages['no'] = array(
 	'renameuser-page-unmoved'     => 'Siden $1 kunne ikke flyttes til $2.',
 	'renameuserlogpage'           => 'Omdøpingslogg',
 	'renameuserlogpagetext'       => 'Dette er en logg over endringer i brukernavn.',
-	'renameuserlogentry'          => 'endret navn på $1 til "$2"',
+	'renameuserlogentry'          => 'endret navn på $1 til «$2»',
 	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 );
@@ -1997,3 +1997,4 @@ $messages['zh-hant'] = array(
 $messages['zu'] = array(
 	'renameusersubmit' => 'Yisa',
 );
+
