@@ -178,7 +178,7 @@ $messages['bg'] = array(
 	'renameuser-page-unmoved'     => 'Страницата $1 не можа да бъде преместена като $2.',
 	'renameuserlogpage'           => 'Дневник на преименуванията',
 	'renameuserlogpagetext'       => 'В този дневник се записват преименуванията на потребители.',
-	'renameuserlogentry'          => 'преименува $1 на "$2"',
+	'renameuserlogentry'          => 'преименува $1 на „$2“',
 	'renameuser-log'              => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 );
@@ -1861,7 +1861,7 @@ $messages['vi'] = array(
 	'renameuser-page-unmoved'     => 'Trang $1 không thể di chuyển đến $2.',
 	'renameuserlogpage'           => 'Nhật trình đổi tên thành viên',
 	'renameuserlogpagetext'       => 'Đây là nhật trình ghi lại các thay đổi đối với tên thành viên',
-	'renameuserlogentry'          => 'đã đổi tên $1 thành "$2"',
+	'renameuserlogentry'          => 'đã đổi tên $1 thành “$2”',
 	'renameuser-log'              => '{{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
 	'renameuser-move-log'         => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
 );
