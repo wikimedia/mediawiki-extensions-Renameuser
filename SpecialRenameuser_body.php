@@ -195,9 +195,11 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
+		// Always get the edits count, it will be used for the log message
+		$contribs = User::edits( $uid );
+
 		// Check edit count
 		if ( !$wgUser->isAllowed( 'siteadmin' ) ) {
-			$contribs = User::edits( $uid );
 			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
 				$wgOut->addWikiText( "<div class=\"errorbox\">" . 
 					wfMsg( 'renameusererrortoomany',
