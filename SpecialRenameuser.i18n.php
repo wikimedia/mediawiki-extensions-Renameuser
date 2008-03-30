@@ -210,27 +210,32 @@ $messages['bn'] = array(
 	'renameuser-move-log'         => 'যখন ব্যবহারকারী "[[User:$1|$1]]" থেকে "[[User:$2|$2]]" তে নামান্তরিত হবে তখন সয়ঙ্ক্রিয়ভাবে পাতা সরিয়ে নেওয়া হয়েছে',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
 $messages['br'] = array(
-	'renameuser'       => 'Adenvel an implijer',
-	'renameuserold'    => 'Anv a-vremañ an implijer :',
-	'renameusernew'    => 'Anv implijer nevez :',
-	'renameusermove'   => 'Kas ar pajennoù implijer ha kaozeal (hag o ispajennoù) betek o anv nevez',
-	'renameusersubmit' => 'Adenvel',
-
+	'renameuser'                  => 'Adenvel an implijer',
+	'renameuser-desc'             => "Adenvel un implijer (ret eo kaout ''gwirioù adenvel'')",
+	'renameuserold'               => 'Anv a-vremañ an implijer :',
+	'renameusernew'               => 'Anv implijer nevez :',
+	'renameuserreason'            => 'Abeg evit adenvel :',
+	'renameusermove'              => 'Kas ar pajennoù implijer ha kaozeal (hag o ispajennoù) betek o anv nevez',
+	'renameusersubmit'            => 'Adenvel',
 	'renameusererrordoesnotexist' => 'An implijer "<nowiki>$1</nowiki>" n\'eus ket anezhañ',
 	'renameusererrorexists'       => 'Krouet eo bet an anv implijer "<nowiki>$1</nowiki>" dija',
 	'renameusererrorinvalid'      => 'Faziek eo an anv implijer "<nowiki>$1</nowiki>"',
 	'renameusererrortoomany'      => 'Deuet ez eus $2 degasadenn gant an implijer "<nowiki>$1</nowiki>"; adenvel un implijer degaset gantañ ouzhpenn $3 degasadenn a c\'hall noazout ouzh startijenn mont en-dro al lec\'hienn a-bezh',
+	'renameuser-error-request'    => 'Ur gudenn zo bet gant degemer ar reked. Kit war-gil ha klaskit en-dro.',
+	'renameuser-error-same-user'  => "N'haller ket adenvel un implijer gant an hevelep anv hag a-raok.",
 	'renameusersuccess'           => 'Deuet eo an implijer "<nowiki>$1</nowiki>" da vezañ "<nowiki>$2</nowiki>"',
-
-	'renameuser-page-exists'         => 'Bez\' ez eus eus ar bajenn $1 dija, n\'haller ket hec\'h erlec\'hiañ ent emgefreek.',
-	'renameuser-page-moved'          => 'Adkaset eo bet ar bajenn $1 da $2.',
-	'renameuser-page-unmoved'        => 'N\'eus ket bet gallet adkas ar bajenn $1 da $2.',
-
-	'renameuserlogpage'     => 'Roll an implijerien bet adanvet',
-	'renameuserlogpagetext' => 'Setu istor an implijerien bet cheñchet o anv ganto',
-	'renameuser-log'        => 'Ssavet gantañ $1 degasadenn. $2',
-	'renameuser-move-log'   => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
+	'renameuser-page-exists'      => "Bez' ez eus eus ar bajenn $1 dija, n'haller ket hec'h erlec'hiañ ent emgefreek.",
+	'renameuser-page-moved'       => 'Adkaset eo bet ar bajenn $1 da $2.',
+	'renameuser-page-unmoved'     => "N'eus ket bet gallet adkas ar bajenn $1 da $2.",
+	'renameuserlogpage'           => 'Roll an implijerien bet adanvet',
+	'renameuserlogpagetext'       => 'Setu istor an implijerien bet cheñchet o anv ganto',
+	'renameuserlogentry'          => 'en deus adanvet $1 e "$2"',
+	'renameuser-log'              => 'Ssavet gantañ $1 degasadenn. $2',
+	'renameuser-move-log'         => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
 );
 
 /** Catalan (Català)
@@ -526,7 +531,7 @@ $messages['fi'] = array(
 	'renameuser-page-unmoved'     => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
 	'renameuserlogpage'           => 'Tunnusten vaihdot',
 	'renameuserlogpagetext'       => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuserlogentry'          => 'on nimennyt käyttäjän $1 käyttäjäksi "$2"',
+	'renameuserlogentry'          => 'on nimennyt käyttäjän $1 käyttäjäksi ”$2”',
 	'renameuser-log'              => 'Tehnyt {{PLURAL:$1|yhden muokkauksen|$1 muokkausta}}. $2',
 	'renameuser-move-log'         => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 );
