@@ -364,7 +364,7 @@ $messages['de'] = array(
 	'renameuserlogpagetext' => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
 	'renameuserlogentry'    => 'hat „$1“ in „$2“ umbenannt',
 	'renameuser-log'        => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
-	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite.',
+	'renameuser-move-log'   => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite',
 );
 
 /** Greek (Ελληνικά)
