@@ -1767,7 +1767,7 @@ $messages['tet'] = array(
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'renameuser'                  => 'Тағйири номи корбарӣ',
 	'renameuser-desc'             => "Номи як корбарро тағйир медиҳад (ниёзманд ба ихтиёроти ''тағйирином'' аст)",
 	'renameuserold'               => 'Номи корбари феълӣ:',
