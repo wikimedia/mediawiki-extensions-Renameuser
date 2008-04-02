@@ -450,10 +450,18 @@ $messages['es'] = array(
 	'renameuser-move-log'         => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
+/** Estonian (Eesti)
+ * @author WikedKentaur
+ * @author SPQRobin
+ */
 $messages['et'] = array(
-	'renameuser' => 'Muuda kasutajanime',
-	'renameuserold' => 'Praegune kasutajanimi:',
-	'renameusernew' => 'Uus kasutajanimi:',
+	'renameuser'        => 'Muuda kasutajanime',
+	'renameuserold'     => 'Praegune kasutajanimi:',
+	'renameusernew'     => 'Uus kasutajanimi:',
+	'renameuserreason'  => 'Muutmise põhjus:',
+	'renameusermove'    => 'Nimeta ümber kasutajaleht, aruteluleht ja nende alamlehed.',
+	'renameusersubmit'  => 'Muuda',
+	'renameuserlogpage' => 'Kasutajanime muutmise logi',
 );
 
 /** Basque (Euskara)
@@ -994,13 +1002,14 @@ $messages['kk-latn'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Siebrand
  */
 $messages['km'] = array(
 	'renameuser'                  => 'ប្តូរឈ្មោះ អ្នកប្រើប្រាស់',
 	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''ប្តូរឈ្មោះ អ្នកប្រើប្រាស់'')",
 	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់ បច្ចុប្បន្ន ៖',
 	'renameusernew'               => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មី៖',
-	'renameuserreason'            => 'ហេតុផល ចំពោះបណ្តូរឈ្មោះ ៖',
+	'renameuserreason'            => 'មូលហេតុ៖',
 	'renameusermove'              => 'ប្តូរទីតាំង អ្នកប្រើប្រាស់ និង ទំព័រពិភាក្សា(និងទំព័ររង របស់ពួកគេ) ទៅឈ្មោះថ្មី',
 	'renameusersubmit'            => 'ដាក់ស្នើ',
 	'renameusererrordoesnotexist' => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មិនមាន ។',
@@ -1634,7 +1643,7 @@ $messages['sr-ec'] = array(
 	'renameuser-page-unmoved'     => 'Страница $1 не може бити премештена на $2.',
 	'renameuserlogpage'           => 'Историја преименовања корисника',
 	'renameuserlogpagetext'       => 'Ово је историја измена преименовања корисника',
-	'renameuserlogentry'          => 'је преименовао $1 у "$2"',
+	'renameuserlogentry'          => 'је преименовао $1 у „$2“',
 	'renameuser-log'              => '$1 измена. Разлог: $2',
 );
 
