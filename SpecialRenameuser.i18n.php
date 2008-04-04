@@ -674,6 +674,35 @@ $messages['he'] = array(
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'renameuser'                  => 'सदस्यनाम बदलें',
+	'renameuser-desc'             => "सदस्यनाम बदलें (''सदस्यनाम बदलने अधिकार'' अनिवार्य)",
+	'renameuserold'               => 'सद्य सदस्यनाम:',
+	'renameusernew'               => 'नया सदस्यनाम:',
+	'renameuserreason'            => 'नाम बदलने के कारण:',
+	'renameusermove'              => 'सदस्य पृष्ठ और वार्ता पृष्ठ (और उनके सबपेज) नये नाम की ओर भेजें',
+	'renameusersubmit'            => 'भेजें',
+	'renameusererrordoesnotexist' => 'सदस्य "<nowiki>$1</nowiki>" अस्तित्वमें नहीं हैं।',
+	'renameusererrorexists'       => 'सदस्य "<nowiki>$1</nowiki>" पहले से अस्तित्वमें हैं।',
+	'renameusererrorinvalid'      => 'सदस्यनाम "<nowiki>$1</nowiki>" गलत हैं।',
+	'renameusererrortoomany'      => 'सदस्य "<nowiki>$1</nowiki>" ने $2 बदलाव किये हैं, $3 से ज्यादा बदलाव किये हुए सदस्यका नाम बदलने से साईटमें समस्या निर्माण हो सकती हैं।',
+	'renameuser-error-request'    => 'यह मांग पूरी करने मे समस्या आई हैं।
+कृपया पीछे जाकर फिरसे यत्न करें।',
+	'renameuser-error-same-user'  => 'आप सदस्यनाम को उसी नामसे बदल नहीं सकते हैं।',
+	'renameusersuccess'           => '"<nowiki>$1</nowiki>" का सदस्यनाम "<nowiki>$2</nowiki>" कर दिया गया हैं।',
+	'renameuser-page-exists'      => '$1 यह पन्ना पहले से अस्तित्वमें हैं और इसपर अपने आप पुनर्लेखन नहीं कर सकतें।',
+	'renameuser-page-moved'       => '$1 का नाम बदलकर $2 कर दिया गया हैं।',
+	'renameuser-page-unmoved'     => '$1 का नाम बदलकर $2 नहीं कर सकें हैं।',
+	'renameuserlogpage'           => 'सदस्यनाम बदलाव सूची',
+	'renameuserlogpagetext'       => 'यह सदस्यनामोंमें हुए बदलावोंकी सूची हैं',
+	'renameuserlogentry'          => 'ने $1 को "$2" में बदल दिया हैं',
+	'renameuser-log'              => '{{PLURAL:$1|1 बदलाव|$1 बदलाव}}. कारण: $2',
+	'renameuser-move-log'         => '"[[User:$1|$1]]" को "[[User:$2|$2]]" करते वक्त अपने आप सदस्यपृष्ठ बदल दिया हैं',
+);
+
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
  * @author Dnik
@@ -1237,7 +1266,7 @@ $messages['mr'] = array(
 	'renameuser-page-unmoved'     => '$1 हे पान $2 मथळ्याखाली स्थानांतरीत करू शकत नाही.',
 	'renameuserlogpage'           => 'सदस्यनाम बदल यादी',
 	'renameuserlogpagetext'       => 'ही सदस्यनामांमध्ये केलेल्या बदलांची यादी आहे.',
-	'renameuserlogentry'          => '$1 ला "$2" केले',
+	'renameuserlogentry'          => 'नी $1 ला "$2" केले',
 	'renameuser-log'              => '{{PLURAL:$1|१ संपादन|$1 संपादने}}. कारण: $2',
 	'renameuser-move-log'         => '"[[User:$1|$1]]" ला "[[User:$2|$2]]" बदलताना आपोआप सदस्य पान स्थानांतरीत केलेले आहे.',
 );
