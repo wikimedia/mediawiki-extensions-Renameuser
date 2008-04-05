@@ -362,11 +362,23 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
-		// Update ipblock list name.
+		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
 			array( 'ipb_address' => $this->new ),
 			array( 'ipb_user' => $this->uid, 'ipb_address' => $this->old ),
 			__METHOD__ );
+		// Update this users block/rights log. Ideally, the logs would be historical,
+		// but it is really annoying when users have "clean" block logs by virtue of
+		// being renamed, which makes admin tasks more of a pain...
+		$oldTitle = Title::makeTitle( NS_USER, $this->old );
+		$newTitle = Title::makeTitle( NS_USER, $this->new );
+		$dbw->update( 'logging',
+			array( 'log_title' => $newTitle->getDBKey() ),
+			array( 'log_type' => array( 'block', 'rights' ),
+				'log_namespace' => NS_USER,
+				'log_title' => $oldTitle->getDBKey() ),
+			__METHOD__,
+			array( 'USE INDEX' => 'page_time' ) );
 
 		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
