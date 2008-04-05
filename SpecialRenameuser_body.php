@@ -362,6 +362,11 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
+		// Update ipblock list name.
+		$dbw->update( 'ipblocks',
+			array( 'ipb_address' => $this->new ),
+			array( 'ipb_user' => $this->uid, 'ipb_address' => $this->old ),
+			__METHOD__ );
 
 		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
