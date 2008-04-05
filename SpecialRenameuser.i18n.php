@@ -369,20 +369,22 @@ $messages['de'] = array(
 
 /** Greek (Ελληνικά)
  * @author ZaDiak
+ * @author Badseed
  * @author Consta
  * @author MF-Warburg
+ * @author Siebrand
  */
 $messages['el'] = array(
 	'renameuser'                  => 'Μετονομασία χρήστη',
-	'renameuserold'               => 'Σημερινό όνομα χρήστη:',
+	'renameuserold'               => 'Τρέχον όνομα χρήστη:',
 	'renameusernew'               => 'Νέο όνομα χρήστη:',
 	'renameuserreason'            => 'Λόγος μετονομασίας:',
-	'renameusermove'              => 'Μετακίνησε τη σελίδα χρήστη και τη συζήτηση (και τις υποσελίδες τους) στο καινούργιο όνομα',
-	'renameusersubmit'            => 'Καταχώρηση',
+	'renameusermove'              => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
+	'renameusersubmit'            => 'Καταχώριση',
 	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
 	'renameusererrorexists'       => 'Ο χρήστης "<nowiki>$1</nowiki>" υπάρχει ήδη.',
-	'renameuser-error-request'    => 'Υπήρξε ένα πρόβλημα στην παραλαβή της αίτησης.Παρακαλώ επιστρέψτε και ξαναδοκιμάστε.',
-	'renameuser-error-same-user'  => 'Δεν μπορείς να μετονομάσεις έναν χρήστη στο ίδιο όνομα όπως πριν.',
+	'renameuser-error-request'    => 'Υπήρξε ένα πρόβλημα στην παραλαβή της αίτησης. Παρακαλούμε επιστρέψτε και ξαναδοκιμάστε.',
+	'renameuser-error-same-user'  => 'Δεν μπορείτε να μετονομάσετε έναν χρήστη σε όνομα ίδιο με το προηγούμενο.',
 	'renameuser-page-exists'      => 'Η σελίδα $1 υπάρχει ήδη και δεν μπορεί να αντικατασταθεί αυτόματα.',
 	'renameuser-page-moved'       => 'Η σελίδα $1 μετακινήθηκε στο $2.',
 	'renameuser-page-unmoved'     => 'Η σελίδα $1 δεν μπόρεσε να μετακινηθεί στο $2.',
@@ -390,7 +392,7 @@ $messages['el'] = array(
 	'renameuserlogpagetext'       => 'Αυτό είναι ένα αρχείο καταγραφών αλλαγών σε ονόματα χρηστών',
 	'renameuserlogentry'          => '$1 μετονομάστηκε σε "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 επεξεργασία|$1 επεξεργασίες}}. Λόγος: $2',
-	'renameuser-move-log'         => 'Η σελίδα μετακινήθηκε ενώ ο χρήστης "[[User:$1|$1]]" μετονομαζόταν σε "[[User:$2|$2]]"',
+	'renameuser-move-log'         => 'Η σελίδα μετακινήθηκε αυτόματα κατά τη μετονομασία του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
 );
 
 /** Esperanto (Esperanto)
