@@ -377,8 +377,7 @@ class RenameuserSQL {
 			array( 'log_type' => array( 'block', 'rights' ),
 				'log_namespace' => NS_USER,
 				'log_title' => $oldTitle->getDBKey() ),
-			__METHOD__,
-			array( 'USE INDEX' => 'page_time' ) );
+			__METHOD__ );
 
 		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
