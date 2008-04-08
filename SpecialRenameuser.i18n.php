@@ -932,6 +932,13 @@ $messages['jut'] = array(
 	'renameuser-move-log'         => 'Åtåmatisk flyttet pæge hviil hernåm der bruger "[[User:$1|$1]]" til "[[User:$2|$2]]"',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'renameusersubmit' => 'Kirim',
+);
+
 $messages['ka'] = array(
 	'renameuser'       => 'მომხმარებლის სახელის გამოცვლა',
 	'renameuserold'    => 'ამჟამინდელი მომხმარებლის სახელი:',
