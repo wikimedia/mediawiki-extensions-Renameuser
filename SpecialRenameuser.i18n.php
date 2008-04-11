@@ -944,6 +944,7 @@ $messages['jv'] = array(
 	'renameusererrorinvalid' => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
 	'renameuser-page-exists' => 'Kaca $1 wis ana lan ora bisa ditimpa sacara otomatis.',
 	'renameuserlogpage'      => 'Log ganti jeneng panganggo',
+	'renameuserlogentry'     => 'wis ngganti jeneng $1 dadi "$2"',
 );
 
 $messages['ka'] = array(
