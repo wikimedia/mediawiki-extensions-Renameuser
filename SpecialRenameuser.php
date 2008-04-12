@@ -40,6 +40,7 @@ $wgLogTypes[]                          = 'renameuser';
 $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
+$wgRCTypeGroupedLogs[] = 'renameuser';
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
