@@ -44,6 +44,7 @@ $messages['af'] = array(
 	'renameuserold'               => 'Huidige gebruikersnaam:',
 	'renameusernew'               => 'Nuwe gebruikersnaam:',
 	'renameuserreason'            => 'Rede vir hernoeming:',
+	'renameusersubmit'            => 'Hernoem',
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
@@ -527,6 +528,7 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'renameuser'                  => 'Käyttäjätunnuksen vaihto',
+	'renameuser-desc'             => "Mahdollistaa käyttäjän uudelleennimeämisen (vaatii ''renameuser''-oikeudet).",
 	'renameuserold'               => 'Nykyinen tunnus',
 	'renameusernew'               => 'Uusi tunnus',
 	'renameuserreason'            => 'Kommentti',
@@ -536,6 +538,7 @@ $messages['fi'] = array(
 	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
 	'renameusererrorinvalid'      => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
 	'renameusererrortoomany'      => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameuser-error-request'    => 'Pyynnön vastaanottamisessa oli ongelma. Ole hyvä ja yritä uudelleen.',
 	'renameuser-error-same-user'  => 'Et voi nimetä käyttäjää uudelleen samaksi kuin hän jo on.',
 	'renameusersuccess'           => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
 	'renameuser-page-exists'      => 'Sivu $1 on jo olemassa eikä sitä korvattu.',
@@ -938,13 +941,22 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'renameuser'             => 'Ngganti jeneng panganggo',
-	'renameuserold'          => 'Jeneng panganggo saiki:',
-	'renameusersubmit'       => 'Kirim',
-	'renameusererrorinvalid' => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
-	'renameuser-page-exists' => 'Kaca $1 wis ana lan ora bisa ditimpa sacara otomatis.',
-	'renameuserlogpage'      => 'Log ganti jeneng panganggo',
-	'renameuserlogentry'     => 'wis ngganti jeneng $1 dadi "$2"',
+	'renameuser'                  => 'Ngganti jeneng panganggo',
+	'renameuserold'               => 'Jeneng panganggo saiki:',
+	'renameusernew'               => 'Jeneng panganggo anyar:',
+	'renameusersubmit'            => 'Kirim',
+	'renameusererrordoesnotexist' => 'Panganggo "<nowiki>$1</nowiki>" ora ana.',
+	'renameusererrorexists'       => 'Panganggo "<nowiki>$1</nowiki>" wis ana.',
+	'renameusererrorinvalid'      => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
+	'renameuser-error-same-user'  => 'Panjenengan ora bisa ngganti jeneng panganggo dadi kaya jeneng asalé.',
+	'renameusersuccess'           => 'Panganggo "<nowiki>$1</nowiki>" wis diganti jenengé dadi "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Kaca $1 wis ana lan ora bisa ditimpa sacara otomatis.',
+	'renameuser-page-moved'       => 'Kaca $1 wis dialihaké menyang $2.',
+	'renameuser-page-unmoved'     => 'Kaca $1 ora bisa dialihaké menyang $2.',
+	'renameuserlogpage'           => 'Log ganti jeneng panganggo',
+	'renameuserlogpagetext'       => 'Iki log owah-owahan jeneng panganggo',
+	'renameuserlogentry'          => 'wis ngganti jeneng $1 dadi "$2"',
+	'renameuser-log'              => 'sing wis duwé $1 suntingan. Alesan: $2',
 );
 
 $messages['ka'] = array(
