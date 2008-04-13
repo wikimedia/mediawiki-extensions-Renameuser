@@ -1156,6 +1156,7 @@ $messages['la'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Siebrand
  */
 $messages['lb'] = array(
 	'renameuser'                  => 'Benotzernumm änneren',
@@ -1169,6 +1170,8 @@ $messages['lb'] = array(
 	'renameusererrorexists'       => 'De Benotzer "<nowiki>$1</nowiki>" gët et schonn.',
 	'renameusererrorinvalid'      => 'De Benotzernumm "<nowiki>$1</nowiki>" kann net benotzt ginn.',
 	'renameusererrortoomany'      => 'De benotzer "<nowiki>$1</nowiki>" huet $2 Ännerunge gemaach. D¨¨annerung vum Benotzernumm vun engem Benotzer mat méi wéi $3 Ännerungen kann d\'Vitesse vum Site staark beaflossen (De Server gëtt lues).',
+	'renameuser-error-request'    => 'Et gouf e Problem mat ärer Ufro.
+Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-error-same-user'  => 'Dir kënnt kee Benotzernumm änneren, an him dee selweschte Numm erëmginn.',
 	'renameusersuccess'           => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
 	'renameuser-page-exists'      => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
