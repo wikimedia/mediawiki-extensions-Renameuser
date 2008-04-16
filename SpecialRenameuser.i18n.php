@@ -952,6 +952,8 @@ $messages['jv'] = array(
 	'renameusererrorexists'       => 'Panganggo "<nowiki>$1</nowiki>" wis ana.',
 	'renameusererrorinvalid'      => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
 	'renameusererrortoomany'      => 'Panganggo "<nowiki>$1</nowiki>" wis duwé $2 suntingan. Yèn jeneng panganggoné diganti mawa luwih saka $3 suntingan bisa awèh pangaruh marang kinerja situs.',
+	'renameuser-error-request'    => 'Wau ana masalah nalika prosès panyuwunan panjenengan.
+Mangga balia lan dicoba manèh.',
 	'renameuser-error-same-user'  => 'Panjenengan ora bisa ngganti jeneng panganggo dadi kaya jeneng asalé.',
 	'renameusersuccess'           => 'Panganggo "<nowiki>$1</nowiki>" wis diganti jenengé dadi "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists'      => 'Kaca $1 wis ana lan ora bisa ditimpa sacara otomatis.',
@@ -961,6 +963,7 @@ $messages['jv'] = array(
 	'renameuserlogpagetext'       => 'Iki log owah-owahan jeneng panganggo',
 	'renameuserlogentry'          => 'wis ngganti jeneng $1 dadi "$2"',
 	'renameuser-log'              => 'sing wis duwé $1 suntingan. Alesan: $2',
+	'renameuser-move-log'         => 'Sacara otomatis mindhah kaca nalika ngganti jeneng panganggo "[[User:$1|$1]]" dadi "[[User:$2|$2]]"',
 );
 
 $messages['ka'] = array(
