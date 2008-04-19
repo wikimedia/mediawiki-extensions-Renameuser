@@ -401,9 +401,11 @@ $messages['el'] = array(
 /** Esperanto (Esperanto)
  * @author Tlustulimu
  * @author Yekrats
+ * @author Siebrand
  */
 $messages['eo'] = array(
 	'renameuser'                  => 'Alinomigu uzanton',
+	'renameuser-desc'             => "Alinomigu uzanton (bezonas rajton ''renameuser'')",
 	'renameuserold'               => 'Aktuala uzantonomo:',
 	'renameusernew'               => 'Nova uzantonomo:',
 	'renameuserreason'            => 'Kialo por alinomigo:',
@@ -413,6 +415,7 @@ $messages['eo'] = array(
 	'renameusererrorexists'       => 'La uzanto "<nowiki>$1</nowiki>" jam ekzistas',
 	'renameusererrorinvalid'      => 'La uzantonomo "<nowiki>$1</nowiki>" estas malvalida',
 	'renameusererrortoomany'      => 'La uzanto "<nowiki>$1</nowiki>" havas $2 kontribuojn. Alinamigo de uzanto kun pli ol $3 kontribuoj povus malbone influi paĝaran funkciadon',
+	'renameuser-error-same-user'  => 'Vi ne povas alinomigi uzanton al la sama nomo.',
 	'renameusersuccess'           => 'La uzanto "<nowiki>$1</nowiki>" estas alinomita al "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'La paĝo $1 jam ekzistas kaj ne povas esti aŭtomate anstataŭata.',
 	'renameuser-page-moved'       => 'La paĝo $1 estis movita al $2.',
@@ -1072,7 +1075,7 @@ $messages['kk-latn'] = array(
 $messages['km'] = array(
 	'renameuser'                  => 'ប្តូរឈ្មោះ អ្នកប្រើប្រាស់',
 	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''ប្តូរឈ្មោះ អ្នកប្រើប្រាស់'')",
-	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់ បច្ចុប្បន្ន ៖',
+	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់បច្ចុប្បន្ន ៖',
 	'renameusernew'               => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មី៖',
 	'renameuserreason'            => 'មូលហេតុ៖',
 	'renameusermove'              => 'ប្តូរទីតាំង អ្នកប្រើប្រាស់ និង ទំព័រពិភាក្សា(និងទំព័ររង របស់ពួកគេ) ទៅឈ្មោះថ្មី',
