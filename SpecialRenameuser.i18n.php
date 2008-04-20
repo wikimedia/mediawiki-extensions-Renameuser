@@ -830,6 +830,13 @@ $messages['id'] = array(
 	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 );
 
+/** Ido (Ido)
+ * @author Malafaya
+ */
+$messages['io'] = array(
+	'renameusernew' => 'Nova uzantonomo:',
+);
+
 /** Icelandic (Íslenska)
  * @author Cessator
  * @author לערי ריינהארט
@@ -1124,7 +1131,7 @@ $messages['ko'] = array(
 	'renameuserlogpage'           => '이름 변경 기록',
 	'renameuserlogpagetext'       => '사용자 이름 변경 기록입니다.',
 	'renameuserlogentry'          => '$1에서 "$2"로 이름을 바꾸었습니다.',
-	'renameuser-log'              => '$1개의 기여. $2',
+	'renameuser-log'              => '$1개의 기여. 이유: $2',
 	'renameuser-move-log'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 );
 
