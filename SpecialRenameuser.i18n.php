@@ -1339,6 +1339,7 @@ $messages['nan'] = array(
 
 /** Low German (Plattdüütsch)
  * @author Slomox
+ * @author Siebrand
  */
 $messages['nds'] = array(
 	'renameuser'                  => 'Brukernaam ännern',
@@ -1357,6 +1358,7 @@ $messages['nds'] = array(
 	'renameuserlogpage'           => 'Ännerte-Brukernaams-Logbook',
 	'renameuserlogpagetext'       => 'Dit is dat Logbook för ännerte Brukernaams',
 	'renameuserlogentry'          => 'hett „$1“ ne’en Naam „$2“ geven',
+	'renameuser-log'              => '{{PLURAL:$1|1 Ännern|$1 Ännern}}. Grund: $2',
 	'renameuser-move-log'         => "Siet bi dat Ännern vun’n Brukernaam ''[[{{ns:2}}:$1|$1]]'' na ''[[{{ns:2}}:$2|$2]]'' automaatsch schaven",
 );
 
