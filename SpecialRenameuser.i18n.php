@@ -1080,7 +1080,7 @@ $messages['kk-latn'] = array(
  * @author Siebrand
  */
 $messages['km'] = array(
-	'renameuser'                  => 'ប្តូរឈ្មោះ អ្នកប្រើប្រាស់',
+	'renameuser'                  => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
 	'renameuser-desc'             => "ប្តូរឈ្មោះ អ្នកប្រើប្រាស់ (ត្រូវការ សិទ្ធិ ''ប្តូរឈ្មោះ អ្នកប្រើប្រាស់'')",
 	'renameuserold'               => 'ឈ្មោះអ្នកប្រើប្រាស់បច្ចុប្បន្ន ៖',
 	'renameusernew'               => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មី៖',
