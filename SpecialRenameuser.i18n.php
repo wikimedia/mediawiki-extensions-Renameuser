@@ -433,6 +433,8 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Icvav
+ * @author Jatrobat
+ * @author Siebrand
  * @author Spacebirdy
  * @author Alhen
  * @author Lin linao
@@ -456,7 +458,7 @@ $messages['es'] = array(
 	'renameuserlogpage'           => 'Registro de cambios de nombre de usuarios',
 	'renameuserlogpagetext'       => 'Este es un registro de cambios de nombres de usuarios',
 	'renameuserlogentry'          => 'ha renombrado a $1 a "$2"',
-	'renameuser-log'              => '$1 ediciones. Motivo: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivo: $2',
 	'renameuser-move-log'         => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 );
 
@@ -563,6 +565,7 @@ $messages['fo'] = array(
 /** French (Français)
  * @author Siebrand
  * @author Urhixidur
+ * @author IAlex
  * @author Grondin
  * @author Hégésippe Cormier
  */
@@ -589,6 +592,7 @@ $messages['fr'] = array(
 	'renameuserlogentry'          => 'a renommé $1 vers « $2 »',
 	'renameuser-log'              => '$1 éditions. Motif : $2',
 	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
+	'right-renameuser'            => 'Renomer des utilisateurs',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -715,6 +719,7 @@ $messages['hi'] = array(
 	'renameuserlogentry'          => 'ने $1 को "$2" में बदल दिया हैं',
 	'renameuser-log'              => '{{PLURAL:$1|1 बदलाव|$1 बदलाव}}. कारण: $2',
 	'renameuser-move-log'         => '"[[User:$1|$1]]" को "[[User:$2|$2]]" करते वक्त अपने आप सदस्यपृष्ठ बदल दिया हैं',
+	'right-renameuser'            => 'सदस्योंके नाम बदलें',
 );
 
 /** Croatian (Hrvatski)
@@ -978,6 +983,7 @@ Mangga balia lan dicoba manèh.',
 	'renameuserlogentry'          => 'wis ngganti jeneng $1 dadi "$2"',
 	'renameuser-log'              => 'sing wis duwé $1 suntingan. Alesan: $2',
 	'renameuser-move-log'         => 'Sacara otomatis mindhah kaca nalika ngganti jeneng panganggo "[[User:$1|$1]]" dadi "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Ganti jeneng panganggo-panganggo',
 );
 
 $messages['ka'] = array(
@@ -1333,6 +1339,7 @@ $messages['mr'] = array(
 	'renameuserlogentry'          => 'नी $1 ला "$2" केले',
 	'renameuser-log'              => '{{PLURAL:$1|१ संपादन|$1 संपादने}}. कारण: $2',
 	'renameuser-move-log'         => '"[[User:$1|$1]]" ला "[[User:$2|$2]]" बदलताना आपोआप सदस्य पान स्थानांतरीत केलेले आहे.',
+	'right-renameuser'            => 'सदस्यांची नावे बदला',
 );
 
 $messages['nan'] = array(
@@ -1402,6 +1409,7 @@ $messages['nl'] = array(
 	'renameuserlogentry'          => 'heeft $1 hernoemd naar "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 bewerking|$1 bewerkingen}}. Reden: $2',
 	'renameuser-move-log'         => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Gebruikers hernoemen',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -1430,6 +1438,7 @@ $messages['no'] = array(
 	'renameuserlogentry'          => 'endret navn på $1 til «$2»',
 	'renameuser-log'              => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log'         => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+	'right-renameuser'            => 'Omdøpe brukere',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -1539,6 +1548,7 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author 555
+ * @author Siebrand
  */
 $messages['pt'] = array(
 	'renameuser'                  => 'Renomear utilizador',
@@ -1563,6 +1573,7 @@ $messages['pt'] = array(
 	'renameuserlogentry'          => 'renomeou $1 para "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log'         => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Renomear utilizadores',
 );
 
 /** Quechua (Runa Simi)
@@ -1643,6 +1654,7 @@ $messages['ru'] = array(
 	'renameuserlogentry'          => 'переименовал $1 в «$2»',
 	'renameuser-log'              => 'имеющий $1 правок. $2',
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
+	'right-renameuser'            => 'переименование участников',
 );
 
 /** Yakut (Саха тыла)
@@ -1826,6 +1838,7 @@ $messages['sv'] = array(
 	'renameuserlogentry'          => 'döpte om $1 till "$2"',
 	'renameuser-log'              => 'som hade gjort $1 redigeringar. $2',
 	'renameuser-move-log'         => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Ändra användares namn',
 );
 
 /** Telugu (తెలుగు)
