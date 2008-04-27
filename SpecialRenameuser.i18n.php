@@ -86,6 +86,7 @@ $messages['an'] = array(
 /** Arabic (العربية)
  * @author Meno25
  * @author Mido
+ * @author Siebrand
  */
 $messages['ar'] = array(
 	'renameuser'                  => 'إعادة تسمية مستخدم',
@@ -110,6 +111,7 @@ $messages['ar'] = array(
 	'renameuserlogentry'          => 'أعاد تسمية $1 باسم "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. السبب: $2',
 	'renameuser-move-log'         => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
+	'right-renameuser'            => 'إعادة تسمية المستخدمين',
 );
 
 $messages['arc'] = array(
@@ -1158,6 +1160,7 @@ $messages['ku'] = array(
  * @author UV
  * @author SPQRobin
  * @author MF-Warburg
+ * @author Siebrand
  */
 $messages['la'] = array(
 	'renameuser'                  => 'Usorem renominare',
@@ -1179,6 +1182,7 @@ $messages['la'] = array(
 	'renameuserlogentry'          => 'renominavit $1 in "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 recensio|$1 recensiones}}. Causa: $2',
 	'renameuser-move-log'         => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Usores renominare',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1209,10 +1213,13 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuserlogentry'          => 'huet de Benotzer $1 als Benotzer "$2" ëmbenannt',
 	'renameuser-log'              => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
 	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
+	'right-renameuser'            => 'Benotzer ëmbenennen',
 );
 
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
+ * @author Matthias
+ * @author Siebrand
  */
 $messages['li'] = array(
 	'renameuser'                  => 'Hernöm gebroeker',
@@ -1237,6 +1244,7 @@ $messages['li'] = array(
 	'renameuserlogentry'          => 'haet $1 hernömp nao "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 bewerking|$1 bewerkinge}}. Ree: $2',
 	'renameuser-move-log'         => 'Automatisch hernömp bie \'t wiezige van gebroeker "[[User:$1|$1]]" nao "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Gebroekers hernaome',
 );
 
 /** Lithuanian (Lietuvių)
@@ -1509,6 +1517,7 @@ $messages['pl'] = array(
 	'renameuserlogentry'          => 'zmienił nazwę użytkownika $1 na „$2”',
 	'renameuser-log'              => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
 	'renameuser-move-log'         => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
+	'right-renameuser'            => 'Zmiana nazw kont użytkowników',
 );
 
 /** Piemontèis (Piemontèis)
@@ -1659,6 +1668,7 @@ $messages['ru'] = array(
 
 /** Yakut (Саха тыла)
  * @author HalanTul
+ * @author Siebrand
  */
 $messages['sah'] = array(
 	'renameuser'                  => 'Кыттааччы аатын уларыт',
@@ -1683,11 +1693,13 @@ $messages['sah'] = array(
 	'renameuserlogentry'          => '$1 аата маннык буолла "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
 	'renameuser-move-log'         => '«[[User:$1|$1]]» аата «[[User:$2|$2]]» буолбутунан аптамаатынан',
+	'right-renameuser'            => 'Кыттааччылар ааттарын уларытыы',
 );
 
 /** Slovak (Slovenčina)
  * @author Helix84
  * @author Robbot
+ * @author Siebrand
  */
 $messages['sk'] = array(
 	'renameuser'                  => 'Premenovať používateľa',
@@ -1712,6 +1724,7 @@ $messages['sk'] = array(
 	'renameuserlogentry'          => 'premenoval používateľa $1 na "$2"',
 	'renameuser-log'              => 'mal {{PLURAL:$1|1 úpravu|$1 úpravy|$1 úprav}}. Dôvod: $2',
 	'renameuser-move-log'         => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
+	'right-renameuser'            => 'Premenovávať používateľov',
 );
 
 $messages['sq'] = array(
@@ -1881,8 +1894,9 @@ $messages['tet'] = array(
 	'renameuser-page-unmoved' => 'La bele book pájina $1 ba $2.',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
+ * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
 	'renameuser'                  => 'Тағйири номи корбарӣ',
@@ -1907,6 +1921,7 @@ $messages['tg-cyrl'] = array(
 	'renameuserlogentry'          => 'номи $1ро ба "$2" тағйир дод',
 	'renameuser-log'              => '{{PLURAL:$1|1 вироиш|$1 вироишҳо}}. Далел: $2',
 	'renameuser-move-log'         => 'Саҳифа дар вақти тағйири номи корбар  "[[User:$1|$1]]" ба "[[User:$2|$2]]" ба таври худкор кӯчонида шуд',
+	'right-renameuser'            => 'Тағйири номи корбарон',
 );
 
 /** Thai (ไทย)
@@ -2006,6 +2021,7 @@ $messages['vec'] = array(
 	'renameuserlogentry'          => 'gà rinominà $1 in "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log'         => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Rinomina utenti',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -2035,6 +2051,7 @@ $messages['vi'] = array(
 	'renameuserlogentry'          => 'đã đổi tên $1 thành “$2”',
 	'renameuser-log'              => '{{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
 	'renameuser-move-log'         => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
+	'right-renameuser'            => 'Đổi tên thành viên',
 );
 
 /** Volapük (Volapük)
