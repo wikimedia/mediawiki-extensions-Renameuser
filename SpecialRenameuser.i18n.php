@@ -56,6 +56,7 @@ $messages['af'] = array(
 
 /** Aragonese (Aragonés)
  * @author Juanpabl
+ * @author Siebrand
  * @author SMP
  */
 $messages['an'] = array(
@@ -81,6 +82,7 @@ $messages['an'] = array(
 	'renameuserlogentry'          => 'Ha renombrato á $1 como "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 edizión|$1 edizions}}. Razón: $2',
 	'renameuser-move-log'         => 'Pachina tresladata automaticament en renombrar o usuario "[[User:$1|$1]]" como "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Renombrar usuarios',
 );
 
 /** Arabic (العربية)
@@ -303,6 +305,8 @@ $messages['crh-cyrl'] = array(
 /** Czech (Česky)
  * @author Li-sung
  * @author Martin Kozák
+ * @author Danny B.
+ * @author Siebrand
  */
 $messages['cs'] = array(
 	'renameuser'                  => 'Přejmenovat uživatele',
@@ -327,6 +331,7 @@ $messages['cs'] = array(
 	'renameuserlogentry'          => 'přejmenovává $1 na "$2"',
 	'renameuser-log'              => '$1 editací. $2',
 	'renameuser-move-log'         => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
+	'right-renameuser'            => 'Přejmenovávání uživatelů',
 );
 
 /** Church Slavic (Словѣньскъ)
@@ -432,6 +437,7 @@ $messages['eo'] = array(
 	'renameuserlogentry'          => 'estas renomigita $1 al "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Alinomu uzantojn',
 );
 
 /** Spanish (Español)
@@ -569,6 +575,7 @@ $messages['fo'] = array(
  * @author Siebrand
  * @author Urhixidur
  * @author IAlex
+ * @author Cedric31
  * @author Grondin
  * @author Hégésippe Cormier
  */
@@ -595,7 +602,7 @@ $messages['fr'] = array(
 	'renameuserlogentry'          => 'a renommé $1 vers « $2 »',
 	'renameuser-log'              => '$1 éditions. Motif : $2',
 	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
-	'right-renameuser'            => 'Renomer des utilisateurs',
+	'right-renameuser'            => 'Renommer des utilisateurs',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -728,6 +735,8 @@ $messages['hi'] = array(
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
  * @author Dnik
+ * @author Suradnik13
+ * @author Siebrand
  */
 $messages['hr'] = array(
 	'renameuser'                  => 'Promijeni ime suradnika',
@@ -752,6 +761,7 @@ $messages['hr'] = array(
 	'renameuserlogentry'          => 'je promijenio suradničko ime $1 u "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
 	'renameuser-move-log'         => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Preimenuj suradnike',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1108,7 +1118,7 @@ $messages['km'] = array(
 	'renameusersuccess'           => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" ត្រូវបានប្តូរឈ្មោះទៅ "<nowiki>$2</nowiki>"។',
 	'renameuser-page-exists'      => 'ទំព័រ $1 មានហើយ, មិនអាចសរសេរ ជាន់ពីលើ ដោយស្វ័យប្រវត្តិ ទេ។',
 	'renameuser-page-moved'       => 'ទំព័រ $1 ត្រូវបានប្តូរទីតាំង ទៅ $2 ។',
-	'renameuser-page-unmoved'     => 'ទំព័រ $1 មិនអាចត្រូវបាន ប្តូរទីតាំង ទៅ $2 ។',
+	'renameuser-page-unmoved'     => 'ទំព័រ$1មិនអាចប្តូរទីតាំងទៅ$2បានទេ។',
 	'renameuserlogpage'           => 'កំណត់ហេតុ ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
 	'renameuserlogpagetext'       => 'នេះជាកំណត់ហេតុនៃបំលាស់ប្តូរនៃឈ្មោះអ្នកប្រើប្រាស់',
 	'renameuserlogentry'          => 'បានប្តូរឈ្មោះ $1 ជា "$2"',
@@ -1463,6 +1473,7 @@ $messages['nso'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Siebrand
  */
 $messages['oc'] = array(
 	'renameuser'                  => "Tornar nomenar l'utilizaire",
@@ -1487,6 +1498,7 @@ $messages['oc'] = array(
 	'renameuserlogentry'          => 'a renomenat $1 en "$2"',
 	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
 	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
+	'right-renameuser'            => "Tornar nomenar d'utilizaires",
 );
 
 /** Polish (Polski)
@@ -1858,6 +1870,7 @@ $messages['sv'] = array(
 /** Telugu (తెలుగు)
  * @author Mpradeep
  * @author Veeven
+ * @author Siebrand
  */
 $messages['te'] = array(
 	'renameuser'                  => 'సభ్యనామం మార్పు',
@@ -1882,6 +1895,7 @@ $messages['te'] = array(
 	'renameuserlogentry'          => '$1ను "$2"గా పేరు మార్చారు',
 	'renameuser-log'              => '{{PLURAL:$1|ఒక దిద్దుబాటు|$1 దిద్దుబాట్లు}}. కారణం: $2',
 	'renameuser-move-log'         => '"[[సభ్యులు:$1|$1]]" పేరును "[[సభ్యులు:$2|$2]]"కు మార్చడంతో పేజీని ఆటోమాటిగ్గా తరలించాం',
+	'right-renameuser'            => 'వాడుకరుల పేరు మార్చడం',
 );
 
 /** Tetum (Tetun)
@@ -1989,6 +2003,7 @@ $messages['uk'] = array(
 	'renameuserlogentry'          => 'перейменував $1 на «$2»',
 	'renameuser-log'              => 'мав {{PLURAL:$1|1 редагування|$1 редагування|$1 редагувань}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
+	'right-renameuser'            => 'Перейменування користувачів',
 );
 
 $messages['ur'] = array(
