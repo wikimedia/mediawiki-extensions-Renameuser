@@ -122,6 +122,7 @@ $messages['arc'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Siebrand
  */
 $messages['ast'] = array(
 	'renameuser'                  => 'Renomar usuariu',
@@ -146,6 +147,7 @@ $messages['ast'] = array(
 	'renameuserlogentry'          => 'renomó a $1 como "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivu: $2',
 	'renameuser-move-log'         => 'Treslladóse la páxina automáticamente al renomar al usuariu "[[User:$1|$1]]" como "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Renomar usuarios',
 );
 
 /** Bikol Central (Bikol Central)
@@ -1330,6 +1332,7 @@ $messages['ml'] = array(
 	'renameuserlogentry'          => '$1 എന്ന താള്‍ "$2" എന്ന താളിലേക്കു പുനര്‍നാമകരണം ചെയ്തിരിക്കുന്നു.',
 	'renameuser-log'              => '{{PLURAL:$1|ഒരു തിരുത്തല്‍|$1 തിരുത്തലുകള്‍}}. കാരണം: $2',
 	'renameuser-move-log'         => '"[[User:$1|$1]]" എന്ന ഉപയോക്താവിനെ "[[User:$2|$2]]" എന്നു പുനര്‍നാമകരണം ചെയ്തപ്പോള്‍ താള്‍ യാന്ത്രികമായി മാറ്റി.',
+	'right-renameuser'            => 'ഉപയോക്താക്കളെ പുനഃര്‍നാമകരണം നടത്തുക',
 );
 
 /** Marathi (मराठी)
