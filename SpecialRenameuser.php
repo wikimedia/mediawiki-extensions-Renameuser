@@ -20,7 +20,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
 	'description' => 'Rename a user (need \'\'renameuser\'\' right)',
 	'descriptionmsg' => 'renameuser-desc',
-	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate$'), #just the date of the last change
+	'svn-date' => '$LastChangedDate$',
+	'svn-revision' => '$Rev$',
 );
 
 # Internationalisation file
