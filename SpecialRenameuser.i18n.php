@@ -432,10 +432,8 @@ $messages['eo'] = array(
 	'renameuser-page-exists'      => 'La paĝo $1 jam ekzistas kaj ne povas esti aŭtomate anstataŭata.',
 	'renameuser-page-moved'       => 'La paĝo $1 estis movita al $2.',
 	'renameuser-page-unmoved'     => 'La paĝo $1 ne povis esti movita al $2.',
-	'renameuserlogpage'           => 'Uzantoalinomada loglibro
-
-<!--aŭ: Loglibro pri alinomigoj de uzantoj-->',
-	'renameuserlogpagetext'       => 'Ĉi tio estas loglibro pri ŝanĝoj de uzantonomoj',
+	'renameuserlogpage'           => 'Protokolo pri alinomigoj de uzantoj',
+	'renameuserlogpagetext'       => 'Ĉi tio estas protokolo pri ŝanĝoj de uzantonomoj',
 	'renameuserlogentry'          => 'estas renomigita $1 al "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
