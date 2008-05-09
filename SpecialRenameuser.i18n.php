@@ -535,6 +535,7 @@ $messages['fa'] = array(
 	'renameuserlogentry'          => 'نام $1 را به $2 تغییر داد',
 	'renameuser-log'              => '$1 ویرایش. دلیل: $2',
 	'renameuser-move-log'         => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
+	'right-renameuser'            => 'تغییر نام کاربران',
 
 );
 
