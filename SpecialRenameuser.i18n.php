@@ -1101,7 +1101,6 @@ $messages['kk-latn'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
- * @author Siebrand
  */
 $messages['km'] = array(
 	'renameuser'                  => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
@@ -1120,9 +1119,9 @@ $messages['km'] = array(
 	'renameuser-page-exists'      => 'ទំព័រ $1 មានហើយ, មិនអាចសរសេរ ជាន់ពីលើ ដោយស្វ័យប្រវត្តិ ទេ។',
 	'renameuser-page-moved'       => 'ទំព័រ $1 ត្រូវបានប្តូរទីតាំង ទៅ $2 ។',
 	'renameuser-page-unmoved'     => 'ទំព័រ$1មិនអាចប្តូរទីតាំងទៅ$2បានទេ។',
-	'renameuserlogpage'           => 'កំណត់ហេតុ ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuserlogpage'           => 'កំណត់ហេតុនៃការប្តូរឈ្មោះអ្នកប្រើប្រាស់',
 	'renameuserlogpagetext'       => 'នេះជាកំណត់ហេតុនៃបំលាស់ប្តូរនៃឈ្មោះអ្នកប្រើប្រាស់',
-	'renameuserlogentry'          => 'បានប្តូរឈ្មោះ $1 ជា "$2"',
+	'renameuserlogentry'          => 'បានប្តូរឈ្មោះ $1 ទៅជា "$2" ហើយ',
 	'renameuser-log'              => '{{PLURAL:$1|កំណែប្រែ}}។ ហេតុផល៖ $2',
 	'renameuser-move-log'         => 'បានប្តូរទីតាំង ទំព័រ ដោយស្វ័យប្រវត្តិ កាលបើប្តូរឈ្មោះ អ្នកប្រើប្រាស់ "[[User:$1|$1]]" ទៅ "[[User:$2|$2]]"',
 );
