@@ -647,6 +647,7 @@ $messages['ga'] = array(
 
 /** Galician (Galego)
  * @author Alma
+ * @author Toliño
  * @author Prevert
  */
 $messages['gl'] = array(
@@ -669,9 +670,10 @@ $messages['gl'] = array(
 	'renameuser-page-unmoved'     => 'A páxina $1 non pode ser movida a $2.',
 	'renameuserlogpage'           => 'Rexistro de usuarios que mudaron o nome',
 	'renameuserlogpagetext'       => 'Este é un rexistro dos cambios dos nomes de usuarios',
-	'renameuserlogentry'          => 'mudou o nome $1 a "$2"',
+	'renameuserlogentry'          => 'mudou o nome de $1 a "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 edición|$1 edicións}}. Razón: $2',
 	'renameuser-move-log'         => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Renomear usuarios',
 );
 
 $messages['he'] = array(
