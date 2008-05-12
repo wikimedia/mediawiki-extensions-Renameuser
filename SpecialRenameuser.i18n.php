@@ -798,6 +798,7 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Siebrand
  */
 $messages['hu'] = array(
 	'renameuser'                  => 'Felhasználó átnevezése',
@@ -822,6 +823,7 @@ $messages['hu'] = array(
 	'renameuserlogentry'          => 'átnevezte $1 azonosítóját (az új név: "$2")',
 	'renameuser-log'              => '$1 szerkesztése van. Indoklás: $2',
 	'renameuser-move-log'         => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
+	'right-renameuser'            => 'felhasználók átnevezése',
 );
 
 /** Indonesian (Bahasa Indonesia)
