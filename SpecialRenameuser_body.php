@@ -331,18 +331,23 @@ class RenameuserSQL {
 			'image' => 'img_user_text',
 			'oldimage' => 'oi_user_text',
 			'archive' => 'ar_user_text',
-			'revision' => 'rev_user_text'
+			// FIXME: 'filearchive' => 'fa_user_text'
 		);
 		$this->tablesJob = array();
 		// See if this is for large tables on large, busy, wikis
 		if( function_exists('wfQueriesMustScale') && wfQueriesMustScale() ) {
-			#$this->tablesJob['revision'] = array('rev_user_text','rev_id');
+			// For users with many edits, be nice to servers
+			if( User::edits( $this->uid ) > RENAMEUSER_CONTRIBJOB ) {
+				$this->tablesJob['revision'] = array('rev_user_text','rev_id');
+			} else {
+				$this->tables['revision'] = 'rev_user_text';
+			}
+			// Recent changes is pretty hot, deadlocks occur if done all at once
 			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
 		} else {
-			#$this->tables['revision'] = 'rev_user_text';
 			$this->tables['recentchanges'] = 'rc_user_text';
+			$this->tables['revision'] = 'rev_user_text';
 		}
-
 	}
 
 	/**
@@ -353,7 +358,7 @@ class RenameuserSQL {
 
 		wfProfileIn( __METHOD__ );
 
-		$dbw =& wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
 		// being renamed, which leaves edits at the old name.
@@ -384,15 +389,14 @@ class RenameuserSQL {
 				array( $field => $this->new ),
 				array( $field => $this->old ),
 				__METHOD__
-				#,array( $dbw->lowPriorityOption() )
 			);
 		}
 
 		foreach( $this->tablesJob as $table => $params ) {
 			$res = $dbw->select( $table,
-					array( $params[0], $params[1] ),
-					array( $params[0] => $this->old )
-				);
+				array( $params[0], $params[1] ),
+				array( $params[0] => $this->old )
+			);
 
 			global $wgUpdateRowsPerJob;
 
@@ -402,8 +406,8 @@ class RenameuserSQL {
 			$key = $params[1];
 			$jobParams = array();
 			$jobParams['table'] = $table;
-			$jobParams['column'] = $params[0];
-			$jobParams['uniqueKey'] = $key;
+			$jobParams['column'] = $params[0]; // some *_user_text column
+			$jobParams['uniqueKey'] = $key; // doesn't *have* to be unique
 			$jobParams['oldname'] = $this->old;
 			$jobParams['newname'] = $this->new;
 

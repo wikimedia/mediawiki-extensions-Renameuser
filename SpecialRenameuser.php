@@ -32,8 +32,8 @@ $wgExtensionMessagesFiles['Renameuser'] = $dir . 'SpecialRenameuser.i18n.php';
  * The maximum number of edits a user can have and still be allowed renaming,
  * set it to 0 to disable the limit.
  */
-//define( 'RENAMEUSER_CONTRIBLIMIT', 6800 );
 define( 'RENAMEUSER_CONTRIBLIMIT', 200000 );
+define( 'RENAMEUSER_CONTRIBJOB', 50000 );
 
 # Add a new log type
 global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
