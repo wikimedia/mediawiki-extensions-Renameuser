@@ -566,6 +566,7 @@ $messages['fi'] = array(
 	'renameuserlogentry'          => 'on nimennyt käyttäjän $1 käyttäjäksi ”$2”',
 	'renameuser-log'              => 'Tehnyt {{PLURAL:$1|yhden muokkauksen|$1 muokkausta}}. $2',
 	'renameuser-move-log'         => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+	'right-renameuser'            => 'Nimetä käyttäjätunnuksia uudelleen',
 );
 
 $messages['fo'] = array(
