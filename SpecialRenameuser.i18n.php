@@ -1717,7 +1717,6 @@ $messages['sah'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
- * @author Robbot
  * @author Siebrand
  */
 $messages['sk'] = array(
