@@ -338,12 +338,12 @@ class RenameuserSQL {
 		if( function_exists('wfQueriesMustScale') && wfQueriesMustScale() ) {
 			// For users with many edits, be nice to servers
 			if( User::edits( $this->uid ) > RENAMEUSER_CONTRIBJOB ) {
-				$this->tablesJob['revision'] = array('rev_user_text','rev_id');
+				$this->tablesJob['revision'] = array('rev_user_text','rev_user','rev_id','rev_timestamp');
 			} else {
 				$this->tables['revision'] = 'rev_user_text';
 			}
 			// Recent changes is pretty hot, deadlocks occur if done all at once
-			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_id');
+			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_user','rc_id','rc_timestamp');
 		} else {
 			$this->tables['recentchanges'] = 'rc_user_text';
 			$this->tables['revision'] = 'rev_user_text';
@@ -383,7 +383,7 @@ class RenameuserSQL {
 				'log_namespace' => NS_USER,
 				'log_title' => $oldTitle->getDBKey() ),
 			__METHOD__ );
-
+		// Do immediate updates!
 		foreach( $this->tables as $table => $field ) {
 			$dbw->update( $table,
 				array( $field => $this->new ),
@@ -391,11 +391,16 @@ class RenameuserSQL {
 				__METHOD__
 			);
 		}
-
+		// Construct jobqueue updates...
 		foreach( $this->tablesJob as $table => $params ) {
 			$res = $dbw->select( $table,
-				array( $params[0], $params[1] ),
-				array( $params[0] => $this->old )
+				// < *_user_text, *_id, *_timestamp >
+				array( $params[0], $params[2], $params[3] ),
+				// ( *_user_text = 'x', *_user_id = y )
+				array( $params[0] => $this->old, $params[1] => $this->uid ),
+				__METHOD__,
+				// ORDER BY *_timestamp ASC
+				array( 'ORDER BY' => $params[3] )
 			);
 
 			global $wgUpdateRowsPerJob;
@@ -403,15 +408,20 @@ class RenameuserSQL {
 			$batchSize = 500; // Lets not flood the job table!
 			$jobSize = $wgUpdateRowsPerJob; // How many rows per job?
 
-			$key = $params[1];
+			$keyC = $params[2];
+			$timestampC = $params[3];
 			$jobParams = array();
 			$jobParams['table'] = $table;
 			$jobParams['column'] = $params[0]; // some *_user_text column
-			$jobParams['uniqueKey'] = $key; // doesn't *have* to be unique
+			$jobParams['uidColumn'] = $params[1]; // some *_user column
+			$jobParams['uniqueKey'] = $keyC; // doesn't *have* to be unique
 			$jobParams['oldname'] = $this->old;
 			$jobParams['newname'] = $this->new;
-
+			// Timestamp column data for index optimizations
+			$jobParams['minTimestamp'] = '0';
+			$jobParams['maxTimestamp'] = '0';
 			$jobParams['keyId'] = array();
+			$jobParams['userID'] = $this->uid;
 			$jobRows = 0;
 			$done = false;
 			while ( !$done ) {
@@ -419,22 +429,35 @@ class RenameuserSQL {
 				for ( $i = 0; $i < $batchSize; $i++ ) {
 					$row = $dbw->fetchObject( $res );
 					if ( !$row ) {
-						# If there are any job rows left, add it to the queue as a job
+						# If there are any job rows left, add it to the queue as one job
 						if( $jobRows > 0 ) {
 							$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
 							$jobRows = 0;
 							$jobParams['keyId'] = array();
+							$jobParams['minTimestamp'] = '0';
+							$jobParams['maxTimestamp'] = '0';
 						}
 						$done = true;
 						break;
 					}
-					$jobParams['keyId'][] = $row->$key;
+					# If we are adding the first item, since the ORDER BY is ASC, set
+					# the min timestamp
+					if( $jobRows == 0 ) {
+						$jobParams['minTimestamp'] = $row->$timestampC;
+					}
+					# Add this ID to the unique key list
+					$jobParams['keyId'][] = $row->$keyC;
+					# Keep updating the last timestamp, so it should be correct when the last item is added.
+					$jobParams['maxTimestamp'] = $row->$timestampC;
+					# Update nice counter
 					$jobRows++;
 					# Once a job has $jobSize rows, add it to the queue
 					if( $jobRows >= $jobSize ) {
 						$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
 						$jobRows = 0;
 						$jobParams['keyId'] = array();
+						$jobParams['minTimestamp'] = '0';
+						$jobParams['maxTimestamp'] = '0';
 					}
 				}
 				Job::batchInsert( $jobs );
