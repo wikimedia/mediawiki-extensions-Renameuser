@@ -679,6 +679,7 @@ $messages['gl'] = array(
 
 $messages['he'] = array(
 	'renameuser'       => 'שינוי שם משתמש',
+	'renameuser-desc'  => 'שינוי שם משתמש (דרושה הרשאת "renameuser")',
 	'renameuserold'    => 'שם משתמש נוכחי:',
 	'renameusernew'    => 'שם משתמש חדש:',
 	'renameuserreason' => 'סיבה לשינוי השם:',
@@ -699,9 +700,9 @@ $messages['he'] = array(
 
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
-	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" לשם "$2"',
+	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" ל-"$2"',
 	'renameuser-log'        => '{{plural:$1|עריכה אחת|$1 עריכות}}. סיבה: $2',
-	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[{{ns:user}}:$1|$1]]" לשם "[[{{ns:user:}}:$2|$2]]"',
+	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל-"[[User:$2|$2]]"',
 
 	'right-renameuser' => 'שינוי שמות משתמש',
 );
