@@ -1107,6 +1107,7 @@ $messages['kk-latn'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author គីមស៊្រុន
  */
 $messages['km'] = array(
 	'renameuser'                  => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
@@ -1130,6 +1131,7 @@ $messages['km'] = array(
 	'renameuserlogentry'          => 'បានប្តូរឈ្មោះ $1 ទៅជា "$2" ហើយ',
 	'renameuser-log'              => '{{PLURAL:$1|កំណែប្រែ}}។ ហេតុផល៖ $2',
 	'renameuser-move-log'         => 'បានប្តូរទីតាំង ទំព័រ ដោយស្វ័យប្រវត្តិ កាលបើប្តូរឈ្មោះ អ្នកប្រើប្រាស់ "[[User:$1|$1]]" ទៅ "[[User:$2|$2]]"',
+	'right-renameuser'            => 'ប្ដូរឈ្មោះអ្នកប្រើប្រាស់នានា',
 );
 
 $messages['kn'] = array(
