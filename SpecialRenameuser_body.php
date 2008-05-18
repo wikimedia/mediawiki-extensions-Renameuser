@@ -325,28 +325,25 @@ class RenameuserSQL {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
-
-		// 1.5 schema
-		$this->tables = array(
-			'image' => 'img_user_text',
-			'oldimage' => 'oi_user_text',
-			'archive' => 'ar_user_text',
-			// FIXME: 'filearchive' => 'fa_user_text'
-		);
-		$this->tablesJob = array();
-		// See if this is for large tables on large, busy, wikis
-		if( function_exists('wfQueriesMustScale') && wfQueriesMustScale() ) {
-			// For users with many edits, be nice to servers
-			if( User::edits( $this->uid ) > RENAMEUSER_CONTRIBJOB ) {
-				$this->tablesJob['revision'] = array('rev_user_text','rev_user','rev_id','rev_timestamp');
-			} else {
-				$this->tables['revision'] = 'rev_user_text';
-			}
-			// Recent changes is pretty hot, deadlocks occur if done all at once
-			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_user','rc_id','rc_timestamp');
+		
+		$this->tables = array(); // Immediate updates
+		$this->tables['image'] = 'img_user_text';
+		$this->tables['oldimage'] = 'oi_user_text';
+		# FIXME: $this->tables['filearchive'] = 'fa_user_text'; (not indexed yet)
+		$this->tablesJob = array(); // Slow updates
+		// If this user has a large number of edits, use the jobqueue
+		if( User::edits($this->uid) > RENAMEUSER_CONTRIBJOB ) {
+			$this->tablesJob['revision'] = array('rev_user_text','rev_user','rev_timestamp');
+			$this->tablesJob['archive'] = array('ar_user_text','ar_user','ar_timestamp');
+		} else {
+			$this->tables['revision'] = 'rev_user_text';
+			$this->tables['archive'] = 'ar_user_text';
+		}
+		// Recent changes is pretty hot, deadlocks occur if done all at once
+		if( wfQueriesMustScale() ) {
+			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_user','rc_timestamp');
 		} else {
 			$this->tables['recentchanges'] = 'rc_user_text';
-			$this->tables['revision'] = 'rev_user_text';
 		}
 	}
 
@@ -395,8 +392,7 @@ class RenameuserSQL {
 		foreach( $this->tablesJob as $table => $params ) {
 			$userTextC = $params[0]; // some *_user_text column
 			$userIDC = $params[1]; // some *_user column
-			$timestampC = $params[3]; // some *_timestamp column
-			$keyC = $params[2]; // some *_id column
+			$timestampC = $params[2]; // some *_timestamp column
 
 			$res = $dbw->select( $table,
 				array( $userTextC, $timestampC ),
@@ -421,8 +417,6 @@ class RenameuserSQL {
 			// Timestamp column data for index optimizations
 			$jobParams['minTimestamp'] = '0';
 			$jobParams['maxTimestamp'] = '0';
-			#$jobParams['uniqueKey'] = $keyC; // doesn't *have* to be unique
-			#$jobParams['keyId'] = array(); (this requires inserting large blobs of data)
 			$jobParams['count'] = 0;
 			
 			// Insert into queue!
@@ -440,7 +434,6 @@ class RenameuserSQL {
 							$jobParams['minTimestamp'] = '0';
 							$jobParams['maxTimestamp'] = '0';
 							$jobParams['count'] = 0;
-							#$jobParams['keyId'] = array();
 							$jobRows = 0;
 						}
 						$done = true;
@@ -451,8 +444,6 @@ class RenameuserSQL {
 					if( $jobRows == 0 ) {
 						$jobParams['minTimestamp'] = $row->$timestampC;
 					}
-					# Add this ID to the unique key list
-					#$jobParams['keyId'][] = $row->$keyC; (this requires inserting large blobs of data)
 					# Keep updating the last timestamp, so it should be correct when the last item is added.
 					$jobParams['maxTimestamp'] = $row->$timestampC;
 					# Update nice counter
@@ -464,7 +455,6 @@ class RenameuserSQL {
 						$jobParams['minTimestamp'] = '0';
 						$jobParams['maxTimestamp'] = '0';
 						$jobParams['count'] = 0;
-						#$jobParams['keyId'] = array();
 						$jobRows = 0;
 					}
 				}

@@ -47,13 +47,11 @@ class RenameUserJob extends Job {
 			__METHOD__
 		);
 		# Special case: revisions may be deleted while renaming...
-		if( $table == 'revision' && isset($userID) ) {
-			// Get expected count. For B/C, check $keyId.
-			$expected = isset($count) ? $count : count($keyId);
+		if( $table == 'revision' && isset($timestampColumn) ) {
 			$actual = $dbw->affectedRows();
 			# If some revisions were not renamed, they may have been deleted.
 			# Do a pass on the archive table to get these straglers...
-			if( $actual < $expected ) {
+			if( $actual < $count ) {
 				$dbw->update( 'archive',
 					array( 'ar_user_text' => $newname ),
 					array( 'ar_user_text' => $oldname,
@@ -63,6 +61,25 @@ class RenameUserJob extends Job {
 						// the rows. This can use the user,timestamp index.
 						"ar_timestamp >= '$minTimestamp'",
 						"ar_timestamp <= '$maxTimestamp'"),
+					__METHOD__
+				);
+			}
+		}
+		# Special case: revisions may be restored while renaming...
+		if( $table == 'archive' && isset($timestampColumn) ) {
+			$actual = $dbw->affectedRows();
+			# If some revisions were not renamed, they may have been restored.
+			# Do a pass on the revision table to get these straglers...
+			if( $actual < $count ) {
+				$dbw->update( 'revision',
+					array( 'rev_user_text' => $newname ),
+					array( 'rev_user_text' => $oldname,
+						'rev_id' => $keyId,
+						'rev_user' => $userID,
+						// No user,rev_id index, so use timestamp to bound
+						// the rows. This can use the user,timestamp index.
+						"rev_timestamp >= '$minTimestamp'",
+						"rev_timestamp <= '$maxTimestamp'"),
 					__METHOD__
 				);
 			}
