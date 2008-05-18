@@ -23,12 +23,22 @@ class RenameUserJob extends Job {
 	public function run() {
 		$dbw = wfGetDB( DB_MASTER );
 		extract( $this->params );
-		# Conditions like "*_user_text = 'x', *_id = y"
-		$conds = array( $column => $oldname, $uniqueKey => $keyId );
-		# If user ID given, add that too to be safe. This avoids 
-		# possible rename collisions.
+		# Conditions like "*_user_text = 'x'
+		$conds = array( $column => $oldname );
+		# If user ID given, add that to condition to avoid rename collisions.
 		if( isset($userID) ) {
 			$conds[$uidColumn] = $userID;
+		}
+		# Bound by timestamp if given
+		if( isset($timestampColumn) ) {
+			$conds[] = "$timestampColumn >= '$minTimestamp'";
+			$conds[] = "$timestampColumn <= '$maxTimestamp'";
+		# Otherwise, bound by key (B/C)
+		} else if( isset($uniqueKey) ) {
+			$conds[$uniqueKey] = $keyId;
+		} else {
+			wfDebug( 'RenameUserJob::run - invalid job row given' ); // this shouldn't happen
+			return false;
 		}
 		# Update a chuck of rows!
 		$dbw->update( $table,
@@ -38,7 +48,8 @@ class RenameUserJob extends Job {
 		);
 		# Special case: revisions may be deleted while renaming...
 		if( $table == 'revision' && isset($userID) ) {
-			$expected = count($keyId);
+			// Get expected count. For B/C, check $keyId.
+			$expected = isset($count) ? $count : count($keyId);
 			$actual = $dbw->affectedRows();
 			# If some revisions were not renamed, they may have been deleted.
 			# Do a pass on the archive table to get these straglers...
@@ -50,8 +61,8 @@ class RenameUserJob extends Job {
 						'ar_user' => $userID,
 						// No user,rev_id index, so use timestamp to bound
 						// the rows. This can use the user,timestamp index.
-						"ar_timestamp >= $minTimestamp",
-						"ar_timestamp <= $maxTimestamp"),
+						"ar_timestamp >= '$minTimestamp'",
+						"ar_timestamp <= '$maxTimestamp'"),
 					__METHOD__
 				);
 			}
