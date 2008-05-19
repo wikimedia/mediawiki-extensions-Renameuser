@@ -55,7 +55,6 @@ class RenameUserJob extends Job {
 				$dbw->update( 'archive',
 					array( 'ar_user_text' => $newname ),
 					array( 'ar_user_text' => $oldname,
-						'ar_rev_id' => $keyId,
 						'ar_user' => $userID,
 						// No user,rev_id index, so use timestamp to bound
 						// the rows. This can use the user,timestamp index.
@@ -74,7 +73,6 @@ class RenameUserJob extends Job {
 				$dbw->update( 'revision',
 					array( 'rev_user_text' => $newname ),
 					array( 'rev_user_text' => $oldname,
-						'rev_id' => $keyId,
 						'rev_user' => $userID,
 						// No user,rev_id index, so use timestamp to bound
 						// the rows. This can use the user,timestamp index.
