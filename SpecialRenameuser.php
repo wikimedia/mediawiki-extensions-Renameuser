@@ -16,7 +16,7 @@ $wgGroupPermissions['bureaucrat']['renameuser'] = true;
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
-	'author' => 'Ævar Arnfjörð Bjarmason',
+	'author' => 'Ævar Arnfjörð Bjarmason, Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
 	'description' => 'Rename a user (need \'\'renameuser\'\' right)',
 	'descriptionmsg' => 'renameuser-desc',
