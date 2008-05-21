@@ -1658,7 +1658,7 @@ $messages['ro'] = array(
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  * @author Ahonc
  * @author Siebrand
  */
