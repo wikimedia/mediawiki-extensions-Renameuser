@@ -430,7 +430,7 @@ class RenameuserSQL {
 						# If there are any job rows left, add it to the queue as one job
 						if( $jobRows > 0 ) {
 							$jobParams['count'] = $jobRows;
-							$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
+							$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
 							$jobParams['minTimestamp'] = '0';
 							$jobParams['maxTimestamp'] = '0';
 							$jobParams['count'] = 0;
@@ -451,7 +451,7 @@ class RenameuserSQL {
 					# Once a job has $jobSize rows, add it to the queue
 					if( $jobRows >= $jobSize ) {
 						$jobParams['count'] = $jobRows;
-						$jobs[] = Job::factory( 'renameUser', Title::newMainPage(), $jobParams );
+						$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
 						$jobParams['minTimestamp'] = '0';
 						$jobParams['maxTimestamp'] = '0';
 						$jobParams['count'] = 0;
