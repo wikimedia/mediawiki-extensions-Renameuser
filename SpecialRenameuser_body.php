@@ -44,7 +44,8 @@ class SpecialRenameuser extends SpecialPage {
 
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
 		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ), NS_USER );
-		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER ); // Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
+		// Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
+		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $wgUser->editToken();
@@ -66,7 +67,8 @@ class SpecialRenameuser extends SpecialPage {
 				"</td>
 				<td class='mw-input'>" .
 					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
-					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
+					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 
+						'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
 				"</td>
 			</tr>
 			<tr>
@@ -219,14 +221,23 @@ class SpecialRenameuser extends SpecialPage {
 
 		$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
 		$rename->rename();
+		
+		// If this user is renaming his/herself, make sure that Title::moveTo()
+		// doesn't make a bunch of null move edits under the old name!
+		global $wgUser;
+		if( $wgUser->getId() == $uid ) {
+			$wgUser->setName( $newusername->getText() );
+		}
 
 		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ), $wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ), 
+			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
 
-		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) . "</div><br style=\"clear:both\" />" );
+		$wgOut->addWikiText( "<div class=\"successbox\">" . wfMsg( 'renameusersuccess', $oldusername->getText(), 
+			$newusername->getText() ) . "</div><br style=\"clear:both\" />" );
 
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) && version_compare( $wgVersion, '1.9alpha', '>=' ) ) {
-			$dbr =& wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_SLAVE );
 			$oldkey = $oldusername->getDBkey();
 			$pages = $dbr->select(
 				'page',
@@ -244,12 +255,15 @@ class SpecialRenameuser extends SpecialPage {
 			$skin =& $wgUser->getSkin();
 			while ( $row = $dbr->fetchObject( $pages ) ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
-				$newPage = Title::makeTitleSafe( $row->page_namespace, preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
+				$newPage = Title::makeTitleSafe( $row->page_namespace, 
+					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
+				# Do not autodelete or anything, title must not exist
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
 					$link = $skin->makeKnownLinkObj( $newPage );
 					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
-					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log', $oldusername->getText(), $newusername->getText() ) );
+					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log', 
+						$oldusername->getText(), $newusername->getText() ) );
 					if( $success === true ) {
 						$oldLink = $skin->makeKnownLinkObj( $oldPage, '', 'redirect=no' );
 						$newLink = $skin->makeKnownLinkObj( $newPage );
@@ -266,6 +280,8 @@ class SpecialRenameuser extends SpecialPage {
 		}
 	}
 
+	// FIXME: this code is total crap. Should this just use LogEventsList or
+	// since extensions are branched, or are we keeping the half-ass b/c thing?
 	function showLogExtract( $username, $type, &$out ) {
 		global $wgOut;
 		# Show relevant lines from the logs:
