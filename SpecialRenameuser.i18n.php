@@ -1489,7 +1489,7 @@ $messages['oc'] = array(
 	'renameuser-desc'             => "Torna nomenar un utilizaire (necessita los dreches de ''renameuser'')",
 	'renameuserold'               => "Nom actual de l'utilizaire :",
 	'renameusernew'               => "Nom novèl de l'utilizaire :",
-	'renameuserreason'            => 'Motiu del renomenatge :',
+	'renameuserreason'            => 'Motiu del cambiament de nom :',
 	'renameusermove'              => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
 	'renameusersubmit'            => 'Sometre',
 	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
@@ -1506,7 +1506,7 @@ $messages['oc'] = array(
 	'renameuserlogpagetext'       => "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
 	'renameuserlogentry'          => 'a renomenat $1 en "$2"',
 	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
-	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del renomenatge de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
+	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
 	'right-renameuser'            => "Tornar nomenar d'utilizaires",
 );
 
