@@ -803,7 +803,7 @@ $messages['hsb'] = array(
  * @author Siebrand
  */
 $messages['hu'] = array(
-	'renameuser'                  => 'Felhasználó átnevezése',
+	'renameuser'                  => 'Szerkesztő átnevezése',
 	'renameuser-desc'             => "Lehetővé teszi egy felhasználó átnevezését (''renameuser'' jog szükséges)",
 	'renameuserold'               => 'Jelenlegi felhasználónév:',
 	'renameusernew'               => 'Új felhasználónév:',
@@ -1384,6 +1384,7 @@ $messages['nds'] = array(
 	'renameuser'                  => 'Brukernaam ännern',
 	'renameuserold'               => 'Brukernaam nu:',
 	'renameusernew'               => 'Nee Brukernaam:',
+	'renameuserreason'            => 'Gründ för den ne’en Naam:',
 	'renameusermove'              => 'Brukersieden op’n ne’en Naam schuven',
 	'renameusersubmit'            => 'Ännern',
 	'renameusererrordoesnotexist' => "Bruker ''<nowiki>$1</nowiki>'' gifft dat nich",
