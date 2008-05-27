@@ -190,6 +190,7 @@ $messages['bg'] = array(
 	'renameuserlogentry'          => 'преименува $1 на „$2“',
 	'renameuser-log'              => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
+	'right-renameuser'            => 'преименуване на потребители',
 );
 
 /** Bengali (বাংলা)
@@ -1166,6 +1167,36 @@ $messages['ko'] = array(
 	'renameuser-move-log'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'renameuser'                  => 'Metmaacher ömdäufe',
+	'renameuser-desc'             => "Metmaacher ömdäufe — do buch mer et Rääsch (''renameuser'') för",
+	'renameuserold'               => 'Dä ahle Metmaacher-Name',
+	'renameusernew'               => 'Dä neue Metmaacher-Name',
+	'renameuserreason'            => 'Jrund för et Ömdäufe:',
+	'renameusermove'              => 'De Metmaachersigg met Klaaf- un Ungersigge op dä neue Metmaacher-Name ömstelle',
+	'renameusersubmit'            => 'Ömdäufe!',
+	'renameusererrordoesnotexist' => 'Ene Metmaacher „<nowiki>$1</nowiki>“ kenne mer nit.',
+	'renameusererrorexists'       => 'Dä Metmaacher „<nowiki>$1</nowiki>“ jit et ald.',
+	'renameusererrorinvalid'      => 'Dä Metmaacher-Name „<nowiki>$1</nowiki>“ is nit richtich.',
+	'renameusererrortoomany'      => 'Dä Metmaacher „<nowiki>$1</nowiki>“ hät $2 Beidräch zom Wiki jemaat.
+Opjepass: Esu ene Metmaacher ömzedäufe brems et Wiki womööchlesch kräftesch.',
+	'renameuser-error-request'    => 'Mer hatte e Problem met Dingem Opdrach.
+Bes esu joot un versöök et noch ens.',
+	'renameuser-error-same-user'  => 'Do Tuppes! Der ahle un der neue Name es dersellve. Do bengk et Ömdäufe jaanix.',
+	'renameusersuccess'           => 'Dä Metmaacher „<nowiki>$1</nowiki>“ es jetz op „<nowiki>$2</nowiki>“ ömjedäuf.',
+	'renameuser-page-exists'      => 'De Sigg $1 es ald doh, un mer könne se nit automatesch övverschrieve',
+	'renameuser-page-moved'       => 'De Sigg wood vun „$1“ op „$2“ ömjenannt.',
+	'renameuserlogpage'           => 'Logboch met ömjedäufte Metmaachere',
+	'renameuserlogpagetext'       => 'Dat es et Logboch vun de ömjedäufte Metmaachere',
+	'renameuserlogentry'          => 'hät dä Metmaacher „$1“ op „$2“ ömjedäuf',
+	'renameuser-log'              => '{{PLURAL:$1|ein Beärbeidung|$1 Beärbeidung|kein Beärbeidung}}. Jrund: $2',
+	'renameuser-move-log'         => 'Di Sigg weet automatesch ömjenannt weil mer dä Metmaacher „[[{{ns:user}}:$1]]“ op „[[{{ns:user}}:$2]]“ öm am däufe sin.',
+	'right-renameuser'            => 'Metmaacher ömdäufe',
+);
+
 $messages['ku'] = array(
 	'renameuser'        => 'Navî bikarhênerê biguherîne',
 	'renameuserold'     => 'Navî niha:',
@@ -1974,16 +2005,20 @@ $messages['to'] = array(
 
 /** Turkish (Türkçe)
  * @author Uğur Başak
+ * @author Karduelis
  * @author SPQRobin
  */
 $messages['tr'] = array(
 	'renameuser'            => 'Kullanıcı adı değiştir',
 	'renameuserold'         => 'Şu anda ki kullanıcı adı:',
 	'renameusernew'         => 'Yeni kullanıcı adı:',
+	'renameuserreason'      => 'Neden:',
 	'renameusersubmit'      => 'Gönder',
 	'renameusersuccess'     => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
 	'renameuserlogpage'     => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
+	'renameuserlogentry'    => '$1 → "$2" isim değişikliği yapıldı',
+	'renameuser-log'        => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
 );
 
 /** Ukrainian (Українська)
