@@ -292,7 +292,7 @@ $messages['crh-latn'] = array(
 	'renameuserlogpage'     => 'Qullanıcı adı deñişikligi jurnalı',
 	'renameuserlogpagetext' => 'Aşağıda bulunğan cedvel adı deñiştirilgen qullanıcılarnı köstere',
 	'renameuserlogentry'    => '$1 adını deñiştirdi, yañı ad: "$2"',
-	'renameuser-log'        => '{{PLURAL:$1|1|$1}} deñişiklik yapqan. Sebeb: $2',
+	'renameuser-log'        => '{{PLURAL:$1|1 deñişiklik|$1 deñişiklik}} yapqan. Sebep: $2',
 );
 
 /** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
@@ -302,7 +302,7 @@ $messages['crh-cyrl'] = array(
 	'renameuserlogpage'     => 'Къулланыджы ады денъишиклиги журналы',
 	'renameuserlogpagetext' => 'Ашагъыда булунгъан джедвель ады денъиштирильген къулланыджыларны косьтере',
 	'renameuserlogentry'    => '$1 адыны денъиштирди, янъы ад: "$2"',
-	'renameuser-log'        => '{{PLURAL:$1|1|$1}} денъишиклик япкъан. Себеп: $2',
+	'renameuser-log'        => '{{PLURAL:$1|1 денъишиклик|$1 денъишиклик}} япкъан. Себеп: $2',
 );
 
 /** Czech (Česky)
@@ -831,16 +831,16 @@ $messages['hu'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author Rex
  */
 $messages['id'] = array(
-	'renameuser'       => 'Penggantian nama pengguna',
-	'renameuser-desc'  => 'Mengganti nama pengguna (perlu hak akses \'\'renameuser\'\')',
-	'renameuserold'    => 'Nama sekarang:',
-	'renameusernew'    => 'Nama baru:',
-	'renameuserreason' => 'Alasan penggantian nama:',
-	'renameusermove'   => 'Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru',
-	'renameusersubmit' => 'Simpan',
-
+	'renameuser'                  => 'Penggantian nama pengguna',
+	'renameuser-desc'             => "Mengganti nama pengguna (perlu hak akses ''renameuser'')",
+	'renameuserold'               => 'Nama sekarang:',
+	'renameusernew'               => 'Nama baru:',
+	'renameuserreason'            => 'Alasan penggantian nama:',
+	'renameusermove'              => 'Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru',
+	'renameusersubmit'            => 'Simpan',
 	'renameusererrordoesnotexist' => 'Pengguna "<nowiki>$1</nowiki>" tidak ada',
 	'renameusererrorexists'       => 'Pengguna "<nowiki>$1</nowiki>" telah ada',
 	'renameusererrorinvalid'      => 'Nama pengguna "<nowiki>$1</nowiki>" tidak sah',
@@ -848,16 +848,15 @@ $messages['id'] = array(
 	'renameuser-error-request'    => 'Ada masalah dalam pemrosesan permintaan. Silakan kembali dan coba lagi.',
 	'renameuser-error-same-user'  => 'Anda tak dapat mengganti nama pengguna sama seperti asalnya.',
 	'renameusersuccess'           => 'Pengguna "<nowiki>$1</nowiki>" telah diganti namanya menjadi "<nowiki>$2</nowiki>"',
-
-	'renameuser-page-exists'         => 'Halaman $1 telah ada dan tidak dapat ditimpa secara otomatis.',
-	'renameuser-page-moved'          => 'Halaman $1 telah dipindah ke $2.',
-	'renameuser-page-unmoved'        => 'Halaman $1 tidak dapat dipindah ke $2.',
-
-	'renameuserlogpage'     => 'Log penggantian nama pengguna',
-	'renameuserlogpagetext' => 'Di bawah ini adalah log penggantian nama pengguna',
-	'renameuserlogentry'    => 'telah mengganti nama $1 menjadi "$2"',
-	'renameuser-log'        => 'yang telah memiliki $1 suntingan. $2',
-	'renameuser-move-log'   => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
+	'renameuser-page-exists'      => 'Halaman $1 telah ada dan tidak dapat ditimpa secara otomatis.',
+	'renameuser-page-moved'       => 'Halaman $1 telah dipindah ke $2.',
+	'renameuser-page-unmoved'     => 'Halaman $1 tidak dapat dipindah ke $2.',
+	'renameuserlogpage'           => 'Log penggantian nama pengguna',
+	'renameuserlogpagetext'       => 'Di bawah ini adalah log penggantian nama pengguna',
+	'renameuserlogentry'          => 'telah mengganti nama $1 menjadi "$2"',
+	'renameuser-log'              => 'yang telah memiliki $1 suntingan. $2',
+	'renameuser-move-log'         => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Mengganti nama pengguna',
 );
 
 /** Ido (Ido)
