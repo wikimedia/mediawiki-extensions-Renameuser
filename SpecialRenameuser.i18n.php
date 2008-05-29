@@ -1692,6 +1692,7 @@ $messages['ro'] = array(
  * @author Александр Сигачёв
  * @author Ahonc
  * @author Siebrand
+ * @author Innv
  */
 $messages['ru'] = array(
 	'renameuser'                  => 'Переименовать участника',
@@ -1713,7 +1714,7 @@ $messages['ru'] = array(
 	'renameuser-page-unmoved'     => 'Страница $1 не может быть переименована в $2.',
 	'renameuserlogpage'           => 'Журнал переименований участников',
 	'renameuserlogpagetext'       => 'Это журнал произведённых переименований зарегистрированных участников.',
-	'renameuserlogentry'          => 'переименовал $1 в «$2»',
+	'renameuserlogentry'          => '$1 переименован в «$2»',
 	'renameuser-log'              => 'имеющий $1 правок. $2',
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser'            => 'переименование участников',
