@@ -2177,6 +2177,9 @@ $messages['yue'] = array(
 	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已經存在',
 	'renameusererrorinvalid'      => '用戶名"<nowiki>$1</nowiki>"唔正確',
 	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻咗$2次，對改一個超過$3次的用戶名嘅用戶可能會影響網站嘅效能',
+	'renameuser-error-request'    => '響收到請求嗰陣出咗問題。
+請返去再試過。',
+	'renameuser-error-same-user'  => '你唔可以改一位用戶係同之前嘅嘢一樣。',
 	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經改咗名做"<nowiki>$2</nowiki>"',
 
 	'renameuser-page-exists'         => '$1呢一版已經存在，唔可以自動重寫。',
@@ -2188,6 +2191,8 @@ $messages['yue'] = array(
 	'renameuserlogentry'    => '已經幫 $1 改咗名做 "$2"',
 	'renameuser-log'        => '擁有$1次編輯。 原因: $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"改名做"[[User:$2|$2]]"嗰陣已經自動搬咗用戶頁',
+
+	'right-renameuser'      => '改用戶名',
 );
 
 $messages['zh-hans'] = array(
@@ -2203,6 +2208,9 @@ $messages['zh-hans'] = array(
 	'renameusererrorexists'       => '用户"<nowiki>$1</nowiki>"已存在',
 	'renameusererrorinvalid'      => '用户名"<nowiki>$1</nowiki>"不可用',
 	'renameusererrortoomany'      => '用户"<nowiki>$1</nowiki>"贡献了$2次，重命名一个超过$3次的用户会影响站点性能',
+	'renameuser-error-request'    => '在收到请求时出现问题。
+请回去重试。',
+	'renameuser-error-same-user'  => '您不可以更改一位用户是跟之前的东西一样。',
 	'renameusersuccess'           => '用户"<nowiki>$1</nowiki>"已经更名为"<nowiki>$2</nowiki>"',
 
 	'renameuser-page-exists'         => '$1这一页己经存在，不能自动覆写。',
@@ -2214,6 +2222,8 @@ $messages['zh-hans'] = array(
 	'renameuserlogentry'    => '已经把 $1 重命名为 "$2"',
 	'renameuser-log'        => '拥有$1次编辑。 理由: $2',
 	'renameuser-move-log'   => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
+
+	'right-renameuser'      => '重新命名用户',
 );
 
 $messages['zh-hant'] = array(
@@ -2229,6 +2239,9 @@ $messages['zh-hant'] = array(
 	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已存在',
 	'renameusererrorinvalid'      => '用戶名"<nowiki>$1</nowiki>"不可用',
 	'renameusererrortoomany'      => '用戶"<nowiki>$1</nowiki>"貢獻了$2次，重新命名一個超過$3次的用戶會影響網站效能',
+	'renameuser-error-request'    => '在收到請求時出現問題。
+請回去重試。',
+	'renameuser-error-same-user'  => '您不可以更改一位用戶是跟之前的東西一樣。',
 	'renameusersuccess'           => '用戶"<nowiki>$1</nowiki>"已經更名為"<nowiki>$2</nowiki>"',
 
 	'renameuser-page-exists'         => '$1這一頁己經存在，不能自動覆寫。',
@@ -2240,6 +2253,8 @@ $messages['zh-hant'] = array(
 	'renameuserlogentry'    => '已經把 $1 重新命名為 "$2"',
 	'renameuser-log'        => '擁有$1次編輯。 理由: $2',
 	'renameuser-move-log'   => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
+
+	'right-renameuser'      => '重新命名用戶',
 );
 
 /** Zulu (isiZulu)
