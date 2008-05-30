@@ -67,8 +67,6 @@ class SpecialRenameuser extends SpecialPage {
 				"</td>
 				<td class='mw-input'>" .
 					Xml::input( 'oldusername', 20, $oun, array( 'type' => 'text', 'tabindex' => '1' ) ) . ' ' .
-					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 
-						'id' => 'submit-showBlockLog', 'tabindex' => '2' ) ) . ' ' .
 				"</td>
 			</tr>
 			<tr>
@@ -76,7 +74,7 @@ class SpecialRenameuser extends SpecialPage {
 					Xml::label( wfMsg( 'renameusernew' ), 'newusername' ) .
 				"</td>
 				<td class='mw-input'>" .
-					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '3' ) ) .
+					Xml::input( 'newusername', 20, $nun, array( 'type' => 'text', 'tabindex' => '2' ) ) .
 				"</td>
 			</tr>
 			<tr>
@@ -84,7 +82,7 @@ class SpecialRenameuser extends SpecialPage {
 					Xml::label( wfMsg( 'renameuserreason' ), 'reason' ) .
 				"</td>
 				<td class='mw-input'>" .
-					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '4', 'maxlength' => 255 ) ) .
+					Xml::input( 'reason', 40, $reason, array( 'type' => 'text', 'tabindex' => '3', 'maxlength' => 255 ) ) .
 				"</td>
 			</tr>"
 		);
@@ -94,7 +92,7 @@ class SpecialRenameuser extends SpecialPage {
 					<td>&nbsp;
 					</td>
 					<td class='mw-input'>" .
-						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '5' ) ) .
+						Xml::checkLabel( wfMsg( 'renameusermove' ), 'movepages', 'movepages', $is_checked, array( 'tabindex' => '4' ) ) .
 					"</td>
 				</tr>"
 			);
@@ -105,7 +103,10 @@ class SpecialRenameuser extends SpecialPage {
 				<td>&nbsp;
 				</td>
 				<td class='mw-submit'>" .
-					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '6', 'id' => 'submit' ) ) .
+					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
+					' ' .
+					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 
+						'id' => 'submit-showBlockLog', 'tabindex' => '6' ) ) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
