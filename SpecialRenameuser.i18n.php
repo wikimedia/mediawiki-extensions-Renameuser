@@ -1179,17 +1179,18 @@ $messages['ksh'] = array(
 	'renameusermove'              => 'De Metmaachersigg met Klaaf- un Ungersigge op dä neue Metmaacher-Name ömstelle',
 	'renameusersubmit'            => 'Ömdäufe!',
 	'renameusererrordoesnotexist' => 'Ene Metmaacher „<nowiki>$1</nowiki>“ kenne mer nit.',
-	'renameusererrorexists'       => 'Dä Metmaacher „<nowiki>$1</nowiki>“ jit et ald.',
-	'renameusererrorinvalid'      => 'Dä Metmaacher-Name „<nowiki>$1</nowiki>“ is nit richtich.',
+	'renameusererrorexists'       => 'Ene Metmaacher met däm Name „<nowiki>$1</nowiki>“ jit et ald.',
+	'renameusererrorinvalid'      => 'Ene Metmaacher-Name eß „<nowiki>$1</nowiki>“ ävver nit, dä wöhr nit richtich.',
 	'renameusererrortoomany'      => 'Dä Metmaacher „<nowiki>$1</nowiki>“ hät $2 Beidräch zom Wiki jemaat.
-Opjepass: Esu ene Metmaacher ömzedäufe brems et Wiki womööchlesch kräftesch.',
+
+<strong>Opjepass:</strong> Esu ene Metmaacher, met mieh wi <strong>$3</strong> Beidräch, ömzedäufe, dat brems et Wiki womööchlesch kräftesch.',
 	'renameuser-error-request'    => 'Mer hatte e Problem met Dingem Opdrach.
 Bes esu joot un versöök et noch ens.',
 	'renameuser-error-same-user'  => 'Do Tuppes! Der ahle un der neue Name es dersellve. Do bengk et Ömdäufe jaanix.',
 	'renameusersuccess'           => 'Dä Metmaacher „<nowiki>$1</nowiki>“ es jetz op „<nowiki>$2</nowiki>“ ömjedäuf.',
 	'renameuser-page-exists'      => 'De Sigg $1 es ald doh, un mer könne se nit automatesch övverschrieve',
 	'renameuser-page-moved'       => 'De Sigg wood vun „$1“ op „$2“ ömjenannt.',
-	'renameuserlogpage'           => 'Logboch met ömjedäufte Metmaachere',
+	'renameuserlogpage'           => 'Logboch vum Metmaacher-Ömdäufe',
 	'renameuserlogpagetext'       => 'Dat es et Logboch vun de ömjedäufte Metmaachere',
 	'renameuserlogentry'          => 'hät dä Metmaacher „$1“ op „$2“ ömjedäuf',
 	'renameuser-log'              => '{{PLURAL:$1|ein Beärbeidung|$1 Beärbeidung|kein Beärbeidung}}. Jrund: $2',
