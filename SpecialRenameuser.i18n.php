@@ -1198,7 +1198,7 @@ Bes esu joot un versöök et noch ens.',
 	'right-renameuser'            => 'Metmaacher ömdäufe',
 );
 
-$messages['ku'] = array(
+$messages['ku-latn'] = array(
 	'renameuser'        => 'Navî bikarhênerê biguherîne',
 	'renameuserold'     => 'Navî niha:',
 	'renameusernew'     => 'Navî nuh:',
