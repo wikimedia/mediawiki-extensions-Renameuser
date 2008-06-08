@@ -429,6 +429,8 @@ $messages['eo'] = array(
 	'renameusererrorexists'       => 'La uzanto "<nowiki>$1</nowiki>" jam ekzistas',
 	'renameusererrorinvalid'      => 'La uzantonomo "<nowiki>$1</nowiki>" estas malvalida',
 	'renameusererrortoomany'      => 'La uzanto "<nowiki>$1</nowiki>" havas $2 kontribuojn. Alinamigo de uzanto kun pli ol $3 kontribuoj povus malbone influi paĝaran funkciadon',
+	'renameuser-error-request'    => 'Estis problemo recivante la peton.
+Bonvolu retroigi kaj reprovi.',
 	'renameuser-error-same-user'  => 'Vi ne povas alinomigi uzanton al la sama nomo.',
 	'renameusersuccess'           => 'La uzanto "<nowiki>$1</nowiki>" estas alinomita al "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'La paĝo $1 jam ekzistas kaj ne povas esti aŭtomate anstataŭata.',
@@ -916,6 +918,7 @@ $messages['it'] = array(
 	'renameuserlogentry'          => 'ha rinominato $1 in "$2"',
 	'renameuser-log'              => 'Che ha $1 contributi. $2',
 	'renameuser-move-log'         => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Rinomina gli utenti',
 );
 
 /** Japanese (日本語)
@@ -1433,6 +1436,7 @@ $messages['nds'] = array(
 	'renameuserlogentry'          => 'hett „$1“ ne’en Naam „$2“ geven',
 	'renameuser-log'              => '{{PLURAL:$1|1 Ännern|$1 Ännern}}. Grund: $2',
 	'renameuser-move-log'         => "Siet bi dat Ännern vun’n Brukernaam ''[[{{ns:2}}:$1|$1]]'' na ''[[{{ns:2}}:$2|$2]]'' automaatsch schaven",
+	'right-renameuser'            => 'Brukers ne’en Naam geven',
 );
 
 /** Nepali (नेपाली)
@@ -1536,7 +1540,7 @@ $messages['oc'] = array(
 	'renameuser-page-exists'      => 'La pagina $1 existís ja e pòt pas èsser remplaçada automaticament.',
 	'renameuser-page-moved'       => 'La pagina $1 es estada desplaçada vèrs $2.',
 	'renameuser-page-unmoved'     => 'La pagina $1 pòt pas èsser renomenada en $2.',
-	'renameuserlogpage'           => "Istoric dels renomenatges d'utilizaire",
+	'renameuserlogpage'           => "Istoric dels cambiaments de nom d'utilizaire",
 	'renameuserlogpagetext'       => "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
 	'renameuserlogentry'          => 'a renomenat $1 en "$2"',
 	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
