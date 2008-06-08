@@ -894,6 +894,7 @@ $messages['is'] = array(
  * @author BrokenArrow
  * @author .anaconda
  * @author Gianfranco
+ * @author Siebrand
  */
 $messages['it'] = array(
 	'renameuser'                  => 'Modifica del nome utente',
