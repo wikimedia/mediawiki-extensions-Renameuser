@@ -30,7 +30,7 @@ Please go back and try again.',
 	'renameuser-page-unmoved' => 'The page $1 could not be moved to $2.',
 
 	'renameuserlogpage'     => 'User rename log',
-	'renameuserlogpagetext' => 'This is a log of changes to user names',
+	'renameuserlogpagetext' => 'This is a log of changes to user names.',
 	'renameuserlogentry'    => 'has renamed $1 to "$2"',
 	'renameuser-log'        => '{{PLURAL:$1|1 edit|$1 edits}}. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
