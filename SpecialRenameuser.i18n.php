@@ -705,7 +705,7 @@ $messages['he'] = array(
 	'renameuserlogpage'     => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
 	'renameuserlogentry'    => 'שינה את שם המשתמש "$1" ל-"$2"',
-	'renameuser-log'        => '{{plural:$1|עריכה אחת|$1 עריכות}}. סיבה: $2',
+	'renameuser-log'        => '{{PLURAL:$1|עריכה אחת|$1 עריכות}}. סיבה: $2',
 	'renameuser-move-log'   => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל-"[[User:$2|$2]]"',
 
 	'right-renameuser' => 'שינוי שמות משתמש',
