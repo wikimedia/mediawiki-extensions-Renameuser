@@ -580,8 +580,8 @@ $messages['fo'] = array(
 /** French (Français)
  * @author Siebrand
  * @author Urhixidur
- * @author IAlex
  * @author Cedric31
+ * @author IAlex
  * @author Grondin
  * @author Hégésippe Cormier
  */
@@ -606,7 +606,7 @@ $messages['fr'] = array(
 	'renameuserlogpage'           => 'Historique des renommages d’utilisateur',
 	'renameuserlogpagetext'       => "Ceci est l’historique des changements de noms d'utilisateur",
 	'renameuserlogentry'          => 'a renommé $1 vers « $2 »',
-	'renameuser-log'              => '$1 éditions. Motif : $2',
+	'renameuser-log'              => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
 	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
 	'right-renameuser'            => 'Renommer des utilisateurs',
 );
@@ -2019,17 +2019,18 @@ $messages['to'] = array(
  * @author SPQRobin
  */
 $messages['tr'] = array(
-	'renameuser'            => 'Kullanıcı adı değiştir',
-	'renameuserold'         => 'Şu anda ki kullanıcı adı:',
-	'renameusernew'         => 'Yeni kullanıcı adı:',
-	'renameuserreason'      => 'Neden:',
-	'renameusersubmit'      => 'Gönder',
-	'renameusersuccess'     => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
-	'renameuserlogpage'     => 'Kullanıcı adı değişikliği kayıtları',
-	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
-	'renameuserlogentry'    => '$1 → "$2" isim değişikliği yapıldı',
-	'renameuser-log'        => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
-	'right-renameuser'      => 'Kullaıcılarının adlarını değiştir',
+	'renameuser'                  => 'Kullanıcı adı değiştir',
+	'renameuserold'               => 'Şu anda ki kullanıcı adı:',
+	'renameusernew'               => 'Yeni kullanıcı adı:',
+	'renameuserreason'            => 'Neden:',
+	'renameusersubmit'            => 'Gönder',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" adlı kullanıcı bulunmamaktadır.',
+	'renameusersuccess'           => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
+	'renameuserlogpage'           => 'Kullanıcı adı değişikliği kayıtları',
+	'renameuserlogpagetext'       => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
+	'renameuserlogentry'          => '$1 → "$2" isim değişikliği yapıldı',
+	'renameuser-log'              => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
+	'right-renameuser'            => 'Kullaıcılarının adlarını değiştir',
 );
 
 /** Ukrainian (Українська)
