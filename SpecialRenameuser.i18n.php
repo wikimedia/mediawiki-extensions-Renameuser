@@ -1408,6 +1408,36 @@ $messages['mr'] = array(
 	'right-renameuser'            => 'सदस्यांची नावे बदला',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'renameuser'                  => 'Tukar nama pengguna',
+	'renameuser-desc'             => "Menukar nama pengguna (memerlukan hak ''renameuser'')",
+	'renameuserold'               => 'Nama semasa:',
+	'renameusernew'               => 'Nama baru:',
+	'renameuserreason'            => 'Sebab tukar:',
+	'renameusermove'              => 'Pindahkan laman pengguna dan laman perbincangannya (berserta semua sublaman yang ada) ke nama baru',
+	'renameusersubmit'            => 'Serah',
+	'renameusererrordoesnotexist' => 'Pengguna "<nowiki>$1</nowiki>" tidak wujud.',
+	'renameusererrorexists'       => 'Pengguna "<nowiki>$1</nowiki>" telah pun wujud.',
+	'renameusererrorinvalid'      => 'Nama pengguna "<nowiki>$1</nowiki>" tidak sah.',
+	'renameusererrortoomany'      => 'Pengguna "<nowiki>$1</nowiki>" mempunyai $2 sumbangan. Penukaran nama pengguna yang mempunyai lebih daripada $3 sumbangan boleh menjejaskan prestasi tapak web ini.',
+	'renameuser-error-request'    => 'Berlaku masalah ketika menerima permintaan anda.
+Sila undur dan cuba lagi.',
+	'renameuser-error-same-user'  => 'Anda tidak boleh menukar nama pengguna kepada nama yang sama.',
+	'renameusersuccess'           => 'Nama "<nowiki>$1</nowiki>" telah ditukar menjadi "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Laman $1 telah pun wujud dan tidak boleh ditulis ganti secara automatik.',
+	'renameuser-page-moved'       => 'Laman $1 telah dipindahkan ke $2.',
+	'renameuser-page-unmoved'     => 'Laman $1 tidak dapat dipindahkan ke $2.',
+	'renameuserlogpage'           => 'Log penukaran nama pengguna',
+	'renameuserlogpagetext'       => 'Ini ialah log penukaran nama pengguna.',
+	'renameuserlogentry'          => 'telah menukar nama $1 menjadi "$2"',
+	'renameuser-log'              => '$1 suntingan. Sebab: $2',
+	'renameuser-move-log'         => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Menukar nama pengguna',
+);
+
 $messages['nan'] = array(
 	'renameuser'       => 'Kái iōng-chiá ê miâ',
 	'renameuser-page-moved'          => '$1 í-keng sóa khì tī $2.',
@@ -1724,7 +1754,7 @@ $messages['ru'] = array(
 	'renameuserlogpage'           => 'Журнал переименований участников',
 	'renameuserlogpagetext'       => 'Это журнал произведённых переименований зарегистрированных участников.',
 	'renameuserlogentry'          => '$1 переименован в «$2»',
-	'renameuser-log'              => 'имеющий $1 правок. $2',
+	'renameuser-log'              => 'имеющий {{PLURAL:$1|1 правку|$1 правки|$1 правок}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser'            => 'переименование участников',
 );
