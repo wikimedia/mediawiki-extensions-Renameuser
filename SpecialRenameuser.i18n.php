@@ -895,6 +895,7 @@ $messages['is'] = array(
  * @author .anaconda
  * @author Gianfranco
  * @author Siebrand
+ * @author Darth Kule
  */
 $messages['it'] = array(
 	'renameuser'                  => 'Modifica del nome utente',
@@ -1146,6 +1147,7 @@ $messages['kn'] = array(
 /** Korean (한국어)
  * @author Klutzy
  * @author ToePeu
+ * @author Kwj2772
  */
 $messages['ko'] = array(
 	'renameuser'                  => '사용자 이름 변경',
@@ -1169,6 +1171,7 @@ $messages['ko'] = array(
 	'renameuserlogentry'          => '$1에서 "$2"로 이름을 바꾸었습니다.',
 	'renameuser-log'              => '$1개의 기여. 이유: $2',
 	'renameuser-move-log'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
+	'right-renameuser'            => '사용자 이름 변경',
 );
 
 /** Ripoarisch (Ripoarisch)
