@@ -358,13 +358,15 @@ $messages['cu'] = array(
 );
 
 $messages['de'] = array(
-	'renameuser'       => 'Benutzer umbenennen',
-	'renameuser-desc'  => "Umbenennen eines Benutzers (erfordert das ''renameuser''-Recht)",
-	'renameuserold'    => 'Bisheriger Benutzername:',
-	'renameusernew'    => 'Neuer Benutzername:',
-	'renameuserreason' => 'Grund:',
-	'renameusermove'   => 'Verschiebe Benutzer-/Diskussionsseite inkl. Unterseiten auf den neuen Benutzernamen',
-	'renameusersubmit' => 'Umbenennen',
+	'renameuser'          => 'Benutzer umbenennen',
+	'renameuser-desc'     => "Umbenennen eines Benutzers (erfordert das ''renameuser''-Recht)",
+	'renameuserold'       => 'Bisheriger Benutzername:',
+	'renameusernew'       => 'Neuer Benutzername:',
+	'renameuserreason'    => 'Grund:',
+	'renameusermove'      => 'Verschiebe Benutzer-/Diskussionsseite inkl. Unterseiten auf den neuen Benutzernamen',
++	'renameuserwarnings'  => 'Warnungen:',
++	'renameuserconfirm'   => 'Ja, Benutzer umbenennen',
+	'renameusersubmit'    => 'Umbenennen',
 
 	'renameusererrordoesnotexist' => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert nicht.',
 	'renameusererrorexists'       => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert bereits.',
