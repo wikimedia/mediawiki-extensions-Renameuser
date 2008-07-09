@@ -27,6 +27,7 @@ $wgExtensionCredits['specialpage'][] = array(
 # Internationalisation file
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['Renameuser'] = $dir . 'SpecialRenameuser.i18n.php';
+$wgExtensionAliasesFiles['Renameuser'] = $dir . 'SpecialRenameuser.alias.php';
 
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
