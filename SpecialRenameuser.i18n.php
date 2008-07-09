@@ -8,13 +8,15 @@
 $messages = array();
 
 $messages['en'] = array(
-	'renameuser'       => 'Rename user',
-	'renameuser-desc'  => 'Rename a user (need \'\'renameuser\'\' right)',
-	'renameuserold'    => 'Current username:',
-	'renameusernew'    => 'New username:',
-	'renameuserreason' => 'Reason for rename:',
-	'renameusermove'   => 'Move user and talk pages (and their subpages) to new name',
-	'renameusersubmit' => 'Submit',
+	'renameuser'          => 'Rename user',
+	'renameuser-desc'     => 'Rename a user (need \'\'renameuser\'\' right)',
+	'renameuserold'       => 'Current username:',
+	'renameusernew'       => 'New username:',
+	'renameuserreason'    => 'Reason for rename:',
+	'renameusermove'      => 'Move user and talk pages (and their subpages) to new name',
+	'renameuserwarnings'  => 'Warnings:',
+	'renameuserconfirm'   => 'Yes, rename the user',
+	'renameusersubmit'    => 'Submit',
 
 	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist.',
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists.',

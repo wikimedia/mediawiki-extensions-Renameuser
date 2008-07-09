@@ -54,6 +54,10 @@ class SpecialRenameuser extends SpecialPage {
 		if ( $wgRequest->wasPosted() && ! $wgRequest->getCheck( 'movepages' ) ) {
 			$is_checked = false;
 		}
+		$warnings = array();
+		if( $oun && $nun && !$wgRequest->getCheck( 'confirmaction' )  ) {
+			wfRunHooks( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
+		}
 
 		$wgOut->addHTML( "
 			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
@@ -97,16 +101,41 @@ class SpecialRenameuser extends SpecialPage {
 				</tr>"
 			);
 		}
+		if( $warnings ) {
+			$warningsHtml = array();
+			foreach( $warnings as $warning )
+				$warningsHtml[] = is_array( $warning ) ?
+					call_user_func_array( 'wfMsgWikiHtml', $warning ) :
+					wfMsgHtml( $warning );
+			$wgOut->addHTML( "
+				<tr>
+					<td>".wfMsgWikiHtml( 'renameuserwarnings' ) ."
+					</td>
+					<td class='mw-input'>" .
+						'<ul style="color: red; font-weight: bold"><li>'.implode( '</li><li>', $warningsHtml ).'</li></ul>'.
+					"</td>
+				</tr>"
+			);
+			$wgOut->addHTML( "
+				<tr>
+					<td>&nbsp;
+					</td>
+					<td class='mw-input'>" .
+						Xml::checkLabel( wfMsg( 'renameuserconfirm' ), 'confirmaction', 'confirmaction', false, array( 'tabindex' => '5' ) ) .
+					"</td>
+				</tr>"
+			);
+		}
 
 		$wgOut->addHTML( "
 			<tr>
 				<td>&nbsp;
 				</td>
 				<td class='mw-submit'>" .
-					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '5', 'id' => 'submit' ) ) .
+					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 'tabindex' => '6', 'id' => 'submit' ) ) .
 					' ' .
 					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 
-						'id' => 'submit-showBlockLog', 'tabindex' => '6' ) ) .
+						'id' => 'submit-showBlockLog', 'tabindex' => '7' ) ) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
@@ -123,6 +152,9 @@ class SpecialRenameuser extends SpecialPage {
 
 		if( $wgRequest->getText( 'token' ) === '' ) {
 			# They probably haven't even submitted the form, so don't go further.
+			return;
+		} elseif( $warnings ) {
+			# Let user read warnings
 			return;
 		} elseif( !$wgRequest->wasPosted() || !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
 			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameuser-error-request' ) . "</div>" );
@@ -371,6 +403,8 @@ class RenameuserSQL {
 		global $wgMemc, $wgDBname, $wgAuth;
 
 		wfProfileIn( __METHOD__ );
+
+		wfRunHooks( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
 
 		$dbw = wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
