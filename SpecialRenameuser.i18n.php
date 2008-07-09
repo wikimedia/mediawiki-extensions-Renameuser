@@ -364,8 +364,8 @@ $messages['de'] = array(
 	'renameusernew'       => 'Neuer Benutzername:',
 	'renameuserreason'    => 'Grund:',
 	'renameusermove'      => 'Verschiebe Benutzer-/Diskussionsseite inkl. Unterseiten auf den neuen Benutzernamen',
-+	'renameuserwarnings'  => 'Warnungen:',
-+	'renameuserconfirm'   => 'Ja, Benutzer umbenennen',
+	'renameuserwarnings'  => 'Warnungen:',
+	'renameuserconfirm'   => 'Ja, Benutzer umbenennen',
 	'renameusersubmit'    => 'Umbenennen',
 
 	'renameusererrordoesnotexist' => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert nicht.',
