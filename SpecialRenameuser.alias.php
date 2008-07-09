@@ -11,7 +11,7 @@ $aliases = array();
  * @author Jon Harald Søby
  */
 $aliases['en'] = array(
-    'Renameuser'            => array('RenameUser', 'Renameuser')
+    'Renameuser'            => array('RenameUser')
 );
 
 /** Norwegian (Norsk (bokmål))
