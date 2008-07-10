@@ -11,19 +11,26 @@ $aliases = array();
  * @author Jon Harald Søby
  */
 $aliases['en'] = array(
-    'Renameuser'            => array('RenameUser')
+    'Renameuser' => array( 'RenameUser' ),
 );
 
 /** German (Deutsch)
  * @author Raimond Spekking
  */
 $aliases['de'] = array(
-    'Renameuser'            => array( 'Benutzer umbenennen' )
+    'Renameuser' => array( 'Benutzer umbenennen' ),
+);
+
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$aliases['he'] = array(
+    'Renameuser' => array( 'שינוי_שם_משתמש' ),
 );
 
 /** Norwegian (Norsk (bokmål))
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-    'Renameuser'            => array('Gi_en_bruker_nytt_navn')
+    'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
