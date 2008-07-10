@@ -686,13 +686,15 @@ $messages['gl'] = array(
 );
 
 $messages['he'] = array(
-	'renameuser'       => 'שינוי שם משתמש',
-	'renameuser-desc'  => 'שינוי שם משתמש (דרושה הרשאת "renameuser")',
-	'renameuserold'    => 'שם משתמש נוכחי:',
-	'renameusernew'    => 'שם משתמש חדש:',
-	'renameuserreason' => 'סיבה לשינוי השם:',
-	'renameusermove'   => 'העבר את דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
-	'renameusersubmit' => 'שנה שם משתמש',
+	'renameuser'         => 'שינוי שם משתמש',
+	'renameuser-desc'    => 'שינוי שם משתמש (דרושה הרשאת "renameuser")',
+	'renameuserold'      => 'שם משתמש נוכחי:',
+	'renameusernew'      => 'שם משתמש חדש:',
+	'renameuserreason'   => 'סיבה לשינוי השם:',
+	'renameusermove'     => 'העברת דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
+	'renameuserwarnings' => 'אזהרות:',
+	'renameuserconfirm'  => 'כן, שנה את שם המשתמש',
+	'renameusersubmit'   => 'שינוי שם משתמש',
 
 	'renameusererrordoesnotexist' => 'המשתמש "<nowiki>$1</nowiki>" אינו קיים.',
 	'renameusererrorexists'       => 'המשתמש "<nowiki>$1</nowiki>" כבר קיים.',
