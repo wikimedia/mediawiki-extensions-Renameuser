@@ -2216,13 +2216,15 @@ $messages['wa'] = array(
 );
 
 $messages['yue'] = array(
-	'renameuser'       => '改用戶名',
-	'renameuser-desc'  => '幫用戶改名 (需要 \'\'renameuser\'\' 權限)',
-	'renameuserold'    => '現時嘅用戶名:',
-	'renameusernew'    => '新嘅用戶名:',
-	'renameuserreason' => '改名嘅原因:',
-	'renameusermove'   => '搬用戶頁同埋佢嘅對話頁（同埋佢哋嘅細頁）到新名',
-	'renameusersubmit' => '遞交',
+	'renameuser'         => '改用戶名',
+	'renameuser-desc'    => '幫用戶改名 (需要 \'\'renameuser\'\' 權限)',
+	'renameuserold'      => '現時嘅用戶名:',
+	'renameusernew'      => '新嘅用戶名:',
+	'renameuserreason'   => '改名嘅原因:',
+	'renameusermove'     => '搬用戶頁同埋佢嘅對話頁（同埋佢哋嘅細頁）到新名',
+	'renameuserwarnings' => '警告:',
+	'renameuserconfirm'  => '係，改呢個用戶名',
+	'renameusersubmit'   => '遞交',
 
 	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"唔存在',
 	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已經存在',
@@ -2247,13 +2249,15 @@ $messages['yue'] = array(
 );
 
 $messages['zh-hans'] = array(
-	'renameuser'       => '用户重命名',
-	'renameuser-desc'  => '为用户重命名 (需要 \'\'renameuser\'\' 权限)',
-	'renameuserold'    => '当前用户名:',
-	'renameusernew'    => '新用户名:',
-	'renameuserreason' => '重命名的原因:',
-	'renameusermove'   => '移动用户页及其对话页（包括各子页）到新的名字',
-	'renameusersubmit' => '提交',
+	'renameuser'         => '用户重命名',
+	'renameuser-desc'    => '为用户重命名 (需要 \'\'renameuser\'\' 权限)',
+	'renameuserold'      => '当前用户名:',
+	'renameusernew'      => '新用户名:',
+	'renameuserreason'   => '重命名的原因:',
+	'renameusermove'     => '移动用户页及其对话页（包括各子页）到新的名字',
+	'renameuserwarnings' => '警告:',
+	'renameuserconfirm'  => '是，为用户重命名',
+	'renameusersubmit'   => '提交',
 
 	'renameusererrordoesnotexist' => '用户"<nowiki>$1</nowiki>"不存在',
 	'renameusererrorexists'       => '用户"<nowiki>$1</nowiki>"已存在',
@@ -2278,13 +2282,15 @@ $messages['zh-hans'] = array(
 );
 
 $messages['zh-hant'] = array(
-	'renameuser'       => '用戶重新命名',
-	'renameuser-desc'  => '為用戶重新命名 (需要 \'\'renameuser\'\' 權限)',
-	'renameuserold'    => '現時用戶名:',
-	'renameusernew'    => '新用戶名:',
-	'renameuserreason' => '重新命名的原因:',
-	'renameusermove'   => '移動用戶頁及其對話頁（包括各子頁）到新的名字',
-	'renameusersubmit' => '提交',
+	'renameuser'         => '用戶重新命名',
+	'renameuser-desc'    => '為用戶重新命名 (需要 \'\'renameuser\'\' 權限)',
+	'renameuserold'      => '現時用戶名:',
+	'renameusernew'      => '新用戶名:',
+	'renameuserreason'   => '重新命名的原因:',
+	'renameusermove'     => '移動用戶頁及其對話頁（包括各子頁）到新的名字',
+	'renameuserwarnings' => '警告:',
+	'renameuserconfirm'  => '是，為用戶重新命名',
+	'renameusersubmit'   => '提交',
 
 	'renameusererrordoesnotexist' => '用戶"<nowiki>$1</nowiki>"不存在',
 	'renameusererrorexists'       => '用戶"<nowiki>$1</nowiki>"已存在',
