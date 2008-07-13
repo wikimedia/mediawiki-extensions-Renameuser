@@ -28,7 +28,7 @@ $aliases['arz'] = array(
  * @author Raimond Spekking
  */
 $aliases['de'] = array(
-    'Renameuser' => array( 'Benutzer umbenennen' ),
+	'Renameuser' => array( 'Benutzer umbenennen' ),
 );
 
 /** Finnish (Suomi) */
@@ -45,7 +45,7 @@ $aliases['fr'] = array(
  * @author Rotem Liss
  */
 $aliases['he'] = array(
-    'Renameuser' => array( 'שינוי_שם_משתמש' ),
+	'Renameuser' => array( 'שינוי_שם_משתמש' ),
 );
 
 /** Croatian (Hrvatski) */
@@ -78,10 +78,10 @@ $aliases['nl'] = array(
 	'Renameuser' => array( 'GebruikerHernoemen' ),
 );
 
-/** Norwegian (Norsk (bokmål))
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-    'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
+	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
