@@ -42,12 +42,15 @@ Please go back and try again.',
 
 /** Afrikaans (Afrikaans)
  * @author SPQRobin
+ * @author Naudefj
  */
 $messages['af'] = array(
 	'renameuser'                  => 'Hernoem gebruiker',
+	'renameuser-desc'             => "Herdoop gebruikers (benodig ''renameuser'' regte))",
 	'renameuserold'               => 'Huidige gebruikersnaam:',
 	'renameusernew'               => 'Nuwe gebruikersnaam:',
 	'renameuserreason'            => 'Rede vir hernoeming:',
+	'renameuserwarnings'          => 'Waarskuwings:',
 	'renameusersubmit'            => 'Hernoem',
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists'       => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
@@ -169,6 +172,19 @@ $messages['bcl'] = array(
 	'renameuser-page-moved'       => 'An páhinang $1 piglipat sa $2.',
 	'renameuser-page-unmoved'     => 'An páhinang $1 dai mailipat sa $2.',
 	'renameuser-log'              => '$1 mga hirá. Rasón: $2',
+);
+
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'renameusernew'      => 'Новае імя:',
+	'renameuserreason'   => 'Прычына перайменаваньня:',
+	'renameuserwarnings' => 'Папярэджаньні:',
+	'renameuserconfirm'  => 'Так, перайменаваць удзельніка',
+	'renameuserlogpage'  => 'Журнал перайменаваньняў удзельнікаў',
+	'renameuser-log'     => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньня|рэдагаваньняў}}. Прычына: $2',
+	'right-renameuser'   => 'перайменаваньне ўдзельнікаў',
 );
 
 /** Bulgarian (Български)
@@ -557,6 +573,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Nike
  * @author Crt
+ * @author Str4nd
  */
 $messages['fi'] = array(
 	'renameuser'                  => 'Käyttäjätunnuksen vaihto',
@@ -565,6 +582,8 @@ $messages['fi'] = array(
 	'renameusernew'               => 'Uusi tunnus',
 	'renameuserreason'            => 'Kommentti',
 	'renameusermove'              => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
+	'renameuserwarnings'          => 'Varoitukset:',
+	'renameuserconfirm'           => 'Kyllä, uudelleennimeä käyttäjä',
 	'renameusersubmit'            => 'Nimeä',
 	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
 	'renameusererrorexists'       => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
@@ -763,6 +782,7 @@ $messages['hi'] = array(
  * @author Dnik
  * @author Suradnik13
  * @author Siebrand
+ * @author Dalibor Bosits
  */
 $messages['hr'] = array(
 	'renameuser'                  => 'Promijeni ime suradnika',
@@ -771,6 +791,8 @@ $messages['hr'] = array(
 	'renameusernew'               => 'Novo suradničko ime:',
 	'renameuserreason'            => 'Razlog za promjenu imena:',
 	'renameusermove'              => 'Premjesti suradnikove stranice (glavnu, stranicu za razgovor i podstranice, ako postoje) na novo ime',
+	'renameuserwarnings'          => 'Upozorenja:',
+	'renameuserconfirm'           => 'Da, preimenuj suradnika',
 	'renameusersubmit'            => 'Potvrdi',
 	'renameusererrordoesnotexist' => 'Suradnik "<nowiki>$1</nowiki>" ne postoji (suradničko ime nije zauzeto).',
 	'renameusererrorexists'       => 'Suradničko ime "<nowiki>$1</nowiki>" već postoji',
@@ -1615,6 +1637,7 @@ $messages['oc'] = array(
  * @author WarX
  * @author Derbeth
  * @author Wpedzich
+ * @author Maikking
  */
 $messages['pl'] = array(
 	'renameuser'                  => 'Zmiana nazwy użytkownika',
@@ -1623,6 +1646,8 @@ $messages['pl'] = array(
 	'renameusernew'               => 'Nowa nazwa użytkownika',
 	'renameuserreason'            => 'Przyczyna zmiany nazwy',
 	'renameusermove'              => 'Przeniesienie strony osobistej i strony dyskusji użytkownika (oraz ich podstron) pod nową nazwę użytkownika',
+	'renameuserwarnings'          => 'Ostrzeżenia:',
+	'renameuserconfirm'           => 'Zmień nazwę użytkownika',
 	'renameusersubmit'            => 'Zmień',
 	'renameusererrordoesnotexist' => 'Użytkownik „<nowiki>$1</nowiki>” nie istnieje',
 	'renameusererrorexists'       => 'Użytkownik „<nowiki>$1</nowiki>” już istnieje',
@@ -1769,6 +1794,7 @@ $messages['ro'] = array(
  * @author Ahonc
  * @author Siebrand
  * @author Innv
+ * @author EugeneZelenko
  */
 $messages['ru'] = array(
 	'renameuser'                  => 'Переименовать участника',
@@ -1793,7 +1819,7 @@ $messages['ru'] = array(
 	'renameuserlogpage'           => 'Журнал переименований участников',
 	'renameuserlogpagetext'       => 'Это журнал произведённых переименований зарегистрированных участников.',
 	'renameuserlogentry'          => '$1 переименован в «$2»',
-	'renameuser-log'              => 'имеющий {{PLURAL:$1|1 правку|$1 правки|$1 правок}}. Причина: $2',
+	'renameuser-log'              => 'имеющий $1 {{PLURAL:$1|правку|правки|правок}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser'            => 'переименование участников',
 );
@@ -2111,6 +2137,7 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author EugeneZelenko
  */
 $messages['uk'] = array(
 	'renameuser'                  => 'Перейменувати користувача',
@@ -2133,7 +2160,7 @@ $messages['uk'] = array(
 	'renameuserlogpage'           => 'Журнал перейменувань користувачів',
 	'renameuserlogpagetext'       => 'Це журнал здійснених перейменувань зареєстрованих користувачів.',
 	'renameuserlogentry'          => 'перейменував $1 на «$2»',
-	'renameuser-log'              => 'мав {{PLURAL:$1|1 редагування|$1 редагування|$1 редагувань}}. Причина: $2',
+	'renameuser-log'              => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
 	'renameuser-move-log'         => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
 	'right-renameuser'            => 'Перейменування користувачів',
 );
@@ -2146,6 +2173,7 @@ $messages['ur'] = array(
 
 /** Vèneto (Vèneto)
  * @author Candalua
+ * @author Andre Engels
  */
 $messages['vec'] = array(
 	'renameuser'                  => 'Rinomina utente',
@@ -2154,6 +2182,8 @@ $messages['vec'] = array(
 	'renameusernew'               => 'Novo nome utente:',
 	'renameuserreason'            => 'Motivo del canbio nome',
 	'renameusermove'              => 'Rinomina anca la pagina utente, la pagina de discussion e le relative sotopagine',
+	'renameuserwarnings'          => 'Avertimenti:',
+	'renameuserconfirm'           => "Sì, rinomina l'utente",
 	'renameusersubmit'            => 'Invia',
 	'renameusererrordoesnotexist' => 'El nome utente "<nowiki>$1</nowiki>" no l\'esiste',
 	'renameusererrorexists'       => 'El nome utente "<nowiki>$1</nowiki>" l\'esiste de zà',
@@ -2184,6 +2214,8 @@ $messages['vi'] = array(
 	'renameusernew'               => 'Tên hiệu mới:',
 	'renameuserreason'            => 'Lý do đổi tên:',
 	'renameusermove'              => 'Di chuyển trang thành viên và thảo luận thành viên (cùng với trang con của nó) sang tên mới',
+	'renameuserwarnings'          => 'Cảnh báo:',
+	'renameuserconfirm'           => 'Đổi tên người dùng',
 	'renameusersubmit'            => 'Thực hiện',
 	'renameusererrordoesnotexist' => 'Thành viên “<nowiki>$1</nowiki>” không tồn tại.',
 	'renameusererrorexists'       => 'Thành viên “<nowiki>$1</nowiki>” đã hiện hữu.',
