@@ -68,6 +68,11 @@ $aliases['la'] = array(
 	'Renameuser' => array( 'Usorem renominare' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'Renameuser' => array( 'Benotzer ëmbenennen' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'Renameuser' => array( 'Tukar_nama_pengguna' ),
