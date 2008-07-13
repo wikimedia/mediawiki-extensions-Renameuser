@@ -14,11 +14,31 @@ $aliases['en'] = array(
     'Renameuser' => array( 'RenameUser' ),
 );
 
+/** Arabic (العربية) */
+$aliases['ar'] = array(
+	'Renameuser' => array( 'إعادة تسمية مستخدم' ),
+);
+
+/** Egyptian Spoken Arabic (مصرى) */
+$aliases['arz'] = array(
+	'Renameuser' => array( 'إعادة تسمية مستخدم' ),
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
 $aliases['de'] = array(
     'Renameuser' => array( 'Benutzer umbenennen' ),
+);
+
+/** Finnish (Suomi) */
+$aliases['fi'] = array(
+	'Renameuser' => array( 'Käyttäjätunnusten nimeäminen' ),
+);
+
+/** French (Français) */
+$aliases['fr'] = array(
+	'Renameuser' => array( 'RenommerUtilisateur', 'Renommer Utilisateur' ),
 );
 
 /** Hebrew (עברית)
@@ -28,9 +48,40 @@ $aliases['he'] = array(
     'Renameuser' => array( 'שינוי_שם_משתמש' ),
 );
 
+/** Croatian (Hrvatski) */
+$aliases['hr'] = array(
+	'Renameuser' => array( 'Preimenuj_suradnika' ),
+);
+
+/** Haitian (Kreyòl ayisyen) */
+$aliases['ht'] = array(
+	'Renameuser' => array( 'RenonmeItilizatè' ),
+);
+
+/** Hungarian (Magyar) */
+$aliases['hu'] = array(
+	'Renameuser' => array( 'Szerkesztő átnevezése' ),
+);
+
+/** Latin (Latina) */
+$aliases['la'] = array(
+	'Renameuser' => array( 'Usorem renominare' ),
+);
+
+/** Malay (Bahasa Melayu) */
+$aliases['ms'] = array(
+	'Renameuser' => array( 'Tukar_nama_pengguna' ),
+);
+
+/** Dutch (Nederlands) */
+$aliases['nl'] = array(
+	'Renameuser' => array( 'GebruikerHernoemen' ),
+);
+
 /** Norwegian (Norsk (bokmål))
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
     'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
+
