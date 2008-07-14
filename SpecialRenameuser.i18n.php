@@ -176,6 +176,7 @@ $messages['bcl'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
 	'renameusernew'      => 'Новае імя:',
@@ -183,7 +184,7 @@ $messages['be-tarask'] = array(
 	'renameuserwarnings' => 'Папярэджаньні:',
 	'renameuserconfirm'  => 'Так, перайменаваць удзельніка',
 	'renameuserlogpage'  => 'Журнал перайменаваньняў удзельнікаў',
-	'renameuser-log'     => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньня|рэдагаваньняў}}. Прычына: $2',
+	'renameuser-log'     => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньні|рэдагаваньняў}}. Прычына: $2',
 	'right-renameuser'   => 'перайменаваньне ўдзельнікаў',
 );
 
@@ -336,6 +337,7 @@ $messages['crh-cyrl'] = array(
  * @author Martin Kozák
  * @author Danny B.
  * @author Siebrand
+ * @author Matěj Grabovský
  */
 $messages['cs'] = array(
 	'renameuser'                  => 'Přejmenovat uživatele',
@@ -344,6 +346,8 @@ $messages['cs'] = array(
 	'renameusernew'               => 'Nové uživatelské jméno:',
 	'renameuserreason'            => 'Důvod přejmenování:',
 	'renameusermove'              => 'Přesunout uživatelské a diskusní stránky (a jejich podstránky) na nové jméno',
+	'renameuserwarnings'          => 'Upozornění:',
+	'renameuserconfirm'           => 'Ano, přejmenovat uživatele',
 	'renameusersubmit'            => 'Přejmenovat',
 	'renameusererrordoesnotexist' => 'Uživatel se jménem „<nowiki>$1</nowiki>“ neexistuje',
 	'renameusererrorexists'       => 'Uživatel se jménem „<nowiki>$1</nowiki>“ již existuje',
