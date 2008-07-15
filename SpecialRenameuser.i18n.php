@@ -9,7 +9,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'renameuser'          => 'Rename user',
-	'renameuser-desc'     => 'Rename a user (need \'\'renameuser\'\' right)',
+	'renameuser-desc'     => 'Adds a [[Special:Renameuser|special page]] to rename a user (need \'\'renameuser\'\' right)',
 	'renameuserold'       => 'Current username:',
 	'renameusernew'       => 'New username:',
 	'renameuserreason'    => 'Reason for rename:',
