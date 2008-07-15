@@ -162,6 +162,35 @@ $messages['ast'] = array(
 	'right-renameuser'            => 'Renomar usuarios',
 );
 
+/** Southern Balochi (بلوچی مکرانی)
+ * @author Mostafadaneshvar
+ */
+$messages['bcc'] = array(
+	'renameuser'                  => 'کاربر نامی بدل کن',
+	'renameuser-desc'             => "یک کاربر نامی بدیل کن(حق ''بدل نام''لازمن)",
+	'renameuserold'               => 'هنوکین نام کاربری:',
+	'renameusernew'               => 'نوکین نام کاربری:',
+	'renameuserreason'            => 'دلیل په نام بدل کتن:',
+	'renameusermove'              => 'صفحات گپ و کاربر (و آیانی زیر صفحات) په نوکین نام جاه په جاه کن',
+	'renameusersubmit'            => 'دیم دی',
+	'renameusererrordoesnotexist' => 'کاربر "<nowiki>$1</nowiki>" موجود نهنت.',
+	'renameusererrorexists'       => 'کاربر "<nowiki>$1</nowiki>" هنو هستن.',
+	'renameusererrorinvalid'      => 'نام کاربری "<nowiki>$1</nowiki>"  نامعتبر انت.',
+	'renameuser-error-request'    => 'مشکلی گون دریافت درخواست هستت.
+لطفا برگردیت و دگه تلاش کنیت.',
+	'renameuser-error-same-user'  => 'شما نه تونیت یک کاربر په هما پیشگین چیزی نامی بدل کنیت',
+	'renameusersuccess'           => 'کاربر "<nowiki>$1</nowiki>" نامی بدل بوتت په "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'صفحه $1 الان هست و اتوماتیکی اور آی نوسیگ نه بیت.',
+	'renameuser-page-moved'       => 'صفحه $1 جاه په جاه بیت په $2.',
+	'renameuser-page-unmoved'     => 'صفحه $1 نه تونیت په $2 جاه په جاه بیت.',
+	'renameuserlogpage'           => 'آمار نام بدل کتن کاربر',
+	'renameuserlogpagetext'       => 'شی آماری چه تغییرات نامان کاربران انت',
+	'renameuserlogentry'          => 'نام بدل بوت  $1 په "$2"',
+	'renameuser-log'              => '{{PLURAL:$1|1 اصلاح|$1 اصلاحلات}}. دلیل: $2',
+	'renameuser-move-log'         => 'اتوماتیکی صفحه جاه په جاه بیت وهدی که کاربر نام بدل بی "[[User:$1|$1]]" به "[[User:$2|$2]]"',
+	'right-renameuser'            => 'عوض کتن نام کابران',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -411,6 +440,38 @@ $messages['de'] = array(
 	'renameuser-log'              => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
 	'renameuser-move-log'         => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite',
 	'right-renameuser'            => 'Benutzer umbenennen',
+);
+
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'renameuser'                  => 'Wužywarja pśemjeniś',
+	'renameuser-desc'             => "Wužywarja pśemjeniś (pomina se pšawo ''renameuser'')",
+	'renameuserold'               => 'Aktualne wužywarske mě:',
+	'renameusernew'               => 'Nowe wužywarske mě:',
+	'renameuserreason'            => 'Pśicyna za pśemjenjenje',
+	'renameusermove'              => 'Wužywarski a diskusijny bok (a jich pódboki) do nowego mjenja pśesunuś',
+	'renameuserwarnings'          => 'Warnowanja:',
+	'renameuserconfirm'           => 'Jo, wužywarja pśemjeniś',
+	'renameusersubmit'            => 'Pśemjeniś',
+	'renameusererrordoesnotexist' => 'Wužywaŕ "<nowiki>$1</nowiki>" njeeksistujo.',
+	'renameusererrorexists'       => 'Wužywaŕ "<nowiki>$1</nowiki>" južo eksistujo.',
+	'renameusererrorinvalid'      => 'Wužywarske mě "<nowiki>$1</nowiki>" jo njepłaśiwe.',
+	'renameusererrortoomany'      => 'Wužywaŕ "<nowiki>$1</nowiki>" ma $2 {{PLURAL:$2|pśinosk|pśinoska|pśinoski|pśinoskow}}. Pśemjenjenje wužywarja z wěcej nježli $3 {{PLURAL:$3|pśinoskom|pśinoskoma|pśinoskami|pśinoskami}} móžo wugbałosć serwera na škódu wobwliwowaś',
+	'renameuser-error-request'    => 'Problem jo pśi dostawanju napšašanja wustupił.
+Źi pšosym slědk a wopytaj hyšći raz.',
+	'renameuser-error-same-user'  => 'Njamóžoš wužywarja do togo samogo mjenja pśemjeniś',
+	'renameusersuccess'           => 'Wužywaŕ "<nowiki>$1</nowiki>" jo se do "<nowiki>$2</nowiki>" pśemjenił.',
+	'renameuser-page-exists'      => 'Bok $1 južo eksistujo a njedajo se awtomatiski pśepisaś.',
+	'renameuser-page-moved'       => 'Bok $1 jo se do $2 pśesunuł.',
+	'renameuser-page-unmoved'     => 'Bok $1 njejo se do $2 pśesunuś dał.',
+	'renameuserlogpage'           => 'Protokol wužywarskich pśemjenjenjow',
+	'renameuserlogpagetext'       => 'Toś to jo protokol změnow na wužywarskich mjenjach.',
+	'renameuserlogentry'          => 'jo $1 do "$2" pśemjenił',
+	'renameuser-log'              => '{{PLURAL:&1|1 změna|$1 změnje|$1 změny|$1 změnow}}. Pśicyna: $2',
+	'renameuser-move-log'         => 'Pśi pśemjenjowanju wužywarja "[[User:$1|$1]]" do "[[User:$2|$2]]" awtomatiski pśesunjony bok',
+	'right-renameuser'            => 'Wužywarjow pśemjeniś',
 );
 
 /** Greek (Ελληνικά)
@@ -819,6 +880,7 @@ $messages['hr'] = array(
 /** Upper Sorbian (Hornjoserbsce)
  * @author Dundak
  * @author Michawiki
+ * @author Siebrand
  */
 $messages['hsb'] = array(
 	'renameuser'                  => 'Wužiwarja přemjenować',
@@ -827,6 +889,8 @@ $messages['hsb'] = array(
 	'renameusernew'               => 'Nowe wužiwarske mjeno:',
 	'renameuserreason'            => 'Přičina za přemjenowanje:',
 	'renameusermove'              => 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
+	'renameuserwarnings'          => 'Warnowanja:',
+	'renameuserconfirm'           => 'Haj, wužiwarja přemjenować',
 	'renameusersubmit'            => 'Składować',
 	'renameusererrordoesnotexist' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
 	'renameusererrorexists'       => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
@@ -843,6 +907,7 @@ $messages['hsb'] = array(
 	'renameuserlogentry'          => 'je $1 do "$2" přemjenował',
 	'renameuser-log'              => 'z $1 wobdźěłanjemi. $2',
 	'renameuser-move-log'         => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
+	'right-renameuser'            => 'Wužiwarjow přemjenować',
 );
 
 /** Hungarian (Magyar)
