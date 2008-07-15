@@ -46,7 +46,7 @@ Please go back and try again.',
  */
 $messages['af'] = array(
 	'renameuser'                  => 'Hernoem gebruiker',
-	'renameuser-desc'             => "Herdoop gebruikers (benodig ''renameuser'' regte))",
+	'renameuser-desc'             => "Herdoop gebruikers (benodig ''renameuser'' regte)",
 	'renameuserold'               => 'Huidige gebruikersnaam:',
 	'renameusernew'               => 'Nuwe gebruikersnaam:',
 	'renameuserreason'            => 'Rede vir hernoeming:',
@@ -413,7 +413,8 @@ $messages['cu'] = array(
 	'renameuserlogentry'          => 'нарече $1 именьмь "$2"',
 );
 
-/** German (Deutsch) */
+/** German (Deutsch)
+ */
 $messages['de'] = array(
 	'renameuser'                  => 'Benutzer umbenennen',
 	'renameuser-desc'             => "Umbenennen eines Benutzers (erfordert das ''renameuser''-Recht)",
@@ -438,7 +439,7 @@ $messages['de'] = array(
 	'renameuserlogpagetext'       => 'In diesem Logbuch werden die Änderungen von Benutzernamen protokolliert.',
 	'renameuserlogentry'          => 'hat „$1“ in „$2“ umbenannt',
 	'renameuser-log'              => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
-	'renameuser-move-log'         => 'durch die Umbenennung von „[[{{ns:user}}:$1]]“ nach „[[{{ns:user}}:$2]]“ automatisch verschobene Seite',
+	'renameuser-move-log'         => 'durch die Umbenennung von „[[User:$1|$1]]“ nach „[[User:$2|$2]]“ automatisch verschobene Seite',
 	'right-renameuser'            => 'Benutzer umbenennen',
 );
 
@@ -487,9 +488,11 @@ $messages['el'] = array(
 	'renameusernew'               => 'Νέο όνομα χρήστη:',
 	'renameuserreason'            => 'Λόγος μετονομασίας:',
 	'renameusermove'              => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
+	'renameuserwarnings'          => 'Προειδοποιήσεις:',
 	'renameusersubmit'            => 'Καταχώριση',
 	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
 	'renameusererrorexists'       => 'Ο χρήστης "<nowiki>$1</nowiki>" υπάρχει ήδη.',
+	'renameusererrorinvalid'      => 'Το όνομα χρήστη "<nowiki>$1</nowiki>" είναι άκυρο.',
 	'renameuser-error-request'    => 'Υπήρξε ένα πρόβλημα στην παραλαβή της αίτησης. Παρακαλούμε επιστρέψτε και ξαναδοκιμάστε.',
 	'renameuser-error-same-user'  => 'Δεν μπορείτε να μετονομάσετε έναν χρήστη σε όνομα ίδιο με το προηγούμενο.',
 	'renameuser-page-exists'      => 'Η σελίδα $1 υπάρχει ήδη και δεν μπορεί να αντικατασταθεί αυτόματα.',
@@ -908,7 +911,7 @@ $messages['hsb'] = array(
 	'renameuserlogpagetext'       => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
 	'renameuserlogentry'          => 'je $1 do "$2" přemjenował',
 	'renameuser-log'              => 'z $1 wobdźěłanjemi. $2',
-	'renameuser-move-log'         => 'Přez přemjenowanje wužiwarja „[[{{ns:user}}:$1|$1]]“ na „[[{{ns:user}}:$2|$2]]“ awtomatisce přesunjena strona.',
+	'renameuser-move-log'         => 'Přez přemjenowanje wužiwarja „[[User:$1|$1]]“ na „[[User:$2|$2]]“ awtomatisce přesunjena strona.',
 	'right-renameuser'            => 'Wužiwarjow přemjenować',
 );
 
@@ -1054,7 +1057,7 @@ $messages['ja'] = array(
 	'renameusererrortoomany'      => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
 	'renameuser-error-request'    => 'リクエストを正常に受け付けることが出来ませんでした。戻ってから再度お試しください。',
 	'renameuser-error-same-user'  => '現在と同じユーザー名に変更することは出来ません。',
-	'renameusersuccess'           => '利用者 "[[User:$1|$1]]" を "[[User:$2|$2]]" に変更しました。',
+	'renameusersuccess'           => '利用者 "<nowiki>$1</nowiki>" を "<nowiki>$2</nowiki>" に変更しました。',
 	'renameuser-page-exists'      => '$1 が既に存在しているため、自動で上書きできませんでした。',
 	'renameuser-page-moved'       => '$1 を $2 に移動しました。',
 	'renameuser-page-unmoved'     => '$1 を $2 に移動できませんでした。',
@@ -1124,7 +1127,8 @@ Mangga balia lan dicoba manèh.',
 	'right-renameuser'            => 'Ganti jeneng panganggo-panganggo',
 );
 
-/** Georgian (ქართული) */
+/** Georgian (ქართული)
+ */
 $messages['ka'] = array(
 	'renameuser'                  => 'მომხმარებლის სახელის გამოცვლა',
 	'renameuserold'               => 'ამჟამინდელი მომხმარებლის სახელი:',
@@ -1142,10 +1146,11 @@ $messages['ka'] = array(
 	'renameuserlogpage'           => 'მომხმარებლის სახელის გადარქმევის რეგისტრაციის ჟურნალი',
 	'renameuserlogpagetext'       => 'ეს არის ჟურნალი, სადაც აღრიცხულია მომხმარებლის სახელთა ცვლილებები',
 	'renameuser-log'              => 'რომელსაც გაკეთებული ჰქონდა $1 რედაქცია. $2',
-	'renameuser-move-log'         => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[{{ns:user}}:$1|$1]]" სახელის შეცვლისას "[[{{ns:user}}:$2|$2]]-ით"',
+	'renameuser-move-log'         => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[User:$1|$1]]" სახელის შეცვლისას "[[User:$2|$2]]-ით"',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬)
+ */
 $messages['kk-arab'] = array(
 	'renameuser'                  => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold'               => 'اعىمداعى قاتىسۋشى اتى:',
@@ -1165,10 +1170,11 @@ $messages['kk-arab'] = array(
 	'renameuserlogpagetext'       => 'بۇل قاتىسۋشى اتىنداعى وزگەرىستەر جۋرنالى',
 	'renameuserlogentry'          => '$1 اتاۋىن $2 دەگەنگە وزگەرتتى',
 	'renameuser-log'              => '$1 تۇزەتۋى بار. $2',
-	'renameuser-move-log'         => '«[[{{ns:user}}:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[{{ns:user}}:$2|$2]]» دەگەنگە اۋىسقاندا بەت وزدىك تۇردە جىلجىتىلدى',
+	'renameuser-move-log'         => '«[[User:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[User:$2|$2]]» دەگەنگە اۋىسقاندا بەت وزدىك تۇردە جىلجىتىلدى',
 );
 
-/** Kazakh (Cyrillic) (Қазақша (Cyrillic)) */
+/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
+ */
 $messages['kk-cyrl'] = array(
 	'renameuser'                  => 'Қатысушыны қайта атау',
 	'renameuserold'               => 'Ағымдағы қатысушы аты:',
@@ -1188,10 +1194,11 @@ $messages['kk-cyrl'] = array(
 	'renameuserlogpagetext'       => 'Бұл қатысушы атындағы өзгерістер журналы',
 	'renameuserlogentry'          => '$1 атауын «$2» дегенге өзгертті',
 	'renameuser-log'              => '$1 түзетуі бар. $2',
-	'renameuser-move-log'         => '«[[{{ns:user}}:$1|$1]]» деген қатысушы атын «[[{{ns:user}}:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
+	'renameuser-move-log'         => '«[[User:$1|$1]]» деген қатысушы атын «[[User:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 
-/** Kazakh (Latin) (Қазақша (Latin)) */
+/** Kazakh (Latin) (Қазақша (Latin))
+ */
 $messages['kk-latn'] = array(
 	'renameuser'                  => 'Qatıswşını qaýta ataw',
 	'renameuserold'               => 'Ağımdağı qatıswşı atı:',
@@ -1211,7 +1218,7 @@ $messages['kk-latn'] = array(
 	'renameuserlogpagetext'       => 'Bul qatıswşı atındağı özgerister jwrnalı',
 	'renameuserlogentry'          => '$1 atawın «$2» degenge özgertti',
 	'renameuser-log'              => '$1 tüzetwi bar. $2',
-	'renameuser-move-log'         => '«[[{{ns:user}}:$1|$1]]» degen qatıswşı atın «[[{{ns:user}}:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
+	'renameuser-move-log'         => '«[[User:$1|$1]]» degen qatıswşı atın «[[User:$2|$2]]» degenge awısqanda bet özdik türde jıljıtıldı',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1311,7 +1318,7 @@ Bes esu joot un versöök et noch ens.',
 	'renameuserlogpagetext'       => 'Dat es et Logboch vun de ömjedäufte Metmaachere',
 	'renameuserlogentry'          => 'hät dä Metmaacher „$1“ op „$2“ ömjedäuf',
 	'renameuser-log'              => '{{PLURAL:$1|ein Beärbeidung|$1 Beärbeidung|kein Beärbeidung}}. Jrund: $2',
-	'renameuser-move-log'         => 'Di Sigg weet automatesch ömjenannt weil mer dä Metmaacher „[[{{ns:user}}:$1]]“ op „[[{{ns:user}}:$2]]“ öm am däufe sin.',
+	'renameuser-move-log'         => 'Di Sigg weet automatesch ömjenannt weil mer dä Metmaacher „[[User:$1|$1]]“ op „[[User:$2|$2]]“ öm am däufe sin.',
 	'right-renameuser'            => 'Metmaacher ömdäufe',
 );
 
@@ -1383,7 +1390,7 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuserlogpagetext'       => "An dësem Logbuch ginn d'Ännerungen vum Benotzernumm festgehal.",
 	'renameuserlogentry'          => 'huet de Benotzer $1 als Benotzer "$2" ëmbenannt',
 	'renameuser-log'              => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
-	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[Benotzer:$1|$1]]" op "[[Benotzer:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
+	'renameuser-move-log'         => 'Duerch d\'Réckele vum Benotzer  "[[User:$1|$1]]" op "[[User:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 	'right-renameuser'            => 'Benotzer ëmbenennen',
 );
 
@@ -1588,7 +1595,7 @@ $messages['nds'] = array(
 	'renameuserlogpagetext'       => 'Dit is dat Logbook för ännerte Brukernaams',
 	'renameuserlogentry'          => 'hett „$1“ ne’en Naam „$2“ geven',
 	'renameuser-log'              => '{{PLURAL:$1|1 Ännern|$1 Ännern}}. Grund: $2',
-	'renameuser-move-log'         => "Siet bi dat Ännern vun’n Brukernaam ''[[{{ns:2}}:$1|$1]]'' na ''[[{{ns:2}}:$2|$2]]'' automaatsch schaven",
+	'renameuser-move-log'         => "Siet bi dat Ännern vun’n Brukernaam ''[[User:$1|$1]]'' na ''[[User:$2|$2]]'' automaatsch schaven",
 	'right-renameuser'            => 'Brukers ne’en Naam geven',
 );
 
@@ -1699,7 +1706,7 @@ $messages['oc'] = array(
 	'renameuserlogpagetext'       => "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
 	'renameuserlogentry'          => 'a renomenat $1 en "$2"',
 	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
-	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[Utilizaire:$1|$1]]" en "[[Utilizaire:$2|$2]]"',
+	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser'            => "Tornar nomenar d'utilizaires",
 );
 
@@ -2024,7 +2031,7 @@ $messages['stq'] = array(
 	'renameuserlogpagetext'       => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
 	'renameuserlogentry'          => 'Benutser "$1" uumenaamd in "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 Beoarbaidenge|$1 Beoarbaidengen}}. Gruund: $2',
-	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[{{ns:user}}:$1]]“ ätter „[[{{ns:user}}:$2]]“ automatisk ferschäuwene Siede.',
+	'renameuser-move-log'         => 'truch ju Uumbenaamenge fon „[[User:$1|$1]]“ ätter „[[User:$2|$2]]“ automatisk ferschäuwene Siede.',
 );
 
 /** Sundanese (Basa Sunda)
