@@ -63,6 +63,11 @@ $aliases['hu'] = array(
 	'Renameuser' => array( 'Szerkesztő átnevezése' ),
 );
 
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'Renameuser' => array( 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់' ),
+);
+
 /** Latin (Latina) */
 $aliases['la'] = array(
 	'Renameuser' => array( 'Usorem renominare' ),
@@ -88,5 +93,10 @@ $aliases['nl'] = array(
  */
 $aliases['no'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
+);
+
+/** Swedish (Svenska) */
+$aliases['sv'] = array(
+	'Renameuser' => array( 'Användarnamnbyte' ),
 );
 
