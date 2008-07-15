@@ -783,10 +783,12 @@ $messages['gl'] = array(
 	'right-renameuser'            => 'Renomear usuarios',
 );
 
-/** Hebrew (עברית) */
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
 $messages['he'] = array(
 	'renameuser'                  => 'שינוי שם משתמש',
-	'renameuser-desc'             => 'שינוי שם משתמש (דרושה הרשאת "renameuser")',
+	'renameuser-desc'             => 'הוספת [[Special:Renameuser|דף מיוחד]] לשינוי שם משתמש (דרושה הרשאת "renameuser)',
 	'renameuserold'               => 'שם משתמש נוכחי:',
 	'renameusernew'               => 'שם משתמש חדש:',
 	'renameuserreason'            => 'סיבה לשינוי השם:',
