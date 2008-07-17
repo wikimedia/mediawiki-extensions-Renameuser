@@ -41,6 +41,11 @@ $aliases['fr'] = array(
 	'Renameuser' => array( 'RenommerUtilisateur', 'Renommer Utilisateur' ),
 );
 
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'Renameuser' => array( 'Renomear usuario' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
