@@ -172,6 +172,8 @@ $messages['bcc'] = array(
 	'renameusernew'               => 'نوکین نام کاربری:',
 	'renameuserreason'            => 'دلیل په نام بدل کتن:',
 	'renameusermove'              => 'صفحات گپ و کاربر (و آیانی زیر صفحات) په نوکین نام جاه په جاه کن',
+	'renameuserwarnings'          => 'هوژاریان:',
+	'renameuserconfirm'           => 'بله، کاربر نامی عوض کن',
 	'renameusersubmit'            => 'دیم دی',
 	'renameusererrordoesnotexist' => 'کاربر "<nowiki>$1</nowiki>" موجود نهنت.',
 	'renameusererrorexists'       => 'کاربر "<nowiki>$1</nowiki>" هنو هستن.',
@@ -302,7 +304,7 @@ $messages['br'] = array(
 	'renameuserlogpagetext'       => 'Setu istor an implijerien bet cheñchet o anv ganto',
 	'renameuserlogentry'          => 'en deus adanvet $1 e "$2"',
 	'renameuser-log'              => 'Ssavet gantañ $1 degasadenn. $2',
-	'renameuser-move-log'         => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[Implijer:$1|$1]]" e "[[Implijer:$2|$2]]"',
+	'renameuser-move-log'         => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[User:$1|$1]]" e "[[User:$2|$2]]"',
 );
 
 /** Catalan (Català)
@@ -712,7 +714,7 @@ $messages['fr'] = array(
 	'renameuserlogpagetext'       => "Ceci est l’historique des changements de noms d'utilisateur",
 	'renameuserlogentry'          => 'a renommé $1 vers « $2 »',
 	'renameuser-log'              => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
-	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[Utilisateur:$1|$1]]" en "[[Utilisateur:$2|$2]]"',
+	'renameuser-move-log'         => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser'            => 'Renommer des utilisateurs',
 );
 
@@ -974,7 +976,7 @@ $messages['id'] = array(
 	'renameuserlogpage'           => 'Log penggantian nama pengguna',
 	'renameuserlogpagetext'       => 'Di bawah ini adalah log penggantian nama pengguna',
 	'renameuserlogentry'          => 'telah mengganti nama $1 menjadi "$2"',
-	'renameuser-log'              => 'yang telah memiliki $1 suntingan. $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 suntingan|$1 suntingan}}. Alasan: $2',
 	'renameuser-move-log'         => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser'            => 'Mengganti nama pengguna',
 );
@@ -2005,7 +2007,7 @@ $messages['sr-ec'] = array(
 	'renameuserlogpage'           => 'Историја преименовања корисника',
 	'renameuserlogpagetext'       => 'Ово је историја измена преименовања корисника',
 	'renameuserlogentry'          => 'је преименовао $1 у „$2“',
-	'renameuser-log'              => '$1 измена. Разлог: $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}. Разлог: $2',
 );
 
 /** Seeltersk (Seeltersk)
