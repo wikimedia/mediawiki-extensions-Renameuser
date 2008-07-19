@@ -281,6 +281,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Siebrand
  */
 $messages['br'] = array(
 	'renameuser'                  => 'Adenvel an implijer',
@@ -1037,7 +1038,7 @@ $messages['it'] = array(
 	'renameuserlogpage'           => 'Utenti rinominati',
 	'renameuserlogpagetext'       => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
 	'renameuserlogentry'          => 'ha rinominato $1 in "$2"',
-	'renameuser-log'              => 'Che ha $1 contributi. $2',
+	'renameuser-log'              => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log'         => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser'            => 'Rinomina gli utenti',
 );
@@ -1654,6 +1655,8 @@ $messages['no'] = array(
 	'renameusernew'               => 'Nytt brukernavn:',
 	'renameuserreason'            => 'Grunn for omdøping:',
 	'renameusermove'              => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameuserwarnings'          => 'Advarsler:',
+	'renameuserconfirm'           => 'Ja, endre navn på brukeren',
 	'renameusersubmit'            => 'Døp om',
 	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke',
 	'renameusererrorexists'       => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede',
