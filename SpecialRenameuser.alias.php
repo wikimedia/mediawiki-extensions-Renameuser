@@ -100,6 +100,11 @@ $aliases['no'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
+/** Pashto (پښتو) */
+$aliases['ps'] = array(
+	'Renameuser' => array( 'دکارونکي نوم بدلون' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Renameuser' => array( 'Användarnamnbyte' ),
