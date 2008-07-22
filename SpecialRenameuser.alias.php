@@ -105,6 +105,16 @@ $aliases['ps'] = array(
 	'Renameuser' => array( 'دکارونکي نوم بدلون' ),
 );
 
+/** Portuguese (Português) */
+$aliases['pt'] = array(
+	'Renameuser' => array( 'Renomear utilizador', 'Renomear usuário' ),
+);
+
+/** Brazilian Portuguese (Português do Brasil) */
+$aliases['pt-br'] = array(
+	'Renameuser' => array( 'Renomear utilizador', 'Renomear usuário' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Renameuser' => array( 'Användarnamnbyte' ),
