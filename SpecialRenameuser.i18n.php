@@ -254,6 +254,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Siebrand
  */
 $messages['bn'] = array(
 	'renameuser'                  => 'ব্যবহারকারী নামান্তর করো',
@@ -262,6 +263,8 @@ $messages['bn'] = array(
 	'renameusernew'               => 'নতুন ব্যবহারকারী নাম:',
 	'renameuserreason'            => 'নামান্তরের কারণ:',
 	'renameusermove'              => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
+	'renameuserwarnings'          => 'সতর্কীকরণ:',
+	'renameuserconfirm'           => 'হ্যা, ব্যবহারকারীর নাম পরিবর্তন করো',
 	'renameusersubmit'            => 'জমা দিন',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
 	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
@@ -277,6 +280,7 @@ $messages['bn'] = array(
 	'renameuserlogentry'          => '$1 থেকে "$2" তে নামান্তর করা হয়েছে',
 	'renameuser-log'              => '{{PLURAL:$1|1 সম্পাদনা|$1 সম্পাদনাসমূহ}}। কারণ: $2',
 	'renameuser-move-log'         => 'যখন ব্যবহারকারী "[[User:$1|$1]]" থেকে "[[User:$2|$2]]" তে নামান্তরিত হবে তখন সয়ঙ্ক্রিয়ভাবে পাতা সরিয়ে নেওয়া হয়েছে',
+	'right-renameuser'            => 'ব্যবহারকারীদের পুনরায় নাম দাও',
 );
 
 /** Breton (Brezhoneg)
@@ -522,6 +526,8 @@ $messages['eo'] = array(
 	'renameusernew'               => 'Nova uzantonomo:',
 	'renameuserreason'            => 'Kialo por alinomigo:',
 	'renameusermove'              => 'Movu uzantan kaj diskutan paĝojn (kaj ties subpaĝojn) al la nova nomo',
+	'renameuserwarnings'          => 'Avertoj:',
+	'renameuserconfirm'           => 'Jes, renomigu la uzanton',
 	'renameusersubmit'            => 'Ek',
 	'renameusererrordoesnotexist' => 'La uzanto "<nowiki>$1</nowiki>" ne ekzistas',
 	'renameusererrorexists'       => 'La uzanto "<nowiki>$1</nowiki>" jam ekzistas',
@@ -931,6 +937,7 @@ $messages['hu'] = array(
 	'renameusernew'               => 'Új felhasználónév:',
 	'renameuserreason'            => 'Átnevezés oka:',
 	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új név alá',
+	'renameuserconfirm'           => 'Igen, nevezd át a szerkesztőt',
 	'renameusersubmit'            => 'Elküld',
 	'renameusererrordoesnotexist' => 'Nem létezik „<nowiki>$1</nowiki>” nevű felhasználó',
 	'renameusererrorexists'       => 'Már létezik „<nowiki>$1</nowiki>” nevű felhasználó',
@@ -948,6 +955,38 @@ $messages['hu'] = array(
 	'renameuser-log'              => '$1 szerkesztése van. Indoklás: $2',
 	'renameuser-move-log'         => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 	'right-renameuser'            => 'felhasználók átnevezése',
+);
+
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'renameuser'                  => 'Renominar usator',
+	'renameuser-desc'             => "Adde un [[Special:Renameuser|pagina special]] pro renominar un usator (require le privilegio ''renameuser'')",
+	'renameuserold'               => 'Nomine de usator actual:',
+	'renameusernew'               => 'Nove nomine de usator:',
+	'renameuserreason'            => 'Motivo del renomination:',
+	'renameusermove'              => 'Renominar etiam le paginas de usator e de discussion (e lor subpaginas) verso le nove nomine',
+	'renameuserwarnings'          => 'Advertimentos:',
+	'renameuserconfirm'           => 'Si, renomina le usator',
+	'renameusersubmit'            => 'Submitter',
+	'renameusererrordoesnotexist' => 'Le usator "<nowiki>$1</nowiki>" non existe.',
+	'renameusererrorexists'       => 'Le usator ""<nowiki>$1</nowiki>"" existe ja.',
+	'renameusererrorinvalid'      => 'Le nomine de usator "<nowiki>$1</nowiki>" es invalide.',
+	'renameusererrortoomany'      => 'Le usator "<nowiki>$1</nowiki>" ha $2 contributiones. Le renomination de un usator con plus de $3 contributiones poterea afficer negativemente le prestationes del sito.',
+	'renameuser-error-request'    => 'Il habeva un problema con le reception del requesta.
+Per favor retorna e reprova.',
+	'renameuser-error-same-user'  => 'Tu non pote renominar un usator al mesme nomine.',
+	'renameusersuccess'           => 'Le usator "<nowiki>$1</nowiki>" ha essite renominate a "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Le pagina $1 existe ja e non pote esser automaticamente superscribite.',
+	'renameuser-page-moved'       => 'Le pagina $1 ha essite renominate a $2.',
+	'renameuser-page-unmoved'     => 'Le pagina $1 non poteva esser renominate a $2.',
+	'renameuserlogpage'           => 'Registro de renominationes de usatores',
+	'renameuserlogpagetext'       => 'Isto es un registro de cambiamentos de nomines de usator.',
+	'renameuserlogentry'          => 'ha renominate $1 a "$2"',
+	'renameuser-log'              => '{{PLURAL:$1|1 modification|$1 modificationes}}. Motivo: $2',
+	'renameuser-move-log'         => 'Le pagina ha essite automaticamente renominate con le renomination del usator "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Renominar usatores',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1024,6 +1063,8 @@ $messages['it'] = array(
 	'renameusernew'               => 'Nuovo nome utente:',
 	'renameuserreason'            => 'Motivo del cambio nome',
 	'renameusermove'              => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
+	'renameuserwarnings'          => 'Avvisi:',
+	'renameuserconfirm'           => 'Sì, rinomina questo utente',
 	'renameusersubmit'            => 'Invia',
 	'renameusererrordoesnotexist' => 'Il nome utente "<nowiki>$1</nowiki>" non esiste',
 	'renameusererrorexists'       => 'Il nome utente "<nowiki>$1</nowiki>" esiste già',
@@ -1297,6 +1338,7 @@ $messages['ko'] = array(
 
 /** Ripoarisch (Ripoarisch)
  * @author Purodha
+ * @author Siebrand
  */
 $messages['ksh'] = array(
 	'renameuser'                  => 'Metmaacher ömdäufe',
@@ -1305,6 +1347,8 @@ $messages['ksh'] = array(
 	'renameusernew'               => 'Dä neue Metmaacher-Name',
 	'renameuserreason'            => 'Jrund för et Ömdäufe:',
 	'renameusermove'              => 'De Metmaachersigg met Klaaf- un Ungersigge op dä neue Metmaacher-Name ömstelle',
+	'renameuserwarnings'          => 'Warnunge:',
+	'renameuserconfirm'           => 'Jo, dunn dä Metmaacher ömbenenne un em singe Name ändere',
 	'renameusersubmit'            => 'Ömdäufe!',
 	'renameusererrordoesnotexist' => 'Ene Metmaacher „<nowiki>$1</nowiki>“ kenne mer nit.',
 	'renameusererrorexists'       => 'Ene Metmaacher met däm Name „<nowiki>$1</nowiki>“ jit et ald.',
@@ -1798,6 +1842,8 @@ $messages['pt'] = array(
 	'renameusernew'               => 'Novo nome de utilizador:',
 	'renameuserreason'            => 'Motivo de renomear:',
 	'renameusermove'              => 'Mover as páginas de utilizador, páginas de discussão de utilizador e sub-páginas para o novo nome',
+	'renameuserwarnings'          => 'Alertas:',
+	'renameuserconfirm'           => 'Sim, renomeie o utilizador',
 	'renameusersubmit'            => 'Enviar',
 	'renameusererrordoesnotexist' => 'O utilizador "<nowiki>$1</nowiki>" não existe',
 	'renameusererrorexists'       => 'O utilizador "<nowiki>$1</nowiki>" já existe',
@@ -2115,6 +2161,7 @@ $messages['te'] = array(
 	'renameusernew'               => 'కొత్త వాడుకరి పేరు:',
 	'renameuserreason'            => 'పేరు మార్చడానికి కారణం:',
 	'renameusermove'              => 'సభ్యుని పేజీ, చర్చాపేజీలను (వాటి ఉపపేజీలతో సహా) కొత్త పేరుకు తరలించండి',
+	'renameuserwarnings'          => 'హెచ్చరికలు:',
 	'renameusersubmit'            => 'పంపించు',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" పేరుగల వాడుకరి లేరు.',
 	'renameusererrorexists'       => '"<nowiki>$1</nowiki>" పేరుతో వాడుకరి ఇప్పటికే ఉన్నారు.',
