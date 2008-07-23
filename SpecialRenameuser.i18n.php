@@ -376,6 +376,7 @@ $messages['crh-cyrl'] = array(
  * @author Danny B.
  * @author Siebrand
  * @author Matěj Grabovský
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'renameuser'                  => 'Přejmenovat uživatele',
@@ -400,7 +401,7 @@ $messages['cs'] = array(
 	'renameuserlogpage'           => 'Kniha přejmenování uživatelů',
 	'renameuserlogpagetext'       => 'Toto je záznam přejmenování uživatelů (změn uživatelského jména).',
 	'renameuserlogentry'          => 'přejmenovává $1 na "$2"',
-	'renameuser-log'              => '$1 editací. $2',
+	'renameuser-log'              => '{{PLURAL:$1|1 editace|$1 editace|$1 editací}}. Zdůvodnění: $2',
 	'renameuser-move-log'         => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'right-renameuser'            => 'Přejmenovávání uživatelů',
 );
@@ -1612,6 +1613,13 @@ Sila undur dan cuba lagi.',
 	'renameuser-log'              => '$1 suntingan. Sebab: $2',
 	'renameuser-move-log'         => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser'            => 'Menukar nama pengguna',
+);
+
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'renameusersubmit' => 'Tiquihuāz',
 );
 
 /** Min Nan Chinese (Bân-lâm-gú) */
