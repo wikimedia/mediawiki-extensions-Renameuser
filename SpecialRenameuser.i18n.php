@@ -43,6 +43,7 @@ Please go back and try again.',
 /** Afrikaans (Afrikaans)
  * @author SPQRobin
  * @author Naudefj
+ * @author Siebrand
  */
 $messages['af'] = array(
 	'renameuser'                  => 'Hernoem gebruiker',
@@ -57,6 +58,7 @@ $messages['af'] = array(
 	'renameusererrorinvalid'      => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
 	'renameusersuccess'           => 'Die gebruiker "<nowiki>$1</nowiki>" is hernoem na "<nowiki>$2</nowiki>".',
 	'renameuserlogpage'           => 'Logboek van gebruikershernoemings',
+	'right-renameuser'            => 'Hernoem gebruikers',
 );
 
 /** Aragonese (Aragonés)
@@ -99,7 +101,7 @@ $messages['an'] = array(
  */
 $messages['ar'] = array(
 	'renameuser'                  => 'إعادة تسمية مستخدم',
-	'renameuser-desc'             => "إعادة تسمية مستخدم (يحتاج إلى صلاحية ''renameuser'')",
+	'renameuser-desc'             => "يضيف [[Special:Renameuser|صفحة خاصة]] لإعادة تسمية مستخدم (يحتاج إلى صلاحية ''renameuser'')",
 	'renameuserold'               => 'اسم المستخدم الحالي:',
 	'renameusernew'               => 'الاسم الجديد:',
 	'renameuserreason'            => 'السبب لإعادة التسمية:',
@@ -111,7 +113,8 @@ $messages['ar'] = array(
 	'renameusererrorexists'       => 'المستخدم "<nowiki>$1</nowiki>" موجود بالفعل',
 	'renameusererrorinvalid'      => 'اسم المستخدم "<nowiki>$1</nowiki>" غير صحيح',
 	'renameusererrortoomany'      => 'يمتلك المستخدم "<nowiki>$1</nowiki>" $2 مساهمة، إعادة تسمية مستخدم يمتلك أكثر من $3 مساهمة قد يؤثر سلبا على أداء الموقع.',
-	'renameuser-error-request'    => 'حدثت مشكلة أثناء استقبال الطلب. من فضلك عد وحاول مرة ثانية.',
+	'renameuser-error-request'    => 'حدثت مشكلة أثناء استقبال الطلب.
+من فضلك عد وحاول مرة ثانية.',
 	'renameuser-error-same-user'  => 'لا يمكنك إعادة تسمية مستخدم بنفس الاسم كما كان من قبل.',
 	'renameusersuccess'           => 'تمت إعادة تسمية المستخدم "<nowiki>$1</nowiki>" إلى "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'الصفحة $1 موجودة بالفعل ولا يمكن إنشاء أخرى مكانها أوتوماتيكيا.',
