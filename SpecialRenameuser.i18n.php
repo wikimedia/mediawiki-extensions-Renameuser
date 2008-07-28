@@ -427,10 +427,11 @@ $messages['cu'] = array(
 );
 
 /** German (Deutsch)
+ * @author Raimond Spekking
  */
 $messages['de'] = array(
 	'renameuser'                  => 'Benutzer umbenennen',
-	'renameuser-desc'             => "Umbenennen eines Benutzers (erfordert das ''renameuser''-Recht)",
+	'renameuser-desc'             => "Ergänzt eine [[Special:Renameuser|Spezialseite]] zur Umbenennung eines Benutzers (erfordert das ''renameuser''-Recht)",
 	'renameuserold'               => 'Bisheriger Benutzername:',
 	'renameusernew'               => 'Neuer Benutzername:',
 	'renameuserreason'            => 'Grund:',
