@@ -1060,9 +1060,10 @@ $messages['is'] = array(
  * @author Gianfranco
  * @author Siebrand
  * @author Darth Kule
+ * @author Nemo bis
  */
 $messages['it'] = array(
-	'renameuser'                  => 'Modifica del nome utente',
+	'renameuser'                  => 'Rinomina utente',
 	'renameuser-desc'             => "Funzione per rinominare un utente (richiede i diritti di ''renameuser'')",
 	'renameuserold'               => 'Nome utente attuale:',
 	'renameusernew'               => 'Nuovo nome utente:',
@@ -1071,18 +1072,18 @@ $messages['it'] = array(
 	'renameuserwarnings'          => 'Avvisi:',
 	'renameuserconfirm'           => 'Sì, rinomina questo utente',
 	'renameusersubmit'            => 'Invia',
-	'renameusererrordoesnotexist' => 'Il nome utente "<nowiki>$1</nowiki>" non esiste',
-	'renameusererrorexists'       => 'Il nome utente "<nowiki>$1</nowiki>" esiste già',
+	'renameusererrordoesnotexist' => 'L\'utente "<nowiki>$1</nowiki>" non esiste',
+	'renameusererrorexists'       => 'L\'utente "<nowiki>$1</nowiki>" esiste già',
 	'renameusererrorinvalid'      => 'Il nome utente "<nowiki>$1</nowiki>" non è valido',
-	'renameusererrortoomany'      => 'Il nome utente "<nowiki>$1</nowiki>" ha $2 contributi. Modificare il nome di un utente con più di $3 contributi potrebbe incidere negativamente sulle prestazioni del sito',
+	'renameusererrortoomany'      => 'L\'utente "<nowiki>$1</nowiki>" ha $2 contributi; rinominare un utente con più di $3 contributi può influenzare negativamente le prestazioni del sito',
 	'renameuser-error-request'    => 'Si è verificato un problema nella ricezione della richiesta. Tornare indietro e riprovare.',
 	'renameuser-error-same-user'  => 'Non è possibile rinominare un utente allo stesso nome che aveva già.',
-	'renameusersuccess'           => 'Il nome utente "<nowiki>$1</nowiki>" è stato modificato in "<nowiki>$2</nowiki>"',
+	'renameusersuccess'           => 'L\'utente "<nowiki>$1</nowiki>" è stato rinominato in "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists'      => 'La pagina $1 esiste già; impossibile sovrascriverla automaticamente.',
 	'renameuser-page-moved'       => 'La pagina $1 è stata spostata a $2.',
 	'renameuser-page-unmoved'     => 'Impossibile spostare la pagina $1 a $2.',
 	'renameuserlogpage'           => 'Utenti rinominati',
-	'renameuserlogpagetext'       => 'Di seguito viene presentato il registro delle modifiche ai nomi utente',
+	'renameuserlogpagetext'       => 'Di seguito sono elencate le rinominazioni degli utenti.',
 	'renameuserlogentry'          => 'ha rinominato $1 in "$2"',
 	'renameuser-log'              => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log'         => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
@@ -1347,7 +1348,7 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'renameuser'                  => 'Metmaacher ömdäufe',
-	'renameuser-desc'             => "Metmaacher ömdäufe — do buch mer et Rääsch (''renameuser'') för",
+	'renameuser-desc'             => '[[Special:Renameuser|Metmaacher ömdäufe]] — ävver do buch mer et Rääsch „<i lang=en">renameuser</i>“ för.',
 	'renameuserold'               => 'Dä ahle Metmaacher-Name',
 	'renameusernew'               => 'Dä neue Metmaacher-Name',
 	'renameuserreason'            => 'Jrund för et Ömdäufe:',
@@ -1461,6 +1462,8 @@ $messages['li'] = array(
 	'renameusernew'               => 'Nuje gebroekersnaam:',
 	'renameuserreason'            => 'Ree veur hernömme:',
 	'renameusermove'              => "De gebroekerspazjena en euverlèkpazjena (en eventueel subpazjena's) hernömmme nao de nuje gebroekersnaam",
+	'renameuserwarnings'          => 'Waarschuwinge:',
+	'renameuserconfirm'           => 'Jao, hernaam gebroeker',
 	'renameusersubmit'            => 'Hernöm',
 	'renameusererrordoesnotexist' => 'De gebroeker "<nowiki>$1</nowiki>" besteit neet.',
 	'renameusererrorexists'       => 'De gebroeker "<nowiki>$1</nowiki>" besteit al.',
