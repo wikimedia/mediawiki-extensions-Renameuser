@@ -550,7 +550,7 @@ Bonvolu retroigi kaj reprovi.',
 	'renameuserlogentry'          => 'estas renomigita $1 al "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log'         => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
-	'right-renameuser'            => 'Alinomu uzantojn',
+	'right-renameuser'            => 'Alinomigi uzantojn',
 );
 
 /** Spanish (Español)
@@ -942,6 +942,7 @@ $messages['hu'] = array(
 	'renameusernew'               => 'Új felhasználónév:',
 	'renameuserreason'            => 'Átnevezés oka:',
 	'renameusermove'              => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új név alá',
+	'renameuserwarnings'          => 'Figyelmeztetések:',
 	'renameuserconfirm'           => 'Igen, nevezd át a szerkesztőt',
 	'renameusersubmit'            => 'Elküld',
 	'renameusererrordoesnotexist' => 'Nem létezik „<nowiki>$1</nowiki>” nevű felhasználó',
