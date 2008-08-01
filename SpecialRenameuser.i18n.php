@@ -1496,16 +1496,25 @@ $messages['lt'] = array(
 	'renameusernew'               => 'Naujas naudotojo vardas:',
 	'renameuserreason'            => 'Priežastis pervadinimui:',
 	'renameusermove'              => 'Perkelti naudotoją ir aptarimo puslapius (bei jo subpuslapius) prie naujo vardo',
+	'renameuserwarnings'          => 'Įspėjimai:',
+	'renameuserconfirm'           => 'Taip, pervadinti naudotoją',
 	'renameusersubmit'            => 'Patvirtinti',
 	'renameusererrordoesnotexist' => 'Naudotojas "<nowiki>$1</nowiki>" neegzistuoja.',
 	'renameusererrorexists'       => 'Naudotojas "<nowiki>$1</nowiki>" jau egzistuoja.',
 	'renameusererrorinvalid'      => 'Naudotojo vardas "<nowiki>$1</nowiki>" netinkamas.',
+	'renameusererrortoomany'      => 'Naudotojas "<nowiki>$1</nowiki>" yra atlikęs $2 pakeitimus, pervadinat naudotoją, atlikusį daugiau nei $3 pakeitimų, gali būti neigiamai paveiktas tinklalapio darbas.',
+	'renameuser-error-request'    => 'Iškilo prašymo gavimo problema.
+Prašome eiti atgal ir bandyti iš naujo.',
+	'renameuser-error-same-user'  => 'Jūs negalite pervadinti naudotojo į tokį pat vardą, kaip pirmiau.',
 	'renameusersuccess'           => 'Naudotojas "<nowiki>$1</nowiki>" buvo pervadintas į "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists'      => 'Puslapis $1 jau egzistuoja ir negali būti automatiškai perrašytas.',
+	'renameuser-page-moved'       => 'Puslapis $1 buvo perkeltas į $2.',
 	'renameuserlogpage'           => 'Naudotojų pervadinimo sąrašas',
 	'renameuserlogpagetext'       => 'Tai yra naudotojų vardų pakeitimų sąrašas',
 	'renameuserlogentry'          => 'buvo pervadintas $1 į "$2"',
 	'renameuser-log'              => '{{PLURAL:$1|1 redagavimas|$1 redagavimų(ai)}}. Priežastis: $2',
 	'renameuser-move-log'         => 'Puslapis automatiškai perkeltas, kai buvo pervadinamas naudotojas "[[User:$1|$1]]" į "[[User:$2|$2]]"',
+	'right-renameuser'            => 'Pervadinti naudotojus',
 );
 
 /** Latvian (Latviešu)
