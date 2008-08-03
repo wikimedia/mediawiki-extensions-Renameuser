@@ -16,12 +16,12 @@ $aliases['en'] = array(
 
 /** Arabic (العربية) */
 $aliases['ar'] = array(
-	'Renameuser' => array( 'إعادة تسمية مستخدم' ),
+	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
 $aliases['arz'] = array(
-	'Renameuser' => array( 'إعادة تسمية مستخدم' ),
+	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
 
 /** German (Deutsch)
