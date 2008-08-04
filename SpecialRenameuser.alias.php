@@ -14,12 +14,16 @@ $aliases['en'] = array(
     'Renameuser' => array( 'RenameUser' ),
 );
 
-/** Arabic (العربية) */
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $aliases['ar'] = array(
 	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
 $aliases['arz'] = array(
 	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
