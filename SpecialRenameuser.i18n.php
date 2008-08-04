@@ -135,9 +135,17 @@ $messages['arc'] = array(
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ghaly
+ */
+$messages['arz'] = array(
+	'renameuser'         => 'تغيير تسمية يوزر',
+	'renameuserlogpage'  => 'سجل تغيير تسمية اليوزرز',
+	'renameuserlogentry' => 'اتغيرت تسمية $1 لاسم "$2"',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
- * @author Siebrand
  */
 $messages['ast'] = array(
 	'renameuser'                  => 'Renomar usuariu',
@@ -146,6 +154,8 @@ $messages['ast'] = array(
 	'renameusernew'               => "Nome d'usuariu nuevu:",
 	'renameuserreason'            => 'Motivu del cambéu de nome:',
 	'renameusermove'              => "Treslladar les páxines d'usuariu y d'alderique (y toles subpáxines) al nome nuevu",
+	'renameuserwarnings'          => 'Avisos:',
+	'renameuserconfirm'           => "Sí, renomar l'usuariu",
 	'renameusersubmit'            => 'Executar',
 	'renameusererrordoesnotexist' => 'L\'usuariu "<nowiki>$1</nowiki>" nun esiste.',
 	'renameusererrorexists'       => 'L\'usuariu "<nowiki>$1</nowiki>" yá esiste.',
@@ -1758,7 +1768,6 @@ $messages['nso'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
- * @author Siebrand
  */
 $messages['oc'] = array(
 	'renameuser'                  => "Tornar nomenar l'utilizaire",
@@ -1767,6 +1776,8 @@ $messages['oc'] = array(
 	'renameusernew'               => "Nom novèl de l'utilizaire :",
 	'renameuserreason'            => 'Motiu del cambiament de nom :',
 	'renameusermove'              => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
+	'renameuserwarnings'          => 'Avertiments :',
+	'renameuserconfirm'           => 'Òc, tornar nomenar l’utilizaire',
 	'renameusersubmit'            => 'Sometre',
 	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
 	'renameusererrorexists'       => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís ja",
@@ -1781,7 +1792,7 @@ $messages['oc'] = array(
 	'renameuserlogpage'           => "Istoric dels cambiaments de nom d'utilizaire",
 	'renameuserlogpagetext'       => "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
 	'renameuserlogentry'          => 'a renomenat $1 en "$2"',
-	'renameuser-log'              => "qu'aviá $1 edicions a son actiu. $2",
+	'renameuser-log'              => '$1 {{PLURAL:$1|edicion|edicions}}. Motiu : $2',
 	'renameuser-move-log'         => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser'            => "Tornar nomenar d'utilizaires",
 );
