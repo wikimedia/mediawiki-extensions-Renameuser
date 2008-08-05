@@ -1533,9 +1533,13 @@ Prašome eiti atgal ir bandyti iš naujo.',
 );
 
 /** Latvian (Latviešu)
- * @author SPQRobin
+ * @author Xil
  */
 $messages['lv'] = array(
+	'renameuserwarnings'    => 'Brīdinājumi:',
+	'renameuserconfirm'     => 'Jā, pārdēvēt lietotāju',
+	'renameusererrorexists' => 'Lietotājs "<nowiki>$1</nowiki>" jau ir.',
+	'renameusersuccess'     => 'Lietotājs "<nowiki>$1</nowiki>" pārdēvēts par "<nowiki>$2</nowiki>".',
 	'renameuserlogpage'     => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
 );
