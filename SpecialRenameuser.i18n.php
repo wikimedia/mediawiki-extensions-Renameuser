@@ -139,9 +139,11 @@ $messages['arc'] = array(
  * @author Ghaly
  */
 $messages['arz'] = array(
-	'renameuser'         => 'تغيير تسمية يوزر',
-	'renameuserlogpage'  => 'سجل تغيير تسمية اليوزرز',
-	'renameuserlogentry' => 'اتغيرت تسمية $1 لاسم "$2"',
+	'renameuser'            => 'تغيير تسمية يوزر',
+	'renameuserreason'      => 'السبب لإعادة التسميه:',
+	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
+	'renameuserlogpage'     => 'سجل تغيير تسمية اليوزرز',
+	'renameuserlogentry'    => 'اتغيرت تسمية $1 لاسم "$2"',
 );
 
 /** Asturian (Asturianu)
@@ -421,6 +423,7 @@ $messages['cs'] = array(
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author Svetko
+ * @author ОйЛ
  */
 $messages['cu'] = array(
 	'renameuser'                  => 'Прѣименѹи польѕевател҄ь',
@@ -433,6 +436,7 @@ $messages['cu'] = array(
 	'renameusererrorexists'       => 'Польѕевател҄ь «<nowiki>$1</nowiki>» ѥстъ ю',
 	'renameusererrorinvalid'      => 'Имѧ «<nowiki>$1</nowiki>» нѣстъ годѣ',
 	'renameusererrortoomany'      => 'Польѕевател҄ь «<nowiki>$1</nowiki>» $2 {{PLURAL:$2|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ. Аще польѕевател прѣименѹѥши кыи болѥ $3 {{PLURAL:$3|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ, то зълѣ бѫдетъ.',
+	'renameuserlogpage'           => 'по́льꙃєватєлъ прѣимєнова́ниꙗ їсторі́ꙗ',
 	'renameuserlogentry'          => 'нарече $1 именьмь "$2"',
 );
 
@@ -1327,10 +1331,11 @@ $messages['kn'] = array(
  * @author Klutzy
  * @author ToePeu
  * @author Kwj2772
+ * @author Albamhandae
  */
 $messages['ko'] = array(
-	'renameuser'                  => '사용자 이름 변경',
-	'renameuserold'               => '기존 사용자 이름:',
+	'renameuser'                  => '계정 이름 변경',
+	'renameuserold'               => '기존 계정 이름:',
 	'renameusernew'               => '새 이름:',
 	'renameuserreason'            => '바꾸는 이유:',
 	'renameusermove'              => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
@@ -1346,11 +1351,11 @@ $messages['ko'] = array(
 	'renameuser-page-moved'       => '$1 문서를 $2(으)로 이동했습니다.',
 	'renameuser-page-unmoved'     => '$1 문서를 $2(으)로 이동하지 못했습니다.',
 	'renameuserlogpage'           => '이름 변경 기록',
-	'renameuserlogpagetext'       => '사용자 이름 변경 기록입니다.',
+	'renameuserlogpagetext'       => '계정 이름 변경 기록입니다.',
 	'renameuserlogentry'          => '$1에서 "$2"로 이름을 바꾸었습니다.',
 	'renameuser-log'              => '$1개의 기여. 이유: $2',
 	'renameuser-move-log'         => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
-	'right-renameuser'            => '사용자 이름 변경',
+	'right-renameuser'            => '계정 이름 변경',
 );
 
 /** Ripoarisch (Ripoarisch)
