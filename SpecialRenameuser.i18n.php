@@ -137,6 +137,7 @@ $messages['arc'] = array(
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
+ * @author Ramsis II
  */
 $messages['arz'] = array(
 	'renameuser'            => 'تغيير تسمية يوزر',
@@ -144,6 +145,7 @@ $messages['arz'] = array(
 	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
 	'renameuserlogpage'     => 'سجل تغيير تسمية اليوزرز',
 	'renameuserlogentry'    => 'اتغيرت تسمية $1 لاسم "$2"',
+	'right-renameuser'      => 'غير اسم اليوزرز',
 );
 
 /** Asturian (Asturianu)
@@ -1339,6 +1341,7 @@ $messages['ko'] = array(
 	'renameusernew'               => '새 이름:',
 	'renameuserreason'            => '바꾸는 이유:',
 	'renameusermove'              => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
+	'renameuserconfirm'           => '예, 이름을 변경합니다.',
 	'renameusersubmit'            => '변경',
 	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
 	'renameusererrorexists'       => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
