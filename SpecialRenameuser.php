@@ -16,12 +16,12 @@ $wgGroupPermissions['bureaucrat']['renameuser'] = true;
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
-	'author' => 'Ævar Arnfjörð Bjarmason, Aaron Schulz',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
-	'description' => 'Rename a user (need \'\'renameuser\'\' right)',
+	'author'         => array( 'Ævar Arnfjörð Bjarmason', 'Aaron Schulz' ),
+	'url'            => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
+	'description'    => 'Rename a user (need \'\'renameuser\'\' right)',
 	'descriptionmsg' => 'renameuser-desc',
-	'svn-date' => '$LastChangedDate$',
-	'svn-revision' => '$Rev$',
+	'svn-date'       => '$LastChangedDate$',
+	'svn-revision'   => '$Rev$',
 );
 
 # Internationalisation file
