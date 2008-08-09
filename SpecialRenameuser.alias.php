@@ -101,7 +101,7 @@ $aliases['nl'] = array(
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
+	'Renameuser' => array( 'Gi en bruker nytt navn' ),
 );
 
 /** Pashto (پښتو) */
