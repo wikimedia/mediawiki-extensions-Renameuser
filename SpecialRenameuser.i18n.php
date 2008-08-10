@@ -41,6 +41,7 @@ Please go back and try again.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Jon Harald Søby
  * @author Meno25
  */
 $messages['qqq'] = array(
@@ -99,6 +100,13 @@ $messages['an'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edizión|$1 edizions}}. Razón: $2',
 	'renameuser-move-log' => 'Pachina tresladata automaticament en renombrar o usuario "[[User:$1|$1]]" como "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
+);
+
+/** Old English (Anglo-Saxon)
+ * @author Spacebirdy
+ */
+$messages['ang'] = array(
+	'renameuser' => 'Ednemnan brūcend',
 );
 
 /** Arabic (العربية)
@@ -646,6 +654,8 @@ $messages['fa'] = array(
 	'renameusernew' => 'نام کاربری جدید:',
 	'renameuserreason' => 'علت تغییر نام کاربری:',
 	'renameusermove' => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
+	'renameuserwarnings' => 'هشدار:',
+	'renameuserconfirm' => 'بله، نام کاربر را تغییر بده',
 	'renameusersubmit' => 'ثبت',
 	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
 	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
