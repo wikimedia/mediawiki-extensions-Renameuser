@@ -77,6 +77,11 @@ $aliases['km'] = array(
 	'Renameuser' => array( 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់' ),
 );
 
+/** Korean (한국어) */
+$aliases['ko'] = array(
+	'Renameuser' => array( '이름바꾸기', '계정이름바꾸기', '사용자이름바꾸기' ),
+);
+
 /** Latin (Latina) */
 $aliases['la'] = array(
 	'Renameuser' => array( 'Usorem renominare' ),
