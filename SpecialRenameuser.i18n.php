@@ -154,6 +154,9 @@ $messages['arc'] = array(
 $messages['arz'] = array(
 	'renameuser' => 'تغيير تسمية يوزر',
 	'renameuserreason' => 'السبب لإعادة التسميه:',
+	'renameuserwarnings' => 'التحذيرات:',
+	'renameuserconfirm' => 'ايوه،سمي اليوزر دا من تاني',
+	'renameusersubmit' => 'تقديم',
 	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
 	'renameuserlogpage' => 'سجل تغيير تسمية اليوزرز',
 	'renameuserlogentry' => 'اتغيرت تسمية $1 لاسم "$2"',
@@ -778,6 +781,24 @@ $messages['frp'] = array(
 	'renameuser-move-log' => 'Pâge ôtomaticament dèplaciê pendent lo renomâjo de l’utilisator « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'renameuser' => 'Feroarje in meidochnamme',
+	'renameuserold' => 'Alde namme:',
+	'renameusernew' => 'Nije namme:',
+	'renameusermove' => 'Werneam meidogger en oerlis siden (mei ûnderlizzende siden) nei de nije namme',
+	'renameusersubmit' => 'Feroarje',
+	'renameusererrordoesnotexist' => 'Der is gjin meidogger mei de namme "<nowiki>$1</nowiki>"',
+	'renameusererrorexists' => 'De meidochnamme "<nowiki>$1</nowiki>" wurdt al brûkt.',
+	'renameusererrorinvalid' => 'De meidochnamme "<nowiki>$1</nowiki>" mei net.',
+	'renameusererrortoomany' => 'Meidogger "<nowiki>$1</nowiki>" hat $2 bewurkings dien; it feroarjen fan de namme fan in meidgger mei mear as $3 bewurkings koe in neidielige ynfloed op de prestaasje fan de webstee hawwe.',
+	'renameusersuccess' => 'Meidogger "<nowiki>$1</nowiki>" is no meidogger "<nowiki>$2</nowiki>".',
+	'renameuserlogpage' => 'Nammeferoar-loch',
+	'renameuserlogpagetext' => 'Dit is in loch fan feroarings fan meidochnammen.',
+);
+
 /** Irish (Gaeilge) */
 $messages['ga'] = array(
 	'renameuser' => 'Athainmnigh úsáideoir',
@@ -889,7 +910,7 @@ $messages['hi'] = array(
  */
 $messages['hr'] = array(
 	'renameuser' => 'Promijeni ime suradnika',
-	'renameuser-desc' => "Preimenuj suradnika (potrebna su ''renameuser'' prava)",
+	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] za preimenovanje suradnika (potrebno je ''renameuser'' pravo)",
 	'renameuserold' => 'Trenutno suradničko ime:',
 	'renameusernew' => 'Novo suradničko ime:',
 	'renameuserreason' => 'Razlog za promjenu imena:',
@@ -911,7 +932,7 @@ $messages['hr'] = array(
 	'renameuserlogpagetext' => 'Ovo je evidencija promjena suradničkih imena',
 	'renameuserlogentry' => 'je promijenio suradničko ime $1 u "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
-	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom promjena imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom promjene imena iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 	'right-renameuser' => 'Preimenuj suradnike',
 );
 
@@ -1978,7 +1999,7 @@ $messages['ru'] = array(
 	'renameusersubmit' => 'Выполнить',
 	'renameusererrordoesnotexist' => 'Участник с именем «<nowiki>$1</nowiki>» не зарегистрирован.',
 	'renameusererrorexists' => 'Участник с именем «<nowiki>$1</nowiki>» уже зарегистрирован.',
-	'renameusererrorinvalid' => 'Недопустимое имя участника: <nowiki>$1</nowiki>',
+	'renameusererrorinvalid' => 'Недопустимое имя участника «<nowiki>$1</nowiki>»',
 	'renameusererrortoomany' => 'Участник <nowiki>$1</nowiki> внёс $2 правок, переименование участника с более чем $3 правками может оказать негативное влияние на доступ к сайту.',
 	'renameuser-error-request' => 'Возникли затруднения с получением запроса. Пожалуйста, вернитесь назад и повторите ещё раз.',
 	'renameuser-error-same-user' => 'Вы не можете переименовать участника в тоже имя, что и было раньше.',
@@ -1988,8 +2009,8 @@ $messages['ru'] = array(
 	'renameuser-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'renameuserlogpage' => 'Журнал переименований участников',
 	'renameuserlogpagetext' => 'Это журнал произведённых переименований зарегистрированных участников.',
-	'renameuserlogentry' => '$1 переименован в «$2»',
-	'renameuser-log' => 'имеющий $1 {{PLURAL:$1|правку|правки|правок}}. Причина: $2',
+	'renameuserlogentry' => 'переименовал $1 в «$2»',
+	'renameuser-log' => '$1 {{PLURAL:$1|правка|правки|правок}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser' => 'переименование участников',
 );
