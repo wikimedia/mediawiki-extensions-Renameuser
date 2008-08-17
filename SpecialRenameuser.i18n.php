@@ -153,13 +153,30 @@ $messages['arc'] = array(
  */
 $messages['arz'] = array(
 	'renameuser' => 'تغيير تسمية يوزر',
+	'renameuser-desc' => "بيضيف [[Special:Renameuser|صفحة مخصوصة]] علشان تغير اسم يوزر(محتاج صلاحية ''renameuser'')",
+	'renameuserold' => 'اسم اليوزر الحالي:',
+	'renameusernew' => 'اسم اليوزر الجديد:',
 	'renameuserreason' => 'السبب لإعادة التسميه:',
+	'renameusermove' => 'انقل صفحات اليوزر و مناقشاته (بالصفحات الفرعية)للاسم الجديد.',
 	'renameuserwarnings' => 'التحذيرات:',
 	'renameuserconfirm' => 'ايوه،سمي اليوزر دا من تاني',
 	'renameusersubmit' => 'تقديم',
+	'renameusererrordoesnotexist' => 'اليوزر"<nowiki>$1</nowiki>" مالوش وجود.',
+	'renameusererrorexists' => 'اليوزر "<nowiki>$1</nowiki>" موجود من قبل كدا.',
+	'renameusererrorinvalid' => 'اسم اليوزر "<nowiki>$1</nowiki>"مش صحيح.',
+	'renameusererrortoomany' => 'اليوزر "<nowiki>$1</nowiki>" عنده $2 مساهمة, تغيير اسم يوزر عنده اكتر من $3 مساهمة ممكن يأثر على اداء الموقع تاثير سلبي.',
+	'renameuser-error-request' => 'حصلت مشكلة في استلام الطلب.
+لو سمحت ارجع لورا و حاول تاني.',
+	'renameuser-error-same-user' => 'ما ينفعش تغير اسم اليوزر لنفس الاسم من تاني.',
+	'renameusersuccess' => 'اليوزر "<nowiki>$1</nowiki>" اتغير اسمه لـ"<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'الصفحة $1 موجودة من قبل كدا و ماينفعش يتكتب عليها اوتوماتيكي.',
 	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
+	'renameuser-page-unmoved' => 'الصفحة $1 مانفعش تتنقل لـ$2.',
 	'renameuserlogpage' => 'سجل تغيير تسمية اليوزرز',
+	'renameuserlogpagetext' => 'دا سجل بالتغييرات في أسامي اليوزرز',
 	'renameuserlogentry' => 'اتغيرت تسمية $1 لاسم "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. علشان: $2',
+	'renameuser-move-log' => 'الصفحة اتنقلت اوتوماتيكي لما اليوزر  "[[User:$1|$1]]" اتغير اسمه لـ "[[User:$2|$2]]"',
 	'right-renameuser' => 'غير اسم اليوزرز',
 );
 
