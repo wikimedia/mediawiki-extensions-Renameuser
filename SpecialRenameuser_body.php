@@ -376,23 +376,23 @@ class RenameuserSQL {
 		$this->uid = $uid;
 		
 		$this->tables = array(); // Immediate updates
-		$this->tables['image'] = 'img_user_text';
-		$this->tables['oldimage'] = 'oi_user_text';
-		# FIXME: $this->tables['filearchive'] = 'fa_user_text'; (not indexed yet)
+		$this->tables['image'] = array('img_user_text','img_user');
+		$this->tables['oldimage'] = array('oi_user_text','oi_user');
+		# FIXME: $this->tables['filearchive'] = array('fa_user_text','fa_user'); (not indexed yet)
 		$this->tablesJob = array(); // Slow updates
 		// If this user has a large number of edits, use the jobqueue
 		if( User::edits($this->uid) > RENAMEUSER_CONTRIBJOB ) {
 			$this->tablesJob['revision'] = array('rev_user_text','rev_user','rev_timestamp');
 			$this->tablesJob['archive'] = array('ar_user_text','ar_user','ar_timestamp');
 		} else {
-			$this->tables['revision'] = 'rev_user_text';
-			$this->tables['archive'] = 'ar_user_text';
+			$this->tables['revision'] = array('rev_user_text','rev_user');
+			$this->tables['archive'] = array('ar_user_text','ar_user');
 		}
 		// Recent changes is pretty hot, deadlocks occur if done all at once
 		if( wfQueriesMustScale() ) {
 			$this->tablesJob['recentchanges'] = array('rc_user_text','rc_user','rc_timestamp');
 		} else {
-			$this->tables['recentchanges'] = 'rc_user_text';
+			$this->tables['recentchanges'] = array('rc_user_text','rc_user');
 		}
 	}
 
@@ -432,10 +432,11 @@ class RenameuserSQL {
 				'log_title' => $oldTitle->getDBKey() ),
 			__METHOD__ );
 		// Do immediate updates!
-		foreach( $this->tables as $table => $field ) {
+		foreach( $this->tables as $table => $fieldSet ) {
+			list($nameCol,$userCol) = $fieldSet;
 			$dbw->update( $table,
-				array( $field => $this->new ),
-				array( $field => $this->old ),
+				array( $nameCol => $this->new ),
+				array( $nameCol => $this->old, $userCol => $this->uid ),
 				__METHOD__
 			);
 		}
