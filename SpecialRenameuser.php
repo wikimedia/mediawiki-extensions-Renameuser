@@ -41,7 +41,18 @@ global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
 $wgLogTypes[]                          = 'renameuser';
 $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
-$wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
+#$wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
+$wgLogActionsHandlers['renameuser/renameuser'] = 'wfRenameUserLogActionText'; // deal with old breakage
+
+function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL, $params = array(), $filterWikilinks=false ) {
+	if( !$title || $title->getNamespace() == -1 ) {
+		$rv = ''; // handled in comment, the old way
+	} else {
+		array_unshift( $params, $title );
+		$rv = wfMsgReal( 'renameuserlogentry', $params, true, !$skin );
+	}
+	return $rv;
+}
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
