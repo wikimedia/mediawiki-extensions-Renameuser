@@ -21,7 +21,7 @@ $messages['en'] = array(
 	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist.',
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists.',
 	'renameusererrorinvalid'      => 'The username "<nowiki>$1</nowiki>" is invalid.',
-	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 contributions, renaming a user with more than $3 contributions could adversely affect site performance.',
+	'renameusererrortoomany'      => 'The user "<nowiki>$1</nowiki>" has $2 {{PLURAL:$2|contribution|contributions}}, renaming a user with more than $3 {{PLURAL:$3|contribution|contributions}} could adversely affect site performance.',
 	'renameuser-error-request'    => 'There was a problem with receiving the request.
 Please go back and try again.',
 	'renameuser-error-same-user'  => 'You cannot rename a user to the same thing as before.',
