@@ -49,7 +49,7 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 		$rv = ''; // handled in comment, the old way
 	} else {
 		array_unshift( $params, $title );
-		$rv = wfMsgReal( 'renameuserlogentry', $params, true, !$skin );
+		$rv = wfMsgExt( 'renameuserlogentry', array('parseinline'), $params );
 	}
 	return $rv;
 }
