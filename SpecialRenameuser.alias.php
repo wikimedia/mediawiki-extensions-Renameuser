@@ -97,6 +97,11 @@ $aliases['ms'] = array(
 	'Renameuser' => array( 'Tukar_nama_pengguna' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'Renameuser' => array( 'Gebruker_herneumen' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Renameuser' => array( 'GebruikerHernoemen' ),
