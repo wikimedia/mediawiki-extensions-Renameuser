@@ -48,7 +48,7 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 	if( !$title || $title->getNamespace() == -1 ) {
 		$rv = ''; // handled in comment, the old way
 	} else {
-		array_unshift( $params, $title );
+		array_unshift( $params, $title->getText() );
 		$rv = wfMsgExt( 'renameuserlogentry', array('parseinline'), $params );
 	}
 	return $rv;
