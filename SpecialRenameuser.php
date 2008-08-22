@@ -45,7 +45,7 @@ $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'wfRenameUserLogActionText'; // deal with old breakage
 
 function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL, $params = array(), $filterWikilinks=false ) {
-	if( !$title || $title->getNamespace() == -1 ) {
+	if( !$title || $title->getNamespace() !== NS_USER ) {
 		$rv = ''; // handled in comment, the old way
 	} else {
 		array_unshift( $params, $title->getText() );
