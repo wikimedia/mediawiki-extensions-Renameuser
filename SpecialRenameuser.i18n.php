@@ -126,7 +126,7 @@ $messages['ar'] = array(
 	'renameusererrordoesnotexist' => 'لا يوجد مستخدم بالاسم "<nowiki>$1</nowiki>"',
 	'renameusererrorexists' => 'المستخدم "<nowiki>$1</nowiki>" موجود بالفعل',
 	'renameusererrorinvalid' => 'اسم المستخدم "<nowiki>$1</nowiki>" غير صحيح',
-	'renameusererrortoomany' => 'يمتلك المستخدم "<nowiki>$1</nowiki>" $2 مساهمة، إعادة تسمية مستخدم يمتلك أكثر من $3 مساهمة قد يؤثر سلبا على أداء الموقع.',
+	'renameusererrortoomany' => 'المستخدم "<nowiki>$1</nowiki>" لديه $2 {{PLURAL:$2|مساهمة|مساهمة}}، إعادة تسمية مستخدم لديه أكثر من $3 {{PLURAL:$3|مساهمة|مساهمة}} يمكن أن تؤثر سلبا على أداء الموقع.',
 	'renameuser-error-request' => 'حدثت مشكلة أثناء استقبال الطلب.
 من فضلك عد وحاول مرة ثانية.',
 	'renameuser-error-same-user' => 'لا يمكنك إعادة تسمية مستخدم بنفس الاسم كما كان من قبل.',
@@ -136,7 +136,7 @@ $messages['ar'] = array(
 	'renameuser-page-unmoved' => 'لم يتمكن من نقل الصفحة $1 إلى $2.',
 	'renameuserlogpage' => 'سجل إعادة تسمية المستخدمين',
 	'renameuserlogpagetext' => 'هذا سجل بالتغييرات في أسماء المستخدمين',
-	'renameuserlogentry' => 'أعاد تسمية $1 باسم "$2"',
+	'renameuserlogentry' => 'أعاد تسمية [[:$1|$1]] باسم "[[User:$2|$2]]"',
 	'renameuser-log' => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
@@ -1160,7 +1160,7 @@ $messages['ja'] = array(
 	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
 	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
-	'renameusererrortoomany' => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿履歴があります。$3 件以上の投稿履歴がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameusererrortoomany' => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿記録があります。$3 件以上の投稿記録がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
 	'renameuser-error-request' => 'リクエストを正常に受け付けることが出来ませんでした。戻ってから再度お試しください。',
 	'renameuser-error-same-user' => '現在と同じユーザー名に変更することは出来ません。',
 	'renameusersuccess' => '利用者 "<nowiki>$1</nowiki>" を "<nowiki>$2</nowiki>" に変更しました。',
@@ -1680,6 +1680,13 @@ Sila undur dan cuba lagi.',
 	'renameuser-log' => '$1 suntingan. Sebab: $2',
 	'renameuser-move-log' => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Menukar nama pengguna',
+);
+
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'renameuserconfirm' => "Iva, erġa' semmi l-utent",
 );
 
 /** Nahuatl (Nāhuatl)
