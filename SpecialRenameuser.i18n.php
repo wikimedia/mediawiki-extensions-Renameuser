@@ -696,6 +696,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Agony
  * @author Crt
  * @author Nike
  * @author Str4nd
@@ -722,7 +723,7 @@ $messages['fi'] = array(
 	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
 	'renameuserlogpage' => 'Tunnusten vaihdot',
 	'renameuserlogpagetext' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi ”$2”',
+	'renameuserlogentry' => 'on nimennyt käyttäjän [[:$1|$1]] käyttäjäksi ”[[User:$2|$2]]”',
 	'renameuser-log' => 'Tehnyt {{PLURAL:$1|yhden muokkauksen|$1 muokkausta}}. $2',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 	'right-renameuser' => 'Nimetä käyttäjätunnuksia uudelleen',
@@ -1156,6 +1157,8 @@ $messages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
 	'renameusermove' => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
+	'renameuserwarnings' => '警告:',
+	'renameuserconfirm' => 'はい、利用者名を変更します',
 	'renameusersubmit' => '変更',
 	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
 	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
@@ -1169,9 +1172,10 @@ $messages['ja'] = array(
 	'renameuser-page-unmoved' => '$1 を $2 に移動できませんでした。',
 	'renameuserlogpage' => '利用者名変更記録',
 	'renameuserlogpagetext' => 'これは、利用者名の変更を記録したものです。',
-	'renameuserlogentry' => '$1 を "$2" へ利用者名変更しました。',
+	'renameuserlogentry' => '[[:$1|$1]]を "[[User:$2|$2]]" へ利用者名変更しました。',
 	'renameuser-log' => '投稿数$1回。理由: $2',
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
+	'right-renameuser' => '利用者名変更',
 );
 
 /** Jutish (Jysk)
@@ -2407,7 +2411,7 @@ $messages['vec'] = array(
 	'renameusererrordoesnotexist' => 'El nome utente "<nowiki>$1</nowiki>" no l\'esiste',
 	'renameusererrorexists' => 'El nome utente "<nowiki>$1</nowiki>" l\'esiste de zà',
 	'renameusererrorinvalid' => 'El nome utente "<nowiki>$1</nowiki>" no\'l xe mìa valido.',
-	'renameusererrortoomany' => 'El nome utente "<nowiki>$1</nowiki>" el gà $2 contributi. Modificar el nome de un utente con piassè de $3 contributi podarìà conprométar le prestazion del sito.',
+	'renameusererrortoomany' => 'El nome utente "<nowiki>$1</nowiki>" el gà $2 {{PLURAL:$2|contributo|contributi}}. Modificar el nome de un utente con piassè de $3 {{PLURAL:$3|contributo|contributi}} podarìà conprométar le prestazion del sito.',
 	'renameuser-error-request' => 'Se gà verificà un problema ne la ricezion de la richiesta. Torna indrìo e ripróa da novo.',
 	'renameuser-error-same-user' => "No se pol rinominar un utente al stesso nome che'l gavea zà.",
 	'renameusersuccess' => 'El nome utente "<nowiki>$1</nowiki>" el xe stà canbià in "<nowiki>$2</nowiki>"',
@@ -2416,7 +2420,7 @@ $messages['vec'] = array(
 	'renameuser-page-unmoved' => 'No se pole spostar la pagina $1 a $2.',
 	'renameuserlogpage' => 'Registro dei utenti rinominà',
 	'renameuserlogpagetext' => 'De seguito vien presentà el registro de le modifiche ai nomi utente',
-	'renameuserlogentry' => 'gà rinominà $1 in "$2"',
+	'renameuserlogentry' => 'gà rinominà [[:$1|$1]] in "[[User:$2|$2]]"',
 	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
