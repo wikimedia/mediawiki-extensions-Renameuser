@@ -149,6 +149,7 @@ $messages['arc'] = array(
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
+ * @author Meno25
  * @author Ramsis II
  */
 $messages['arz'] = array(
@@ -159,13 +160,13 @@ $messages['arz'] = array(
 	'renameuserreason' => 'السبب لإعادة التسميه:',
 	'renameusermove' => 'انقل صفحات اليوزر و مناقشاته (بالصفحات الفرعية)للاسم الجديد.',
 	'renameuserwarnings' => 'التحذيرات:',
-	'renameuserconfirm' => 'ايوه،سمي اليوزر دا من تاني',
+	'renameuserconfirm' => 'ايوه،سمى اليوزر دا من تاني',
 	'renameusersubmit' => 'تقديم',
 	'renameusererrordoesnotexist' => 'اليوزر"<nowiki>$1</nowiki>" مالوش وجود.',
 	'renameusererrorexists' => 'اليوزر "<nowiki>$1</nowiki>" موجود من قبل كدا.',
 	'renameusererrorinvalid' => 'اسم اليوزر "<nowiki>$1</nowiki>"مش صحيح.',
 	'renameusererrortoomany' => 'اليوزر "<nowiki>$1</nowiki>" عنده {{PLURAL:$2|مساهمة|مساهمة}}, تغيير اسم يوزر عنده اكتر من {{PLURAL:$3|مساهمة|مساهمة}}  ممكن يأثر على اداء الموقع تاثير سلبي.',
-	'renameuser-error-request' => 'حصلت مشكلة في استلام الطلب.
+	'renameuser-error-request' => 'حصلت مشكلة فى استلام الطلب.
 لو سمحت ارجع لورا و حاول تاني.',
 	'renameuser-error-same-user' => 'ما ينفعش تغير اسم اليوزر لنفس الاسم من تاني.',
 	'renameusersuccess' => 'اليوزر "<nowiki>$1</nowiki>" اتغير اسمه لـ"<nowiki>$2</nowiki>".',
@@ -173,10 +174,10 @@ $messages['arz'] = array(
 	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
 	'renameuser-page-unmoved' => 'الصفحة $1 مانفعش تتنقل لـ$2.',
 	'renameuserlogpage' => 'سجل تغيير تسمية اليوزرز',
-	'renameuserlogpagetext' => 'دا سجل بالتغييرات في أسامي اليوزرز',
+	'renameuserlogpagetext' => 'دا سجل بالتغييرات فى أسامى اليوزرز',
 	'renameuserlogentry' => 'اتغيرت تسمية [[:$1|$1]] لـ "[[User:$2|$2]]"',
 	'renameuser-log' => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. علشان: $2',
-	'renameuser-move-log' => 'الصفحة اتنقلت اوتوماتيكي لما اليوزر  "[[User:$1|$1]]" اتغير اسمه لـ "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'الصفحة اتنقلت اوتوماتيكى لما اليوزر  "[[User:$1|$1]]" اتغير اسمه لـ "[[User:$2|$2]]"',
 	'right-renameuser' => 'غير اسم اليوزرز',
 );
 
@@ -765,7 +766,7 @@ $messages['fr'] = array(
 	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
 	'renameuserlogpage' => 'Historique des renommages d’utilisateur',
 	'renameuserlogpagetext' => "Ceci est l’historique des changements de noms d'utilisateur",
-	'renameuserlogentry' => 'a renommé $1 vers « $2 »',
+	'renameuserlogentry' => 'a renommé « [[:$1|$1]] » vers « [[User:$2|$2]] »',
 	'renameuser-log' => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renommer des utilisateurs',
@@ -931,7 +932,7 @@ $messages['hr'] = array(
 	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] za preimenovanje suradnika (potrebno je ''renameuser'' pravo)",
 	'renameuserold' => 'Trenutačno suradničko ime:',
 	'renameusernew' => 'Novo suradničko ime:',
-	'renameuserreason' => 'Razlog za promjenu imena:',
+	'renameuserreason' => 'Razlog za preimenovanje:',
 	'renameusermove' => 'Premjesti suradnikove stranice (glavnu, stranicu za razgovor i podstranice, ako postoje) na novo ime',
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, preimenuj suradnika',
@@ -1823,7 +1824,7 @@ $messages['oc'] = array(
 	'renameuserold' => "Nom actual de l'utilizaire :",
 	'renameusernew' => "Nom novèl de l'utilizaire :",
 	'renameuserreason' => 'Motiu del cambiament de nom :',
-	'renameusermove' => 'Desplaçar totas las paginas de l’utilizaire vèrs lo nom novèl',
+	'renameusermove' => 'Desplaçar totas las paginas de l’utilizaire cap al nom novèl',
 	'renameuserwarnings' => 'Avertiments :',
 	'renameuserconfirm' => 'Òc, tornar nomenar l’utilizaire',
 	'renameusersubmit' => 'Sometre',
