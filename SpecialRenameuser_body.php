@@ -415,6 +415,11 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
+
+		// Delete from memcached.
+		global $wgMemc;
+		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
+
 		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
 			array( 'ipb_address' => $this->new ),
