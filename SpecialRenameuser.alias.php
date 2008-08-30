@@ -72,6 +72,11 @@ $aliases['hu'] = array(
 	'Renameuser' => array( 'Szerkesztő átnevezése' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'Renameuser' => array( 'Ganti nama pengguna' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'Renameuser' => array( 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់' ),
