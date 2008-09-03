@@ -91,7 +91,7 @@ $messages['an'] = array(
 	'renameusererrordoesnotexist' => 'L\'usuario "<nowiki>$1</nowiki>" no esiste.',
 	'renameusererrorexists' => 'L\'usuario "<nowiki>$1</nowiki>" ya esiste.',
 	'renameusererrorinvalid' => 'O nombre d\'usuario "<nowiki>$1</nowiki>" no ye conforme.',
-	'renameusererrortoomany' => 'L\'usuario "<nowiki>$1</nowiki>" tiene $2 contrebuzions. Renombrar un usuario con más de $3 contrebuzions podría afeutar t\'o funzionamiento d\'o sitio.',
+	'renameusererrortoomany' => 'L\'usuario "<nowiki>$1</nowiki>" tiene $2 {{PLURAL:$2|contrebuzión|contrebuzions}}. Si renombra un usuario con más de $3 {{PLURAL:$3|contrebuzión|contrebuzions}} podría afeutar ta o funzionamiento d\'o sitio.',
 	'renameuser-error-request' => 'Bi abió un problema reculliendo a demanda. Por fabor, torne entazaga y prebe una atra begada.',
 	'renameuser-error-same-user' => 'No puede renombrar un usuario con o mesmo nombre que ya teneba.',
 	'renameusersuccess' => 'S\'ha renombrau l\'usuario "<nowiki>$1</nowiki>" como "<nowiki>$2</nowiki>".',
@@ -858,7 +858,7 @@ $messages['gl'] = array(
 	'renameuser-page-moved' => 'A páxina $1 foi movida a $2.',
 	'renameuser-page-unmoved' => 'A páxina $1 non pode ser movida a $2.',
 	'renameuserlogpage' => 'Rexistro de usuarios que mudaron o nome',
-	'renameuserlogpagetext' => 'Este é un rexistro dos cambios dos nomes de usuarios',
+	'renameuserlogpagetext' => 'Este é un rexistro dos cambios nos nomes de usuario.',
 	'renameuserlogentry' => 'mudou o nome de "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 edicións}}. Razón: $2',
 	'renameuser-move-log' => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
@@ -1243,7 +1243,9 @@ Mangga balia lan dicoba manèh.',
 	'right-renameuser' => 'Ganti jeneng panganggo-panganggo',
 );
 
-/** Georgian (ქართული) */
+/** Georgian (ქართული)
+ * @author Malafaya
+ */
 $messages['ka'] = array(
 	'renameuser' => 'მომხმარებლის სახელის გამოცვლა',
 	'renameuserold' => 'ამჟამინდელი მომხმარებლის სახელი:',
@@ -1260,7 +1262,7 @@ $messages['ka'] = array(
 	'renameuser-page-unmoved' => 'არ მოხერხდა გვერდის $1 გადატანა $2-ზე.',
 	'renameuserlogpage' => 'მომხმარებლის სახელის გადარქმევის რეგისტრაციის ჟურნალი',
 	'renameuserlogpagetext' => 'ეს არის ჟურნალი, სადაც აღრიცხულია მომხმარებლის სახელთა ცვლილებები',
-	'renameuser-log' => 'რომელსაც გაკეთებული ჰქონდა $1 რედაქცია. $2',
+	'renameuser-log' => '$1 რედაქცია. მიზეზი: $2',
 	'renameuser-move-log' => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[User:$1|$1]]" სახელის შეცვლისას "[[User:$2|$2]]-ით"',
 );
 
