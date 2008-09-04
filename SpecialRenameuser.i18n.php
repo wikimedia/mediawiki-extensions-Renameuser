@@ -291,7 +291,7 @@ $messages['bg'] = array(
 	'renameusererrordoesnotexist' => 'Потребителят „<nowiki>$1</nowiki>“ не съществува.',
 	'renameusererrorexists' => 'Потребителят „<nowiki>$1</nowiki>“ вече съществува.',
 	'renameusererrorinvalid' => 'Потребителското име „<nowiki>$1</nowiki>“ е невалидно.',
-	'renameusererrortoomany' => 'Потребителят „<nowiki>$1</nowiki>“ има $2 редакции. Преименуването на потребители, имащи повече от $3 редакции, може да се отрази лошо върху производителността на сайта.',
+	'renameusererrortoomany' => 'Потребителят „<nowiki>$1</nowiki>“ има $2 {{PLURAL:$2|принос|приноса}}. Преименуването на потребители с повече от $3 {{PLURAL:$2|принос|приноса}}, може да се отрази зле върху производителността на сайта.',
 	'renameuser-error-request' => 'Имаше проблем с приемането на заявката. Върнете се на предишната страница и опитайте отново!',
 	'renameuser-error-same-user' => 'Новото потребителско име е същото като старото.',
 	'renameusersuccess' => 'Потребителят „<nowiki>$1</nowiki>“ беше преименуван на „<nowiki>$2</nowiki>“',
@@ -300,7 +300,7 @@ $messages['bg'] = array(
 	'renameuser-page-unmoved' => 'Страницата $1 не можа да бъде преместена като $2.',
 	'renameuserlogpage' => 'Дневник на преименуванията',
 	'renameuserlogpagetext' => 'В този дневник се записват преименуванията на потребители.',
-	'renameuserlogentry' => 'преименува $1 на „$2“',
+	'renameuserlogentry' => 'преименува [[User:$1|$1]] на „[[User:$2|$2]]“',
 	'renameuser-log' => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 	'right-renameuser' => 'преименуване на потребители',
@@ -2520,6 +2520,19 @@ $messages['wa'] = array(
 	'renameuserlogpagetext' => "Chal pa dzo c' est ene djivêye des uzeus k' ont candjî leu no d' elodjaedje.",
 	'renameuser-log' => "k' aveut ddja fwait $1 candjmints. $2",
 	'renameuser-move-log' => "Pådje displaeceye otomaticmint tot rlomant l' uzeu «[[User:$1|$1]]» viè «[[User:$2|$2]]»",
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'renameuser' => 'בײַטן באַניצער נאָמען',
+	'renameuserold' => 'לויפיגער באניצער-נאמען:',
+	'renameusernew' => 'נייער באניצער-נאמען',
+	'renameusererrordoesnotexist' => 'דער באניצער "<nowiki>$1</nowiki>" עקסיסטירט נישט.',
+	'renameusererrorexists' => 'דער באניצער  "<nowiki>$1</nowiki>" עקסיסטירט שוין.',
+	'renameusererrorinvalid' => 'דער באניצער נאמען  "<nowiki>$1</nowiki>" איז נישט גילטיק.',
+	'renameuserlogpage' => 'באַניצער נאָמען-טויש לאָג-בוך',
 );
 
 /** Yue (粵語) */
