@@ -805,6 +805,16 @@ $messages['frp'] = array(
 	'renameuser-move-log' => 'Pâge ôtomaticament dèplaciê pendent lo renomâjo de l’utilisator « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 );
 
+/** Friulian (Furlan)
+ * @author Klenje
+ */
+$messages['fur'] = array(
+	'renameuser' => 'Cambie non par un utent',
+	'renameuserold' => 'Non utent atuâl:',
+	'renameusernew' => 'Gnûf non utent:',
+	'renameuserwarnings' => 'Avîs:',
+);
+
 /** Western Frisian (Frysk)
  * @author Snakesteuben
  */
@@ -1072,7 +1082,8 @@ $messages['id'] = array(
 	'renameusererrordoesnotexist' => 'Pengguna "<nowiki>$1</nowiki>" tidak ada',
 	'renameusererrorexists' => 'Pengguna "<nowiki>$1</nowiki>" telah ada',
 	'renameusererrorinvalid' => 'Nama pengguna "<nowiki>$1</nowiki>" tidak sah',
-	'renameusererrortoomany' => 'Pengguna "<nowiki>$1</nowiki>" telah memiliki $2 suntingan. Penggantian nama pengguna dengan lebih dari $3 suntingan dapat mempengaruhi kinerja situs',
+	'renameusererrortoomany' => 'Pengguna "<nowiki>$1</nowiki>" telah memiliki $2 {{PLURAL:$2|kontribusi|kontribusi}}.
+Penggantian nama pengguna dengan lebih dari $3 {{PLURAL:$3|kontribusi|kontribusi}} dapat menurunkan kinerja situs.',
 	'renameuser-error-request' => 'Ada masalah dalam pemrosesan permintaan. Silakan kembali dan coba lagi.',
 	'renameuser-error-same-user' => 'Anda tak dapat mengganti nama pengguna sama seperti asalnya.',
 	'renameusersuccess' => 'Pengguna "<nowiki>$1</nowiki>" telah diganti namanya menjadi "<nowiki>$2</nowiki>"',
@@ -1376,6 +1387,7 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Albamhandae
+ * @author Ficell
  * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
@@ -1391,7 +1403,7 @@ $messages['ko'] = array(
 	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
 	'renameusererrorexists' => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
 	'renameusererrorinvalid' => '‘<nowiki>$1</nowiki>’ 사용자 이름이 잘못되었습니다.',
-	'renameusererrortoomany' => '‘<nowiki>$1</nowiki>’ 사용자는 $2번의 기여를 했습니다. $3번을 넘는 기여를 한 사용자의 이름을 변경하는 것은 성능 저하를 일으킬 수 있습니다.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" 사용자는 $2번의 기여를 했습니다. $3번을 넘는 기여를 한 사용자의 이름을 변경하는 것은 성능 저하를 일으킬 수 있습니다.',
 	'renameuser-error-request' => '요청을 정상적으로 전송하지 못했습니다.
 뒤로 가서 다시 시도해주세요.',
 	'renameusersuccess' => '‘<nowiki>$1</nowiki>’ 사용자가 ‘<nowiki>$2</nowiki>’(으)로 변경되었습니다.',
@@ -1946,7 +1958,7 @@ $messages['pt'] = array(
 	'renameusererrordoesnotexist' => 'O utilizador "<nowiki>$1</nowiki>" não existe',
 	'renameusererrorexists' => 'O utilizador "<nowiki>$1</nowiki>" já existe',
 	'renameusererrorinvalid' => 'O nome de utilizador "<nowiki>$1</nowiki>" é inválido',
-	'renameusererrortoomany' => 'O utilizador "<nowiki>$1</nowiki>" possui $2 contribuições. Renomear um utilizador com mais de $3 contribuições pode afectar o desempenho do site',
+	'renameusererrortoomany' => 'O utilizador "<nowiki>$1</nowiki>" possui $2 {{PLURAL:$2|contribuição|contribuições}}. Renomear um utilizador com mais de $3 {{PLURAL:$3|contribuição|contribuições}} pode afectar o desempenho do site.',
 	'renameuser-error-request' => 'Houve um problema ao receber este pedido. Por favor, volte atrás e tente de novo.',
 	'renameuser-error-same-user' => 'Não pode renomear um utilizador para o mesmo nome anterior.',
 	'renameusersuccess' => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>"',
