@@ -987,7 +987,7 @@ $messages['hsb'] = array(
 	'renameusererrordoesnotexist' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
 	'renameusererrorexists' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
 	'renameusererrorinvalid' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
-	'renameusererrortoomany' => 'Wužiwar „<nowiki>$1</nowiki>“ je $2 wobdźěłanjow sčinił. Přemjenowanje wužiwarja z wjace hač $3 wobdźěłanjemi móže so njepřihódnje na wukonitosć serwera wuskutkować.',
+	'renameusererrortoomany' => 'Wužiwar „<nowiki>$1</nowiki>“ je $2 {{PLURAL:$2|přinošk|přinoškaj|přinoški|přinoškow}} dodał. Přemjenowanje wužiwarja z wjace hač $3 {{PLURAL:$3|přinoškom|přinoškomaj|přinoškami|přinoškami}} móže so njepřihódnje na wukonitosć serwera wuskutkować.',
 	'renameuser-error-request' => 'Problem je při přijimanju požadanja wustupił. Prošu dźi wróćo a spytaj hišće raz.',
 	'renameuser-error-same-user' => 'Njemóžeš wužiwarja do samsneje wěcy kaž prjedy přemjenować.',
 	'renameusersuccess' => 'Wužiwar „<nowiki>$1</nowiki>“ bu wuspěšnje na „<nowiki>$2</nowiki>“ přemjenowany.',
@@ -997,7 +997,7 @@ $messages['hsb'] = array(
 	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
 	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
 	'renameuserlogentry' => 'je $1 do "$2" přemjenował',
-	'renameuser-log' => 'z $1 wobdźěłanjemi. $2',
+	'renameuser-log' => '{{PLURAL:$1|1 změna|$1 změnje|$1 změny|$1 změnow}}. Přičina: $2',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[User:$1|$1]]“ na „[[User:$2|$2]]“ awtomatisce přesunjena strona.',
 	'right-renameuser' => 'Wužiwarjow přemjenować',
 );
