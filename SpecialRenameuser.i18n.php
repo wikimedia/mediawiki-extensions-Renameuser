@@ -686,7 +686,7 @@ $messages['fa'] = array(
 	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
 	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
 	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
-	'renameusererrortoomany' => 'کاربر «<nowiki>$1</nowiki>» دارای $2 مشارکت است؛ تغییر نام کاربران با بیش از $3 ویرایش ممکن است عملکرد وبگاه را دچار مشکل کند.',
+	'renameusererrortoomany' => 'کاربر «<nowiki>$1</nowiki>» دارای $2 {{PLURAL:$2|مشارکت|مشارکت}} است؛ تغییر نام کاربران با بیش از $3 ویرایش ممکن است عملکرد وبگاه را دچار مشکل کند.',
 	'renameuser-error-request' => 'در دریافت درخواست مشکلی پیش آمد. لطفاً به صفحهٔ قبل بازگردید و دوباره تلاش کنید.',
 	'renameuser-error-same-user' => 'شما نمی‌توانید نام یک کاربر را به همان نام قبلی‌اش تغییر دهید.',
 	'renameusersuccess' => 'نام کاربر «<nowiki>$1</nowiki>» به «<nowiki>$2</nowiki>» تغییر یافت.',
@@ -996,7 +996,7 @@ $messages['hsb'] = array(
 	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
 	'renameuserlogpage' => 'Protokol přemjenowanja wužiwarjow',
 	'renameuserlogpagetext' => 'Tu protokoluja so wšě přemjenowanja wužiwarjow.',
-	'renameuserlogentry' => 'je $1 do "$2" přemjenował',
+	'renameuserlogentry' => 'je [[User:$1|$1]] do "[[User:$2|$2]]" přemjenował',
 	'renameuser-log' => '{{PLURAL:$1|1 změna|$1 změnje|$1 změny|$1 změnow}}. Přičina: $2',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[User:$1|$1]]“ na „[[User:$2|$2]]“ awtomatisce přesunjena strona.',
 	'right-renameuser' => 'Wužiwarjow přemjenować',
@@ -2009,6 +2009,7 @@ $messages['rmy'] = array(
 
 /** Romanian (Română)
  * @author Emily
+ * @author Firilacroco
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
@@ -2020,7 +2021,7 @@ $messages['ro'] = array(
 	'renameusererrordoesnotexist' => 'Utilizatorul "$1" nu există',
 	'renameusererrorexists' => 'Utilizatorul "$1" există deja',
 	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid',
-	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 contribuţii, redenumirea unui utilizator cu mai mult de $3 contribuţii ar putea afecta performanţa sitului',
+	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuţie|contribuţii}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuţie|contribuţii}} contribuţii ar putea afecta performanţa sitului',
 	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
 	'renameuser-page-exists' => 'Pagina $1 există deja şi nu poate fi suprascrisă automat.',
 	'renameuser-page-moved' => 'Pagina $1 a fost mutată la $2.',
@@ -2378,6 +2379,7 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (Українська)
+ * @author AS
  * @author Ahonc
  * @author EugeneZelenko
  */
@@ -2394,7 +2396,7 @@ $messages['uk'] = array(
 	'renameusererrordoesnotexist' => 'Користувач з іменем «<nowiki>$1</nowiki>» не зареєстрований.',
 	'renameusererrorexists' => 'Користувач з іменем «<nowiki>$1</nowiki>» уже зареєстрований.',
 	'renameusererrorinvalid' => "Недопустиме ім'я користувача: <nowiki>$1</nowiki>.",
-	'renameusererrortoomany' => 'Користувач <nowiki>$1</nowiki> вніс $2 редагувань, перейменування користувача з більш ніж $3 редагуваннями може негативно вплинути на доступ до сайту.',
+	'renameusererrortoomany' => 'Користувач "<nowiki>$1</nowiki>" вніс $2 {{PLURAL:$2|редагування|редагування|редагувань}}, перейменування користувача з більш ніж $3 {{PLURAL:$3|редагуванням|редагуваннями}} може негативно вплинути на доступ до сайту.',
 	'renameuser-error-request' => 'Виникли ускладнення з отриманням запиту. Будь ласка, поверніться назад і повторіть іще раз.',
 	'renameuser-error-same-user' => "Ви не можете змінити ім'я користувача на те саме, що було раніше.",
 	'renameusersuccess' => 'Користувач «<nowiki>$1</nowiki>» був перейменований на «<nowiki>$2</nowiki>».',
