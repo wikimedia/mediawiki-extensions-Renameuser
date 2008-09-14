@@ -139,6 +139,11 @@ $aliases['pt-br'] = array(
 	'Renameuser' => array( 'Renomear utilizador', 'Renomear usuário' ),
 );
 
+/** Albanian (Shqip) */
+$aliases['sq'] = array(
+	'Renameuser' => array( 'RiemërtoPërdorues' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Renameuser' => array( 'Användarnamnbyte' ),
