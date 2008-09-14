@@ -10,6 +10,7 @@ $messages = array();
 $messages['en'] = array(
 	'renameuser'          => 'Rename user',
 	'renameuser-desc'     => 'Adds a [[Special:Renameuser|special page]] to rename a user (need \'\'renameuser\'\' right)',
+	'renameuser-summary' => '', # do not translate or duplicate this message to other languages
 	'renameuserold'       => 'Current username:',
 	'renameusernew'       => 'New username:',
 	'renameuserreason'    => 'Reason for rename:',

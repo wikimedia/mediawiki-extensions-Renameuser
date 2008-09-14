@@ -32,6 +32,8 @@ class SpecialRenameuser extends SpecialPage {
 
 		$this->setHeaders();
 
+		$wgOut->addWikiMsg( 'renameuser-summary' );
+
 		if ( !$wgUser->isAllowed( 'renameuser' ) ) {
 			$wgOut->permissionRequired( 'renameuser' );
 			return;
