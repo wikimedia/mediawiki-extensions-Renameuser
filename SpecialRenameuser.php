@@ -48,8 +48,11 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 	if( !$title || $title->getNamespace() !== NS_USER ) {
 		$rv = ''; // handled in comment, the old way
 	} else {
-		array_unshift( $params, $title->getText() );
-		$rv = wfMsgExt( 'renameuserlogentry', array('parseinline'), $params );
+		$titleLink = $skin ? 
+			$skin->makeLinkObj( $title, htmlspecialchars( $title->getPrefixedText() ) ) : $title->getText();
+		# Add title to params
+		array_unshift( $params, $titleLink );
+		$rv = wfMsgReal( 'renameuserlogentry', $params );
 	}
 	return $rv;
 }
