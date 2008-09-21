@@ -608,14 +608,18 @@ Bonvolu retroigi kaj reprovi.',
  * @author Icvav
  * @author Jatrobat
  * @author Lin linao
+ * @author Remember the dot
  * @author Spacebirdy
  */
 $messages['es'] = array(
 	'renameuser' => 'Renombrar usuario',
+	'renameuser-desc' => "Añade una [[Special:Renameuser|página especial]] para renombrar a un usuario (necesita el derecho ''renameuser'')",
 	'renameuserold' => 'Nombre actual:',
 	'renameusernew' => 'Nuevo nombre de usuario:',
 	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Trasladar las páginas de usuario y de discusión (y sus subpáginas) al nuevo nombre',
+	'renameuserwarnings' => 'Avisos:',
+	'renameuserconfirm' => 'Sí, renombrar el usuario',
 	'renameusersubmit' => 'Enviar',
 	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
 	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
@@ -631,6 +635,7 @@ $messages['es'] = array(
 	'renameuserlogentry' => 'ha renombrado a $1 a "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivo: $2',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser' => 'Renombrar usuarios',
 );
 
 /** Estonian (Eesti)
@@ -2076,11 +2081,13 @@ $messages['sah'] = array(
 	'renameusernew' => 'Саҥа аата:',
 	'renameuserreason' => 'Аатын уларыппыт төрүөтэ:',
 	'renameusermove' => 'Кыттааччы аатын кытта кэпсэтэр сирин, уонна атын сирэйдэрин ааттарын уларыт',
+	'renameuserwarnings' => 'Сэрэтиилэр:',
+	'renameuserconfirm' => 'Сөп, аатын уларыт',
 	'renameusersubmit' => 'Толор',
 	'renameusererrordoesnotexist' => 'Маннык ааттаах кыттааччы «<nowiki>$1</nowiki>» бэлиэтэммэтэх.',
 	'renameusererrorexists' => 'Маннык ааттаах кыттааччы "<nowiki>$1</nowiki>" номнуо баар.',
 	'renameusererrorinvalid' => 'Маннык аат "<nowiki>$1</nowiki>" көҥуллэммэт.',
-	'renameusererrortoomany' => '<nowiki>$1</nowiki> кыттааччы $2 көннөрүүнү киллэрбит, $3 тахса көннөрүүнү оҥорбут кыттааччы аатын уларытыы саайка киириини хааччахтыан сөп.',
+	'renameusererrortoomany' => '<nowiki>$1</nowiki> кыттааччы $2 көннөрүүнү киллэрбит, $3 тахса көннөрүүнү оҥорбут кыттааччы аатын уларытыы саайка оччото суох быһыыны үөскэтиэн сөп.',
 	'renameuser-error-request' => 'Запрос тутуута моһуоктанна. Бука диэн төнүн уонна хатылаа.',
 	'renameuser-error-same-user' => 'Кыттааччы аатын урукку аатыгар уларытар табыллыбат.',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" кыттааччы мантан ыла "<nowiki>$2</nowiki>" диэн ааттанна.',
@@ -2089,7 +2096,7 @@ $messages['sah'] = array(
 	'renameuser-page-unmoved' => '$1 сирэй маннык $2 ааттанар кыаҕа суох.',
 	'renameuserlogpage' => 'Кыттааччылар ааттарын уларытыыларын сурунаала',
 	'renameuserlogpagetext' => 'Бу бэлиэтэммит кыттааччылар ааттарын уларытыыларын сурунаала',
-	'renameuserlogentry' => '$1 аата маннык буолла "$2"',
+	'renameuserlogentry' => '$1 аатын манныкка уларытта "$2"',
 	'renameuser-log' => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
 	'renameuser-move-log' => '«[[User:$1|$1]]» аата «[[User:$2|$2]]» буолбутунан аптамаатынан',
 	'right-renameuser' => 'Кыттааччылар ааттарын уларытыы',
@@ -2237,6 +2244,7 @@ $messages['su'] = array(
  * @author Habj
  * @author Lejonel
  * @author M.M.S.
+ * @author Najami
  */
 $messages['sv'] = array(
 	'renameuser' => 'Byt användarnamn',
@@ -2261,7 +2269,7 @@ $messages['sv'] = array(
 	'renameuserlogpage' => 'Omdöpningslogg',
 	'renameuserlogpagetext' => 'Detta är en logg över byten av användarnamn',
 	'renameuserlogentry' => 'döpte om $1 till "$2"',
-	'renameuser-log' => 'som hade gjort $1 redigeringar. $2',
+	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringar}}. Anledning: $2',
 	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 	'right-renameuser' => 'Ändra användares namn',
 );
