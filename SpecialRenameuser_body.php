@@ -45,7 +45,7 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
-		$oldusername = Title::newFromText( $wgRequest->getText( 'oldusername' ), NS_USER );
+		$oldusername = Title::makeTitle( NS_USER, $wgRequest->getText( 'oldusername' ) );
 		// Force uppercase of newusername otherweise wikis with wgCapitalLinks=false can create lc usernames
 		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
@@ -162,7 +162,6 @@ class SpecialRenameuser extends SpecialPage {
 			$wgOut->addWikiText( "<div class=\"errorbox\">" . wfMsg( 'renameuser-error-request' ) . "</div>" );
 			return;
 		} elseif( !is_object( $oldusername ) ) {
-			// FIXME: This is bogus.  Invalid titles need to be rename-able! (bug 12654)
 			$wgOut->addWikiText(
 				"<div class=\"errorbox\">"
 				. wfMsg( 'renameusererrorinvalid', $wgRequest->getText( 'oldusername' ) )
