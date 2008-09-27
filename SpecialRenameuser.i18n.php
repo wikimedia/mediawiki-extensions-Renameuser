@@ -409,7 +409,7 @@ $messages['ce'] = array(
 $messages['crh-latn'] = array(
 	'renameuserlogpage' => 'Qullanıcı adı deñişikligi jurnalı',
 	'renameuserlogpagetext' => 'Aşağıda bulunğan cedvel adı deñiştirilgen qullanıcılarnı köstere',
-	'renameuserlogentry' => '$1 adını deñiştirdi, yañı ad: "$2"',
+	'renameuserlogentry' => '$1 qullanıcısınıñ adını "$2" оlaraq deñiştirdi',
 	'renameuser-log' => '{{PLURAL:$1|1 deñişiklik|$1 deñişiklik}} yapqan. Sebep: $2',
 );
 
@@ -419,7 +419,7 @@ $messages['crh-latn'] = array(
 $messages['crh-cyrl'] = array(
 	'renameuserlogpage' => 'Къулланыджы ады денъишиклиги журналы',
 	'renameuserlogpagetext' => 'Ашагъыда булунгъан джедвель ады денъиштирильген къулланыджыларны косьтере',
-	'renameuserlogentry' => '$1 адыны денъиштирди, янъы ад: "$2"',
+	'renameuserlogentry' => '$1 къулланыджысынынъ адыны "$2" оларакъ денъиштирди',
 	'renameuser-log' => '{{PLURAL:$1|1 денъишиклик|$1 денъишиклик}} япкъан. Себеп: $2',
 );
 
@@ -624,7 +624,7 @@ $messages['es'] = array(
 	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
 	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
 	'renameusererrorinvalid' => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
-	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 contribuciones, cambiar el nombre de un usuario con más de $3 contribuciones podría afectar notablemente al rendimiento del sitio',
+	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 {{PLURAL:$2|contribución|contribuciones}}, renombrar a un usuario con más de $3 contribuciones podría afectar negativamente al rendimiento del sitio.',
 	'renameuser-error-same-user' => 'No puedes renombrar a un usuario con el nombre que ya tenía.',
 	'renameusersuccess' => 'El usuario «<nowiki>$1</nowiki>» ha sido renombrado a «<nowiki>$2</nowiki>»',
 	'renameuser-page-exists' => 'La página $1 ya existe y no puede ser reemplazada automáticamente.',

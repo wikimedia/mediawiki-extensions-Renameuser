@@ -28,6 +28,11 @@ $aliases['arz'] = array(
 	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
 
+/** Catalan (Català) */
+$aliases['ca'] = array(
+	'Renameuser' => array( 'Reanomena usuari' ),
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
