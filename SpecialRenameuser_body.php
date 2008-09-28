@@ -207,6 +207,7 @@ class SpecialRenameuser extends SpecialPage {
 					$uid = 0; // We are on a lowercase wiki but lowercase username does not exists
 				} else {
 					$uid = $olduser->idForName(); // We are on a standard uppercase wiki, use normal 
+					$oldusername = Title::newFromText( $olduser->getName(), NS_USER ); // uppercase form
 				}
 			} else {
 				// username with lowercase exists
@@ -254,7 +255,9 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		$rename = new RenameuserSQL( $oldusername->getText(), $newusername->getText(), $uid );
-		$rename->rename();
+		if( !$rename->rename() ) {
+			return;
+		}
 		
 		// If this user is renaming his/herself, make sure that Title::moveTo()
 		// doesn't make a bunch of null move edits under the old name!
@@ -416,6 +419,9 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
+		if( !$dbw->affectedRows() ) {
+			return false;
+		}
 
 		// Delete from memcached.
 		global $wgMemc;
@@ -528,5 +534,6 @@ class RenameuserSQL {
 		wfRunHooks( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
 
 		wfProfileOut( __METHOD__ );
+		return true;
 	}
 }
