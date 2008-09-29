@@ -609,6 +609,7 @@ Bonvolu retroigi kaj reprovi.',
  * @author Jatrobat
  * @author Lin linao
  * @author Remember the dot
+ * @author Sanbec
  * @author Spacebirdy
  */
 $messages['es'] = array(
@@ -624,7 +625,7 @@ $messages['es'] = array(
 	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
 	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
 	'renameusererrorinvalid' => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
-	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 {{PLURAL:$2|contribución|contribuciones}}, renombrar a un usuario con más de $3 contribuciones podría afectar negativamente al rendimiento del sitio.',
+	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 {{PLURAL:$2|contribución|contribuciones}}, renombrar a un usuario con más de $3 {{PLURAL:$3|contribución|contribuciones}} podría afectar negativamente al rendimiento del sitio.',
 	'renameuser-error-same-user' => 'No puedes renombrar a un usuario con el nombre que ya tenía.',
 	'renameusersuccess' => 'El usuario «<nowiki>$1</nowiki>» ha sido renombrado a «<nowiki>$2</nowiki>»',
 	'renameuser-page-exists' => 'La página $1 ya existe y no puede ser reemplazada automáticamente.',
