@@ -893,6 +893,7 @@ $messages['he'] = array(
 	'renameusernew' => 'שם משתמש חדש:',
 	'renameuserreason' => 'סיבה לשינוי השם:',
 	'renameusermove' => 'העברת דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
+	'renameuserreserve'   => 'שמירת שם המשתמש הישן לשימוש נוסף',
 	'renameuserwarnings' => 'אזהרות:',
 	'renameuserconfirm' => 'כן, שנה את שם המשתמש',
 	'renameusersubmit' => 'שינוי שם משתמש',
