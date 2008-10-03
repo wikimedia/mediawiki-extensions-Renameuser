@@ -113,7 +113,7 @@ class SpecialRenameuser extends SpecialPage {
 				</td>
 				<td class='mw-input'>" .
 					Xml::checkLabel( wfMsg( 'renameuserreserve' ), 'reservename', 'reservename', 
-						$reserve_checked, array( 'tabindex' => '4' ) ) .
+						$reserve_checked, array( 'tabindex' => '5' ) ) .
 				"</td>
 			</tr>"
 		);
@@ -139,7 +139,7 @@ class SpecialRenameuser extends SpecialPage {
 					</td>
 					<td class='mw-input'>" .
 						Xml::checkLabel( wfMsg( 'renameuserconfirm' ), 'confirmaction', 'confirmaction', 
-							false, array( 'tabindex' => '5' ) ) .
+							false, array( 'tabindex' => '6' ) ) .
 					"</td>
 				</tr>"
 			);
@@ -150,10 +150,10 @@ class SpecialRenameuser extends SpecialPage {
 				</td>
 				<td class='mw-submit'>" .
 					Xml::submitButton( wfMsg( 'renameusersubmit' ), array( 'name' => 'submit', 
-						'tabindex' => '6', 'id' => 'submit' ) ) .
+						'tabindex' => '7', 'id' => 'submit' ) ) .
 					' ' .
 					Xml::submitButton( wfMsg( 'blocklogpage' ), array ( 'name' => 'submit-showBlockLog', 
-						'id' => 'submit-showBlockLog', 'tabindex' => '7' ) ) .
+						'id' => 'submit-showBlockLog', 'tabindex' => '8' ) ) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
