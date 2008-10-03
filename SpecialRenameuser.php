@@ -14,6 +14,9 @@ if (!defined('MEDIAWIKI')) die();
 $wgAvailableRights[] = 'renameuser';
 $wgGroupPermissions['bureaucrat']['renameuser'] = true;
 
+$wgAvailableRights[] = 'renameuser-moverootuserpage';
+$wgGroupPermissions['bureaucrat']['renameuser-moverootuserpage'] = true;
+
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
 	'author'         => array( 'Ævar Arnfjörð Bjarmason', 'Aaron Schulz' ),
@@ -35,6 +38,10 @@ $wgExtensionAliasesFiles['Renameuser'] = $dir . 'SpecialRenameuser.alias.php';
  */
 define( 'RENAMEUSER_CONTRIBLIMIT', 2000000 );
 define( 'RENAMEUSER_CONTRIBJOB', 10000 );
+/**
+ * If you do not want to disallow the move of root userpages, set this to true
+ */
+define( 'RENAMEUSER_ROOTUSERPAGEMOVE', false );
 
 # Add a new log type
 global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
@@ -55,6 +62,20 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 		$rv = wfMsgReal( 'renameuserlogentry', $params );
 	}
 	return $rv;
+}
+if ( !RENAMEUSER_ROOTUSERPAGEMOVE )
+	$wgHooks['AbortMove'][] = 'wfRenameUserIsValidMove';
+
+function wfRenameUserIsValidMove ($oldtitle, $newtitle, $user, &$error) {
+	// Disallow moves from and to root userpages
+	if ( ( 
+		( $oldtitle->getNamespace() == NS_USER && !$oldtitle->isSubPage() )
+		|| ($newtitle->getNamespace() == NS_USER && !$newtitle->isSubPage() )
+		) && !$user->isAllowed('renameuser-moverootuserpage') ) {
+		$error = wfMsg('moverootuserpagesnotallowed');
+		return false;
+	}
+	return true;
 }
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
