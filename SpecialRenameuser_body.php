@@ -347,6 +347,20 @@ class SpecialRenameuser extends SpecialPage {
 	}
 }
 
+class RenameuserHooks {
+	public static function isValidMove ($oldtitle, $newtitle, $user, &$error) {
+		// Disallow moves from and to root userpages
+		if ( ( 
+			( $oldtitle->getNamespace() == NS_USER && !$oldtitle->isSubPage() )
+			|| ($newtitle->getNamespace() == NS_USER && !$newtitle->isSubPage() )
+			) && !$user->isAllowed('renameuser-moverootuserpage') ) {
+			$error = wfMsg('renameuser-noroot');
+			return false;
+		}
+		return true;
+	}
+}
+
 class RenameuserSQL {
 	
 	/**

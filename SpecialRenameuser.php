@@ -63,23 +63,15 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 	}
 	return $rv;
 }
-if ( !RENAMEUSER_ROOTUSERPAGEMOVE )
-	$wgHooks['AbortMove'][] = 'wfRenameUserIsValidMove';
-
-function wfRenameUserIsValidMove ($oldtitle, $newtitle, $user, &$error) {
-	// Disallow moves from and to root userpages
-	if ( ( 
-		( $oldtitle->getNamespace() == NS_USER && !$oldtitle->isSubPage() )
-		|| ($newtitle->getNamespace() == NS_USER && !$newtitle->isSubPage() )
-		) && !$user->isAllowed('renameuser-moverootuserpage') ) {
-		$error = wfMsg('moverootuserpagesnotallowed');
-		return false;
-	}
-	return true;
-}
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
+$wgAutoloadClasses['RenameuserHooks'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
+
+if ( !RENAMEUSER_ROOTUSERPAGEMOVE )
+	$wgHooks['AbortMove'][] = 'RenameuserHooks::isValidMove';
+
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
+
