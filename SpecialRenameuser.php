@@ -39,9 +39,9 @@ $wgExtensionAliasesFiles['Renameuser'] = $dir . 'SpecialRenameuser.alias.php';
 define( 'RENAMEUSER_CONTRIBLIMIT', 2000000 );
 define( 'RENAMEUSER_CONTRIBJOB', 10000 );
 /**
- * If you do not want to disallow the move of root userpages, set this to true
+ * If you do not want to disallow the move of root userpages, set this to false in your LocalSettings.php
  */
-define( 'RENAMEUSER_ROOTUSERPAGEMOVE', false );
+$wgRenameUserCheckRootUserpageMoves = true;
 
 # Add a new log type
 global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
@@ -68,8 +68,13 @@ $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameu
 $wgAutoloadClasses['RenameuserHooks'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 
-if ( !RENAMEUSER_ROOTUSERPAGEMOVE )
-	$wgHooks['AbortMove'][] = 'RenameuserHooks::isValidMove';
+function wfRenameuserSetup () {
+	global $wgRenameUserCheckRootUserpageMoves, $wgHooks;
+	if ( $wgRenameUserCheckRootUserpageMoves )
+		$wgHooks['AbortMove'][] = 'RenameuserHooks::isValidMove';
+}
+
+$wgExtensionFunctions[] = 'wfRenameuserSetup';
 
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
