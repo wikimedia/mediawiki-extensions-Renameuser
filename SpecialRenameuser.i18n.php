@@ -1199,6 +1199,7 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author Broad-Sky
+ * @author Hosiryuhosi
  * @author Marine-Blue
  * @author Suisui
  */
@@ -1209,6 +1210,7 @@ $messages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
 	'renameusermove' => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
+	'renameuserreserve' => '古い利用者名を保持する',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => 'はい、利用者名を変更します',
 	'renameusersubmit' => '変更',
@@ -1525,6 +1527,7 @@ $messages['la'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 recensio|$1 recensiones}}. Causa: $2',
 	'renameuser-move-log' => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
 	'right-renameuser' => 'Usores renominare',
+	'renameuser-noroot' => 'Tibi non licet paginas usorum movere.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1721,6 +1724,7 @@ $messages['ms'] = array(
 	'renameusernew' => 'Nama baru:',
 	'renameuserreason' => 'Sebab tukar:',
 	'renameusermove' => 'Pindahkan laman pengguna dan laman perbincangannya (berserta semua sublaman yang ada) ke nama baru',
+	'renameuserreserve' => 'Pelihara nama pengguna lama supaya tidak digunakan lagi',
 	'renameuserwarnings' => 'Amaran:',
 	'renameuserconfirm' => 'Ya, tukar nama pengguna ini',
 	'renameusersubmit' => 'Serah',
@@ -1741,6 +1745,7 @@ Sila undur dan cuba lagi.',
 	'renameuser-log' => '$1 suntingan. Sebab: $2',
 	'renameuser-move-log' => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Menukar nama pengguna',
+	'renameuser-noroot' => 'Anda tidak mempunyai keizinan untuk memindahkan laman induk pengguna.',
 );
 
 /** Maltese (Malti)
@@ -1842,6 +1847,7 @@ $messages['no'] = array(
 	'renameusernew' => 'Nytt brukernavn:',
 	'renameuserreason' => 'Grunn for omdøping:',
 	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameuserreserve' => 'Reserver det gamle brukernavnet mot framtidig bruk',
 	'renameuserwarnings' => 'Advarsler:',
 	'renameuserconfirm' => 'Ja, endre navn på brukeren',
 	'renameusersubmit' => 'Døp om',
@@ -1861,6 +1867,7 @@ $messages['no'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 	'right-renameuser' => 'Omdøpe brukere',
+	'renameuser-noroot' => 'Du har ikke tillatelse til å flytte brukersider.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -1994,6 +2001,7 @@ $messages['pt'] = array(
 	'renameusernew' => 'Novo nome de utilizador:',
 	'renameuserreason' => 'Motivo de renomear:',
 	'renameusermove' => 'Mover as páginas de utilizador, páginas de discussão de utilizador e sub-páginas para o novo nome',
+	'renameuserreserve' => 'Impedir o uso do nome de utilizador antigo',
 	'renameuserwarnings' => 'Alertas:',
 	'renameuserconfirm' => 'Sim, renomeie o utilizador',
 	'renameusersubmit' => 'Enviar',
@@ -2013,7 +2021,7 @@ $messages['pt'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear utilizadores',
-	'renameuser-noroot'	=> 'Você não possui permissão de mover páginas principais de usuários.',
+	'renameuser-noroot' => 'Você não possui permissão de mover páginas principais de usuários.',
 );
 
 /** Quechua (Runa Simi)
@@ -2443,6 +2451,7 @@ $messages['uk'] = array(
 	'renameusernew' => "Нове ім'я:",
 	'renameuserreason' => 'Причина перейменування:',
 	'renameusermove' => 'Перейменувати також сторінку користувача, сторінку обговорення та їхні підсторінки',
+	'renameuserreserve' => "Зарезервувати старе ім'я користувача для подальшого використання",
 	'renameuserwarnings' => 'Попередження:',
 	'renameuserconfirm' => 'Так, перейменувати користувача',
 	'renameusersubmit' => 'Виконати',
@@ -2462,6 +2471,7 @@ $messages['uk'] = array(
 	'renameuser-log' => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
 	'right-renameuser' => 'Перейменування користувачів',
+	'renameuser-noroot' => 'Вам не дозволено перейменовувати кореневі сторінки користувачів',
 );
 
 /** Urdu (اردو) */
@@ -2480,6 +2490,7 @@ $messages['vec'] = array(
 	'renameusernew' => 'Novo nome utente:',
 	'renameuserreason' => 'Motivo del canbio nome',
 	'renameusermove' => 'Rinomina anca la pagina utente, la pagina de discussion e le relative sotopagine',
+	'renameuserreserve' => "Tien da conto el vecio nome utente par inpedir che'l vegna doparà in futuro",
 	'renameuserwarnings' => 'Avertimenti:',
 	'renameuserconfirm' => "Sì, rinomina l'utente",
 	'renameusersubmit' => 'Invia',
@@ -2499,6 +2510,7 @@ $messages['vec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
+	'renameuser-noroot' => 'NO ti gà i parmessi necessari par spostar le pàxene utente.',
 );
 
 /** Vietnamese (Tiếng Việt)
