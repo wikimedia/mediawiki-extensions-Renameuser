@@ -2096,7 +2096,7 @@ $messages['ru'] = array(
 	'renameusernew' => 'Новое имя:',
 	'renameuserreason' => 'Причина переименования:',
 	'renameusermove' => 'Переименовать также страницу участника, личное обсуждение и их подстраницы',
-	'renameuserreserve' => 'Зарезервировать старое имя участника для испльзования в будущем',
+	'renameuserreserve' => 'Зарезервировать старое имя участника для использования в будущем',
 	'renameuserwarnings' => 'Предупреждения:',
 	'renameuserconfirm' => 'Да, переименовать участника',
 	'renameusersubmit' => 'Выполнить',
@@ -2116,7 +2116,7 @@ $messages['ru'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|правка|правки|правок}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser' => 'переименование участников',
-	'renameuser-noroot'	=> 'У вас нет разрешения переименовывать основные страницы участников.',
+	'renameuser-noroot' => 'У вас нет разрешения переименовывать основные страницы участников.',
 );
 
 /** Yakut (Саха тыла)
@@ -2544,6 +2544,7 @@ $messages['vi'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
 	'renameuser-move-log' => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
 	'right-renameuser' => 'Đổi tên thành viên',
+	'renameuser-noroot' => 'Bạn không có quyền di chuyển trang cá nhân chính.',
 );
 
 /** Volapük (Volapük)
