@@ -1210,7 +1210,7 @@ $messages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
 	'renameusermove' => '利用者ページと会話ページ及びそれらのサブページを新しい名前に移動する',
-	'renameuserreserve' => '古い利用者名を保持する',
+	'renameuserreserve' => '旧利用者名の今後の使用をブロックする',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => 'はい、利用者名を変更します',
 	'renameusersubmit' => '変更',
@@ -1540,6 +1540,7 @@ $messages['lb'] = array(
 	'renameusernew' => 'Neie Benotzernumm:',
 	'renameuserreason' => "Grond fir d'Ëmbenennung:",
 	'renameusermove' => 'Benotzer- an Diskussiounssäiten (an déi jeweileg Ënnersäiten) op den neie Benotzernumm réckelen',
+	'renameuserreserve' => 'Den ale Benotzernumm fir de weitere Gebrauch spären',
 	'renameuserwarnings' => 'Warnungen:',
 	'renameuserconfirm' => 'Jo, Benotzer ëmbenennen',
 	'renameusersubmit' => 'Ëmbenennen',
@@ -1560,6 +1561,7 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-log' => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
 	'renameuser-move-log' => 'Duerch d\'Réckele vum Benotzer  "[[User:$1|$1]]" op "[[User:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 	'right-renameuser' => 'Benotzer ëmbenennen',
+	'renameuser-noroot' => 'Dir hutt net déi néideg Rechter fir Benotzerhaaptäiten ze réckelen.',
 );
 
 /** Limburgish (Limburgs)
