@@ -45,7 +45,7 @@ class SpecialRenameuser extends SpecialPage {
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
 		$oldusername = Title::makeTitle( NS_USER, trim( $wgRequest->getText( 'oldusername' ) ) );
 		// Force uppercase of newusername, otherwise wikis with wgCapitalLinks=false can create lc usernames
-		$newusername = Title::newFromText( $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ), NS_USER );
+		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ) );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $wgUser->editToken();
@@ -224,8 +224,9 @@ class SpecialRenameuser extends SpecialPage {
 				if( !$wgCapitalLinks ) {
 					$uid = 0; // We are on a lowercase wiki but lowercase username does not exists
 				} else {
-					$uid = $olduser->idForName(); // We are on a standard uppercase wiki, use normal 
-					$oldusername = Title::newFromText( $olduser->getName(), NS_USER ); // uppercase form
+					// We are on a standard uppercase wiki, use normal
+					$uid = $olduser->idForName();
+					$oldusername = Title::makeTitleSafe( NS_USER, $olduser->getName() );
 				}
 			}
 		} else {
