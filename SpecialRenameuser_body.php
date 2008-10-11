@@ -436,8 +436,10 @@ class RenameuserSQL {
 		if( !$dbw->affectedRows() ) {
 			return false;
 		}
+
 		// Delete from memcached.
-		$user->invalidateCache();
+		global $wgMemc;
+		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
 
 		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
