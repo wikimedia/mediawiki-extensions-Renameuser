@@ -1096,6 +1096,7 @@ $messages['id'] = array(
 	'renameusernew' => 'Nama baru:',
 	'renameuserreason' => 'Alasan penggantian nama:',
 	'renameusermove' => 'Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru',
+	'renameuserreserve' => 'Cadangkan nama pengguna lama sehingga tidak dapat digunakan lagi',
 	'renameuserwarnings' => 'Peringatan:',
 	'renameuserconfirm' => 'Ya, ganti nama pengguna tersebut',
 	'renameusersubmit' => 'Simpan',
