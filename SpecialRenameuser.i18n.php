@@ -40,7 +40,6 @@ Please go back and try again.',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 
 	'right-renameuser'      => 'Rename users',
-	'renameuser-noroot'	=> 'You do not have permission to move root user pages.',
 );
 
 /** Message documentation (Message documentation)
@@ -149,7 +148,6 @@ $messages['ar'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
-	'renameuser-noroot'	=> 'أنت لا تمتلك الصلاحية لنقل صفحات المستخدم الرئيسية.',
 );
 
 /** Aramaic (ܐܪܡܝܐ) */
@@ -190,7 +188,6 @@ $messages['arz'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 تعديل|$1 تعديل}}. علشان: $2',
 	'renameuser-move-log' => 'الصفحة اتنقلت اوتوماتيكى لما اليوزر  "[[User:$1|$1]]" اتغير اسمه لـ "[[User:$2|$2]]"',
 	'right-renameuser' => 'غير اسم اليوزرز',
-	'renameuser-noroot'	=> 'أنت لا تمتلك الصلاحية لنقل صفحات المستخدم الرئيسية.',
 );
 
 /** Asturian (Asturianu)
@@ -253,7 +250,6 @@ $messages['bcc'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 اصلاح|$1 اصلاحلات}}. دلیل: $2',
 	'renameuser-move-log' => 'اتوماتیکی صفحه جاه په جاه بیت وهدی که کاربر نام بدل بی "[[User:$1|$1]]" به "[[User:$2|$2]]"',
 	'right-renameuser' => 'عوض کتن نام کابران',
-	'renameuser-noroot'	=> 'شما را اجازت نیستن که صفحات کاربر اصلیء جاه په جاه کنیت.',
 );
 
 /** Bikol Central (Bikol Central)
@@ -465,7 +461,6 @@ $messages['cs'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 editace|$1 editace|$1 editací}}. Zdůvodnění: $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'right-renameuser' => 'Přejmenovávání uživatelů',
-	'renameuser-noroot'	=> 'Nemáte oprávnění přesouvat uživatelské stránky.',
 );
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
@@ -518,7 +513,6 @@ $messages['de'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
 	'renameuser-move-log' => 'durch die Umbenennung von „[[User:$1|$1]]“ nach „[[User:$2|$2]]“ automatisch verschobene Seite',
 	'right-renameuser' => 'Benutzer umbenennen',
-	'renameuser-noroot'	=> 'Du hast keine Berechtigung, Benutzerhauptseiten zu verschieben.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -614,7 +608,6 @@ Bonvolu retroigi kaj reprovi.',
 	'renameuser-log' => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 	'right-renameuser' => 'Alinomigi uzantojn',
-	'renameuser-noroot'	=> 'Vi ne rajtas movi radikajn uzanto-paĝojn.',
 );
 
 /** Spanish (Español)
@@ -721,7 +714,6 @@ $messages['fa'] = array(
 	'renameuser-log' => '{{PLURAL:$1|۱ ویرایش|$1 ویرایش}}. دلیل: $2',
 	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
 	'right-renameuser' => 'تغییر نام کاربران',
-	'renameuser-noroot'	=> 'شما اجازه ندارید صفحه‌های کاربری سرشاخه را انتقال دهید.',
 );
 
 /** Finnish (Suomi)
@@ -799,7 +791,6 @@ $messages['fr'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renommer des utilisateurs',
-	'renameuser-noroot'	=> 'Vous n’avez pas la permission de renommer des pages utilisateurs racines sur ce wiki.',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -899,7 +890,6 @@ $messages['gl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 edicións}}. Razón: $2',
 	'renameuser-move-log' => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear usuarios',
-	'renameuser-noroot'	=> 'Non ten os permisos necesarios para mover páxinas de usuario raíz.',
 );
 
 /** Hebrew (עברית)
@@ -932,7 +922,6 @@ $messages['he'] = array(
 	'renameuser-log' => '{{PLURAL:$1|עריכה אחת|$1 עריכות}}. סיבה: $2',
 	'renameuser-move-log' => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל־"[[User:$2|$2]]"',
 	'right-renameuser' => 'שינוי שמות משתמש',
-	'renameuser-noroot'	=> 'אינכם מורשים להעביר דפי משתמש ראשיים.',
 );
 
 /** Hindi (हिन्दी)
@@ -998,7 +987,6 @@ $messages['hr'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
 	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom preimenovanja iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 	'right-renameuser' => 'Preimenuj suradnike',
-	'renameuser-noroot'	=> 'Nemate dopuštenja za premještanje root suradničkih stranica.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1095,7 +1083,6 @@ Per favor retorna e reprova.',
 	'renameuser-log' => '{{PLURAL:$1|1 modification|$1 modificationes}}. Motivo: $2',
 	'renameuser-move-log' => 'Le pagina ha essite automaticamente renominate con le renomination del usator "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renominar usatores',
-	'renameuser-noroot'	=> 'Tu non ha le permission de renominar paginas principal de usatores.',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1193,7 +1180,6 @@ $messages['it'] = array(
 	'renameuser-log' => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina gli utenti',
-	'renameuser-noroot'	=> 'Non si dispone dei permessi necessari per spostare le pagine utente.',
 );
 
 /** Japanese (日本語)
@@ -1488,7 +1474,6 @@ Bes esu joot un versöök et noch ens.',
 	'renameuser-log' => '{{PLURAL:$1|ein Beärbeidung|$1 Beärbeidung|kein Beärbeidung}}. Jrund: $2',
 	'renameuser-move-log' => 'Di Sigg weet automatesch ömjenannt weil mer dä Metmaacher „[[User:$1|$1]]“ op „[[User:$2|$2]]“ öm am däufe sin.',
 	'right-renameuser' => 'Metmaacher ömdäufe',
-	'renameuser-noroot'	=> 'Do häs nit dat Rääsch, öm enem Metmaacher sing eetzte Sigg ömzedeufe.',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin)) */
@@ -1527,7 +1512,6 @@ $messages['la'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 recensio|$1 recensiones}}. Causa: $2',
 	'renameuser-move-log' => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
 	'right-renameuser' => 'Usores renominare',
-	'renameuser-noroot' => 'Tibi non licet paginas usorum movere.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1561,7 +1545,6 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-log' => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
 	'renameuser-move-log' => 'Duerch d\'Réckele vum Benotzer  "[[User:$1|$1]]" op "[[User:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 	'right-renameuser' => 'Benotzer ëmbenennen',
-	'renameuser-noroot' => 'Dir hutt net déi néideg Rechter fir Benotzerhaaptäiten ze réckelen.',
 );
 
 /** Limburgish (Limburgs)
@@ -1747,7 +1730,6 @@ Sila undur dan cuba lagi.',
 	'renameuser-log' => '$1 suntingan. Sebab: $2',
 	'renameuser-move-log' => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Menukar nama pengguna',
-	'renameuser-noroot' => 'Anda tidak mempunyai keizinan untuk memindahkan laman induk pengguna.',
 );
 
 /** Maltese (Malti)
@@ -1795,7 +1777,6 @@ $messages['nds'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 Ännern|$1 Ännern}}. Grund: $2',
 	'renameuser-move-log' => "Siet bi dat Ännern vun’n Brukernaam ''[[User:$1|$1]]'' na ''[[User:$2|$2]]'' automaatsch schaven",
 	'right-renameuser' => 'Brukers ne’en Naam geven',
-	'renameuser-noroot'	=> 'Du hest nich de Rechten, Brukersieden to schuven.',
 );
 
 /** Nepali (नेपाली) */
@@ -1836,7 +1817,6 @@ $messages['nl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkingen}}. Reden: $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 	'right-renameuser' => 'Gebruikers hernoemen',
-	'renameuser-noroot'	=> "U hebt geen rechten om gebruikerspagina's te hernoemen.",
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -1869,7 +1849,6 @@ $messages['no'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 	'right-renameuser' => 'Omdøpe brukere',
-	'renameuser-noroot' => 'Du har ikke tillatelse til å flytte brukersider.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -1913,7 +1892,6 @@ $messages['oc'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|edicion|edicions}}. Motiu : $2',
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser' => "Tornar nomenar d'utilizaires",
-	'renameuser-noroot'	=> "Avètz pas la permission de tornar nomenar de paginas d'utilizaires raices sus aqueste wiki.",
 );
 
 /** Pfälzisch (Pfälzisch)
@@ -2023,7 +2001,6 @@ $messages['pt'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Foram movidas páginas de forma automática ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear utilizadores',
-	'renameuser-noroot' => 'Você não possui permissão de mover páginas principais de usuários.',
 );
 
 /** Quechua (Runa Simi)
@@ -2118,7 +2095,6 @@ $messages['ru'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|правка|правки|правок}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser' => 'переименование участников',
-	'renameuser-noroot' => 'У вас нет разрешения переименовывать основные страницы участников.',
 );
 
 /** Yakut (Саха тыла)
@@ -2182,7 +2158,6 @@ $messages['sk'] = array(
 	'renameuser-log' => 'mal {{PLURAL:$1|1 úpravu|$1 úpravy|$1 úprav}}. Dôvod: $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'right-renameuser' => 'Premenovávať používateľov',
-	'renameuser-noroot'	=> 'Nemáte povolenie presúvať koreňové stránky používateľov.',
 );
 
 /** Albanian (Shqip) */
@@ -2325,7 +2300,6 @@ $messages['sv'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringar}}. Anledning: $2',
 	'renameuser-move-log' => 'Automatisk sidflytt när användaren "[[User:$1|$1]]" döptes om till "[[User:$2|$2]]"',
 	'right-renameuser' => 'Ändra användares namn',
-	'renameuser-noroot'	=> 'Du har inte behörighet att flytta root-användarsidor.',
 );
 
 /** Telugu (తెలుగు)
@@ -2473,7 +2447,6 @@ $messages['uk'] = array(
 	'renameuser-log' => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
 	'right-renameuser' => 'Перейменування користувачів',
-	'renameuser-noroot' => 'Вам не дозволено перейменовувати кореневі сторінки користувачів',
 );
 
 /** Urdu (اردو) */
@@ -2512,7 +2485,6 @@ $messages['vec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
-	'renameuser-noroot' => 'NO ti gà i parmessi necessari par spostar le pàxene utente.',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -2546,7 +2518,6 @@ $messages['vi'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
 	'renameuser-move-log' => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
 	'right-renameuser' => 'Đổi tên thành viên',
-	'renameuser-noroot' => 'Bạn không có quyền di chuyển trang cá nhân chính.',
 );
 
 /** Volapük (Volapük)

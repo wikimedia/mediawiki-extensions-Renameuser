@@ -14,9 +14,6 @@ if (!defined('MEDIAWIKI')) die();
 $wgAvailableRights[] = 'renameuser';
 $wgGroupPermissions['bureaucrat']['renameuser'] = true;
 
-$wgAvailableRights[] = 'renameuser-moverootuserpage';
-$wgGroupPermissions['bureaucrat']['renameuser-moverootuserpage'] = true;
-
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Renameuser',
 	'author'         => array( 'Ævar Arnfjörð Bjarmason', 'Aaron Schulz' ),
@@ -38,10 +35,6 @@ $wgExtensionAliasesFiles['Renameuser'] = $dir . 'SpecialRenameuser.alias.php';
  */
 define( 'RENAMEUSER_CONTRIBLIMIT', 2000000 );
 define( 'RENAMEUSER_CONTRIBJOB', 10000 );
-/**
- * If you do not want to disallow the move of root userpages, set this to false in your LocalSettings.php
- */
-$wgRenameUserCheckRootUserpageMoves = true;
 
 # Add a new log type
 global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
@@ -65,18 +58,7 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 }
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
-$wgAutoloadClasses['RenameuserHooks'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
-
-function wfRenameuserSetup () {
-	global $wgRenameUserCheckRootUserpageMoves, $wgHooks;
-	if ( $wgRenameUserCheckRootUserpageMoves )
-		$wgHooks['AbortMove'][] = 'RenameuserHooks::isValidMove';
-}
-
-$wgExtensionFunctions[] = 'wfRenameuserSetup';
-
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
-
