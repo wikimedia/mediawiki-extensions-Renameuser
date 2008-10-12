@@ -1904,6 +1904,7 @@ $messages['pfl'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
+ * @author Leinad
  * @author Maikking
  * @author Sp5uhe
  * @author WarX
@@ -1916,6 +1917,7 @@ $messages['pl'] = array(
 	'renameusernew' => 'Nowa nazwa użytkownika',
 	'renameuserreason' => 'Przyczyna zmiany nazwy',
 	'renameusermove' => 'Przeniesienie strony osobistej i strony dyskusji użytkownika (oraz ich podstron) pod nową nazwę użytkownika',
+	'renameuserreserve' => 'Zablokuj starą nazwę użytkownika przed możliwością użycia jej',
 	'renameuserwarnings' => 'Ostrzeżenia:',
 	'renameuserconfirm' => 'Zmień nazwę użytkownika',
 	'renameusersubmit' => 'Zmień',
