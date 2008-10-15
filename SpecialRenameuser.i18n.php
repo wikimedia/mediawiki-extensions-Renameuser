@@ -729,6 +729,7 @@ $messages['fi'] = array(
 	'renameusernew' => 'Uusi tunnus',
 	'renameuserreason' => 'Kommentti',
 	'renameusermove' => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
+	'renameuserreserve' => 'Estä entinen käyttäjänimi tulevalta käytöltä',
 	'renameuserwarnings' => 'Varoitukset:',
 	'renameuserconfirm' => 'Kyllä, uudelleennimeä käyttäjä',
 	'renameusersubmit' => 'Nimeä',
