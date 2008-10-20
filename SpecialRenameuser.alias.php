@@ -124,6 +124,11 @@ $aliases['no'] = array(
 	'Renameuser' => array( 'Gi en bruker nytt navn' ),
 );
 
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'Renameuser' => array( 'TornarNomenarUtilizaire', 'Tornar nomenar Utilizaire' ),
+);
+
 /** Polish (Polski) */
 $aliases['pl'] = array(
 	'Renameuser' => array( 'Zmiana nazwy użytkownika' ),
