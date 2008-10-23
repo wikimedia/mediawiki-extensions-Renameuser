@@ -43,7 +43,8 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
-		$oldusername = Title::makeTitle( NS_USER, trim( $wgRequest->getText( 'oldusername' ) ) );
+		$oldnamePar = trim( str_replace( '_', ' ', $wgRequest->getText( 'oldusername' ) ) );
+		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
 		// Force uppercase of newusername, otherwise wikis with wgCapitalLinks=false can create lc usernames
 		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $wgRequest->getText( 'newusername' ) ) );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
