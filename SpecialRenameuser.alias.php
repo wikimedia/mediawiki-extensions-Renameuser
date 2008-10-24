@@ -67,6 +67,11 @@ $aliases['hr'] = array(
 	'Renameuser' => array( 'Preimenuj_suradnika' ),
 );
 
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'Renameuser' => array( 'Wužiwarja přemjenować' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $aliases['ht'] = array(
 	'Renameuser' => array( 'RenonmeItilizatè' ),
