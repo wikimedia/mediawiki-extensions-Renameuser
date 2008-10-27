@@ -97,6 +97,11 @@ $aliases['ko'] = array(
 	'Renameuser' => array( '이름바꾸기', '계정이름바꾸기', '사용자이름바꾸기' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'Renameuser' => array( 'Metmaacher ömnänne', 'Medmaacher ömnänne', 'Metmaacher ömnenne', 'Medmaacher ömnenne', 'Metmaacher ömdäufe', 'Medmaacher ömdäufe' ),
+);
+
 /** Latin (Latina) */
 $aliases['la'] = array(
 	'Renameuser' => array( 'Usorem renominare' ),
@@ -109,7 +114,7 @@ $aliases['lb'] = array(
 
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
-	'Renameuser' => array( 'Tukar_nama_pengguna' ),
+	'Renameuser' => array( 'Tukar nama pengguna' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
