@@ -53,7 +53,8 @@ class SpecialRenameuser extends SpecialPage {
 		$reason = $wgRequest->getText( 'reason' );
 		// If nothing given for these flags, assume they are checked
 		// unless this is a POST submission.
-		$move_checked = $reserve_checked = true;
+		$move_checked = true;
+		$reserve_checked = false;
 		if( $wgRequest->wasPosted() ) {
 			if( !$wgRequest->getCheck( 'movepages' ) )
 				$move_checked = false;
