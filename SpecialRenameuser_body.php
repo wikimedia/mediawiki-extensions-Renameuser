@@ -54,16 +54,9 @@ class SpecialRenameuser extends SpecialPage {
 		// If nothing given for these flags, assume they are checked
 		// unless this is a POST submission.
 		$move_checked = true;
-		$reserve_checked = false;
 		if( $wgRequest->wasPosted() ) {
 			if( !$wgRequest->getCheck( 'movepages' ) ) {
 				$move_checked = false;
-			}
-			if( !$wgRequest->getCheck( 'reservename' ) ) {
-				$reserve_checked = false;
-			}
-			else {
-				$reserve_checked = true;
 			}
 		}
 		$warnings = array();
@@ -114,16 +107,6 @@ class SpecialRenameuser extends SpecialPage {
 				</tr>"
 			);
 		}
-		$wgOut->addHTML( "
-			<tr>
-				<td>&nbsp;
-				</td>
-				<td class='mw-input'>" .
-					Xml::checkLabel( wfMsg( 'renameuserreserve' ), 'reservename', 'reservename', 
-						$reserve_checked, array( 'tabindex' => '5' ) ) .
-				"</td>
-			</tr>"
-		);
 		if( $warnings ) {
 			$warningsHtml = array();
 			foreach( $warnings as $warning )
@@ -291,13 +274,6 @@ class SpecialRenameuser extends SpecialPage {
 		$log = new LogPage( 'renameuser' );
 		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ), 
 			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
-
-		// Reserve the old name with a random password
-		if( $wgRequest->getCheck( 'reservename' ) ) {
-			$p = User::randomPassword();
-			$user = User::createNew( $olduser->getName() );
-			$user->setNewpassword( $p );
-		}
 
 		// Move any user pages
 		if( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
