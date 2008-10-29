@@ -56,10 +56,15 @@ class SpecialRenameuser extends SpecialPage {
 		$move_checked = true;
 		$reserve_checked = false;
 		if( $wgRequest->wasPosted() ) {
-			if( !$wgRequest->getCheck( 'movepages' ) )
+			if( !$wgRequest->getCheck( 'movepages' ) ) {
 				$move_checked = false;
-			if( !$wgRequest->getCheck( 'reservename' ) )
+			}
+			if( !$wgRequest->getCheck( 'reservename' ) ) {
 				$reserve_checked = false;
+			}
+			else {
+				$reserve_checked = true;
+			}
 		}
 		$warnings = array();
 		if( $oun && $nun && !$wgRequest->getCheck( 'confirmaction' )  ) {
