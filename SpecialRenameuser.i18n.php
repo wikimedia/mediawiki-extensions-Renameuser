@@ -1384,6 +1384,7 @@ $messages['km'] = array(
 	'renameusernew' => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មី៖',
 	'renameuserreason' => 'មូលហេតុ៖',
 	'renameusermove' => 'ប្តូរទីតាំងទំព័រអ្នកប្រើប្រាស់និងទំព័រពិភាក្សា(រួមទាំងទំព័ររងផងដែរ)ទៅឈ្មោះថ្មី',
+	'renameuserreserve' => 'ហាមឃាត់គណនីចាស់ពីការប្រើប្រាស់នាពេលអនាគត',
 	'renameuserwarnings' => 'បំរាម៖',
 	'renameuserconfirm' => 'បាទ/ចាស៎ សូមប្តូរឈ្មោះអ្នកប្រើប្រាស់នេះ',
 	'renameusersubmit' => 'ដាក់ស្នើ',
