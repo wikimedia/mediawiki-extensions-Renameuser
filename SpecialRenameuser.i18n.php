@@ -904,7 +904,7 @@ $messages['he'] = array(
 	'renameusernew' => 'שם משתמש חדש:',
 	'renameuserreason' => 'סיבה לשינוי השם:',
 	'renameusermove' => 'העברת דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
-	'renameuserreserve'   => 'חסימת שם המשתמש הישן לשימוש נוסף',
+	'renameuserreserve' => 'חסימת שם המשתמש הישן לשימוש נוסף',
 	'renameuserwarnings' => 'אזהרות:',
 	'renameuserconfirm' => 'כן, שנה את שם המשתמש',
 	'renameusersubmit' => 'שינוי שם משתמש',
@@ -1630,20 +1630,30 @@ $messages['lv'] = array(
 );
 
 /** Macedonian (Македонски)
+ * @author Brest
  * @author Misos
  */
 $messages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
 	'renameuserold' => 'Сегашно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
+	'renameuserreason' => 'Образложение за преименување:',
+	'renameusermove' => 'Премести корисничка страница и страници за разговор (и нивните подстраници) под новото име',
+	'renameuserreserve' => 'Блокирање на старото корисничко име, да не може да се користи во иднина',
+	'renameuserwarnings' => 'Предупредувања:',
+	'renameuserconfirm' => 'Да, преименувај го корисникот',
 	'renameusersubmit' => 'Внеси',
 	'renameusererrordoesnotexist' => 'Корисникот "<nowiki>$1</nowiki>" не постои',
 	'renameusererrorexists' => 'Корисникот "<nowiki>$1</nowiki>" веќе постои',
 	'renameusererrorinvalid' => 'Корисничкото име "<nowiki>$1</nowiki>" не е валидно',
-	'renameusererrortoomany' => 'Корисникот "<nowiki>$1</nowiki>" има $2 придонеси, преименување на корисник со повеќе од $3 придонеси може негативно да се одрази на перформансите на сајтот',
+	'renameusererrortoomany' => 'Корисникот "<nowiki>$1</nowiki>" има направено $2 {{PLURAL:$2|придонес|придонеси}},  преименување на корисник со повеќе од $3 {{PLURAL:$3|придонес|придонеси}} може негативно да влијае на перформансите на сајтот.',
 	'renameusersuccess' => 'Корисникот "<nowiki>$1</nowiki>" е преименуван во "<nowiki>$2</nowiki>"',
-	'renameuserlogpage' => 'Историја на преименувања на корисници',
-	'renameuserlogpagetext' => 'Ово е историја на преименувања на корисници',
+	'renameuserlogpage' => 'Дневник на преименувања на корисници',
+	'renameuserlogpagetext' => 'Ово е дневник на преименувања на корисници',
+	'renameuserlogentry' => 'преименуван $1 во "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 уредување|$1 уредувања}}. Образложение: $2',
+	'renameuser-move-log' => 'Автоматски преместена страница при преименување на корисникот "[[User:$1|$1]]" во "[[User:$2|$2]]"',
+	'right-renameuser' => 'Преименување корисници',
 );
 
 /** Malayalam (മലയാളം)
