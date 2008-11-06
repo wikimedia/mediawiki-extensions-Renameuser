@@ -28,6 +28,11 @@ $aliases['arz'] = array(
 	'Renameuser' => array( 'إعادة_تسمية_مستخدم' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'Renameuser' => array( 'PreimenovanjeKorisnika' ),
+);
+
 /** Catalan (Català) */
 $aliases['ca'] = array(
 	'Renameuser' => array( 'Reanomena usuari' ),
