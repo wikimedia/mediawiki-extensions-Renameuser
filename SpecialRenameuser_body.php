@@ -316,7 +316,7 @@ class SpecialRenameuser extends SpecialPage {
 				}
 			}
 			if( $output )
-				$wgOut->addHtml( '<ul>' . $output . '</ul>' );
+				$wgOut->addHTML( '<ul>' . $output . '</ul>' );
 		}
 		
 		// Output success message stuff :)
@@ -326,7 +326,7 @@ class SpecialRenameuser extends SpecialPage {
 
 	function showLogExtract( $username, $type, &$out ) {
 		# Show relevant lines from the logs:
-		$out->addHtml( Xml::element( 'h2', null, LogPage::logName( $type ) ) . "\n" );
+		$out->addHTML( Xml::element( 'h2', null, LogPage::logName( $type ) ) . "\n" );
 		LogEventsList::showLogExtract( $out, $type, $username->getPrefixedText() );
 	}
 }
