@@ -103,7 +103,7 @@ $messages['an'] = array(
 	'renameuser-page-unmoved' => "A pachina $1 no s'ha puesto tresladar ta $2.",
 	'renameuserlogpage' => "Rechistro de cambios de nombre d'usuarios",
 	'renameuserlogpagetext' => "Isto ye un rechistro de cambios de nombres d'usuarios",
-	'renameuserlogentry' => 'Ha renombrato á $1 como "$2"',
+	'renameuserlogentry' => 'Renombrato $1 como "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edizión|$1 edizions}}. Razón: $2',
 	'renameuser-move-log' => 'Pachina tresladata automaticament en renombrar o usuario "[[User:$1|$1]]" como "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
@@ -481,6 +481,39 @@ $messages['cu'] = array(
 	'renameusererrortoomany' => 'Польѕевател҄ь «<nowiki>$1</nowiki>» $2 {{PLURAL:$2|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ. Аще польѕевател прѣименѹѥши кыи болѥ $3 {{PLURAL:$3|исправлѥниѥ|исправлѥнии|исправлѥни|исправлѥнии}} сътворилъ ѥстъ, то зълѣ бѫдетъ.',
 	'renameuserlogpage' => 'по́льꙃєватєлъ прѣимєнова́ниꙗ їсторі́ꙗ',
 	'renameuserlogentry' => 'нарече $1 именьмь "$2"',
+);
+
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'renameuser' => 'Ail-enwi defnyddiwr',
+	'renameuser-desc' => "Yn ychwanegu [[Special:Renameuser|tudalen arbennig]] er mwyn gallu ail-enwi cyfrif defnyddiwr (sydd angen y gallu ''renameuser'')",
+	'renameuserold' => 'Enw defnyddiwr presennol:',
+	'renameusernew' => 'Enw defnyddiwr newydd:',
+	'renameuserreason' => 'Y rheswm dros ail-enwi:',
+	'renameusermove' => "Symud y tudalennau defnyddiwr a sgwrs (ac unrhyw is-dudalennau) i'r enw newydd",
+	'renameuserreserve' => 'Atal yr hen enw defnyddiwr rhag cael ei ddefnyddio rhagor',
+	'renameuserwarnings' => 'Rhybuddion:',
+	'renameuserconfirm' => "Parhau gyda'r ail-enwi",
+	'renameusersubmit' => 'Anfon',
+	'renameusererrordoesnotexist' => 'Nid yw\'r defnyddiwr "<nowiki>$1</nowiki>" yn bodoli.',
+	'renameusererrorexists' => 'Mae\'r defnyddiwr "<nowiki>$1</nowiki>" eisoes yn bodoli.',
+	'renameusererrorinvalid' => 'Mae\'r enw defnyddiwr "<nowiki>$1</nowiki>" yn annilys',
+	'renameusererrortoomany' => 'Mae gan y defnyddiwr "<nowiki>$1</nowiki>" $2 {{PLURAL:$2|cyfraniad|cyfraniad|gyfraniad|chyfraniad|chyfraniad|o gyfraniadau}}; gall ail-enwi defnyddiwr gyda mwy na(g) $3 {{PLURAL:$#|o gyfraniadau}} ddirywio perfformiad y safle.',
+	'renameuser-error-request' => 'Cafwyd trafferth yn derbyn y cais.
+Ewch yn ôl a cheisio eto, os gwelwch yn dda.',
+	'renameuser-error-same-user' => "Ni ellir ail-enwi defnyddiwr gyda'r un enw ag o'r blaen.",
+	'renameusersuccess' => 'Mae\'r defnyddiwr "<nowiki>$1</nowiki>" wedi cael ei ail-enwi i "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => "Mae'r dudalen $1 ar gael yn barod ac ni ellir ei throsysgrifo.",
+	'renameuser-page-moved' => 'Symudwyd $1 i $2.',
+	'renameuser-page-unmoved' => 'Ni lwyddwyd i symud y dudalen $1 i $2.',
+	'renameuserlogpage' => 'Lòg ail-enwi defnyddwyr',
+	'renameuserlogpagetext' => "Dyma lòg o'r holl newidiadau i enwau defnyddwyr.",
+	'renameuserlogentry' => 'wedi ail-enwi $1 yn "$2"',
+	'renameuser-log' => '$1 {{PLURAL:$1|golygiad|golygiad|olygiad|golygiad|golygiad|o olygiadau}}. Rheswm: $2',
+	'renameuser-move-log' => 'Wedi symud y dudalen yn awtomatig wrth ail-enwi\'r defnyddiwr "[[User:$1|$1]]" i "[[User:$2|$2]]"',
+	'right-renameuser' => 'Ail-enwi defnyddwyr',
 );
 
 /** German (Deutsch)
@@ -1927,9 +1960,9 @@ $messages['pfl'] = array(
 $messages['pl'] = array(
 	'renameuser' => 'Zmiana nazwy użytkownika',
 	'renameuser-desc' => "Zmiana nazwy użytkownika (wymaga posiadania uprawnień ''renameuser'')",
-	'renameuserold' => 'Obecna nazwa użytkownika',
-	'renameusernew' => 'Nowa nazwa użytkownika',
-	'renameuserreason' => 'Przyczyna zmiany nazwy',
+	'renameuserold' => 'Obecna nazwa użytkownika:',
+	'renameusernew' => 'Nowa nazwa użytkownika:',
+	'renameuserreason' => 'Przyczyna zmiany nazwy:',
 	'renameusermove' => 'Przeniesienie strony osobistej i strony dyskusji użytkownika (oraz ich podstron) pod nową nazwę użytkownika',
 	'renameuserreserve' => 'Zablokuj starą nazwę użytkownika przed możliwością użycia jej',
 	'renameuserwarnings' => 'Ostrzeżenia:',
@@ -1943,8 +1976,8 @@ $messages['pl'] = array(
 	'renameuser-error-same-user' => 'Nie możesz zmienić nazwy użytkownika na taką samą jaka była wcześniej.',
 	'renameusersuccess' => 'Nazwa użytkownika „<nowiki>$1</nowiki>” została zmieniona na „<nowiki>$2</nowiki>”',
 	'renameuser-page-exists' => 'Strona „$1” już istnieje i nie może być automatycznie nadpisana.',
-	'renameuser-page-moved' => 'Strona „$1” została przeniesiona do „$2”.',
-	'renameuser-page-unmoved' => 'Strona „$1” nie mogła zostać przeniesiona do „$2”.',
+	'renameuser-page-moved' => 'Strona „$1” została przeniesiona pod nazwę „$2”.',
+	'renameuser-page-unmoved' => 'Strona „$1” nie mogła zostać przeniesiona pod nazwę „$2”.',
 	'renameuserlogpage' => 'Zmiany nazw użytkowników',
 	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
 	'renameuserlogentry' => 'zmienił nazwę użytkownika $1 na „$2”',
