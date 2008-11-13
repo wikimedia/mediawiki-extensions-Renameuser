@@ -1285,6 +1285,7 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'renameuser' => 'Ngganti jeneng panganggo',
@@ -1293,13 +1294,16 @@ $messages['jv'] = array(
 	'renameusernew' => 'Jeneng panganggo anyar:',
 	'renameuserreason' => 'Alesan ganti jeneng:',
 	'renameusermove' => 'Mindhah kaca panganggo lan kaca dhiskusiné (sarta subkaca-kacané) menyang jeneng anyar',
+	'renameuserreserve' => 'Blokir utawa cadhangaké jeneng panganggo lawas supaya ora bisa dianggo manèh',
+	'renameuserwarnings' => 'Pènget:',
+	'renameuserconfirm' => 'Ya, ganti jeneng panganggo kasebut',
 	'renameusersubmit' => 'Kirim',
 	'renameusererrordoesnotexist' => 'Panganggo "<nowiki>$1</nowiki>" ora ana.',
 	'renameusererrorexists' => 'Panganggo "<nowiki>$1</nowiki>" wis ana.',
 	'renameusererrorinvalid' => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
-	'renameusererrortoomany' => 'Panganggo "<nowiki>$1</nowiki>" wis duwé $2 suntingan. Yèn jeneng panganggoné diganti mawa luwih saka $3 suntingan bisa awèh pangaruh marang kinerja situs.',
-	'renameuser-error-request' => 'Wau ana masalah nalika prosès panyuwunan panjenengan.
-Mangga balia lan dicoba manèh.',
+	'renameusererrortoomany' => 'Panganggo "<nowiki>$1</nowiki>" wis duwé $2 {{PLURAL:$2|suntingan|suntingan}}, yèn jeneng panganggoné diganti mawa luwih saka $3 {{PLURAL:$3|suntingan|suntingan}}  bisa awèh pangaruh ala marang kinerja situs.',
+	'renameuser-error-request' => 'Ana masalah nalika nampa panyuwunan panjenengan.
+Mangga balènana lan nyoba manèh.',
 	'renameuser-error-same-user' => 'Panjenengan ora bisa ngganti jeneng panganggo dadi kaya jeneng asalé.',
 	'renameusersuccess' => 'Panganggo "<nowiki>$1</nowiki>" wis diganti jenengé dadi "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Kaca $1 wis ana lan ora bisa ditimpa sacara otomatis.',
@@ -1307,7 +1311,7 @@ Mangga balia lan dicoba manèh.',
 	'renameuser-page-unmoved' => 'Kaca $1 ora bisa dialihaké menyang $2.',
 	'renameuserlogpage' => 'Log ganti jeneng panganggo',
 	'renameuserlogpagetext' => 'Iki log owah-owahan jeneng panganggo',
-	'renameuserlogentry' => 'wis ngganti jeneng $1 dadi "$2"',
+	'renameuserlogentry' => 'Ganti jeneng $1 dadi "$2"',
 	'renameuser-log' => 'sing wis duwé $1 suntingan. Alesan: $2',
 	'renameuser-move-log' => 'Sacara otomatis mindhah kaca nalika ngganti jeneng panganggo "[[User:$1|$1]]" dadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Ganti jeneng panganggo-panganggo',
@@ -1473,7 +1477,7 @@ $messages['ko'] = array(
 	'renameuser-page-unmoved' => '$1 문서를 $2(으)로 이동하지 못했습니다.',
 	'renameuserlogpage' => '이름 변경 기록',
 	'renameuserlogpagetext' => '계정 이름 변경 기록입니다.',
-	'renameuserlogentry' => '$1에서 "$2"로 이름을 바꾸었습니다.',
+	'renameuserlogentry' => '$1에서 "$2"(으)로 이름을 바꾸었습니다.',
 	'renameuser-log' => '$1개의 기여. 이유: $2',
 	'renameuser-move-log' => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 	'right-renameuser' => '계정 이름 변경',
