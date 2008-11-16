@@ -1946,6 +1946,13 @@ $messages['oc'] = array(
 	'right-renameuser' => "Tornar nomenar d'utilizaires",
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'renameuser' => 'Архайæджы ном баив',
+);
+
 /** Pfälzisch (Pfälzisch)
  * @author SPS
  */
