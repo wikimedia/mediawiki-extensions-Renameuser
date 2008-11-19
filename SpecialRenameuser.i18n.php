@@ -370,6 +370,13 @@ $messages['br'] = array(
 	'renameuser-move-log' => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[User:$1|$1]]" e "[[User:$2|$2]]"',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'renameusersubmit' => 'Pošalji',
+);
+
 /** Catalan (Català)
  * @author Juanpabl
  * @author Paucabot
