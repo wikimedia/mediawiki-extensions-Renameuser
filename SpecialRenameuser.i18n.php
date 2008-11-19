@@ -374,7 +374,21 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'renameuser' => 'Preimenuj korisnika',
+	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] u svrhu promjene imena korisnika (zahtjeva pravo ''preimemovanja korisnika'')",
+	'renameuserold' => 'Trenutno ime korisnika:',
+	'renameusernew' => 'Novo korisničko ime:',
+	'renameuserreason' => 'Razlog promjene imena:',
+	'renameuserreserve' => 'Blokiraj staro korisničko ime od kasnijeg korištenja',
+	'renameuserwarnings' => 'Upozorenja:',
+	'renameuserconfirm' => 'Da, promijeni ime korisnika',
 	'renameusersubmit' => 'Pošalji',
+	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji.',
+	'renameuser-error-same-user' => 'Ne može se promijeniti ime korisnika u isto kao i ranije.',
+	'renameusersuccess' => 'Ime korisnika "<nowiki>$1</nowiki>" je promijenjeno u "<nowiki>$2</nowiki>".',
+	'renameuserlogpagetext' => 'Ovo je zapisnik promjena korisničkih imena.',
+	'renameuserlogentry' => '$1 preimenovan u "$2"',
+	'right-renameuser' => 'Preimenovanje korisnika',
 );
 
 /** Catalan (Català)
@@ -1640,22 +1654,24 @@ $messages['lt'] = array(
 	'renameusernew' => 'Naujas naudotojo vardas:',
 	'renameuserreason' => 'Priežastis pervadinimui:',
 	'renameusermove' => 'Perkelti naudotoją ir aptarimo puslapius (bei jo subpuslapius) prie naujo vardo',
+	'renameuserreserve' => 'Užblokuoti senąjį naudotojo vardą nuo galimybių naudoti ateityje',
 	'renameuserwarnings' => 'Įspėjimai:',
 	'renameuserconfirm' => 'Taip, pervadinti naudotoją',
 	'renameusersubmit' => 'Patvirtinti',
 	'renameusererrordoesnotexist' => 'Naudotojas "<nowiki>$1</nowiki>" neegzistuoja.',
 	'renameusererrorexists' => 'Naudotojas "<nowiki>$1</nowiki>" jau egzistuoja.',
 	'renameusererrorinvalid' => 'Naudotojo vardas "<nowiki>$1</nowiki>" netinkamas.',
-	'renameusererrortoomany' => 'Naudotojas "<nowiki>$1</nowiki>" yra atlikęs $2 pakeitimus, pervadinat naudotoją, atlikusį daugiau nei $3 pakeitimų, gali būti neigiamai paveiktas tinklalapio darbas.',
+	'renameusererrortoomany' => 'Naudotojas "<nowiki>$1</nowiki>" yra atlikęs $2 {{PLURAL:$2|pakeitimą|pakeitimų|pakeitimus}}, pervadinat naudotoją, atlikusį daugiau nei $3 {{PLURAL:$2|pakeitimą|pakeitimų|pakeitimus}}, gali būti neigiamai paveiktas tinklalapio darbas.',
 	'renameuser-error-request' => 'Iškilo prašymo gavimo problema.
 Prašome eiti atgal ir bandyti iš naujo.',
 	'renameuser-error-same-user' => 'Jūs negalite pervadinti naudotojo į tokį pat vardą, kaip pirmiau.',
 	'renameusersuccess' => 'Naudotojas "<nowiki>$1</nowiki>" buvo pervadintas į "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Puslapis $1 jau egzistuoja ir negali būti automatiškai perrašytas.',
 	'renameuser-page-moved' => 'Puslapis $1 buvo perkeltas į $2.',
+	'renameuser-page-unmoved' => 'Puslapis $1 negali būti perkeltas į $2.',
 	'renameuserlogpage' => 'Naudotojų pervadinimo sąrašas',
 	'renameuserlogpagetext' => 'Tai yra naudotojų vardų pakeitimų sąrašas',
-	'renameuserlogentry' => 'buvo pervadintas $1 į "$2"',
+	'renameuserlogentry' => 'pervadintas $1 į „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 redagavimas|$1 redagavimų(ai)}}. Priežastis: $2',
 	'renameuser-move-log' => 'Puslapis automatiškai perkeltas, kai buvo pervadinamas naudotojas "[[User:$1|$1]]" į "[[User:$2|$2]]"',
 	'right-renameuser' => 'Pervadinti naudotojus',
@@ -2127,6 +2143,13 @@ $messages['ro'] = array(
 	'renameuserlogpage' => 'Raport redenumiri utilizatori',
 	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[Utilizator:$1|$1]]" la "[[Utilizator:$2|$2]]"',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'renameusersubmit' => 'Conferme',
 );
 
 /** Russian (Русский)
