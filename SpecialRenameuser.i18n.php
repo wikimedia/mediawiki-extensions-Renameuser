@@ -379,15 +379,22 @@ $messages['bs'] = array(
 	'renameuserold' => 'Trenutno ime korisnika:',
 	'renameusernew' => 'Novo korisničko ime:',
 	'renameuserreason' => 'Razlog promjene imena:',
+	'renameusermove' => 'Premještanje korisnika i njegove stranice za razgovor (zajedno sa podstranicama) na novo ime',
 	'renameuserreserve' => 'Blokiraj staro korisničko ime od kasnijeg korištenja',
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, promijeni ime korisnika',
 	'renameusersubmit' => 'Pošalji',
 	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji.',
+	'renameusererrorexists' => 'Korisnik "<nowiki>$1</nowiki>" već postoji.',
+	'renameusererrorinvalid' => 'Korisničko ime "<nowiki>$1</nowiki>" nije valjano.',
+	'renameuser-error-request' => 'Nastao je problem pri prijemu zahtjeva.
+Molimo Vas da se vratite nazad i pokušate ponovo.',
 	'renameuser-error-same-user' => 'Ne može se promijeniti ime korisnika u isto kao i ranije.',
 	'renameusersuccess' => 'Ime korisnika "<nowiki>$1</nowiki>" je promijenjeno u "<nowiki>$2</nowiki>".',
+	'renameuserlogpage' => 'Zapisnik preimenovanja korisnika',
 	'renameuserlogpagetext' => 'Ovo je zapisnik promjena korisničkih imena.',
 	'renameuserlogentry' => '$1 preimenovan u "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 izmjena|$1 izmjene|$1 izmjena}}. Razlog: $2',
 	'right-renameuser' => 'Preimenovanje korisnika',
 );
 
