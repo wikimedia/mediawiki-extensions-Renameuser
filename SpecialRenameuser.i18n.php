@@ -955,6 +955,13 @@ $messages['gl'] = array(
 	'right-renameuser' => 'Renomear usuarios',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'renameusersubmit' => 'Ὑποβάλλειν',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
@@ -2258,7 +2265,9 @@ $messages['sk'] = array(
 	'right-renameuser' => 'Premenovávať používateľov',
 );
 
-/** Albanian (Shqip) */
+/** Albanian (Shqip)
+ * @author Dori
+ */
 $messages['sq'] = array(
 	'renameuser' => 'Ndërrim përdoruesi',
 	'renameuserold' => 'Emri i tanishëm',
@@ -2268,11 +2277,11 @@ $messages['sq'] = array(
 	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
 	'renameusererrorexists' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
 	'renameusererrorinvalid' => 'Emri "<nowiki>$1</nowiki>" nuk është i lejuar',
-	'renameusererrortoomany' => 'Përdoruesi "<nowiki>$1</nowiki>" ka dhënë $2 kontribute. Ndryshimi i emrit të një përdoruesi me më shumë se $3 kontribute mund të ndikojë rëndë tek rendimenti i shërbyesave.',
+	'renameusererrortoomany' => 'Përdoruesi "<nowiki>$1</nowiki>" ka dhënë $2 {{PLURAL:$2|kontribut|kontribute}}. Ndryshimi i emrit të një përdoruesi me më shumë se $3 {{PLURAL:$3|kontribut|kontribute}} mund të ndikojë rëndë tek rendimenti i shërbyesave.',
 	'renameusersuccess' => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
 	'renameuserlogpage' => 'Regjistri i emër-ndryshimeve',
 	'renameuserlogpagetext' => 'Ky është një regjistër i ndryshimeve së emrave të përdoruesve',
-	'renameuser-log' => 'me $1 kontribute. $2',
+	'renameuser-log' => '{{PLURAL:$1|1 redaktim|$1 redaktime}}. Arsyeja: $2',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
