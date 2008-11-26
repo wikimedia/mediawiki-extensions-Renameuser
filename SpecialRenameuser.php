@@ -57,8 +57,8 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 	return $rv;
 }
 
-$wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
-$wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
+$wgAutoloadClasses['SpecialRenameuser'] = $dir . 'SpecialRenameuser_body.php';
+$wgAutoloadClasses['RenameUserJob'] = $dir . 'RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
