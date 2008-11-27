@@ -174,6 +174,11 @@ $aliases['sv'] = array(
 	'Renameuser' => array( 'Användarnamnbyte' ),
 );
 
+/** Swahili (Kiswahili) */
+$aliases['sw'] = array(
+	'Renameuser' => array( 'BadilishajinalaMtumiaji' ),
+);
+
 /** Thai (ไทย) */
 $aliases['th'] = array(
 	'Renameuser' => array( 'เปลี่ยนชื่อผู้ใช้' ),
