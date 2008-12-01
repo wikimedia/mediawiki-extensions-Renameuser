@@ -92,6 +92,11 @@ $aliases['id'] = array(
 	'Renameuser' => array( 'Ganti nama pengguna' ),
 );
 
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'Renameuser' => array( '利用者名の変更' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'Renameuser' => array( 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់' ),

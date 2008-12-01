@@ -1262,7 +1262,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'renameuser' => '利用者名の変更',
-	'renameuser-desc' => "利用者名変更 (''利用者名変更'' の権限が必要です)",
+	'renameuser-desc' => '利用者名変更のための[[Special:Renameuser|特別ページ]]を追加する（renameuser権限が必要）',
 	'renameuserold' => '現在の利用者名:',
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
@@ -2231,6 +2231,24 @@ $messages['sah'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
 	'renameuser-move-log' => '«[[User:$1|$1]]» аата «[[User:$2|$2]]» буолбутунан аптамаатынан',
 	'right-renameuser' => 'Кыттааччылар ааттарын уларытыы',
+);
+
+/** Sinhala (සිංහල)
+ * @author නන්දිමිතුරු
+ */
+$messages['si'] = array(
+	'renameuser' => 'පරිශීලකයා යළි-නම්කරන්න',
+	'renameuser-desc' => "පරිශීලකයෙක් යළි-නම්කරනු වස් [[Special:Renameuser|විශේෂ පිටුවක්]] එක් කරන්න (''renameuser'' අයිතිය අවශ්‍යයි)",
+	'renameuserold' => 'වත්මන් පරිශීලක නාමය:',
+	'renameusernew' => 'නව පරිශීලක නාමය:',
+	'renameuserreason' => 'යළි-නම්කිරීමට හේතුව:',
+	'renameusermove' => 'පරිශීලක හා සාකච්ඡා පිටු   (හා  ඒවායේ උපපිටු) නව නම වෙතට ගෙන යන්න',
+	'renameuserreserve' => 'පැරණි පරිශීලක නම අනාගත භාවිතයෙන් වාරණය කරන්න',
+	'renameuserwarnings' => 'අවවාදයන්:',
+	'renameuserconfirm' => 'ඔව්, පරිශීලකයා යළි-නම්කරන්න',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" පරිශීලකයා නොපවතී.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" පරිශීලකයා දැනටමත් පවතියි.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" පරිශීලක නාමය අනීතිකයි.',
 );
 
 /** Slovak (Slovenčina)
