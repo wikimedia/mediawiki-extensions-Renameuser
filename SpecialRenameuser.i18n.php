@@ -1070,6 +1070,7 @@ $messages['hsb'] = array(
 	'renameusernew' => 'Nowe wužiwarske mjeno:',
 	'renameuserreason' => 'Přičina za přemjenowanje:',
 	'renameusermove' => 'Wužiwarsku stronu a wužiwarsku diskusiju (a jeju podstrony) na nowe mjeno přesunyć',
+	'renameuserreserve' => 'Stare wužiwarske mjeno za přichodne wužiwanje blokować',
 	'renameuserwarnings' => 'Warnowanja:',
 	'renameuserconfirm' => 'Haj, wužiwarja přemjenować',
 	'renameusersubmit' => 'Składować',
