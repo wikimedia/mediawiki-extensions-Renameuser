@@ -99,7 +99,7 @@ $aliases['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'Renameuser' => array( 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់' ),
+	'Renameuser' => array( 'ប្ដូរឈ្មោះអ្នកប្រើប្រាស់' ),
 );
 
 /** Korean (한국어) */
