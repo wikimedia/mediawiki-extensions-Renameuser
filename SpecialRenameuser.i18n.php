@@ -270,6 +270,8 @@ $messages['bcl'] = array(
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
+	'renameuser' => 'Перайменаваць ўдзельніка',
+	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
 	'renameusernew' => 'Новае імя:',
 	'renameuserreason' => 'Прычына перайменаваньня:',
 	'renameuserwarnings' => 'Папярэджаньні:',
@@ -587,6 +589,7 @@ $messages['dsb'] = array(
 	'renameusernew' => 'Nowe wužywarske mě:',
 	'renameuserreason' => 'Pśicyna za pśemjenjenje',
 	'renameusermove' => 'Wužywarski a diskusijny bok (a jich pódboki) do nowego mjenja pśesunuś',
+	'renameuserreserve' => 'Stare wužywarske mě pśeśiwo pśichodnemu wužywanjeju blokěrowaś',
 	'renameuserwarnings' => 'Warnowanja:',
 	'renameuserconfirm' => 'Jo, wužywarja pśemjeniś',
 	'renameusersubmit' => 'Pśemjeniś',
@@ -912,13 +915,16 @@ $messages['fy'] = array(
 	'renameuserlogpagetext' => 'Dit is in loch fan feroarings fan meidochnammen.',
 );
 
-/** Irish (Gaeilge) */
+/** Irish (Gaeilge)
+ * @author Alison
+ */
 $messages['ga'] = array(
 	'renameuser' => 'Athainmnigh úsáideoir',
 	'renameuserold' => 'Ainm reatha úsáideora:',
 	'renameusernew' => 'Ainm nua úsáideora:',
 	'renameusersuccess' => 'Athainmníodh úsáideoir "<nowiki>$1</nowiki>" mar "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Tá leathanach "$1" ann chean féin; ní féidir ábhar a scríobh thairis go huathoibríoch.',
+	'renameuserlogentry' => 'Athainmníodh úsáideoir $1 mar "$2"',
 );
 
 /** Galician (Galego)
