@@ -267,15 +267,21 @@ $messages['bcl'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
 	'renameuser' => 'Перайменаваць ўдзельніка',
 	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
+	'renameuserold' => 'Цяперашняе імя ўдзельніка:',
 	'renameusernew' => 'Новае імя:',
 	'renameuserreason' => 'Прычына перайменаваньня:',
+	'renameusermove' => 'Зьмяніць назву старонкі ўдзельніка і яго старонкі размоваў (і іх падстаронак)',
+	'renameuserreserve' => 'Заблякаваць старое імя ўдзельніка для выкарыстаньня ў будучыні',
 	'renameuserwarnings' => 'Папярэджаньні:',
 	'renameuserconfirm' => 'Так, перайменаваць удзельніка',
+	'renameusersubmit' => 'Зьмяніць',
+	'renameusererrordoesnotexist' => 'Удзельнік "<nowiki>$1</nowiki>" не зарэгістраваны.',
 	'renameuserlogpage' => 'Журнал перайменаваньняў удзельнікаў',
 	'renameuser-log' => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньні|рэдагаваньняў}}. Прычына: $2',
 	'right-renameuser' => 'перайменаваньне ўдзельнікаў',
@@ -925,6 +931,7 @@ $messages['ga'] = array(
 	'renameusersuccess' => 'Athainmníodh úsáideoir "<nowiki>$1</nowiki>" mar "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Tá leathanach "$1" ann chean féin; ní féidir ábhar a scríobh thairis go huathoibríoch.',
 	'renameuserlogentry' => 'Athainmníodh úsáideoir $1 mar "$2"',
+	'renameuser-log' => '{{PLURAL:$1|Athrú amháin|$1 athrú}}. Fáth: $2',
 );
 
 /** Galician (Galego)

@@ -60,6 +60,11 @@ $aliases['gl'] = array(
 	'Renameuser' => array( 'Renomear usuario' ),
 );
 
+/** Swiss German (Alemannisch) */
+$aliases['gsw'] = array(
+	'Renameuser' => array( 'eme Benutzer e andre Name gee' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
