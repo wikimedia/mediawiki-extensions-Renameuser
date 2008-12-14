@@ -115,7 +115,7 @@ class SpecialRenameuser extends SpecialPage {
 					wfMsgHtml( $warning );
 			$wgOut->addHTML( "
 				<tr>
-					<td>".wfMsgWikiHtml( 'renameuserwarnings' ) ."
+					<td class='mw-label'>" . wfMsgWikiHtml( 'renameuserwarnings' ) . "
 					</td>
 					<td class='mw-input'>" .
 						'<ul style="color: red; font-weight: bold"><li>'.
