@@ -271,19 +271,32 @@ $messages['bcl'] = array(
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
-	'renameuser' => 'Перайменаваць ўдзельніка',
-	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
+	'renameuser' => 'Перайменаваць рахунак удзельніка',
+	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня рахунку ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
 	'renameuserold' => 'Цяперашняе імя ўдзельніка:',
 	'renameusernew' => 'Новае імя:',
 	'renameuserreason' => 'Прычына перайменаваньня:',
-	'renameusermove' => 'Зьмяніць назву старонкі ўдзельніка і яго старонкі размоваў (і іх падстаронак)',
+	'renameusermove' => 'Перайменаваць старонкі ўдзельніка і размоваў (і іх падстаронкі)',
 	'renameuserreserve' => 'Заблякаваць старое імя ўдзельніка для выкарыстаньня ў будучыні',
 	'renameuserwarnings' => 'Папярэджаньні:',
 	'renameuserconfirm' => 'Так, перайменаваць удзельніка',
-	'renameusersubmit' => 'Зьмяніць',
-	'renameusererrordoesnotexist' => 'Удзельнік "<nowiki>$1</nowiki>" не зарэгістраваны.',
+	'renameusersubmit' => 'Перайменаваць',
+	'renameusererrordoesnotexist' => 'Рахунак «<nowiki>$1</nowiki>» не існуе.',
+	'renameusererrorexists' => 'Рахунак «<nowiki>$1</nowiki>» ужо існуе.',
+	'renameusererrorinvalid' => 'Няслушнае імя ўдзельніка «<nowiki>$1</nowiki>».',
+	'renameusererrortoomany' => 'Удзельнік «<nowiki>$1</nowiki>» зрабіў $2 {{PLURAL:$2|рэдагаваньне|рэдагаваньні|рэдагаваньняў}}. Перайменаваньне рахунку ўдзельніка, які зрабіў болей за $3 {{PLURAL:$3|рэдагаваньне|рэдагаваньні|рэдагаваньняў}} можа нэгатыўна паўплываць на працу {{GRAMMAR:родны|{{SITENAME}}}}.',
+	'renameuser-error-request' => 'Узьніклі праблемы з атрыманьнем запыту.
+Калі ласка, вярніцеся назад і паспрабуйце ізноў.',
+	'renameuser-error-same-user' => 'Немагчыма перайменаваць рахунак удзельніка ў тое ж самае імя.',
+	'renameusersuccess' => 'Рахунак «<nowiki>$1</nowiki>» быў перайменаваны ў «<nowiki>$2</nowiki>».',
+	'renameuser-page-exists' => 'Старонка $1 ужо існуе і ня можа быць аўтаматычна перазапісаная.',
+	'renameuser-page-moved' => 'Старонка $1 была перайменаваная ў $2.',
+	'renameuser-page-unmoved' => 'Старонка $1 ня можа быць перайменаваная ў $2.',
 	'renameuserlogpage' => 'Журнал перайменаваньняў удзельнікаў',
+	'renameuserlogpagetext' => 'Гэта журнал перайменаваньняў рахункаў удзельнікаў.',
+	'renameuserlogentry' => 'перайменаваў $1 у «$2»',
 	'renameuser-log' => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньні|рэдагаваньняў}}. Прычына: $2',
+	'renameuser-move-log' => 'Аўтаматычнае перайменаваньне старонкі ў сувязі зь перайменаваньнем рахунку ўдзельніка з «[[User:$1|$1]]» у «[[User:$2|$2]]»',
 	'right-renameuser' => 'перайменаваньне ўдзельнікаў',
 );
 
@@ -395,14 +408,19 @@ $messages['bs'] = array(
 	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji.',
 	'renameusererrorexists' => 'Korisnik "<nowiki>$1</nowiki>" već postoji.',
 	'renameusererrorinvalid' => 'Korisničko ime "<nowiki>$1</nowiki>" nije valjano.',
+	'renameusererrortoomany' => 'Korisnik "<nowiki>$1</nowiki>" ima $2 {{PLURAL:$2|izmjenu|izmjene|izmjena}}, promjena imena korisnika sa više od $3 {{PLURAL:$3|izmjene|izmjena}} može ugroziti performanse stranica.',
 	'renameuser-error-request' => 'Nastao je problem pri prijemu zahtjeva.
 Molimo Vas da se vratite nazad i pokušate ponovo.',
 	'renameuser-error-same-user' => 'Ne može se promijeniti ime korisnika u isto kao i ranije.',
 	'renameusersuccess' => 'Ime korisnika "<nowiki>$1</nowiki>" je promijenjeno u "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može biti automatski prepisana.',
+	'renameuser-page-moved' => 'Stranica $1 je premještena na $2.',
+	'renameuser-page-unmoved' => 'Stranica $1 nije mogla biti premještena na $2.',
 	'renameuserlogpage' => 'Zapisnik preimenovanja korisnika',
 	'renameuserlogpagetext' => 'Ovo je zapisnik promjena korisničkih imena.',
 	'renameuserlogentry' => '$1 preimenovan u "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 izmjena|$1 izmjene|$1 izmjena}}. Razlog: $2',
+	'renameuser-move-log' => 'Automatski premještena stranica pri promjeni korisničkog imena "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 	'right-renameuser' => 'Preimenovanje korisnika',
 );
 
@@ -1461,6 +1479,7 @@ $messages['kk-latn'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
@@ -1471,13 +1490,13 @@ $messages['km'] = array(
 	'renameuserreason' => 'មូលហេតុ៖',
 	'renameusermove' => 'ប្តូរទីតាំងទំព័រអ្នកប្រើប្រាស់និងទំព័រពិភាក្សា(រួមទាំងទំព័ររងផងដែរ)ទៅឈ្មោះថ្មី',
 	'renameuserreserve' => 'ហាមឃាត់គណនីចាស់ពីការប្រើប្រាស់នាពេលអនាគត',
-	'renameuserwarnings' => 'បំរាម៖',
+	'renameuserwarnings' => 'បម្រាម​៖',
 	'renameuserconfirm' => 'បាទ/ចាស៎ សូមប្តូរឈ្មោះអ្នកប្រើប្រាស់នេះ',
 	'renameusersubmit' => 'ដាក់ស្នើ',
 	'renameusererrordoesnotexist' => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មិនមាន ។',
 	'renameusererrorexists' => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មានហើយ ។',
 	'renameusererrorinvalid' => 'ឈ្មោះអ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" មិនត្រឹមត្រូវ ។',
-	'renameuser-error-request' => 'មានបញ្ហា ចំពោះការទទួលសំណើ។ សូមត្រលប់ក្រោយ ហើយព្យាយាមម្តងទៀត ។',
+	'renameuser-error-request' => 'មានបញ្ហា​ចំពោះការទទួលសំណើ​។ សូមត្រឡប់ក្រោយ ហើយព្យាយាមម្តងទៀត​។',
 	'renameuser-error-same-user' => 'អ្នកមិនអាចប្តូរឈ្មោះអ្នកប្រើប្រាស់ទៅជាឈ្មោះដូចមុនបានទេ។',
 	'renameusersuccess' => 'អ្នកប្រើប្រាស់ "<nowiki>$1</nowiki>" ត្រូវបានប្តូរឈ្មោះទៅ "<nowiki>$2</nowiki>"។',
 	'renameuser-page-exists' => 'ទំព័រ $1 មានហើយ មិនអាចសរសេរជាន់ពីលើដោយស្វ័យប្រវត្តិទេ។',
@@ -2156,21 +2175,32 @@ $messages['rmy'] = array(
  */
 $messages['ro'] = array(
 	'renameuser' => 'Redenumeşte utilizator',
+	'renameuser-desc' => "Adaugă o [[Special:Renameuser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	'renameuserold' => 'Numele de utilizator existent:',
 	'renameusernew' => 'Numele de utilizator nou:',
+	'renameuserreason' => 'Motivul schimbării numelui:',
 	'renameusermove' => 'Mută pagina de utilizator şi pagina de discuţii (şi subpaginile lor) la noul nume',
+	'renameuserreserve' => 'Utilizarea ulterioară a vechiului nume de utilizator',
+	'renameuserwarnings' => 'Avertizări:',
+	'renameuserconfirm' => 'Da, redenumeşte utilizatorul',
 	'renameusersubmit' => 'Trimite',
 	'renameusererrordoesnotexist' => 'Utilizatorul "$1" nu există',
 	'renameusererrorexists' => 'Utilizatorul "$1" există deja',
 	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid',
 	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuţie|contribuţii}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuţie|contribuţii}} contribuţii ar putea afecta performanţa sitului',
+	'renameuser-error-request' => 'A fost o problemă la procesarea cererii.
+Întoarceţi-vă şi încercaţi din nou.',
+	'renameuser-error-same-user' => 'Nu puteţi redenumi un utilizator la acelaşi nume ca şi înainte.',
 	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
 	'renameuser-page-exists' => 'Pagina $1 există deja şi nu poate fi suprascrisă automat.',
 	'renameuser-page-moved' => 'Pagina $1 a fost mutată la $2.',
 	'renameuser-page-unmoved' => 'Pagina $1 nu poate fi mutată la $2.',
 	'renameuserlogpage' => 'Raport redenumiri utilizatori',
 	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
-	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[Utilizator:$1|$1]]" la "[[Utilizator:$2|$2]]"',
+	'renameuserlogentry' => 'a redenumit $1 în „$2”',
+	'renameuser-log' => '{{PLURAL:$1|o contribuţie|$1 contribuţii}}. Motiv: $2',
+	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
+	'right-renameuser' => 'Redenumeşte utilizatori',
 );
 
 /** Tarandíne (Tarandíne)
