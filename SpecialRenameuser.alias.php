@@ -62,7 +62,7 @@ $aliases['gl'] = array(
 
 /** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
-	'Renameuser' => array( 'eme Benutzer e andre Name gee' ),
+	'Renameuser' => array( 'Benutzer e andre Name gee' ),
 );
 
 /** Hebrew (עברית)
