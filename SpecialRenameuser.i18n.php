@@ -948,8 +948,8 @@ $messages['ga'] = array(
 	'renameusernew' => 'Ainm nua úsáideora:',
 	'renameusersuccess' => 'Athainmníodh úsáideoir "<nowiki>$1</nowiki>" mar "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Tá leathanach "$1" ann chean féin; ní féidir ábhar a scríobh thairis go huathoibríoch.',
-	'renameuserlogentry' => 'Athainmníodh úsáideoir $1 mar "$2"',
-	'renameuser-log' => '{{PLURAL:$1|Athrú amháin|$1 athrú}}. Fáth: $2',
+	'renameuserlogentry' => 'athainmníodh úsáideoir $1 mar "$2"',
+	'renameuser-log' => '{{PLURAL:$1|Athrú amháin|$1 athruithe}}. Fáth: $2',
 );
 
 /** Galician (Galego)
@@ -2098,6 +2098,7 @@ $messages['pms'] = array(
 $messages['ps'] = array(
 	'renameuserold' => 'اوسنی کارن-نوم:',
 	'renameusernew' => 'نوی کارن-نوم:',
+	'renameuserwarnings' => 'ګواښنې:',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 );
 
