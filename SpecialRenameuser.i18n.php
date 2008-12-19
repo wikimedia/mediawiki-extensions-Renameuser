@@ -2099,6 +2099,8 @@ $messages['ps'] = array(
 	'renameuserold' => 'اوسنی کارن-نوم:',
 	'renameusernew' => 'نوی کارن-نوم:',
 	'renameuserwarnings' => 'ګواښنې:',
+	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کارونکی نه شته.',
+	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارونکی له پخوا نه شته.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 );
 
