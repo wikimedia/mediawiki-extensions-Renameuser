@@ -127,6 +127,11 @@ $aliases['lb'] = array(
 	'Renameuser' => array( 'Benotzer ëmbenennen' ),
 );
 
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'Renameuser' => array( 'ПреименувајКорисник' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'Renameuser' => array( 'Tukar nama pengguna' ),

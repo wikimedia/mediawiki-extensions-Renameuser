@@ -396,7 +396,7 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'renameuser' => 'Preimenuj korisnika',
-	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] u svrhu promjene imena korisnika (zahtjeva pravo ''preimemovanja korisnika'')",
+	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] u svrhu promjene imena korisnika (zahtjeva pravo ''preimenovanja korisnika'')",
 	'renameuserold' => 'Trenutno ime korisnika:',
 	'renameusernew' => 'Novo korisničko ime:',
 	'renameuserreason' => 'Razlog promjene imena:',
@@ -825,7 +825,7 @@ $messages['fi'] = array(
 	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
 	'renameusererrorexists' => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
 	'renameusererrorinvalid' => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
-	'renameusererrortoomany' => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 muokkausta. Tunnuksen, jolla on yli $3 muokkausta, vaihtaminen voi haitata sivuston suorituskykyä.',
+	'renameusererrortoomany' => 'Tunnuksella ”<nowiki>$1</nowiki>” on $2 {{PLURAL:$2|muokkaus|muokkausta}}. Tunnuksen, jolla on yli $3 {{PLURAL:$3|muokkaus|muokkausta}}, vaihtaminen voi haitata sivuston suorituskykyä.',
 	'renameuser-error-request' => 'Pyynnön vastaanottamisessa oli ongelma. Ole hyvä ja yritä uudelleen.',
 	'renameuser-error-same-user' => 'Et voi nimetä käyttäjää uudelleen samaksi kuin hän jo on.',
 	'renameusersuccess' => 'Käyttäjän ”<nowiki>$1</nowiki>” tunnus on nyt ”<nowiki>$2</nowiki>”.',
@@ -1942,6 +1942,39 @@ $messages['nl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkingen}}. Reden: $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 	'right-renameuser' => 'Gebruikers hernoemen',
+);
+
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
+ */
+$messages['nn'] = array(
+	'renameuser' => 'Døyp om brukar',
+	'renameuser-desc' => "Legg til ei [[Special:Renameuser|spesialsida]] for å døypa om ein brukar (krev ''renameuser''-rettar)",
+	'renameuserold' => 'Noverande brukarnamn:',
+	'renameusernew' => 'Nytt brukarnamn:',
+	'renameuserreason' => 'Årsak for omdøyping:',
+	'renameusermove' => 'Flytt brukar- og brukardiskusjonssider (og deira undersider) til nytt namn.',
+	'renameuserreserve' => 'Blokker det gamle brukarnamnet for framtidig bruk',
+	'renameuserwarnings' => 'Åtvaringar:',
+	'renameuserconfirm' => 'Ja, endra namn på brukaren',
+	'renameusersubmit' => 'Utfør',
+	'renameusererrordoesnotexist' => 'Brukaren «<nowiki>$1</nowiki>» finst ikkje.',
+	'renameusererrorexists' => 'Brukaren «<nowiki>$1</nowiki>» finst allereie.',
+	'renameusererrorinvalid' => 'Brukarnamnet «<nowiki>$1</nowiki>» er ikkje gyldig.',
+	'renameusererrortoomany' => 'Brukaren «<nowiki>$1</nowiki>»  har {{PLURAL:$2|eitt bidrag|$2 bidrag}}. Å døypa om ein brukar med meir enn {{PLURAL:$3|eitt bidrag|$3 bidrag}} vil kunna påverka sida si yting negativt.',
+	'renameuser-error-request' => 'Det var eit problem med å motta førespurnaden.
+Gå attende og prøv på nytt.',
+	'renameuser-error-same-user' => 'Du kan ikkje gje ein brukar same namn som han/ho har frå før.',
+	'renameusersuccess' => 'Brukaren «<nowiki>$1</nowiki>» har fått brukarnamnet endra til «<nowiki>$2</nowiki>»',
+	'renameuser-page-exists' => 'Sida $1 finst allereie og kan ikkje automatisk verta skrive over.',
+	'renameuser-page-moved' => 'Sida $1 har vorte flytta til $2.',
+	'renameuser-page-unmoved' => 'Sida $1 kunne ikkje verta flytta til $2.',
+	'renameuserlogpage' => 'Logg over brukarnamnendringar',
+	'renameuserlogpagetext' => 'Logg over endringar av brukarnamn',
+	'renameuserlogentry' => 'endra $1 til «$2»',
+	'renameuser-log' => '{{PLURAL:$1|eitt bidrag|$1 bidrag}}. Årsak: $2',
+	'renameuser-move-log' => 'Flytta sida automatisk under omdøyping av brukaren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+	'right-renameuser' => 'Døypa om brukarar',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
