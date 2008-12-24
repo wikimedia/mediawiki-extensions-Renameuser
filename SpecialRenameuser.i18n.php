@@ -849,6 +849,7 @@ $messages['fo'] = array(
 
 /** French (Français)
  * @author Cedric31
+ * @author Crochet.david
  * @author Grondin
  * @author Hégésippe Cormier
  * @author IAlex
@@ -879,7 +880,7 @@ $messages['fr'] = array(
 	'renameuserlogpagetext' => "Ceci est l’historique des changements de noms d'utilisateur",
 	'renameuserlogentry' => 'a renommé « $1 » vers « $2 »',
 	'renameuser-log' => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
-	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur "[[User:$1|$1]]" en "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renommer des utilisateurs',
 );
 
@@ -1133,13 +1134,14 @@ $messages['hu'] = array(
 	'renameusernew' => 'Új felhasználónév:',
 	'renameuserreason' => 'Átnevezés oka:',
 	'renameusermove' => 'Felhasználói- és vitalapok (és azok allapjainak) áthelyezése az új név alá',
+	'renameuserreserve' => 'Régi név blokkolása a jövőbeli használat megakadályozására',
 	'renameuserwarnings' => 'Figyelmeztetések:',
 	'renameuserconfirm' => 'Igen, nevezd át a szerkesztőt',
 	'renameusersubmit' => 'Elküld',
 	'renameusererrordoesnotexist' => 'Nem létezik „<nowiki>$1</nowiki>” nevű felhasználó',
 	'renameusererrorexists' => 'Már létezik „<nowiki>$1</nowiki>” nevű felhasználó',
 	'renameusererrorinvalid' => 'A felhasználónév („<nowiki>$1</nowiki>”) érvénytelen',
-	'renameusererrortoomany' => '„<nowiki>$1</nowiki>” szerkesztőnek $2 szerkesztése van, $3 szerkesztésnél többel rendelkező felhasználók átnevezése rossz hatással lehet az oldal működésére',
+	'renameusererrortoomany' => '„<nowiki>$1</nowiki>” szerkesztőnek {{PLURAL:$2|egy|$2}} szerkesztése van, $3 szerkesztésnél többel rendelkező felhasználók átnevezése rossz hatással lehet az oldal működésére',
 	'renameuser-error-request' => 'Hiba történt a lekérdezés küldése közben.  Menj vissza az előző oldalra és próbáld újra.',
 	'renameuser-error-same-user' => 'Nem nevezhetsz át egy felhasználót a meglévő nevére.',
 	'renameusersuccess' => '„<nowiki>$1</nowiki>” sikeresen át lett nevezve „<nowiki>$2</nowiki>” névre.',
@@ -1148,7 +1150,7 @@ $messages['hu'] = array(
 	'renameuser-page-unmoved' => '$1-t nem sikerült $2 névre nevezi',
 	'renameuserlogpage' => 'Felhasználóátnevezési-napló',
 	'renameuserlogpagetext' => 'Ez a felhasználói nevek változtatásának naplója.',
-	'renameuserlogentry' => 'átnevezte $1 azonosítóját (az új név: "$2")',
+	'renameuserlogentry' => 'átnevezte $1 azonosítóját (az új név: „$2”)',
 	'renameuser-log' => '$1 szerkesztése van. Indoklás: $2',
 	'renameuser-move-log' => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 	'right-renameuser' => 'felhasználók átnevezése',
