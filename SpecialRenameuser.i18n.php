@@ -2523,6 +2523,7 @@ $messages['te'] = array(
 	'renameusernew' => 'కొత్త వాడుకరి పేరు:',
 	'renameuserreason' => 'పేరు మార్చడానికి కారణం:',
 	'renameusermove' => 'సభ్యుని పేజీ, చర్చాపేజీలను (వాటి ఉపపేజీలతో సహా) కొత్త పేరుకు తరలించండి',
+	'renameuserreserve' => 'పాత వాడుకరిపేరుని భవిష్యత్తులో వాడకుండా నిరోధించు',
 	'renameuserwarnings' => 'హెచ్చరికలు:',
 	'renameuserconfirm' => 'అవును, వాడుకరి పేరు మార్చు',
 	'renameusersubmit' => 'పంపించు',
