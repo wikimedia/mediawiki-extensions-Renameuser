@@ -2524,6 +2524,7 @@ $messages['te'] = array(
 	'renameuserreason' => 'పేరు మార్చడానికి కారణం:',
 	'renameusermove' => 'సభ్యుని పేజీ, చర్చాపేజీలను (వాటి ఉపపేజీలతో సహా) కొత్త పేరుకు తరలించండి',
 	'renameuserwarnings' => 'హెచ్చరికలు:',
+	'renameuserconfirm' => 'అవును, వాడుకరి పేరు మార్చు',
 	'renameusersubmit' => 'పంపించు',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" పేరుగల వాడుకరి లేరు.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" పేరుతో వాడుకరి ఇప్పటికే ఉన్నారు.',
@@ -2589,6 +2590,39 @@ $messages['tg-cyrl'] = array(
 $messages['th'] = array(
 	'renameuser-error-request' => 'มีปัญหาเกิดขึ้นเกี่ยวกับการรับคำเรียกร้องของคุณ กรุณากลับไปที่หน้าเดิม และ พยายามอีกครั้ง',
 	'renameusersuccess' => 'ผู้ใช้:<nowiki>$1</nowiki> ถูกเปลี่ยนชื่อเป็น ผู้ใช้:<nowiki>$2</nowiki> เรียบร้อยแล้ว',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'renameuser' => 'Muling pangalanan ang tagagamit',
+	'renameuser-desc' => "Nagdaragdag ng isang [[Special:Renameuser|natatanging pahina]] para mapangalanang muli ang isang tagagamit (kailangang ang karapatang ''pangalanangmuliangtagagamit'')",
+	'renameuserold' => 'Pangkasalukuyang pangalan ng tagagamit:',
+	'renameusernew' => 'Bagong pangalan ng tagagamit:',
+	'renameuserreason' => 'Dahil para sa muling pagpapangalan:',
+	'renameusermove' => 'Ilipat ang mga pahina ng tagagamit at pangusapan (at mga kabahaging pahina nila) patungo sa bagong pangalan',
+	'renameuserreserve' => 'Hadlangan ang dating pangalan ng tagagamit mula sa muling paggamit sa hinaharap',
+	'renameuserwarnings' => 'Mga babala:',
+	'renameuserconfirm' => 'Oo, pangalanang muli ang tagagamit',
+	'renameusersubmit' => 'Ipasa',
+	'renameusererrordoesnotexist' => 'Hindi pa umiiral ang tagagamit na "<nowiki>$1</nowiki>".',
+	'renameusererrorexists' => 'Umiiral na ang tagagamit na "<nowiki>$1</nowiki>".',
+	'renameusererrorinvalid' => 'Hindi tanggap ang pangalan ng tagagamit na "<nowiki>$1</nowiki>".',
+	'renameusererrortoomany' => 'Ang tagagamit na si "<nowiki>$1</nowiki>" ay mayroong $2 {{PLURAL:$2|ambag|mga ambag}}, ang muling pagpapangalan sa isang tagagamit na may mahigit sa $3 {{PLURAL:$3|ambag|mga ambag}} ay makakaapekto sa gawain ng sayt/sityo.',
+	'renameuser-error-request' => 'Nagkaroon ng isang suliranin sa pagtanggap ng kahilingan.
+Magbalik lamang at subukan uli.',
+	'renameuser-error-same-user' => 'Hindi mo maaaring pangalanang muli ang tagagamit patungo sa kaparehong bagay na katulad ng dati.',
+	'renameusersuccess' => 'Ang tagagamit na "<nowiki>$1</nowiki>" ay muling napangalanan na patungong "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Umiiral na ang pahinang $1 at hindi maaaring kusang mapatungan.',
+	'renameuser-page-moved' => 'Ang pahinang $1 ay nailipat na patungo sa $2.',
+	'renameuser-page-unmoved' => 'Hindi mailipat ang pahinang $1 patungo sa $2.',
+	'renameuserlogpage' => 'Talaan ng muling pagpapangalan ng tagagamit',
+	'renameuserlogpagetext' => 'Isa itong pagtatala/talaan ng mga pagbabago sa mga pangalan ng tagagamit.',
+	'renameuserlogentry' => 'muling pinangalan si $1 patungo sa "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 pagbabago|$1 mga pagbabago}}. Dahilan: $2',
+	'renameuser-move-log' => 'Kusang inilipat ang pahina habang muling pinapangalanan ang tagagamit na si "[[User:$1|$1]]" patungo sa "[[User:$2|$2]]"',
+	'right-renameuser' => 'Muling pangalanan ang mga tagagamit',
 );
 
 /** Tonga (faka-Tonga) */
