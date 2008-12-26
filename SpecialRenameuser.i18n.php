@@ -715,6 +715,7 @@ $messages['es'] = array(
 	'renameusernew' => 'Nuevo nombre de usuario:',
 	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Trasladar las páginas de usuario y de discusión (y sus subpáginas) al nuevo nombre',
+	'renameuserreserve' => 'Bloquea el antiguo nombre de usuario para evitar usarlo en el futuro',
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => 'Sí, renombrar el usuario',
 	'renameusersubmit' => 'Enviar',
@@ -722,6 +723,8 @@ $messages['es'] = array(
 	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
 	'renameusererrorinvalid' => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
 	'renameusererrortoomany' => 'El usuario «<nowiki>$1</nowiki>» tiene $2 {{PLURAL:$2|contribución|contribuciones}}, renombrar a un usuario con más de $3 {{PLURAL:$3|contribución|contribuciones}} podría afectar negativamente al rendimiento del sitio.',
+	'renameuser-error-request' => 'Hubo un problema al recibir la solicitud.
+Por favor, vuelve atrás e inténtalo de nuevo.',
 	'renameuser-error-same-user' => 'No puedes renombrar a un usuario con el nombre que ya tenía.',
 	'renameusersuccess' => 'El usuario «<nowiki>$1</nowiki>» ha sido renombrado a «<nowiki>$2</nowiki>»',
 	'renameuser-page-exists' => 'La página $1 ya existe y no puede ser reemplazada automáticamente.',
@@ -2318,6 +2321,38 @@ $messages['sah'] = array(
 	'right-renameuser' => 'Кыттааччылар ааттарын уларытыы',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Santu
+ */
+$messages['scn'] = array(
+	'renameuser' => 'Rinòmina utenti',
+	'renameuser-desc' => "Funzioni pi rinuminari n'utenti (addumanna li diritti di ''renameuser'')",
+	'renameuserold' => 'Nomu utenti dô prisenti:',
+	'renameusernew' => 'Novu nomu utenti:',
+	'renameuserreason' => 'Mutivu dû caciu di nomu',
+	'renameusermove' => 'Rinòmina macari la pàggina utenti, la pàggina di discussioni e li suttapàggini',
+	'renameuserreserve' => 'Sarva lu vecchiu utenti pi futuri usi',
+	'renameuserwarnings' => 'Avvisi:',
+	'renameuserconfirm' => "Si, rinòmina st'utenti",
+	'renameusersubmit' => 'Manna',
+	'renameusererrordoesnotexist' => 'L\'utenti "<nowiki>$1</nowiki>" nun esisti',
+	'renameusererrorexists' => 'L\'utenti "<nowiki>$1</nowiki>" c\'è già',
+	'renameusererrorinvalid' => 'Lu nomu utenti "<nowiki>$1</nowiki>" nun è vàlidu',
+	'renameusererrortoomany' => 'L\'utenti "<nowiki>$1</nowiki>" havi $2 {{PLURAL:$2|cuntribbutu|cuntribbuti}}; ri-numinari n\'utenti cu chiossai di $3 {{PLURAL:$3|cuntribbutu|cuntribbuti}} pò nfruinzari \'n manera nigativa li pristazzioni dû situ.',
+	'renameuser-error-request' => "Si virificau nu prubbrema nnô ricivimentu dâ dumanna. Turnari arredi e pruvari n'àutra vota.",
+	'renameuser-error-same-user' => "Nun si pò ri-numinari n'utenti cô stissu nomu c'avìa già.",
+	'renameusersuccess' => 'L\'utenti "<nowiki>$1</nowiki>" vinni ri-numinatu \'n "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => "La pàggina $1 c'è già; mpussìbbili suprascrivìrila autumaticamenti.",
+	'renameuser-page-moved' => 'La pàggina $1 vinni spustata a $2.',
+	'renameuser-page-unmoved' => 'Mpussìbbili mòviri la pàggina $1 a $2.',
+	'renameuserlogpage' => 'Utenti ri-numinati',
+	'renameuserlogpagetext' => "Di sècutu sunnu elencati li ri-numinazzioni di l'utenti.",
+	'renameuserlogentry' => 'hà ri-numinatu $1 \'n "$2"',
+	'renameuser-log' => 'Ca havi {{PLURAL:$1|nu cuntribbutu|$1 cuntribbuti}}. Mutivu: $2',
+	'renameuser-move-log' => 'Spustamentu autumàticu dâ pàggina - utenti ri-numinatu di "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'right-renameuser' => "Ri-nòmina l'utenti",
+);
+
 /** Sinhala (සිංහල)
  * @author නන්දිමිතුරු
  */
@@ -2894,7 +2929,9 @@ $messages['zh-hans'] = array(
 	'right-renameuser' => '重新命名用户',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Wrightbus
+ */
 $messages['zh-hant'] = array(
 	'renameuser' => '用戶重新命名',
 	'renameuser-desc' => "為用戶重新命名 (需要 ''renameuser'' 權限)",
@@ -2902,6 +2939,7 @@ $messages['zh-hant'] = array(
 	'renameusernew' => '新用戶名:',
 	'renameuserreason' => '重新命名的原因:',
 	'renameusermove' => '移動用戶頁及其對話頁（包括各子頁）到新的名字',
+	'renameuserreserve' => '封禁舊使用者名稱，使之不能在日後使用',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => '是，為用戶重新命名',
 	'renameusersubmit' => '提交',

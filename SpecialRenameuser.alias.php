@@ -45,6 +45,11 @@ $aliases['de'] = array(
 	'Renameuser' => array( 'Benutzer umbenennen' ),
 );
 
+/** Divehi (ދިވެހިބަސް) */
+$aliases['dv'] = array(
+	'Renameuser' => array( 'މެމްބަރުގެ ނަން ބަދަލު ކުރައްވާ' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'Renameuser' => array( 'Käyttäjätunnusten nimeäminen' ),
