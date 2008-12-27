@@ -2899,7 +2899,9 @@ $messages['yue'] = array(
 	'right-renameuser' => '改用戶名',
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Gzdavidwong
+ */
 $messages['zh-hans'] = array(
 	'renameuser' => '用户重命名',
 	'renameuser-desc' => "为用户重命名 (需要 ''renameuser'' 权限)",
@@ -2907,6 +2909,7 @@ $messages['zh-hans'] = array(
 	'renameusernew' => '新用户名:',
 	'renameuserreason' => '重命名的原因:',
 	'renameusermove' => '移动用户页及其对话页（包括各子页）到新的名字',
+	'renameuserreserve' => '封禁旧用户名，使之不能在日后使用',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => '是，为用户重命名',
 	'renameusersubmit' => '提交',
