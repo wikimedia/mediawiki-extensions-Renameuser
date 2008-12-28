@@ -419,6 +419,11 @@ class RenameuserSQL {
 		if( !$dbw->affectedRows() ) {
 			return false;
 		}
+		// Reset token to break login with central auth systems.
+		// Again, avoids user being logged in with old name.
+		$user = User::newFromId( $this->uid );
+		$authUser = $wgAuth->getUserInstance( $user );
+		$authUser->resetAuthToken();
 
 		// Delete from memcached.
 		global $wgMemc;
