@@ -2593,8 +2593,11 @@ $messages['te'] = array(
  * @author MF-Warburg
  */
 $messages['tet'] = array(
+	'renameuser' => "Fó naran foun ba uza-na'in sira",
+	'renameuser-desc' => "Fó naran foun ba uza-na'in sira (presiza priviléjiu ''renameuser'')",
 	'renameuserold' => "Naran uza-na'in atuál:",
 	'renameusernew' => "Naran uza-na'in foun:",
+	'renameuserreason' => 'Motivu:',
 	'renameusermove' => "Book pájina uza-na'in no diskusaun (no sub-pájina) ba naran foun",
 	'renameuserconfirm' => 'Sin, fó naran foun',
 	'renameusersubmit' => 'Fó naran foun',
