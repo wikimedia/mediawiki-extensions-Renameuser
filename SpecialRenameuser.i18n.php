@@ -649,6 +649,7 @@ $messages['el'] = array(
 	'renameuserreason' => 'Λόγος μετονομασίας:',
 	'renameusermove' => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
 	'renameuserwarnings' => 'Προειδοποιήσεις:',
+	'renameuserconfirm' => 'Ναι, μετονομάστε τον χρήστη',
 	'renameusersubmit' => 'Καταχώριση',
 	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
 	'renameusererrorexists' => 'Ο χρήστης "<nowiki>$1</nowiki>" υπάρχει ήδη.',
@@ -663,6 +664,7 @@ $messages['el'] = array(
 	'renameuserlogentry' => '$1 μετονομάστηκε σε "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 επεξεργασία|$1 επεξεργασίες}}. Λόγος: $2',
 	'renameuser-move-log' => 'Η σελίδα μετακινήθηκε αυτόματα κατά τη μετονομασία του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
+	'right-renameuser' => 'Μετονομασία χρηστών',
 );
 
 /** Esperanto (Esperanto)
@@ -673,7 +675,7 @@ $messages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
 	'renameuser-desc' => "Alinomigu uzanton (bezonas rajton ''renameuser'')",
 	'renameuserold' => 'Aktuala uzantonomo:',
-	'renameusernew' => 'Nova uzantonomo:',
+	'renameusernew' => 'Nova salutnomo:',
 	'renameuserreason' => 'Kialo por alinomigo:',
 	'renameusermove' => 'Movu uzantan kaj diskutan paĝojn (kaj ties subpaĝojn) al la nova nomo',
 	'renameuserreserve' => 'Teni la malnovan salutnomon de plua uzo',
@@ -739,6 +741,7 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
 );
 
 /** Estonian (Eesti)
+ * @author Avjoska
  * @author WikedKentaur
  */
 $messages['et'] = array(
@@ -747,6 +750,8 @@ $messages['et'] = array(
 	'renameusernew' => 'Uus kasutajanimi:',
 	'renameuserreason' => 'Muutmise põhjus:',
 	'renameusermove' => 'Nimeta ümber kasutajaleht, aruteluleht ja nende alamlehed.',
+	'renameuserwarnings' => 'Hoiatused:',
+	'renameuserconfirm' => 'Jah, nimeta kasutaja ümber',
 	'renameusersubmit' => 'Muuda',
 	'renameuserlogpage' => 'Kasutajanime muutmise logi',
 );
@@ -2593,8 +2598,10 @@ $messages['tet'] = array(
 	'renameusermove' => "Book pájina uza-na'in no diskusaun (no sub-pájina) ba naran foun",
 	'renameuserconfirm' => 'Sin, fó naran foun',
 	'renameusersubmit' => 'Fó naran foun',
+	'renameusererrordoesnotexist' => 'Uza-na\'in "<nowiki>$1</nowiki>" la iha.',
 	'renameuser-page-moved' => 'Book tiha pájina $1 ba $2.',
 	'renameuser-page-unmoved' => 'La bele book pájina $1 ba $2.',
+	'right-renameuser' => "Fó naran foun ba uza-na'in sira",
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
