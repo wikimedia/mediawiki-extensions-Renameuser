@@ -1893,6 +1893,7 @@ $messages['nan'] = array(
  */
 $messages['nds'] = array(
 	'renameuser' => 'Brukernaam ännern',
+	'renameuser-desc' => "Föögt en [[Special:Renameuser|Spezialsied]] to för dat Ne’en-Naam-Geven för Brukers (''renameuser''-Recht nödig)",
 	'renameuserold' => 'Brukernaam nu:',
 	'renameusernew' => 'Nee Brukernaam:',
 	'renameuserreason' => 'Gründ för den ne’en Naam:',
@@ -1905,6 +1906,7 @@ $messages['nds'] = array(
 	'renameusererrorexists' => "Bruker ''<nowiki>$1</nowiki>'' gifft dat al",
 	'renameusererrorinvalid' => "Brukernaam ''<nowiki>$1</nowiki>'' geiht nich",
 	'renameusererrortoomany' => "Bruker ''<nowiki>$1</nowiki>'' hett $2 {{PLURAL:$2|Bidrag|Bidrääg}}. Den Naam ännern kann bi Brukers mit mehr as $3 {{PLURAL:$2|Bidrag|Bidrääg}} de Software lahm maken.",
+	'renameuser-error-request' => 'Dat geev en Problem bi’t Överdragen vun de Anfraag. Gah trüch un versöök dat noch wedder.',
 	'renameuser-error-same-user' => 'De ole un ne’e Brukernaam sünd gliek.',
 	'renameusersuccess' => "Brukernaam ''<nowiki>$1</nowiki>'' op ''<nowiki>$2</nowiki>'' ännert",
 	'renameuser-page-exists' => 'Siet $1 gifft dat al un kann nichautomaatsch överschreven warrn.',
