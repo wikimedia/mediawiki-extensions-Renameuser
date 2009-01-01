@@ -756,12 +756,16 @@ $messages['et'] = array(
 	'renameuserlogpage' => 'Kasutajanime muutmise logi',
 );
 
-/** Basque (Euskara) */
+/** Basque (Euskara)
+ * @author Theklan
+ */
 $messages['eu'] = array(
 	'renameuser' => 'Lankide bati izena aldatu',
 	'renameuserold' => 'Oraingo lankide izena:',
 	'renameusernew' => 'Lankide izen berria:',
 	'renameuserreason' => 'Izena aldatzeko arrazoia:',
+	'renameuserwarnings' => 'Oharrak:',
+	'renameuserconfirm' => 'Bai, lankidearen izena aldatu',
 	'renameusersubmit' => 'Bidali',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" lankidea existitzen da',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" lankide izena baliogabekoa da',
