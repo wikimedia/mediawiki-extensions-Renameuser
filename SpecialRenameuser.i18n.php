@@ -757,18 +757,19 @@ $messages['et'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Theklan
  */
 $messages['eu'] = array(
-	'renameuser' => 'Lankide bati izena aldatu',
-	'renameuserold' => 'Oraingo lankide izena:',
-	'renameusernew' => 'Lankide izen berria:',
+	'renameuser' => 'Erabiltzaile bati izena aldatu',
+	'renameuserold' => 'Oraingo erabiltzaile izena:',
+	'renameusernew' => 'Erabiltzaile izen berria:',
 	'renameuserreason' => 'Izena aldatzeko arrazoia:',
 	'renameuserwarnings' => 'Oharrak:',
 	'renameuserconfirm' => 'Bai, lankidearen izena aldatu',
 	'renameusersubmit' => 'Bidali',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" lankidea existitzen da',
-	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" lankide izena baliogabekoa da',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" erabiltzaile izena okerra da',
 	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" lankideak $2 ekarpen ditu, $3 baino ekarpen gehiago dituen lankide baten izena aldatzeak gunearen errendimenduan eragin txarrak izan ditzake',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" lankidearen izen berria "<nowiki>$2</nowiki>" da',
 	'renameuser-page-exists' => 'Badago $1 orrialdea, eta ezin da automatikoki gainidatzi.',
@@ -2157,6 +2158,8 @@ $messages['ps'] = array(
 	'renameuserwarnings' => 'ګواښنې:',
 	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کارونکی نه شته.',
 	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارونکی له پخوا نه شته.',
+	'renameuser-error-request' => 'د غوښتنې په ترلاسه کولو کې يوه ستونزه راپېښه شوه.
+مهرباني وکړی بېرته پرشا ولاړ شی او يو ځل بيا پرې کوښښ وکړی.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 );
 
@@ -2701,6 +2704,7 @@ $messages['to'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Joseph
  * @author Karduelis
  * @author Runningfridgesrule
  * @author Uğur Başak
@@ -2715,7 +2719,7 @@ $messages['tr'] = array(
 	'renameusersuccess' => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
 	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
-	'renameuserlogentry' => '$1 → "$2" isim değişikliği yapıldı',
+	'renameuserlogentry' => '$1, "$2" olarak yeniden adlandırıldı',
 	'renameuser-log' => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
 	'right-renameuser' => 'Kullaıcılarının adlarını değiştir',
 );
@@ -2836,6 +2840,7 @@ $messages['vo'] = array(
 	'renameusernew' => 'Gebananem nulik:',
 	'renameuserreason' => 'Kod votanemama:',
 	'renameusermove' => 'Topätükön padi e bespikapadi gebana (e donapadis onsik) ad nem nulik',
+	'renameuserreserve' => 'Neletön gebananemi rigik (pos votanemam) ad pagebön ün fütür',
 	'renameuserwarnings' => 'Nuneds:',
 	'renameuserconfirm' => 'Si, votanemolös gebani',
 	'renameusersubmit' => 'Sedön',
