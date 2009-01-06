@@ -1007,6 +1007,38 @@ $messages['grc'] = array(
 	'renameusersubmit' => 'Ὑποβάλλειν',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'renameuser' => 'Benutzer umnänne',
+	'renameuser-desc' => "Ergänzt e [[Special:Renameuser|Spezialsyte]] fir d Umnännig vun eme Benutzer (brucht s ''renameuser''-Rächt)",
+	'renameuserold' => 'Bishärige Benutzername:',
+	'renameusernew' => 'Neije Benutzername:',
+	'renameuserreason' => 'Grund:',
+	'renameusermove' => 'Verschieb Benutzer-/Diskussionssyte mit Untersyte uf dr neij Benutzername',
+	'renameuserreserve' => 'Blockier dr alt Benutzername fir e Neijregischtrierig',
+	'renameuserwarnings' => 'Warnige:',
+	'renameuserconfirm' => 'Jo, Benutzer umnänne',
+	'renameusersubmit' => 'Umnänne',
+	'renameusererrordoesnotexist' => 'Dr Benutzername „<nowiki>$1</nowiki>“ git s nit.',
+	'renameusererrorexists' => 'Dr Benutzername „<nowiki>$1</nowiki>“ git s scho.',
+	'renameusererrorinvalid' => 'Dr Benutzername „<nowiki>$1</nowiki>“ isch uugiltig.',
+	'renameusererrortoomany' => 'Dr Benutzer „<nowiki>$1</nowiki>“ het $2 {{PLURAL:$2|Bearbeitig|Bearbeitige}}. D Änderig vum Name vun eme Benutzer mit meh wie $3 {{PLURAL:$3|Bearbeitig|Bearbeitige}} cha d Serverleischtig nochteilig beyyflusse.',
+	'renameuser-error-request' => 'S het e Probläm bim Empfang vu dr Aafrog gee. Bitte nomol versueche.',
+	'renameuser-error-same-user' => 'Dr alt und dr neij Benutzername sin identisch.',
+	'renameusersuccess' => 'Dr Benutzer „<nowiki>$1</nowiki>“ isch mit Erfolg in „<nowiki>$2</nowiki>“ umgnännt wore.',
+	'renameuser-page-exists' => 'D Syte $1 git s scho un cha nit automatisch iberschribe wäre.',
+	'renameuser-page-moved' => 'D Syte $1 isch noch $2 verschobe wore.',
+	'renameuser-page-unmoved' => 'D Syte $1 het nit chenne noch $2 verschobe wäre.',
+	'renameuserlogpage' => 'Benutzernamenänderigs-Logbuech',
+	'renameuserlogpagetext' => 'In däm Logbuech wäre d Änderige vu Benutzernäme protokolliert.',
+	'renameuserlogentry' => 'het „$1“ in „$2“ umgnännt',
+	'renameuser-log' => '{{PLURAL:$1|1 Bearbeitig|$1 Bearbeitige}}. Grund: $2',
+	'renameuser-move-log' => 'dur d Umnännig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte',
+	'right-renameuser' => 'Benutzer umnänne',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
