@@ -2743,16 +2743,31 @@ $messages['to'] = array(
  */
 $messages['tr'] = array(
 	'renameuser' => 'Kullanıcı adı değiştir',
+	'renameuser-desc' => "Kullanıcıyı yeniden adlandırmak için bir [[Special:Renameuser|özel sayfa]] ekler (''kullanıcıyıyenidenadlandır'' hakkı gerekir)",
 	'renameuserold' => 'Şu anda ki kullanıcı adı:',
 	'renameusernew' => 'Yeni kullanıcı adı:',
 	'renameuserreason' => 'Neden:',
+	'renameusermove' => 'Kullanıcı ve tartışma sayfalarını (ve alt sayfalarını) yeni isme taşı',
+	'renameuserreserve' => 'Eski kullanıcı adını ilerdeki kullanımlar için engelle',
+	'renameuserwarnings' => 'Uyarılar:',
+	'renameuserconfirm' => 'Evet, kullanıcıyı yeniden adlandır',
 	'renameusersubmit' => 'Gönder',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" adlı kullanıcı bulunmamaktadır.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" kullanıcısı zaten mevcut.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" kullanıcı adı geçersiz.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" kullanıcısının $2 {{PLURAL:$2|katkısı|katkısı}} var, $3\'den fazla {{PLURAL:$3|değişikliğe|değişikliğe}} sahip bir kullanıcıyı yeniden adlandırmak site performansını kötü yönde etkileyecektir.',
+	'renameuser-error-request' => 'İsteğin alımıyla ilgili bir problem var.
+Lütfen geri dönüp tekrar deneyin.',
+	'renameuser-error-same-user' => 'Bir kullanıcıyı eskiden olduğu isme yeniden adlandıramazsınız.',
 	'renameusersuccess' => 'Daha önce "<nowiki>$1</nowiki>" olarak kayıtlı kullanıcının rumuzu "<nowiki>$2</nowiki>" olarak değiştirilmiştir.',
+	'renameuser-page-exists' => '$1 sayfası zaten mevcut ve otomatik olarak üstüne yazılamaz.',
+	'renameuser-page-moved' => '$1 sayfası $2 sayfasına taşındı.',
+	'renameuser-page-unmoved' => '$1 sayfası $2 sayfasına taşınamıyor.',
 	'renameuserlogpage' => 'Kullanıcı adı değişikliği kayıtları',
 	'renameuserlogpagetext' => 'Aşağıda bulunan liste adı değiştirilmiş kullanıcıları gösterir.',
 	'renameuserlogentry' => '$1, "$2" olarak yeniden adlandırıldı',
 	'renameuser-log' => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
+	'renameuser-move-log' => 'Kullanıcıyı "[[User:$1|$1]]" isminden "[[User:$2|$2]]" ismine yeniden adlandırırken, sayfa otomatik olarak taşındı',
 	'right-renameuser' => 'Kullaıcılarının adlarını değiştir',
 );
 
