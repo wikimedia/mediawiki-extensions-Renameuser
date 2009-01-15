@@ -2510,15 +2510,19 @@ $messages['sr-ec'] = array(
  */
 $messages['stq'] = array(
 	'renameuser' => 'Benutsernoome annerje',
+	'renameuser-desc' => "Föiget ne [[Special:Renameuser|Spezioalsiede]] bietou tou Uumbenaamenge fon n Benutser (fräiget dät ''renameuser''-Gjucht)",
 	'renameuserold' => 'Benutsernoomer bithäär:',
 	'renameusernew' => 'Näie Benutsernoome:',
 	'renameuserreason' => 'Gruund foar Uumenaame:',
 	'renameusermove' => 'Ferschuuwe Benutser-/Diskussionssiede inkl. Unnersieden ap dän näie Benutsernoome',
+	'renameuserreserve' => 'Blokkierje dän oolde Benutsernoome foar ne näie Registrierenge',
+	'renameuserwarnings' => 'Woarschauengen:',
+	'renameuserconfirm' => 'Jee, Benutser uumbenaame',
 	'renameusersubmit' => 'Uumbenaame',
 	'renameusererrordoesnotexist' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant nit',
 	'renameusererrorexists' => 'Die Benutsernoome "<nowiki>$1</nowiki>" bestoant al',
 	'renameusererrorinvalid' => 'Die Benutsernoome "<nowiki>$1</nowiki>" is uungultich',
-	'renameusererrortoomany' => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 Edits. Ju Noomensannerenge fon aan Benutser mäd moor as $3 Edits kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
+	'renameusererrortoomany' => 'Die Benutser "<nowiki>$1</nowiki>" häd $2 {{PLURAL:$2|Beoarbaidenge|Beoarbaidengen}}. Ju Noomensannerenge fon aan Benutser mäd moor as $3 {{PLURAL:$3|Beoarbaidenge|Beoarbaidengen}} kon ju Serverlaistenge toun Ätterdeel beienfloudje.',
 	'renameuser-error-request' => 'Dät roat n Problem bie dän Ämpfang fon ju Anfroage. Fersäik jädden nochmoal.',
 	'renameuser-error-same-user' => 'Oolde un näie Benutsernoome sunt identisk.',
 	'renameusersuccess' => 'Die Benutser "<nowiki>$1</nowiki>" wuude mäd Ärfoulch uumenaamd in "<nowiki>$2</nowiki>"',
@@ -2527,9 +2531,10 @@ $messages['stq'] = array(
 	'renameuser-page-unmoved' => 'Ju Siede $1 kuude nit ätter $2 ferschäuwen wäide.',
 	'renameuserlogpage' => 'Benutsernoomenannerengs-Logbouk',
 	'renameuserlogpagetext' => 'In dit Logbouk wäide do Annerengen fon Benutsernoomen protokollierd.',
-	'renameuserlogentry' => 'Benutser "$1" uumenaamd in "$2"',
+	'renameuserlogentry' => 'häd "$1" in "$2" uumenaamd',
 	'renameuser-log' => '{{PLURAL:$1|1 Beoarbaidenge|$1 Beoarbaidengen}}. Gruund: $2',
 	'renameuser-move-log' => 'truch ju Uumbenaamenge fon „[[User:$1|$1]]“ ätter „[[User:$2|$2]]“ automatisk ferschäuwene Siede.',
+	'right-renameuser' => 'Benutser uumenaame',
 );
 
 /** Sundanese (Basa Sunda)
