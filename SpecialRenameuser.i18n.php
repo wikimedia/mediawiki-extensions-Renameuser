@@ -1699,7 +1699,7 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-page-exists' => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
 	'renameuser-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
 	'renameuser-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
-	'renameuserlogpage' => 'Logbuch vun den Ännerungen vum Benotzernumm',
+	'renameuserlogpage' => 'Logbuch vun den Ännerunge vum Benotzernumm',
 	'renameuserlogpagetext' => 'An dësem Logbuch ginn Ännerunge vu Benotzernimm festgehal.',
 	'renameuserlogentry' => 'huet de Benotzer $1 op "$2" ëmbenannt',
 	'renameuser-log' => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
@@ -2301,6 +2301,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'renameuser' => "Renomene l'utende",
 	'renameusersubmit' => 'Conferme',
 );
 
