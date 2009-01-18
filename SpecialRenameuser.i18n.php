@@ -1336,6 +1336,7 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author Broad-Sky
+ * @author Fryed-peach
  * @author Hosiryuhosi
  * @author Marine-Blue
  * @author Suisui
@@ -1355,7 +1356,7 @@ $messages['ja'] = array(
 	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
 	'renameusererrortoomany' => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿記録があります。$3 件以上の投稿記録がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
-	'renameuser-error-request' => 'リクエストを正常に受け付けることが出来ませんでした。戻ってから再度お試しください。',
+	'renameuser-error-request' => '要求を正常に受け付けることができませんでした。戻ってから再度お試しください。',
 	'renameuser-error-same-user' => '現在と同じ利用者名に変更することは出来ません。',
 	'renameusersuccess' => '利用者 "<nowiki>$1</nowiki>" を "<nowiki>$2</nowiki>" に変更しました。',
 	'renameuser-page-exists' => '$1 が既に存在しているため、自動で上書きできませんでした。',
