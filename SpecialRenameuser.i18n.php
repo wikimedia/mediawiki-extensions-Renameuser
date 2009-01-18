@@ -1005,6 +1005,7 @@ $messages['gl'] = array(
  */
 $messages['grc'] = array(
 	'renameusersubmit' => 'Ὑποβάλλειν',
+	'renameuser-log' => '{{PLURAL:$1|1 μεταγραφή|$1 μεταγραφαί}}. Αίτία: $2',
 );
 
 /** Swiss German (Alemannisch)
@@ -1784,6 +1785,13 @@ $messages['lv'] = array(
 	'renameusersuccess' => 'Lietotājs "<nowiki>$1</nowiki>" pārdēvēts par "<nowiki>$2</nowiki>".',
 	'renameuserlogpage' => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
+);
+
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'renameuserconfirm' => 'Eny, soloy anarana ilay mpikambana',
 );
 
 /** Macedonian (Македонски)
