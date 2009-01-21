@@ -1102,6 +1102,39 @@ $messages['hi'] = array(
 	'right-renameuser' => 'सदस्योंके नाम बदलें',
 );
 
+/** Fiji Hindi (Latin) (Fiji Hindi (Latin))
+ * @author Thakurji
+ */
+$messages['hif-latn'] = array(
+	'renameuser' => 'Sadasya ke naam badlo',
+	'renameuser-desc' => "[[Special:Renameuser|special panna]] ke jorro ek sadasya  ke naam badle ke khatir (''renameuser'' ke hak maange hai)",
+	'renameuserold' => 'Abhi ke username:',
+	'renameusernew' => 'Nawaa username:',
+	'renameuserreason' => 'Naam badle ke kaaran:',
+	'renameusermove' => 'Sadasya aur salah waala panna (aur uske sub-panna) ke naam badlo',
+	'renameuserreserve' => 'Purana username ke aage use kare se roko',
+	'renameuserwarnings' => 'Chetauni:',
+	'renameuserconfirm' => 'Haan, sadasya ke naam badlo',
+	'renameusersubmit' => 'Submit karo',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" naam ke koi sadasya nai hai.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" naam ke ek sadasya abhi hai.',
+	'renameusererrorinvalid' => 'Username "<nowiki>$1</nowiki>" kharaab hai.',
+	'renameusererrortoomany' => 'Sadasya "<nowiki>$1</nowiki>" ke $2 {{PLURAL:$2|contribution|contributions}} hai, ek sadasya jiske $3 se jaada {{PLURAL:$3|contribution|contributions}} hai, ke naam badle se site ke performance kharaab se affect hoe sake hai.',
+	'renameuser-error-request' => 'Request ke le me kuchh karrbarr bhais hai.
+Meharbani kar ke laut ke fir kosis karo.',
+	'renameuser-error-same-user' => 'Aap sadasya ke naam ke badal ke pahile waala naam nai kare sakta hai.',
+	'renameusersuccess' => 'Sadasya "<nowiki>$1</nowiki>" ke naam badal ke "<nowiki>$2</nowiki>" kar dewa gais hai.',
+	'renameuser-page-exists' => 'Panna $1 abhi hai aur iske apne se overwrite nai karaa jaae sake hai.',
+	'renameuser-page-moved' => 'Panna $1 ke naam badal ke $2 kar dewa gais hai.',
+	'renameuser-page-unmoved' => 'Panna $1 ke naam badal ke $2 nai kare sakaa hai.',
+	'renameuserlogpage' => 'Sadasya ke naam badle ke log',
+	'renameuserlogpagetext' => 'Ii ek sadasya ke naam badle ke log hai.',
+	'renameuserlogentry' => '$1 ke naam badal ke "$2" kar dewa gais hai',
+	'renameuser-log' => '{{PLURAL:$1|1 badlao|$1 badlao}}. Kaaran: $2',
+	'renameuser-move-log' => 'Automatically panna ke move kar diya hai jab ki sadasya ke naam  "[[User:$1|$1]]" se badal ke "[[User:$2|$2]]" kar dewa gais hai',
+	'right-renameuser' => 'Sadasya log ke naam badlo',
+);
+
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
@@ -1435,12 +1468,15 @@ Mangga balènana lan nyoba manèh.',
 
 /** Georgian (ქართული)
  * @author Malafaya
+ * @author Sopho
  */
 $messages['ka'] = array(
 	'renameuser' => 'მომხმარებლის სახელის გამოცვლა',
 	'renameuserold' => 'ამჟამინდელი მომხმარებლის სახელი:',
 	'renameusernew' => 'ახალი მომხმარებლის სახელი:',
+	'renameuserreason' => 'სახელის შეცვლის მიზეზი:',
 	'renameusermove' => 'მომხმარებლისა და განხილვის გვერდების (და მათი დაქვემდებარებული გვერდების) გადატანა ახალ დასახელებაზე',
+	'renameuserwarnings' => 'გაფრთხილებები:',
 	'renameusersubmit' => 'გაგზავნა',
 	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
 	'renameusererrorexists' => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
