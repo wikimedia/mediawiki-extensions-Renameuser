@@ -2396,6 +2396,7 @@ $messages['sah'] = array(
 	'renameusernew' => 'Саҥа аата:',
 	'renameuserreason' => 'Аатын уларыппыт төрүөтэ:',
 	'renameusermove' => 'Кыттааччы аатын кытта кэпсэтэр сирин, уонна атын сирэйдэрин ааттарын уларыт',
+	'renameuserreserve' => 'Кыттааччы урукку аатын кэлин туттарга анаан хааллар',
 	'renameuserwarnings' => 'Сэрэтиилэр:',
 	'renameuserconfirm' => 'Сөп, аатын уларыт',
 	'renameusersubmit' => 'Толор',
