@@ -2187,7 +2187,8 @@ $messages['pl'] = array(
 	'renameusererrorexists' => 'Użytkownik „<nowiki>$1</nowiki>” już istnieje',
 	'renameusererrorinvalid' => 'Niepoprawna nazwa użytkownika „<nowiki>$1</nowiki>”',
 	'renameusererrortoomany' => 'Użytkownik „<nowiki>$1</nowiki>” ma {{PLURAL:$2|1 edycję|$2 edycje|$2 edycji}}. Zmiana nazwy użytkownika mającego powyżej $3 {{PLURAL:$3|edycji|edycji}} może wpłynąć na wydajność serwisu.',
-	'renameuser-error-request' => 'Wystąpił problem z odbiorem żądania. Cofnij się i spróbuj jeszcze raz.',
+	'renameuser-error-request' => 'Wystąpił problem z odbiorem żądania.
+Cofnij się i spróbuj jeszcze raz.',
 	'renameuser-error-same-user' => 'Nie możesz zmienić nazwy użytkownika na taką samą jaka była wcześniej.',
 	'renameusersuccess' => 'Nazwa użytkownika „<nowiki>$1</nowiki>” została zmieniona na „<nowiki>$2</nowiki>”',
 	'renameuser-page-exists' => 'Strona „$1” już istnieje i nie może być automatycznie nadpisana.',
