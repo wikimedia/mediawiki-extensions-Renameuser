@@ -45,6 +45,11 @@ $aliases['de'] = array(
 	'Renameuser' => array( 'Benutzer umbenennen' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'Renameuser' => array( 'Wužywarja pśemjeniś' ),
+);
+
 /** Divehi (ދިވެހިބަސް) */
 $aliases['dv'] = array(
 	'Renameuser' => array( 'މެމްބަރުގެ ނަން ބަދަލު ކުރައްވާ' ),
