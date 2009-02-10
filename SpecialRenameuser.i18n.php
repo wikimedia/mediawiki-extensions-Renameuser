@@ -437,6 +437,7 @@ $messages['ca'] = array(
 	'renameusernew' => "Nou nom d'usuari:",
 	'renameuserreason' => 'Motiu pel canvi:',
 	'renameusermove' => "Reanomena la pàgina d'usuari, la de discussió i les subpàgines que tingui al nou nom",
+	'renameuserreserve' => "Bloca el nom d'usuari antic d'usos futurs",
 	'renameuserwarnings' => 'Advertències:',
 	'renameuserconfirm' => "Sí, reanomena l'usuari",
 	'renameusersubmit' => 'Tramet',
@@ -444,6 +445,8 @@ $messages['ca'] = array(
 	'renameusererrorexists' => "L'usuari «<nowiki>$1</nowiki>» ja existeix",
 	'renameusererrorinvalid' => "El nom d'usuari «<nowiki>$1</nowiki>» no és vàlid",
 	'renameusererrortoomany' => "L'usuari «<nowiki>$1</nowiki>» té $2 {{PLURAL:$2|contribució|contribucions}}. Canviar el nom a un usuari amb més de $3 {{PLURAL:$3|contribució|contribucions}} pot causar problemes.",
+	'renameuser-error-request' => "Hi ha hagut un problema en la recepció de l'ordre.
+Torneu enrere i torneu-ho a intentar.",
 	'renameuser-error-same-user' => 'No podeu reanomenar un usuari a un nom que ja tenia anteriorment.',
 	'renameusersuccess' => "L'usuari «<nowiki>$1</nowiki>» s'ha reanomenat com a «<nowiki>$2</nowiki>»",
 	'renameuser-page-exists' => 'La pàgina «$1» ja existeix i no pot ser sobreescrita automàticament',
