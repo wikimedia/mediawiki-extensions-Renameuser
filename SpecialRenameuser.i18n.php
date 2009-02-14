@@ -642,29 +642,34 @@ $messages['dsb'] = array(
 /** Greek (Ελληνικά)
  * @author Badseed
  * @author Consta
+ * @author Dead3y3
  * @author MF-Warburg
  * @author ZaDiak
  */
 $messages['el'] = array(
 	'renameuser' => 'Μετονομασία χρήστη',
+	'renameuser-desc' => "Προσθέτει μια [[Special:Renameuser|ειδική σελίδα]] για την μετονομασία ενός χρήστη (είναι απαραίτητο το δικαίωμα ''renameuser'')",
 	'renameuserold' => 'Τρέχον όνομα χρήστη:',
 	'renameusernew' => 'Νέο όνομα χρήστη:',
 	'renameuserreason' => 'Λόγος μετονομασίας:',
 	'renameusermove' => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
+	'renameuserreserve' => 'Φραγή του παλιού ονόματος χρήστη/χρήστριας από μελλοντική χρήση',
 	'renameuserwarnings' => 'Προειδοποιήσεις:',
 	'renameuserconfirm' => 'Ναι, μετονομάστε τον χρήστη',
 	'renameusersubmit' => 'Καταχώριση',
 	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
 	'renameusererrorexists' => 'Ο χρήστης "<nowiki>$1</nowiki>" υπάρχει ήδη.',
 	'renameusererrorinvalid' => 'Το όνομα χρήστη "<nowiki>$1</nowiki>" είναι άκυρο.',
+	'renameusererrortoomany' => 'Ο χρήστης ή η χρήστρια «<nowiki>$1</nowiki>» έχει $2 {{PLURAL:$2|συνεισφορά|συνεισφορές}}. Η μετονομασία ενός χρήστη ή μιας χρήστριας με περισσότερες από $3 {{PLURAL:$3|συνεισφορά|συνεισφορές}} μπορεί να επηρεάσει δυσμενώς την απόδοση του ιστοτόπου.',
 	'renameuser-error-request' => 'Υπήρξε ένα πρόβλημα στην παραλαβή της αίτησης. Παρακαλούμε επιστρέψτε και ξαναδοκιμάστε.',
 	'renameuser-error-same-user' => 'Δεν μπορείτε να μετονομάσετε έναν χρήστη σε όνομα ίδιο με το προηγούμενο.',
+	'renameusersuccess' => 'Ο χρήστης ή η χρήστρια «<nowiki>$1</nowiki>» έχει μετονομαστεί σε «<nowiki>$2</nowiki>».',
 	'renameuser-page-exists' => 'Η σελίδα $1 υπάρχει ήδη και δεν μπορεί να αντικατασταθεί αυτόματα.',
 	'renameuser-page-moved' => 'Η σελίδα $1 μετακινήθηκε στο $2.',
 	'renameuser-page-unmoved' => 'Η σελίδα $1 δεν μπόρεσε να μετακινηθεί στο $2.',
 	'renameuserlogpage' => 'Αρχείο μετονομασίας χρηστών',
 	'renameuserlogpagetext' => 'Αυτό είναι ένα αρχείο καταγραφών αλλαγών σε ονόματα χρηστών',
-	'renameuserlogentry' => '$1 μετονομάστηκε σε "$2"',
+	'renameuserlogentry' => 'Ο/Η $1 μετονομάστηκε σε «$2»',
 	'renameuser-log' => '{{PLURAL:$1|1 επεξεργασία|$1 επεξεργασίες}}. Λόγος: $2',
 	'renameuser-move-log' => 'Η σελίδα μετακινήθηκε αυτόματα κατά τη μετονομασία του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
 	'right-renameuser' => 'Μετονομασία χρηστών',
