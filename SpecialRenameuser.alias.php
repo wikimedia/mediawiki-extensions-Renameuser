@@ -209,3 +209,8 @@ $aliases['th'] = array(
 	'Renameuser' => array( 'เปลี่ยนชื่อผู้ใช้' ),
 );
 
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'Renameuser' => array( 'Muling pangalan ang tagagamit' ),
+);
+
