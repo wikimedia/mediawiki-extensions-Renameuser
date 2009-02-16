@@ -1789,6 +1789,7 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Homo
  * @author Hugo.arg
  * @author Matasg
  */
@@ -1797,8 +1798,8 @@ $messages['lt'] = array(
 	'renameuser-desc' => "Pervadinti naudotoją (reikia ''pervadintojo'' teisių)",
 	'renameuserold' => 'Esamas naudotojo vardas:',
 	'renameusernew' => 'Naujas naudotojo vardas:',
-	'renameuserreason' => 'Priežastis pervadinimui:',
-	'renameusermove' => 'Perkelti naudotoją ir aptarimo puslapius (bei jo subpuslapius) prie naujo vardo',
+	'renameuserreason' => 'Pervadinimo priežastis:',
+	'renameusermove' => 'Perkelti naudotojo ir aptarimo puslapius (bei jo subpuslapius) prie naujo vardo',
 	'renameuserreserve' => 'Užblokuoti senąjį naudotojo vardą nuo galimybių naudoti ateityje',
 	'renameuserwarnings' => 'Įspėjimai:',
 	'renameuserconfirm' => 'Taip, pervadinti naudotoją',
