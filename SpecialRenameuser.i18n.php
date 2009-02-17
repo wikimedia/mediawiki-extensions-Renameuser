@@ -877,6 +877,7 @@ $messages['fo'] = array(
  * @author Hégésippe Cormier
  * @author IAlex
  * @author Urhixidur
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'renameuser' => 'Renommer l’utilisateur',
@@ -892,7 +893,7 @@ $messages['fr'] = array(
 	'renameusererrordoesnotexist' => 'L’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
 	'renameusererrorexists' => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
 	'renameusererrorinvalid' => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
-	'renameusererrortoomany' => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 {{PLURAL:$2|contribution|contributions}}. Renommer un utilisateur ayant plus de $3 {{PLURAL:$3|contribution|contributions}} à son actif peut momentanément affecter les performances du site.',
+	'renameusererrortoomany' => 'L’utilisateur « <nowiki>$1</nowiki> » a $2 contribution{{PLURAL:$2||s}} à son actif. Renommer un utilisateur ayant plus de $3 contribution{{PLURAL:$3||s}} pourrait affecter les performances du site.',
 	'renameuser-error-request' => 'Un problème existe avec la réception de la requête. Revenez en arrière et essayez à nouveau.',
 	'renameuser-error-same-user' => 'Vous ne pouvez pas renommer un utilisateur du même nom qu’auparavant.',
 	'renameusersuccess' => 'L’utilisateur « <nowiki>$1</nowiki> » a été renommé « <nowiki>$2</nowiki> »',
@@ -1316,7 +1317,18 @@ Penggantian nama pengguna dengan lebih dari $3 {{PLURAL:$3|kontribusi|kontribusi
  * @author Malafaya
  */
 $messages['io'] = array(
+	'renameuser' => 'Rinomar uzanto',
+	'renameuserold' => 'Aktuala uzantonomo:',
 	'renameusernew' => 'Nova uzantonomo:',
+	'renameuserwarnings' => 'Averti:',
+	'renameuserconfirm' => "Yes, rinomez l'uzanto",
+	'renameusererrordoesnotexist' => 'L\'uzanto "<nowiki>$1</nowiki>" ne existas.',
+	'renameusererrorexists' => 'L\'uzanto "<nowiki>$1</nowiki>" ja existas.',
+	'renameusererrorinvalid' => 'L\'uzantonomo "<nowiki>$1</nowiki>" esas ne-valida.',
+	'renameuser-page-moved' => 'La pagino $1 movesis a $2.',
+	'renameuser-page-unmoved' => 'La pagino $1 ne povis movesar a $2.',
+	'renameuser-log' => '{{PLURAL:$1|1 edito|$1 editi}}. Motivo: $2',
+	'right-renameuser' => 'Rinomar uzanti',
 );
 
 /** Icelandic (Íslenska)
