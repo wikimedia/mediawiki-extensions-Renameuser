@@ -55,6 +55,11 @@ $aliases['dv'] = array(
 	'Renameuser' => array( 'މެމްބަރުގެ ނަން ބަދަލު ކުރައްވާ' ),
 );
 
+/** Spanish (Español) */
+$aliases['es'] = array(
+	'Renameuser' => array( 'Cambiar_el_nombre_de_usuario', 'Renombrar_usuario', 'Cambiar_nombre_usuario' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'Renameuser' => array( 'Käyttäjätunnusten nimeäminen' ),
@@ -100,6 +105,11 @@ $aliases['ht'] = array(
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
 	'Renameuser' => array( 'Szerkesztő átnevezése' ),
+);
+
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'Renameuser' => array( 'Renominar usator' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
