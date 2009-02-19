@@ -1326,7 +1326,8 @@ $messages['io'] = array(
 	'renameusererrorexists' => 'L\'uzanto "<nowiki>$1</nowiki>" ja existas.',
 	'renameusererrorinvalid' => 'L\'uzantonomo "<nowiki>$1</nowiki>" esas ne-valida.',
 	'renameuser-page-moved' => 'La pagino $1 movesis a $2.',
-	'renameuser-page-unmoved' => 'La pagino $1 ne povis movesar a $2.',
+	'renameuser-page-unmoved' => 'On ne povis movar la pagino $1 a $2.',
+	'renameuserlogentry' => 'rinomis $1 por "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edito|$1 editi}}. Motivo: $2',
 	'right-renameuser' => 'Rinomar uzanti',
 );
