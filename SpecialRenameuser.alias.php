@@ -199,6 +199,11 @@ $aliases['pt-br'] = array(
 	'Renameuser' => array( 'Renomear utilizador', 'Renomear usuário' ),
 );
 
+/** Romanian (Română) */
+$aliases['ro'] = array(
+	'Renameuser' => array( 'Redenumire utilizator' ),
+);
+
 /** Albanian (Shqip) */
 $aliases['sq'] = array(
 	'Renameuser' => array( 'RiemërtoPërdorues' ),
