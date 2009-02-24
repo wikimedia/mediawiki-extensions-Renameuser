@@ -188,7 +188,7 @@ class SpecialRenameuser extends SpecialPage {
 
 		// Suppress username validation of old username
 		$olduser = User::newFromName( $oldusername->getText(), false );
-		$newuser = User::newFromName( $newusername->getText() );
+		$newuser = User::newFromName( $newusername->getText(), 'creatable' );
 
 		// It won't be an object if for instance "|" is supplied as a value
 		if( !is_object( $olduser ) ) {
