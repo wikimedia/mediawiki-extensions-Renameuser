@@ -877,6 +877,7 @@ $messages['fo'] = array(
  * @author Grondin
  * @author Hégésippe Cormier
  * @author IAlex
+ * @author PieRRoMaN
  * @author Urhixidur
  * @author Verdy p
  */
@@ -886,7 +887,7 @@ $messages['fr'] = array(
 	'renameuserold' => 'Nom actuel de l’utilisateur :',
 	'renameusernew' => 'Nouveau nom de l’utilisateur :',
 	'renameuserreason' => 'Motif du renommage :',
-	'renameusermove' => 'Déplacer toutes les pages de l’utilisateur vers le nouveau nom',
+	'renameusermove' => 'Renommer toutes les pages de l’utilisateur vers le nouveau nom',
 	'renameuserreserve' => "Réserver l'ancien nom pour un usage futur",
 	'renameuserwarnings' => 'Avertissements :',
 	'renameuserconfirm' => 'Oui, renommer l’utilisateur',
@@ -1327,8 +1328,11 @@ $messages['io'] = array(
 	'renameusererrorexists' => 'L\'uzanto "<nowiki>$1</nowiki>" ja existas.',
 	'renameusererrorinvalid' => 'L\'uzantonomo "<nowiki>$1</nowiki>" esas ne-valida.',
 	'renameuser-error-same-user' => 'Vu ne povas renomar uzanto ad la sama nomo.',
+	'renameusersuccess' => 'La uzanto "<nowiki>$1</nowiki>" rinomesis "<nowiki>$2</nowiki>".',
 	'renameuser-page-moved' => 'La pagino $1 movesis a $2.',
 	'renameuser-page-unmoved' => 'On ne povis movar la pagino $1 a $2.',
+	'renameuserlogpage' => 'Registro di uzanto-rinomizuri',
+	'renameuserlogpagetext' => 'Ito es registro di uzantonomala chanji.',
 	'renameuserlogentry' => 'rinomis $1 por "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edito|$1 editi}}. Motivo: $2',
 	'right-renameuser' => 'Rinomar uzanti',
