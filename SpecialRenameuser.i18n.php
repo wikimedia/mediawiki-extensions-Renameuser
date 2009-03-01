@@ -902,10 +902,10 @@ $messages['fr'] = array(
 	'renameuser-page-exists' => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved' => 'La page $1 a été déplacée vers $2.',
 	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
-	'renameuserlogpage' => 'Historique des renommages d’utilisateur',
+	'renameuserlogpage' => 'Journal des renommages d’utilisateur',
 	'renameuserlogpagetext' => "Ceci est l’historique des changements de noms d'utilisateur",
 	'renameuserlogentry' => 'a renommé « $1 » vers « $2 »',
-	'renameuser-log' => '$1 {{PLURAL:$1|édition|éditions}}. Motif : $2',
+	'renameuser-log' => '$1 {{PLURAL:$1|modification|modifications}}. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renommer des utilisateurs',
 );
