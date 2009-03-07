@@ -1368,12 +1368,12 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'renameuser' => 'Rinomina utente',
-	'renameuser-desc' => "Funzione per rinominare un utente (richiede i diritti di ''renameuser'')",
+	'renameuser-desc' => "Aggiunge una [[Special:Renameuser|pagina speciale]] per rinominare un utente (richiede i diritti di ''renameuser'')",
 	'renameuserold' => 'Nome utente attuale:',
 	'renameusernew' => 'Nuovo nome utente:',
-	'renameuserreason' => 'Motivo del cambio nome',
+	'renameuserreason' => 'Motivo del cambio nome:',
 	'renameusermove' => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
-	'renameuserreserve' => 'Riserva il vecchio nome utente da usi futuri',
+	'renameuserreserve' => "Impedisci l'utilizzo del vecchio nome in futuro",
 	'renameuserwarnings' => 'Avvisi:',
 	'renameuserconfirm' => 'Sì, rinomina questo utente',
 	'renameusersubmit' => 'Invia',
@@ -1388,7 +1388,7 @@ $messages['it'] = array(
 	'renameuser-page-moved' => 'La pagina $1 è stata spostata a $2.',
 	'renameuser-page-unmoved' => 'Impossibile spostare la pagina $1 a $2.',
 	'renameuserlogpage' => 'Utenti rinominati',
-	'renameuserlogpagetext' => 'Di seguito sono elencate le rinominazioni degli utenti.',
+	'renameuserlogpagetext' => 'Di seguito viene presentato il registro delle modifiche ai nomi utente.',
 	'renameuserlogentry' => 'ha rinominato $1 in "$2"',
 	'renameuser-log' => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
@@ -2186,6 +2186,10 @@ $messages['oc'] = array(
  */
 $messages['os'] = array(
 	'renameuser' => 'Архайæджы ном баив',
+	'renameuserold' => 'Ныры ном:',
+	'renameusernew' => 'Ног ном:',
+	'renameuserreason' => 'Ном ивыны аххос:',
+	'renameuserlogpage' => 'Архайджыты нæмттæ ивыны лог',
 );
 
 /** Pfälzisch (Pfälzisch)
