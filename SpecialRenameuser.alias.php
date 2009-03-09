@@ -67,7 +67,7 @@ $aliases['fi'] = array(
 
 /** French (Français) */
 $aliases['fr'] = array(
-	'Renameuser' => array( 'RenommerUtilisateur', 'Renommer Utilisateur' ),
+	'Renameuser' => array( 'Renommer utilisateur', 'RenommerUtilisateur', 'Renommer Utilisateur' ),
 );
 
 /** Galician (Galego) */
