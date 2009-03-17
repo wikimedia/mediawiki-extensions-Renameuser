@@ -455,6 +455,12 @@ class RenameuserSQL {
 			);
 		}
 		// Construct jobqueue updates...
+		// FIXME: if a bureaucrat renames a user in error, he/she
+		// must be careful to wait until the rename finishes before
+		// renaming back. This is due to the fact the the job "queue"
+		// is not really FIFO, so we might end up with a bunch of edits
+		// randomly mixed between the two new names. Some sort of rename
+		// lock might be in order...
 		foreach( $this->tablesJob as $table => $params ) {
 			$userTextC = $params[0]; // some *_user_text column
 			$userIDC = $params[1]; // some *_user column
