@@ -2189,6 +2189,7 @@ $messages['os'] = array(
 	'renameuserold' => 'Ныры ном:',
 	'renameusernew' => 'Ног ном:',
 	'renameuserreason' => 'Ном ивыны аххос:',
+	'renameusersubmit' => 'Афтæ уæд',
 	'renameuserlogpage' => 'Архайджыты нæмттæ ивыны лог',
 );
 
