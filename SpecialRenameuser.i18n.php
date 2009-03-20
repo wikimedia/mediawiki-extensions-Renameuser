@@ -2357,7 +2357,7 @@ $messages['qu'] = array(
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa manam kanchu.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa kachkanñam.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" nisqa sutiqa manam allinchu.',
-	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa $2 llamk\'apusqayuqmi. $3-manta aswan llamk\'apusqayuq ruraqpa sutinta hukchayqa llika tiyaypa rikch\'akuyninpaq mana allinchá kanman.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa $2 {{PLURAL:$2|llamk\'apusqayuqmi|llamk\'apusqayuqmi}}. $3-manta aswan {{PLURAL:$3|llamk\'apusqayuq|llamk\'apusqayuq}} ruraqpa sutinta hukchayqa llika tiyaypa rikch\'akuyninpaq mana allinchá kanman.',
 	'renameuser-error-request' => 'Manam atinichu mañasqaykita chaskiyta.  Ama hina kaspa, ñawpaqman kutimuspa musuqmanta ruraykachay.',
 	'renameuser-error-same-user' => 'Manam atinkichu ruraqpa sutinta ñawpaq suti hinalla sutinman hukchayta.',
 	'renameusersuccess' => 'Ruraqpa "<nowiki>$1</nowiki>" nisqa sutinqa "<nowiki>$2</nowiki>" nisqa sutinman hukchasqañam.',
@@ -2366,9 +2366,10 @@ $messages['qu'] = array(
 	'renameuser-page-unmoved' => 'Manam atinichu "<nowiki>$1</nowiki>" ñawpa sutiyuq ruraqpa p\'anqanta "<nowiki>$2</nowiki>" nisqa musuq p\'anqanman astayta.',
 	'renameuserlogpage' => "Ruraqpa sutin hukchay hallch'a",
 	'renameuserlogpagetext' => "Kayqa ruraqkunap sutinkunata hukchaymanta hallch'am",
-	'renameuserlogentry' => 'hukchan $1-pa sutinta "$2" sutiman',
+	'renameuserlogentry' => '$1-pa sutinta "$2" sutiman hukchasqa',
 	'renameuser-log' => "{{PLURAL:$1|1 llamk'apusqa|$1 llamk'apusqakuna}}, kayrayku: $2",
 	'renameuser-move-log' => '"[[User:$1|$1]]" ruraqpa sutinta "[[User:$2|$2]]" sutiman hukchaspa kikinmanta ruraqpa p\'anqatapas astan',
+	'right-renameuser' => 'Ruraqpa sutinkunata hukchay',
 );
 
 /** Romani (Romani)
@@ -2745,8 +2746,8 @@ $messages['te'] = array(
 	'renameuser-page-exists' => '$1 పేజీ ఇప్పటికే ఉంది, కాబట్టి ఆటోమాటిగ్గా దానిపై కొత్తపేజీని రుద్దడం కుదరదు.',
 	'renameuser-page-moved' => '$1 పేజీని $2 పేజీకి తరలించాం.',
 	'renameuser-page-unmoved' => '$1 పేజీని $2 పేజీకి తరలించలేక పోయాం.',
-	'renameuserlogpage' => 'సభ్యనామాల మార్పు లాగ్',
-	'renameuserlogpagetext' => 'సభ్యనామాల మార్పు లాగ్ ఇది',
+	'renameuserlogpage' => 'వాడుకరి పేరుమార్పుల చిట్టా',
+	'renameuserlogpagetext' => 'ఇది వాడుకరి పేర్లకి జరిగిన మార్పుల చిట్టా.',
 	'renameuserlogentry' => '$1ని "$2"గా పేరు మార్చారు',
 	'renameuser-log' => '{{PLURAL:$1|ఒక దిద్దుబాటు|$1 దిద్దుబాట్లు}}. కారణం: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చడంతో పేజీని ఆటోమాటిగ్గా తరలించాం',
