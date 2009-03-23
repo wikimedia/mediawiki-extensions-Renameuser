@@ -222,6 +222,15 @@ $messages['ast'] = array(
 	'right-renameuser' => 'Renomar usuarios',
 );
 
+/** Samogitian (Žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['bat-smg'] = array(
+	'renameuserold' => 'Esams nauduotuojė vards:',
+	'renameusernew' => 'Naus nauduotuojė vards:',
+	'renameusersuccess' => 'Nauduotuos "<nowiki>$1</nowiki>" bova parvadėnts i "<nowiki>$2</nowiki>".',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
