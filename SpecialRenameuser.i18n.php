@@ -1682,7 +1682,7 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'renameuser' => 'Metmaacher ömdäufe',
-	'renameuser-desc' => '[[Special:Renameuser|Metmaacher ömdäufe]] — ävver do buch mer et Rääsch „<i lang=en">renameuser</i>“ för.',
+	'renameuser-desc' => '[[Special:Renameuser|Metmaacher ömdäufe]] — ävver do bruch mer et Rääsch „<i lang=en">renameuser</i>“ för.',
 	'renameuserold' => 'Dä ahle Metmaacher-Name',
 	'renameusernew' => 'Dä neue Metmaacher-Name',
 	'renameuserreason' => 'Jrund för et Ömdäufe:',
