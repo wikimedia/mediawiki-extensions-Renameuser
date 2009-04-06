@@ -2814,11 +2814,31 @@ $messages['tg-cyrl'] = array(
 );
 
 /** Thai (ไทย)
+ * @author Mopza
  * @author Passawuth
  */
 $messages['th'] = array(
+	'renameuser' => 'เปลี่ยนชื่อผู้ใช้',
+	'renameuserold' => 'ชื่อผู้ใช้ปัจจุบัน:',
+	'renameusernew' => 'ชื่อผู้ใช้ใหม่:',
+	'renameuserreason' => 'เหตุผลในการเปลี่ยนชื่อ:',
+	'renameuserwarnings' => 'คำเตือน:',
+	'renameusersubmit' => 'ยอมรับ',
+	'renameusererrordoesnotexist' => 'ไม่พบผู้ใช้ "<nowiki>$1</nowiki>" ในระบบ',
+	'renameusererrorexists' => 'มีผู้ใช้ "<nowiki>$1</nowiki>" อยู่แล้ว',
+	'renameusererrorinvalid' => 'ไม่สามารถใช้ชื่อผู้ใช้ "<nowiki>$1</nowiki>" ได้',
+	'renameusererrortoomany' => 'ผู้ใช้ "<nowiki>$1</nowiki>" มีจำนวนการแก้ไข $2 ครั้ง การเปลี่ยนชื่อผู้ใช้ที่แก้ไขมากกว่า $3 ครั้ง อาจทำให้เกิดปัญหากับสมรรถนะของเว็บไซต์',
 	'renameuser-error-request' => 'มีปัญหาเกิดขึ้นเกี่ยวกับการรับคำเรียกร้องของคุณ กรุณากลับไปที่หน้าเดิม และ พยายามอีกครั้ง',
 	'renameusersuccess' => 'ผู้ใช้:<nowiki>$1</nowiki> ถูกเปลี่ยนชื่อเป็น ผู้ใช้:<nowiki>$2</nowiki> เรียบร้อยแล้ว',
+	'renameuser-page-exists' => 'หน้า $1 มีอยู่แล้ว และไม่สามารถย้ายไปแทนที่ได้โดยอัตโนมัติ',
+	'renameuser-page-moved' => 'หน้า $1 ถูกย้ายไปยัง $2',
+	'renameuser-page-unmoved' => 'ไม่สามารถย้ายหน้า $1 ไปยัง $2 ได้',
+	'renameuserlogpage' => 'ปูมการเปลี่ยนชื่อผู้ใช้',
+	'renameuserlogpagetext' => 'ข้อมูลการเปลี่ยนชื่อผู้ใช้',
+	'renameuserlogentry' => 'ได้เปลี่ยนชื่อ $1 ไปเป็น [[ผู้ใช้:$2]]',
+	'renameuser-log' => 'แก้ไขแล้ว $1 ครั้ง เหตุผล: $2',
+	'renameuser-move-log' => 'ย้ายโดยอัตโนมัติ ขณะเปลี่ยนชื่อผู้ใช้จาก "[[User:$1|$1]]" เป็น "[[User:$2|$2]]"',
+	'right-renameuser' => 'เปลี่ยนชื่อผู้ใช้',
 );
 
 /** Tagalog (Tagalog)
