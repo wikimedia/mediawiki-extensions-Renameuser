@@ -535,6 +535,13 @@ class RenameuserSQL {
 			$dbw->freeResult( $res );
 		}
 
+		// Commit the transaction
+		$dbw->commit();
+
+		// Delete from memcached again to make sure
+		global $wgMemc;
+		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
+
 		// Clear caches and inform authentication plugins
 		$user = User::newFromId( $this->uid );
 		$wgAuth->updateExternalDB( $user );
