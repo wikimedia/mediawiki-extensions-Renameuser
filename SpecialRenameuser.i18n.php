@@ -2042,6 +2042,13 @@ $messages['nds'] = array(
 	'right-renameuser' => 'Brukers ne’en Naam geven',
 );
 
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'renameuserwarnings' => 'Waorschuwingen:',
+);
+
 /** Nepali (नेपाली) */
 $messages['ne'] = array(
 	'renameuserold' => 'अहिलेको प्रयोगकर्ता नाम:',
@@ -2878,7 +2885,7 @@ Magbalik lamang at subukan uli.',
 	'right-renameuser' => 'Muling pangalanan ang mga tagagamit',
 );
 
-/** Tonga (faka-Tonga) */
+/** Tonga (lea faka-Tonga) */
 $messages['to'] = array(
 	'renameuser' => 'Liliu hingoa ʻo e ʻetita',
 	'renameuserold' => 'Hingoa motuʻa ʻo e ʻetita:',
@@ -2998,6 +3005,15 @@ $messages['vec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
+);
+
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'renameusernew' => "Uz' kävutajan nimi:",
+	'renameuserreason' => 'Udesnimitandan sü:',
+	'renameusersubmit' => 'Tehta',
 );
 
 /** Vietnamese (Tiếng Việt)
