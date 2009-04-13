@@ -117,6 +117,11 @@ $aliases['id'] = array(
 	'Renameuser' => array( 'Ganti nama pengguna' ),
 );
 
+/** Italian (Italiano) */
+$aliases['it'] = array(
+	'Renameuser' => array( 'RinominaUtente' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'Renameuser' => array( '利用者名の変更' ),
