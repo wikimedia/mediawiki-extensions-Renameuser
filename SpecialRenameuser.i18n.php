@@ -2610,6 +2610,7 @@ $messages['sq'] = array(
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Millosh
  * @author Sasa Stefanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'renameuser' => 'Преименуј корисника',
@@ -2618,6 +2619,7 @@ $messages['sr-ec'] = array(
 	'renameusernew' => 'Ново корисничко име:',
 	'renameuserreason' => 'Разлог преименовања:',
 	'renameusermove' => 'Премести корисничку страницу и страницу за разговор (и њихове подстранице) на ново име',
+	'renameuserreserve' => 'Блокирај старо корисничко име за даљу употребу',
 	'renameuserwarnings' => 'Упозорења:',
 	'renameuserconfirm' => 'Да, преименуј сарадничко име.',
 	'renameusersubmit' => 'Прихвати',
