@@ -1786,10 +1786,11 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 /** Limburgish (Limburgs)
  * @author Matthias
  * @author Ooswesthoesbes
+ * @author Pahles
  * @author Tibor
  */
 $messages['li'] = array(
-	'renameuser' => 'Hernöm gebroeker',
+	'renameuser' => 'Herneum gebroeker',
 	'renameuser-desc' => "Voog 'n [[Special:Renameuser|speciaal pazjwna]] toe óm 'ne gebroeker te hernömme (doe höbs hiej ''renameuser''-rech veur neudig)",
 	'renameuserold' => 'Hujige gebroekersnaam:',
 	'renameusernew' => 'Nuje gebroekersnaam:',
@@ -1798,7 +1799,7 @@ $messages['li'] = array(
 	'renameuserreserve' => 'Veurkómme det de aaje gebroeker opnuuj wörd geregistreerd',
 	'renameuserwarnings' => 'Waarschuwinge:',
 	'renameuserconfirm' => 'Jao, hernaam gebroeker',
-	'renameusersubmit' => 'Hernöm',
+	'renameusersubmit' => 'Herneum',
 	'renameusererrordoesnotexist' => 'De gebroeker "<nowiki>$1</nowiki>" besteit neet.',
 	'renameusererrorexists' => 'De gebroeker "<nowiki>$1</nowiki>" besteit al.',
 	'renameusererrorinvalid' => 'De gebroekersnaam "<nowiki>$1</nowiki>" is óngeljig.',
