@@ -70,6 +70,11 @@ $aliases['fr'] = array(
 	'Renameuser' => array( 'Renommer utilisateur', 'RenommerUtilisateur', 'Renommer Utilisateur' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'Renameuser' => array( "Renomar l'utilisator", 'RenomarLUtilisator' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'Renameuser' => array( 'Renomear usuario' ),
