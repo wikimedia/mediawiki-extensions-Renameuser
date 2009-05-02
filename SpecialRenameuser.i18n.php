@@ -2436,7 +2436,16 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'renameuser' => "Renomene l'utende",
+	'renameuserold' => "Nome de l'utende de mò:",
+	'renameusernew' => "Nome de l'utende nuève:",
+	'renameuserreason' => "Mutive d'u cangiamende:",
+	'renameuserwarnings' => 'Avvise:',
+	'renameuserconfirm' => "Sine, cange 'u nome a l'utende",
 	'renameusersubmit' => 'Conferme',
+	'renameusererrordoesnotexist' => 'L\'utende "<nowiki>$1</nowiki>" non g\'esiste.',
+	'renameusererrorexists' => 'L\'utende "<nowiki>$1</nowiki>" esiste ggià.',
+	'renameusersuccess' => 'L\'utende "<nowiki>$1</nowiki>" ha cangiate \'u nome jndr\'à "<nowiki>$2</nowiki>".',
+	'renameuser-log' => '{{PLURAL:$1|1 cangiamende|$1 cangiaminde}}. Mutive: $2',
 );
 
 /** Russian (Русский)
