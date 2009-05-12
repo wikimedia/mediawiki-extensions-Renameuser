@@ -1326,6 +1326,7 @@ Penggantian nama pengguna dengan lebih dari $3 {{PLURAL:$3|kontribusi|kontribusi
 
 /** Ido (Ido)
  * @author Malafaya
+ * @author Wyvernoid
  */
 $messages['io'] = array(
 	'renameuser' => 'Rinomar uzanto',
@@ -1343,7 +1344,7 @@ $messages['io'] = array(
 	'renameuserlogpage' => 'Registro di uzanto-rinomizuri',
 	'renameuserlogpagetext' => 'Ito es registro di uzantonomala chanji.',
 	'renameuserlogentry' => 'rinomis $1 por "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 edito|$1 editi}}. Motivo: $2',
+	'renameuser-log' => '{{PLURAL:$1|1 redakto|$1 redakti}}. Motivo: $2',
 	'right-renameuser' => 'Rinomar uzanti',
 );
 
