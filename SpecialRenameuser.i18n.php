@@ -914,7 +914,7 @@ $messages['fr'] = array(
 	'renameuserlogpage' => 'Journal des renommages d’utilisateur',
 	'renameuserlogpagetext' => "Ceci est l’historique des changements de noms d'utilisateur",
 	'renameuserlogentry' => 'a renommé « $1 » en « $2 »',
-	'renameuser-log' => '$1 {{PLURAL:$1|modification|modifications}}. Motif : $2',
+	'renameuser-log' => '$1 modification{{PLURAL:$1||s}}. Motif : $2',
 	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renommer des utilisateurs',
 );
