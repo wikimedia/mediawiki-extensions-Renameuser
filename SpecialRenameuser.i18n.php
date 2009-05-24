@@ -761,6 +761,7 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
 /** Estonian (Eesti)
  * @author Avjoska
  * @author Jaan513
+ * @author Silvar
  * @author WikedKentaur
  */
 $messages['et'] = array(
@@ -774,6 +775,7 @@ $messages['et'] = array(
 	'renameusersubmit' => 'Muuda',
 	'renameuserlogpage' => 'Kasutajanime muutmise logi',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktsioon|$1 redaktsiooni}}. Põhjus: $2',
+	'right-renameuser' => 'Muuta kasutajanimesid',
 );
 
 /** Basque (Euskara)
