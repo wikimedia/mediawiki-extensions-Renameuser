@@ -440,10 +440,10 @@ class RenameuserSQL {
 		$oldTitle = Title::makeTitle( NS_USER, $this->old );
 		$newTitle = Title::makeTitle( NS_USER, $this->new );
 		$dbw->update( 'logging',
-			array( 'log_title' => $newTitle->getDBKey() ),
+			array( 'log_title' => $newTitle->getDBkey() ),
 			array( 'log_type' => array( 'block', 'rights' ),
 				'log_namespace' => NS_USER,
-				'log_title' => $oldTitle->getDBKey() ),
+				'log_title' => $oldTitle->getDBkey() ),
 			__METHOD__ );
 		// Do immediate updates!
 		foreach( $this->tables as $table => $fieldSet ) {
