@@ -167,6 +167,11 @@ $aliases['ms'] = array(
 	'Renameuser' => array( 'Tukar nama pengguna' ),
 );
 
+/** Maltese (Malti) */
+$aliases['mt'] = array(
+	'Renameuser' => array( 'BiddelIsemUtent' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Renameuser' => array( 'Gebruker_herneumen' ),
