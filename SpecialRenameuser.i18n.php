@@ -2519,6 +2519,13 @@ $messages['sah'] = array(
 	'right-renameuser' => 'Кыттааччылар ааттарын уларытыы',
 );
 
+/** Sardinian (Sardu)
+ * @author Marzedu
+ */
+$messages['sc'] = array(
+	'renameusernew' => 'Nòmene usuàriu nou:',
+);
+
 /** Sicilian (Sicilianu)
  * @author Santu
  */
@@ -3049,7 +3056,7 @@ $messages['vi'] = array(
 	'renameusererrordoesnotexist' => 'Thành viên “<nowiki>$1</nowiki>” không tồn tại.',
 	'renameusererrorexists' => 'Thành viên “<nowiki>$1</nowiki>” đã hiện hữu.',
 	'renameusererrorinvalid' => 'Tên thành viên “<nowiki>$1</nowiki>” không hợp lệ.',
-	'renameusererrortoomany' => 'Thành viên “<nowiki>$1</nowiki>” có $2 đóng góp, đổi tên thành viên có hơn $3 đóng góp có thể ảnh hưởng xấu đến hiệu năng của trang.',
+	'renameusererrortoomany' => 'Thành viên “<nowiki>$1</nowiki>” có $2 {{PLURAL:$2|đóng góp|đóng góp}}, đổi tên thành viên có hơn $3 {{PLURAL:$3|đóng góp|đóng góp}} có thể ảnh hưởng xấu đến hiệu năng của trang.',
 	'renameuser-error-request' => 'Có trục trặc trong tiếp nhận yêu cầu. Xin hãy quay lại và thử lần nữa.',
 	'renameuser-error-same-user' => 'Bạn không thể đổi tên thành viên sang tên y hệt như vậy.',
 	'renameusersuccess' => 'Thành viên “<nowiki>$1</nowiki>” đã được đổi tên thành “<nowiki>$2</nowiki>”.',
