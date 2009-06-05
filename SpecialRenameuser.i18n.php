@@ -2558,6 +2558,13 @@ $messages['scn'] = array(
 	'right-renameuser' => "Ri-nòmina l'utenti",
 );
 
+/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+ * @author OC Ripper
+ */
+$messages['sh'] = array(
+	'renameusersubmit' => 'Unesi',
+);
+
 /** Sinhala (සිංහල)
  * @author නන්දිමිතුරු
  */
