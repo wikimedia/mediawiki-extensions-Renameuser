@@ -1434,7 +1434,7 @@ $messages['ja'] = array(
 	'renameusererrordoesnotexist' => '利用者 “<nowiki>$1</nowiki>” は存在しません。',
 	'renameusererrorexists' => '利用者 “<nowiki>$1</nowiki>” は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名 “<nowiki>$1</nowiki>” は無効な値です。',
-	'renameusererrortoomany' => '利用者 "<nowiki>$1</nowiki>" には $2 件の投稿記録があります。$3 件以上の投稿記録がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
+	'renameusererrortoomany' => '利用者「<nowiki>$1</nowiki>」には$2{{PLURAL:$2|件}}の投稿記録があります。$3{{PLURAL:$3|件}}以上の投稿記録がある利用者の名前を変更すると、サイトのパフォーマンスに悪影響を及ぼす可能性があります。',
 	'renameuser-error-request' => '要求を正常に受け付けることができませんでした。戻ってから再度お試しください。',
 	'renameuser-error-same-user' => '現在と同じ利用者名に変更することは出来ません。',
 	'renameusersuccess' => '利用者 "<nowiki>$1</nowiki>" を "<nowiki>$2</nowiki>" に変更しました。',
@@ -1444,7 +1444,7 @@ $messages['ja'] = array(
 	'renameuserlogpage' => '利用者名変更記録',
 	'renameuserlogpagetext' => 'これは、利用者名の変更を記録したものです。',
 	'renameuserlogentry' => '$1を "$2" へ利用者名変更しました。',
-	'renameuser-log' => '投稿数$1回。理由: $2',
+	'renameuser-log' => '{{PLURAL:$1|投稿数}}$1回。理由: $2',
 	'renameuser-move-log' => '名前の変更と共に "[[User:$1|$1]]" を "[[User:$2|$2]]" へ移動しました。',
 	'right-renameuser' => '利用者名変更',
 );
