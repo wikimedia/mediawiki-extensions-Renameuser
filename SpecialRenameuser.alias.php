@@ -129,7 +129,7 @@ $aliases['it'] = array(
 
 /** Japanese (日本語) */
 $aliases['ja'] = array(
-	'Renameuser' => array( '利用者名の変更' ),
+	'Renameuser' => array( '利用者名変更', '利用者名の変更' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
