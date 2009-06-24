@@ -385,9 +385,11 @@ class RenameuserSQL {
 		if( User::edits($this->uid) > RENAMEUSER_CONTRIBJOB ) {
 			$this->tablesJob['revision'] = array('rev_user_text','rev_user','rev_timestamp');
 			$this->tablesJob['archive'] = array('ar_user_text','ar_user','ar_timestamp');
+			$this->tablesJob['logging'] = array('log_user_text','log_user','log_timestamp');
 		} else {
 			$this->tables['revision'] = array('rev_user_text','rev_user');
 			$this->tables['archive'] = array('ar_user_text','ar_user');
+			$this->tables['logging'] = array('log_user_text','log_user');
 		}
 		// Recent changes is pretty hot, deadlocks occur if done all at once
 		if( wfQueriesMustScale() ) {
