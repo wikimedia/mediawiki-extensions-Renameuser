@@ -1682,7 +1682,7 @@ $messages['ko'] = array(
 	'renameuserlogpage' => '이름 변경 기록',
 	'renameuserlogpagetext' => '계정 이름 변경 기록입니다.',
 	'renameuserlogentry' => '$1에서 "$2"(으)로 이름을 바꾸었습니다.',
-	'renameuser-log' => '$1개의 기여. 이유: $2',
+	'renameuser-log' => '{{PLURAL:$1|1|$1}}개의 기여. 이유: $2',
 	'renameuser-move-log' => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 	'right-renameuser' => '계정 이름 변경',
 );
