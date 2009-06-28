@@ -2624,6 +2624,15 @@ $messages['sk'] = array(
 	'right-renameuser' => 'Premenovávať používateľov',
 );
 
+/** Lower Silesian (Schläsch)
+ * @author Schläsinger
+ */
+$messages['sli'] = array(
+	'renameuserold' => 'Bisheriger Benutzernoame:',
+	'renameusernew' => 'Neuer Benutzernoame:',
+	'renameuserreason' => 'Grund:',
+);
+
 /** Albanian (Shqip)
  * @author Dori
  */
