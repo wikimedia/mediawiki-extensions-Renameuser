@@ -898,7 +898,7 @@ $messages['fr'] = array(
 	'renameuser-desc' => "Renomme un utilisateur (nécessite les droits de ''renameuser'')",
 	'renameuserold' => 'Nom actuel de l’utilisateur :',
 	'renameusernew' => 'Nouveau nom de l’utilisateur :',
-	'renameuserreason' => 'Motif du renommage :',
+	'renameuserreason' => 'Motif du changement de nom :',
 	'renameusermove' => 'Renommer toutes les pages de l’utilisateur vers le nouveau nom',
 	'renameuserreserve' => 'Réserver l’ancien nom pour un usage futur',
 	'renameuserwarnings' => 'Avertissements :',
@@ -914,11 +914,11 @@ $messages['fr'] = array(
 	'renameuser-page-exists' => 'La page $1 existe déjà et ne peut pas être automatiquement remplacée.',
 	'renameuser-page-moved' => 'La page $1 a été déplacée vers $2.',
 	'renameuser-page-unmoved' => 'La page $1 ne peut pas être renommée en $2.',
-	'renameuserlogpage' => 'Journal des renommages d’utilisateur',
+	'renameuserlogpage' => 'Journal des changements de noms d’utilisateurs',
 	'renameuserlogpagetext' => 'Ceci est l’historique des changements de noms d’utilisateur',
 	'renameuserlogentry' => 'a renommé « $1 » en « $2 »',
 	'renameuser-log' => '$1 modification{{PLURAL:$1||s}}. Motif : $2',
-	'renameuser-move-log' => 'Page automatiquement déplacée lors du renommage de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+	'renameuser-move-log' => 'Page déplacée automatiquement lorsque l’utilisateur « [[User:$1|$1]] » est devenu « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renommer des utilisateurs',
 );
 
