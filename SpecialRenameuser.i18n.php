@@ -151,8 +151,13 @@ $messages['ar'] = array(
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
 );
 
-/** Aramaic (ܐܪܡܝܐ) */
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
 $messages['arc'] = array(
+	'renameuserold' => 'ܫܡܐ ܕܡܦܠܚܢܐ ܗܫܝܐ:',
+	'renameusernew' => 'ܫܡܐ ܕܡܦܠܚܢܐ ܚܕܬܐ:',
+	'renameuserwarnings' => 'ܙܘܗܪ̈ܐ:',
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
 );
 
@@ -2218,6 +2223,13 @@ $messages['os'] = array(
 	'renameuserreason' => 'Ном ивыны аххос:',
 	'renameusersubmit' => 'Афтæ уæд',
 	'renameuserlogpage' => 'Архайджыты нæмттæ ивыны лог',
+);
+
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'renameusernew' => 'Nei Yuuser-Naame',
 );
 
 /** Pfälzisch (Pfälzisch)
