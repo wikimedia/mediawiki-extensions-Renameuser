@@ -224,6 +224,11 @@ $aliases['ro'] = array(
 	'Renameuser' => array( 'Redenumire utilizator' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'Renameuser' => array( 'PremenovaťPoužívateľa' ),
+);
+
 /** Albanian (Shqip) */
 $aliases['sq'] = array(
 	'Renameuser' => array( 'RiemërtoPërdorues' ),
