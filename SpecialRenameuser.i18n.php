@@ -773,6 +773,7 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
  */
 $messages['et'] = array(
 	'renameuser' => 'Muuda kasutajanime',
+	'renameuser-desc' => "Lisab kasutajanime muutmise [[Special:Renameuser|erilehekülje]] (vajab ''renameuser''-õigust).",
 	'renameuserold' => 'Praegune kasutajanimi:',
 	'renameusernew' => 'Uus kasutajanimi:',
 	'renameuserreason' => 'Muutmise põhjus:',
@@ -2308,14 +2309,17 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'renameuser' => 'کارن-نوم بدلول',
 	'renameuserold' => 'اوسنی کارن-نوم:',
 	'renameusernew' => 'نوی کارن-نوم:',
 	'renameuserwarnings' => 'ګواښنې:',
+	'renameuserconfirm' => 'هو، کارن-نوم بدلوم',
 	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کارونکی نه شته.',
 	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارونکی له پخوا نه شته.',
 	'renameuser-error-request' => 'د غوښتنې په ترلاسه کولو کې يوه ستونزه راپېښه شوه.
 مهرباني وکړی بېرته پرشا ولاړ شی او يو ځل بيا پرې کوښښ وکړی.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
+	'right-renameuser' => 'کارن-نومونه بدلول',
 );
 
 /** Portuguese (Português)
