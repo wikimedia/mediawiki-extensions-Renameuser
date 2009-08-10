@@ -782,6 +782,7 @@ $messages['et'] = array(
 	'renameuserconfirm' => 'Jah, nimeta kasutaja ümber',
 	'renameusersubmit' => 'Muuda',
 	'renameuserlogpage' => 'Kasutajanime muutmise logi',
+	'renameuserlogpagetext' => 'See on kasutajanimede muutmise logi.',
 	'renameuserlogentry' => 'nimetas kasutaja $1 ümber kasutajaks "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktsioon|$1 redaktsiooni}}. Põhjus: $2',
 	'right-renameuser' => 'Muuta kasutajanimesid',
@@ -2702,6 +2703,38 @@ $messages['sr-ec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}. Разлог: $2',
 	'renameuser-move-log' => 'Аутоматски померене стране приликом преименовања сарадничког имена: "[[User:$1|$1]]" у "[[User:$2|$2]]".',
 	'right-renameuser' => 'Преименовање сарадничких имена',
+);
+
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'renameuser' => 'Preimenuj korisnika',
+	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebu stranu]] za preimenovanje saradnika (potrebno pravo ''renameuser'').",
+	'renameuserold' => 'Trenutno korisničko ime:',
+	'renameusernew' => 'Novo korisničko ime:',
+	'renameuserreason' => 'Razlog preimenovanja:',
+	'renameusermove' => 'Premesti korisničku stranicu i stranicu za razgovor (i njihove podstranice) na novo ime',
+	'renameuserreserve' => 'Blokiraj staro korisničko ime za dalju upotrebu',
+	'renameuserwarnings' => 'Upozorenja:',
+	'renameuserconfirm' => 'Da, preimenuj saradničko ime.',
+	'renameusersubmit' => 'Prihvati',
+	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji',
+	'renameusererrorexists' => 'Korisnik "<nowiki>$1</nowiki>" već postoji',
+	'renameusererrorinvalid' => 'Pogrešno korisničko ime: "<nowiki>$1</nowiki>"',
+	'renameusererrortoomany' => 'Korisnik "<nowiki>$1</nowiki>" ima $2 {{PLURAL:$2|prilog|priloga|priloga}}, preimenovanje korisnika sa više od $3 {{PLURAL:$3|prilog|priloga|priloga}} može da utiče na performanse sajta.',
+	'renameuser-error-request' => 'Javio se problem prilikom prihvatanja zahteva. Idi nazad i pokušaj ponovo.',
+	'renameuser-error-same-user' => 'Ne možeš preimenovati saradničko ime u isto kao i prethodno.',
+	'renameusersuccess' => 'Korisnik "<nowiki>$1</nowiki>" je preimenovan na "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može biti automatski presnimljena.',
+	'renameuser-page-moved' => 'Stranica $1 je premeštena na $2.',
+	'renameuser-page-unmoved' => 'Stranica $1 ne može biti premeštena na $2.',
+	'renameuserlogpage' => 'Istorija preimenovanja korisnika',
+	'renameuserlogpagetext' => 'Ovo je istorija izmena preimenovanja korisnika',
+	'renameuserlogentry' => 'je preimenovao $1 u „$2“',
+	'renameuser-log' => '{{PLURAL:$1|1 izmena|$1 izmene|$1 izmena}}. Razlog: $2',
+	'renameuser-move-log' => 'Automatski pomerene strane prilikom preimenovanja saradničkog imena: "[[User:$1|$1]]" u "[[User:$2|$2]]".',
+	'right-renameuser' => 'Preimenovanje saradničkih imena',
 );
 
 /** Seeltersk (Seeltersk)
