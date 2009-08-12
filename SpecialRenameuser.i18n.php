@@ -588,6 +588,39 @@ Ewch yn ôl a cheisio eto, os gwelwch yn dda.',
 	'right-renameuser' => 'Ail-enwi defnyddwyr',
 );
 
+/** Danish (Dansk)
+ * @author Byrial
+ */
+$messages['da'] = array(
+	'renameuser' => 'Omdøb bruger',
+	'renameuser-desc' => "Laver en [[Special:Renameuser|specialside]] til at omdøbe en bruger (kræver rettigheden ''renameuser'')",
+	'renameuserold' => 'Nuværende brugernavn:',
+	'renameusernew' => 'Nyt brugernavn:',
+	'renameuserreason' => 'Årsag til omdøbning:',
+	'renameusermove' => 'Flyt bruger- og diskussionssider (og deres undersider) til nyt navn',
+	'renameuserreserve' => 'Bloker det gamle brugernavn fra fremtidig brug',
+	'renameuserwarnings' => 'Advarsler:',
+	'renameuserconfirm' => 'Ja, omdøb brugeren',
+	'renameusersubmit' => 'Omdøb',
+	'renameusererrordoesnotexist' => 'Brugeren "<nowiki>$1</nowiki>" findes ikke.',
+	'renameusererrorexists' => 'Brugeren "<nowiki>$1</nowiki>" findes allerede.',
+	'renameusererrorinvalid' => 'Brugernavnet "<nowiki>$1</nowiki>" er ugyldigt.',
+	'renameusererrortoomany' => 'Brugeren "<nowiki>$1</nowiki>" har $2 {{PLURAL:$2|redigering|redigeringer}}, omdøbning af en bruger med flere end $3 {{PLURAL:$3|redigering|redigeringer}} kan have en negativ indvirkning på webstedets ydeevne.',
+	'renameuser-error-request' => 'Det var et problem med at modtage forespørgslen.
+Gå venligst tilbage og prøv igen.',
+	'renameuser-error-same-user' => 'Du kan ikke omdøbe en bruger til det samme navn som før.',
+	'renameusersuccess' => 'Brugeren "<nowiki>$1</nowiki>" er blevet omdøbt til "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Siden $1 eksisterer allerede og kan ikke automatisk overskrives.',
+	'renameuser-page-moved' => 'Siden $1 er flyttet til $2.',
+	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
+	'renameuserlogpage' => 'Brugeromdøbningslog',
+	'renameuserlogpagetext' => 'Dette er en log over omdøbninger af brugernavne.',
+	'renameuserlogentry' => 'har omdøbt $1 til "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringer}}. Årsag: $2',
+	'renameuser-move-log' => 'Side automatisk flyttet ved omdøbning af bruger "[[User:$1|$1]]" til "[[User:$2|$2]]"',
+	'right-renameuser' => 'Omdøbe brugere',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  * @author Spacebirdy
@@ -1678,7 +1711,7 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'renameuser' => '계정 이름 변경',
-	'renameuser-desc' => "계정 이름 변경을 위한 [[Special:Renameuser|특수 문서]]를 추가 (''renameuser'' 권한이 필요합니다)",
+	'renameuser-desc' => "계정 이름 변경을 위한 [[Special:Renameuser|특수 문서]]를 추가합니다 ('''renameuser''' 권한이 필요합니다)",
 	'renameuserold' => '기존 계정 이름:',
 	'renameusernew' => '새 이름:',
 	'renameuserreason' => '바꾸는 이유:',
@@ -1701,7 +1734,7 @@ $messages['ko'] = array(
 	'renameuserlogpage' => '이름 변경 기록',
 	'renameuserlogpagetext' => '계정 이름 변경 기록입니다.',
 	'renameuserlogentry' => '$1에서 "$2"(으)로 이름을 바꾸었습니다.',
-	'renameuser-log' => '{{PLURAL:$1|1|$1}}개의 기여. 이유: $2',
+	'renameuser-log' => '기여 $1건. 이유: $2',
 	'renameuser-move-log' => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 	'right-renameuser' => '계정 이름 변경',
 );
@@ -2076,6 +2109,7 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
+	'renameuserold' => 'Gebrukersnaam noen',
 	'renameuserwarnings' => 'Waorschuwingen:',
 );
 
