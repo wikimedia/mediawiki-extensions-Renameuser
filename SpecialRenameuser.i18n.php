@@ -2059,6 +2059,15 @@ $messages['mt'] = array(
 	'renameuserconfirm' => "Iva, erġa' semmi l-utent",
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'renameuserreserve' => 'Озавтомс ташто совицянь лементь саймес, тевс илязо нолдаво седе тов',
+	'renameuserconfirm' => 'Истя, макст совицянтень од лем',
+	'renameusersubmit' => 'Максомс',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
