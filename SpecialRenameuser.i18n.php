@@ -1018,21 +1018,37 @@ $messages['fur'] = array(
 );
 
 /** Western Frisian (Frysk)
+ * @author SK-luuut
  * @author Snakesteuben
  */
 $messages['fy'] = array(
 	'renameuser' => 'Feroarje in meidochnamme',
+	'renameuser-desc' => "Foeget in [[Special:Renameuser|spesiale side]] ta om in meidoggersnamme te feroarjen (jo hawwe hjirfoar it ''renameuser'' rjocht nedich)",
 	'renameuserold' => 'Alde namme:',
 	'renameusernew' => 'Nije namme:',
+	'renameuserreason' => 'Reden foar nammewiziging:',
 	'renameusermove' => 'Werneam meidogger en oerlis siden (mei ûnderlizzende siden) nei de nije namme',
+	'renameuserreserve' => 'Takomst brûken fan de âlde meidoggersnamme foarkomme',
+	'renameuserwarnings' => 'Warskôgings:',
+	'renameuserconfirm' => 'Ja, feroarje de namme fan de meidogger',
 	'renameusersubmit' => 'Feroarje',
 	'renameusererrordoesnotexist' => 'Der is gjin meidogger mei de namme "<nowiki>$1</nowiki>"',
 	'renameusererrorexists' => 'De meidochnamme "<nowiki>$1</nowiki>" wurdt al brûkt.',
 	'renameusererrorinvalid' => 'De meidochnamme "<nowiki>$1</nowiki>" mei net.',
-	'renameusererrortoomany' => 'Meidogger "<nowiki>$1</nowiki>" hat $2 bewurkings dien; it feroarjen fan de namme fan in meidgger mei mear as $3 bewurkings koe in neidielige ynfloed op de prestaasje fan de webstee hawwe.',
+	'renameusererrortoomany' => 'Meidogger "<nowiki>$1</nowiki>" hat $2 {{PLURAL:$2|bewurking|bewurkings}} dien; it feroarjen fan de namme fan in meidogger mei mear as $3 bewurkings koe in neidielige ynfloed op de prestaasje fan de webside hawwe.',
+	'renameuser-error-request' => "Der wie in probleem mei it ferwurkjen fan de oanfraach.
+Gean tebek en probearje it asjebleaft op 'e nij.",
+	'renameuser-error-same-user' => 'Jo kinne in meidoggersnamme net nei deselde namme feroarje.',
 	'renameusersuccess' => 'Meidogger "<nowiki>$1</nowiki>" is no meidogger "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'De side $1 bestiet al en kin net automatysk oerskreaun wurde.',
+	'renameuser-page-moved' => 'Sidenamme $1 is feroare yn $2.',
+	'renameuser-page-unmoved' => 'Sidenamme $1 koe net feroare wurde yn $2.',
 	'renameuserlogpage' => 'Nammeferoar-loch',
 	'renameuserlogpagetext' => 'Dit is in loch fan feroarings fan meidochnammen.',
+	'renameuserlogentry' => 'hat de namme fan $1 feroare yn "$2"',
+	'renameuser-log' => '{{PLURAL:$1|ien feroaring|$1 feroarings}}. Reden: $2',
+	'renameuser-move-log' => 'Sidenamme automatysk feroare by it feroarjen fan de meidoggersnamme fan  "[[User:$1|$1]]" yn "[[User:$2|$2]]"',
+	'right-renameuser' => 'Feroarje meidoggersnammen',
 );
 
 /** Irish (Gaeilge)
