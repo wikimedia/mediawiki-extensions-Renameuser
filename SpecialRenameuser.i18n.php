@@ -1951,11 +1951,13 @@ $messages['mg'] = array(
 );
 
 /** Macedonian (Македонски)
+ * @author Bjankuloski06
  * @author Brest
  * @author Misos
  */
 $messages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
+	'renameuser-desc' => "Додава [[Special:Renameuser|специјална страница]] за преименување на корисник (бара право на ''renameuser'')",
 	'renameuserold' => 'Сегашно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
 	'renameuserreason' => 'Образложение за преименување:',
@@ -1968,7 +1970,13 @@ $messages['mk'] = array(
 	'renameusererrorexists' => 'Корисникот "<nowiki>$1</nowiki>" веќе постои',
 	'renameusererrorinvalid' => 'Корисничкото име "<nowiki>$1</nowiki>" не е валидно',
 	'renameusererrortoomany' => 'Корисникот "<nowiki>$1</nowiki>" има направено $2 {{PLURAL:$2|придонес|придонеси}},  преименување на корисник со повеќе од $3 {{PLURAL:$3|придонес|придонеси}} може негативно да влијае на перформансите на сајтот.',
+	'renameuser-error-request' => 'Се јави проблем при примањето на барањето.
+Вратете се и обидете се повторно.',
+	'renameuser-error-same-user' => 'Не можете да го преименувате корисникот во име кое е исто како претходното.',
 	'renameusersuccess' => 'Корисникот "<nowiki>$1</nowiki>" е преименуван во "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Страницата $1 веќе постои и не може автоматски да се замени со друга содржина.',
+	'renameuser-page-moved' => 'Страницата $1 е преместена на $2.',
+	'renameuser-page-unmoved' => 'Страницата $1 неможеше да се премести на $2.',
 	'renameuserlogpage' => 'Дневник на преименувања на корисници',
 	'renameuserlogpagetext' => 'Ово е дневник на преименувања на корисници',
 	'renameuserlogentry' => 'преименуван $1 во "$2"',
