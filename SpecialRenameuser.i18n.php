@@ -3335,7 +3335,7 @@ $messages['yue'] = array(
  */
 $messages['zh-hans'] = array(
 	'renameuser' => '用户重命名',
-	'renameuser-desc' => "为用户重命名 (需要 ''renameuser'' 权限)",
+	'renameuser-desc' => "为用户重命名 （需要 ''renameuser'' 权限）",
 	'renameuserold' => '当前用户名:',
 	'renameusernew' => '新用户名:',
 	'renameuserreason' => '重命名的原因:',
@@ -3368,7 +3368,7 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'renameuser' => '用戶重新命名',
-	'renameuser-desc' => "為用戶重新命名 (需要 ''renameuser'' 權限)",
+	'renameuser-desc' => "為用戶重新命名 （需要 ''renameuser'' 權限）",
 	'renameuserold' => '現時用戶名:',
 	'renameusernew' => '新用戶名:',
 	'renameuserreason' => '重新命名的原因:',
