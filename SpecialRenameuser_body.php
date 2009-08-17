@@ -397,6 +397,8 @@ class RenameuserSQL {
 		} else {
 			$this->tables['recentchanges'] = array('rc_user_text','rc_user');
 		}
+		
+		wfRunHooks( 'RenameUserSQL', array( $this ) );
 	}
 
 	/**
