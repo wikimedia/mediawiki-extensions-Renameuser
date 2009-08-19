@@ -2279,7 +2279,7 @@ $messages['oc'] = array(
 	'renameusererrordoesnotexist' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » es pas valid",
 	'renameusererrorexists' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís ja",
 	'renameusererrorinvalid' => "Lo nom d'utilizaire « <nowiki>$1</nowiki> » existís pas",
-	'renameusererrortoomany' => "L'utilizaire « <nowiki>$1</nowiki> » a $2 {{PLURAL:$2|contribucion|contribucions}}. Tornar nomenar un utilizaire qu'a mai de $3 {{PLURAL:$3|contribucion|contribucions}} a son actiu pòt afectar las performanças del sit.",
+	'renameusererrortoomany' => "L'utilizaire « <nowiki>$1</nowiki> » a $2 {{PLURAL:$2|contribucion|contribucions}}. Tornar nomenar un utilizaire qu'a mai de $3 {{PLURAL:$3|contribucion|contribucions}} a son actiu pòt afectar las performanças del site.",
 	'renameuser-error-request' => 'Un problèma existís amb la recepcion de la requèsta. Tornatz en rèire e ensajatz tornamai.',
 	'renameuser-error-same-user' => 'Podètz pas tornar nomenar un utilizaire amb la meteissa causa deperabans.',
 	'renameusersuccess' => "L'utilizaire « <nowiki>$1</nowiki> » es plan estat renomenat en « <nowiki>$2</nowiki> »",
@@ -3332,10 +3332,11 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author Liangent
  */
 $messages['zh-hans'] = array(
 	'renameuser' => '用户重命名',
-	'renameuser-desc' => "为用户重命名 （需要 ''renameuser'' 权限）",
+	'renameuser-desc' => "添加一个[[Special:Renameuser|特殊页面]]来重命名用户（需要''renameuser''权限）",
 	'renameuserold' => '当前用户名:',
 	'renameusernew' => '新用户名:',
 	'renameuserreason' => '重命名的原因:',
