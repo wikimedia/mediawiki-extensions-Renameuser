@@ -388,11 +388,14 @@ $messages['br'] = array(
 	'renameusernew' => 'Anv implijer nevez :',
 	'renameuserreason' => 'Abeg evit adenvel :',
 	'renameusermove' => 'Kas ar pajennoù implijer ha kaozeal (hag o ispajennoù) betek o anv nevez',
+	'renameuserreserve' => 'Mirout ma vo implijet an anv kozh mui en dazont',
+	'renameuserwarnings' => 'Diwallit :',
+	'renameuserconfirm' => 'Ya, adenvel an implijer',
 	'renameusersubmit' => 'Adenvel',
 	'renameusererrordoesnotexist' => 'An implijer "<nowiki>$1</nowiki>" n\'eus ket anezhañ',
 	'renameusererrorexists' => 'Krouet eo bet an anv implijer "<nowiki>$1</nowiki>" dija',
 	'renameusererrorinvalid' => 'Faziek eo an anv implijer "<nowiki>$1</nowiki>"',
-	'renameusererrortoomany' => 'Deuet ez eus $2 degasadenn gant an implijer "<nowiki>$1</nowiki>"; adenvel un implijer degaset gantañ ouzhpenn $3 degasadenn a c\'hall noazout ouzh startijenn mont en-dro al lec\'hienn a-bezh',
+	'renameusererrortoomany' => 'Deuet ez eus $2 {{PLURAL:$2|degasadenn|degasadenn}} gant an implijer "<nowiki>$1</nowiki>"; adenvel un implijer degaset gantañ ouzhpenn $3 {{PLURAL:$3|degasadenn|degasadenn}} a c\'hall noazout ouzh startijenn mont en-dro al lec\'hienn a-bezh.',
 	'renameuser-error-request' => 'Ur gudenn zo bet gant degemer ar reked. Kit war-gil ha klaskit en-dro.',
 	'renameuser-error-same-user' => "N'haller ket adenvel un implijer gant an hevelep anv hag a-raok.",
 	'renameusersuccess' => 'Deuet eo an implijer "<nowiki>$1</nowiki>" da vezañ "<nowiki>$2</nowiki>"',
@@ -402,8 +405,9 @@ $messages['br'] = array(
 	'renameuserlogpage' => 'Roll an implijerien bet adanvet',
 	'renameuserlogpagetext' => 'Setu istor an implijerien bet cheñchet o anv ganto',
 	'renameuserlogentry' => 'en deus adanvet $1 e "$2"',
-	'renameuser-log' => 'Ssavet gantañ $1 degasadenn. $2',
+	'renameuser-log' => '{{PLURAL:$1|1 degasadenn|$1 degasadenn}}. Abeg : $2',
 	'renameuser-move-log' => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[User:$1|$1]]" e "[[User:$2|$2]]"',
+	'right-renameuser' => 'Adenvel implijerien',
 );
 
 /** Bosnian (Bosanski)
