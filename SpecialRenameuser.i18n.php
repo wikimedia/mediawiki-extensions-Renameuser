@@ -1731,7 +1731,7 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'renameuser' => '계정 이름 변경',
-	'renameuser-desc' => "계정 이름 변경을 위한 [[Special:Renameuser|특수 문서]]를 추가합니다 ('''renameuser''' 권한이 필요합니다)",
+	'renameuser-desc' => "계정 이름 변경을 위한 [[Special:Renameuser|특수 문서]]를 추가한다 ('''renameuser''' 권한 필요)",
 	'renameuserold' => '기존 계정 이름:',
 	'renameusernew' => '새 이름:',
 	'renameuserreason' => '바꾸는 이유:',
