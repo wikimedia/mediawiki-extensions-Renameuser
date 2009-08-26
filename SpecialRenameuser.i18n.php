@@ -2310,6 +2310,25 @@ $messages['os'] = array(
 	'renameuserlogpage' => 'Архайджыты нæмттæ ивыны лог',
 );
 
+/** Picard (Picard)
+ * @author Geoleplubo
+ */
+$messages['pcd'] = array(
+	'renameuser' => "Canger ch'nom d'uzeu",
+	'renameusernew' => 'Nouvieu nom dechl uzeu',
+	'renameuserreason' => "Motif dech canjemint d'nom",
+	'renameuserwarnings' => 'Afute ! :',
+	'renameuserconfirm' => 'Oui, érlonmer echl uzeu',
+	'renameusererrorinvalid' => 'Ech nom  "<nowiki>$1</nowiki>" est non-val.',
+	'renameusersuccess' => 'Echl uzeu "<nowiki>$1</nowiki>" o té érlonmé "<nowiki>$2</nowiki>".',
+	'renameuser-page-moved' => "L'pache $1 o té déplachée dsus $2.",
+	'renameuser-page-unmoved' => "L'pache $1 ale n'put poin éte déplachée su $2.",
+	'renameuserlogpage' => "Jornal d'chés canjemints éd chés noms d'uzeus",
+	'renameuserlogpagetext' => "Ch'est un jornal éd chés canjemints d'chés noms d'uzeus.",
+	'renameuserlogentry' => '$1 est érlonmé in "$2"',
+	'right-renameuser' => 'Érlonmer chés uzeus',
+);
+
 /** Deitsch (Deitsch)
  * @author Xqt
  */
