@@ -2383,27 +2383,36 @@ Cofnij się i spróbuj jeszcze raz.',
 
 /** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
+ * @author Dragonòt
  */
 $messages['pms'] = array(
 	'renameuser' => "Arbatié n'utent",
+	'renameuser-desc' => "A gionta na [[Special:Renameuser|pàgina special]] për arnominé n'utent (a-i é dabzògn dël drit ''renameuser'')",
 	'renameuserold' => 'Stranòm corent:',
 	'renameusernew' => 'Stranòm neuv:',
 	'renameuserreason' => "Rason ch'as cambia stranòm:",
 	'renameusermove' => 'Tramuda ëdcò la pàgina utent e cola dle ciaciarade (con tute soe sotapàgine) a lë stranòm neuv',
+	'renameuserreserve' => 'Blòca lë stanòm vej da future utilisassion',
+	'renameuserwarnings' => 'Atension:',
+	'renameuserconfirm' => "É!, arnòmina l'utent",
 	'renameusersubmit' => 'Falo',
 	'renameusererrordoesnotexist' => 'A-i é pa gnun utent ch\'as ës-ciama "<nowiki>$1</nowiki>"',
 	'renameusererrorexists' => 'N\'utent ch\'as ës-ciama "<nowiki>$1</nowiki>" a-i é già',
 	'renameusererrorinvalid' => 'Lë stranòm "<nowiki>$1</nowiki>" a l\'é nen bon',
-	'renameusererrortoomany' => "L'utent \"<nowiki>\$1</nowiki>\" a l'ha fait \$2 modìfiche, ch'a ten-a present che arbatié n'utent ch'a l'abia pì che \$3 modìfiche a podrìa feje un brut efet a le prestassion dël sit.",
+	'renameusererrortoomany' => 'L\'utent "<nowiki>$1</nowiki>" a l\'ha fait $2 {{PLURAL:$2|modìfica|modìfiche}}, ch\'a ten-a present che arbatié n\'utent ch\'a l\'abia pì che $3 {{PLURAL:$3|modìfica|modìfiche}} a podrìa feje un brut efet a le prestassion dël sit.',
+	'renameuser-error-request' => "A l'é stàit-ie un problema con l'esecussion ëd l'arcesta.
+Për piasì torna andré e preuva torna.",
+	'renameuser-error-same-user' => "It peule pa arnominé n'utent con ël midem nòm ëd prima.",
 	'renameusersuccess' => 'L\'utent "<nowiki>$1</nowiki>" a l\'é stait arbatià an "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => "La pàgina $1 a-i é già e as peul nen passe-ie dzora n'aotomàtich.",
 	'renameuser-page-moved' => "La pàgina $1 a l'ha fait San Martin a $2.",
 	'renameuser-page-unmoved' => "La pàgina $1 a l'é pa podusse tramudé a $2.",
 	'renameuserlogpage' => "Registr dj'arbatiagi",
 	'renameuserlogpagetext' => "Sossì a l'é un registr dle modìfiche djë stranòm dj'utent",
-	'renameuserlogentry' => 'a l\'ha arbatià $1 coma "$2"',
-	'renameuser-log' => "ch'a l'avìa $1 modìfiche. $2",
+	'renameuserlogentry' => 'a l\'ha arbatià $1 an "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 modìfica|$1 modìfiche}}. Rason: $2',
 	'renameuser-move-log' => 'Pàgina utent tramudà n\'aotomàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
+	'right-renameuser' => "Arnòmina j'utent",
 );
 
 /** Pashto (پښتو)
