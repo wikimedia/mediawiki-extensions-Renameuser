@@ -735,7 +735,7 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
 	'renameuser-desc' => "Alinomigu uzanton (bezonas rajton ''renameuser'')",
-	'renameuserold' => 'Aktuala uzantonomo:',
+	'renameuserold' => 'Aktuala salutnomo:',
 	'renameusernew' => 'Nova salutnomo:',
 	'renameuserreason' => 'Kialo por alinomigo:',
 	'renameusermove' => 'Movu uzantan kaj diskutan paĝojn (kaj ties subpaĝojn) al la nova nomo',
@@ -745,7 +745,7 @@ $messages['eo'] = array(
 	'renameusersubmit' => 'Ek',
 	'renameusererrordoesnotexist' => 'La uzanto "<nowiki>$1</nowiki>" ne ekzistas',
 	'renameusererrorexists' => 'La uzanto "<nowiki>$1</nowiki>" jam ekzistas',
-	'renameusererrorinvalid' => 'La uzantonomo "<nowiki>$1</nowiki>" estas malvalida',
+	'renameusererrorinvalid' => 'La salutnomo "<nowiki>$1</nowiki>" estas malvalida',
 	'renameusererrortoomany' => 'La uzanto "<nowiki>$1</nowiki>" havas $2 {{PLURAL:$2|kontribuon|kontribuojn}}. Alinamigo de uzanto kun pli ol $3 {{PLURAL:$2|kontribuo|kontribuoj}} povus malbone influi paĝaran funkciadon',
 	'renameuser-error-request' => 'Estis problemo recivante la peton.
 Bonvolu retroigi kaj reprovi.',
@@ -755,7 +755,7 @@ Bonvolu retroigi kaj reprovi.',
 	'renameuser-page-moved' => 'La paĝo $1 estis movita al $2.',
 	'renameuser-page-unmoved' => 'La paĝo $1 ne povis esti movita al $2.',
 	'renameuserlogpage' => 'Protokolo pri alinomigoj de uzantoj',
-	'renameuserlogpagetext' => 'Ĉi tio estas protokolo pri ŝanĝoj de uzantonomoj',
+	'renameuserlogpagetext' => 'Jen protokolo pri ŝanĝoj de salutnomoj.',
 	'renameuserlogentry' => 'renomigis $1 al "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
@@ -2574,6 +2574,7 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'renameuser' => "Renomene l'utende",
+	'renameuser-desc' => "Aggiunge 'na [[Special:Renameuser|pàgena speciale]] pe renomena 'n'utende (abbesogne de le deritte ''renameuser'')",
 	'renameuserold' => "Nome de l'utende de mò:",
 	'renameusernew' => "Nome de l'utende nuève:",
 	'renameuserreason' => "Mutive d'u cangiamende:",
