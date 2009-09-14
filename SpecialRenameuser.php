@@ -61,3 +61,16 @@ $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
+
+$wgHooks['ShowMissingArticle'][] = 'wfRenameUserShowLog';
+
+function wfRenameUserShowLog( $article ) {
+	global $wgOut;
+	$title = $article->getTitle();
+	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
+		$page = $title->getPrefixedDBkey();
+		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', 10, array(), false, 'renamed-notice' );
+	}
+	return true;
+}
+

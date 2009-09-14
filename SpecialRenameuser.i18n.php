@@ -40,6 +40,9 @@ Please go back and try again.',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 
 	'right-renameuser'      => 'Rename users',
+	
+	'renamed-notice' => 'This user has been renamed.
+The rename log is provided below for reference.',
 );
 
 /** Message documentation (Message documentation)
