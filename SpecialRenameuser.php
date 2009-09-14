@@ -68,7 +68,8 @@ function wfRenameUserShowLog( $article ) {
 	global $wgOut;
 	$title = $article->getTitle();
 	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
-		$page = $title->getPrefixedDBkey();
+		// Get the title for the base userpage
+		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
 		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', 10, array(), false, 'renameuser-renamed-notice' );
 	}
 	return true;
