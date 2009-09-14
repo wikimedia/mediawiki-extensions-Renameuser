@@ -41,7 +41,7 @@ Please go back and try again.',
 
 	'right-renameuser'      => 'Rename users',
 	
-	'renamed-notice' => 'This user has been renamed.
+	'renameuser-renamed-notice' => 'This user has been renamed.
 The rename log is provided below for reference.',
 );
 
