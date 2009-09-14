@@ -47,7 +47,7 @@ function wfRenameUserLogActionText( $type, $action, $title = NULL, $skin = NULL,
 	if( !$title || $title->getNamespace() !== NS_USER ) {
 		$rv = ''; // handled in comment, the old way
 	} else {
-		$titleLink = $skin ? 
+		$titleLink = $skin ?
 			$skin->makeLinkObj( $title, htmlspecialchars( $title->getPrefixedText() ) ) : $title->getText();
 		# Add title to params
 		array_unshift( $params, $titleLink );
@@ -70,8 +70,7 @@ function wfRenameUserShowLog( $article ) {
 	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
 		// Get the title for the base userpage
 		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
-		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', 10, array(), false, 'renameuser-renamed-notice' );
+		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', 10, array(), false, array( 'renameuser-renamed-notice', $title->getBaseText() ) );
 	}
 	return true;
 }
-

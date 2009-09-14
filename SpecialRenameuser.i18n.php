@@ -42,7 +42,7 @@ Please go back and try again.',
 	'right-renameuser'      => 'Rename users',
 	
 	'renameuser-renamed-notice' => 'This user has been renamed.
-The rename log is provided below for reference.',
+The rename log is provided below for reference.', # Supports GENDER
 );
 
 /** Message documentation (Message documentation)
@@ -58,6 +58,7 @@ $messages['qqq'] = array(
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
 	'right-renameuser' => '{{doc-right}}',
+	'renameuser-renamed-notice' => 'This message supports the use of GENDER.',
 );
 
 /** Afrikaans (Afrikaans)
