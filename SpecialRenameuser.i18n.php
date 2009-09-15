@@ -594,6 +594,8 @@ Ewch yn ôl a cheisio eto, os gwelwch yn dda.',
 	'renameuser-log' => '$1 {{PLURAL:$1|golygiad|golygiad|olygiad|golygiad|golygiad|o olygiadau}}. Rheswm: $2',
 	'renameuser-move-log' => 'Wedi symud y dudalen yn awtomatig wrth ail-enwi\'r defnyddiwr "[[User:$1|$1]]" i "[[User:$2|$2]]"',
 	'right-renameuser' => 'Ail-enwi defnyddwyr',
+	'renameuser-renamed-notice' => "Mae'r defnyddiwr hwn wedi ei ail-enwi.
+Mae'r lòg ail-enwi defnyddwyr i'w weld isod.",
 );
 
 /** Danish (Dansk)
@@ -701,6 +703,7 @@ $messages['dsb'] = array(
  * @author Consta
  * @author Dead3y3
  * @author MF-Warburg
+ * @author Omnipaedista
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -730,6 +733,8 @@ $messages['el'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 επεξεργασία|$1 επεξεργασίες}}. Λόγος: $2',
 	'renameuser-move-log' => 'Η σελίδα μετακινήθηκε αυτόματα κατά τη μετονομασία του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
 	'right-renameuser' => 'Μετονομασία χρηστών',
+	'renameuser-renamed-notice' => 'Αυτός ο χρήστης άλλαξε όνομα
+Tο ημερολόγιο επανονομασιών δίνεται παρακάτω για αναφορά.',
 );
 
 /** Esperanto (Esperanto)
@@ -3232,6 +3237,7 @@ $messages['vep'] = array(
 	'renameusernew' => "Uz' kävutajan nimi:",
 	'renameuserreason' => 'Udesnimitandan sü:',
 	'renameusersubmit' => 'Tehta',
+	'right-renameuser' => 'Udesnimitada kävutajid',
 );
 
 /** Vietnamese (Tiếng Việt)
