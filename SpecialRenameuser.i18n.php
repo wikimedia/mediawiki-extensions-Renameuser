@@ -49,6 +49,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Jon Harald Søby
  * @author Meno25
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['qqq'] = array(
 	'renameuser-desc' => 'Short description of the Renameuser extension, shown on [[Special:Version]]. Do not translate or change links.',
@@ -58,7 +59,7 @@ $messages['qqq'] = array(
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
 	'right-renameuser' => '{{doc-right}}',
-	'renameuser-renamed-notice' => 'This message supports the use of GENDER.',
+	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
 
 /** Afrikaans (Afrikaans)
@@ -317,6 +318,8 @@ $messages['be-tarask'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|рэдагаваньне|рэдагаваньні|рэдагаваньняў}}. Прычына: $2',
 	'renameuser-move-log' => 'Аўтаматычнае перайменаваньне старонкі ў сувязі зь перайменаваньнем рахунку ўдзельніка з «[[User:$1|$1]]» у «[[User:$2|$2]]»',
 	'right-renameuser' => 'перайменаваньне ўдзельнікаў',
+	'renameuser-renamed-notice' => '{{GENDER:$1|Гэты удзельнік быў перайменаваны|Гэтая удзельніца была перайменаваная}}.
+Журнал перайменаваньняў удзельнікаў пададзены ніжэй для даведкі.',
 );
 
 /** Bulgarian (Български)
@@ -2305,6 +2308,8 @@ $messages['oc'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|edicion|edicions}}. Motiu : $2',
 	'renameuser-move-log' => 'Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire "[[User:$1|$1]]" en "[[User:$2|$2]]"',
 	'right-renameuser' => "Tornar nomenar d'utilizaires",
+	'renameuser-renamed-notice' => 'Aqueste utilizaire es estat renomenat.
+Lo jornal dels cambiaments de noms es disponible çaijós per informacion.',
 );
 
 /** Ossetic (Иронау)
