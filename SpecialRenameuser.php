@@ -70,7 +70,8 @@ function wfRenameUserShowLog( $article ) {
 	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
 		// Get the title for the base userpage
 		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
-		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', 10, array(), false, array( 'renameuser-renamed-notice', $title->getBaseText() ) );
+		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false, 
+			'msgKey' => array( 'renameuser-renamed-notice', $title->getBaseText() ) ) );
 	}
 	return true;
 }
