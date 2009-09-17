@@ -1460,6 +1460,7 @@ $messages['is'] = array(
 	'renameuser-page-unmoved' => 'Ekki var hægt að færa síðuna $1 á $2.',
 	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
 	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
+	'renameuser-log' => '{{PLURAL:$1|1 breyting|$1 breytingar}}. Ástæða: $2',
 );
 
 /** Italian (Italiano)
@@ -3276,6 +3277,8 @@ $messages['vi'] = array(
 	'renameuser-log' => 'Đã có {{PLURAL:$1|1 sửa đổi|$1 sửa đổi}}. Lý do: $2',
 	'renameuser-move-log' => 'Đã tự động di chuyển trang khi đổi tên thành viên “[[User:$1|$1]]” thành “[[User:$2|$2]]”',
 	'right-renameuser' => 'Đổi tên thành viên',
+	'renameuser-renamed-notice' => 'Thành viên này đã được đổi tên.
+Nhật trình đổi tên được ghi ở dưới để tiện theo dõi.',
 );
 
 /** Volapük (Volapük)
