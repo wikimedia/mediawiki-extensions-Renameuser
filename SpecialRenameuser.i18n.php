@@ -2449,6 +2449,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Giro720
  * @author Malafaya
  */
 $messages['pt'] = array(
@@ -2479,6 +2480,8 @@ Retorne e tente de novo.',
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear utilizadores',
+	'renameuser-renamed-notice' => 'Este nome de utilizador foi renomeado.
+O registo de renomeação é apresentado abaixo.',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -2676,6 +2679,8 @@ $messages['sah'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Биирдэ|$1 төгүл}} уларыйбыт. Төрүөтэ: $2',
 	'renameuser-move-log' => '«[[User:$1|$1]]» аата «[[User:$2|$2]]» буолбутунан аптамаатынан',
 	'right-renameuser' => 'Кыттааччылар ааттарын уларытыы',
+	'renameuser-renamed-notice' => 'Бу кыттааччы аата уларыйбыт.
+Аллара аат уларыйыытын сурунаала көстөр.',
 );
 
 /** Sardinian (Sardu)
