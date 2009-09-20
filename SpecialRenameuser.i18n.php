@@ -1380,6 +1380,8 @@ Per favor retorna e reprova.',
 	'renameuser-log' => '{{PLURAL:$1|1 modification|$1 modificationes}}. Motivo: $2',
 	'renameuser-move-log' => 'Le pagina ha essite automaticamente renominate con le renomination del usator "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renominar usatores',
+	'renameuser-renamed-notice' => 'Iste usator ha essite renominate.
+Le registro de renominationes es providite ci infra pro referentia.',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -2161,6 +2163,9 @@ $messages['nds'] = array(
 $messages['nds-nl'] = array(
 	'renameuserold' => 'Gebrukersnaam noen',
 	'renameuserwarnings' => 'Waorschuwingen:',
+	'renameuserlogpage' => 'Logboek gebrukersnaamwiezigingen',
+	'renameuser-renamed-notice' => "Disse gebrukersnaam is herneumd.
+Hieronder vie-j 't herneumlogboek as rifferentie.",
 );
 
 /** Nepali (नेपाली) */
