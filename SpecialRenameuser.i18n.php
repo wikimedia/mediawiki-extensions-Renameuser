@@ -1184,6 +1184,8 @@ $messages['he'] = array(
 	'renameuser-log' => '{{PLURAL:$1|עריכה אחת|$1 עריכות}}. סיבה: $2',
 	'renameuser-move-log' => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל־"[[User:$2|$2]]"',
 	'right-renameuser' => 'שינוי שמות משתמש',
+	'renameuser-renamed-notice' => 'שם המשתמש הזה שונה.
+יומן שינויי שמות המשתמש מוצג להלן.',
 );
 
 /** Hindi (हिन्दी)
