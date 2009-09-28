@@ -2007,6 +2007,7 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
@@ -2020,7 +2021,7 @@ $messages['ml'] = array(
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>"  എന്ന ഉപയോക്താവ് നിലവിലില്ല.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവ് നിലവിലുണ്ട്.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്തൃനാമം അസാധുവാണ്‌.',
-	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവിനു ഈ വിക്കിയില്‍ $2 തിരുത്തലുകളുണ്ട്. $3 ക്കു മുകളില്‍ തിരുത്തലുകളുള്ള ഉപയോക്തൃനാമങ്ങളെ പുനര്‍നാമകരണം ചെയ്യുന്നതു ഈ സൈറ്റിന്റെ പ്രവര്‍ത്തനത്തെ ബാധിക്കും.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവിനു ഈ വിക്കിയില്‍ {{PLURAL:$2|ഒരു തിരുത്തൽ|$2 തിരുത്തലുകൾ}} ഉണ്ട്, {{PLURAL:$3|ഒരു തിരുത്തലിനു| $3 തിരുത്തലുകൾക്കു}} മുകളില്‍ തിരുത്തലുകളുള്ള ഉപയോക്തൃനാമങ്ങളെ പുനര്‍നാമകരണം ചെയ്യുന്നതു ഈ സൈറ്റിന്റെ പ്രവര്‍ത്തനത്തെ ദോഷകരമായി ബാധിക്കും.',
 	'renameuser-error-request' => 'അപേക്ഷ സ്വീകരിക്കുമ്പോള്‍ പിഴവ് സം‌ഭവിച്ചു. ദയവായി തിരിച്ചു പോയി വീണ്ടും പരിശ്രമിക്കുക.',
 	'renameuser-error-same-user' => 'നിലവിലുള്ള ഒരു ഉപയോക്തൃനാമത്തിലേക്കു വേറൊരു ഉപയോക്തൃനാമം പുനര്‍നാമകരണം നടത്തുവാന്‍ സാധിക്കില്ല.',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവിനെ "<nowiki>$2</nowiki>" എന്ന നാമത്തിലേക്കു പുനര്‍നാമകരണം ചെയ്തിരിക്കുന്നു.',
@@ -2029,10 +2030,12 @@ $messages['ml'] = array(
 	'renameuser-page-unmoved' => '$1 എന്ന താള്‍ $2 വിലേക്കു മാറ്റാന്‍ സാദ്ധ്യമല്ല.',
 	'renameuserlogpage' => 'ഉപയോക്തൃനാമം പുനര്‍നാമകരണം നടത്തിയതിന്റെ പ്രവര്‍ത്തനരേഖ',
 	'renameuserlogpagetext' => 'ഈ പ്രവര്‍ത്തനരേഖ ഉപയോക്തൃനാമം പുനര്‍നാമകരണം നടത്തിയതിന്റേതാണ്‌.',
-	'renameuserlogentry' => '$1 എന്ന താള്‍ "$2" എന്ന താളിലേക്കു പുനര്‍നാമകരണം ചെയ്തിരിക്കുന്നു.',
+	'renameuserlogentry' => '$1 എന്ന ഉപയോക്താവിനെ "$2" എന്നു പുനര്‍നാമകരണം ചെയ്തിരിക്കുന്നു.',
 	'renameuser-log' => '{{PLURAL:$1|ഒരു തിരുത്തല്‍|$1 തിരുത്തലുകള്‍}}. കാരണം: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" എന്ന ഉപയോക്താവിനെ "[[User:$2|$2]]" എന്നു പുനര്‍നാമകരണം ചെയ്തപ്പോള്‍ താള്‍ യാന്ത്രികമായി മാറ്റി.',
 	'right-renameuser' => 'ഉപയോക്താക്കളെ പുനഃര്‍നാമകരണം നടത്തുക',
+	'renameuser-renamed-notice' => 'ഈ ഉപയോക്താവിനെ പുനര്‍നാമകരണം ചെയ്തിരിക്കുന്നു.
+പുനര്‍നാമകരണ രേഖ അവലംബമായി പരിശോധിക്കാനായി താഴെ കൊടുത്തിരിക്കുന്നു.',
 );
 
 /** Marathi (मराठी)
@@ -2245,6 +2248,7 @@ Gå attende og prøv på nytt.',
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'renameuser' => 'Døp om bruker',
@@ -2273,6 +2277,8 @@ $messages['no'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Én redigering|$1 redigeringer}}. Grunn: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 	'right-renameuser' => 'Omdøpe brukere',
+	'renameuser-renamed-notice' => 'Denne brukeren har fått nytt navn.
+Til informasjon er omdøpningsloggen vist nedenfor.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -2401,6 +2407,8 @@ Cofnij się i spróbuj jeszcze raz.',
 	'renameuser-log' => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
 	'right-renameuser' => 'Zmiana nazw kont użytkowników',
+	'renameuser-renamed-notice' => 'Nazwa konta {{GENDER:$1|tego użytkownika|tej użytkowniczki}} została zmieniona.
+Rejestr zmian nazw kont użytkowników znajduje się poniżej.',
 );
 
 /** Piedmontese (Piemontèis)
