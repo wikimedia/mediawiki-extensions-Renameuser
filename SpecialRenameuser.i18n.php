@@ -453,6 +453,7 @@ Molimo Vas da se vratite nazad i pokušate ponovo.',
 /** Catalan (Català)
  * @author Juanpabl
  * @author Paucabot
+ * @author Qllach
  * @author SMP
  * @author Toniher
  */
@@ -484,6 +485,8 @@ Torneu enrere i torneu-ho a intentar.",
 	'renameuser-log' => '{{PLURAL:$1|Una contribució|$1 contribucions}}. Motiu: $2',
 	'renameuser-move-log' => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 	'right-renameuser' => 'Reanomena els usuaris',
+	'renameuser-renamed-notice' => "S'ha canviat el nom d'aquest usuari.
+Al registre de reanomenaments, més avall, en trobareu més informació.",
 );
 
 /** Chechen (Нохчийн) */
