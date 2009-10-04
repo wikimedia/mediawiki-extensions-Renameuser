@@ -946,7 +946,7 @@ $messages['fi'] = array(
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 	'right-renameuser' => 'Nimetä käyttäjätunnuksia uudelleen',
 	'renameuser-renamed-notice' => 'Tämä käyttäjä on nimetty uudelleen.
-Tunnusten vaihtoloki on alla viittauksen vuoksi.',
+Alla on ote tunnusten vaihtolokista.',
 );
 
 /** Faroese (Føroyskt)
