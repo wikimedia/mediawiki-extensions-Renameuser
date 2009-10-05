@@ -2022,6 +2022,9 @@ $messages['ml'] = array(
 	'renameusernew' => 'പുതിയ ഉപയോക്തൃനാമം:',
 	'renameuserreason' => 'ഉപയോക്തൃനാമം മാറ്റാനുള്ള കാരണം:',
 	'renameusermove' => 'നിലവിലുള്ള ഉപയോക്തൃതാളും, ഉപയോക്താവിന്റെ സം‌വാദം താളും (സബ് പേജുകള്‍ അടക്കം) പുതിയ നാമത്തിലേക്കു മാറ്റുക.',
+	'renameuserreserve' => 'പഴയ ഉപയോക്തൃനാമം ഭാവിയിൽ ഉപയോഗിക്കുന്നതു തടയുക',
+	'renameuserwarnings' => 'മുന്നറിയിപ്പുകൾ:',
+	'renameuserconfirm' => 'അതെ, ഉപയോക്താവിനെ പുനർനാമകരണം ചെയ്യുക',
 	'renameusersubmit' => 'സമര്‍പ്പിക്കുക',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>"  എന്ന ഉപയോക്താവ് നിലവിലില്ല.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവ് നിലവിലുണ്ട്.',
@@ -2073,6 +2076,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Aurora
  * @author Aviator
  */
 $messages['ms'] = array(
@@ -2103,6 +2107,8 @@ Sila undur dan cuba lagi.',
 	'renameuser-log' => '$1 suntingan. Sebab: $2',
 	'renameuser-move-log' => 'Memindahkan laman secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Menukar nama pengguna',
+	'renameuser-renamed-notice' => 'Pengguna ini telah dinamakan semula.
+Log penukaran nama ditunjukkan di bawah sebagai rujukan.',
 );
 
 /** Maltese (Malti)
@@ -2219,6 +2225,7 @@ $messages['nl'] = array(
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Gunnernett
  * @author Harald Khan
  */
 $messages['nn'] = array(
@@ -2249,6 +2256,8 @@ Gå attende og prøv på nytt.',
 	'renameuser-log' => '{{PLURAL:$1|eitt bidrag|$1 bidrag}}. Årsak: $2',
 	'renameuser-move-log' => 'Flytta sida automatisk under omdøyping av brukaren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
 	'right-renameuser' => 'Døypa om brukarar',
+	'renameuser-renamed-notice' => 'Denne brukaren har fått nytt namn.
+Til informasjon er omdøpingsloggen synt nedanfor.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
