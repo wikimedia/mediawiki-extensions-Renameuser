@@ -838,6 +838,8 @@ $messages['et'] = array(
 	'renameusererrorexists' => 'Kasutaja "<nowiki>$1</nowiki>" on juba olemas.',
 	'renameusererrorinvalid' => 'Kasutajanimi "<nowiki>$1</nowiki>" on vigane.',
 	'renameusererrortoomany' => 'Kasutajal "<nowiki>$1</nowiki>" on $2 {{PLURAL:$2|kaastöö|kaastööd}}, enam kui $3 kaastööga kasutaja ümbernimetamine võib võrgukoha jõudlusele halvasti mõjuda.',
+	'renameuser-error-request' => 'Palvet ei õnnestunud kätte saada.
+Palun ürita uuesti.',
 	'renameuser-error-same-user' => 'Vana ja uus nimi on samased.',
 	'renameusersuccess' => 'Kasutaja "<nowiki>$1</nowiki>" uus nimi on nüüd "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Lehekülg $1 on juba olemas ja seda ei saa automaatselt üle kirjutada.',
@@ -847,7 +849,10 @@ $messages['et'] = array(
 	'renameuserlogpagetext' => 'See on kasutajanimede muutmise logi.',
 	'renameuserlogentry' => 'nimetas kasutaja $1 ümber kasutajaks "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktsioon|$1 redaktsiooni}}. Põhjus: $2',
+	'renameuser-move-log' => 'Teisaldatud automaatselt, kui kasutaja "[[User:$1|$1]]" nimetati ümber kasutajaks "[[User:$2|$2]]"',
 	'right-renameuser' => 'Muuta kasutajanimesid',
+	'renameuser-renamed-notice' => 'Kasutaja on ümbernimetatud.
+Allpool on toodud ümbernimetamislogi.',
 );
 
 /** Basque (Euskara)
