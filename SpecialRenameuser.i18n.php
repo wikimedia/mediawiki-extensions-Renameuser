@@ -671,6 +671,16 @@ $messages['de'] = array(
 	'right-renameuser' => 'Benutzer umbenennen',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'renameuser' => 'nameyê karberi bıvurn',
+	'renameuser-desc' => "qey newe ra namedayişê karberi re yew [[Special:Renameuser|pelo xas]] têare keno (gani heqqê ''karberi re newe ra name bıde'' bıbo )",
+	'renameuserold' => 'nameyê karberi yo nıkayi',
+	'renameusernew' => 'nameyê karberi yo newe',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -2975,6 +2985,7 @@ $messages['su'] = array(
  * @author Lejonel
  * @author M.M.S.
  * @author Najami
+ * @author Per
  */
 $messages['sv'] = array(
 	'renameuser' => 'Byt användarnamn',
@@ -3003,6 +3014,8 @@ $messages['sv'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringar}}. Anledning: $2',
 	'renameuser-move-log' => 'Flyttade automatiskt sidan när namnet byttes på användaren "[[User:$1|$1]]" till "[[User:$2|$2]]"',
 	'right-renameuser' => 'Ändra användares namn',
+	'renameuser-renamed-notice' => 'Användaren har fått ett nytt namn.
+Som referens återfinns omdöpningsloggen nedan.',
 );
 
 /** Telugu (తెలుగు)
