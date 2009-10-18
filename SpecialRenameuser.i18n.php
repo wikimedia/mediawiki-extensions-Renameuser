@@ -154,6 +154,8 @@ $messages['ar'] = array(
 	'renameuser-log' => '{{PLURAL:$1||تعديل واحد|تعديلان|$1 تعديلات|$1 تعديلًا|$1 تعديل}}. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
+	'renameuser-renamed-notice' => 'لقد تمت إعادة تسمية {{GENDER:$1|هذا المستخدم|هذه المستخدمة}}.
+سجل إعادة التسمية معروض بالأسفل كمرجع:',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -679,6 +681,31 @@ $messages['diq'] = array(
 	'renameuser-desc' => "qey newe ra namedayişê karberi re yew [[Special:Renameuser|pelo xas]] têare keno (gani heqqê ''karberi re newe ra name bıde'' bıbo )",
 	'renameuserold' => 'nameyê karberi yo nıkayi',
 	'renameusernew' => 'nameyê karberi yo newe',
+	'renameuserreason' => 'çıra:',
+	'renameusermove' => 'nameyê karberan u pelê werêaameyişan bıkırışi nameyo newe',
+	'renameuserreserve' => 'nameyê karberi yo verini bloke bıker.',
+	'renameuserwarnings' => 'hişyariyi',
+	'renameuserconfirm' => 'bele karberi newe ra name bıker',
+	'renameusersubmit' => 'bierşawê/biruşnê',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" no name de yew karber çino.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" karber ca ra esto',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" nameyê karberi nemeqbulo',
+	'renameusererrortoomany' => 'karberê "<nowiki>$1</nowiki>" yi $2 ındek {{PLURAL:$2|ardimê ey|ardimê ey}} esto, karbero ke $3 ra zêd {{PLURAL:$3|vuruiyayişê ey|vuriyayişê ey}} bıbo u newe ra name dayiş performasê keyepeli re hol/rınd niyo',
+	'renameuser-error-request' => 'ca ardışê waştışê şıma de yew problem veciya.
+kerem kerê agêrê newe ra tesel bıkerê, bıcerbnê',
+	'renameuser-error-same-user' => 'şıma nêşkeni nameyê karberi yo verini reyna biyarî pakerî',
+	'renameusersuccess' => '"<nowiki>$1</nowiki>" rumuzê no karberi yo cıwa verın vuriya "<nowiki>$2</nowiki>" no rumuzi re.',
+	'renameuser-page-exists' => '$1 pel ca ra esto newe ra ser nênusiyeno.',
+	'renameuser-page-moved' => '$1 pel kırışiya no $2 pel',
+	'renameuser-page-unmoved' => '$1 pel nêkırışiya no $2 pel.',
+	'renameuserlogpage' => 'qeydê vuriyayişê nameyê karberi',
+	'renameuserlogpagetext' => 'listeya cêrıni nameyê karberê ke vuriyayo mocneno',
+	'renameuserlogentry' => '$1newe ra neme bı: "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 edit|$1 edit}}. çıra: $2',
+	'renameuser-move-log' => 'wexta ke karber "[[User:$1|$1]]" no name ra kırışiya "[[User:$2|$2]]" no name re ya newe ra name diyêne pel zi otomotikmen kırişiya',
+	'right-renameuser' => 'nameyê karberan bıvurn',
+	'renameuser-renamed-notice' => 'Bu kullanıcnameyê na/no karberi/e vuriya.
+qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -1794,6 +1821,8 @@ $messages['ko'] = array(
 	'renameuser-log' => '기여 $1건. 이유: $2',
 	'renameuser-move-log' => '‘[[User:$1|$1]]’ 사용자를 ‘[[User:$2|$2]]’(으)로 바꾸면서 문서를 자동으로 이동함',
 	'right-renameuser' => '계정 이름 변경',
+	'renameuser-renamed-notice' => '이 사용자의 계정 이름이 변경되었습니다.
+아래의 이름 변경 기록을 참고하십시오.',
 );
 
 /** Ripoarisch (Ripoarisch)
