@@ -3049,6 +3049,7 @@ Som referens återfinns omdöpningsloggen nedan.',
 
 /** Telugu (తెలుగు)
  * @author Mpradeep
+ * @author Raymond
  * @author Veeven
  */
 $messages['te'] = array(
@@ -3078,6 +3079,8 @@ $messages['te'] = array(
 	'renameuser-log' => '{{PLURAL:$1|ఒక దిద్దుబాటు|$1 దిద్దుబాట్లు}}. కారణం: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చడంతో పేజీని ఆటోమాటిగ్గా తరలించాం',
 	'right-renameuser' => 'వాడుకరుల పేరు మార్చడం',
+	'renameuser-renamed-notice' => 'ఈ వాడుకరి పేరు మారింది.
+మీ సమాచారం కోసం పేరుమార్పుల చిట్టాని క్రింద ఇచ్చాం.',
 );
 
 /** Tetum (Tetun)
