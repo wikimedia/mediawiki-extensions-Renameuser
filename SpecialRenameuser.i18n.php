@@ -3049,7 +3049,6 @@ Som referens återfinns omdöpningsloggen nedan.',
 
 /** Telugu (తెలుగు)
  * @author Mpradeep
- * @author Raymond
  * @author Veeven
  */
 $messages['te'] = array(
