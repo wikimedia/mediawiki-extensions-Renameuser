@@ -704,7 +704,7 @@ kerem kerê agêrê newe ra tesel bıkerê, bıcerbnê',
 	'renameuser-log' => '{{PLURAL:$1|1 edit|$1 edit}}. çıra: $2',
 	'renameuser-move-log' => 'wexta ke karber "[[User:$1|$1]]" no name ra kırışiya "[[User:$2|$2]]" no name re ya newe ra name diyêne pel zi otomotikmen kırişiya',
 	'right-renameuser' => 'nameyê karberan bıvurn',
-	'renameuser-renamed-notice' => 'Bu kullanıcnameyê na/no karberi/e vuriya.
+	'renameuser-renamed-notice' => 'nameyê na/no karberi/e vuriya.
 qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
 );
 
