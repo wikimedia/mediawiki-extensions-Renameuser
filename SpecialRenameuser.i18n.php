@@ -822,6 +822,7 @@ Bonvolu retroigi kaj reprovi.',
  * @author Remember the dot
  * @author Sanbec
  * @author Spacebirdy
+ * @author Translationista
  */
 $messages['es'] = array(
 	'renameuser' => 'Renombrar usuario',
@@ -851,6 +852,8 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivo: $2',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
+	'renameuser-renamed-notice' => 'Este usuario ha sido renombrado.
+El registro de renombre se provee abajo para referencia.',
 );
 
 /** Estonian (Eesti)
