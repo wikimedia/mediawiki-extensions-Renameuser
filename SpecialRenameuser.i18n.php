@@ -2226,9 +2226,25 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
+	'renameuser' => 'Gebruker herneumen',
 	'renameuserold' => 'Gebrukersnaam noen',
+	'renameusernew' => 'Nieje gebrukersnaam:',
+	'renameuserreason' => "Reden veur 't herneumen:",
+	'renameusermove' => "Herneum gebruker en gebrukerspagina's (en subpagina's) naor de nieje naam.",
 	'renameuserwarnings' => 'Waorschuwingen:',
+	'renameusersubmit' => 'Herneumen',
+	'renameusererrordoesnotexist' => 'De gebruker "<nowiki>$1</nowiki>" besteet neet.',
+	'renameusererrorexists' => 'De gebrukersnaam "<nowiki>$1</nowiki>" is al in gebruuk.',
+	'renameusererrorinvalid' => 'De gebrukersnaam "<nowiki>$1</nowiki>" is ongeldig.',
+	'renameusererrortoomany' => 'Gebruker "<nowiki>$1</nowiki>" hef $2 {{PLURAL:$2|bewarking|bewarkingen}}. \'t Herneumen van gebrukers mit meer as {{PLURAL:$3|bewarking|bewarkingen}} hef een slichte invleud hemmen op de snelheid van {{SITENAME}}.',
+	'renameusersuccess' => 'Gebruker "<nowiki>$1</nowiki>" is herneumd naor "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'De pagina $1 besteet al en kan neet autematisch overschreven wönnen.',
+	'renameuser-page-moved' => 'De pagina $1 is herneumd naor $2.',
+	'renameuser-page-unmoved' => 'De pagina $1 kon neet herneumd wönnen naor $2.',
 	'renameuserlogpage' => 'Logboek gebrukersnaamwiezigingen',
+	'renameuserlogpagetext' => 'Dit is een logboek mit wiezigingen van gebrukersnamen',
+	'renameuserlogentry' => 'hef $1 herneumd naor "$2"',
+	'renameuser-move-log' => 'Pagina is autematisch verplaos bie \'t herneumen van de gebruker "[[User:$1|$1]]" naor "[[User:$2|$2]]"',
 	'renameuser-renamed-notice' => "Disse gebrukersnaam is herneumd.
 Hieronder vie-j 't herneumlogboek as rifferentie.",
 );
