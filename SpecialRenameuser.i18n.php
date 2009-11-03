@@ -3413,7 +3413,7 @@ $messages['vo'] = array(
 	'renameuserlogpage' => 'Jenotalised votanemamas',
 	'renameuserlogpagetext' => 'Is palisedons votükams gebananemas.',
 	'renameuserlogentry' => 'evotanemon eli $1 ad "$2"',
-	'renameuser-log' => '{{PLURAL:$1|redakam 1|redakams $1}}. Kod: $2',
+	'renameuser-log' => '{{PLURAL:$1|Redakam 1|Redakams $1}}. Kod: $2',
 	'renameuser-move-log' => 'Pad petopätükon itjäfidiko dü votanemama gebana: "[[User:$1|$1]]" ad "[[User:$2|$2]]"',
 	'right-renameuser' => 'Votanemön gebanis',
 );
