@@ -816,6 +816,7 @@ Bonvolu retroigi kaj reprovi.',
 
 /** Spanish (Español)
  * @author Alhen
+ * @author Dferg
  * @author Icvav
  * @author Jatrobat
  * @author Lin linao
@@ -853,7 +854,7 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
 	'renameuser-move-log' => 'Página trasladada automáticamente al renombrar al usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
 	'renameuser-renamed-notice' => 'Este usuario ha sido renombrado.
-El registro de renombre se provee abajo para referencia.',
+El registro de cambios de nombre de usuario se provee abajo para referencia.',
 );
 
 /** Estonian (Eesti)
