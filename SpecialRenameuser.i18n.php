@@ -2691,6 +2691,7 @@ $messages['roa-tara'] = array(
 	'renameuserold' => "Nome de l'utende de mò:",
 	'renameusernew' => "Nome de l'utende nuève:",
 	'renameuserreason' => "Mutive d'u cangiamende:",
+	'renameusermove' => "Spuèste utende e pàgene de le 'ngazzaminde (e le sottopàggene) a 'u nome nuève",
 	'renameuserreserve' => "Blocche 'u nome utende vicchije da le ause future",
 	'renameuserwarnings' => 'Avvise:',
 	'renameuserconfirm' => "Sine, cange 'u nome a l'utende",
