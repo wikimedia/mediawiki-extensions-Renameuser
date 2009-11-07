@@ -1447,7 +1447,7 @@ $messages['ia'] = array(
 	'renameusererrorinvalid' => 'Le nomine de usator "<nowiki>$1</nowiki>" es invalide.',
 	'renameusererrortoomany' => 'Le usator "<nowiki>$1</nowiki>" ha $2 {{PLURAL:$2|contribution|contributiones}}. Le renomination de un usator con plus de $3 {{PLURAL:$3|contribution|contributiones}} poterea afficer negativemente le prestationes del sito.',
 	'renameuser-error-request' => 'Il habeva un problema con le reception del requesta.
-Per favor retorna e reprova.',
+Per favor retorna e reproba.',
 	'renameuser-error-same-user' => 'Tu non pote renominar un usator al mesme nomine.',
 	'renameusersuccess' => 'Le usator "<nowiki>$1</nowiki>" ha essite renominate a "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Le pagina $1 existe ja e non pote esser automaticamente superscribite.',
@@ -3537,6 +3537,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Bencmq
  * @author Gzdavidwong
  * @author Liangent
  */
@@ -3568,6 +3569,7 @@ $messages['zh-hans'] = array(
 	'renameuser-log' => '拥有$1次编辑。 理由: $2',
 	'renameuser-move-log' => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 	'right-renameuser' => '重新命名用户',
+	'renameuser-renamed-notice' => '本用户已被改名。以下列出更改用户名日志以供参考。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
