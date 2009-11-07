@@ -417,6 +417,8 @@ $messages['br'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 degasadenn|$1 degasadenn}}. Abeg : $2',
 	'renameuser-move-log' => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[User:$1|$1]]" e "[[User:$2|$2]]"',
 	'right-renameuser' => 'Adenvel implijerien',
+	'renameuser-renamed-notice' => "Adanvet eo bet an implijer-mañ.
+A-is emañ marilh an adanvadurioù, ma'z oc'h dedennet.",
 );
 
 /** Bosnian (Bosanski)
@@ -450,6 +452,8 @@ Molimo Vas da se vratite nazad i pokušate ponovo.',
 	'renameuser-log' => '{{PLURAL:$1|1 izmjena|$1 izmjene|$1 izmjena}}. Razlog: $2',
 	'renameuser-move-log' => 'Automatski premještena stranica pri promjeni korisničkog imena "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 	'right-renameuser' => 'Preimenovanje korisnika',
+	'renameuser-renamed-notice' => 'Ovaj korisnik je promijenio ime.
+Zapisnik preimenovanje je prikazan ispod kao referenca.',
 );
 
 /** Catalan (Català)
@@ -497,7 +501,7 @@ $messages['ce'] = array(
 );
 
 /** Crimean Turkish (Latin) (Qırımtatarca (Latin))
- * @author Alessandro
+ * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
 	'renameuserlogpage' => 'Qullanıcı adı deñişikligi jurnalı',
@@ -507,7 +511,7 @@ $messages['crh-latn'] = array(
 );
 
 /** Crimean Turkish (Cyrillic) (Qırımtatarca (Cyrillic))
- * @author Alessandro
+ * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
 	'renameuserlogpage' => 'Къулланыджы ады денъишиклиги журналы',
@@ -550,6 +554,8 @@ $messages['cs'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 editace|$1 editace|$1 editací}}. Zdůvodnění: $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'right-renameuser' => 'Přejmenovávání uživatelů',
+	'renameuser-renamed-notice' => 'Tento uživatel byl přejmenován.
+Pro přehled je níže zobrazen výpis z knihy přejmenování uživatelů.',
 );
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
@@ -637,6 +643,8 @@ Gå venligst tilbage og prøv igen.',
 	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringer}}. Årsag: $2',
 	'renameuser-move-log' => 'Side automatisk flyttet ved omdøbning af bruger "[[User:$1|$1]]" til "[[User:$2|$2]]"',
 	'right-renameuser' => 'Omdøbe brugere',
+	'renameuser-renamed-notice' => 'Denne bruger er blevet omdøbt.
+Til information er omdøbningsloggen vist nedenfor.',
 );
 
 /** German (Deutsch)
@@ -671,6 +679,8 @@ $messages['de'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 Bearbeitung|$1 Bearbeitungen}}. Grund: $2',
 	'renameuser-move-log' => 'durch die Umbenennung von „[[User:$1|$1]]“ nach „[[User:$2|$2]]“ automatisch verschobene Seite',
 	'right-renameuser' => 'Benutzer umbenennen',
+	'renameuser-renamed-notice' => 'Dieser Benutzer wurde umbenannt.
+Zur Information folgt das Benutzernamenänderungs-Logbuch.',
 );
 
 /** Zazaki (Zazaki)
@@ -739,6 +749,8 @@ $messages['dsb'] = array(
 	'renameuser-log' => '{{PLURAL:&1|1 změna|$1 změnje|$1 změny|$1 změnow}}. Pśicyna: $2',
 	'renameuser-move-log' => 'Pśi pśemjenjowanju wužywarja "[[User:$1|$1]]" do "[[User:$2|$2]]" awtomatiski pśesunjony bok',
 	'right-renameuser' => 'Wužywarjow pśemjeniś',
+	'renameuser-renamed-notice' => 'Toś ten wužywaŕ jo se pśemjenił.
+Protokol pśemjenjowanjow jo dołojce ako referenca pódany.',
 );
 
 /** Greek (Ελληνικά)
@@ -1039,6 +1051,8 @@ $messages['fr'] = array(
 	'renameuser-log' => '$1 modification{{PLURAL:$1||s}}. Motif : $2',
 	'renameuser-move-log' => 'Page déplacée automatiquement lorsque l’utilisateur « [[User:$1|$1]] » est devenu « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renommer des utilisateurs',
+	'renameuser-renamed-notice' => 'Cet utilisateur a été renommé.
+Le journal des renommages est disponible ci-dessous pour information.',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1163,6 +1177,8 @@ $messages['gl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 edicións}}. Razón: $2',
 	'renameuser-move-log' => 'A páxina moveuse automaticamente cando se mudou o nome do usuario "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear usuarios',
+	'renameuser-renamed-notice' => 'Este usuario foi renomeado.
+Velaquí está o rexistro de cambios de nome de usuario por se quere consultalo.',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -1203,6 +1219,8 @@ $messages['gsw'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 Bearbeitig|$1 Bearbeitige}}. Grund: $2',
 	'renameuser-move-log' => 'dur d Umnännig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte',
 	'right-renameuser' => 'Benutzer umnänne',
+	'renameuser-renamed-notice' => 'Dää Benutzer isch umgnännt wore.
+S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
 );
 
 /** Hebrew (עברית)
@@ -1267,6 +1285,8 @@ $messages['hi'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 बदलाव|$1 बदलाव}}. कारण: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" को "[[User:$2|$2]]" करते वक्त अपने आप सदस्यपृष्ठ बदल दिया हैं',
 	'right-renameuser' => 'सदस्योंके नाम बदलें',
+	'renameuser-renamed-notice' => 'इस सदस्य का नाम बदल दिया गया है।
+संदर्भ के लिए नीचे नाम बदलने का चिट्ठा है।',
 );
 
 /** Fiji Hindi (Latin) (Fiji Hindi (Latin))
@@ -1335,6 +1355,8 @@ $messages['hr'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
 	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom preimenovanja iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
 	'right-renameuser' => 'Preimenuj suradnike',
+	'renameuser-renamed-notice' => 'Ovaj suradnik je preimenovan.
+Evidencija preimenovanja suradnika je prikazana ispod kao obavijest.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1368,6 +1390,8 @@ $messages['hsb'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 změna|$1 změnje|$1 změny|$1 změnow}}. Přičina: $2',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[User:$1|$1]]“ na „[[User:$2|$2]]“ awtomatisce přesunjena strona.',
 	'right-renameuser' => 'Wužiwarjow přemjenować',
+	'renameuser-renamed-notice' => 'Tutón wužiwar je so přemjenował.
+Protokol přemjenowanjow je deleka jako referenca podaty.',
 );
 
 /** Hungarian (Magyar)
@@ -1400,6 +1424,8 @@ $messages['hu'] = array(
 	'renameuser-log' => '$1 szerkesztése van. Indoklás: $2',
 	'renameuser-move-log' => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 	'right-renameuser' => 'felhasználók átnevezése',
+	'renameuser-renamed-notice' => 'Ezt a szerkesztőt átnevezték.
+Alább látható a szerkesztőátnevezési napló tájékoztatásként.',
 );
 
 /** Interlingua (Interlingua)
@@ -1470,6 +1496,8 @@ Penggantian nama pengguna dengan lebih dari $3 {{PLURAL:$3|kontribusi|kontribusi
 	'renameuser-log' => '{{PLURAL:$1|1 suntingan|$1 suntingan}}. Alasan: $2',
 	'renameuser-move-log' => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Mengganti nama pengguna',
+	'renameuser-renamed-notice' => 'Penguna ini telah berganti nama.
+Log pergantian nama disediakan dibawah untuk referensi.',
 );
 
 /** Ido (Ido)
@@ -1552,6 +1580,8 @@ $messages['it'] = array(
 	'renameuser-log' => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina gli utenti',
+	'renameuser-renamed-notice' => 'Questo utente è stato rinominato.
+Il registro delle rinomine è riportato di seguito per informazione.',
 );
 
 /** Japanese (日本語)
@@ -1589,6 +1619,7 @@ $messages['ja'] = array(
 	'renameuser-log' => '{{PLURAL:$1|投稿数}}$1回。理由: $2',
 	'renameuser-move-log' => '名前の変更と共に「[[User:$1|$1]]」を「[[User:$2|$2]]」へ自動的に移動しました',
 	'right-renameuser' => '利用者名変更',
+	'renameuser-renamed-notice' => 'この利用者は改名しました。参考のため、改名記録を以下に載せます。',
 );
 
 /** Jutish (Jysk)
@@ -1862,6 +1893,8 @@ Bes esu joot un versöök et noch ens.',
 	'renameuser-log' => '{{PLURAL:$1|ein Beärbeidung|$1 Beärbeidung|kein Beärbeidung}}. Jrund: $2',
 	'renameuser-move-log' => 'Di Sigg weet automatesch ömjenannt weil mer dä Metmaacher „[[User:$1|$1]]“ op „[[User:$2|$2]]“ öm am däufe sin.',
 	'right-renameuser' => 'Metmaacher ömdäufe',
+	'renameuser-renamed-notice' => 'Dä Metmaacher es ömjenannt woode.
+Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin)) */
@@ -1933,6 +1966,8 @@ Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-log' => '{{PLURAL:$1|1 Ännerung|$1 Ännerungen}}. Grond: $2',
 	'renameuser-move-log' => 'Duerch d\'Réckele vum Benotzer  "[[User:$1|$1]]" op "[[User:$2|$2]]" goufen déi folgend Säiten automatesch matgeréckelt:',
 	'right-renameuser' => 'Benotzer ëmbenennen',
+	'renameuser-renamed-notice' => "Dëse Benotzer gouf ëmbenannt.
+D'Logbuch mat den Ëmbenunngen ass hei ënnendrënner.",
 );
 
 /** Limburgish (Limburgs)
@@ -2288,6 +2323,8 @@ $messages['nl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkingen}}. Reden: $2',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 	'right-renameuser' => 'Gebruikers hernoemen',
+	'renameuser-renamed-notice' => 'Deze gebruiker is hernoemd.
+Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter referentie weergegeven.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -2523,6 +2560,8 @@ Për piasì torna andré e preuva torna.",
 	'renameuser-log' => '{{PLURAL:$1|1 modìfica|$1 modìfiche}}. Rason: $2',
 	'renameuser-move-log' => 'Pàgina utent tramudà n\'aotomàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
 	'right-renameuser' => "Arnòmina j'utent",
+	'renameuser-renamed-notice' => "St'utent-sì a l'é stàit arnominà.
+Ël registr ëd l'arnòmina a l'é dàit sota për arferiment.",
 );
 
 /** Pashto (پښتو)
@@ -2610,6 +2649,8 @@ Retorne e tente novamente.',
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomear usuários',
+	'renameuser-renamed-notice' => 'Este usuário foi renomeado.
+O registro de renomeação é fornecido abaixo para referência.',
 );
 
 /** Quechua (Runa Simi)
@@ -2743,6 +2784,8 @@ $messages['ru'] = array(
 	'renameuser-log' => '$1 {{PLURAL:$1|правка|правки|правок}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser' => 'переименование участников',
+	'renameuser-renamed-notice' => 'Этот участник был переименован.
+Ниже для справки приведён журнал переименований.',
 );
 
 /** Yakut (Саха тыла)
@@ -2873,6 +2916,8 @@ $messages['sk'] = array(
 	'renameuser-log' => 'mal {{PLURAL:$1|1 úpravu|$1 úpravy|$1 úprav}}. Dôvod: $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'right-renameuser' => 'Premenovávať používateľov',
+	'renameuser-renamed-notice' => 'Tento používateľ bol premenovaný.
+Dolu nájdete záznam premenovaní.',
 );
 
 /** Lower Silesian (Schläsch)
@@ -3268,6 +3313,8 @@ Lütfen geri dönüp tekrar deneyin.',
 	'renameuser-log' => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
 	'renameuser-move-log' => 'Kullanıcıyı "[[User:$1|$1]]" isminden "[[User:$2|$2]]" ismine yeniden adlandırırken, sayfa otomatik olarak taşındı',
 	'right-renameuser' => 'Kullaıcılarının adlarını değiştir',
+	'renameuser-renamed-notice' => 'Bu kullanıcının adı değiştirildi.
+Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
 );
 
 /** Ukrainian (Українська)
@@ -3340,6 +3387,8 @@ $messages['vec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
+	'renameuser-renamed-notice' => 'Sto utente el gà canbià nome.
+Qua soto ghe xe el riferimento sul registro de rinomina.',
 );
 
 /** Veps (Vepsan kel')
