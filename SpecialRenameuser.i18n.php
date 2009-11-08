@@ -2478,7 +2478,12 @@ $messages['pcd'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'renameuser' => 'Naame vum Yuuser ennere',
+	'renameuserold' => 'Current Yuusernaame:',
 	'renameusernew' => 'Nei Yuuser-Naame',
+	'renameuserreason' => 'Grund:',
+	'renameuserlogentry' => 'hot „$1“ nooch „$2“ gennert',
+	'renameuser-log' => '{{PLURAL:$1|1 Ennering|$1 Enneringe}}. Grund: $2',
 );
 
 /** Pfälzisch (Pfälzisch)
