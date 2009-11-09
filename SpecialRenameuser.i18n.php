@@ -2589,11 +2589,12 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author 555
  * @author Giro720
+ * @author Hamilton Abreu
  * @author Malafaya
  */
 $messages['pt'] = array(
 	'renameuser' => 'Renomear utilizador',
-	'renameuser-desc' => "Adiciona uma [[Special:Renameuser|página especial]] para renomear um utilizador (requer privilégio ''renameuser'')",
+	'renameuser-desc' => "[[Special:Renameuser|Página especial]] para alterar o nome de um utilizador (requer o privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de utilizador actual:',
 	'renameusernew' => 'Novo nome de utilizador:',
 	'renameuserreason' => 'Motivo de renomear:',
@@ -3326,6 +3327,7 @@ Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
  * @author AS
  * @author Ahonc
  * @author EugeneZelenko
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
 	'renameuser' => 'Перейменувати користувача',
@@ -3354,6 +3356,8 @@ $messages['uk'] = array(
 	'renameuser-log' => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
 	'right-renameuser' => 'Перейменування користувачів',
+	'renameuser-renamed-notice' => 'Цей користувач був перейменований.
+Для довідки нижче наведений журнал перейменувань.',
 );
 
 /** Urdu (اردو) */
