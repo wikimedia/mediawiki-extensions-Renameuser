@@ -73,12 +73,17 @@ $messages['af'] = array(
 	'renameusernew' => 'Nuwe gebruikersnaam:',
 	'renameuserreason' => 'Rede vir hernoeming:',
 	'renameuserwarnings' => 'Waarskuwings:',
+	'renameuserconfirm' => 'Ja, hernoem die gebruiker',
 	'renameusersubmit' => 'Hernoem',
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
 	'renameusersuccess' => 'Die gebruiker "<nowiki>$1</nowiki>" is hernoem na "<nowiki>$2</nowiki>".',
+	'renameuser-page-moved' => 'Die bladsy $1 is na $2 geskuif.',
+	'renameuser-page-unmoved' => 'Die bladsy $1 kon nie na $2 geskuif word nie.',
 	'renameuserlogpage' => 'Logboek van gebruikershernoemings',
+	'renameuserlogentry' => 'het $1 na "$2" hernoem',
+	'renameuser-log' => '{{PLURAL:$1|1 wysiging|$1 wysigings}}. Rede: $2',
 	'right-renameuser' => 'Hernoem gebruikers',
 );
 
