@@ -2751,14 +2751,18 @@ $messages['roa-tara'] = array(
 	'renameusererrordoesnotexist' => 'L\'utende "<nowiki>$1</nowiki>" non g\'esiste.',
 	'renameusererrorexists' => 'L\'utende "<nowiki>$1</nowiki>" esiste ggià.',
 	'renameusererrorinvalid' => '\'U nome utende "<nowiki>$1</nowiki>" non è valide.',
+	'renameuser-error-same-user' => "Tu non ge puè renomenà 'n'utende cu 'u stesse nome d'apprime.",
 	'renameusersuccess' => 'L\'utende "<nowiki>$1</nowiki>" ha cangiate \'u nome jndr\'à "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => "'A pàgene $1 già esiste e non ge se pò automaticamende sovrascrivere.",
 	'renameuser-page-moved' => "'A pàgene $1 ha state spustate sus a $2.",
 	'renameuser-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
 	'renameuserlogpage' => 'Archivije de le renomenaminde de le utinde',
+	'renameuserlogpagetext' => "Quiste jè l'archivije de le cangiaminde de le nome de l'utinde.",
 	'renameuserlogentry' => 'renomenate da $1 a "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 cangiamende|$1 cangiaminde}}. Mutive: $2',
 	'right-renameuser' => "Rennomene l'utinde",
+	'renameuser-renamed-notice' => "Stu utende ha state renomenate.
+L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
 );
 
 /** Russian (Русский)
