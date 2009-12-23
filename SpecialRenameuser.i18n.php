@@ -934,6 +934,8 @@ $messages['eu'] = array(
 	'renameuser-page-unmoved' => 'Ezin izan da $1 orrialdea $2(e)ra mugitu.',
 	'renameuserlogpage' => 'Erabiltzaileen izen aldaketa erregistroa',
 	'renameuserlogpagetext' => 'Erabiltzaileen izen aldaketen erregistroa da hau',
+	'renameuser-log' => '{{PLURAL:$1|aldaketa 1|$1 aldaketa}}. Arrazoia: $2',
+	'right-renameuser' => 'Lankideak berrizendatu',
 );
 
 /** Extremaduran (Estremeñu)
@@ -1089,7 +1091,7 @@ Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuserlogpagetext' => 'O est lo jornal des changements de nom d’utilisator.',
 	'renameuserlogentry' => 'at renomâ « $1 » en « $2 »',
 	'renameuser-log' => '$1 changement{{PLURAL:$1||s}}. Rêson : $2',
-	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament pendent lo changement de nom a l’utilisator « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’utilisator « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renomar des utilisators',
 );
 
@@ -3249,6 +3251,25 @@ $messages['th'] = array(
 	'right-renameuser' => 'เปลี่ยนชื่อผู้ใช้',
 );
 
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'renameuser' => 'Ulanyjy adyny üýtget',
+	'renameuserold' => 'Häzirki ulanyjy ady:',
+	'renameusernew' => 'Täze ulanyjy ady:',
+	'renameuserreason' => 'At üýtgetmegiň sebäbi:',
+	'renameuserwarnings' => 'Duýduryşlar:',
+	'renameuserconfirm' => 'Hawa, ulanyjynyň adyny üýtget',
+	'renameusersubmit' => 'Tabşyr',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" atly ulanyjy ýok.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ulanyjysy eýýäm bar.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ulanyjy ady nädogry.',
+	'renameuserlogpage' => 'Ulanyjy adyny üýtgetme gündeligi',
+	'renameuserlogpagetext' => 'Bu gündelik ulanyjy ady üýtgetmelerini görkezýär.',
+	'right-renameuser' => 'Ulanyjylaryň adyny üýtget',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
@@ -3301,6 +3322,7 @@ $messages['to'] = array(
  * @author Karduelis
  * @author Runningfridgesrule
  * @author Uğur Başak
+ * @author Vito Genovese
  */
 $messages['tr'] = array(
 	'renameuser' => 'Kullanıcı adı değiştir',
@@ -3329,7 +3351,7 @@ Lütfen geri dönüp tekrar deneyin.',
 	'renameuserlogentry' => '$1, "$2" olarak yeniden adlandırıldı',
 	'renameuser-log' => '{{PLURAL:$1|1 düzenleme|$1 düzenleme}}. Neden: $2',
 	'renameuser-move-log' => 'Kullanıcıyı "[[User:$1|$1]]" isminden "[[User:$2|$2]]" ismine yeniden adlandırırken, sayfa otomatik olarak taşındı',
-	'right-renameuser' => 'Kullaıcılarının adlarını değiştir',
+	'right-renameuser' => 'Kullanıcıların adlarını değiştirir',
 	'renameuser-renamed-notice' => 'Bu kullanıcının adı değiştirildi.
 Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
 );
@@ -3558,6 +3580,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
+ * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
  */
@@ -3589,15 +3612,17 @@ $messages['zh-hans'] = array(
 	'renameuser-log' => '拥有$1次编辑。 理由: $2',
 	'renameuser-move-log' => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 	'right-renameuser' => '重新命名用户',
-	'renameuser-renamed-notice' => '本用户已被改名。以下列出更改用户名日志以供参考。',
+	'renameuser-renamed-notice' => '该用户已被重新命名。
+以下列出更改用户名日志以供参考。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Gaoxuewei
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
 	'renameuser' => '用戶重新命名',
-	'renameuser-desc' => "為用戶重新命名 （需要 ''renameuser'' 權限）",
+	'renameuser-desc' => "添加一個[[Special:Renameuser|特殊頁面]]來重命名用戶（需要''renameuser''權限）",
 	'renameuserold' => '現時用戶名:',
 	'renameusernew' => '新用戶名:',
 	'renameuserreason' => '重新命名的原因:',
@@ -3623,6 +3648,8 @@ $messages['zh-hant'] = array(
 	'renameuser-log' => '擁有$1次編輯。 理由: $2',
 	'renameuser-move-log' => '當由"[[User:$1|$1]]"重新命名作"[[User:$2|$2]]"時已經自動移動用戶頁',
 	'right-renameuser' => '重新命名用戶',
+	'renameuser-renamed-notice' => '該用戶已被重新命名。
+以下列出更改用戶名日誌以供參考。',
 );
 
 /** Zulu (isiZulu) */
