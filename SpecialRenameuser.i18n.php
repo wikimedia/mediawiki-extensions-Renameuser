@@ -341,6 +341,7 @@ $messages['bg'] = array(
 	'renameusernew' => 'Ново потребителско име:',
 	'renameuserreason' => 'Причина за преименуването:',
 	'renameusermove' => 'Преместване под новото име на потребителската лична страница и беседа (както и техните подстраници)',
+	'renameuserreserve' => 'Блокиране на старото потребителско име срещу узурпация в бъдеще',
 	'renameuserwarnings' => 'Предупреждения:',
 	'renameuserconfirm' => 'Да, преименуване на потребителя',
 	'renameusersubmit' => 'Изпълнение',
@@ -360,6 +361,8 @@ $messages['bg'] = array(
 	'renameuser-log' => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 	'right-renameuser' => 'преименуване на потребители',
+	'renameuser-renamed-notice' => 'Потребителят беше преименуван.
+За справка по-долу е показан Дневникът на преименуванията.',
 );
 
 /** Bengali (বাংলা)
@@ -829,6 +832,8 @@ Bonvolu retroigi kaj reprovi.',
 	'renameuser-log' => '{{PLURAL:$1|1 redakto|$1 redaktoj}}. Kialo: $2',
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 	'right-renameuser' => 'Alinomigi uzantojn',
+	'renameuser-renamed-notice' => 'Ĉi tiu uzanto estis renomigita.
+Jen la protokolo pri renomigado por via referenco.',
 );
 
 /** Spanish (Español)
@@ -3267,6 +3272,7 @@ $messages['tk'] = array(
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ulanyjy ady nädogry.',
 	'renameuserlogpage' => 'Ulanyjy adyny üýtgetme gündeligi',
 	'renameuserlogpagetext' => 'Bu gündelik ulanyjy ady üýtgetmelerini görkezýär.',
+	'renameuser-log' => '{{PLURAL:$1|1 özgerdiş|$1 özgerdiş}}. Sebäp: $2',
 	'right-renameuser' => 'Ulanyjylaryň adyny üýtget',
 );
 
