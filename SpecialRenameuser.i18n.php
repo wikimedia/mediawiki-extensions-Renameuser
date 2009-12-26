@@ -192,12 +192,12 @@ $messages['arz'] = array(
 	'renameusererrordoesnotexist' => 'اليوزر"<nowiki>$1</nowiki>" مالوش وجود.',
 	'renameusererrorexists' => 'اليوزر "<nowiki>$1</nowiki>" موجود من قبل كدا.',
 	'renameusererrorinvalid' => 'اسم اليوزر "<nowiki>$1</nowiki>"مش صحيح.',
-	'renameusererrortoomany' => 'اليوزر "<nowiki>$1</nowiki>" عنده {{PLURAL:$2|مساهمة|مساهمة}}, تغيير اسم يوزر عنده اكتر من {{PLURAL:$3|مساهمة|مساهمة}}  ممكن يأثر على اداء الموقع تاثير سلبي.',
+	'renameusererrortoomany' => 'اليوزر "<nowiki>$1</nowiki>" عنده {{PLURAL:$2|مساهمة|مساهمة}}, تغيير اسم يوزر عنده اكتر من {{PLURAL:$3|مساهمة|مساهمة}}  ممكن يأثر على اداء الموقع تاثير سلبى.',
 	'renameuser-error-request' => 'حصلت مشكلة فى استلام الطلب.
-لو سمحت ارجع لورا و حاول تاني.',
-	'renameuser-error-same-user' => 'ما ينفعش تغير اسم اليوزر لنفس الاسم من تاني.',
+لو سمحت ارجع لورا و حاول تانى.',
+	'renameuser-error-same-user' => 'ما ينفعش تغير اسم اليوزر لنفس الاسم من تانى.',
 	'renameusersuccess' => 'اليوزر "<nowiki>$1</nowiki>" اتغير اسمه لـ"<nowiki>$2</nowiki>".',
-	'renameuser-page-exists' => 'الصفحة $1 موجودة من قبل كدا و ماينفعش يتكتب عليها اوتوماتيكي.',
+	'renameuser-page-exists' => 'الصفحة $1 موجودة من قبل كدا و ماينفعش يتكتب عليها اوتوماتيكى.',
 	'renameuser-page-moved' => 'تم نقل الصفحه $1 ل $2.',
 	'renameuser-page-unmoved' => 'الصفحة $1 مانفعش تتنقل لـ$2.',
 	'renameuserlogpage' => 'سجل تغيير تسمية اليوزرز',
@@ -2710,6 +2710,7 @@ $messages['rmy'] = array(
  * @author Emily
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'renameuser' => 'Redenumeşte utilizator',
@@ -2739,6 +2740,8 @@ $messages['ro'] = array(
 	'renameuser-log' => '{{PLURAL:$1|o contribuţie|$1 contribuţii}}. Motiv: $2',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
 	'right-renameuser' => 'Redenumeşte utilizatori',
+	'renameuser-renamed-notice' => 'Acest utilizator i s-a schimbat numele.
+Jurnalul de redenumiri este furnizat mai jos pentru referinţă.',
 );
 
 /** Tarandíne (Tarandíne)
