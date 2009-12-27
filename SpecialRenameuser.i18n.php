@@ -1098,6 +1098,8 @@ Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuser-log' => '$1 changement{{PLURAL:$1||s}}. Rêson : $2',
 	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’utilisator « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renomar des utilisators',
+	'renameuser-renamed-notice' => 'Ceti utilisator at étâ renomâ.
+Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
 );
 
 /** Friulian (Furlan)
@@ -2761,6 +2763,9 @@ $messages['roa-tara'] = array(
 	'renameusererrordoesnotexist' => 'L\'utende "<nowiki>$1</nowiki>" non g\'esiste.',
 	'renameusererrorexists' => 'L\'utende "<nowiki>$1</nowiki>" esiste ggià.',
 	'renameusererrorinvalid' => '\'U nome utende "<nowiki>$1</nowiki>" non è valide.',
+	'renameusererrortoomany' => 'L\'utende "<nowiki>$1<</nowiki>" ha fatte $2 {{PLURAL:$2|condrebbute|condrebbute}}, renumenanne \'n\'utende cu cchiù de $3 {{PLURAL:$3|condrebbute|condrebbute}} puè influenzà negativamende le performance d\'u site.',
+	'renameuser-error-request' => "Stave 'nu probbleme cu 'a ricezione d'a richieste.<br />
+Pe piacere tuèrne rrete e pruève 'n'otra vote.",
 	'renameuser-error-same-user' => "Tu non ge puè renomenà 'n'utende cu 'u stesse nome d'apprime.",
 	'renameusersuccess' => 'L\'utende "<nowiki>$1</nowiki>" ha cangiate \'u nome jndr\'à "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => "'A pàgene $1 già esiste e non ge se pò automaticamende sovrascrivere.",
@@ -2770,6 +2775,7 @@ $messages['roa-tara'] = array(
 	'renameuserlogpagetext' => "Quiste jè l'archivije de le cangiaminde de le nome de l'utinde.",
 	'renameuserlogentry' => 'renomenate da $1 a "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 cangiamende|$1 cangiaminde}}. Mutive: $2',
+	'renameuser-move-log' => 'Pàgena spustate automaticamende quanne è renomenate l\'utende "[[User:$1|$1]]" jndr\'à "[[User:$2|$2]]"',
 	'right-renameuser' => "Rennomene l'utinde",
 	'renameuser-renamed-notice' => "Stu utende ha state renomenate.
 L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
@@ -3010,6 +3016,7 @@ $messages['sr-ec'] = array(
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
+ * @author Liangent
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -3039,6 +3046,8 @@ $messages['sr-el'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 izmena|$1 izmene|$1 izmena}}. Razlog: $2',
 	'renameuser-move-log' => 'Automatski pomerene strane prilikom preimenovanja saradničkog imena: "[[User:$1|$1]]" u "[[User:$2|$2]]".',
 	'right-renameuser' => 'Preimenovanje saradničkih imena',
+	'renameuser-renamed-notice' => 'Ovom korisniku je promenjeno ime.
+Istorija promena imena je priložena ispod, kao informacija.',
 );
 
 /** Seeltersk (Seeltersk)
@@ -3225,6 +3234,36 @@ $messages['tg-cyrl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 вироиш|$1 вироишҳо}}. Далел: $2',
 	'renameuser-move-log' => 'Саҳифа дар вақти тағйири номи корбар  "[[User:$1|$1]]" ба "[[User:$2|$2]]" ба таври худкор кӯчонида шуд',
 	'right-renameuser' => 'Тағйири номи корбарон',
+);
+
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'renameuser' => 'Taƣjiri nomi korbarī',
+	'renameuser-desc' => "Nomi jak korbarro taƣjir medihad (nijozmand ba ixtijoroti ''taƣjirinom'' ast)",
+	'renameuserold' => "Nomi korbari fe'lī:",
+	'renameusernew' => 'Nomi korbari çadid:',
+	'renameuserreason' => 'Illati taƣjiri nomi korbarī:',
+	'renameusermove' => 'Sahifai korbarī va sahifai bahsi korbar (va zersahifahoi on)ro intiqol bideh',
+	'renameuserreserve' => 'Bastani nomi korbariji kūhna az istifodai ojanda',
+	'renameuserwarnings' => 'Huşdorho:',
+	'renameuserconfirm' => 'Bale, nomi korbariro taƣjir bideh',
+	'renameusersubmit' => 'Sabt',
+	'renameusererrordoesnotexist' => 'Nomi korbarī "<nowiki>$1</nowiki>" vuçud nadorad.',
+	'renameusererrorexists' => 'Nomi korbarī "<nowiki>$1</nowiki>" istifoda şudaast.',
+	'renameusererrorinvalid' => 'Nomi korbarī "<nowiki>$1</nowiki>" ƣajri miçoz ast.',
+	'renameuser-error-request' => 'Dar darjofti darxost muşkilie peş omad. Lutfan ba sahifai qablī bozgarded va dubora taloş kuned.',
+	'renameuser-error-same-user' => 'Şumo nametavoned nomi jak korbarro ba hamon nomi qabliaş taƣjir dihed.',
+	'renameusersuccess' => 'Nomi korbar "<nowiki>$1</nowiki>" ba "<nowiki>$2</nowiki>" taƣjir joft.',
+	'renameuser-page-exists' => 'Sahifai $1 allakaj vuçud dorda va ba tavri xudkor qobili boznavisī nest.',
+	'renameuser-page-moved' => 'Sahifai $1 ba $2 kūconida şud.',
+	'renameuser-page-unmoved' => 'Imkoni kūconidani sahifai $1 ba $2 vuçud nadorad.',
+	'renameuserlogpage' => 'Guzorişi taƣjiri nomi korbar',
+	'renameuserlogpagetext' => 'In guzorişi taƣjiri nomi korbaron ast',
+	'renameuser-log' => '{{PLURAL:$1|1 viroiş|$1 viroişho}}. Dalel: $2',
+	'renameuser-move-log' => 'Sahifa dar vaqti taƣjiri nomi korbar  "[[User:$1|$1]]" ba "[[User:$2|$2]]" ba tavri xudkor kūconida şud',
+	'right-renameuser' => 'Taƣjiri nomi korbaron',
 );
 
 /** Thai (ไทย)
