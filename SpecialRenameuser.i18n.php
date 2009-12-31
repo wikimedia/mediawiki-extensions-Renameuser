@@ -3268,11 +3268,13 @@ $messages['tg-latn'] = array(
 );
 
 /** Thai (ไทย)
+ * @author Harley Hartwell
  * @author Mopza
  * @author Passawuth
  */
 $messages['th'] = array(
 	'renameuser' => 'เปลี่ยนชื่อผู้ใช้',
+	'renameuser-desc' => "เพิ่ม[[Special:Renameuser|หน้าพิเศษ]] สำหรับเปลี่ยนชื่อผู้ใช้ (ต้องมีสิทธิ์ ''renameuser'' (เปลี่ยนชื่อผู้ใช้))",
 	'renameuserold' => 'ชื่อผู้ใช้ปัจจุบัน:',
 	'renameusernew' => 'ชื่อผู้ใช้ใหม่:',
 	'renameuserreason' => 'เหตุผลในการเปลี่ยนชื่อ:',
@@ -3297,6 +3299,7 @@ $messages['th'] = array(
 	'renameuser-log' => 'แก้ไขแล้ว $1 ครั้ง เหตุผล: $2',
 	'renameuser-move-log' => 'ย้ายโดยอัตโนมัติ ขณะเปลี่ยนชื่อผู้ใช้จาก "[[User:$1|$1]]" เป็น "[[User:$2|$2]]"',
 	'right-renameuser' => 'เปลี่ยนชื่อผู้ใช้',
+	'renameuser-renamed-notice' => 'ผู้ใช้นี้ได้ถูกเปลี่ยนชื่อ บันทึกการเปลี่ยนชื่อแสดงอยู่ด้านล่างสำหรับการอ้างอิง',
 );
 
 /** Turkmen (Türkmençe)
@@ -3304,15 +3307,21 @@ $messages['th'] = array(
  */
 $messages['tk'] = array(
 	'renameuser' => 'Ulanyjy adyny üýtget',
+	'renameuser-desc' => "Ulanyjyny täzeden atlandyrmak üçin [[Special:Renameuser|ýörite sahypa]] goşýar (''ulanyjynytäzedenatlandyr'' hukugy gerek)",
 	'renameuserold' => 'Häzirki ulanyjy ady:',
 	'renameusernew' => 'Täze ulanyjy ady:',
 	'renameuserreason' => 'At üýtgetmegiň sebäbi:',
+	'renameusermove' => 'Ulanyjy we pikir alyşma sahypalaryny (we kiçi sahypalaryny) täze ada geçir',
+	'renameuserreserve' => 'Köne ulanyjy adyny indi ulanylmakdan blokirle',
 	'renameuserwarnings' => 'Duýduryşlar:',
 	'renameuserconfirm' => 'Hawa, ulanyjynyň adyny üýtget',
 	'renameusersubmit' => 'Tabşyr',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" atly ulanyjy ýok.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ulanyjysy eýýäm bar.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ulanyjy ady nädogry.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" ulanyjysynyň $2 {{PLURAL:$2|goşandy|goşandy}} bar, $3 gowrak {{PLURAL:$3|goşandy|goşandy}} bar bolan ulanyjyny saýtyň işleýişine ýaramaz täsir eder.',
+	'renameuser-error-request' => 'Talaby almak bilen baglanyşykyly bir probleme ýüze çykdy. 
+Yza gaýdyp gaýtadan synanyşyp görüň.',
 	'renameuser-error-same-user' => 'Ulanyja öňküsi ýaly bir ada täzeden geçirip bilmeýärsiňiz.',
 	'renameusersuccess' => 'Ulanyjy "<nowiki>$1</nowiki>" täze ada geçirildi: "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => '$1 sahypasy eýýäm bar we onuň üstüne awtomatik ýazyp bolmaýar.',
@@ -3322,7 +3331,10 @@ $messages['tk'] = array(
 	'renameuserlogpagetext' => 'Bu gündelik ulanyjy ady üýtgetmelerini görkezýär.',
 	'renameuserlogentry' => '$1 täzeden atlandyryldy: "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 özgerdiş|$1 özgerdiş}}. Sebäp: $2',
+	'renameuser-move-log' => 'Ulanyjy "[[User:$1|$1]]" adyndan "[[User:$2|$2]]" adyna täzeden atlandyrylanda, sahypa awtomatik geçirildi',
 	'right-renameuser' => 'Ulanyjylaryň adyny üýtget',
+	'renameuser-renamed-notice' => 'Bu ulanyjynyň ady üýtgedilipdir.
+At üýtgediş gündeligi aşakda salgylanma üçin berilýär.',
 );
 
 /** Tagalog (Tagalog)
