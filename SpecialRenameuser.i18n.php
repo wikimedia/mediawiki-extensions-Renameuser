@@ -1912,7 +1912,7 @@ Bes esu joot un versöök et noch ens.',
 Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.',
 );
 
-/** Kurdish (Latin) (Kurdî / كوردی (Latin)) */
+/** Kurdish (Latin) (Kurdî (Latin)) */
 $messages['ku-latn'] = array(
 	'renameuser' => 'Navî bikarhênerê biguherîne',
 	'renameuserold' => 'Navî niha:',
