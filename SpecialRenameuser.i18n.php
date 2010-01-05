@@ -72,13 +72,17 @@ $messages['af'] = array(
 	'renameuserold' => 'Huidige gebruikersnaam:',
 	'renameusernew' => 'Nuwe gebruikersnaam:',
 	'renameuserreason' => 'Rede vir hernoeming:',
+	'renameusermove' => 'Hernoem gebruikers- en besprekingsbladsye (met subblaaie) na nuwe naam',
+	'renameuserreserve' => 'Voorkom dat die ou gebruiker in die toekoms weer gebruik kan word',
 	'renameuserwarnings' => 'Waarskuwings:',
 	'renameuserconfirm' => 'Ja, hernoem die gebruiker',
 	'renameusersubmit' => 'Hernoem',
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
+	'renameuser-error-same-user' => 'U kan nie a gebruiker na dieselfde naam hernoem nie.',
 	'renameusersuccess' => 'Die gebruiker "<nowiki>$1</nowiki>" is hernoem na "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Die bladsy $1 bestaan reeds en kan nie outomaties oorskryf word nie.',
 	'renameuser-page-moved' => 'Die bladsy $1 is na $2 geskuif.',
 	'renameuser-page-unmoved' => 'Die bladsy $1 kon nie na $2 geskuif word nie.',
 	'renameuserlogpage' => 'Logboek van gebruikershernoemings',
@@ -86,6 +90,8 @@ $messages['af'] = array(
 	'renameuserlogentry' => 'het $1 na "$2" hernoem',
 	'renameuser-log' => '{{PLURAL:$1|1 wysiging|$1 wysigings}}. Rede: $2',
 	'right-renameuser' => 'Hernoem gebruikers',
+	'renameuser-renamed-notice' => 'Hierdie gebruiker is hernoem.
+Relevante inligting uit die logboek van gebruikersnaamwysigings word hier onder ter verwysing weergegee.',
 );
 
 /** Aragonese (Aragonés)
