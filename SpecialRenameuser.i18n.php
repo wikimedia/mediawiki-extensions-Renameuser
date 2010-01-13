@@ -1957,6 +1957,7 @@ $messages['la'] = array(
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -1976,7 +1977,7 @@ $messages['lb'] = array(
 	'renameusererrortoomany' => 'De Benotzer "<nowiki>$1</nowiki>" huet $2 {{PLURAL:$2|Ännerung|Ännerunge}} gemaach. D\'Ännerung vum Benotzernumm vun engem Benotzer mat méi wéi $3 {{PLURAL:$3|Ännerung|Ännerunge}} kann d\'Vitesse vum Site staark beaflossen.',
 	'renameuser-error-request' => 'Et gouf e Problem mat ärer Ufro.
 Gitt w.e.g. zréck a versicht et nach eng Kéier.',
-	'renameuser-error-same-user' => 'Dir kënnt kee Benotzernumm änneren, an him dee selweschte Numm erëmginn.',
+	'renameuser-error-same-user' => 'Dir kënnt kee Benotzernumm änneren, an him deselwechten Numm erëmginn.',
 	'renameusersuccess' => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
 	'renameuser-page-exists' => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
 	'renameuser-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
