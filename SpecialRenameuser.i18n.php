@@ -80,6 +80,8 @@ $messages['af'] = array(
 	'renameusererrordoesnotexist' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan nie',
 	'renameusererrorexists' => 'Die gebruiker "<nowiki>$1</nowiki>" bestaan reeds',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" is \'n ongeldige gebruikernaam',
+	'renameusererrortoomany' => 'Die gebruiker "<nowiki>$1</nowiki>" het $2 {{PLURAL:$2|wysiging|wysigings}} uitgevoer; die hernoem van \'n gebruiker met meer as $3 {{PLURAL:$2|wysiging|wysigings}} kan die prestasies van die webwerf nadelig beïnvloed.',
+	'renameuser-error-request' => "Daar was 'n probleem met die ontvangs van die versoek. Gaan asseblief terug en probeer weer.",
 	'renameuser-error-same-user' => 'U kan nie a gebruiker na dieselfde naam hernoem nie.',
 	'renameusersuccess' => 'Die gebruiker "<nowiki>$1</nowiki>" is hernoem na "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Die bladsy $1 bestaan reeds en kan nie outomaties oorskryf word nie.',
@@ -89,6 +91,7 @@ $messages['af'] = array(
 	'renameuserlogpagetext' => 'Hieronder is gebruikersname wat gewysig is.',
 	'renameuserlogentry' => 'het $1 na "$2" hernoem',
 	'renameuser-log' => '{{PLURAL:$1|1 wysiging|$1 wysigings}}. Rede: $2',
+	'renameuser-move-log' => 'Bladsy is outomaties geskuif met die wysiging van die gebruiker "[[User:$1|$1]]" na "[[User:$2|$2]]"',
 	'right-renameuser' => 'Hernoem gebruikers',
 	'renameuser-renamed-notice' => 'Hierdie gebruiker is hernoem.
 Relevante inligting uit die logboek van gebruikersnaamwysigings word hier onder ter verwysing weergegee.',
@@ -1954,6 +1957,8 @@ $messages['la'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 recensio|$1 recensiones}}. Causa: $2',
 	'renameuser-move-log' => 'movit paginam automatice in renominando usorem "[[User:$1|$1]]" in "[[User:$2|$2]]"',
 	'right-renameuser' => 'Usores renominare',
+	'renameuser-renamed-notice' => 'Hic usor renominatus est.
+Commodule notatio renominationum usoris subter datur.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
