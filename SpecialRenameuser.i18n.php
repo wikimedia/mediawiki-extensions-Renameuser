@@ -1349,8 +1349,8 @@ Meharbani kar ke laut ke fir kosis karo.',
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
+ * @author Ex13
  * @author SpeedyGonsales
- * @author Suradnik13
  */
 $messages['hr'] = array(
 	'renameuser' => 'Preimenuj suradnika',
@@ -2084,6 +2084,7 @@ $messages['lv'] = array(
  */
 $messages['mg'] = array(
 	'renameuserconfirm' => 'Eny, soloy anarana ilay mpikambana',
+	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
 /** Macedonian (Македонски)
