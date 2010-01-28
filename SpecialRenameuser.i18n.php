@@ -2083,7 +2083,13 @@ $messages['lv'] = array(
  * @author Jagwar
  */
 $messages['mg'] = array(
+	'renameuserold' => 'Anaram-pikambana ankehitriny :',
+	'renameusernew' => 'Anaram-pikambana vaovao :',
+	'renameuserreason' => "Anton'ny fanovana anarana :",
+	'renameusermove' => "Afindrany pejim-pikambana any amin'ny anarana vaovao",
+	'renameuserwarnings' => 'Fampitandremana :',
 	'renameuserconfirm' => 'Eny, soloy anarana ilay mpikambana',
+	'renameusersubmit' => 'Alefa',
 	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
