@@ -2972,6 +2972,13 @@ $messages['sk'] = array(
 Dolu nájdete záznam premenovaní.',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'renameuser' => 'Preimenovanje uporabnika',
+);
+
 /** Lower Silesian (Schläsch)
  * @author Schläsinger
  */
