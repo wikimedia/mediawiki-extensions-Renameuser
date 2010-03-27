@@ -1710,6 +1710,7 @@ Mangga balènana lan nyoba manèh.',
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author Malafaya
  * @author Sopho
  */
@@ -1720,6 +1721,7 @@ $messages['ka'] = array(
 	'renameuserreason' => 'სახელის შეცვლის მიზეზი:',
 	'renameusermove' => 'მომხმარებლისა და განხილვის გვერდების (და მათი დაქვემდებარებული გვერდების) გადატანა ახალ დასახელებაზე',
 	'renameuserwarnings' => 'გაფრთხილებები:',
+	'renameuserconfirm' => 'დიახ, მსურს სახელის გადარქმევა',
 	'renameusersubmit' => 'გაგზავნა',
 	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
 	'renameusererrorexists' => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
