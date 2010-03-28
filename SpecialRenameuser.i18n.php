@@ -2979,6 +2979,34 @@ Dolu nájdete záznam premenovaní.',
  */
 $messages['sl'] = array(
 	'renameuser' => 'Preimenovanje uporabnika',
+	'renameuser-desc' => "Doda [[Special:Renameuser|posebno stran]] za preimenovanje uporabnika (potrebna je pravica ''renameuser'')",
+	'renameuserold' => 'Trenutno uporabniško ime:',
+	'renameusernew' => 'Novo uporabniško ime:',
+	'renameuserreason' => 'Razlog preimenovanja:',
+	'renameusermove' => 'Prestavi uporabniške in pogovorne strani (ter njihove podstrani) na novo ime',
+	'renameuserreserve' => 'Blokiraj staro uporabniško ime pred nadaljno uporabo',
+	'renameuserwarnings' => 'Opozorila:',
+	'renameuserconfirm' => 'Da, preimenuj uporabnika',
+	'renameusersubmit' => 'Potrdi',
+	'renameusererrordoesnotexist' => 'Uporabnik »<nowiki>$1</nowiki>« ne obstaja.',
+	'renameusererrorexists' => 'Uporabnik »<nowiki>$1</nowiki>« že obstaja.',
+	'renameusererrorinvalid' => 'Uporabniško ime »<nowiki>$1</nowiki>« ni veljavno.',
+	'renameusererrortoomany' => 'Uporabnik »<nowiki>$1</nowiki>« ima $2 {{PLURAL:$2|prispevek|prispevka|prispevke|prispevkov}}; preimenovanje uporabnika z več kot $3 {{PLURAL:$3|prispevkom|prispevkoma|prispevki}} lahko neželeno vpliva na delovanje strani.',
+	'renameuser-error-request' => 'Pri prejemanju zahteve je prišlo do težave.
+Prosimo, pojdite nazaj in poskusite znova.',
+	'renameuser-error-same-user' => 'Ne morete preimenovati uporabnika na enako stvar kot prej.',
+	'renameusersuccess' => 'Uporabnik »<nowiki>$1</nowiki>« je bil preimenovan v »<nowiki>$2</nowiki>«.',
+	'renameuser-page-exists' => 'Stran $1 že obstaja in je ni mogoče samodejno prepisati.',
+	'renameuser-page-moved' => 'Stran $1 je bila prestavljena na $2.',
+	'renameuser-page-unmoved' => 'Strani $1 ni mogoče prestaviti na $2.',
+	'renameuserlogpage' => 'Dnevnik preimenovanj uporabnikov',
+	'renameuserlogpagetext' => 'Prikazan je dnevnik sprememb uporabniških imen.',
+	'renameuserlogentry' => '- preimenovanje $1 v »$2«',
+	'renameuser-log' => '$1 {{PLURAL:$1|urejanje|urejanji|urejanja|urejanj}}. Razlog: $2',
+	'renameuser-move-log' => 'Samodejno prestavljanje strani pri preimenovanju uporabnika »[[User:$1|$1]]« v »[[User:$2|$2]]«',
+	'right-renameuser' => 'Preimenovanje uporabnikov',
+	'renameuser-renamed-notice' => 'Ta uporabnik je bil preimenovan.
+Dnevnik preimenovanja je naveden spodaj.',
 );
 
 /** Lower Silesian (Schläsch)
