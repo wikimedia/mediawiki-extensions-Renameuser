@@ -2615,11 +2615,13 @@ $messages['ps'] = array(
 	'renameuserreason' => 'د نوم د بدلون سبب:',
 	'renameuserwarnings' => 'ګواښنې:',
 	'renameuserconfirm' => 'هو، کارن-نوم بدلوم',
+	'renameusersubmit' => 'سپارل',
 	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کوم کارن نه شته.',
 	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارن له پخوا نه شته.',
 	'renameuser-error-request' => 'د غوښتنې په ترلاسه کولو کې يوه ستونزه راپېښه شوه.
 مهرباني وکړی بېرته پرشا ولاړ شی او يو ځل بيا پرې کوښښ وکړی.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
+	'renameuserlogentry' => 'د $1 نوم، "$2" ته بدل شو',
 	'right-renameuser' => 'کارن-نومونه بدلول',
 );
 
