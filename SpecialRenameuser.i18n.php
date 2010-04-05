@@ -1378,7 +1378,7 @@ $messages['hr'] = array(
 	'renameuserlogentry' => 'promijenjeno suradničko ime $1 u "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 uređivanje|$1 uređivanja}}. Razlog: $2',
 	'renameuser-move-log' => 'Stranica suradnika je premještena prilikom preimenovanja iz "[[User:$1|$1]]" u "[[User:$2|$2]]"',
-	'right-renameuser' => 'Preimenuj suradnike',
+	'right-renameuser' => 'Preimenovati suradnike',
 	'renameuser-renamed-notice' => 'Ovaj suradnik je preimenovan.
 Evidencija preimenovanja suradnika je prikazana ispod kao obavijest.',
 );
