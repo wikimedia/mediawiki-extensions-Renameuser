@@ -386,7 +386,7 @@ $messages['bn'] = array(
 	'renameuserreason' => 'নামান্তরের কারণ:',
 	'renameusermove' => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
 	'renameuserwarnings' => 'সতর্কীকরণ:',
-	'renameuserconfirm' => 'হ্যা, ব্যবহারকারীর নাম পরিবর্তন করো',
+	'renameuserconfirm' => 'হ্যাঁ, ব্যবহারকারীর নাম পরিবর্তন করো',
 	'renameusersubmit' => 'জমা দিন',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
@@ -666,13 +666,14 @@ Til information er omdøbningsloggen vist nedenfor.',
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Raimond Spekking
  * @author Spacebirdy
  * @author Umherirrender
  */
 $messages['de'] = array(
 	'renameuser' => 'Benutzer umbenennen',
-	'renameuser-desc' => "Ergänzt eine [[Special:Renameuser|Spezialseite]] zur Umbenennung eines Benutzers (erfordert das ''renameuser''-Recht)",
+	'renameuser-desc' => 'Ergänzt eine [[Special:Renameuser|Spezialseite]] zur Umbenennung eines Benutzers.',
 	'renameuserold' => 'Bisheriger Benutzername:',
 	'renameusernew' => 'Neuer Benutzername:',
 	'renameuserreason' => 'Grund:',
