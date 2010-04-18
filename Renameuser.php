@@ -24,8 +24,8 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # Internationalisation file
 $dir = dirname(__FILE__) . '/';
-$wgExtensionMessagesFiles['Renameuser'] = $dir . 'SpecialRenameuser.i18n.php';
-$wgExtensionAliasesFiles['Renameuser'] = $dir . 'SpecialRenameuser.alias.php';
+$wgExtensionMessagesFiles['Renameuser'] = $dir . 'Renameuser.i18n.php';
+$wgExtensionAliasesFiles['Renameuser'] = $dir . 'Renameuser.alias.php';
 
 /**
  * The maximum number of edits a user can have and still be allowed renaming,
@@ -55,7 +55,7 @@ function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null,
 	return $rv;
 }
 
-$wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/SpecialRenameuser_body.php';
+$wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/Renameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
