@@ -1554,12 +1554,14 @@ $messages['io'] = array(
  * @author Cessator
  * @author S.Örvarr.S
  * @author Spacebirdy
+ * @author Ævar Arnfjörð Bjarmason
  * @author לערי ריינהארט
  */
 $messages['is'] = array(
 	'renameuser' => 'Breyta notandanafni',
 	'renameuserold' => 'Núverandi notandanafn:',
 	'renameusernew' => 'Nýja notandanafnið:',
+	'renameuserreason' => 'Ástæða:',
 	'renameusersubmit' => 'Senda',
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
 	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
