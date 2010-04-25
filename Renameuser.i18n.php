@@ -46,6 +46,7 @@ The rename log is provided below for reference.', # Supports GENDER
 );
 
 /** Message documentation (Message documentation)
+ * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Meno25
  * @author SPQRobin
@@ -54,6 +55,7 @@ The rename log is provided below for reference.', # Supports GENDER
 $messages['qqq'] = array(
 	'renameuser-desc' => 'Short description of the Renameuser extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
+	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
 	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
 * Parameter $1 is the original username
@@ -129,7 +131,7 @@ $messages['an'] = array(
 	'right-renameuser' => 'Renombrar usuarios',
 );
 
-/** Old English (Anglo-Saxon)
+/** Old English (Ænglisc)
  * @author Spacebirdy
  */
 $messages['ang'] = array(
@@ -1891,7 +1893,7 @@ $messages['ko'] = array(
 아래의 이름 변경 기록을 참고하십시오.',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -3679,7 +3681,7 @@ $messages['yi'] = array(
 	'renameuserlogpage' => 'באַניצער נאָמען-טויש לאָג-בוך',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'renameuser' => '改用戶名',
 	'renameuser-desc' => "幫用戶改名 (需要 ''renameuser'' 權限)",
