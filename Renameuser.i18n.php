@@ -1848,10 +1848,12 @@ $messages['km'] = array(
 );
 
 /** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
  * @author Shushruth
  */
 $messages['kn'] = array(
 	'renameuser' => 'ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ',
+	'renameuserwarnings' => 'ಎಚ್ಚರಿಕೆಗಳು:',
 );
 
 /** Korean (한국어)
