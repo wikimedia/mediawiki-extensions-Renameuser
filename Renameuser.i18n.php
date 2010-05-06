@@ -2641,11 +2641,11 @@ $messages['ps'] = array(
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'renameuser' => 'Renomear utilizador',
+	'renameuser' => 'Alterar o nome do utilizador',
 	'renameuser-desc' => "[[Special:Renameuser|Página especial]] para alterar o nome de um utilizador (requer o privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de utilizador actual:',
 	'renameusernew' => 'Novo nome de utilizador:',
-	'renameuserreason' => 'Motivo de renomear:',
+	'renameuserreason' => 'Motivo da alteração de nome:',
 	'renameusermove' => 'Mover as páginas e subpáginas de utilizador e as respectivas discussões para o novo nome',
 	'renameuserreserve' => 'Impedir novos usos do antigo nome de utilizador',
 	'renameuserwarnings' => 'Alertas:',
@@ -2654,10 +2654,10 @@ $messages['pt'] = array(
 	'renameusererrordoesnotexist' => 'Não existe o utilizador "<nowiki>$1</nowiki>".',
 	'renameusererrorexists' => 'Já existe um utilizador "<nowiki>$1</nowiki>".',
 	'renameusererrorinvalid' => 'O nome de utilizador "<nowiki>$1</nowiki>" é inválido.',
-	'renameusererrortoomany' => 'O utilizador "<nowiki>$1</nowiki>" possui $2 {{PLURAL:$2|contribuição|contribuições}}. Renomear um utilizador com mais de $3 {{PLURAL:$3|contribuição|contribuições}} pode afectar o desempenho do site.',
+	'renameusererrortoomany' => 'O utilizador "<nowiki>$1</nowiki>" possui $2 {{PLURAL:$2|contribuição|contribuições}}. Alterar o nome de um utilizador com mais de $3 {{PLURAL:$3|contribuição|contribuições}} pode afectar o desempenho do site.',
 	'renameuser-error-request' => 'Houve um problema ao receber este pedido.
 Retorne e tente de novo.',
-	'renameuser-error-same-user' => 'Não é possível renomear um utilizador para o nome anterior.',
+	'renameuser-error-same-user' => 'Não é possível alterar o nome de um utilizador para o nome anterior.',
 	'renameusersuccess' => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Já existe a página $1. Não é possível sobrescrever automaticamente.',
 	'renameuser-page-moved' => 'A página $1 foi movida com sucesso para $2.',
@@ -2666,8 +2666,8 @@ Retorne e tente de novo.',
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores.',
 	'renameuserlogentry' => 'renomeou $1 para "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
-	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
-	'right-renameuser' => 'Renomear utilizadores',
+	'renameuser-move-log' => 'Página movida automaticamente ao alterar o nome do utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+	'right-renameuser' => 'Alterar nomes de utilizadores',
 	'renameuser-renamed-notice' => 'Este nome de utilizador foi renomeado.
 O registo de renomeação é apresentado abaixo.',
 );
