@@ -62,6 +62,7 @@ $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
 
 $wgHooks['ShowMissingArticle'][] = 'wfRenameUserShowLog';
+$wgHooks['ContributionsToolLinks'][] = 'wfRenameuserOnContribsLink';
 
 function wfRenameUserShowLog( $article ) {
 	global $wgOut;
@@ -73,4 +74,19 @@ function wfRenameUserShowLog( $article ) {
 			'msgKey' => array( 'renameuser-renamed-notice', $title->getBaseText() ) ) );
 	}
 	return true;
+}
+
+function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
+		global $wgUser;
+
+		if ( $wgUser->isAllowed( 'renameuser' ) ) {
+			$sk = $wgUser->getSkin();
+			$tools[] = $sk->link(
+				SpecialPage::getTitleFor( 'Renameuser' ),
+				wfMsg( 'renameuser-linkoncontribs' ),
+				array( 'title' => wfMsgExt( 'renameuser-linkoncontribs-text', 'parseinline' ) ),
+				array( 'oldusername' => $nt->getText() )
+			);
+		}
+		return true;
 }

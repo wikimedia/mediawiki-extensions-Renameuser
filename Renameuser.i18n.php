@@ -9,6 +9,8 @@ $messages = array();
 
 $messages['en'] = array(
 	'renameuser'          => 'Rename user',
+	'renameuser-linkoncontribs' => 'rename user',
+	'renameuser-linkoncontribs-text' => 'Rename this user',
 	'renameuser-desc'     => 'Adds a [[Special:Renameuser|special page]] to rename a user (need \'\'renameuser\'\' right)',
 	'renameuser-summary' => '', # do not translate or duplicate this message to other languages
 	'renameuserold'       => 'Current username:',
@@ -53,6 +55,8 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Siebrand
  */
 $messages['qqq'] = array(
+	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
+	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => 'Short description of the Renameuser extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
 	'renameuserwarnings' => '{{Identical|Warning}}',
