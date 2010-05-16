@@ -3,7 +3,7 @@
  * Internationalisation file for extension Renameuser.
  *
  * @addtogroup Extensions
-*/
+ */
 
 $messages = array();
 
@@ -42,7 +42,7 @@ Please go back and try again.',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 
 	'right-renameuser'      => 'Rename users',
-	
+
 	'renameuser-renamed-notice' => 'This user has been renamed.
 The rename log is provided below for reference.', # Supports GENDER
 );
@@ -3392,7 +3392,7 @@ $messages['tk'] = array(
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ulanyjysy eýýäm bar.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ulanyjy ady nädogry.',
 	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" ulanyjysynyň $2 {{PLURAL:$2|goşandy|goşandy}} bar, $3 gowrak {{PLURAL:$3|goşandy|goşandy}} bar bolan ulanyjyny saýtyň işleýişine ýaramaz täsir eder.',
-	'renameuser-error-request' => 'Talaby almak bilen baglanyşykyly bir probleme ýüze çykdy. 
+	'renameuser-error-request' => 'Talaby almak bilen baglanyşykyly bir probleme ýüze çykdy.
 Yza gaýdyp gaýtadan synanyşyp görüň.',
 	'renameuser-error-same-user' => 'Ulanyja öňküsi ýaly bir ada täzeden geçirip bilmeýärsiňiz.',
 	'renameusersuccess' => 'Ulanyjy "<nowiki>$1</nowiki>" täze ada geçirildi: "<nowiki>$2</nowiki>".',

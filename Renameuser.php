@@ -1,5 +1,5 @@
 <?php
-if (!defined('MEDIAWIKI')) die();
+if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * A Special Page extension to rename users, runnable by users with renameuser
  * righs
@@ -23,7 +23,7 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 # Internationalisation file
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['Renameuser'] = $dir . 'Renameuser.i18n.php';
 $wgExtensionAliasesFiles['Renameuser'] = $dir . 'Renameuser.alias.php';
 
@@ -39,11 +39,11 @@ global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
 $wgLogTypes[]                          = 'renameuser';
 $wgLogNames['renameuser']              = 'renameuserlogpage';
 $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
-#$wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
+# $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'wfRenameUserLogActionText'; // deal with old breakage
 
-function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null, $params = array(), $filterWikilinks=false ) {
-	if( !$title || $title->getNamespace() !== NS_USER ) {
+function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null, $params = array(), $filterWikilinks = false ) {
+	if ( !$title || $title->getNamespace() !== NS_USER ) {
 		$rv = ''; // handled in comment, the old way
 	} else {
 		$titleLink = $skin ?
@@ -56,7 +56,7 @@ function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null,
 }
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/Renameuser_body.php';
-$wgAutoloadClasses['RenameUserJob'] = dirname(__FILE__) . '/RenameUserJob.php';
+$wgAutoloadClasses['RenameUserJob'] = dirname( __FILE__ ) . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
@@ -70,23 +70,23 @@ function wfRenameUserShowLog( $article ) {
 	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
 		// Get the title for the base userpage
 		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
-		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false, 
+		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false,
 			'msgKey' => array( 'renameuser-renamed-notice', $title->getBaseText() ) ) );
 	}
 	return true;
 }
 
 function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
-		global $wgUser;
+	global $wgUser;
 
-		if ( $wgUser->isAllowed( 'renameuser' ) ) {
-			$sk = $wgUser->getSkin();
-			$tools[] = $sk->link(
-				SpecialPage::getTitleFor( 'Renameuser' ),
-				wfMsg( 'renameuser-linkoncontribs' ),
-				array( 'title' => wfMsgExt( 'renameuser-linkoncontribs-text', 'parseinline' ) ),
-				array( 'oldusername' => $nt->getText() )
-			);
-		}
-		return true;
+	if ( $wgUser->isAllowed( 'renameuser' ) ) {
+		$sk = $wgUser->getSkin();
+		$tools[] = $sk->link(
+			SpecialPage::getTitleFor( 'Renameuser' ),
+			wfMsg( 'renameuser-linkoncontribs' ),
+			array( 'title' => wfMsgExt( 'renameuser-linkoncontribs-text', 'parseinline' ) ),
+			array( 'oldusername' => $nt->getText() )
+		);
+	}
+	return true;
 }
