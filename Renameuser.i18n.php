@@ -856,6 +856,7 @@ Jen la protokolo pri renomigado por via referenco.',
 /** Spanish (Español)
  * @author Alhen
  * @author Dferg
+ * @author Diego Grez
  * @author Icvav
  * @author Jatrobat
  * @author Lin linao
@@ -866,6 +867,8 @@ Jen la protokolo pri renomigado por via referenco.',
  */
 $messages['es'] = array(
 	'renameuser' => 'Renombrar usuario',
+	'renameuser-linkoncontribs' => 'renombrar usuario',
+	'renameuser-linkoncontribs-text' => 'Renombrar este usuario',
 	'renameuser-desc' => "Añade una [[Special:Renameuser|página especial]] para renombrar a un usuario (necesita el derecho ''renameuser'')",
 	'renameuserold' => 'Nombre actual:',
 	'renameusernew' => 'Nuevo nombre de usuario:',
@@ -2347,6 +2350,8 @@ $messages['ne'] = array(
  */
 $messages['nl'] = array(
 	'renameuser' => 'Gebruiker hernoemen',
+	'renameuser-linkoncontribs' => 'gebruiker hernoemen',
+	'renameuser-linkoncontribs-text' => 'Deze gebruiker hernoemen',
 	'renameuser-desc' => "Voegt een [[Special:Renameuser|speciale pagina]] toe om een gebruiker te hernoemen (u hebt hiervoor het recht ''renameuser'' nodig)",
 	'renameuserold' => 'Huidige gebruikersnaam:',
 	'renameusernew' => 'Nieuwe gebruikersnaam:',
