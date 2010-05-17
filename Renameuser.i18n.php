@@ -312,9 +312,11 @@ $messages['bcl'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'renameuser' => 'Перайменаваць рахунак удзельніка',
+	'renameuser-linkoncontribs' => 'перайменаваць удзельніка',
 	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня рахунку ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
 	'renameuserold' => 'Цяперашняе імя ўдзельніка:',
 	'renameusernew' => 'Новае імя:',
@@ -679,6 +681,8 @@ Til information er omdøbningsloggen vist nedenfor.',
  */
 $messages['de'] = array(
 	'renameuser' => 'Benutzer umbenennen',
+	'renameuser-linkoncontribs' => 'Benutzer umbenennen',
+	'renameuser-linkoncontribs-text' => 'Diesen Benutzer umbenennen',
 	'renameuser-desc' => 'Ergänzt eine [[Special:Renameuser|Spezialseite]] zur Umbenennung eines Benutzers.',
 	'renameuserold' => 'Bisheriger Benutzername:',
 	'renameusernew' => 'Neuer Benutzername:',
@@ -748,6 +752,8 @@ qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
  */
 $messages['dsb'] = array(
 	'renameuser' => 'Wužywarja pśemjeniś',
+	'renameuser-linkoncontribs' => 'wužywarja psemjenjowaś',
+	'renameuser-linkoncontribs-text' => 'Toś togo wužywarja pśemjenjowaś',
 	'renameuser-desc' => "Wužywarja pśemjeniś (pomina se pšawo ''renameuser'')",
 	'renameuserold' => 'Aktualne wužywarske mě:',
 	'renameusernew' => 'Nowe wužywarske mě:',
@@ -823,6 +829,8 @@ Tο ημερολόγιο επανονομασιών δίνεται παρακά�
  */
 $messages['eo'] = array(
 	'renameuser' => 'Alinomigu uzanton',
+	'renameuser-linkoncontribs' => 'renomigi uzanton',
+	'renameuser-linkoncontribs-text' => 'Renomigi ĉi tiun uzanton',
 	'renameuser-desc' => "Alinomigu uzanton (bezonas rajton ''renameuser'')",
 	'renameuserold' => 'Aktuala salutnomo:',
 	'renameusernew' => 'Nova salutnomo:',
@@ -1058,6 +1066,8 @@ $messages['fo'] = array(
  */
 $messages['fr'] = array(
 	'renameuser' => 'Renommer l’utilisateur',
+	'renameuser-linkoncontribs' => 'renommer l’utilisateur',
+	'renameuser-linkoncontribs-text' => 'Renommer cet utilisateur',
 	'renameuser-desc' => "Renomme un utilisateur (nécessite les droits de ''renameuser'')",
 	'renameuserold' => 'Nom actuel de l’utilisateur :',
 	'renameusernew' => 'Nouveau nom de l’utilisateur :',
@@ -1400,6 +1410,8 @@ Evidencija preimenovanja suradnika je prikazana ispod kao obavijest.',
  */
 $messages['hsb'] = array(
 	'renameuser' => 'Wužiwarja přemjenować',
+	'renameuser-linkoncontribs' => 'wužiwarja přemjenować',
+	'renameuser-linkoncontribs-text' => 'Tutoho wužiwarja přemjenować',
 	'renameuser-desc' => "Wužiwarja přemjenować (požada prawo ''renameuser'')",
 	'renameuserold' => 'Tuchwilne wužiwarske mjeno:',
 	'renameusernew' => 'Nowe wužiwarske mjeno:',
@@ -1628,9 +1640,12 @@ Il registro delle rinomine è riportato di seguito per informazione.',
  * @author Hosiryuhosi
  * @author Marine-Blue
  * @author Suisui
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'renameuser' => '利用者名の変更',
+	'renameuser-linkoncontribs' => '利用者名変更',
+	'renameuser-linkoncontribs-text' => 'この利用者の名前を変更する',
 	'renameuser-desc' => '利用者名変更のための[[Special:Renameuser|特別ページ]]を追加する(renameuser権限が必要)',
 	'renameuserold' => '現在の利用者名:',
 	'renameusernew' => '新しい利用者名:',
@@ -2118,6 +2133,8 @@ $messages['mg'] = array(
  */
 $messages['mk'] = array(
 	'renameuser' => 'Преименувај корисник',
+	'renameuser-linkoncontribs' => 'преименувај корисник',
+	'renameuser-linkoncontribs-text' => 'Преименувај го корисников',
 	'renameuser-desc' => "Додава [[Special:Renameuser|специјална страница]] за преименување на корисник (бара право на ''renameuser'')",
 	'renameuserold' => 'Сегашно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
@@ -2154,6 +2171,8 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'renameuser' => 'ഉപയോക്താവിനെ പുനർനാമകരണം ചെയ്യുക',
+	'renameuser-linkoncontribs' => 'ഉപയോക്തൃ പുനർനാമകരണം',
+	'renameuser-linkoncontribs-text' => 'ഈ ഉപയോക്താവിന്റെ പേരു മാറ്റുക',
 	'renameuser-desc' => "ഉപയോക്താവിനെ പുനർനാമകരണം ചെയ്യുവാനുള്ള (''പുനർനാമകരണ'' അവകാശം വേണം) ഒരു [[Special:Renameuser|പ്രത്യേക താൾ]] ചേർക്കുന്നു",
 	'renameuserold' => 'ഇപ്പോഴത്തെ ഉപയോക്തൃനാമം:',
 	'renameusernew' => 'പുതിയ ഉപയോക്തൃനാമം:',
@@ -2651,6 +2670,8 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'renameuser' => 'Alterar o nome do utilizador',
+	'renameuser-linkoncontribs' => 'alterar nome do utilizador',
+	'renameuser-linkoncontribs-text' => 'Alterar o nome deste utilizador',
 	'renameuser-desc' => "[[Special:Renameuser|Página especial]] para alterar o nome de um utilizador (requer o privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de utilizador actual:',
 	'renameusernew' => 'Novo nome de utilizador:',
@@ -2833,6 +2854,8 @@ L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
  */
 $messages['ru'] = array(
 	'renameuser' => 'Переименовать участника',
+	'renameuser-linkoncontribs' => 'переименовать участника',
+	'renameuser-linkoncontribs-text' => 'Переименовать этого участника',
 	'renameuser-desc' => "Переименование участника (требуются права ''renameuser'')",
 	'renameuserold' => 'Имя в настоящий момент:',
 	'renameusernew' => 'Новое имя:',
