@@ -2792,35 +2792,35 @@ $messages['rmy'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'renameuser' => 'Redenumeşte utilizator',
+	'renameuser' => 'Redenumește utilizator',
 	'renameuser-desc' => "Adaugă o [[Special:Renameuser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	'renameuserold' => 'Numele de utilizator existent:',
 	'renameusernew' => 'Numele de utilizator nou:',
 	'renameuserreason' => 'Motivul schimbării numelui:',
-	'renameusermove' => 'Mută pagina de utilizator şi pagina de discuţii (şi subpaginile lor) la noul nume',
+	'renameusermove' => 'Mută pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
 	'renameuserreserve' => 'Utilizarea ulterioară a vechiului nume de utilizator',
 	'renameuserwarnings' => 'Avertizări:',
-	'renameuserconfirm' => 'Da, redenumeşte utilizatorul',
+	'renameuserconfirm' => 'Da, redenumește utilizatorul',
 	'renameusersubmit' => 'Trimite',
 	'renameusererrordoesnotexist' => 'Utilizatorul "$1" nu există',
 	'renameusererrorexists' => 'Utilizatorul "$1" există deja',
 	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid',
-	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuţie|contribuţii}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuţie|contribuţii}} contribuţii ar putea afecta performanţa sitului',
+	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuție|contribuții}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuție|contribuții}} contribuții ar putea afecta performanța sitului',
 	'renameuser-error-request' => 'A fost o problemă la procesarea cererii.
-Întoarceţi-vă şi încercaţi din nou.',
-	'renameuser-error-same-user' => 'Nu puteţi redenumi un utilizator la acelaşi nume ca şi înainte.',
+Întoarceți-vă și încercați din nou.',
+	'renameuser-error-same-user' => 'Nu puteți redenumi un utilizator la același nume ca și înainte.',
 	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
-	'renameuser-page-exists' => 'Pagina $1 există deja şi nu poate fi suprascrisă automat.',
+	'renameuser-page-exists' => 'Pagina $1 există deja și nu poate fi suprascrisă automat.',
 	'renameuser-page-moved' => 'Pagina $1 a fost mutată la $2.',
 	'renameuser-page-unmoved' => 'Pagina $1 nu poate fi mutată la $2.',
 	'renameuserlogpage' => 'Raport redenumiri utilizatori',
 	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
 	'renameuserlogentry' => 'a redenumit $1 în „$2”',
-	'renameuser-log' => '{{PLURAL:$1|o contribuţie|$1 contribuţii}}. Motiv: $2',
+	'renameuser-log' => '{{PLURAL:$1|o contribuție|$1 contribuții}}. Motiv: $2',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
-	'right-renameuser' => 'Redenumeşte utilizatori',
+	'right-renameuser' => 'Redenumește utilizatori',
 	'renameuser-renamed-notice' => 'Acest utilizator i s-a schimbat numele.
-Jurnalul de redenumiri este furnizat mai jos pentru referinţă.',
+Jurnalul de redenumiri este furnizat mai jos pentru referință.',
 );
 
 /** Tarandíne (Tarandíne)
