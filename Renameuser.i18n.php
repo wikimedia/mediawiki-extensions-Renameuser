@@ -2565,6 +2565,7 @@ $messages['pdc'] = array(
 	'renameuserold' => 'Current Yuusernaame:',
 	'renameusernew' => 'Nei Yuuser-Naame',
 	'renameuserreason' => 'Grund:',
+	'renameuserwarnings' => 'Warninge:',
 	'renameuserlogentry' => 'hot „$1“ nooch „$2“ gennert',
 	'renameuser-log' => '{{PLURAL:$1|1 Ennering|$1 Enneringe}}. Grund: $2',
 );
@@ -2587,7 +2588,7 @@ $messages['pfl'] = array(
  */
 $messages['pl'] = array(
 	'renameuser' => 'Zmiana nazwy użytkownika',
-	'renameuser-linkoncontribs' => 'zmień nazwę',
+	'renameuser-linkoncontribs' => 'zmień nazwę użytkownika',
 	'renameuser-linkoncontribs-text' => 'Zmień nazwę tego użytkownika',
 	'renameuser-desc' => "Zmiana nazwy użytkownika (wymaga posiadania uprawnień ''renameuser'')",
 	'renameuserold' => 'Obecna nazwa użytkownika:',
