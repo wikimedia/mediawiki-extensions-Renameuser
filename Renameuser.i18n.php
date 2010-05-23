@@ -2010,6 +2010,8 @@ Commodule notatio renominationum usoris subter datur.',
  */
 $messages['lb'] = array(
 	'renameuser' => 'Benotzernumm änneren',
+	'renameuser-linkoncontribs' => 'Benotzer ëmbenennen',
+	'renameuser-linkoncontribs-text' => 'Dëse Benotzer ëmbenennen',
 	'renameuser-desc' => "Benotzernumm änneren (Dir braucht dofir  ''renameuser''-Rechter)",
 	'renameuserold' => 'Aktuelle Benotzernumm:',
 	'renameusernew' => 'Neie Benotzernumm:',
@@ -2934,10 +2936,11 @@ $messages['sah'] = array(
 );
 
 /** Sardinian (Sardu)
+ * @author Andria
  * @author Marzedu
  */
 $messages['sc'] = array(
-	'renameusernew' => 'Nòmene usuàriu nou:',
+	'renameusernew' => 'Nou nùmene usuàriu:',
 );
 
 /** Sicilian (Sicilianu)
@@ -3275,6 +3278,8 @@ Som referens återfinns omdöpningsloggen nedan.',
  */
 $messages['te'] = array(
 	'renameuser' => 'సభ్యనామం మార్పు',
+	'renameuser-linkoncontribs' => 'వాడుకరి పేరుమార్చు',
+	'renameuser-linkoncontribs-text' => 'ఈ వాడుకరి పేరుని మార్చండి',
 	'renameuser-desc' => "వాడుకరి పేరు మార్చండి (''renameuser'' అన్న అధికారం కావాలి)",
 	'renameuserold' => 'ప్రస్తుత వాడుకరి పేరు:',
 	'renameusernew' => 'కొత్త వాడుకరి పేరు:',
