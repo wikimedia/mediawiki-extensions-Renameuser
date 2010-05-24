@@ -416,9 +416,12 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'renameuser' => 'Adenvel an implijer',
+	'renameuser-linkoncontribs' => 'adenvel an implijer',
+	'renameuser-linkoncontribs-text' => 'adenvel an implijer-mañ',
 	'renameuser-desc' => "Adenvel un implijer (ret eo kaout ''gwirioù adenvel'')",
 	'renameuserold' => 'Anv a-vremañ an implijer :',
 	'renameusernew' => 'Anv implijer nevez :',
