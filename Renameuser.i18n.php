@@ -1247,6 +1247,8 @@ $messages['grc'] = array(
  */
 $messages['gsw'] = array(
 	'renameuser' => 'Benutzer umnänne',
+	'renameuser-linkoncontribs' => 'Benutzer umnänne',
+	'renameuser-linkoncontribs-text' => 'Dää Benutzer umnänne',
 	'renameuser-desc' => "Ergänzt e [[Special:Renameuser|Spezialsyte]] fir d Umnännig vun eme Benutzer (brucht s ''renameuser''-Rächt)",
 	'renameuserold' => 'Bishärige Benutzername:',
 	'renameusernew' => 'Neije Benutzername:',
