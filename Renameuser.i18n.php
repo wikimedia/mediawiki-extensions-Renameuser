@@ -1758,6 +1758,8 @@ Mangga balènana lan nyoba manèh.',
  */
 $messages['ka'] = array(
 	'renameuser' => 'მომხმარებლის სახელის გამოცვლა',
+	'renameuser-linkoncontribs' => 'მომხმარებლის სახელის გადარქმევა',
+	'renameuser-linkoncontribs-text' => 'ამ მომხმარებლის სახელის გადარქმევა',
 	'renameuserold' => 'ამჟამინდელი მომხმარებლის სახელი:',
 	'renameusernew' => 'ახალი მომხმარებლის სახელი:',
 	'renameuserreason' => 'სახელის შეცვლის მიზეზი:',
@@ -1778,6 +1780,7 @@ $messages['ka'] = array(
 	'renameuserlogentry' => 'სახელი გადაერქვა $1-ს "$2"-ზე',
 	'renameuser-log' => '$1 რედაქცია. მიზეზი: $2',
 	'renameuser-move-log' => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[User:$1|$1]]" სახელის შეცვლისას "[[User:$2|$2]]-ით"',
+	'right-renameuser' => 'მომხმარებლების სახელის გადარქმევა',
 );
 
 /** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
