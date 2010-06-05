@@ -74,6 +74,8 @@ $messages['qqq'] = array(
  */
 $messages['af'] = array(
 	'renameuser' => 'Hernoem gebruiker',
+	'renameuser-linkoncontribs' => 'hernoem gebruiker',
+	'renameuser-linkoncontribs-text' => 'Hernoem hierdie gebruiker',
 	'renameuser-desc' => "Herdoop gebruikers (benodig ''renameuser'' regte)",
 	'renameuserold' => 'Huidige gebruikersnaam:',
 	'renameusernew' => 'Nuwe gebruikersnaam:',
@@ -1860,6 +1862,8 @@ $messages['kk-latn'] = array(
  */
 $messages['km'] = array(
 	'renameuser' => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuser-linkoncontribs' => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuser-linkoncontribs-text' => 'ប្ដូរឈ្មោះអ្នកប្រើប្រាស់នេះ',
 	'renameuser-desc' => "ប្តូរឈ្មោះអ្នកប្រើប្រាស់(ត្រូវការសិទ្ធិ ''ប្តូរឈ្មោះអ្នកប្រើប្រាស់'')",
 	'renameuserold' => 'ឈ្មោះអ្នកប្រើប្រាស់បច្ចុប្បន្ន ៖',
 	'renameusernew' => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មី៖',
@@ -1884,6 +1888,9 @@ $messages['km'] = array(
 	'renameuser-log' => '{{PLURAL:$1|កំណែប្រែ}}។ ហេតុផល៖ $2',
 	'renameuser-move-log' => 'បានប្តូរទីតាំងទំព័រដោយស្វ័យប្រវត្តិក្នុងខណៈពេលប្តូរឈ្មោះអ្នកប្រើប្រាស់ "[[User:$1|$1]]" ទៅ "[[User:$2|$2]]"',
 	'right-renameuser' => 'ប្ដូរឈ្មោះអ្នកប្រើប្រាស់នានា',
+	'renameuser-renamed-notice' => 'ឈ្មោះរបស់អ្នកប្រើប្រាស់នេះត្រូវបានប្ដូររួចហើយ។
+
+ខាងក្រោមនេះជាកំណត់ហេតុនៃការប្ដូរឈ្មោះ។',
 );
 
 /** Kannada (ಕನ್ನಡ)
@@ -3116,6 +3123,8 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'renameuser' => 'Преименуј корисника',
+	'renameuser-linkoncontribs' => 'преименуј корисника',
+	'renameuser-linkoncontribs-text' => 'Преименуј овог корисника',
 	'renameuser-desc' => "Додаје [[Special:Renameuser|посебу страну]] за преименовање сарадника (потребно право ''renameuser'').",
 	'renameuserold' => 'Тренутно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
