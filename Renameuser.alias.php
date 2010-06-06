@@ -2,7 +2,8 @@
 /**
  * Aliases for Special:Renameuser
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $aliases = array();
