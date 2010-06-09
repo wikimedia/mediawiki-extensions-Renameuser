@@ -113,27 +113,27 @@ Relevante inligting uit die logboek van gebruikersnaamwysigings word hier onder 
 $messages['an'] = array(
 	'renameuser' => 'Renombrar un usuario',
 	'renameuser-desc' => "Renombrar un usuario (amenista os dreitos de ''renameuser'')",
-	'renameuserold' => 'Nombre autual:',
-	'renameusernew' => 'Nombre nuebo:',
+	'renameuserold' => 'Nombre actual:',
+	'renameusernew' => 'Nombre nuevo:',
 	'renameuserreason' => "Razón d'o cambeo de nombre:",
-	'renameusermove' => "Tresladar as pachinas d'usuario y de descusión (y as suyas sozpachinas) ta o nuebo nombre",
-	'renameuserwarnings' => 'Albertenzias:',
+	'renameusermove' => "Tresladar as pachinas d'usuario y de descusión (y as suyas sozpachinas) ta o nuevo nombre",
+	'renameuserwarnings' => 'Alvertencias:',
 	'renameuserconfirm' => "Sí, quiero cambiar o nombre de l'usuario",
 	'renameusersubmit' => 'Ninviar',
-	'renameusererrordoesnotexist' => 'L\'usuario "<nowiki>$1</nowiki>" no esiste.',
-	'renameusererrorexists' => 'L\'usuario "<nowiki>$1</nowiki>" ya esiste.',
+	'renameusererrordoesnotexist' => 'L\'usuario "<nowiki>$1</nowiki>" no existe.',
+	'renameusererrorexists' => 'L\'usuario "<nowiki>$1</nowiki>" ya existe.',
 	'renameusererrorinvalid' => 'O nombre d\'usuario "<nowiki>$1</nowiki>" no ye conforme.',
-	'renameusererrortoomany' => 'L\'usuario "<nowiki>$1</nowiki>" tiene $2 {{PLURAL:$2|contrebuzión|contrebuzions}}. Si renombra un usuario con más de $3 {{PLURAL:$3|contrebuzión|contrebuzions}} podría afeutar ta o funzionamiento d\'o sitio.',
-	'renameuser-error-request' => 'Bi abió un problema reculliendo a demanda. Por fabor, torne entazaga y prebe una atra begada.',
+	'renameusererrortoomany' => 'L\'usuario "<nowiki>$1</nowiki>" tiene $2 {{PLURAL:$2|contrebución|contrebucions}}. Si renombra un usuario con más de $3 {{PLURAL:$3|contrebución|contrebucions}} podría afeutar ta o funcionamiento d\'o sitio.',
+	'renameuser-error-request' => 'Bi habió bell problema recullindo a demanda. Por favor, torne entazaga y prebe una atra vegada.',
 	'renameuser-error-same-user' => 'No puede renombrar un usuario con o mesmo nombre que ya teneba.',
 	'renameusersuccess' => 'S\'ha renombrau l\'usuario "<nowiki>$1</nowiki>" como "<nowiki>$2</nowiki>".',
-	'renameuser-page-exists' => 'A pachina $1 ya esiste y no puede estar sustituyita automaticament.',
+	'renameuser-page-exists' => 'A pachina $1 ya existe y no puede estar sustituyita automaticament.',
 	'renameuser-page-moved' => "S'ha tresladato a pachina $1 ta $2.",
 	'renameuser-page-unmoved' => "A pachina $1 no s'ha puesto tresladar ta $2.",
 	'renameuserlogpage' => "Rechistro de cambios de nombre d'usuarios",
 	'renameuserlogpagetext' => "Isto ye un rechistro de cambios de nombres d'usuarios",
 	'renameuserlogentry' => 'Renombrato $1 como "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 edizión|$1 edizions}}. Razón: $2',
+	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 edicions}}. Razón: $2',
 	'renameuser-move-log' => 'Pachina tresladata automaticament en renombrar o usuario "[[User:$1|$1]]" como "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
 );
@@ -1617,10 +1617,13 @@ $messages['is'] = array(
  * @author BrokenArrow
  * @author Darth Kule
  * @author Gianfranco
+ * @author HalphaZ
  * @author Nemo bis
  */
 $messages['it'] = array(
 	'renameuser' => 'Rinomina utente',
+	'renameuser-linkoncontribs' => 'rinomina utente',
+	'renameuser-linkoncontribs-text' => 'Rinomina questo utente',
 	'renameuser-desc' => "Aggiunge una [[Special:Renameuser|pagina speciale]] per rinominare un utente (richiede i diritti di ''renameuser'')",
 	'renameuserold' => 'Nome utente attuale:',
 	'renameusernew' => 'Nuovo nome utente:',
@@ -2740,9 +2743,12 @@ O registo de renomeação é apresentado abaixo.',
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author 555
+ * @author Giro720
  */
 $messages['pt-br'] = array(
 	'renameuser' => 'Renomear usuário',
+	'renameuser-linkoncontribs' => 'renomear usuário',
+	'renameuser-linkoncontribs-text' => 'excluir este usuário',
 	'renameuser-desc' => "Adiciona uma [[Special:Renameuser|página especial]] para renomear um usuário (requer privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de usuário atual:',
 	'renameusernew' => 'Novo nome de usuário:',
