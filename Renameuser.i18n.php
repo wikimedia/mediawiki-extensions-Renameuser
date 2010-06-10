@@ -459,6 +459,8 @@ A-is emañ marilh an adanvadurioù, ma'z oc'h dedennet.",
  */
 $messages['bs'] = array(
 	'renameuser' => 'Preimenuj korisnika',
+	'renameuser-linkoncontribs' => 'preimenuj korisnika',
+	'renameuser-linkoncontribs-text' => 'Preimenuj ovog korisnika',
 	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] u svrhu promjene imena korisnika (zahtjeva pravo ''preimenovanja korisnika'')",
 	'renameuserold' => 'Trenutno ime korisnika:',
 	'renameusernew' => 'Novo korisničko ime:',
@@ -3167,6 +3169,8 @@ $messages['sr-ec'] = array(
  */
 $messages['sr-el'] = array(
 	'renameuser' => 'Preimenuj korisnika',
+	'renameuser-linkoncontribs' => 'preimenuj korisnika',
+	'renameuser-linkoncontribs-text' => 'Preimenuj ovog korisnika',
 	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebu stranu]] za preimenovanje saradnika (potrebno pravo ''renameuser'').",
 	'renameuserold' => 'Trenutno korisničko ime:',
 	'renameusernew' => 'Novo korisničko ime:',
@@ -3811,6 +3815,8 @@ $messages['yue'] = array(
  */
 $messages['zh-hans'] = array(
 	'renameuser' => '用户重命名',
+	'renameuser-linkoncontribs' => '用户重新命名',
+	'renameuser-linkoncontribs-text' => '重命名此用户',
 	'renameuser-desc' => "添加一个[[Special:Renameuser|特殊页面]]来重命名用户（需要''renameuser''权限）",
 	'renameuserold' => '当前用户名:',
 	'renameusernew' => '新用户名:',
