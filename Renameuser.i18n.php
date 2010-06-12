@@ -1460,9 +1460,12 @@ Protokol přemjenowanjow je deleka jako referenca podaty.',
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Tgr
  */
 $messages['hu'] = array(
 	'renameuser' => 'Szerkesztő átnevezése',
+	'renameuser-linkoncontribs' => 'felhasználó átnevezése',
+	'renameuser-linkoncontribs-text' => 'Felhasználó átnevezése',
 	'renameuser-desc' => "Lehetővé teszi egy felhasználó átnevezését (''renameuser'' jog szükséges)",
 	'renameuserold' => 'Jelenlegi felhasználónév:',
 	'renameusernew' => 'Új felhasználónév:',
@@ -1531,11 +1534,14 @@ Le registro de renominationes es providite ci infra pro referentia.',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Irwangatot
  * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
 	'renameuser' => 'Penggantian nama pengguna',
+	'renameuser-linkoncontribs' => 'mengubah nama pengguna',
+	'renameuser-linkoncontribs-text' => 'Ubah nama pengguna ini',
 	'renameuser-desc' => "Mengganti nama pengguna (perlu hak akses ''renameuser'')",
 	'renameuserold' => 'Nama sekarang:',
 	'renameusernew' => 'Nama baru:',
