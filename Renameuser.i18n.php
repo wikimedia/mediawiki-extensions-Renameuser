@@ -2649,7 +2649,7 @@ Cofnij się i spróbuj jeszcze raz.',
 	'renameuser-log' => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
 	'right-renameuser' => 'Zmiana nazw kont użytkowników',
-	'renameuser-renamed-notice' => 'Nazwa konta {{GENDER:$1|tego użytkownika|tej użytkowniczki}} została zmieniona.
+	'renameuser-renamed-notice' => 'Nazwa konta {{GENDER:$1|tego użytkownika|tej użytkowniczki|użytkownika(‐czki)}} została zmieniona.
 Rejestr zmian nazw kont użytkowników znajduje się poniżej.',
 );
 
@@ -2659,6 +2659,8 @@ Rejestr zmian nazw kont użytkowników znajduje się poniżej.',
  */
 $messages['pms'] = array(
 	'renameuser' => "Arbatié n'utent",
+	'renameuser-linkoncontribs' => "arbatié n'utent",
+	'renameuser-linkoncontribs-text' => "Arbatié st'utent-sì",
 	'renameuser-desc' => "A gionta na [[Special:Renameuser|pàgina special]] për arnominé n'utent (a-i é dabzògn dël drit ''renameuser'')",
 	'renameuserold' => 'Stranòm corent:',
 	'renameusernew' => 'Stranòm neuv:',
