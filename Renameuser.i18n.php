@@ -726,9 +726,11 @@ Zur Information folgt das Benutzernamenänderungs-Logbuch.',
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Xoser
  */
 $messages['diq'] = array(
 	'renameuser' => 'nameyê karberi bıvurn',
+	'renameuser-linkoncontribs' => 'name bivurne',
 	'renameuser-desc' => "qey newe ra namedayişê karberi re yew [[Special:Renameuser|pelo xas]] têare keno (gani heqqê ''karberi re newe ra name bıde'' bıbo )",
 	'renameuserold' => 'nameyê karberi yo nıkayi',
 	'renameusernew' => 'nameyê karberi yo newe',
