@@ -2833,10 +2833,13 @@ $messages['rmy'] = array(
  * @author Emily
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Memo18
  * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'renameuser' => 'Redenumește utilizator',
+	'renameuser-linkoncontribs' => 'redenumiţi utilizatorul',
+	'renameuser-linkoncontribs-text' => 'Redenumeşte acest utilizator',
 	'renameuser-desc' => "Adaugă o [[Special:Renameuser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	'renameuserold' => 'Numele de utilizator existent:',
 	'renameusernew' => 'Numele de utilizator nou:',
