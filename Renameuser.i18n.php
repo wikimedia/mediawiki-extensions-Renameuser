@@ -2830,6 +2830,7 @@ $messages['rmy'] = array(
 );
 
 /** Romanian (Română)
+ * @author Cin
  * @author Emily
  * @author Firilacroco
  * @author KlaudiuMihaila
@@ -2837,24 +2838,24 @@ $messages['rmy'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'renameuser' => 'Redenumește utilizator',
-	'renameuser-linkoncontribs' => 'redenumiţi utilizatorul',
+	'renameuser' => 'Redenumește utilizatorul',
+	'renameuser-linkoncontribs' => 'redenumește utilizatorul',
 	'renameuser-linkoncontribs-text' => 'Redenumeşte acest utilizator',
 	'renameuser-desc' => "Adaugă o [[Special:Renameuser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	'renameuserold' => 'Numele de utilizator existent:',
-	'renameusernew' => 'Numele de utilizator nou:',
-	'renameuserreason' => 'Motivul schimbării numelui:',
+	'renameusernew' => 'Nume de utilizator nou:',
+	'renameuserreason' => 'Motiv pentru redenumire:',
 	'renameusermove' => 'Mută pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
-	'renameuserreserve' => 'Utilizarea ulterioară a vechiului nume de utilizator',
+	'renameuserreserve' => 'Blochează numele de utilizator vechi pentru utilizări viitoare',
 	'renameuserwarnings' => 'Avertizări:',
 	'renameuserconfirm' => 'Da, redenumește utilizatorul',
 	'renameusersubmit' => 'Trimite',
-	'renameusererrordoesnotexist' => 'Utilizatorul "$1" nu există',
-	'renameusererrorexists' => 'Utilizatorul "$1" există deja',
-	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid',
+	'renameusererrordoesnotexist' => 'Utilizatorul "<nowiki>$1</nowiki>" nu există.',
+	'renameusererrorexists' => 'Utilizatorul "<nowiki>$1</nowiki>" deja există.',
+	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid.',
 	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuție|contribuții}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuție|contribuții}} contribuții ar putea afecta performanța sitului',
-	'renameuser-error-request' => 'A fost o problemă la procesarea cererii.
-Întoarceți-vă și încercați din nou.',
+	'renameuser-error-request' => 'A fost o problemă cu recepţionarea cererii.
+Vă rog întoarceți-vă și încercați din nou.',
 	'renameuser-error-same-user' => 'Nu puteți redenumi un utilizator la același nume ca și înainte.',
 	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
 	'renameuser-page-exists' => 'Pagina $1 există deja și nu poate fi suprascrisă automat.',
@@ -2866,7 +2867,7 @@ $messages['ro'] = array(
 	'renameuser-log' => '{{PLURAL:$1|o contribuție|$1 contribuții}}. Motiv: $2',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
 	'right-renameuser' => 'Redenumește utilizatori',
-	'renameuser-renamed-notice' => 'Acest utilizator i s-a schimbat numele.
+	'renameuser-renamed-notice' => 'Acest utilizator a fost redenumit.
 Jurnalul de redenumiri este furnizat mai jos pentru referință.',
 );
 
