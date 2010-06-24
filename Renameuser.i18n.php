@@ -152,6 +152,8 @@ $messages['ang'] = array(
  */
 $messages['ar'] = array(
 	'renameuser' => 'إعادة تسمية مستخدم',
+	'renameuser-linkoncontribs' => 'أعد تسمية المستخدم',
+	'renameuser-linkoncontribs-text' => 'أعد تسمية هذا المستخدم',
 	'renameuser-desc' => "يضيف [[Special:Renameuser|صفحة خاصة]] لإعادة تسمية مستخدم (يحتاج إلى صلاحية ''renameuser'')",
 	'renameuserold' => 'اسم المستخدم الحالي:',
 	'renameusernew' => 'الاسم الجديد:',
@@ -2835,27 +2837,28 @@ $messages['rmy'] = array(
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Memo18
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'renameuser' => 'Redenumește utilizatorul',
-	'renameuser-linkoncontribs' => 'redenumește utilizatorul',
+	'renameuser' => 'Redenumire utilizator',
+	'renameuser-linkoncontribs' => 'redenumirea utilizatorului',
 	'renameuser-linkoncontribs-text' => 'Redenumeşte acest utilizator',
 	'renameuser-desc' => "Adaugă o [[Special:Renameuser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	'renameuserold' => 'Numele de utilizator existent:',
-	'renameusernew' => 'Nume de utilizator nou:',
-	'renameuserreason' => 'Motiv pentru redenumire:',
+	'renameusernew' => 'Noul nume de utilizator:',
+	'renameuserreason' => 'Motivul schimbării numelui:',
 	'renameusermove' => 'Mută pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
-	'renameuserreserve' => 'Blochează numele de utilizator vechi pentru utilizări viitoare',
+	'renameuserreserve' => 'Blochează vechiul nume de utilizator pentru utilizări viitoare',
 	'renameuserwarnings' => 'Avertizări:',
 	'renameuserconfirm' => 'Da, redenumește utilizatorul',
 	'renameusersubmit' => 'Trimite',
-	'renameusererrordoesnotexist' => 'Utilizatorul "<nowiki>$1</nowiki>" nu există.',
-	'renameusererrorexists' => 'Utilizatorul "<nowiki>$1</nowiki>" deja există.',
-	'renameusererrorinvalid' => 'Numele de utilizator "<nowiki>$1</nowiki>" este invalid.',
+	'renameusererrordoesnotexist' => 'Utilizatorul „<nowiki>$1</nowiki>” nu există.',
+	'renameusererrorexists' => 'Utilizatorul „<nowiki>$1</nowiki>” există deja.',
+	'renameusererrorinvalid' => 'Numele de utilizator „<nowiki>$1</nowiki>” este invalid.',
 	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuție|contribuții}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuție|contribuții}} contribuții ar putea afecta performanța sitului',
-	'renameuser-error-request' => 'A fost o problemă cu recepţionarea cererii.
-Vă rog întoarceți-vă și încercați din nou.',
+	'renameuser-error-request' => 'Am întâmpinat o problemă în procesul de recepționare a cererii.
+Vă rugăm să vă întoarceți și să reîncercați.',
 	'renameuser-error-same-user' => 'Nu puteți redenumi un utilizator la același nume ca și înainte.',
 	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
 	'renameuser-page-exists' => 'Pagina $1 există deja și nu poate fi suprascrisă automat.',
@@ -2867,8 +2870,8 @@ Vă rog întoarceți-vă și încercați din nou.',
 	'renameuser-log' => '{{PLURAL:$1|o contribuție|$1 contribuții}}. Motiv: $2',
 	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
 	'right-renameuser' => 'Redenumește utilizatori',
-	'renameuser-renamed-notice' => 'Acest utilizator a fost redenumit.
-Jurnalul de redenumiri este furnizat mai jos pentru referință.',
+	'renameuser-renamed-notice' => 'Acestui utilizator i-a fost schimbat numele.
+Jurnalul redenumirilor este furnizat mai jos pentru referință.',
 );
 
 /** Tarandíne (Tarandíne)
