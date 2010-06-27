@@ -1029,12 +1029,15 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Agony
+ * @author Centerlink
  * @author Crt
  * @author Nike
  * @author Str4nd
  */
 $messages['fi'] = array(
 	'renameuser' => 'Käyttäjätunnuksen vaihto',
+	'renameuser-linkoncontribs' => 'nimeä käyttäjä uudelleen',
+	'renameuser-linkoncontribs-text' => 'Nimeä tämä käyttäjä uudelleen',
 	'renameuser-desc' => "Mahdollistaa käyttäjän uudelleennimeämisen (vaatii ''renameuser''-oikeudet).",
 	'renameuserold' => 'Nykyinen tunnus',
 	'renameusernew' => 'Uusi tunnus',
