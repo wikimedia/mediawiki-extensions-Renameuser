@@ -602,7 +602,7 @@ Pro přehled je níže zobrazen výpis z knihy přejmenování uživatelů.',
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'renameuser' => 'Прѣименѹи польѕевател҄ь',
+	'renameuser' => 'прѣимєноуи по́льꙃєватєл҄ь',
 	'renameuserold' => 'Нынѣщьнѥѥ имѧ:',
 	'renameusernew' => 'Ново имѧ:',
 	'renameuserreason' => 'Какъ съмыслъ:',
