@@ -621,6 +621,8 @@ $messages['cu'] = array(
  */
 $messages['cy'] = array(
 	'renameuser' => 'Ail-enwi defnyddiwr',
+	'renameuser-linkoncontribs' => "ail-enwi'r defnyddiwr",
+	'renameuser-linkoncontribs-text' => "Ail-enwi'r defnyddiwr hwn",
 	'renameuser-desc' => "Yn ychwanegu [[Special:Renameuser|tudalen arbennig]] er mwyn gallu ail-enwi cyfrif defnyddiwr (sydd angen y gallu ''renameuser'')",
 	'renameuserold' => 'Enw presennol y defnyddiwr:',
 	'renameusernew' => "Enw newydd i'r defnyddiwr:",
