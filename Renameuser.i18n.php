@@ -2749,18 +2749,18 @@ $messages['pt'] = array(
 	'renameuser-error-request' => 'Houve um problema ao receber este pedido.
 Retorne e tente de novo.',
 	'renameuser-error-same-user' => 'Não é possível alterar o nome de um utilizador para o nome anterior.',
-	'renameusersuccess' => 'O utilizador "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>".',
+	'renameusersuccess' => 'O nome do utilizador "<nowiki>$1</nowiki>" foi alterado para "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Já existe a página $1. Não é possível sobrescrever automaticamente.',
 	'renameuser-page-moved' => 'A página $1 foi movida com sucesso para $2.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
-	'renameuserlogpage' => 'Registo de renomeação de utilizadores',
+	'renameuserlogpage' => 'Registo de alteração do nome de utilizadores',
 	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores.',
-	'renameuserlogentry' => 'renomeou $1 para "$2"',
+	'renameuserlogentry' => 'mudou nome $1 para "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Página movida automaticamente ao alterar o nome do utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'right-renameuser' => 'Alterar nomes de utilizadores',
-	'renameuser-renamed-notice' => 'Este nome de utilizador foi renomeado.
-O registo de renomeação é apresentado abaixo.',
+	'renameuser-renamed-notice' => 'Este nome de utilizador foi alterado.
+É apresentado abaixo o registo de alteração do nome de utilizadores.',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
