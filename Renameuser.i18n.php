@@ -961,7 +961,7 @@ Palun ürita uuesti.',
 	'renameuserlogpage' => 'Kasutajanime muutmise logi',
 	'renameuserlogpagetext' => 'See on kasutajanimede muutmise logi.',
 	'renameuserlogentry' => 'nimetas kasutaja $1 ümber kasutajaks "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 redaktsioon|$1 redaktsiooni}}. Põhjus: $2',
+	'renameuser-log' => '{{PLURAL:$1|1 redigeerimine|$1 redigeerimist}}. Põhjus: $2',
 	'renameuser-move-log' => 'Teisaldatud automaatselt, kui kasutaja "[[User:$1|$1]]" nimetati ümber kasutajaks "[[User:$2|$2]]"',
 	'right-renameuser' => 'Muuta kasutajanimesid',
 	'renameuser-renamed-notice' => 'Kasutaja on ümbernimetatud.
