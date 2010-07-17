@@ -2960,6 +2960,13 @@ $messages['ru'] = array(
 Ниже для справки приведён журнал переименований.',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'right-renameuser' => 'Переменованя хоснователїв',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
