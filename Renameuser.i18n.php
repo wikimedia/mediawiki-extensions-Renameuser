@@ -616,6 +616,14 @@ $messages['cu'] = array(
 	'renameuserlogentry' => 'нарєчє $1 имєньмь ⁖ $2 ⁖',
 );
 
+/** Chuvash (Чӑвашла)
+ * @author FLAGELLVM DEI
+ */
+$messages['cv'] = array(
+	'renameuserconfirm' => 'Çапла, хутшăнакан ятне улăштармалла',
+	'renameuser-page-moved' => '$1 страницăн ятне $2 çине улăштарнă.',
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */
