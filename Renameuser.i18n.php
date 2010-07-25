@@ -2898,6 +2898,8 @@ Jurnalul redenumirilor este furnizat mai jos pentru referință.',
  */
 $messages['roa-tara'] = array(
 	'renameuser' => "Renomene l'utende",
+	'renameuser-linkoncontribs' => "renomene l'utende",
+	'renameuser-linkoncontribs-text' => 'Renomene quiste utende',
 	'renameuser-desc' => "Aggiunge 'na [[Special:Renameuser|pàgena speciale]] pe renomena 'n'utende (abbesogne de le deritte ''renameuser'')",
 	'renameuserold' => "Nome de l'utende de mò:",
 	'renameusernew' => "Nome de l'utende nuève:",
