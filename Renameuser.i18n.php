@@ -1983,6 +1983,8 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'renameuser' => 'Metmaacher ömdäufe',
+	'renameuser-linkoncontribs' => 'Metmaacher ömnänne',
+	'renameuser-linkoncontribs-text' => 'Heh dä Metmaacher ömnänne',
 	'renameuser-desc' => '[[Special:Renameuser|Metmaacher ömdäufe]] — ävver do bruch mer et Rääsch „<i lang=en">renameuser</i>“ för.',
 	'renameuserold' => 'Dä ahle Metmaacher-Name',
 	'renameusernew' => 'Dä neue Metmaacher-Name',
