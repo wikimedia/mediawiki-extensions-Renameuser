@@ -3638,9 +3638,12 @@ Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
  * @author Ahonc
  * @author EugeneZelenko
  * @author Prima klasy4na
+ * @author Тест
  */
 $messages['uk'] = array(
 	'renameuser' => 'Перейменувати користувача',
+	'renameuser-linkoncontribs' => 'перейменувати користувача',
+	'renameuser-linkoncontribs-text' => 'Перейменувати цього користувача',
 	'renameuser-desc' => "Перейменування користувача (потрібні права ''renameuser'')",
 	'renameuserold' => "Поточне ім'я:",
 	'renameusernew' => "Нове ім'я:",
