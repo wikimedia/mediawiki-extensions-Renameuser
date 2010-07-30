@@ -1311,6 +1311,8 @@ S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
  */
 $messages['he'] = array(
 	'renameuser' => 'שינוי שם משתמש',
+	'renameuser-linkoncontribs' => 'שינוי שם משתמש',
+	'renameuser-linkoncontribs-text' => 'שינוי שם המשתמש הזה',
 	'renameuser-desc' => "הוספת [[Special:Renameuser|דף מיוחד]] לשינוי שם משתמש (דרושה הרשאת ''renameuser'')",
 	'renameuserold' => 'שם משתמש נוכחי:',
 	'renameusernew' => 'שם משתמש חדש:',
