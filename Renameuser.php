@@ -79,7 +79,7 @@ function wfRenameUserShowLog( $article ) {
 function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
 	global $wgUser;
 
-	if ( $wgUser->isAllowed( 'renameuser' ) ) {
+	if ( $wgUser->isAllowed( 'renameuser' ) && $id ) {
 		$sk = $wgUser->getSkin();
 		$tools[] = $sk->link(
 			SpecialPage::getTitleFor( 'Renameuser' ),
