@@ -2726,6 +2726,8 @@ Për piasì torna andré e preuva torna.",
  */
 $messages['ps'] = array(
 	'renameuser' => 'کارن-نوم بدلول',
+	'renameuser-linkoncontribs' => 'د کارن نوم بدلول',
+	'renameuser-linkoncontribs-text' => 'د دې کارن نوم بدلول',
 	'renameuserold' => 'اوسنی کارن-نوم:',
 	'renameusernew' => 'نوی کارن-نوم:',
 	'renameuserreason' => 'د نوم د بدلون سبب:',
