@@ -1595,6 +1595,14 @@ Penggantian nama pengguna dengan lebih dari $3 {{PLURAL:$3|kontribusi|kontribusi
 Log pergantian nama disediakan dibawah untuk referensi.',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'renameuserwarnings' => 'Ngéntị:',
+	'renameusersubmit' => 'Dànyé',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  * @author Wyvernoid
