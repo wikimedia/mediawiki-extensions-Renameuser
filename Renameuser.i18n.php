@@ -2748,6 +2748,7 @@ $messages['ps'] = array(
 مهرباني وکړی بېرته پرشا ولاړ شی او يو ځل بيا پرې کوښښ وکړی.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 	'renameuserlogentry' => 'د $1 نوم، "$2" ته بدل شو',
+	'renameuser-log' => '{{PLURAL:$1|1 سمون|$1 سمونونه}}. سبب: $2',
 	'right-renameuser' => 'کارن-نومونه بدلول',
 );
 
