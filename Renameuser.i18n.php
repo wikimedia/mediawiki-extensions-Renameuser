@@ -537,6 +537,11 @@ $messages['ce'] = array(
 	'renameuser' => 'Юзер цIе хийца',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'renameusersubmit' => 'ناردن',
+);
+
 /** Crimean Turkish (Latin) (Qırımtatarca (Latin))
  * @author Don Alessandro
  */
@@ -2201,6 +2206,7 @@ $messages['mg'] = array(
 	'renameuserwarnings' => 'Fampitandremana :',
 	'renameuserconfirm' => 'Eny, soloy anarana ilay mpikambana',
 	'renameusersubmit' => 'Alefa',
+	'renameuserlogpage' => "Tatitr'asa momban'ny fanovana anaram-pikambana",
 	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
