@@ -143,6 +143,8 @@ $messages['an'] = array(
  */
 $messages['ang'] = array(
 	'renameuser' => 'Ednemnan brūcend',
+	'renameuser-linkoncontribs' => 'ednemnan brūcend',
+	'renameusersubmit' => 'Forþsendan',
 );
 
 /** Arabic (العربية)
@@ -1043,6 +1045,8 @@ $messages['fa'] = array(
 	'renameuser-log' => '{{PLURAL:$1|۱ ویرایش|$1 ویرایش}}. دلیل: $2',
 	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
 	'right-renameuser' => 'تغییر نام کاربران',
+	'renameuser-renamed-notice' => 'این کاربر تغییر نام داده‌است.
+سیاهه تغییر نام در ادامه آمده است.',
 );
 
 /** Finnish (Suomi)
@@ -1606,6 +1610,8 @@ Log pergantian nama disediakan dibawah untuk referensi.',
 $messages['ig'] = array(
 	'renameuserwarnings' => 'Ngéntị:',
 	'renameusersubmit' => 'Dànyé',
+	'renameuser-page-moved' => 'Ihü $1 a páfùrù gá $2.',
+	'renameuser-page-unmoved' => 'Ihü $1 énweghịkị páfù gá $2.',
 );
 
 /** Ido (Ido)
@@ -2035,10 +2041,14 @@ Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.
 /** Kurdish (Latin) (Kurdî (Latin)) */
 $messages['ku-latn'] = array(
 	'renameuser' => 'Navî bikarhênerê biguherîne',
+	'renameuser-linkoncontribs' => 'navî bikarhênerê biguherîne',
 	'renameuserold' => 'Navî niha:',
 	'renameusernew' => 'Navî nuh:',
 	'renameusersubmit' => 'Bike',
 	'renameusersuccess' => 'Navî bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Rûpela $1 berê heye û ew nikane otomatîk were jêbirin.',
+	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
+	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
 	'renameuser-log' => 'yê $1 beşdarîyên xwe hebû. $2',
 );
 
@@ -2291,6 +2301,7 @@ $messages['ml'] = array(
  */
 $messages['mr'] = array(
 	'renameuser' => 'सदस्यनाम बदला',
+	'renameuser-linkoncontribs' => 'सदस्यनाम बदला',
 	'renameuser-desc' => "सदस्यनाम बदला (यासाठी तुम्हाला ''सदस्यनाम बदलण्याचे अधिकार'' असणे आवश्यक आहे)",
 	'renameuserold' => 'सध्याचे सदस्यनाम:',
 	'renameusernew' => 'नवीन सदस्यनाम:',
@@ -2444,6 +2455,10 @@ Hieronder vie-j 't herneumlogboek as rifferentie.",
 $messages['ne'] = array(
 	'renameuserold' => 'अहिलेको प्रयोगकर्ता नाम:',
 	'renameusernew' => 'नयाँ प्रयोगकर्ता नाम:',
+	'renameusersubmit' => 'बुझाउने',
+	'renameuser-page-exists' => '$1 पृष्ठ पहिले देखि नै रहेको छ र स्वत: अधिलेखन गर्न सकिएन ।',
+	'renameuser-page-moved' => ' $1 पृष्ठलाई $2 मा सारियो ।',
+	'renameuser-page-unmoved' => '$1 पृष्ठलाई $2 मा सार्न सकिएन ।',
 );
 
 /** Dutch (Nederlands)
@@ -2463,7 +2478,7 @@ $messages['nl'] = array(
 	'renameuserreserve' => 'Voorkomen dat de oude gebruiker opnieuw wordt geregistreerd',
 	'renameuserwarnings' => 'Waarschuwingen:',
 	'renameuserconfirm' => 'Ja, hernoem de gebruiker',
-	'renameusersubmit' => 'Hernoemen',
+	'renameusersubmit' => 'Opslaan',
 	'renameusererrordoesnotexist' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat niet.',
 	'renameusererrorexists' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al.',
 	'renameusererrorinvalid' => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig.',
@@ -2750,8 +2765,10 @@ $messages['ps'] = array(
 	'renameusersubmit' => 'سپارل',
 	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کوم کارن نه شته.',
 	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارن له پخوا نه شته.',
+	'renameusererrorinvalid' => 'د "<nowiki>$1</nowiki>" کارن نوم سم نه دی.',
 	'renameuser-error-request' => 'د غوښتنې په ترلاسه کولو کې يوه ستونزه راپېښه شوه.
 مهرباني وکړی بېرته پرشا ولاړ شی او يو ځل بيا پرې کوښښ وکړی.',
+	'renameuser-page-moved' => 'د $1 مخ $2 ته ولېږدل شو.',
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 	'renameuserlogentry' => 'د $1 نوم، "$2" ته بدل شو',
 	'renameuser-log' => '{{PLURAL:$1|1 سمون|$1 سمونونه}}. سبب: $2',
@@ -3371,6 +3388,12 @@ $messages['sv'] = array(
 	'right-renameuser' => 'Ändra användares namn',
 	'renameuser-renamed-notice' => 'Användaren har fått ett nytt namn.
 Som referens återfinns omdöpningsloggen nedan.',
+);
+
+/** Tamil (தமிழ்) */
+$messages['ta'] = array(
+	'renameuserwarnings' => 'எச்சரிக்கை:',
+	'renameusersubmit' => 'சமர்ப்பி',
 );
 
 /** Telugu (తెలుగు)
