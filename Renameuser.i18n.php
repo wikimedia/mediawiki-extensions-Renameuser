@@ -501,6 +501,7 @@ Zapisnik preimenovanje je prikazan ispod kao referenca.',
  * @author Qllach
  * @author SMP
  * @author Toniher
+ * @author Vriullop
  */
 $messages['ca'] = array(
 	'renameuser' => "Reanomena l'usuari",
@@ -531,7 +532,7 @@ Torneu enrere i torneu-ho a intentar.",
 	'renameuser-move-log' => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 	'right-renameuser' => 'Reanomena els usuaris',
 	'renameuser-renamed-notice' => "S'ha canviat el nom d'aquest usuari.
-Al registre de reanomenaments, més avall, en trobareu més informació.",
+A continuació es proporciona el registre de reanomenaments per a més informació.",
 );
 
 /** Chechen (Нохчийн) */
@@ -1421,9 +1422,12 @@ Meharbani kar ke laut ke fir kosis karo.',
  * @author Dnik
  * @author Ex13
  * @author SpeedyGonsales
+ * @author Tivek
  */
 $messages['hr'] = array(
 	'renameuser' => 'Preimenuj suradnika',
+	'renameuser-linkoncontribs' => 'preimenuj suradnika',
+	'renameuser-linkoncontribs-text' => 'Preimenuj ovog suradnika',
 	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] za preimenovanje suradnika (potrebno je ''renameuser'' pravo)",
 	'renameuserold' => 'Trenutačno suradničko ime:',
 	'renameusernew' => 'Novo suradničko ime:',
