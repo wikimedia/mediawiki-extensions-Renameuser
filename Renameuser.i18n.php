@@ -396,6 +396,8 @@ $messages['bg'] = array(
  */
 $messages['bn'] = array(
 	'renameuser' => 'ব্যবহারকারী নামান্তর করো',
+	'renameuser-linkoncontribs' => 'ব্যবহারকারী নামান্তর',
+	'renameuser-linkoncontribs-text' => 'এই ব্যবহারকারী নামান্তর করো',
 	'renameuser-desc' => "একজন ব্যবহারকারীকে নামান্তর করুন (''ব্যবহাকারী নামান্তর'' অধিকার প্রয়োজন)",
 	'renameuserold' => 'বর্তমান ব্যবহারকারী নাম:',
 	'renameusernew' => 'নতুন ব্যবহারকারী নাম:',
@@ -3157,6 +3159,8 @@ Dolu nájdete záznam premenovaní.',
  */
 $messages['sl'] = array(
 	'renameuser' => 'Preimenovanje uporabnika',
+	'renameuser-linkoncontribs' => 'preimenuj uporabnika',
+	'renameuser-linkoncontribs-text' => 'Preimenuj tega uporabnika',
 	'renameuser-desc' => "Doda [[Special:Renameuser|posebno stran]] za preimenovanje uporabnika (potrebna je pravica ''renameuser'')",
 	'renameuserold' => 'Trenutno uporabniško ime:',
 	'renameusernew' => 'Novo uporabniško ime:',
