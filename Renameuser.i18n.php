@@ -828,12 +828,15 @@ Protokol pśemjenjowanjow jo dołojce ako referenca pódany.',
  * @author Badseed
  * @author Consta
  * @author Dead3y3
+ * @author Kiriakos
  * @author MF-Warburg
  * @author Omnipaedista
  * @author ZaDiak
  */
 $messages['el'] = array(
 	'renameuser' => 'Μετονομασία χρήστη',
+	'renameuser-linkoncontribs' => 'Μετονομασία χρήστη',
+	'renameuser-linkoncontribs-text' => 'Μετονομασία αυτού του χρήστη',
 	'renameuser-desc' => "Προσθέτει μια [[Special:Renameuser|ειδική σελίδα]] για την μετονομασία ενός χρήστη (είναι απαραίτητο το δικαίωμα ''renameuser'')",
 	'renameuserold' => 'Τρέχον όνομα χρήστη:',
 	'renameusernew' => 'Νέο όνομα χρήστη:',
