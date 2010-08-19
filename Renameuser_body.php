@@ -26,7 +26,7 @@ class SpecialRenameuser extends SpecialPage {
 	 */
 	public function execute( $par ) {
 		global $wgOut, $wgUser, $wgRequest, $wgContLang, $wgLang;
-		global $wgVersion, $wgMaxNameChars, $wgCapitalLinks;
+		global $wgCapitalLinks;
 
 		$this->setHeaders();
 		$wgOut->addWikiMsg( 'renameuser-summary' );
@@ -402,7 +402,7 @@ class RenameuserSQL {
 	 * Do the rename operation
 	 */
 	function rename() {
-		global $wgMemc, $wgDBname, $wgAuth;
+		global $wgMemc, $wgAuth;
 
 		wfProfileIn( __METHOD__ );
 
