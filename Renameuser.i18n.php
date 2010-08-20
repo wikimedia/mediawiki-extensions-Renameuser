@@ -2376,10 +2376,21 @@ Log penukaran nama ditunjukkan di bawah sebagai rujukan.',
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
-	'renameuserconfirm' => "Iva, erġa' semmi l-utent",
+	'renameuserold' => 'Isem tal-utent attwali:',
+	'renameusernew' => 'Isem tal-utent il-ġdid:',
+	'renameuserreason' => 'Raġuni għall-bidla fl-isem:',
+	'renameusermove' => "Mexxi l-paġna tal-utent, il-paġna ta' diskussjoni u s-sottopaġni taħt l-isem il-ġdid",
+	'renameuserreserve' => 'Imblokka l-użu tal-isem il-qadim fil-futur',
+	'renameuserwarnings' => 'Twissijiet:',
+	'renameuserconfirm' => 'Iva, semmi mill-ġdid dan l-utent',
+	'renameusersubmit' => 'Ibgħat',
+	'renameusererrordoesnotexist' => 'L-utent "<nowiki>$1</nowiki>" ma jeżistix.',
+	'renameusererrorexists' => 'L-utent "<nowiki>$1</nowiki>" diġà jeżisti.',
+	'renameusererrorinvalid' => 'L-isem tal-utent "<nowiki>$1</nowiki>" hu invalidu.',
 );
 
 /** Erzya (Эрзянь)
