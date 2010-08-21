@@ -54,11 +54,12 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Meno25
  * @author SPQRobin
  * @author Siebrand
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
 	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
-	'renameuser-desc' => 'Short description of the Renameuser extension, shown on [[Special:Version]]. Do not translate or change links.',
+	'renameuser-desc' => '{{desc}}',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
@@ -2141,6 +2142,8 @@ D'Logbuch mat den Ëmbenunngen ass hei ënnendrënner.",
  */
 $messages['li'] = array(
 	'renameuser' => 'Herneum gebroeker',
+	'renameuser-linkoncontribs' => 'herneum gebroeker',
+	'renameuser-linkoncontribs-text' => 'Hernöm deze broeker',
 	'renameuser-desc' => "Voog 'n [[Special:Renameuser|speciaal pazjwna]] toe óm 'ne gebroeker te hernömme (doe höbs hiej ''renameuser''-rech veur neudig)",
 	'renameuserold' => 'Hujige gebroekersnaam:',
 	'renameusernew' => 'Nuje gebroekersnaam:',
@@ -2166,6 +2169,8 @@ $messages['li'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkinge}}. Ree: $2',
 	'renameuser-move-log' => 'Automatisch hernömp bie \'t wiezige van gebroeker "[[User:$1|$1]]" nao "[[User:$2|$2]]"',
 	'right-renameuser' => 'Gebroekers hernaome',
+	'renameuser-renamed-notice' => "Deze gebroeker is herneump.
+Relevante regels oet 't logbook staon hieónger.",
 );
 
 /** Lithuanian (Lietuvių)
