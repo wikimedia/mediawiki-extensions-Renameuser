@@ -3840,6 +3840,8 @@ Nhật trình đổi tên được ghi ở dưới để tiện theo dõi.',
  */
 $messages['vo'] = array(
 	'renameuser' => 'Votanemön gebani',
+	'renameuser-linkoncontribs' => 'votanemön gebani',
+	'renameuser-linkoncontribs-text' => 'Votanemön gebani at',
 	'renameuser-desc' => "Votanemön gebani (gität: ''renameuser'' zesüdon)",
 	'renameuserold' => 'Gebananem anuik:',
 	'renameusernew' => 'Gebananem nulik:',
