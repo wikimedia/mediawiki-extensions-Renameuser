@@ -3275,7 +3275,7 @@ $messages['sr-ec'] = array(
 	'renameuserlogpagetext' => 'Ово је историја измена преименовања корисника',
 	'renameuserlogentry' => 'је преименовао $1 у „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}. Разлог: $2',
-	'renameuser-move-log' => 'Аутоматски померене стране приликом преименовања корисничког имена: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
+	'renameuser-move-log' => 'Аутоматски померене странице приликом преименовања корисничког имена: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
 	'right-renameuser' => 'преименовање корисничких имена',
 	'renameuser-renamed-notice' => 'Овом кориснику је промењено име.
 Историја промена имена је приложена испод, као информација.',
@@ -3284,26 +3284,27 @@ $messages['sr-ec'] = array(
 /** Serbian Latin ekavian (Srpski (latinica))
  * @author Liangent
  * @author Michaello
+ * @author Жељко Тодоровић
  */
 $messages['sr-el'] = array(
 	'renameuser' => 'Preimenuj korisnika',
 	'renameuser-linkoncontribs' => 'preimenuj korisnika',
 	'renameuser-linkoncontribs-text' => 'Preimenuj ovog korisnika',
-	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebu stranu]] za preimenovanje saradnika (potrebno pravo ''renameuser'').",
+	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] za preimenovanje korisnika (potrebno pravo ''renameuser'').",
 	'renameuserold' => 'Trenutno korisničko ime:',
 	'renameusernew' => 'Novo korisničko ime:',
 	'renameuserreason' => 'Razlog preimenovanja:',
 	'renameusermove' => 'Premesti korisničku stranicu i stranicu za razgovor (i njihove podstranice) na novo ime',
 	'renameuserreserve' => 'Blokiraj staro korisničko ime za dalju upotrebu',
 	'renameuserwarnings' => 'Upozorenja:',
-	'renameuserconfirm' => 'Da, preimenuj saradničko ime.',
+	'renameuserconfirm' => 'Da, preimenuj korisničko ime.',
 	'renameusersubmit' => 'Prihvati',
 	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji',
 	'renameusererrorexists' => 'Korisnik "<nowiki>$1</nowiki>" već postoji',
 	'renameusererrorinvalid' => 'Pogrešno korisničko ime: "<nowiki>$1</nowiki>"',
 	'renameusererrortoomany' => 'Korisnik "<nowiki>$1</nowiki>" ima $2 {{PLURAL:$2|prilog|priloga|priloga}}, preimenovanje korisnika sa više od $3 {{PLURAL:$3|prilog|priloga|priloga}} može da utiče na performanse sajta.',
 	'renameuser-error-request' => 'Javio se problem prilikom prihvatanja zahteva. Idi nazad i pokušaj ponovo.',
-	'renameuser-error-same-user' => 'Ne možeš preimenovati saradničko ime u isto kao i prethodno.',
+	'renameuser-error-same-user' => 'Ne možeš preimenovati korisničko ime u isto kao i prethodno.',
 	'renameusersuccess' => 'Korisnik "<nowiki>$1</nowiki>" je preimenovan na "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može biti automatski presnimljena.',
 	'renameuser-page-moved' => 'Stranica $1 je premeštena na $2.',
@@ -3312,8 +3313,8 @@ $messages['sr-el'] = array(
 	'renameuserlogpagetext' => 'Ovo je istorija izmena preimenovanja korisnika',
 	'renameuserlogentry' => 'je preimenovao $1 u „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 izmena|$1 izmene|$1 izmena}}. Razlog: $2',
-	'renameuser-move-log' => 'Automatski pomerene strane prilikom preimenovanja saradničkog imena: "[[User:$1|$1]]" u "[[User:$2|$2]]".',
-	'right-renameuser' => 'Preimenovanje saradničkih imena',
+	'renameuser-move-log' => 'Automatski pomerene stranice prilikom preimenovanja korisničkog imena: „[[User:$1|$1]]“ u „[[User:$2|$2]]“.',
+	'right-renameuser' => 'preimenovanje korisničkih imena',
 	'renameuser-renamed-notice' => 'Ovom korisniku je promenjeno ime.
 Istorija promena imena je priložena ispod, kao informacija.',
 );
