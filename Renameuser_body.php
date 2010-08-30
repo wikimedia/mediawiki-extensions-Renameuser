@@ -368,7 +368,7 @@ class RenameuserSQL {
 	 * @param string $old The old username
 	 * @param string $new The new username
 	 */
-	function RenameuserSQL( $old, $new, $uid ) {
+	function __construct( $old, $new, $uid ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
