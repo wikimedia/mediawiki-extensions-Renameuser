@@ -3899,9 +3899,12 @@ $messages['wa'] = array(
  */
 $messages['yi'] = array(
 	'renameuser' => 'בײַטן באַניצער נאָמען',
+	'renameuser-linkoncontribs' => 'בײַטן באַניצער נאָמען',
+	'renameuser-linkoncontribs-text' => 'בײַטן נאָמען פֿון דעם באַניצער',
 	'renameuserold' => 'לויפיגער באַניצער-נאָמען:',
 	'renameusernew' => 'נײַער באַניצער-נאָמען:',
 	'renameuserreason' => 'סיבה פֿאַר ענדערן נאָמען:',
+	'renameusermove' => 'באַוועגן באַניצער און שמועס בלעטער (מיט זייערע אונטערבלעטער) צו נײַעם נאָמען',
 	'renameuserwarnings' => 'ווארענונגען:',
 	'renameuserconfirm' => 'יאָ, ענדער דעם באַניצער־נאָמען',
 	'renameusersubmit' => 'אײַנגעבן',
