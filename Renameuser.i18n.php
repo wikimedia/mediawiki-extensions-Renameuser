@@ -1155,6 +1155,8 @@ Le journal des renommages est disponible ci-dessous pour information.',
  */
 $messages['frp'] = array(
 	'renameuser' => 'Renomar l’utilisator',
+	'renameuser-linkoncontribs' => 'renomar l’utilisator',
+	'renameuser-linkoncontribs-text' => 'Renomar ceti utilisator',
 	'renameuser-desc' => "Apond una [[Special:Renameuser|pâge spèciâla]] por renomar un utilisator (at fôta des drêts de ''renameuser'').",
 	'renameuserold' => 'Nom d’ora a l’utilisator :',
 	'renameusernew' => 'Novél nom a l’utilisator :',
