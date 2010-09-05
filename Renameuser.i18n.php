@@ -3043,6 +3043,18 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'renameuser' => 'Переменоватихоснователя',
+	'renameuser-linkoncontribs' => 'переменовати хоснователя',
+	'renameuser-linkoncontribs-text' => 'Переменовати того хоснователя',
+	'renameuser-desc' => 'Переменованя хоснователя (треба права "renameuser")',
+	'renameuserold' => 'Актуалне мено:',
+	'renameusernew' => 'Нове мено:',
+	'renameuserreason' => 'Причіна переменованя:',
+	'renameusermove' => 'Переменовати тыж сторінкы хоснователя, сторінкы діскузії і їх підсторінкы',
+	'renameuserreserve' => 'Блоковати нову реґістрацію старого мена хоснователя',
+	'renameuserwarnings' => 'Варованя:',
+	'renameuserconfirm' => 'Гей, переменовати хоснователя',
+	'renameusersubmit' => 'Выконати',
 	'right-renameuser' => 'Переменованя хоснователїв',
 );
 
