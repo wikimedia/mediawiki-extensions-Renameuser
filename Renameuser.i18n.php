@@ -1843,6 +1843,7 @@ $messages['ka'] = array(
 	'renameusererrorexists' => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
 	'renameusererrorinvalid' => 'მომხმარებლის სახელი "<nowiki>$1</nowiki>" არასწორია',
 	'renameusererrortoomany' => 'მომხმარებელს "<nowiki>$1</nowiki>" გაკეთებული აქვს $2 რედაქცია. სახელის შეცვლამ მომხმარებლისათვის, რომელიც $3-ზე მეტ რედაქციას ითვლის, შესაძლოა ზიანი მიაყენოს საიტის ქმედითობას',
+	'renameuser-error-same-user' => 'თქვენ არ შეგიძლიათ დაარქვათ მომხმარებელს იგივე სახელი, რაც ერქვა წინათ.',
 	'renameusersuccess' => 'მომხმარებლის სახელი - "<nowiki>$1</nowiki>", შეიცვალა "<nowiki>$2</nowiki>"-ით',
 	'renameuser-page-exists' => 'გვერდი $1 უკვე არსებობს და მისი ავტომატურად შენაცვლება შეუძლებელია.',
 	'renameuser-page-moved' => 'გვერდი $1 გადატანილია $2-ზე.',
@@ -2352,6 +2353,8 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'renameuser' => 'Tukar nama pengguna',
+	'renameuser-linkoncontribs' => 'tukar nama pengguna',
+	'renameuser-linkoncontribs-text' => 'Tukar nama pengguna ini',
 	'renameuser-desc' => "Menukar nama pengguna (memerlukan hak ''renameuser'')",
 	'renameuserold' => 'Nama semasa:',
 	'renameusernew' => 'Nama baru:',
