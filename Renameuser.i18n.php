@@ -3049,7 +3049,7 @@ $messages['rue'] = array(
 	'renameuser' => 'Переменоватихоснователя',
 	'renameuser-linkoncontribs' => 'переменовати хоснователя',
 	'renameuser-linkoncontribs-text' => 'Переменовати того хоснователя',
-	'renameuser-desc' => 'Переменованя хоснователя (треба права "renameuser")',
+	'renameuser-desc' => 'Придасть [[Special:Renameuser|шпеціалну сторінку]] про переменованя хоснователя (треба права "renameuser")',
 	'renameuserold' => 'Актуалне мено:',
 	'renameusernew' => 'Нове мено:',
 	'renameuserreason' => 'Причіна переменованя:',
@@ -3438,6 +3438,11 @@ $messages['sv'] = array(
 	'right-renameuser' => 'Ändra användares namn',
 	'renameuser-renamed-notice' => 'Användaren har fått ett nytt namn.
 Som referens återfinns omdöpningsloggen nedan.',
+);
+
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'renameusersubmit' => 'Wasilisha',
 );
 
 /** Tamil (தமிழ்) */
