@@ -1028,12 +1028,12 @@ $messages['ext'] = array(
  * @author Wayiran
  */
 $messages['fa'] = array(
-	'renameuser' => 'تغییر نام کاربری',
+	'renameuser' => 'تغییر نام کاربر',
 	'renameuser-linkoncontribs' => 'تغییر نام کاربر',
 	'renameuser-linkoncontribs-text' => 'تغییر نام کاربر',
 	'renameuser-desc' => "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از اختیارات ''تغییرنام'' است)",
-	'renameuserold' => 'نام کاربری فعلی:',
-	'renameusernew' => 'نام کاربری جدید:',
+	'renameuserold' => 'نام کاربری کنونی:',
+	'renameusernew' => 'نام کاربری نو:',
 	'renameuserreason' => 'علت تغییر نام کاربری:',
 	'renameusermove' => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
 	'renameuserreserve' => 'نام کاربری قبلی را در مقابل استفادهٔ مجدد حفظ کن',
