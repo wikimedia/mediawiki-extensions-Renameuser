@@ -64,10 +64,15 @@ $wgJobClasses['renameUser'] = 'RenameUserJob';
 $wgHooks['ShowMissingArticle'][] = 'wfRenameUserShowLog';
 $wgHooks['ContributionsToolLinks'][] = 'wfRenameuserOnContribsLink';
 
+/**
+ * Show a log if the user has been renamed and point to the new username.
+ * Don't show the log if the $oldUserName exists as a user.
+ */
 function wfRenameUserShowLog( $article ) {
 	global $wgOut;
 	$title = $article->getTitle();
-	if ( $title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) {
+	$oldUserName = User::newFromName( $title->getBaseText() );
+	if ( ($title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) && $oldUserName->getId()==0) {
 		// Get the title for the base userpage
 		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
 		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false,
