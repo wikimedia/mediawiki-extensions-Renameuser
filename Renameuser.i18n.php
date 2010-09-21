@@ -3042,7 +3042,7 @@ $messages['ru'] = array(
 Ниже для справки приведён журнал переименований.',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
