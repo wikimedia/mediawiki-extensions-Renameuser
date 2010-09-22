@@ -71,8 +71,8 @@ $wgHooks['ContributionsToolLinks'][] = 'wfRenameuserOnContribsLink';
 function wfRenameUserShowLog( $article ) {
 	global $wgOut;
 	$title = $article->getTitle();
-	$oldUserName = User::newFromName( $title->getBaseText() );
-	if ( ($title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) && ($oldUserName && $oldUserName->getId()==0 )) {
+	$oldUser = User::newFromName( $title->getBaseText() );
+	if ( ($title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) && ($oldUser && $oldUser->isAnon() )) {
 		// Get the title for the base userpage
 		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
 		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false,
