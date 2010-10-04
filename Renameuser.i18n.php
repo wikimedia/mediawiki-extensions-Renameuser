@@ -3781,6 +3781,7 @@ $messages['ur'] = array(
  */
 $messages['vec'] = array(
 	'renameuser' => 'Rinomina utente',
+	'renameuser-linkoncontribs' => 'rinomina utente',
 	'renameuser-desc' => "Funsion par rinominar un utente (ghe vole i diriti de ''renameuser'')",
 	'renameuserold' => 'Vecio nome utente:',
 	'renameusernew' => 'Novo nome utente:',
