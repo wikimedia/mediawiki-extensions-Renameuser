@@ -455,6 +455,14 @@ class RenameuserSQL {
 				__METHOD__
 			);
 		}
+		
+		// Increase time limit (like CheckUser); this can take a while...
+		if ( $this->tablesJob ) {
+			wfSuppressWarnings();
+			set_time_limit( 120 );
+			wfRestoreWarnings();
+		}
+		
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she
 		// must be careful to wait until the rename finishes before
@@ -531,12 +539,16 @@ class RenameuserSQL {
 						$jobRows = 0;
 					}
 				}
+				// FIXME: this commits per 50 rows, so when this times out
+				// (which id does) the DB will be in a half-assed state...
 				Job::batchInsert( $jobs );
 			}
 			$dbw->freeResult( $res );
 		}
 
 		// Commit the transaction
+		// FIXME: this line is misleading and nearly totally
+		// useless if the jobqueue was used for any of the tables...
 		$dbw->commit();
 
 		// Delete from memcached again to make sure

@@ -31,7 +31,7 @@ $wgExtensionAliasesFiles['Renameuser'] = $dir . 'Renameuser.alias.php';
  * The maximum number of edits a user can have and still be allowed renaming,
  * set it to 0 to disable the limit.
  */
-define( 'RENAMEUSER_CONTRIBLIMIT', 1000000 );
+define( 'RENAMEUSER_CONTRIBLIMIT', 25000 );
 define( 'RENAMEUSER_CONTRIBJOB', 5000 );
 
 # Add a new log type
