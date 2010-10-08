@@ -52,9 +52,13 @@ class SpecialRenameuser extends SpecialPage {
 		// If nothing given for these flags, assume they are checked
 		// unless this is a POST submission.
 		$move_checked = true;
+		$suppress_checked = false;
 		if ( $wgRequest->wasPosted() ) {
 			if ( !$wgRequest->getCheck( 'movepages' ) ) {
 				$move_checked = false;
+			}
+			if ( $wgRequest->getCheck( 'suppressredirect' ) ) {
+				$suppress_checked = true;
 			}
 		}
 		$warnings = array();
@@ -104,6 +108,19 @@ class SpecialRenameuser extends SpecialPage {
 					"</td>
 				</tr>"
 			);
+			
+			if ( $wgUser->isAllowed( 'suppressredirect' ) ) {
+				$wgOut->addHTML( "
+					<tr>
+						<td>&#160;
+						</td>
+						<td class='mw-input'>" .
+							Xml::checkLabel( wfMsg( 'renameusersuppress' ), 'suppressredirect', 'suppressredirect',
+								$suppress_checked, array( 'tabindex' => '5' ) ) .
+						"</td>
+					</tr>"
+				);
+			}
 		}
 		if ( $warnings ) {
 			$warningsHtml = array();
@@ -288,6 +305,13 @@ class SpecialRenameuser extends SpecialPage {
 				),
 				__METHOD__
 			);
+			
+			$suppressRedirect = false;
+			var_dump($wgRequest->getCheck( 'suppressredirect' ));
+			if ( $wgRequest->getCheck( 'suppressredirect' ) && $wgUser->isAllowed( 'suppressredirect' ) ) {	
+				$suppressRedirect = true;
+			}
+			var_dump($suppressRedirect);
 
 			$output = '';
 			$skin =& $wgUser->getSkin();
@@ -301,7 +325,7 @@ class SpecialRenameuser extends SpecialPage {
 					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
 				} else {
 					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log',
-						$oldusername->getText(), $newusername->getText() ) );
+						$oldusername->getText(), $newusername->getText() ), !$suppressRedirect );
 					if ( $success === true ) {
 						$oldLink = $skin->makeKnownLinkObj( $oldPage, '', 'redirect=no' );
 						$newLink = $skin->makeKnownLinkObj( $newPage );

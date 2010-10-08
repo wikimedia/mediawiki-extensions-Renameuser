@@ -18,6 +18,7 @@ $messages['en'] = array(
 	'renameusernew'       => 'New username:',
 	'renameuserreason'    => 'Reason for rename:',
 	'renameusermove'      => 'Move user and talk pages (and their subpages) to new name',
+	'renameusersuppress'  => 'Don\'t create redirects to the new name',
 	'renameuserreserve'   => 'Block the old username from future use',
 	'renameuserwarnings'  => 'Warnings:',
 	'renameuserconfirm'   => 'Yes, rename the user',
