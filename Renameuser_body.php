@@ -307,11 +307,10 @@ class SpecialRenameuser extends SpecialPage {
 			);
 			
 			$suppressRedirect = false;
-			var_dump($wgRequest->getCheck( 'suppressredirect' ));
+			
 			if ( $wgRequest->getCheck( 'suppressredirect' ) && $wgUser->isAllowed( 'suppressredirect' ) ) {	
 				$suppressRedirect = true;
 			}
-			var_dump($suppressRedirect);
 
 			$output = '';
 			$skin =& $wgUser->getSkin();
