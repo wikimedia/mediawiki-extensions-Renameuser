@@ -427,6 +427,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Gwendal
  * @author Y-M D
  */
 $messages['br'] = array(
@@ -438,6 +439,7 @@ $messages['br'] = array(
 	'renameusernew' => 'Anv implijer nevez :',
 	'renameuserreason' => 'Abeg evit adenvel :',
 	'renameusermove' => 'Kas ar pajennoù implijer ha kaozeal (hag o ispajennoù) betek o anv nevez',
+	'renameusersuppress' => 'Arabat krouiñ adkasoù war-du an anv nevez',
 	'renameuserreserve' => "Mirout na vo implijet an anv kozh pelloc'h en dazont",
 	'renameuserwarnings' => 'Diwallit :',
 	'renameuserconfirm' => 'Ya, adenvel an implijer',
@@ -474,6 +476,7 @@ $messages['bs'] = array(
 	'renameusernew' => 'Novo korisničko ime:',
 	'renameuserreason' => 'Razlog promjene imena:',
 	'renameusermove' => 'Premještanje korisnika i njegove stranice za razgovor (zajedno sa podstranicama) na novo ime',
+	'renameusersuppress' => 'Ne pravi preusmjerenja na novo ime',
 	'renameuserreserve' => 'Blokiraj staro korisničko ime od kasnijeg korištenja',
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, promijeni ime korisnika',
@@ -585,6 +588,7 @@ $messages['cs'] = array(
 	'renameusernew' => 'Nové uživatelské jméno:',
 	'renameuserreason' => 'Důvod přejmenování:',
 	'renameusermove' => 'Přesunout uživatelské a diskusní stránky (a jejich podstránky) na nové jméno',
+	'renameusersuppress' => 'Nevytvářet přesměrování na nové jméno',
 	'renameuserreserve' => 'Zabránit nové registraci původního uživatelského jména',
 	'renameuserwarnings' => 'Upozornění:',
 	'renameuserconfirm' => 'Ano, přejmenovat uživatele',
@@ -727,6 +731,7 @@ $messages['de'] = array(
 	'renameusernew' => 'Neuer Benutzername:',
 	'renameuserreason' => 'Grund:',
 	'renameusermove' => 'Benutzer-/Diskussionsseite (inkl. Unterseiten) auf den neuen Benutzernamen verschieben',
+	'renameusersuppress' => 'Beim Umbenennen die Erstellung einer Weiterleitung auf den neuen Benutzernamen unterdrücken',
 	'renameuserreserve' => 'Alten Benutzernamen für eine Neuregistrierung blockieren',
 	'renameuserwarnings' => 'Warnungen:',
 	'renameuserconfirm' => 'Ja, Benutzer umbenennen',
@@ -1114,6 +1119,7 @@ $messages['fo'] = array(
  * @author Grondin
  * @author Hégésippe Cormier
  * @author IAlex
+ * @author Peter17
  * @author PieRRoMaN
  * @author Urhixidur
  * @author Verdy p
@@ -1127,6 +1133,7 @@ $messages['fr'] = array(
 	'renameusernew' => 'Nouveau nom de l’utilisateur :',
 	'renameuserreason' => 'Motif du changement de nom :',
 	'renameusermove' => 'Renommer toutes les pages de l’utilisateur vers le nouveau nom',
+	'renameusersuppress' => 'Ne pas créer de redirection vers le nouveau nom',
 	'renameuserreserve' => 'Réserver l’ancien nom pour un usage futur',
 	'renameuserwarnings' => 'Avertissements :',
 	'renameuserconfirm' => 'Oui, renommer l’utilisateur',
@@ -1556,6 +1563,7 @@ $messages['ia'] = array(
 	'renameusernew' => 'Nove nomine de usator:',
 	'renameuserreason' => 'Motivo del renomination:',
 	'renameusermove' => 'Renominar etiam le paginas de usator e de discussion (e lor subpaginas) verso le nove nomine',
+	'renameusersuppress' => 'Non crear redirectiones al nove nomine',
 	'renameuserreserve' => 'Blocar le ancian nomine de usator de esser usate in le futuro',
 	'renameuserwarnings' => 'Advertimentos:',
 	'renameuserconfirm' => 'Si, renomina le usator',
@@ -1738,6 +1746,7 @@ $messages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
 	'renameusermove' => '利用者ページと会話ページ(およびそれらのサブページ)を新しい名前に移動する',
+	'renameusersuppress' => '新しい名前への転送を作成しないでください',
 	'renameuserreserve' => '旧利用者名の今後の使用をブロックする',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => 'はい、利用者名を変更します',
@@ -2256,6 +2265,7 @@ $messages['mk'] = array(
 	'renameusernew' => 'Ново корисничко име:',
 	'renameuserreason' => 'Образложение за преименување:',
 	'renameusermove' => 'Премести корисничка страница и страници за разговор (и нивните потстраници) под новото име',
+	'renameusersuppress' => 'Не создавај пренасочувања кон новото име',
 	'renameuserreserve' => 'Блокирање на старото корисничко име, да не може да се користи во иднина',
 	'renameuserwarnings' => 'Предупредувања:',
 	'renameuserconfirm' => 'Да, преименувај го корисникот',
@@ -2510,6 +2520,7 @@ $messages['nl'] = array(
 	'renameusernew' => 'Nieuwe gebruikersnaam:',
 	'renameuserreason' => 'Reden voor hernoemen:',
 	'renameusermove' => "De gebruikerspagina en overlegpagina (en eventuele subpagina's) hernoemen naar de nieuwe gebruikersnaam",
+	'renameusersuppress' => 'Geen doorverwijzingen maken naar de nieuwe naam',
 	'renameuserreserve' => 'Voorkomen dat de oude gebruiker opnieuw wordt geregistreerd',
 	'renameuserwarnings' => 'Waarschuwingen:',
 	'renameuserconfirm' => 'Ja, hernoem de gebruiker',
@@ -2760,6 +2771,7 @@ $messages['pms'] = array(
 	'renameusernew' => 'Stranòm neuv:',
 	'renameuserreason' => "Rason ch'as cambia stranòm:",
 	'renameusermove' => 'Tramuda ëdcò la pàgina utent e cola dle ciaciarade (con tute soe sotapàgine) a lë stranòm neuv',
+	'renameusersuppress' => 'Crea pa rediression al nòm neuv',
 	'renameuserreserve' => 'Blòca lë stanòm vej da future utilisassion',
 	'renameuserwarnings' => 'Atension:',
 	'renameuserconfirm' => "É!, arnòmina l'utent",
@@ -3019,6 +3031,7 @@ $messages['ru'] = array(
 	'renameusernew' => 'Новое имя:',
 	'renameuserreason' => 'Причина переименования:',
 	'renameusermove' => 'Переименовать также страницу участника, личное обсуждение и их подстраницы',
+	'renameusersuppress' => 'Не создавать перенаправлений на новое имя',
 	'renameuserreserve' => 'Зарезервировать старое имя участника для использования в будущем',
 	'renameuserwarnings' => 'Предупреждения:',
 	'renameuserconfirm' => 'Да, переименовать участника',
@@ -3836,6 +3849,7 @@ $messages['vi'] = array(
 	'renameusernew' => 'Tên hiệu mới:',
 	'renameuserreason' => 'Lý do đổi tên:',
 	'renameusermove' => 'Di chuyển trang thành viên và thảo luận thành viên (cùng với trang con của nó) sang tên mới',
+	'renameusersuppress' => 'Không tạo trang đổi hướng đến tên mới',
 	'renameuserreserve' => 'Không cho phép ai lấy tên cũ',
 	'renameuserwarnings' => 'Cảnh báo:',
 	'renameuserconfirm' => 'Đổi tên người dùng',
