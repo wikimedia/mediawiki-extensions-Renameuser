@@ -313,7 +313,7 @@ class SpecialRenameuser extends SpecialPage {
 			}
 
 			$output = '';
-			$skin =& $wgUser->getSkin();
+			$skin = $wgUser->getSkin();
 			while ( $row = $dbr->fetchObject( $pages ) ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
