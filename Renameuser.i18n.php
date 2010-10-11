@@ -332,6 +332,7 @@ $messages['be-tarask'] = array(
 	'renameusernew' => 'Новае імя:',
 	'renameuserreason' => 'Прычына перайменаваньня:',
 	'renameusermove' => 'Перайменаваць старонкі ўдзельніка і гутарак (і іх падстаронкі)',
+	'renameusersuppress' => 'Не ствараць перанакіраваньні на новую назву рахунку',
 	'renameuserreserve' => 'Заблякаваць старое імя ўдзельніка для выкарыстаньня ў будучыні',
 	'renameuserwarnings' => 'Папярэджаньні:',
 	'renameuserconfirm' => 'Так, перайменаваць удзельніка',
@@ -886,6 +887,7 @@ $messages['eo'] = array(
 	'renameusernew' => 'Nova salutnomo:',
 	'renameuserreason' => 'Kialo por alinomigo:',
 	'renameusermove' => 'Movu uzantan kaj diskutan paĝojn (kaj ties subpaĝojn) al la nova nomo',
+	'renameusersuppress' => 'Ne krei alidirektilojn al la nova nomo',
 	'renameuserreserve' => 'Teni la malnovan salutnomon de plua uzo',
 	'renameuserwarnings' => 'Avertoj:',
 	'renameuserconfirm' => 'Jes, renomigu la uzanton',
@@ -2766,6 +2768,7 @@ Rejestr zmian nazw kont użytkowników znajduje się poniżej.',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Bèrto 'd Sèra
  * @author Dragonòt
  */
@@ -2778,7 +2781,7 @@ $messages['pms'] = array(
 	'renameusernew' => 'Stranòm neuv:',
 	'renameuserreason' => "Rason ch'as cambia stranòm:",
 	'renameusermove' => 'Tramuda ëdcò la pàgina utent e cola dle ciaciarade (con tute soe sotapàgine) a lë stranòm neuv',
-	'renameusersuppress' => 'Crea pa rediression al nòm neuv',
+	'renameusersuppress' => 'Creé nen na ridiression al nòm neuv',
 	'renameuserreserve' => 'Blòca lë stanòm vej da future utilisassion',
 	'renameuserwarnings' => 'Atension:',
 	'renameuserconfirm' => "É!, arnòmina l'utent",
@@ -2963,6 +2966,7 @@ $messages['ro'] = array(
 	'renameusernew' => 'Noul nume de utilizator:',
 	'renameuserreason' => 'Motivul schimbării numelui:',
 	'renameusermove' => 'Mută pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
+	'renameusersuppress' => 'Nu crea redirecționări către noul nume',
 	'renameuserreserve' => 'Blochează vechiul nume de utilizator pentru utilizări viitoare',
 	'renameuserwarnings' => 'Avertizări:',
 	'renameuserconfirm' => 'Da, redenumește utilizatorul',
@@ -2970,19 +2974,19 @@ $messages['ro'] = array(
 	'renameusererrordoesnotexist' => 'Utilizatorul „<nowiki>$1</nowiki>” nu există.',
 	'renameusererrorexists' => 'Utilizatorul „<nowiki>$1</nowiki>” există deja.',
 	'renameusererrorinvalid' => 'Numele de utilizator „<nowiki>$1</nowiki>” este invalid.',
-	'renameusererrortoomany' => 'Utilizatorul "<nowiki>$1</nowiki>" are $2 {{PLURAL:$2|contribuție|contribuții}}, redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuție|contribuții}} contribuții ar putea afecta performanța sitului',
+	'renameusererrortoomany' => 'Utilizatorul „<nowiki>$1</nowiki>” are $2 {{PLURAL:$2|contribuție|contribuții}}; redenumirea unui utilizator cu mai mult de $3 {{PLURAL:$3|contribuție|contribuții}} ar putea afecta performanța sitului.',
 	'renameuser-error-request' => 'Am întâmpinat o problemă în procesul de recepționare a cererii.
 Vă rugăm să vă întoarceți și să reîncercați.',
 	'renameuser-error-same-user' => 'Nu puteți redenumi un utilizator la același nume ca și înainte.',
-	'renameusersuccess' => 'Utilizatorul "$1" a fost redenumit în "$2"',
+	'renameusersuccess' => 'Utilizatorul „$1” a fost redenumit în „$2”',
 	'renameuser-page-exists' => 'Pagina $1 există deja și nu poate fi suprascrisă automat.',
-	'renameuser-page-moved' => 'Pagina $1 a fost mutată la $2.',
-	'renameuser-page-unmoved' => 'Pagina $1 nu poate fi mutată la $2.',
-	'renameuserlogpage' => 'Raport redenumiri utilizatori',
-	'renameuserlogpagetext' => 'Acesta este un raport al modificărilor de nume de utilizator',
+	'renameuser-page-moved' => 'Pagina $1 a fost redenumită în $2.',
+	'renameuser-page-unmoved' => 'Pagina $1 nu poate fi redenumită în $2.',
+	'renameuserlogpage' => 'Jurnal redenumiri utilizatori',
+	'renameuserlogpagetext' => 'Acesta este un jurnal al modificărilor de nume de utilizator',
 	'renameuserlogentry' => 'a redenumit $1 în „$2”',
 	'renameuser-log' => '{{PLURAL:$1|o contribuție|$1 contribuții}}. Motiv: $2',
-	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la "[[User:$1|$1]]" la "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Pagină mutată automat la redenumirea utilizatorului de la „[[User:$1|$1]]” la „[[User:$2|$2]]”',
 	'right-renameuser' => 'Redenumește utilizatori',
 	'renameuser-renamed-notice' => 'Acestui utilizator i-a fost schimbat numele.
 Jurnalul redenumirilor este furnizat mai jos pentru referință.',
