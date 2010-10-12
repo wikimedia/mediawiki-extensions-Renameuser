@@ -1044,10 +1044,11 @@ $messages['fa'] = array(
 	'renameusernew' => 'نام کاربری نو:',
 	'renameuserreason' => 'علت تغییر نام کاربری:',
 	'renameusermove' => 'صفحه کاربر و صفحه بحث کاربر (و زیر صفحه‌های آن‌ها) را به نام جدید انتقال بده',
+	'renameusersuppress' => 'تغییر مسیر به نام جدید ایجاد نکن',
 	'renameuserreserve' => 'نام کاربری قبلی را در مقابل استفادهٔ مجدد حفظ کن',
 	'renameuserwarnings' => 'هشدار:',
 	'renameuserconfirm' => 'بله، نام کاربر را تغییر بده',
-	'renameusersubmit' => 'ثبت',
+	'renameusersubmit' => 'ارسال',
 	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
 	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
 	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
@@ -1315,6 +1316,7 @@ $messages['gsw'] = array(
 	'renameusernew' => 'Neije Benutzername:',
 	'renameuserreason' => 'Grund:',
 	'renameusermove' => 'Verschieb Benutzer-/Diskussionssyte mit Untersyte uf dr neij Benutzername',
+	'renameusersuppress' => 'Kei Wyterleitig uf dr nej Benutzername aalege',
 	'renameuserreserve' => 'Blockier dr alt Benutzername fir e Neijregischtrierig',
 	'renameuserwarnings' => 'Warnige:',
 	'renameuserconfirm' => 'Jo, Benutzer umnänne',
@@ -2324,14 +2326,14 @@ $messages['ml'] = array(
 	'renameuser-error-same-user' => 'നിലവിലുള്ള ഒരു ഉപയോക്തൃനാമത്തിലേക്കു വേറൊരു ഉപയോക്തൃനാമം പുനർനാമകരണം നടത്തുവാൻ സാധിക്കില്ല.',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" എന്ന ഉപയോക്താവിനെ "<nowiki>$2</nowiki>" എന്ന നാമത്തിലേക്കു പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.',
 	'renameuser-page-exists' => '$1 എന്ന താൾ നിലവിലുള്ളതിനാൽ അതിനെ യാന്ത്രികമായി മാറ്റാൻ കഴിയില്ല.',
-	'renameuser-page-moved' => '$1 എന്ന താൾ $2വിലേക്കു പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.',
-	'renameuser-page-unmoved' => '$1 എന്ന താൾ $2 വിലേക്കു മാറ്റാൻ സാദ്ധ്യമല്ല.',
+	'renameuser-page-moved' => '$1 എന്ന താൾ $2 എന്നാക്കിയിരിക്കുന്നു.',
+	'renameuser-page-unmoved' => '$1 എന്ന താൾ $2 എന്നാക്കാൻ സാദ്ധ്യമല്ല.',
 	'renameuserlogpage' => 'ഉപയോക്തൃനാമം പുനർനാമകരണം നടത്തിയതിന്റെ പ്രവർത്തനരേഖ',
 	'renameuserlogpagetext' => 'ഈ പ്രവർത്തനരേഖ ഉപയോക്തൃനാമം പുനർനാമകരണം നടത്തിയതിന്റേതാണ്‌.',
 	'renameuserlogentry' => '$1 എന്ന ഉപയോക്താവിനെ "$2" എന്നു പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.',
 	'renameuser-log' => '{{PLURAL:$1|ഒരു തിരുത്തൽ|$1 തിരുത്തലുകൾ}}. കാരണം: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" എന്ന ഉപയോക്താവിനെ "[[User:$2|$2]]" എന്നു പുനർനാമകരണം ചെയ്തപ്പോൾ താൾ യാന്ത്രികമായി മാറ്റി.',
-	'right-renameuser' => 'ഉപയോക്താക്കളെ പുനഃർനാമകരണം നടത്തുക',
+	'right-renameuser' => 'ഉപയോക്തൃ പുനർനാമകരണം',
 	'renameuser-renamed-notice' => 'ഈ ഉപയോക്താവിനെ പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.
 പുനർനാമകരണ രേഖ അവലംബമായി പരിശോധിക്കാനായി താഴെ കൊടുത്തിരിക്കുന്നു.',
 );
@@ -3474,8 +3476,13 @@ $messages['sw'] = array(
 	'renameusersubmit' => 'Wasilisha',
 );
 
-/** Tamil (தமிழ்) */
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
 $messages['ta'] = array(
+	'renameuserold' => 'தற்போதைய பயனர் பெயர்:',
+	'renameusernew' => 'புதிய பயனர் பெயர்:',
+	'renameuserreason' => 'மறுபெயருக்கான காரணம்:',
 	'renameuserwarnings' => 'எச்சரிக்கை:',
 	'renameusersubmit' => 'சமர்ப்பி',
 );
