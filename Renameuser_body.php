@@ -563,7 +563,7 @@ class RenameuserSQL {
 					}
 				}
 				// FIXME: this commits per 50 rows, so when this times out
-				// (which id does) the DB will be in a half-assed state...
+				// (which it does) the DB will be in a half-assed state...
 				Job::batchInsert( $jobs );
 			}
 			$dbw->freeResult( $res );
