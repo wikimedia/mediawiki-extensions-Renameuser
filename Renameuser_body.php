@@ -425,13 +425,14 @@ class RenameuserSQL {
 	 * Do the rename operation
 	 */
 	function rename() {
-		global $wgMemc, $wgAuth;
+		global $wgMemc, $wgAuth, $wgUpdateRowsPerJob;
 
 		wfProfileIn( __METHOD__ );
 
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->begin();
 		wfRunHooks( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
 
-		$dbw = wfGetDB( DB_MASTER );
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
 		// being renamed, which leaves edits at the old name.
@@ -450,7 +451,6 @@ class RenameuserSQL {
 		$authUser->resetAuthToken();
 
 		// Delete from memcached.
-		global $wgMemc;
 		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
 
 		// Update ipblock list if this user has a block in there.
@@ -486,6 +486,7 @@ class RenameuserSQL {
 			wfRestoreWarnings();
 		}
 		
+		$jobs = array(); // jobs for all tables
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she
 		// must be careful to wait until the rename finishes before
@@ -505,11 +506,6 @@ class RenameuserSQL {
 				array( 'ORDER BY' => "$timestampC ASC" )
 			);
 
-			global $wgUpdateRowsPerJob;
-
-			$batchSize = 500; // Lets not flood the job table!
-			$jobSize = $wgUpdateRowsPerJob; // How many rows per job?
-
 			$jobParams = array();
 			$jobParams['table'] = $table;
 			$jobParams['column'] = $userTextC;
@@ -523,59 +519,45 @@ class RenameuserSQL {
 			$jobParams['maxTimestamp'] = '0';
 			$jobParams['count'] = 0;
 
-			// Insert into queue!
-			$jobRows = 0;
-			$done = false;
-			while ( !$done ) {
-				$jobs = array();
-				for ( $i = 0; $i < $batchSize; $i++ ) {
-					$row = $dbw->fetchObject( $res );
-					if ( !$row ) {
-						# If there are any job rows left, add it to the queue as one job
-						if ( $jobRows > 0 ) {
-							$jobParams['count'] = $jobRows;
-							$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
-							$jobParams['minTimestamp'] = '0';
-							$jobParams['maxTimestamp'] = '0';
-							$jobParams['count'] = 0;
-							$jobRows = 0;
-						}
-						$done = true;
-						break;
-					}
-					# If we are adding the first item, since the ORDER BY is ASC, set
-					# the min timestamp
-					if ( $jobRows == 0 ) {
-						$jobParams['minTimestamp'] = $row->$timestampC;
-					}
-					# Keep updating the last timestamp, so it should be correct when the last item is added.
-					$jobParams['maxTimestamp'] = $row->$timestampC;
-					# Update nice counter
-					$jobRows++;
-					# Once a job has $jobSize rows, add it to the queue
-					if ( $jobRows >= $jobSize ) {
-						$jobParams['count'] = $jobRows;
+			// Insert jobs into queue!
+			while ( true ) {
+				$row = $dbw->fetchObject( $res );
+				if ( !$row ) {
+					# If there are any job rows left, add it to the queue as one job
+					if ( $jobParams['count'] > 0 ) {
 						$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
-						$jobParams['minTimestamp'] = '0';
-						$jobParams['maxTimestamp'] = '0';
-						$jobParams['count'] = 0;
-						$jobRows = 0;
 					}
+					break;
 				}
-				// FIXME: this commits per 50 rows, so when this times out
-				// (which it does) the DB will be in a half-assed state...
-				Job::batchInsert( $jobs );
+				# Since the ORDER BY is ASC, set the min timestamp with first row
+				if ( $jobParams['count'] == 0 ) {
+					$jobParams['minTimestamp'] = $row->$timestampC;
+				}
+				# Keep updating the last timestamp, so it should be correct
+				# when the last item is added.
+				$jobParams['maxTimestamp'] = $row->$timestampC;
+				# Update row counter
+				$jobParams['count']++;
+				# Once a job has $wgUpdateRowsPerJob rows, add it to the queue
+				if ( $jobParams['count'] >= $wgUpdateRowsPerJob ) {
+					$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
+					$jobParams['minTimestamp'] = '0';
+					$jobParams['maxTimestamp'] = '0';
+					$jobParams['count'] = 0;
+				}
 			}
 			$dbw->freeResult( $res );
 		}
+		// @FIXME: batchInsert() commits per 50 jobs,
+		// which sucks if the DB is rolled-back...
+		if ( count( $jobs ) > 0 ) {
+			Job::batchInsert( $jobs );
+		}
 
-		// Commit the transaction
-		// FIXME: this line is misleading and nearly totally
-		// useless if the jobqueue was used for any of the tables...
+		// Commit the transaction (though batchInsert() above commits)
 		$dbw->commit();
 
 		// Delete from memcached again to make sure
-		global $wgMemc;
 		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
 
 		// Clear caches and inform authentication plugins
