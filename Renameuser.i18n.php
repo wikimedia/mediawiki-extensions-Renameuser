@@ -920,6 +920,7 @@ Jen la protokolo pri renomigado por via referenco.',
  * @author Icvav
  * @author Jatrobat
  * @author Lin linao
+ * @author Locos epraix
  * @author Remember the dot
  * @author Sanbec
  * @author Spacebirdy
@@ -934,6 +935,7 @@ $messages['es'] = array(
 	'renameusernew' => 'Nuevo nombre de usuario:',
 	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Trasladar las páginas de usuario y de discusión (y sus subpáginas) al nuevo nombre',
+	'renameusersuppress' => 'No crear redirecciones al nuevo nombre',
 	'renameuserreserve' => 'Bloquea el antiguo nombre de usuario para evitar usarlo en el futuro',
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => 'Sí, renombrar el usuario',
@@ -2604,6 +2606,7 @@ $messages['no'] = array(
 	'renameusernew' => 'Nytt brukernavn:',
 	'renameuserreason' => 'Årsak for omdøping:',
 	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameusersuppress' => 'Ikke opprett omdirigeringer til det nye navnet',
 	'renameuserreserve' => 'Blokker det gamle brukernavnet fra framtidig bruk',
 	'renameuserwarnings' => 'Advarsler:',
 	'renameuserconfirm' => 'Ja, døp om brukeren',
@@ -3484,6 +3487,7 @@ $messages['ta'] = array(
 	'renameusernew' => 'புதிய பயனர் பெயர்:',
 	'renameuserreason' => 'மறுபெயருக்கான காரணம்:',
 	'renameuserwarnings' => 'எச்சரிக்கை:',
+	'renameuserconfirm' => 'சரி, பயனருக்கு மாற்றுப்பெயர் கொடுக்கவும்',
 	'renameusersubmit' => 'சமர்ப்பி',
 );
 
