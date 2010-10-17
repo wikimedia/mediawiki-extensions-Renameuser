@@ -1346,6 +1346,7 @@ S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
 /** Hebrew (עברית)
  * @author Amire80
  * @author Rotem Liss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'renameuser' => 'שינוי שם משתמש',
@@ -1356,6 +1357,7 @@ $messages['he'] = array(
 	'renameusernew' => 'שם משתמש חדש:',
 	'renameuserreason' => 'סיבה לשינוי השם:',
 	'renameusermove' => 'העברת דפי המשתמש והשיחה (כולל דפי המשנה שלהם) לשם החדש',
+	'renameusersuppress' => 'לא ליצור הפניות לשם החדש',
 	'renameuserreserve' => 'חסימת שם המשתמש הישן לשימוש נוסף',
 	'renameuserwarnings' => 'אזהרות:',
 	'renameuserconfirm' => 'כן, שנה את שם המשתמש',
@@ -3093,6 +3095,9 @@ $messages['rue'] = array(
 	'renameuserwarnings' => 'Варованя:',
 	'renameuserconfirm' => 'Гей, переменовати хоснователя',
 	'renameusersubmit' => 'Выконати',
+	'renameusererrordoesnotexist' => 'Хоснователь з іменом „<nowiki>$1</nowiki>“ не єствує',
+	'renameusererrorexists' => 'Хоснователь з іменом „<nowiki>$1</nowiki>“ уж єствує',
+	'renameusererrorinvalid' => 'Хоснователське імя „<nowiki>$1</nowiki>“ ся не дасть хосновати',
 	'right-renameuser' => 'Переменованя хоснователїв',
 );
 
@@ -3436,6 +3441,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author Cohan
  * @author Dafer45
  * @author Habj
  * @author Lejonel
@@ -3452,6 +3458,7 @@ $messages['sv'] = array(
 	'renameusernew' => 'Nytt användarnamn:',
 	'renameuserreason' => 'Anledning till namnbytet:',
 	'renameusermove' => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
+	'renameusersuppress' => 'Skapa inte omdirigeringar till det nya namnet',
 	'renameuserreserve' => 'Reservera det gamla användarnamnet från framtida användning',
 	'renameuserwarnings' => 'Varningar:',
 	'renameuserconfirm' => 'Ja, byt namn på användaren',
