@@ -1706,6 +1706,7 @@ $messages['is'] = array(
  * @author Darth Kule
  * @author Gianfranco
  * @author HalphaZ
+ * @author Melos
  * @author Nemo bis
  */
 $messages['it'] = array(
@@ -1717,6 +1718,7 @@ $messages['it'] = array(
 	'renameusernew' => 'Nuovo nome utente:',
 	'renameuserreason' => 'Motivo del cambio nome:',
 	'renameusermove' => 'Rinomina anche la pagina utente, la pagina di discussione e le relative sottopagine',
+	'renameusersuppress' => 'Non creare redirect al nuovo nome',
 	'renameuserreserve' => "Impedisci l'utilizzo del vecchio nome in futuro",
 	'renameuserwarnings' => 'Avvisi:',
 	'renameuserconfirm' => 'Sì, rinomina questo utente',
