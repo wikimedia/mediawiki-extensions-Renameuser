@@ -969,7 +969,7 @@ El registro de cambios de nombre de usuario se provee abajo para referencia.',
  * @author WikedKentaur
  */
 $messages['et'] = array(
-	'renameuser' => 'Muuda kasutajanime',
+	'renameuser' => 'Kasutajanime muutmine',
 	'renameuser-desc' => "Lisab kasutajanime muutmise [[Special:Renameuser|erilehekülje]] (vajab ''renameuser''-õigust).",
 	'renameuserold' => 'Praegune kasutajanimi:',
 	'renameusernew' => 'Uus kasutajanimi:',
@@ -4020,6 +4020,14 @@ $messages['yi'] = array(
 	'right-renameuser' => 'בײַטן באַניצער נעמען',
 	'renameuser-renamed-notice' => 'דער נאָמען פֿון דעם באַניצער איז געענדערט געווארן.
 דער ענדערן נעמען לאגבוך ווערט געוויזן אונטן.',
+);
+
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'renameuserlogentry' => 'ṣàtúnsọlórúkọ $1 sí $2',
+	'renameuser-log' => '{{PLURAL:$1|Àtúnṣe 1|Àwọn àtúnṣe $1}}. Ìdíẹ̀: $2',
 );
 
 /** Cantonese (粵語) */
