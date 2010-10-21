@@ -1176,6 +1176,7 @@ $messages['frp'] = array(
 	'renameusernew' => 'Novél nom a l’utilisator :',
 	'renameuserreason' => 'Rêson du changement de nom :',
 	'renameusermove' => 'Renomar totes les pâges a l’utilisator vers lo novél nom',
+	'renameusersuppress' => 'Pas fâre de redirèccion vers lo novél nom',
 	'renameuserreserve' => 'Resèrvar lo viely nom por un usâjo a vegnir',
 	'renameuserwarnings' => 'Avèrtissements :',
 	'renameuserconfirm' => 'Ouè, renomar l’utilisator',
@@ -2238,15 +2239,25 @@ Prašome eiti atgal ir bandyti iš naujo.',
 );
 
 /** Latvian (Latviešu)
+ * @author Papuass
  * @author Xil
  */
 $messages['lv'] = array(
+	'renameuser' => 'Pārsaukt lietotāju',
+	'renameuser-linkoncontribs' => 'pārsaukt lietotāju',
+	'renameuser-linkoncontribs-text' => 'Pārsaukt šo lietotāju',
+	'renameuserold' => 'Pašreizējais lietotāja vārds:',
+	'renameusernew' => 'Jaunais lietotāja vārds:',
+	'renameuserreason' => 'Pārsaukšanas iemesls:',
+	'renameuserreserve' => 'Bloķēt veco lietotājvārdu no turpmākas izmantošanas',
 	'renameuserwarnings' => 'Brīdinājumi:',
 	'renameuserconfirm' => 'Jā, pārdēvēt lietotāju',
+	'renameusersubmit' => 'Iesniegt',
 	'renameusererrorexists' => 'Lietotājs "<nowiki>$1</nowiki>" jau ir.',
 	'renameusersuccess' => 'Lietotājs "<nowiki>$1</nowiki>" pārdēvēts par "<nowiki>$2</nowiki>".',
 	'renameuserlogpage' => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
+	'right-renameuser' => 'Pārsaukt lietotājus',
 );
 
 /** Malagasy (Malagasy)
@@ -3219,9 +3230,12 @@ $messages['si'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Jkjk
  */
 $messages['sk'] = array(
 	'renameuser' => 'Premenovať používateľa',
+	'renameuser-linkoncontribs' => 'premenovať používateľa',
+	'renameuser-linkoncontribs-text' => 'Premenovať tohto používateľa',
 	'renameuser-desc' => "Premenovať používateľa (vyžaduje právo ''renameuser'')",
 	'renameuserold' => 'Súčasné používateľské meno:',
 	'renameusernew' => 'Nové používateľské meno:',
@@ -4026,6 +4040,7 @@ $messages['yi'] = array(
  * @author Demmy
  */
 $messages['yo'] = array(
+	'renameusernew' => 'Orúkọ oníṣe tuntun:',
 	'renameuserlogentry' => 'ṣàtúnsọlórúkọ $1 sí $2',
 	'renameuser-log' => '{{PLURAL:$1|Àtúnṣe 1|Àwọn àtúnṣe $1}}. Ìdíẹ̀: $2',
 );
