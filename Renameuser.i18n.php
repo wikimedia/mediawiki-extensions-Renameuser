@@ -3241,6 +3241,7 @@ $messages['sk'] = array(
 	'renameusernew' => 'Nové používateľské meno:',
 	'renameuserreason' => 'Dôvod premenovania:',
 	'renameusermove' => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
+	'renameusersuppress' => 'Nevytvárať presmerovania na nový názov',
 	'renameuserreserve' => 'Vyhradiť staré používateľské meno (zabrániť ďalšiemu použitiu)',
 	'renameuserwarnings' => 'Upozornenia:',
 	'renameuserconfirm' => 'Áno, premenovať používateľa',
@@ -3689,11 +3690,14 @@ $messages['th'] = array(
  */
 $messages['tk'] = array(
 	'renameuser' => 'Ulanyjy adyny üýtget',
+	'renameuser-linkoncontribs' => 'ulanyjy adyny üýtget',
+	'renameuser-linkoncontribs-text' => 'Bu ulanyjynyň adyny üýtget',
 	'renameuser-desc' => "Ulanyjyny täzeden atlandyrmak üçin [[Special:Renameuser|ýörite sahypa]] goşýar (''ulanyjynytäzedenatlandyr'' hukugy gerek)",
 	'renameuserold' => 'Häzirki ulanyjy ady:',
 	'renameusernew' => 'Täze ulanyjy ady:',
 	'renameuserreason' => 'At üýtgetmegiň sebäbi:',
 	'renameusermove' => 'Ulanyjy we pikir alyşma sahypalaryny (we kiçi sahypalaryny) täze ada geçir',
+	'renameusersuppress' => 'Täze ada gönükdirmeler döretme',
 	'renameuserreserve' => 'Köne ulanyjy adyny indi ulanylmakdan blokirle',
 	'renameuserwarnings' => 'Duýduryşlar:',
 	'renameuserconfirm' => 'Hawa, ulanyjynyň adyny üýtget',
@@ -4040,7 +4044,11 @@ $messages['yi'] = array(
  * @author Demmy
  */
 $messages['yo'] = array(
+	'renameuserold' => 'Orúkọ oníṣe ìsinsìnyí:',
 	'renameusernew' => 'Orúkọ oníṣe tuntun:',
+	'renameuserwarnings' => 'Àwọn ìkìlọ̀:',
+	'renameusererrordoesnotexist' => 'Oníṣe "<nowiki>$1</nowiki>" kò sí.',
+	'renameusererrorexists' => 'Oníṣe "<nowiki>$1</nowiki>" tilẹ̀ wà tẹ́lẹ̀.',
 	'renameuserlogentry' => 'ṣàtúnsọlórúkọ $1 sí $2',
 	'renameuser-log' => '{{PLURAL:$1|Àtúnṣe 1|Àwọn àtúnṣe $1}}. Ìdíẹ̀: $2',
 );
