@@ -268,7 +268,7 @@ $messages['ast'] = array(
 /** Samogitian (Žemaitėška)
  * @author Hugo.arg
  */
-$messages['bat-smg'] = array(
+$messages['sgs'] = array(
 	'renameuserold' => 'Esams nauduotuojė vards:',
 	'renameusernew' => 'Naus nauduotuojė vards:',
 	'renameusersuccess' => 'Nauduotuos "<nowiki>$1</nowiki>" bova parvadėnts i "<nowiki>$2</nowiki>".',
