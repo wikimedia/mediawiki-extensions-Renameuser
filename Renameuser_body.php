@@ -500,7 +500,7 @@ class RenameuserSQL {
 			$timestampC = $params[2]; // some *_timestamp column
 
 			$res = $dbw->select( $table,
-				array( $userTextC, $timestampC ),
+				array( $timestampC ),
 				array( $userTextC => $this->old, $userIDC => $this->uid ),
 				__METHOD__,
 				array( 'ORDER BY' => "$timestampC ASC" )
