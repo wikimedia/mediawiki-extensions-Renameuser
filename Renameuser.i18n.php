@@ -265,15 +265,6 @@ $messages['ast'] = array(
 	'right-renameuser' => 'Renomar usuarios',
 );
 
-/** Samogitian (Žemaitėška)
- * @author Hugo.arg
- */
-$messages['sgs'] = array(
-	'renameuserold' => 'Esams nauduotuojė vards:',
-	'renameusernew' => 'Naus nauduotuojė vards:',
-	'renameusersuccess' => 'Nauduotuos "<nowiki>$1</nowiki>" bova parvadėnts i "<nowiki>$2</nowiki>".',
-);
-
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
@@ -362,9 +353,12 @@ $messages['be-tarask'] = array(
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
+ * @author Turin
  */
 $messages['bg'] = array(
 	'renameuser' => 'Преименуване на потребител',
+	'renameuser-linkoncontribs' => 'преименуване на потребител',
+	'renameuser-linkoncontribs-text' => 'Преименуване на този потребител',
 	'renameuser-desc' => 'Добавя възможност за преименуване на потребители',
 	'renameuserold' => 'Текущо потребителско име:',
 	'renameusernew' => 'Ново потребителско име:',
@@ -2299,7 +2293,7 @@ $messages['mk'] = array(
 	'renameusersubmit' => 'Внеси',
 	'renameusererrordoesnotexist' => 'Корисникот "<nowiki>$1</nowiki>" не постои',
 	'renameusererrorexists' => 'Корисникот "<nowiki>$1</nowiki>" веќе постои',
-	'renameusererrorinvalid' => 'Корисничкото име "<nowiki>$1</nowiki>" не е валидно',
+	'renameusererrorinvalid' => 'Корисничкото име „<nowiki>$1</nowiki>“ не е важечко.',
 	'renameusererrortoomany' => 'Корисникот „<nowiki>$1</nowiki>“ има $2 {{PLURAL:$2|придонес|придонеси}}. Преименувањето на корисници со повеќе од $3 {{PLURAL:$3|придонес|придонеси}} може негативно да влијае врз работата на викито.',
 	'renameuser-error-request' => 'Се јави проблем при примањето на барањето.
 Вратете се и обидете се повторно.',
@@ -2354,6 +2348,13 @@ $messages['ml'] = array(
 	'right-renameuser' => 'ഉപയോക്തൃ പുനർനാമകരണം',
 	'renameuser-renamed-notice' => 'ഈ ഉപയോക്താവിനെ പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.
 പുനർനാമകരണ രേഖ അവലംബമായി പരിശോധിക്കാനായി താഴെ കൊടുത്തിരിക്കുന്നു.',
+);
+
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'renameusersubmit' => 'Явуулах',
 );
 
 /** Marathi (मराठी)
@@ -3134,11 +3135,14 @@ $messages['rue'] = array(
  */
 $messages['sah'] = array(
 	'renameuser' => 'Кыттааччы аатын уларыт',
+	'renameuser-linkoncontribs' => 'кыттааччы аатын уларытыы',
+	'renameuser-linkoncontribs-text' => 'Бу кыттааччы аатын уларыт',
 	'renameuser-desc' => "Кыттааччы аатын уларытыы (''renameuser'' бырааба наада)",
 	'renameuserold' => 'Билиҥҥи аата:',
 	'renameusernew' => 'Саҥа аата:',
 	'renameuserreason' => 'Аатын уларыппыт төрүөтэ:',
 	'renameusermove' => 'Кыттааччы аатын кытта кэпсэтэр сирин, уонна атын сирэйдэрин ааттарын уларыт',
+	'renameusersuppress' => 'Саҥа аакка утаарыылары оҥорума',
 	'renameuserreserve' => 'Кыттааччы урукку аатын кэлин туттарга анаан хааллар',
 	'renameuserwarnings' => 'Сэрэтиилэр:',
 	'renameuserconfirm' => 'Сөп, аатын уларыт',
@@ -3201,6 +3205,15 @@ $messages['scn'] = array(
 	'renameuser-log' => 'Ca havi {{PLURAL:$1|nu cuntribbutu|$1 cuntribbuti}}. Mutivu: $2',
 	'renameuser-move-log' => 'Spustamentu autumàticu dâ pàggina - utenti ri-numinatu di "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => "Ri-nòmina l'utenti",
+);
+
+/** Samogitian (Žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['sgs'] = array(
+	'renameuserold' => 'Esams nauduotuojė vards:',
+	'renameusernew' => 'Naus nauduotuojė vards:',
+	'renameusersuccess' => 'Nauduotuos "<nowiki>$1</nowiki>" bova parvadėnts i "<nowiki>$2</nowiki>".',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
