@@ -265,6 +265,44 @@ $messages['ast'] = array(
 	'right-renameuser' => 'Renomar usuarios',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'renameuser' => 'Ҡатнашыусының исемен үҙгәртергә',
+	'renameuser-linkoncontribs' => 'ҡатнашыусының исемен үҙгәртергә',
+	'renameuser-linkoncontribs-text' => 'Был ҡатнашыусының исемен үҙгәртергә',
+	'renameuser-desc' => "Ҡатнашыусы исемен үҙгәртеү өсөн [[Special:Renameuser|махсус бит]] өҫтәй (''renameuser'' хоҡуғы кәрәк)",
+	'renameuserold' => 'Хәҙерге исеме:',
+	'renameusernew' => 'Яңы исеме:',
+	'renameuserreason' => 'Исемен үҙгәртеү сәбәбе:',
+	'renameusermove' => 'Шулай уҡ ҡатнашыусы битенең, фекер алышыу битенең (һәм уларҙың эске биттәренең) исемен үҙгәртергә',
+	'renameusersuppress' => 'Яңы исемгә йүнәлтеүҙәр булдырмаҫҡа',
+	'renameuserreserve' => 'Ҡатнашыусының элекке исемен киләсәктә ҡулланыу өсөн һаҡларға',
+	'renameuserwarnings' => 'Киҫәтеүҙәр:',
+	'renameuserconfirm' => 'Эйе, ҡатнашыусының исемен үҙгәртергә',
+	'renameusersubmit' => 'Һаҡларға',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" исемле ҡатнашыусы теркәлмәгән.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" исемле ҡатнашыусы теркәлгән инде.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ҡатнашыусы исеме дөрөҫ түгел.',
+	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" ҡатнашыусыһы $2 {{PLURAL:$2|өлөш}} индергән, $3 үҙгәртеүҙән күберәк өлөш индергән ҡатнашыусының исемен үҙгәртеү сайттың эшмәкәрлегенә кире йоғонто яһауы мөмкин.',
+	'renameuser-error-request' => 'Һорауҙы алыу менән ҡыйынлыҡтар тыуҙы.
+Зинһар, кире ҡайтығыҙ һәм яңынан ҡабатлап ҡарағыҙ.',
+	'renameuser-error-same-user' => 'Һеҙ ҡатнашыусы исемен шул уҡ исемгә үҙгәртә алмайһығыҙ.',
+	'renameusersuccess' => '"<nowiki>$1</nowiki>" ҡатнашыусыһының исеме "<nowiki>$2</nowiki>" исеменә үҙгәртелде.',
+	'renameuser-page-exists' => '$1 бите бар инде һәм уның өҫтөнә автоматик рәүештә яҙҙырыу мөмкин түгел.',
+	'renameuser-page-moved' => '$1 битенең исеме $2 тип үҙгәртелде.',
+	'renameuser-page-unmoved' => '$1 битенең исеме $2 тип үҙгәртелә алмай.',
+	'renameuserlogpage' => 'Ҡатнашыусы исемдәрен үҙгәртеү яҙмалары журналы',
+	'renameuserlogpagetext' => 'Был — ҡатнашыусы исемдәрен үҙгәртеү яҙмлары журналы',
+	'renameuserlogentry' => '$1 ҡатнашыусыһын "$2" тип үҙгәрткән',
+	'renameuser-log' => '$1 {{PLURAL:$1|үҙгәртеү}}. Сәбәбе: $2',
+	'renameuser-move-log' => 'Биттең исеме "[[User:$1|$1]]" ҡатнашыусыһының исемен "[[User:$2|$2]]" тип үҙгәртеү сәбәпле үҙенән-үҙе үҙгәргән',
+	'right-renameuser' => 'Ҡатнашыусыларҙың исемен үҙгәртеү',
+	'renameuser-renamed-notice' => 'Был ҡатнашыусының исеме үҙгәртелгән.
+Түбәндә белешмә өсөн исем үҙгәртеү яҙмалары журналы килтерелгән.',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
@@ -1273,16 +1311,16 @@ $messages['gl'] = array(
 	'renameuserconfirm' => 'Si, renomear este usuario',
 	'renameusersubmit' => 'Enviar',
 	'renameusererrordoesnotexist' => 'O usuario "<nowiki>$1</nowiki>" non existe.',
-	'renameusererrorexists' => 'O usuario "<nowiki>$1</nowiki>"  xa existe.',
+	'renameusererrorexists' => 'O usuario "<nowiki>$1</nowiki>" xa existe.',
 	'renameusererrorinvalid' => 'O nome de usuario "<nowiki>$1</nowiki>" non é válido.',
 	'renameusererrortoomany' => 'O usuario "<nowiki>$1</nowiki>" ten {{PLURAL:$2|unha contribución|$2 contribucións}}; mudar o nome dun usuario con máis {{PLURAL:$3|dunha contribución|de $3 contribucións}} podería afectar negativamente ao rendemento do sitio.',
-	'renameuser-error-request' => 'Houbo un problema coa recepción da solitidude.
+	'renameuser-error-request' => 'Houbo un problema coa recepción da solicitude.
 Volva atrás e inténteo de novo.',
-	'renameuser-error-same-user' => 'Non pode mudar o nome dun usuario co mesmo nome que tiña antes.',
+	'renameuser-error-same-user' => 'Non pode mudar o nome dun usuario ao mesmo nome que tiña antes.',
 	'renameusersuccess' => 'O nome de usuario de "<nowiki>$1</nowiki>" cambiou a "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'A páxina "$1" xa existe e non pode ser sobrescrita automaticamente.',
-	'renameuser-page-moved' => 'A páxina $1 foi movida a $2.',
-	'renameuser-page-unmoved' => 'A páxina $1 non pode ser movida a $2.',
+	'renameuser-page-moved' => 'A páxina "$1" foi movida a "$2".',
+	'renameuser-page-unmoved' => 'A páxina "$1" non pode ser movida a "$2".',
 	'renameuserlogpage' => 'Rexistro de cambios de nome de usuario',
 	'renameuserlogpagetext' => 'Este é un rexistro dos cambios nos nomes de usuario.',
 	'renameuserlogentry' => 'mudou o nome de "$1" a "$2"',
