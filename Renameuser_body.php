@@ -160,7 +160,7 @@ class SpecialRenameuser extends SpecialPage {
 			</tr>" .
 			Xml::closeElement( 'table' ) .
 			Xml::closeElement( 'fieldset' ) .
-			Xml::hidden( 'token', $token ) .
+			Html::hidden( 'token', $token ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
 
