@@ -311,7 +311,7 @@ class SpecialRenameuser extends SpecialPage {
 
 			$output = '';
 			$skin = $wgUser->getSkin();
-			while ( $row = $dbr->fetchObject( $pages ) ) {
+			foreach ( $pages as $row ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
 					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
