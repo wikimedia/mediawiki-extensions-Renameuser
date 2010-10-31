@@ -47,7 +47,7 @@ $specialPageAliases['cs'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'Renameuser' => array( 'Benutzer umbenennen' ),
+	'Renameuser' => array( 'Benutzer_umbenennen' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
@@ -72,12 +72,12 @@ $specialPageAliases['eo'] = array(
 
 /** Spanish (Español) */
 $specialPageAliases['es'] = array(
-	'Renameuser' => array( 'Cambiar_el_nombre_de_usuario', 'Renombrar_usuario', 'Cambiar_nombre_usuario' ),
+	'Renameuser' => array( 'RenombrarUsuario', 'Renombrar_usuario', 'Cambiar_el_nombre_de_usuario' ),
 );
 
 /** Finnish (Suomi) */
 $specialPageAliases['fi'] = array(
-	'Renameuser' => array( 'Käyttäjätunnusten nimeäminen' ),
+	'Renameuser' => array( 'Käyttäjätunnusten_nimeäminen' ),
 );
 
 /** French (Français) */
@@ -127,7 +127,7 @@ $specialPageAliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $specialPageAliases['ia'] = array(
-	'Renameuser' => array( 'Renominar usator' ),
+	'Renameuser' => array( 'Renominar_usator' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
