@@ -2216,6 +2216,7 @@ $messages['li'] = array(
 	'renameusernew' => 'Nuje gebroekersnaam:',
 	'renameuserreason' => 'Ree veur hernömme:',
 	'renameusermove' => "De gebroekerspazjena en euverlèkpazjena (en eventueel subpazjena's) hernömmme nao de nuje gebroekersnaam",
+	'renameusersuppress' => 'Maak gein redireks nao de nuje naam',
 	'renameuserreserve' => 'Veurkómme det de aaje gebroeker opnuuj wörd geregistreerd',
 	'renameuserwarnings' => 'Waarschuwinge:',
 	'renameuserconfirm' => 'Jao, hernaam gebroeker',
