@@ -844,6 +844,7 @@ $messages['dsb'] = array(
 	'renameusernew' => 'Nowe wužywarske mě:',
 	'renameuserreason' => 'Pśicyna za pśemjenjenje',
 	'renameusermove' => 'Wužywarski a diskusijny bok (a jich pódboki) do nowego mjenja pśesunuś',
+	'renameusersuppress' => 'Dalejpósrědnjenja k nowemu mjenjoju njenapóraś',
 	'renameuserreserve' => 'Stare wužywarske mě pśeśiwo pśichodnemu wužywanjeju blokěrowaś',
 	'renameuserwarnings' => 'Warnowanja:',
 	'renameuserconfirm' => 'Jo, wužywarja pśemjeniś',
