@@ -2055,6 +2055,7 @@ $messages['ko'] = array(
 	'renameusernew' => '새 이름:',
 	'renameuserreason' => '바꾸는 이유:',
 	'renameusermove' => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
+	'renameusersuppress' => '새 이름으로 넘겨주기를 생성하지 않기',
 	'renameuserreserve' => '나중에 이전의 이름이 사용되지 않도록 차단하기',
 	'renameuserwarnings' => '경고:',
 	'renameuserconfirm' => '예, 이름을 변경합니다.',
