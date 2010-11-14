@@ -690,6 +690,7 @@ $messages['cy'] = array(
 	'renameusernew' => "Enw newydd i'r defnyddiwr:",
 	'renameuserreason' => 'Y rheswm dros ail-enwi:',
 	'renameusermove' => "Symud y tudalennau defnyddiwr a sgwrs (ac unrhyw is-dudalennau) i'r enw newydd",
+	'renameusersuppress' => "Peidiwch â gosod ailgyfeiriadau i'r enw newydd",
 	'renameuserreserve' => 'Atal yr hen enw defnyddiwr rhag cael ei ddefnyddio rhagor',
 	'renameuserwarnings' => 'Rhybuddion:',
 	'renameuserconfirm' => "Parhau gyda'r ail-enwi",
