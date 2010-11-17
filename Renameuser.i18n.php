@@ -2494,9 +2494,11 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'renameusernew' => 'Од лемесь:',
 	'renameuserreserve' => 'Озавтомс ташто совицянь лементь саймес, тевс илязо нолдаво седе тов',
 	'renameuserconfirm' => 'Истя, макст совицянтень од лем',
 	'renameusersubmit' => 'Максомс',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" совицясь арась.',
 );
 
 /** Nahuatl (Nāhuatl)
