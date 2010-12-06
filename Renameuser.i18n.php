@@ -541,6 +541,7 @@ Zapisnik preimenovanje je prikazan ispod kao referenca.',
 );
 
 /** Catalan (Català)
+ * @author El libre
  * @author Juanpabl
  * @author Paucabot
  * @author Qllach
@@ -550,11 +551,14 @@ Zapisnik preimenovanje je prikazan ispod kao referenca.',
  */
 $messages['ca'] = array(
 	'renameuser' => "Reanomena l'usuari",
+	'renameuser-linkoncontribs' => "Reanomena l'usuari/a",
+	'renameuser-linkoncontribs-text' => "Canvia el nom d'aquest usuari/a",
 	'renameuser-desc' => "Reanomena un usuari (necessita drets de ''renameuser'')",
 	'renameuserold' => "Nom d'usuari actual:",
 	'renameusernew' => "Nou nom d'usuari:",
 	'renameuserreason' => 'Motiu pel canvi:',
 	'renameusermove' => "Reanomena la pàgina d'usuari, la de discussió i les subpàgines que tingui al nou nom",
+	'renameusersuppress' => 'No creis redireccions cap al nou nom',
 	'renameuserreserve' => "Bloca el nom d'usuari antic d'usos futurs",
 	'renameuserwarnings' => 'Advertències:',
 	'renameuserconfirm' => "Sí, reanomena l'usuari",
