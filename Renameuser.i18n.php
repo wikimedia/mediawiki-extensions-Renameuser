@@ -3382,12 +3382,15 @@ $messages['sli'] = array(
 
 /** Albanian (Shqip)
  * @author Dori
+ * @author Mikullovci11
  */
 $messages['sq'] = array(
 	'renameuser' => 'Ndërrim përdoruesi',
 	'renameuserold' => 'Emri i tanishëm',
 	'renameusernew' => 'Emri i ri',
 	'renameusermove' => 'Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri',
+	'renameuserwarnings' => 'Paralajmërimet:',
+	'renameuserconfirm' => 'Po, ndërrojë emrin e përdoruesit',
 	'renameusersubmit' => 'Ndryshoje',
 	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
 	'renameusererrorexists' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
