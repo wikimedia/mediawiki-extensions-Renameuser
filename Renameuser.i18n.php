@@ -3386,6 +3386,7 @@ $messages['sli'] = array(
  */
 $messages['sq'] = array(
 	'renameuser' => 'Ndërrim përdoruesi',
+	'renameuser-linkoncontribs' => 'Ndërrim përdoruesi',
 	'renameuserold' => 'Emri i tanishëm',
 	'renameusernew' => 'Emri i ri',
 	'renameusermove' => 'Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri',
