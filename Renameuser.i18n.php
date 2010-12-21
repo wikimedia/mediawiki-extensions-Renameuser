@@ -3280,6 +3280,7 @@ $messages['sh'] = array(
 /** Sinhala (සිංහල)
  * @author Budhajeewa
  * @author නන්දිමිතුරු
+ * @author ශ්වෙත
  */
 $messages['si'] = array(
 	'renameuser' => 'පරිශීලකයා යළි-නම්කරන්න',
@@ -3297,7 +3298,7 @@ $messages['si'] = array(
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" පරිශීලකයා නොපවතී.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" පරිශීලකයා දැනටමත් පවතියි.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" පරිශීලක නාමය අනීතිකයි.',
-	'renameusererrortoomany' => '"<nowiki>$1</nowiki>" පරිශීලකයා දායකත්ව $2 ක් සිදුකොට ඇත. දායකත්ව $3 කට වඩා සිදුකොට ඇති පරිශීලකයෙකු ප්‍රතිනම් කිරිම අඩවියේ ක්‍රියාකාරීත්‍වයට අයහපත් ලෙස බලපෑ හැක.',
+	'renameusererrortoomany' => 'පරිශීලක "<nowiki>$1</nowiki>" විසින්   {{PLURAL:$2|එක් දායකත්වයකට|දායකත්ව $2 කට}} හිමිකම් කියන අතර, {{PLURAL:$3|එක් දායකත්වයකට|දායකත්ව$3 කට }} වඩා වැඩි ගණනකට හිමිකම් කියන පරිශීලකයෙකු යළි-නම්කිරීම අඩවියෙහි කාර්ය සාධනයට අහිතකර බලපෑම් ඇති කරනු ඇත.',
 	'renameuser-error-request' => 'ඉල්ලීම ලැබීමේ දෝෂයක් හට ගැනිනි.
 කරුණාකර ආපසු ගොස් නැවත උත්සාහ කරන්න.',
 	'renameuser-error-same-user' => 'ඔබට පරිශීලකයෙක් පෙර තිබූ නමටම ප්‍රතිනම්කළ නොහැක.',
@@ -3307,7 +3308,7 @@ $messages['si'] = array(
 	'renameuserlogpage' => 'පරිශීලක ප්‍රතිනම්කෙරුම් ලොගය',
 	'renameuserlogpagetext' => 'මෙය පරිශීලක නාම වෙනස්වීම් පිළිබඳ ලඝු-සටහනකි.',
 	'renameuserlogentry' => '$1, "$2" ලෙස ප්‍රතිනම් කෙරිනි',
-	'renameuser-log' => 'සංස්කරණ $1 කි. හේතුව: $2',
+	'renameuser-log' => '{{PLURAL:$1|එක් සංස්කරණයක්|සංස්කරණ $1 ක්}}. හේතුව: $2',
 	'renameuser-move-log' => 'පරිශීලක "[[User:$1|$1]]", "[[User:$2|$2]]" වෙත ප්‍රතිනම්කරන අතරතුර පිටුව ස්‍වයංක්‍රීයව ගෙනයන ලදී',
 	'right-renameuser' => 'පරිශීලකයන් ප්‍රතිනම් කරන්න',
 	'renameuser-renamed-notice' => 'මෙම පරිශීලකයා ප්‍රතිනම්කර ඇත.
