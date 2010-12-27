@@ -3279,6 +3279,7 @@ $messages['sh'] = array(
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author තඹරු විජේසේකර
  * @author නන්දිමිතුරු
  * @author ශ්වෙත
  */
@@ -3291,6 +3292,7 @@ $messages['si'] = array(
 	'renameusernew' => 'නව පරිශීලක නාමය:',
 	'renameuserreason' => 'යළි-නම්කිරීමට හේතුව:',
 	'renameusermove' => 'පරිශීලක හා සාකච්ඡා පිටු   (හා  ඒවායේ උපපිටු) නව නම වෙතට ගෙන යන්න',
+	'renameusersuppress' => 'යළි යොමුවන් නම නාමයේ සැකසීමෙන් වළකින්න.',
 	'renameuserreserve' => 'පැරණි පරිශීලක නම අනාගත භාවිතයෙන් වාරණය කරන්න',
 	'renameuserwarnings' => 'අවවාදයන්:',
 	'renameuserconfirm' => 'ඔව්, පරිශීලකයා යළි-නම්කරන්න',
