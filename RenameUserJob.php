@@ -22,18 +22,18 @@ class RenameUserJob extends Job {
 	public function run() {
 		$dbw = wfGetDB( DB_MASTER );
 
-	    $table = $this->params['table'];
-	    $column = $this->params['column'];
-	    $oldname = $this->params['oldname'];
-	    $userID = isset( $this->params['userID'] ) ? $this->params['userID'] : null;
-	    $uidColumn = isset( $this->params['uidColumn'] ) ? $this->params['uidColumn'] : null;
-	    $timestampColumn = isset( $this->params['timestampColumn'] ) ? $this->params['timestampColumn'] : null;
-	    $minTimestamp = $this->params['minTimestamp'];
-	    $maxTimestamp = $this->params['maxTimestamp'];
-	    $uniqueKey = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
-	    $keyId = $this->params['keyId'];
-	    $newname = $this->params['newname'];
-	    $count = $this->params['count'];
+		$table = $this->params['table'];
+		$column = $this->params['column'];
+		$oldname = $this->params['oldname'];
+		$userID = isset( $this->params['userID'] ) ? $this->params['userID'] : null;
+		$uidColumn = isset( $this->params['uidColumn'] ) ? $this->params['uidColumn'] : null;
+		$timestampColumn = isset( $this->params['timestampColumn'] ) ? $this->params['timestampColumn'] : null;
+		$minTimestamp = $this->params['minTimestamp'];
+		$maxTimestamp = $this->params['maxTimestamp'];
+		$uniqueKey = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
+		$keyId = $this->params['keyId'];
+		$newname = $this->params['newname'];
+		$count = $this->params['count'];
 
 		# Conditions like "*_user_text = 'x'
 		$conds = array( $column => $oldname );
