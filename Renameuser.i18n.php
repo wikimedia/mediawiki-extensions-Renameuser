@@ -4181,6 +4181,7 @@ $messages['yue'] = array(
  * @author Bencmq
  * @author Gaoxuewei
  * @author Gzdavidwong
+ * @author Hydra
  * @author Liangent
  */
 $messages['zh-hans'] = array(
@@ -4192,6 +4193,7 @@ $messages['zh-hans'] = array(
 	'renameusernew' => '新用户名:',
 	'renameuserreason' => '重命名的原因:',
 	'renameusermove' => '移动用户页及其对话页（包括各子页）到新的名字',
+	'renameusersuppress' => '不要创建重定向到新的名称',
 	'renameuserreserve' => '封禁旧用户名，使之不能在日后使用',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => '是，为用户重命名',
