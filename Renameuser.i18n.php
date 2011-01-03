@@ -879,6 +879,7 @@ Protokol pśemjenjowanjow jo dołojce ako referenca pódany.',
  * @author Badseed
  * @author Consta
  * @author Dead3y3
+ * @author Glavkos
  * @author Kiriakos
  * @author MF-Warburg
  * @author Omnipaedista
@@ -893,6 +894,7 @@ $messages['el'] = array(
 	'renameusernew' => 'Νέο όνομα χρήστη:',
 	'renameuserreason' => 'Λόγος μετονομασίας:',
 	'renameusermove' => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
+	'renameusersuppress' => 'Μην δημιουργείτε ανακατευθύνσεις στο νέο όνομα',
 	'renameuserreserve' => 'Φραγή του παλιού ονόματος χρήστη/χρήστριας από μελλοντική χρήση',
 	'renameuserwarnings' => 'Προειδοποιήσεις:',
 	'renameuserconfirm' => 'Ναι, μετονομάστε τον χρήστη',
@@ -3305,6 +3307,7 @@ $messages['si'] = array(
 කරුණාකර ආපසු ගොස් නැවත උත්සාහ කරන්න.',
 	'renameuser-error-same-user' => 'ඔබට පරිශීලකයෙක් පෙර තිබූ නමටම ප්‍රතිනම්කළ නොහැක.',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" පරිශීලකයා "<nowiki>$2</nowiki>" වෙත ප්‍රතිනම් කෙරිනි.',
+	'renameuser-page-exists' => '$1 පිටුව දැනටමත් පවතින අතර, එය ස්වයංක්‍රීයව අධිලිවීමකට භාජනය කල නොහැක.',
 	'renameuser-page-moved' => ' $1 පිටුව $2 වෙත ගෙනයන ලදි.',
 	'renameuser-page-unmoved' => ' $1 පිටුව  $2 වෙත ගෙනයා නොහැක.',
 	'renameuserlogpage' => 'පරිශීලක ප්‍රතිනම්කෙරුම් ලොගය',
