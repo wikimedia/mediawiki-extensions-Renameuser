@@ -2322,7 +2322,7 @@ $messages['mg'] = array(
 	'renameuserwarnings' => 'Fampitandremana :',
 	'renameuserconfirm' => 'Eny, soloy anarana ilay mpikambana',
 	'renameusersubmit' => 'Alefa',
-	'renameuserlogpage' => "Tatitr'asa momban'ny fanovana anaram-pikambana",
+	'renameuserlogpage' => 'Laogim-panovana anaram-pikambana',
 	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
