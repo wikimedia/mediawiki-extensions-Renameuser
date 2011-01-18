@@ -30,8 +30,8 @@ class RenameUserJob extends Job {
 		$timestampColumn = isset( $this->params['timestampColumn'] ) ? $this->params['timestampColumn'] : null;
 		$minTimestamp = $this->params['minTimestamp'];
 		$maxTimestamp = $this->params['maxTimestamp'];
-		$uniqueKey = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
-		$keyId = $this->params['keyId'];
+		$uniqueKey = isset( $this->params['uniqueKey'] ) ? $this->params['uniqueKey'] : null;
+		$keyId = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
 		$newname = $this->params['newname'];
 		$count = $this->params['count'];
 
