@@ -584,9 +584,12 @@ Torneu enrere i torneu-ho a intentar.",
 A continuació es proporciona el registre de reanomenaments per a més informació.",
 );
 
-/** Chechen (Нохчийн) */
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
 $messages['ce'] = array(
-	'renameuser' => 'Юзер цIе хийца',
+	'renameuser' => 'Декъашхон цlе хийца',
+	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
 );
 
 /** Sorani (کوردی) */
@@ -1796,6 +1799,7 @@ Il registro delle rinomine è riportato di seguito per informazione.',
  * @author Fryed-peach
  * @author Hosiryuhosi
  * @author Marine-Blue
+ * @author Ohgi
  * @author Suisui
  * @author 青子守歌
  */
@@ -1808,7 +1812,7 @@ $messages['ja'] = array(
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
 	'renameusermove' => '利用者ページと会話ページ(およびそれらのサブページ)を新しい名前に移動する',
-	'renameusersuppress' => '新しい名前への転送を作成しないでください',
+	'renameusersuppress' => '新しい名前へのリダイレクトを作成しないでください',
 	'renameuserreserve' => '旧利用者名の今後の使用をブロックする',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => 'はい、利用者名を変更します',
