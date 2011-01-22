@@ -270,7 +270,7 @@ $messages['ast'] = array(
 	'right-renameuser' => 'Renomar usuarios',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -351,7 +351,7 @@ $messages['bcl'] = array(
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -2804,7 +2804,7 @@ $messages['pdc'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 Ennering|$1 Enneringe}}. Grund: $2',
 );
 
-/** Pfälzisch (Pfälzisch)
+/** Pälzisch (Pälzisch)
  * @author SPS
  */
 $messages['pfl'] = array(
@@ -3438,7 +3438,7 @@ $messages['sq'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 redaktim|$1 redaktime}}. Arsyeja: $2',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -3477,7 +3477,7 @@ $messages['sr-ec'] = array(
 Историја промена имена је приложена испод, као информација.',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Liangent
  * @author Michaello
  * @author Жељко Тодоровић
@@ -4236,6 +4236,7 @@ $messages['zh-hans'] = array(
  * @author Gaoxuewei
  * @author Horacewai2
  * @author Mark85296341
+ * @author Waihorace
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
