@@ -2132,13 +2132,19 @@ Bes esu joot un versöök et noch ens.',
 Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin)) */
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
 $messages['ku-latn'] = array(
 	'renameuser' => 'Navî bikarhênerê biguherîne',
 	'renameuser-linkoncontribs' => 'navî bikarhênerê biguherîne',
+	'renameuser-linkoncontribs-text' => 'Navê vî bikarhênerî biguherîne',
 	'renameuserold' => 'Navî niha:',
 	'renameusernew' => 'Navî nuh:',
+	'renameuserreason' => 'Sedema ji bo navguhertinê:',
+	'renameuserconfirm' => 'Erê, navê vî bikarhênerî biguherîne',
 	'renameusersubmit' => 'Bike',
+	'renameusererrordoesnotexist' => 'Bikarhêner "<nowiki>$1</nowiki>" tune ye.',
 	'renameusersuccess' => 'Navî bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Rûpela $1 berê heye û ew nikane otomatîk were jêbirin.',
 	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
