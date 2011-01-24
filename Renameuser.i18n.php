@@ -2150,6 +2150,7 @@ $messages['ku-latn'] = array(
 	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
 	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
 	'renameuser-log' => 'yê $1 beşdarîyên xwe hebû. $2',
+	'right-renameuser' => 'Navê bikarhêneran biguherîne:',
 );
 
 /** Latin (Latina)
