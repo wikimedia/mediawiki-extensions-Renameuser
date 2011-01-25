@@ -2105,6 +2105,7 @@ $messages['ksh'] = array(
 	'renameusernew' => 'Dä neue Metmaacher-Name',
 	'renameuserreason' => 'Jrund för et Ömdäufe:',
 	'renameusermove' => 'De Metmaachersigg met Klaaf- un Ungersigge op dä neue Metmaacher-Name ömstelle',
+	'renameusersuppress' => 'Donn kein Ömleidung op dä neue Name aanlääje',
 	'renameuserreserve' => 'Donn dä Name fun dämm Metmaacher dobei sperre, dat_e nit norrens neu aanjemelldt weed.',
 	'renameuserwarnings' => 'Warnunge:',
 	'renameuserconfirm' => 'Jo, dunn dä Metmaacher ömbenenne un em singe Name ändere',
