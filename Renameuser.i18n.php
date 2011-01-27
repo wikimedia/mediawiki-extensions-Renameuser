@@ -789,7 +789,7 @@ $messages['de'] = array(
 	'renameuser-error-request' => 'Es gab ein Problem beim Empfang der Anfrage. Bitte nochmal versuchen.',
 	'renameuser-error-same-user' => 'Alter und neuer Benutzername sind identisch.',
 	'renameusersuccess' => 'Der Benutzer „<nowiki>$1</nowiki>“ wurde erfolgreich in „<nowiki>$2</nowiki>“ umbenannt.',
-	'renameuser-page-exists' => 'Die Seite $1 existiert bereits und kann nicht automatisch überschrieben werden.',
+	'renameuser-page-exists' => 'Die Seite „$1“ ist bereits vorhanden und kann nicht automatisch überschrieben werden.',
 	'renameuser-page-moved' => 'Die Seite $1 wurde nach $2 verschoben.',
 	'renameuser-page-unmoved' => 'Die Seite $1 konnte nicht nach $2 verschoben werden.',
 	'renameuserlogpage' => 'Benutzernamenänderungs-Logbuch',
@@ -3422,10 +3422,12 @@ $messages['sli'] = array(
  * @author Mikullovci11
  */
 $messages['sq'] = array(
-	'renameuser' => 'Ndërrim përdoruesi',
-	'renameuser-linkoncontribs' => 'Ndërrim përdoruesi',
+	'renameuser' => 'Riemëroje përdoruesin',
+	'renameuser-linkoncontribs' => 'Riemëroje përdoruesin',
+	'renameuser-linkoncontribs-text' => 'Riemëroje këtë përdoruesin',
 	'renameuserold' => 'Emri i tanishëm',
 	'renameusernew' => 'Emri i ri',
+	'renameuserreason' => 'Arsyeja për riemërim:',
 	'renameusermove' => 'Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri',
 	'renameuserwarnings' => 'Paralajmërimet:',
 	'renameuserconfirm' => 'Po, ndërrojë emrin e përdoruesit',
@@ -3437,7 +3439,9 @@ $messages['sq'] = array(
 	'renameusersuccess' => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
 	'renameuserlogpage' => 'Regjistri i emër-ndryshimeve',
 	'renameuserlogpagetext' => 'Ky është një regjistër i ndryshimeve së emrave të përdoruesve',
+	'renameuserlogentry' => 'riemëruar $1 tek "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktim|$1 redaktime}}. Arsyeja: $2',
+	'right-renameuser' => 'Riemëroni përdorueset',
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
