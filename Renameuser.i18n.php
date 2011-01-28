@@ -3446,6 +3446,7 @@ $messages['sq'] = array(
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -3457,27 +3458,29 @@ $messages['sr-ec'] = array(
 	'renameuser-desc' => "Додаје [[Special:Renameuser|посебну страницу]] за преименовање корисника (потребно право ''renameuser'').",
 	'renameuserold' => 'Тренутно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
-	'renameuserreason' => 'Разлог преименовања:',
-	'renameusermove' => 'Премести корисничку страницу и страницу за разговор (и њихове подстранице) на ново име',
+	'renameuserreason' => 'Разлог:',
+	'renameusermove' => 'Премести корисничку страницу и страницу за разговор (и њихове подстранице) на нови назив',
 	'renameuserreserve' => 'Блокирај старо корисничко име за даљу употребу',
 	'renameuserwarnings' => 'Упозорења:',
-	'renameuserconfirm' => 'Да, преименуј корисничко име.',
+	'renameuserconfirm' => 'Да, преименуј корисника',
 	'renameusersubmit' => 'Прихвати',
-	'renameusererrordoesnotexist' => 'Корисник "<nowiki>$1</nowiki>" не постоји',
-	'renameusererrorexists' => 'Корисник "<nowiki>$1</nowiki>" већ постоји',
+	'renameusererrordoesnotexist' => 'Корисник „<nowiki>$1</nowiki>“ не постоји.',
+	'renameusererrorexists' => 'Корисник „<nowiki>$1</nowiki>“ већ постоји.',
 	'renameusererrorinvalid' => 'Погрешно корисничко име: "<nowiki>$1</nowiki>"',
-	'renameusererrortoomany' => 'Корисник "<nowiki>$1</nowiki>" има $2 {{PLURAL:$2|прилог|прилога|прилога}}, преименовање корисника са више од $3 {{PLURAL:$3|прилог|прилога|прилога}} може да утиче на перформансе сајта.',
-	'renameuser-error-request' => 'Јавио се проблем приликом прихватања захтева. Иди назад и покушај поново.',
-	'renameuser-error-same-user' => 'Не можеш преименовати корисничко име у исто као и претходно.',
+	'renameusererrortoomany' => 'Корисник „<nowiki>$1</nowiki>“ има $2 {{PLURAL:$2|прилог|прилога|прилога}}. Преименовање корисника с више од $3 {{PLURAL:$3|прилог|прилога|прилога}} може да утиче на перформансе сајта.',
+	'renameuser-error-request' => 'Дошло је до проблема при примању захтева.
+Вратите се назад и покушајте поново.',
+	'renameuser-error-same-user' => 'Не можете преименовати корисника у исто име.',
 	'renameusersuccess' => 'Корисник "<nowiki>$1</nowiki>" је преименован на "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists' => 'Страница $1 већ постоји и не може бити аутоматски преснимљена.',
-	'renameuser-page-moved' => 'Страница $1 је премештена на $2.',
-	'renameuser-page-unmoved' => 'Страница $1 не може бити премештена на $2.',
+	'renameuser-page-exists' => 'Страница $1 већ постоји и не може се заменити.',
+	'renameuser-page-moved' => 'Страница $1 је премештена у $2.',
+	'renameuser-page-unmoved' => 'Страница $1 се не може преместити у $2.',
 	'renameuserlogpage' => 'Историја преименовања корисника',
-	'renameuserlogpagetext' => 'Ово је историја измена преименовања корисника',
-	'renameuserlogentry' => 'је преименовао $1 у „$2“',
-	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}. Разлог: $2',
-	'renameuser-move-log' => 'Аутоматски померене странице приликом преименовања корисничког имена: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
+	'renameuserlogpagetext' => 'Ово је историјат измена корисничких имена.',
+	'renameuserlogentry' => '{{GENDER:|је преименовао|је преименовала|преименова}} $1 у „$2“',
+	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}.
+Разлог: $2',
+	'renameuser-move-log' => 'Премештене странице приликом преименовања корисника: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
 	'right-renameuser' => 'преименовање корисничких имена',
 	'renameuser-renamed-notice' => 'Овом кориснику је промењено име.
 Историја промена имена је приложена испод, као информација.',
