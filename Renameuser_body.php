@@ -296,8 +296,7 @@ class SpecialRenameuser extends SpecialPage {
 				array( 'page_namespace', 'page_title' ),
 				array(
 					'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
-					'(page_title LIKE ' .
-						$dbr->addQuotes( $dbr->escapeLike( $oldusername->getDBkey() ) . '/%' ) .
+					'(page_title ' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() ) .
 						' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ) . ')'
 				),
 				__METHOD__
