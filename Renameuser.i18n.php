@@ -4205,9 +4205,10 @@ $messages['yue'] = array(
  * @author Gzdavidwong
  * @author Hydra
  * @author Liangent
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'renameuser' => '用户重命名',
+	'renameuser' => '更名用户',
 	'renameuser-linkoncontribs' => '用户重新命名',
 	'renameuser-linkoncontribs-text' => '重命名此用户',
 	'renameuser-desc' => "添加一个[[Special:Renameuser|特殊页面]]来重命名用户（需要''renameuser''权限）",
@@ -4236,7 +4237,7 @@ $messages['zh-hans'] = array(
 	'renameuserlogentry' => '已经把 $1 重命名为 "$2"',
 	'renameuser-log' => '拥有$1次编辑。 理由: $2',
 	'renameuser-move-log' => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
-	'right-renameuser' => '重新命名用户',
+	'right-renameuser' => '更名用户',
 	'renameuser-renamed-notice' => '该用户已被重新命名。
 以下列出更改用户名日志以供参考。',
 );
