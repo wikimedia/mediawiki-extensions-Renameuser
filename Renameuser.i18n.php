@@ -2010,7 +2010,7 @@ $messages['kk-latn'] = array(
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
-	'renameuser' => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
+	'renameuser' => 'ប្តូរអត្តនាម',
 	'renameuser-linkoncontribs' => 'ប្តូរឈ្មោះអ្នកប្រើប្រាស់',
 	'renameuser-linkoncontribs-text' => 'ប្ដូរឈ្មោះអ្នកប្រើប្រាស់នេះ',
 	'renameuser-desc' => "ប្តូរឈ្មោះអ្នកប្រើប្រាស់(ត្រូវការសិទ្ធិ ''ប្តូរឈ្មោះអ្នកប្រើប្រាស់'')",
