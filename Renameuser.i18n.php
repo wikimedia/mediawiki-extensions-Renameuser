@@ -3421,15 +3421,19 @@ $messages['sli'] = array(
 /** Albanian (Shqip)
  * @author Dori
  * @author Mikullovci11
+ * @author Olsi
  */
 $messages['sq'] = array(
 	'renameuser' => 'Riemëroje përdoruesin',
 	'renameuser-linkoncontribs' => 'Riemëroje përdoruesin',
 	'renameuser-linkoncontribs-text' => 'Riemëroje këtë përdoruesin',
+	'renameuser-desc' => "Shton një [[Special:Renameuser|faqe speciale]] për të riemëruar një përdorues (duhet e drejta ''renameuser'')",
 	'renameuserold' => 'Emri i tanishëm',
 	'renameusernew' => 'Emri i ri',
 	'renameuserreason' => 'Arsyeja për riemërim:',
 	'renameusermove' => 'Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri',
+	'renameusersuppress' => 'Mos krijoni përcjellime tek emri i ri',
+	'renameuserreserve' => 'Bllokoni emrin e vjetër të përdoruesit të përdorim në të ardhmen',
 	'renameuserwarnings' => 'Paralajmërimet:',
 	'renameuserconfirm' => 'Po, ndërrojë emrin e përdoruesit',
 	'renameusersubmit' => 'Ndryshoje',
@@ -3437,12 +3441,21 @@ $messages['sq'] = array(
 	'renameusererrorexists' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
 	'renameusererrorinvalid' => 'Emri "<nowiki>$1</nowiki>" nuk është i lejuar',
 	'renameusererrortoomany' => 'Përdoruesi "<nowiki>$1</nowiki>" ka dhënë $2 {{PLURAL:$2|kontribut|kontribute}}. Ndryshimi i emrit të një përdoruesi me më shumë se $3 {{PLURAL:$3|kontribut|kontribute}} mund të ndikojë rëndë tek rendimenti i shërbyesave.',
+	'renameuser-error-request' => 'Kishte një problem me marrjen e kërkesës.
+Ju lutemi kthehuni prapa dhe provoni përsëri.',
+	'renameuser-error-same-user' => 'Ju nuk mund të riemëroni një përdorues tek e njëjta gjë si më parë.',
 	'renameusersuccess' => 'Përdoruesi "<nowiki>$1</nowiki>" u riemërua në "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Faqja $1 ekziston dhe nuk mund të mbivendoset automatikisht.',
+	'renameuser-page-moved' => 'Faqja $1 është zhvendosur tek $2.',
+	'renameuser-page-unmoved' => "Faqja $1 s'mund të zhvendosej tek $2.",
 	'renameuserlogpage' => 'Regjistri i emër-ndryshimeve',
 	'renameuserlogpagetext' => 'Ky është një regjistër i ndryshimeve së emrave të përdoruesve',
 	'renameuserlogentry' => 'riemëruar $1 tek "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktim|$1 redaktime}}. Arsyeja: $2',
+	'renameuser-move-log' => 'Lëvizi faqen automatikisht kur riemëroi përdoruesin "[[User:$1|$1]]" në "[[User:$2|$2]]"',
 	'right-renameuser' => 'Riemëroni përdorueset',
+	'renameuser-renamed-notice' => 'Ky përdorues është riemëruar.
+Regjistri i riemërimit është poshtë për referencë.',
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
