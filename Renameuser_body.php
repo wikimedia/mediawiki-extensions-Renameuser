@@ -46,18 +46,10 @@ class SpecialRenameuser extends SpecialPage {
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $wgUser->editToken();
 		$reason = $wgRequest->getText( 'reason' );
-		// If nothing given for these flags, assume they are checked
-		// unless this is a POST submission.
-		$move_checked = true;
-		$suppress_checked = false;
-		if ( $wgRequest->wasPosted() ) {
-			if ( !$wgRequest->getCheck( 'movepages' ) ) {
-				$move_checked = false;
-			}
-			if ( $wgRequest->getCheck( 'suppressredirect' ) ) {
-				$suppress_checked = true;
-			}
-		}
+
+		$move_checked = $wgRequest->getCheck( 'movepages' );
+		$suppress_checked = $wgRequest->getCheck( 'suppressredirect' );
+
 		$warnings = array();
 		if ( $oun && $nun && !$wgRequest->getCheck( 'confirmaction' )  ) {
 			wfRunHooks( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );

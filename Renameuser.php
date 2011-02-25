@@ -67,6 +67,8 @@ $wgHooks['ContributionsToolLinks'][] = 'wfRenameuserOnContribsLink';
 /**
  * Show a log if the user has been renamed and point to the new username.
  * Don't show the log if the $oldUserName exists as a user.
+ *
+ * @param $article Article
  */
 function wfRenameUserShowLog( $article ) {
 	global $wgOut;
