@@ -379,7 +379,7 @@ class RenameuserSQL {
 		$this->tables = array(); // Immediate updates
 		$this->tables['image'] = array( 'img_user_text', 'img_user' );
 		$this->tables['oldimage'] = array( 'oi_user_text', 'oi_user' );
-		# FIXME: $this->tables['filearchive'] = array('fa_user_text','fa_user'); (not indexed yet)
+		$this->tables['filearchive'] = array('fa_user_text','fa_user');
 		$this->tablesJob = array(); // Slow updates
 		// If this user has a large number of edits, use the jobqueue
 		if ( User::edits( $this->uid ) > RENAMEUSER_CONTRIBJOB ) {
