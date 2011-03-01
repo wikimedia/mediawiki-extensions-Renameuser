@@ -42,6 +42,15 @@ $wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
 # $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'wfRenameUserLogActionText'; // deal with old breakage
 
+/**
+ * @param $type
+ * @param $action
+ * @param $title Title
+ * @param $skin Skin
+ * @param $params array
+ * @param $filterWikilinks bool
+ * @return String
+ */
 function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null, $params = array(), $filterWikilinks = false ) {
 	if ( !$title || $title->getNamespace() !== NS_USER ) {
 		$rv = ''; // handled in comment, the old way
@@ -83,6 +92,12 @@ function wfRenameUserShowLog( $article ) {
 	return true;
 }
 
+/**
+ * @param $id
+ * @param $nt Title
+ * @param $tools
+ * @return bool
+ */
 function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
 	global $wgUser;
 

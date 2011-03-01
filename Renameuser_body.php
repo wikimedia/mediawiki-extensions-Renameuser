@@ -274,7 +274,7 @@ class SpecialRenameuser extends SpecialPage {
 		// Move any user pages
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
 			$dbr = wfGetDB( DB_SLAVE );
-			$oldkey = $oldusername->getDBkey();
+
 			$pages = $dbr->select(
 				'page',
 				array( 'page_namespace', 'page_title' ),
@@ -285,9 +285,9 @@ class SpecialRenameuser extends SpecialPage {
 				),
 				__METHOD__
 			);
-			
+
 			$suppressRedirect = false;
-			
+
 			if ( $wgRequest->getCheck( 'suppressredirect' ) && $wgUser->isAllowed( 'suppressredirect' ) ) {	
 				$suppressRedirect = true;
 			}
@@ -325,6 +325,12 @@ class SpecialRenameuser extends SpecialPage {
 			array( 'renameusersuccess', $oldusername->getText(), $newusername->getText() ) );
 	}
 
+	/**
+	 * @param $username Title
+	 * @param $type
+	 * @param $out
+	 * @return void
+	 */
 	function showLogExtract( $username, $type, &$out ) {
 		# Show relevant lines from the logs:
 		$out->addHTML( Xml::element( 'h2', null, LogPage::logName( $type ) ) . "\n" );
