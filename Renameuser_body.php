@@ -47,7 +47,7 @@ class SpecialRenameuser extends SpecialPage {
 		$token = $wgUser->editToken();
 		$reason = $wgRequest->getText( 'reason' );
 
-		$move_checked = $wgRequest->getCheck( 'movepages' );
+		$move_checked = $wgRequest->getBool( 'movepages', !$wgRequest->wasPosted());
 		$suppress_checked = $wgRequest->getCheck( 'suppressredirect' );
 
 		$warnings = array();
