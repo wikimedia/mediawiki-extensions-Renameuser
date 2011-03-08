@@ -55,8 +55,7 @@ class SpecialRenameuser extends SpecialPage {
 			wfRunHooks( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
 		}
 
-		$wgOut->addHTML( "
-			<!-- Current contributions limit is " . RENAMEUSER_CONTRIBLIMIT . " -->" .
+		$wgOut->addHTML(
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalUrl(), 'id' => 'renameuser' ) ) .
 			Xml::openElement( 'fieldset' ) .
 			Xml::element( 'legend', null, wfMsg( 'renameuser' ) ) .
@@ -236,18 +235,6 @@ class SpecialRenameuser extends SpecialPage {
 
 		// Always get the edits count, it will be used for the log message
 		$contribs = User::edits( $uid );
-
-		// Check edit count
-		if ( !$wgUser->isAllowed( 'siteadmin' ) ) {
-			if ( RENAMEUSER_CONTRIBLIMIT != 0 && $contribs > RENAMEUSER_CONTRIBLIMIT ) {
-				$wgOut->wrapWikiMsg( "<div class=\"errorbox\">$1</div>",
-					array( 'renameusererrortoomany', $oldusername->getText(),
-						$wgLang->formatNum( $contribs ),
-						$wgLang->formatNum( RENAMEUSER_CONTRIBLIMIT )
-				) );
-				return;
-			}
-		}
 
 		// Give other affected extensions a chance to validate or abort
 		if ( !wfRunHooks( 'RenameUserAbort', array( $uid, $oldusername->getText(), $newusername->getText() ) ) ) {

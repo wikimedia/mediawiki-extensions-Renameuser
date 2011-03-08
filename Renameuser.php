@@ -28,10 +28,9 @@ $wgExtensionMessagesFiles['Renameuser'] = $dir . 'Renameuser.i18n.php';
 $wgExtensionAliasesFiles['Renameuser'] = $dir . 'Renameuser.alias.php';
 
 /**
- * The maximum number of edits a user can have and still be allowed renaming,
- * set it to 0 to disable the limit.
+ * Users with more than this number of edits will have their rename operation
+ * deferred via the job queue.
  */
-define( 'RENAMEUSER_CONTRIBLIMIT', 25000 );
 define( 'RENAMEUSER_CONTRIBJOB', 5000 );
 
 # Add a new log type
