@@ -1857,6 +1857,7 @@ Mangga balènana lan nyoba manèh.',
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author Dawid Deutschland
  * @author Malafaya
  * @author Sopho
  */
@@ -1868,12 +1869,15 @@ $messages['ka'] = array(
 	'renameusernew' => 'ახალი მომხმარებლის სახელი:',
 	'renameuserreason' => 'სახელის შეცვლის მიზეზი:',
 	'renameusermove' => 'მომხმარებლისა და განხილვის გვერდების (და მათი დაქვემდებარებული გვერდების) გადატანა ახალ დასახელებაზე',
+	'renameusersuppress' => 'არ გადაამისამართოთ ახალ სახელზე',
+	'renameuserreserve' => 'ძველი მომხმარებლის სახელის სამომავლო გამოყენების აკრძალვა',
 	'renameuserwarnings' => 'გაფრთხილებები:',
 	'renameuserconfirm' => 'დიახ, მსურს სახელის გადარქმევა',
 	'renameusersubmit' => 'გაგზავნა',
 	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
 	'renameusererrorexists' => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
 	'renameusererrorinvalid' => 'მომხმარებლის სახელი "<nowiki>$1</nowiki>" არასწორია',
+	'renameuser-error-request' => 'მოთხოვნის მიღებასთან დაკავშირებით რაღაც პრობლემაა. გთხოვთ, ხელახლა სცადეთ.',
 	'renameuser-error-same-user' => 'თქვენ არ შეგიძლიათ დაარქვათ მომხმარებელს იგივე სახელი, რაც ერქვა წინათ.',
 	'renameusersuccess' => 'მომხმარებლის სახელი - "<nowiki>$1</nowiki>", შეიცვალა "<nowiki>$2</nowiki>"-ით',
 	'renameuser-page-exists' => 'გვერდი $1 უკვე არსებობს და მისი ავტომატურად შენაცვლება შეუძლებელია.',
