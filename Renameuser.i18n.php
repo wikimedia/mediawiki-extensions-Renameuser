@@ -1540,6 +1540,7 @@ Protokol přemjenowanjow je deleka jako referenca podaty.',
 );
 
 /** Hungarian (Magyar)
+ * @author Adam78
  * @author Dani
  * @author Tgr
  */
@@ -1566,7 +1567,7 @@ $messages['hu'] = array(
 	'renameuser-page-exists' => '$1 már létezik, és nem lehet automatikusan felülírni.',
 	'renameuser-page-moved' => '$1 át lett nevezve $2 névre',
 	'renameuser-page-unmoved' => '$1-t nem sikerült $2 névre nevezi',
-	'renameuserlogpage' => 'Felhasználóátnevezési-napló',
+	'renameuserlogpage' => 'Felhasználóátnevezési napló',
 	'renameuserlogpagetext' => 'Ez a felhasználói nevek változtatásának naplója.',
 	'renameuserlogentry' => 'átnevezte $1 azonosítóját (az új név: „$2”)',
 	'renameuser-log' => '$1 szerkesztése van. Indoklás: $2',
