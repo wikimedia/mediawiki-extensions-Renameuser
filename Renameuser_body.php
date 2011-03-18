@@ -521,13 +521,12 @@ class RenameuserSQL {
 			}
 			$dbw->freeResult( $res );
 		}
-		// @FIXME: batchInsert() commits per 50 jobs,
-		// which sucks if the DB is rolled-back...
+
 		if ( count( $jobs ) > 0 ) {
-			Job::batchInsert( $jobs );
+			Job::safeBatchInsert( $jobs ); // don't commit yet
 		}
 
-		// Commit the transaction (though batchInsert() above commits)
+		// Commit the transaction
 		$dbw->commit();
 
 		// Delete from memcached again to make sure
