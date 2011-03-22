@@ -711,6 +711,7 @@ Mae'r lòg ail-enwi defnyddwyr i'w weld isod.",
 /** Danish (Dansk)
  * @author Byrial
  * @author Froztbyte
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'renameuser' => 'Omdøb bruger',
@@ -721,6 +722,7 @@ $messages['da'] = array(
 	'renameusernew' => 'Nyt brugernavn:',
 	'renameuserreason' => 'Årsag til omdøbning:',
 	'renameusermove' => 'Flyt bruger- og diskussionssider (og deres undersider) til nyt navn',
+	'renameusersuppress' => 'Opret ikke omdirigeringer til det nye navn',
 	'renameuserreserve' => 'Bloker det gamle brugernavn fra fremtidig brug',
 	'renameuserwarnings' => 'Advarsler:',
 	'renameuserconfirm' => 'Ja, omdøb brugeren',
