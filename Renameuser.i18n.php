@@ -2590,9 +2590,11 @@ Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
+ * @author Ranveig
  */
 $messages['nn'] = array(
 	'renameuser' => 'Døyp om brukar',
+	'renameuser-linkoncontribs' => 'Døyp om brukar',
 	'renameuser-desc' => "Legg til ei [[Special:Renameuser|spesialsida]] for å døypa om ein brukar (krev ''renameuser''-rettar)",
 	'renameuserold' => 'Noverande brukarnamn:',
 	'renameusernew' => 'Nytt brukarnamn:',
