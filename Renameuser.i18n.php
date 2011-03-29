@@ -2594,7 +2594,7 @@ Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter 
  */
 $messages['nn'] = array(
 	'renameuser' => 'Døyp om brukar',
-	'renameuser-linkoncontribs' => 'Døyp om brukar',
+	'renameuser-linkoncontribs' => 'døyp om brukar',
 	'renameuser-desc' => "Legg til ei [[Special:Renameuser|spesialsida]] for å døypa om ein brukar (krev ''renameuser''-rettar)",
 	'renameuserold' => 'Noverande brukarnamn:',
 	'renameusernew' => 'Nytt brukarnamn:',
