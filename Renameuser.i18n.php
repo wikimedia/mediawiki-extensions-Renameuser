@@ -568,7 +568,7 @@ Torneu enrere i torneu-ho a intentar.",
 	'renameuserlogentry' => 'ha reanomenat $1 a "$2"',
 	'renameuser-log' => '{{PLURAL:$1|Una contribució|$1 contribucions}}. Motiu: $2',
 	'renameuser-move-log' => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
-	'right-renameuser' => 'Reanomena els usuaris',
+	'right-renameuser' => 'Reanomenar usuaris',
 	'renameuser-renamed-notice' => "S'ha canviat el nom d'aquest usuari.
 A continuació es proporciona el registre de reanomenaments per a més informació.",
 );
@@ -2404,6 +2404,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
  */
@@ -2419,7 +2420,7 @@ $messages['ms'] = array(
 	'renameuserreserve' => 'Pelihara nama pengguna lama supaya tidak digunakan lagi',
 	'renameuserwarnings' => 'Amaran:',
 	'renameuserconfirm' => 'Ya, tukar nama pengguna ini',
-	'renameusersubmit' => 'Serah',
+	'renameusersubmit' => 'Hantar',
 	'renameusererrordoesnotexist' => 'Pengguna "<nowiki>$1</nowiki>" tidak wujud.',
 	'renameusererrorexists' => 'Pengguna "<nowiki>$1</nowiki>" telah pun wujud.',
 	'renameusererrorinvalid' => 'Nama pengguna "<nowiki>$1</nowiki>" tidak sah.',
