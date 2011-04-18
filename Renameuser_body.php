@@ -32,9 +32,14 @@ class SpecialRenameuser extends SpecialPage {
 			$wgOut->permissionRequired( 'renameuser' );
 			return;
 		}
+		
 		if ( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
 			return;
+		}
+
+		if( $wgUser->isBlocked() ){
+			$wgOut->blockedPage();
 		}
 
 		$showBlockLog = $wgRequest->getBool( 'submit-showBlockLog' );
