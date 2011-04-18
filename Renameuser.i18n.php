@@ -235,14 +235,18 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'renameuser' => 'Renomar usuariu',
+	'renameuser-linkoncontribs' => 'renomar usuariu',
+	'renameuser-linkoncontribs-text' => 'Renomar esti usuariu',
 	'renameuser-desc' => "Renoma un usuariu (necesita'l permisu ''renameuser'')",
 	'renameuserold' => "Nome d'usuariu actual:",
 	'renameusernew' => "Nome d'usuariu nuevu:",
 	'renameuserreason' => 'Motivu del cambéu de nome:',
 	'renameusermove' => "Treslladar les páxines d'usuariu y d'alderique (y toles subpáxines) al nome nuevu",
+	'renameusersuppress' => 'Nun crear redireiciones al nome nuevu',
 	'renameuserreserve' => "Bloquiar el nome d'usuariu antiguu pa evitar usalu nun futuru",
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => "Sí, renomar l'usuariu",
@@ -262,6 +266,8 @@ $messages['ast'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 ediciones}}. Motivu: $2',
 	'renameuser-move-log' => 'Treslladóse la páxina automáticamente al renomar al usuariu "[[User:$1|$1]]" como "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renomar usuarios',
+	'renameuser-renamed-notice' => "Se renomó esti usuariu.
+El rexistru de renomaos s'ufre darréu pa referencia.",
 );
 
 /** Bashkir (Башҡортса)
