@@ -163,7 +163,7 @@ $messages['ar'] = array(
 	'renameuserreserve' => 'احفظ اسم المستخدم القديم ضد الاستخدام',
 	'renameuserwarnings' => 'التحذيرات:',
 	'renameuserconfirm' => 'نعم، أعد تسمية المستخدم',
-	'renameusersubmit' => 'تنفيذ',
+	'renameusersubmit' => 'أرسل',
 	'renameusererrordoesnotexist' => 'لا يوجد مستخدم بالاسم "<nowiki>$1</nowiki>"',
 	'renameusererrorexists' => 'المستخدم "<nowiki>$1</nowiki>" موجود بالفعل',
 	'renameusererrorinvalid' => 'اسم المستخدم "<nowiki>$1</nowiki>" غير صحيح',
@@ -268,6 +268,13 @@ $messages['ast'] = array(
 	'right-renameuser' => 'Renomar usuarios',
 	'renameuser-renamed-notice' => "Se renomó esti usuariu.
 El rexistru de renomaos s'ufre darréu pa referencia.",
+);
+
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'renameusernew' => 'Yeni istifadəçi adı:',
 );
 
 /** Bashkir (Башҡортса)
@@ -2316,21 +2323,21 @@ $messages['mk'] = array(
 	'renameuserwarnings' => 'Предупредувања:',
 	'renameuserconfirm' => 'Да, преименувај го корисникот',
 	'renameusersubmit' => 'Внеси',
-	'renameusererrordoesnotexist' => 'Корисникот "<nowiki>$1</nowiki>" не постои',
-	'renameusererrorexists' => 'Корисникот "<nowiki>$1</nowiki>" веќе постои',
+	'renameusererrordoesnotexist' => 'Корисникот „<nowiki>$1</nowiki>“ не постои',
+	'renameusererrorexists' => 'Корисникот „<nowiki>$1</nowiki>“ веќе постои',
 	'renameusererrorinvalid' => 'Корисничкото име „<nowiki>$1</nowiki>“ не е важечко.',
 	'renameuser-error-request' => 'Се јави проблем при примањето на барањето.
 Вратете се и обидете се повторно.',
 	'renameuser-error-same-user' => 'Не можете да го преименувате корисникот во име кое е исто како претходното.',
-	'renameusersuccess' => 'Корисникот "<nowiki>$1</nowiki>" е преименуван во "<nowiki>$2</nowiki>"',
+	'renameusersuccess' => 'Корисникот „<nowiki>$1</nowiki>“ е преименуван во „<nowiki>$2</nowiki>“',
 	'renameuser-page-exists' => 'Страницата $1 веќе постои и не може автоматски да се замени со друга содржина.',
 	'renameuser-page-moved' => 'Страницата $1 е преместена на $2.',
 	'renameuser-page-unmoved' => 'Страницата $1 неможеше да се премести на $2.',
 	'renameuserlogpage' => 'Дневник на преименувања на корисници',
 	'renameuserlogpagetext' => 'Ово е дневник на преименувања на корисници',
-	'renameuserlogentry' => 'преименуван $1 во "$2"',
+	'renameuserlogentry' => 'го преименуваше $1 во „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 уредување|$1 уредувања}}. Образложение: $2',
-	'renameuser-move-log' => 'Автоматски преместена страница при преименување на корисникот "[[User:$1|$1]]" во "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Автоматски преместена страница при преименување на корисникот „[[User:$1|$1]]“ во „[[User:$2|$2]]“',
 	'right-renameuser' => 'Преименување корисници',
 	'renameuser-renamed-notice' => 'Овој корисник е преименуван.
 Подолу е приложен дневникот на преименување за споредба.',
