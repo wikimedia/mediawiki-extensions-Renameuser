@@ -2721,6 +2721,13 @@ $messages['oc'] = array(
 Lo jornal dels cambiaments de noms es disponible çaijós per informacion.',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'renameusersubmit' => 'ଦାଖଲକରିବା',
+);
+
 /** Ossetic (Иронау)
  * @author Amikeco
  */
