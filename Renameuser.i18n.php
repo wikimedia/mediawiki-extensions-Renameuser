@@ -275,6 +275,7 @@ El rexistru de renomaos s'ufre darréu pa referencia.",
  */
 $messages['az'] = array(
 	'renameusernew' => 'Yeni istifadəçi adı:',
+	'renameusersubmit' => 'Yolla',
 );
 
 /** Bashkir (Башҡортса)
