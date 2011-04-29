@@ -70,6 +70,14 @@ $messages['qqq'] = array(
 	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
 
+/** ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ (ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ)
+ * @author MooRePrabu
+ */
+$messages['saz'] = array(
+	'renameuser' => 'ꢮꢮ꣄ꢬꢸꢥꢵꢬ꣄ ꢥꢵꢮ꣄ ꢪꢬ꣄ꢗꢶ',
+	'renameusernew' => 'ꢥꣁꢮ꣄ꢮꣁ  ꢮꢮ꣄ꢬꢸꢥꢵꢬ꣄ ꢥꢵꢮ꣄',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  * @author SPQRobin
@@ -272,10 +280,24 @@ El rexistru de renomaos s'ufre darréu pa referencia.",
 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
+ * @author Vago
+ * @author Vugar 1981
  */
 $messages['az'] = array(
+	'renameuser' => 'İstifadəçi adını dəyiş',
+	'renameuser-linkoncontribs' => 'istifadəçi adını dəyiş',
+	'renameuser-linkoncontribs-text' => 'Bu istifadəçinin adını dəyiş',
 	'renameusernew' => 'Yeni istifadəçi adı:',
+	'renameuserwarnings' => 'Xəbərdarlıqlar:',
+	'renameuserconfirm' => 'Bəli, istifadəçinin adını dəyiş',
 	'renameusersubmit' => 'Yolla',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" istifadəçi adı mövcud deyil.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" istifadəçi adı artıq mövcuddur.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" istifadəçi adı yolverilməzdir.',
+	'renameuser-page-moved' => '$1 $2 səhifəsinə köçürülüb.',
+	'renameuser-page-unmoved' => '$1 $2 səhifəsinə köçürülə bilinmir.',
+	'renameuserlogpage' => 'İstifadəçi adı dəyişmə gündəliyi',
+	'right-renameuser' => 'istifadəçilərin adını dəyiş',
 );
 
 /** Bashkir (Башҡортса)
