@@ -696,7 +696,7 @@ $messages['cu'] = array(
 	'renameusererrordoesnotexist' => 'польꙃєватєлꙗ ⁖ <nowiki>$1</nowiki> ⁖ нѣстъ',
 	'renameusererrorexists' => 'польꙃєватєл҄ь ⁖ <nowiki>$1</nowiki> ⁖ ѥстъ ю',
 	'renameusererrorinvalid' => 'Имѧ «<nowiki>$1</nowiki>» нѣстъ годѣ',
-	'renameuserlogpage' => 'по́льꙃєватєлъ прѣимєнова́ниꙗ їсторі́ꙗ',
+	'renameuserlogpage' => 'польꙃєватєлъ прѣимєнованиꙗ їсторїꙗ',
 	'renameuserlogentry' => 'нарєчє $1 имєньмь ⁖ $2 ⁖',
 );
 
