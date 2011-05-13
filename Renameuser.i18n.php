@@ -2993,10 +2993,17 @@ O registro de renomeação é fornecido abaixo para referência.',
  */
 $messages['qu'] = array(
 	'renameuser' => 'Ruraqpa sutinta hukchay',
+	'renameuser-linkoncontribs' => 'ruraqpa sutinta hukchay',
+	'renameuser-linkoncontribs-text' => 'Kay ruraqpa sutinta hukchay',
+	'renameuser-desc' => "[[Special:Renameuser|Sapaq p'anqatam]] yapan ruraqpa sutinta hukchanapaq (''renameuser'' hayñi kana tiyan)",
 	'renameuserold' => 'Kunan ruraqpa sutin:',
 	'renameusernew' => 'Musuq ruraqpa sutin:',
 	'renameuserreason' => 'Imarayku ruraqpa sutinta hukchasqa:',
 	'renameusermove' => "Ruraqpa p'anqanta, rimachinanta (urin p'anqankunatapas) musuq sutinman astay",
+	'renameusersuppress' => 'Musuq sutiman ama pusapunata kamariychu',
+	'renameuserreserve' => "Ruraqpa mawk'a sutinta qhipaq pacha suti kanamanta hark'ay",
+	'renameuserwarnings' => 'Yuyampaykuna:',
+	'renameuserconfirm' => 'Arí, ruraqpa sutinta hukchay',
 	'renameusersubmit' => 'Kachay',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa manam kanchu.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" sutiyuq ruraqqa kachkanñam.',
@@ -3013,6 +3020,8 @@ $messages['qu'] = array(
 	'renameuser-log' => "{{PLURAL:$1|1 llamk'apusqa|$1 llamk'apusqakuna}}, kayrayku: $2",
 	'renameuser-move-log' => '"[[User:$1|$1]]" ruraqpa sutinta "[[User:$2|$2]]" sutiman hukchaspa kikinmanta ruraqpa p\'anqatapas astan',
 	'right-renameuser' => 'Ruraqpa sutinkunata hukchay',
+	'renameuser-renamed-notice' => "Kay ruraqpa sutinqa hukchasqañam.
+Kay qatiqpiqa hukchay hallch'atam rikunki.",
 );
 
 /** Romani (Romani)
