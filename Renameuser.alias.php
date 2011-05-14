@@ -8,9 +8,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author Jon Harald Søby
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'Renameuser' => array( 'RenameUser' ),
 );
@@ -30,6 +28,11 @@ $specialPageAliases['bg'] = array(
 	'Renameuser' => array( 'Преименуване' ),
 );
 
+/** Breton (Brezhoneg) */
+$specialPageAliases['br'] = array(
+	'Renameuser' => array( 'AdenevelImplijer' ),
+);
+
 /** Bosnian (Bosanski) */
 $specialPageAliases['bs'] = array(
 	'Renameuser' => array( 'PreimenovanjeKorisnika' ),
@@ -42,7 +45,7 @@ $specialPageAliases['ca'] = array(
 
 /** Czech (Česky) */
 $specialPageAliases['cs'] = array(
-	'Renameuser' => array( 'Přejmenovat uživatele' ),
+	'Renameuser' => array( 'Přejmenovat_uživatele' ),
 );
 
 /** German (Deutsch) */
@@ -67,7 +70,7 @@ $specialPageAliases['el'] = array(
 
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
-	'Renameuser' => array( 'Alinomigi uzanton' ),
+	'Renameuser' => array( 'Alinomigi_uzanton' ),
 );
 
 /** Spanish (Español) */
@@ -82,7 +85,7 @@ $specialPageAliases['fi'] = array(
 
 /** French (Français) */
 $specialPageAliases['fr'] = array(
-	'Renameuser' => array( 'Renommer utilisateur', 'RenommerUtilisateur' ),
+	'Renameuser' => array( 'Renommer_utilisateur', 'RenommerUtilisateur' ),
 );
 
 /** Franco-Provençal (Arpetan) */
@@ -92,7 +95,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'Renameuser' => array( 'Renomear usuario' ),
+	'Renameuser' => array( 'Renomear_usuario' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -117,12 +120,12 @@ $specialPageAliases['hsb'] = array(
 
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
-	'Renameuser' => array( 'RenonmeItilizatè' ),
+	'Renameuser' => array( 'RenonmenItilizatè' ),
 );
 
 /** Hungarian (Magyar) */
 $specialPageAliases['hu'] = array(
-	'Renameuser' => array( 'Szerkesztő átnevezése' ),
+	'Renameuser' => array( 'Szerkesztő_átnevezése' ),
 );
 
 /** Interlingua (Interlingua) */
@@ -205,9 +208,14 @@ $specialPageAliases['nl'] = array(
 	'Renameuser' => array( 'GebruikerHernoemen' ),
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+$specialPageAliases['nn'] = array(
+	'Renameuser' => array( 'Døyp_om_brukar' ),
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $specialPageAliases['no'] = array(
-	'Renameuser' => array( 'Gi en bruker nytt navn' ),
+	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
 /** Occitan (Occitan) */
@@ -250,9 +258,9 @@ $specialPageAliases['sq'] = array(
 	'Renameuser' => array( 'RiemërtoPërdorues' ),
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица)) */
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬) */
 $specialPageAliases['sr-ec'] = array(
-	'Renameuser' => array( 'ПреименјуКорисника' ),
+	'Renameuser' => array( 'Преименуј_корисника' ),
 );
 
 /** Swedish (Svenska) */
@@ -277,7 +285,17 @@ $specialPageAliases['tl'] = array(
 
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
-	'Renameuser' => array( 'KullanıcıİsminiDeğiştir', 'KullanıcıAdınıDeğiştir' ),
+	'Renameuser' => array( 'KullanıcıAdınıDeğiştir', 'KullanıcıİsminiDeğiştir' ),
+);
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'Renameuser' => array( 'Đổi_tên_thành_viên', 'Đổi_tên_người_dùng' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'Renameuser' => array( '重命名用户' ),
 );
 
 /**
