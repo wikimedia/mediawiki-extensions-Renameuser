@@ -155,6 +155,7 @@ $messages['ang'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Aiman titi
  * @author Meno25
  * @author Mido
  * @author OsamaK
@@ -168,6 +169,7 @@ $messages['ar'] = array(
 	'renameusernew' => 'الاسم الجديد:',
 	'renameuserreason' => 'السبب لإعادة التسمية:',
 	'renameusermove' => 'انقل صفحات المستخدم ونقاشه (بالصفحات الفرعية) إلى الاسم الجديد',
+	'renameusersuppress' => 'لا تقم بإنشاء عمليات إعادة التوجيه إلى الاسم الجديد',
 	'renameuserreserve' => 'احفظ اسم المستخدم القديم ضد الاستخدام',
 	'renameuserwarnings' => 'التحذيرات:',
 	'renameuserconfirm' => 'نعم، أعد تسمية المستخدم',
