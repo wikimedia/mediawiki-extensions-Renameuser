@@ -46,7 +46,7 @@ class RenameUserJob extends Job {
 			$conds[] = "$timestampColumn >= '$minTimestamp'";
 			$conds[] = "$timestampColumn <= '$maxTimestamp'";
 		# Otherwise, bound by key (B/C)
-		} else if ( isset( $uniqueKey ) ) {
+		} elseif ( isset( $uniqueKey ) ) {
 			$conds[$uniqueKey] = $keyId;
 		} else {
 			wfDebug( 'RenameUserJob::run - invalid job row given' ); // this shouldn't happen
