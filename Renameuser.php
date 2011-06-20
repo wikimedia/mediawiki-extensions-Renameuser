@@ -58,7 +58,7 @@ function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null,
 			$skin->makeLinkObj( $title, htmlspecialchars( $title->getPrefixedText() ) ) : htmlspecialchars( $title->getText() );
 		# Add title to params
 		array_unshift( $params, $titleLink );
-		$rv = wfMsgReal( 'renameuserlogentry', $params );
+		$rv = wfMsg( 'renameuserlogentry', $params );
 	}
 	return $rv;
 }
