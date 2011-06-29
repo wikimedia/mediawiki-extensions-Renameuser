@@ -2558,11 +2558,15 @@ $messages['nds'] = array(
  */
 $messages['nds-nl'] = array(
 	'renameuser' => 'Gebruker herneumen',
+	'renameuser-linkoncontribs' => 'gebruker herneumen',
 	'renameuserold' => 'Gebrukersnaam noen',
 	'renameusernew' => 'Nieje gebrukersnaam:',
 	'renameuserreason' => "Reden veur 't herneumen:",
 	'renameusermove' => "Herneum gebruker en gebrukerspagina's (en subpagina's) naor de nieje naam.",
+	'renameusersuppress' => 'Gien deurverwiezingen maken naor de nieje naam',
+	'renameuserreserve' => 'Veurkoemen dat de ouwe gebruker opniej eregistreerd wönnen',
 	'renameuserwarnings' => 'Waorschuwingen:',
+	'renameuserconfirm' => 'Ja, herneum disse gebruker',
 	'renameusersubmit' => 'Herneumen',
 	'renameusererrordoesnotexist' => 'De gebruker "<nowiki>$1</nowiki>" besteet neet.',
 	'renameusererrorexists' => 'De gebrukersnaam "<nowiki>$1</nowiki>" is al in gebruuk.',
@@ -2575,6 +2579,7 @@ $messages['nds-nl'] = array(
 	'renameuserlogpagetext' => 'Dit is een logboek mit wiezigingen van gebrukersnamen',
 	'renameuserlogentry' => 'hef $1 herneumd naor "$2"',
 	'renameuser-move-log' => 'Pagina is autematisch verplaos bie \'t herneumen van de gebruker "[[User:$1|$1]]" naor "[[User:$2|$2]]"',
+	'right-renameuser' => 'gebrukers herneumen',
 	'renameuser-renamed-notice' => "Disse gebrukersnaam is herneumd.
 Hieronder vie-j 't herneumlogboek as rifferentie.",
 );
