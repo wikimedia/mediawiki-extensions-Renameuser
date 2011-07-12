@@ -30,13 +30,12 @@ if ( $IP === false ) {
 require( "$IP/maintenance/Maintenance.php" );
 
 class RenameUserCleanup extends Maintenance {
-	const BATCH_SIZE = 1000;
-
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = "Maintenance script to finish incomplete rename user, in particular to reassign edits that were missed";
 		$this->addOption( 'olduser', 'Old user name', true, true );
 		$this->addOption( 'newuser', 'New user name', true, true );
+		$this->mBatchSize = 1000;
 	}
 
 	public function execute() {
@@ -145,7 +144,7 @@ class RenameUserCleanup extends Maintenance {
 		}
 
 		while ($contribs > 0) {
-			print("doing batch of up to approximately ".self::BATCH_SIZE."\n");
+			print("doing batch of up to approximately ".$this->mBatchSize."\n");
 			print("do this batch? [N/y]  ");
 			$stdin = fopen ("php://stdin","rt");
 			$line = fgets($stdin);
@@ -156,7 +155,7 @@ class RenameUserCleanup extends Maintenance {
 			}
 			$dbw->begin();
 			$result = $dbw->select( $table, $timestampfield, $selectConds , __METHOD__,
-				array( 'ORDER BY' => $timestampfield.' DESC', 'LIMIT' => self::BATCH_SIZE ) );
+				array( 'ORDER BY' => $timestampfield.' DESC', 'LIMIT' => $this->mBatchSize ) );
 			if (! $result) {
 				print("There were rows for updating but now they are gone. Skipping.\n");
 				$dbw->rollback();
