@@ -100,10 +100,10 @@ class RenameUserCleanup extends Maintenance {
 	public function updateTable($table,$usernamefield,$useridfield,$timestampfield,$olduser,$newuser,$dbw) {
 		$doUid = 0;
 
-		$contribs = $dbw->selectField( $table, 'count(*)', 
+		$contribs = $dbw->selectField( $table, 'count(*)',
 			array( $usernamefield => $olduser->getName(), $useridfield => $newuser->getId() ), __METHOD__ );
 		if ($contribs == 0) {
-			$contribs = $dbw->selectField( $table, 'count(*)', 
+			$contribs = $dbw->selectField( $table, 'count(*)',
 				array( $usernamefield => $olduser->getName(), $useridfield => 0 ), __METHOD__ );
 			if ($contribs > 0) {
 				print("Found $contribs edits to be re-attributed from table $table but the uid present is 0 (should be ".$newuser->getId().")\n");
@@ -155,11 +155,11 @@ class RenameUserCleanup extends Maintenance {
 				return(0);
 			}
 			$dbw->begin();
-			$result = $dbw->select( $table, $timestampfield, $selectConds , __METHOD__, 
+			$result = $dbw->select( $table, $timestampfield, $selectConds , __METHOD__,
 				array( 'ORDER BY' => $timestampfield.' DESC', 'LIMIT' => self::BATCH_SIZE ) );
 			if (! $result) {
 				print("There were rows for updating but now they are gone. Skipping.\n");
-				$db->rollback();
+				$dbw->rollback();
 				return(0);
 			}
 			$result->seek($result->numRows() -1 );
@@ -173,10 +173,10 @@ class RenameUserCleanup extends Maintenance {
 			}
 			else {
 				print("problem with the update, rolling back and exiting\n");
-				$db->rollback();
+				$dbw->rollback();
 				exit(1);
 			}
-			$contribs = User::edits( $olduser->getId() ); 
+			//$contribs = User::edits( $olduser->getId() );
 			$contribs = $dbw->selectField( $table, 'count(*)', $selectConds, __METHOD__ );
 			print("updated $rowsDone edits; $contribs edits remaining to be re-attributed\n");
 		}
