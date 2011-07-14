@@ -67,12 +67,29 @@ class RenameUserCleanup extends Maintenance {
 			     ),
 			__METHOD__
 		);
-		if (! $result ) {
-			print("No log entry found for a rename of ".$olduser->getName()." to ".$newuser->getName().", giving up\n");
-			exit(1);
+		if (! $result || ! $result->numRows() ) {
+			// try the old format
+			$result = $dbr->select( 'logging', '*',
+			array( 'log_type' => 'renameuser',
+				'log_action'    => 'renameuser',
+				'log_title'     => $olduser->getName(),
+			     ),
+				__METHOD__
+			);
+			if (! $result ||  ! $result->numRows() ) {
+				print("No log entry found for a rename of ".$olduser->getName()." to ".$newuser->getName().", giving up\n");
+				exit(1);
+			}
+			else {
+				foreach ( $result as $row ) {
+					print("Found possible log entry of the rename, please check: ".$row->log_title." with comment ".$row->log_comment." on $row->log_timestamp\n");
+				}
+			}
 		}
-		foreach ( $result as $row ) {
-			print("Found log entry of the rename: ".$olduser->getName()." to ".$newuser->getName()." on $row->log_timestamp\n");
+		else {
+			foreach ( $result as $row ) {
+				print("Found log entry of the rename: ".$olduser->getName()." to ".$newuser->getName()." on $row->log_timestamp\n");
+			}
 		}
 		if ($result->numRows() > 1) {
 			print("More than one rename entry found in the log, not sure what to do. Continue anyways? [N/y]  ");
@@ -91,7 +108,7 @@ class RenameUserCleanup extends Maintenance {
 		$this->updateTable('logging', 'log_user_text', 'log_user', 'log_timestamp', $olduser, $newuser, $dbw);
 		$this->updateTable('image', 'img_user_text', 'img_user', 'img_timestamp', $olduser, $newuser, $dbw);
 		$this->updateTable('oldimage', 'oi_user_text', 'oi_user', 'oi_timestamp', $olduser, $newuser, $dbw);
-# FIXME: updateTable('filearchive', 'fa_user_text','fa_user', 'fa_timestamp', $olduser, $newuser, $dbw);  (not indexed yet)
+		$this->updateTable('filearchive', 'fa_user_text','fa_user', 'fa_timestamp', $olduser, $newuser, $dbw);
 		print "Done!\n";
 		exit(0);
 	}
