@@ -1691,7 +1691,7 @@ $messages['id'] = array(
 	'renameuser-move-log' => 'Secara otomatis memindahkan halaman sewaktu mengganti nama pengguna "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Mengganti nama pengguna',
 	'renameuser-renamed-notice' => 'Penguna ini telah berganti nama.
-Log pergantian nama disediakan dibawah untuk referensi.',
+Log pergantian nama disediakan di bawah untuk referensi.',
 );
 
 /** Igbo (Igbo)
