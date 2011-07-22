@@ -32,7 +32,7 @@ class SpecialRenameuser extends SpecialPage {
 			$wgOut->permissionRequired( 'renameuser' );
 			return;
 		}
-		
+
 		if ( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
 			return;
@@ -101,7 +101,7 @@ class SpecialRenameuser extends SpecialPage {
 					"</td>
 				</tr>"
 			);
-			
+
 			if ( $wgUser->isAllowed( 'suppressredirect' ) ) {
 				$wgOut->addHTML( "
 					<tr>
@@ -280,7 +280,7 @@ class SpecialRenameuser extends SpecialPage {
 
 			$suppressRedirect = false;
 
-			if ( $wgRequest->getCheck( 'suppressredirect' ) && $wgUser->isAllowed( 'suppressredirect' ) ) {	
+			if ( $wgRequest->getCheck( 'suppressredirect' ) && $wgUser->isAllowed( 'suppressredirect' ) ) {
 				$suppressRedirect = true;
 			}
 
@@ -420,6 +420,7 @@ class RenameuserSQL {
 			__METHOD__
 		);
 		if ( !$dbw->affectedRows() ) {
+			$dbw->rollback();
 			return false;
 		}
 		// Reset token to break login with central auth systems.
@@ -456,14 +457,14 @@ class RenameuserSQL {
 				__METHOD__
 			);
 		}
-		
+
 		// Increase time limit (like CheckUser); this can take a while...
 		if ( $this->tablesJob ) {
 			wfSuppressWarnings();
 			set_time_limit( 120 );
 			wfRestoreWarnings();
 		}
-		
+
 		$jobs = array(); // jobs for all tables
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she
