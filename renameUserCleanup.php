@@ -62,6 +62,7 @@ class RenameUserCleanup extends Maintenance {
 		$result = $dbr->select( 'logging', '*',
 			array( 'log_type' => 'renameuser',
 				'log_action'    => 'renameuser',
+				'log_namespace' => NS_USER,
 				'log_title'     => $olduser->getName(),
 				'log_params'    => $newuser->getName()
 			     ),
@@ -72,6 +73,7 @@ class RenameUserCleanup extends Maintenance {
 			$result = $dbr->select( 'logging', '*',
 			array( 'log_type' => 'renameuser',
 				'log_action'    => 'renameuser',
+				'log_namespace' => NS_USER,
 				'log_title'     => $olduser->getName(),
 			     ),
 				__METHOD__
