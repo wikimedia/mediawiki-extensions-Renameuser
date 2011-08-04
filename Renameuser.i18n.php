@@ -2578,7 +2578,7 @@ $messages['nds-nl'] = array(
 	'renameuser-page-moved' => 'De pagina $1 is herneumd naor $2.',
 	'renameuser-page-unmoved' => 'De pagina $1 kon niet herneumd wörden naor $2.',
 	'renameuserlogpage' => 'Logboek gebrukersnaamwiezigingen',
-	'renameuserlogpagetext' => 'Dit is een logboek mit wiezigingen van gebrukersnamen',
+	'renameuserlogpagetext' => 'Dit is n logboek mit wiezigingen van gebrukersnamen',
 	'renameuserlogentry' => 'hef $1 herneumd naor "$2"',
 	'renameuser-move-log' => 'Pagina is automaties verplaotst bie t herneumen van de gebruker "[[User:$1|$1]]" naor "[[User:$2|$2]]"',
 	'right-renameuser' => 'gebrukers herneumen',
@@ -4194,6 +4194,7 @@ $messages['yue'] = array(
  * @author Gzdavidwong
  * @author Hydra
  * @author Liangent
+ * @author PhiLiP
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
@@ -4220,7 +4221,7 @@ $messages['zh-hans'] = array(
 	'renameuser-page-exists' => '$1这一页己经存在，不能自动覆写。',
 	'renameuser-page-moved' => '$1这一页已经移动到$2。',
 	'renameuser-page-unmoved' => '$1这一页不能移动到$2。',
-	'renameuserlogpage' => '用户名变更日志',
+	'renameuserlogpage' => '用户更名日志',
 	'renameuserlogpagetext' => '这是用户名更改的日志',
 	'renameuserlogentry' => '已经把 $1 重命名为 "$2"',
 	'renameuser-log' => '拥有$1次编辑。 理由: $2',
