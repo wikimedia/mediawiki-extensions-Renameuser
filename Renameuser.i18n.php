@@ -2760,7 +2760,7 @@ $messages['or'] = array(
 	'renameusersubmit' => 'ଦାଖଲକରିବା',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -3196,7 +3196,7 @@ $messages['rue'] = array(
 Про перегляд є ниже указаный выпис з лоґу переменовань хоснователїв.',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -3873,7 +3873,7 @@ Magbalik lamang at subukan uli.',
 Ibinigay sa ibaba ang talaan ng pagpapangalang muli para masangguni.',
 );
 
-/** Tonga (lea faka-Tonga) */
+/** Tongan (lea faka-Tonga) */
 $messages['to'] = array(
 	'renameuser' => 'Liliu hingoa ʻo e ʻetita',
 	'renameuserold' => 'Hingoa motuʻa ʻo e ʻetita:',
