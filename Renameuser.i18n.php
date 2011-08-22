@@ -284,6 +284,7 @@ El rexistru de renomaos s'ufre darréu pa referencia.",
  * @author Cekli829
  * @author Vago
  * @author Vugar 1981
+ * @author Wertuose
  */
 $messages['az'] = array(
 	'renameuser' => 'İstifadəçi adını dəyiş',
@@ -292,7 +293,7 @@ $messages['az'] = array(
 	'renameusernew' => 'Yeni istifadəçi adı:',
 	'renameuserwarnings' => 'Xəbərdarlıqlar:',
 	'renameuserconfirm' => 'Bəli, istifadəçinin adını dəyiş',
-	'renameusersubmit' => 'Yolla',
+	'renameusersubmit' => 'Təsdiq et',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" istifadəçi adı mövcud deyil.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" istifadəçi adı artıq mövcuddur.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" istifadəçi adı yolverilməzdir.',
@@ -2891,6 +2892,18 @@ Për piasì torna andré e preuva torna.",
 	'right-renameuser' => "Arnòmina j'utent",
 	'renameuser-renamed-notice' => "St'utent-sì a l'é stàit arnominà.
 Ël registr ëd l'arnòmina a l'é dàit sota për arferiment.",
+);
+
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'renameuser' => 'ورتن والے دا ہور ناں',
+	'renameuser-linkoncontribs' => 'ورتن والے دا ہور ناں',
+	'renameuser-linkoncontribs-text' => 'ایس ورتن والے دا ہور ناں رکھو',
+	'renameuserold' => 'ہن والا ورتن والا ناں:',
+	'renameusernew' => 'نواں ورتن والا ناں:',
+	'renameuserreason' => 'ہور ناں رکھن دی وجہ:',
 );
 
 /** Pashto (پښتو)
