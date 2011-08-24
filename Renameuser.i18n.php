@@ -3399,7 +3399,7 @@ $messages['sl'] = array(
 	'renameusererrorinvalid' => 'Uporabniško ime »<nowiki>$1</nowiki>« ni veljavno.',
 	'renameuser-error-request' => 'Pri prejemanju zahteve je prišlo do težave.
 Prosimo, pojdite nazaj in poskusite znova.',
-	'renameuser-error-same-user' => 'Ne morete preimenovati uporabnika na enako stvar kot prej.',
+	'renameuser-error-same-user' => 'Uporabnika ne morete preimenovati v isto stvar kot prej.',
 	'renameusersuccess' => 'Uporabnik »<nowiki>$1</nowiki>« je bil preimenovan v »<nowiki>$2</nowiki>«.',
 	'renameuser-page-exists' => 'Stran $1 že obstaja in je ni mogoče samodejno prepisati.',
 	'renameuser-page-moved' => 'Stran $1 je bila prestavljena na $2.',
