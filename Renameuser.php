@@ -2,7 +2,7 @@
 if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * A Special Page extension to rename users, runnable by users with renameuser
- * righs
+ * rights
  *
  * @file
  * @ingroup Extensions
