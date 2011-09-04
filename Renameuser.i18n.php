@@ -2260,12 +2260,15 @@ Relevante regels oet 't logbook staon hieónger.",
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Homo
  * @author Hugo.arg
  * @author Matasg
  */
 $messages['lt'] = array(
 	'renameuser' => 'Pervadinti naudotoją',
+	'renameuser-linkoncontribs' => 'Pervadinti naudotoją',
+	'renameuser-linkoncontribs-text' => 'Pervardyti šį vartotoją',
 	'renameuser-desc' => "Pervadinti naudotoją (reikia ''pervadintojo'' teisių)",
 	'renameuserold' => 'Esamas naudotojo vardas:',
 	'renameusernew' => 'Naujas naudotojo vardas:',
