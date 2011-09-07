@@ -949,10 +949,10 @@ Tο ημερολόγιο επανονομασιών δίνεται παρακά�
  * @author Yekrats
  */
 $messages['eo'] = array(
-	'renameuser' => 'Alinomigu uzanton',
+	'renameuser' => 'Alinomigi uzanton',
 	'renameuser-linkoncontribs' => 'renomigi uzanton',
 	'renameuser-linkoncontribs-text' => 'Renomigi ĉi tiun uzanton',
-	'renameuser-desc' => "Alinomigu uzanton (bezonas rajton ''renameuser'')",
+	'renameuser-desc' => "Aldonas [[Special:Renameuser|specialan paĝon]] por alinomigi uzanton (bezonas rajton ''renameuser'')",
 	'renameuserold' => 'Aktuala salutnomo:',
 	'renameusernew' => 'Nova salutnomo:',
 	'renameuserreason' => 'Kialo por alinomigo:',
