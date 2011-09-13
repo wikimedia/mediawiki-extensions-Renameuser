@@ -4140,6 +4140,7 @@ $messages['yi'] = array(
 	'renameuser' => 'בײַטן באַניצער נאָמען',
 	'renameuser-linkoncontribs' => 'בײַטן באַניצער נאָמען',
 	'renameuser-linkoncontribs-text' => 'בײַטן נאָמען פֿון דעם באַניצער',
+	'renameuser-desc' => "לייגט צו א [[Special:Renameuser|באַזונדערן בלאַט]] צו בײַטן א באַניצער נאָמען (פֿאדערט ''renameuser'' רעכט)",
 	'renameuserold' => 'לויפיגער באַניצער-נאָמען:',
 	'renameusernew' => 'נײַער באַניצער-נאָמען:',
 	'renameuserreason' => 'סיבה פֿאַר ענדערן נאָמען:',
