@@ -2493,6 +2493,7 @@ Log penukaran nama ditunjukkan di bawah sebagai rujukan.',
  */
 $messages['mt'] = array(
 	'renameuser' => 'Semmi utent mill-ġdid',
+	'renameuser-linkoncontribs' => 'semmi l-utent mill-ġdid',
 	'renameuserold' => 'Isem tal-utent attwali:',
 	'renameusernew' => 'Isem tal-utent il-ġdid:',
 	'renameuserreason' => 'Raġuni għall-bidla fl-isem:',
