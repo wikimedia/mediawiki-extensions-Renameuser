@@ -2763,9 +2763,27 @@ Lo jornal dels cambiaments de noms es disponible çaijós per informacion.',
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
+ * @author Psubhashish
  */
 $messages['or'] = array(
+	'renameuser' => 'ସଭ୍ୟଙ୍କ ନାମଟି ବଦଳାଇବେ',
+	'renameuser-linkoncontribs' => 'ସଭ୍ୟଙ୍କ ନାମଟି ବଦଳାଇବେ',
+	'renameuser-linkoncontribs-text' => 'ଏହି ସଭ୍ୟଙ୍କର ନାମ ବଦଳାଇବେ',
+	'renameuser-desc' => "ଜଣେ ସଭ୍ୟଙ୍କର ନାମ ବଦଳାଇବା ପାଇଁ ଏକ [[Special:Renameuser|ବିଶେଷ ପୃଷ୍ଠା]] ଯୋଡ଼ିଥାଏ ।(''ନୂଆ ନାମକରଣ'' ଅଧିକାର ଲୋଡ଼ା)",
+	'renameuserold' => 'ଏବେକାର ଇଉଜର ନାମ:',
+	'renameusernew' => 'ନୂଆ ଇଉଜର ନାମ:',
+	'renameuserreason' => 'ନାମ ବଦଳାଇବାର କାରଣ:',
+	'renameusermove' => 'ସଭ୍ୟ, ତାହାଙ୍କର ଆଲୋଚନା ପୃଷ୍ଠାମାନଙ୍କୁ (ତଥା ସାନପୃଷ୍ଠାମାନଙ୍କୁ)ନୂଆ ନାମକୁ ଘୁଞ୍ଚାଇବେ',
+	'renameusersuppress' => 'ନୂଆ ନାମକୁ ପୁନପ୍ରେରଣ କରନ୍ତୁ ନାହିଁ',
+	'renameuserreserve' => 'ଭବିଷ୍ୟତ ବ୍ୟବହାରରେ ପୁରୁଣା ଇଉଜର ନାମକୁ ଅଟକାଇ ଦିଅନ୍ତୁ',
+	'renameuserwarnings' => 'ଚେତାବନୀ:',
+	'renameuserconfirm' => 'ହଁ, ସଭ୍ୟଙ୍କ ନାମ ବଦଳାଇ ଦେବେ',
 	'renameusersubmit' => 'ଦାଖଲକରିବା',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" ନାମକ ସଭ୍ୟଜଣକ ଏଠାରେ ନାହାନ୍ତି ।',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ନାମକ ସଭ୍ୟଜଣକ ଆଗରୁ ଅଛନ୍ତି ।',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ଇଉଜର ନାମଟି ଅଚଳ ଅଟେ ।',
+	'renameuser-error-request' => 'ଅନୁରୋଧ ଗ୍ରହଣ କରିବାରେ ଏକ ଅସୁବିଧା ହେଲା ।
+ଦୟାକରି ପଛକୁ ଫେରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 );
 
 /** Ossetic (Ирон)
