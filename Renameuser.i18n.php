@@ -2784,6 +2784,7 @@ $messages['or'] = array(
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ଇଉଜର ନାମଟି ଅଚଳ ଅଟେ ।',
 	'renameuser-error-request' => 'ଅନୁରୋଧ ଗ୍ରହଣ କରିବାରେ ଏକ ଅସୁବିଧା ହେଲା ।
 ଦୟାକରି ପଛକୁ ଫେରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
+	'renameuser-error-same-user' => 'ଆଗ ଭଳି ଆପଣ ଜଣେ ସଭ୍ୟଙ୍କର ନାମ ବଦଳାଇପାରିବେ ନାହିଁ ।',
 );
 
 /** Ossetic (Ирон)
