@@ -2785,6 +2785,18 @@ $messages['or'] = array(
 	'renameuser-error-request' => 'ଅନୁରୋଧ ଗ୍ରହଣ କରିବାରେ ଏକ ଅସୁବିଧା ହେଲା ।
 ଦୟାକରି ପଛକୁ ଫେରି ଆଉଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
 	'renameuser-error-same-user' => 'ଆଗ ଭଳି ଆପଣ ଜଣେ ସଭ୍ୟଙ୍କର ନାମ ବଦଳାଇପାରିବେ ନାହିଁ ।',
+	'renameusersuccess' => '"<nowiki>$1</nowiki>" ସଭ୍ୟଙ୍କ ନାମ "<nowiki>$2</nowiki>"କୁ ବଦଳାଗଲା ।',
+	'renameuser-page-exists' => '$1 ପୃଷ୍ଠାଟି ଆଗରୁ ରହିଅଛି ଓ ଆଉଥରେ ଲେଖାଯାଇପାରିବ ନାହିଁ ।',
+	'renameuser-page-moved' => '$1 ପୃଷ୍ଠାଟିକୁ $2କୁ ଘୁଞ୍ଚାଇ ଦିଆଗଲା ।',
+	'renameuser-page-unmoved' => '$1 ପୃଷ୍ଠାଟି $2କୁ ଘୁଞ୍ଚାଯାଇ ପାରିବ ନାହିଁ ।',
+	'renameuserlogpage' => 'ସଭ୍ୟ ନାମବଦଳ ଇତିହାସ',
+	'renameuserlogpagetext' => 'ସଭ୍ୟଙ୍କ ନାମ ବଦଳର ଏହା ଏକ ଇତିହାସ ।',
+	'renameuserlogentry' => '$1 ରୁ "$2" କୁ ନାମ ବଦଳାଗଲା',
+	'renameuser-log' => '{{PLURAL:$1|ସମ୍ପାଦନାଟିଏ|$1 ଗୋଟି ସମ୍ପାଦନା}} । କାରଣ: $2',
+	'renameuser-move-log' => 'ସଭ୍ୟ "[[User:$1|$1]]"ରୁ "[[User:$2|$2]]"କୁ ନାମ ବଦଳ କଲାବେଳେ ବେଳେ ଛାଏଁ ଛାଏଁ ପୃଷ୍ଠାଟି ଘୁଞ୍ଚାଇ ଦିଆଗଲା',
+	'right-renameuser' => 'ସଭ୍ୟମାନଙ୍କ ନାମଟି ବଦଳାଇବେ',
+	'renameuser-renamed-notice' => 'ଏହି ସଭ୍ୟଙ୍କ ନାମ ବଦଳାଯାଇଅଛି ।
+ତଳେ ଅବଗତି ନିମନ୍ତେ ନାମ ବଦଳ ଇତିହାସ ଦିଆଗଲା ।',
 );
 
 /** Ossetic (Ирон)
