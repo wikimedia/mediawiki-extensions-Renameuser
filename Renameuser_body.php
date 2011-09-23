@@ -285,31 +285,49 @@ class SpecialRenameuser extends SpecialPage {
 			}
 
 			$output = '';
-			$skin = $wgUser->getSkin();
 			foreach ( $pages as $row ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
 					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 				# Do not autodelete or anything, title must not exist
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
-					$link = $skin->makeKnownLinkObj( $newPage );
-					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'renameuser-page-exists', $link ) . '</li>';
+					$link = Linker::linkKnown( $newPage );
+					$output .= Html::rawElement(
+								'li',
+								array( 'class' => 'mw-renameuser-pe' ),
+								wfMessage( 'renameuser-page-exists' )->rawParams( $link )->escaped()
+							);
 				} else {
-					$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'renameuser-move-log',
-						$oldusername->getText(), $newusername->getText() ), !$suppressRedirect );
+					$success = $oldPage->moveTo(
+								$newPage,
+								false, 
+								wfMessage(
+									'renameuser-move-log',
+									$oldusername->getText(),
+									$newusername->getText() )->inContentLanguage()->text(),
+								!$suppressRedirect
+							);
 					if ( $success === true ) {
-						$oldLink = $skin->makeKnownLinkObj( $oldPage, '', 'redirect=no' );
-						$newLink = $skin->makeKnownLinkObj( $newPage );
-						$output .= '<li class="mw-renameuser-pm">' . wfMsgHtml( 'renameuser-page-moved', $oldLink, $newLink ) . '</li>';
+						$oldLink = Linker::linkKnown( $oldPage, null, array(), array( 'redirect' => 'no' ) );
+						$newLink = Linker::linkKnown( $newPage );
+						$output .= Html::rawElement(
+									'li',
+									array( 'class' => 'mw-renameuser-pm' ),
+									wfMessage( 'renameuser-page-moved' )->rawParams( $oldLink, $newLink )->escaped()
+								);
 					} else {
-						$oldLink = $skin->makeKnownLinkObj( $oldPage );
-						$newLink = $skin->makeLinkObj( $newPage );
-						$output .= '<li class="mw-renameuser-pu">' . wfMsgHtml( 'renameuser-page-unmoved', $oldLink, $newLink ) . '</li>';
+						$oldLink = Linker::linkKnown( $oldPage );
+						$newLink = Linker::link( $newPage );
+						$output .= Html::rawElement(
+									'li', array( 'class' => 'mw-renameuser-pu' ),
+									wfMessage( 'renameuser-page-unmoved' )->rawParams( $oldLink, $newLink )->escaped()
+								);
 					}
 				}
 			}
-			if ( $output )
-				$wgOut->addHTML( '<ul>' . $output . '</ul>' );
+			if ( $output ) {
+				$wgOut->addHTML( Html::rawElement( 'ul', array(), $output ) );
+			}
 		}
 
 		// Output success message stuff :)
