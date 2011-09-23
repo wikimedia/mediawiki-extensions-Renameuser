@@ -308,7 +308,7 @@ class SpecialRenameuser extends SpecialPage {
 								!$suppressRedirect
 							);
 					if ( $success === true ) {
-						$oldLink = Linker::linkKnown( $oldPage, null, array(), array( 'redirect' => 'no' ) );
+						$oldLink = Linker::link( $oldPage, null, array(), array( 'redirect' => 'no' ) );
 						$newLink = Linker::linkKnown( $newPage );
 						$output .= Html::rawElement(
 									'li',
