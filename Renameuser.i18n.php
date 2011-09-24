@@ -2729,10 +2729,13 @@ $messages['nso'] = array(
 );
 
 /** Occitan (Occitan)
+ * @author Boulaur
  * @author Cedric31
  */
 $messages['oc'] = array(
 	'renameuser' => "Tornar nomenar l'utilizaire",
+	'renameuser-linkoncontribs' => "tornar nomenar l'utilizaire",
+	'renameuser-linkoncontribs-text' => "Tornar nomenar l'utilizaire",
 	'renameuser-desc' => "Torna nomenar un utilizaire (necessita los dreches de ''renameuser'')",
 	'renameuserold' => "Nom actual de l'utilizaire :",
 	'renameusernew' => "Nom novèl de l'utilizaire :",
@@ -2942,6 +2945,26 @@ $messages['pnb'] = array(
 	'renameuserold' => 'ہن والا ورتن والا ناں:',
 	'renameusernew' => 'نواں ورتن والا ناں:',
 	'renameuserreason' => 'ہور ناں رکھن دی وجہ:',
+	'renameusersuppress' => 'ایس نویں ناں نال ریڈائرکٹ ناں بناؤ۔',
+	'renameuserreserve' => 'پرانے ورتن والے ناں نوں اگے ورتے جان توں روکو',
+	'renameuserwarnings' => 'خبردار',
+	'renameuserconfirm' => 'ہاں، ورتن والے دا فیر ناں رکھو',
+	'renameusersubmit' => 'پیش کرو',
+	'renameusererrordoesnotexist' => 'ورتنوالا "<نوکی>$1</نوکی>" ہے ای نئیں۔',
+	'renameusererrorexists' => 'ورتنوالا "<نوکی>$1</نوکی>" پہلے ای ہیگا اے۔',
+	'renameusererrorinvalid' => 'ورتن ناں "<نوکی>$1</نوکی>" نئیں چل سکدا۔',
+	'renameuser-error-request' => 'گل منن چ مسلہ اے۔ مہربانی کرکے پچھے جاؤ تے فیر کوشش کرو۔',
+	'renameuser-error-same-user' => 'تسیں فیر پہلے وانگوں اک ورتن والے دا ناں فیر نئیں رکھ سکدے۔',
+	'renameusersuccess' => 'ورتن والا "<نوکی>$1</نوکی>" دا ناں بدل کے "<نوکی>$1</نوکی>" رکھ دتا گیا اے۔',
+	'renameuser-page-exists' => 'صفہ $1 پہلے ای ہیگا اے تے ایدے تے اپنے آپ نئیں لکھیا جاسکدا۔',
+	'renameuser-page-moved' => 'صفہ $1 نوں $2 ول لجایا گیا اے۔',
+	'renameuser-page-unmoved' => 'صفہ $1 ، $2 ول نئیں لجایا جاسکدا۔',
+	'renameuserlogpage' => 'ورتن ہور ناں لاگ',
+	'renameuserlogpagetext' => 'ورتن ناواں چ تبدیلیاں دی اے لاگ اے۔',
+	'renameuserlogentry' => '$1 بدل کے "$2" رکھیا گیا۔',
+	'renameuser-log' => '{{انیک:$1|1 تبدیلی|$1 تبدیلیاں}}. وجہ: $2',
+	'renameuser-move-log' => 'اپنے آپ صفے ٹرے "[[ورتن والا:$1|$1]]" دا ناں "[[ورتن والا:$2|$2]]" پلٹدیاں ہویاں',
+	'right-renameuser' => 'ورتن والے دا ہور ناں',
 );
 
 /** Pashto (پښتو)
