@@ -308,8 +308,12 @@ class SpecialRenameuser extends SpecialPage {
 								!$suppressRedirect
 							);
 					if ( $success === true ) {
+						# oldPage is not known in case of redirect suppression
 						$oldLink = Linker::link( $oldPage, null, array(), array( 'redirect' => 'no' ) );
+
+						# newPage is always known because the move was successful
 						$newLink = Linker::linkKnown( $newPage );
+
 						$output .= Html::rawElement(
 									'li',
 									array( 'class' => 'mw-renameuser-pm' ),
