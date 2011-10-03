@@ -2942,9 +2942,11 @@ $messages['pnb'] = array(
 	'renameuser' => 'ورتن والے دا ہور ناں',
 	'renameuser-linkoncontribs' => 'ورتن والے دا ہور ناں',
 	'renameuser-linkoncontribs-text' => 'ایس ورتن والے دا ہور ناں رکھو',
+	'renameuser-desc' => "جوڑدا اے اک [[خاص:Renameuser|خاص صفہ]] اک ورتن والے نوں ہور ناں دین لئی ( ''renameuser'' حق دی لوڑ اے۔)",
 	'renameuserold' => 'ہن والا ورتن والا ناں:',
 	'renameusernew' => 'نواں ورتن والا ناں:',
 	'renameuserreason' => 'ہور ناں رکھن دی وجہ:',
+	'renameusermove' => 'ورتن تے گل بات صفے نوں تے نال دے نکیاں صفیاں نوں نویں ناں ول لے چلو۔',
 	'renameusersuppress' => 'ایس نویں ناں نال ریڈائرکٹ ناں بناؤ۔',
 	'renameuserreserve' => 'پرانے ورتن والے ناں نوں اگے ورتے جان توں روکو',
 	'renameuserwarnings' => 'خبردار',
@@ -4283,7 +4285,7 @@ $messages['zh-hans'] = array(
 	'renameuser-linkoncontribs' => '用户重新命名',
 	'renameuser-linkoncontribs-text' => '重命名此用户',
 	'renameuser-desc' => "添加一个[[Special:Renameuser|特殊页面]]来重命名用户（需要''renameuser''权限）",
-	'renameuserold' => '当前用户名:',
+	'renameuserold' => '当前用户名：',
 	'renameusernew' => '新用户名:',
 	'renameuserreason' => '重命名的原因:',
 	'renameusermove' => '移动用户页及其对话页（包括各子页）到新的名字',
@@ -4303,13 +4305,12 @@ $messages['zh-hans'] = array(
 	'renameuser-page-moved' => '$1这一页已经移动到$2。',
 	'renameuser-page-unmoved' => '$1这一页不能移动到$2。',
 	'renameuserlogpage' => '用户更名日志',
-	'renameuserlogpagetext' => '这是用户名更改的日志',
-	'renameuserlogentry' => '已经把 $1 重命名为 "$2"',
+	'renameuserlogpagetext' => '本日志记录用户名的更改',
+	'renameuserlogentry' => '将$1更名为“$2”',
 	'renameuser-log' => '拥有$1次编辑。 理由: $2',
 	'renameuser-move-log' => '当由"[[User:$1|$1]]"重命名作"[[User:$2|$2]]"时已经自动移动用户页',
 	'right-renameuser' => '更名用户',
-	'renameuser-renamed-notice' => '该用户已被重新命名。
-以下列出更改用户名日志以供参考。',
+	'renameuser-renamed-notice' => '本用户已更名。下面提供更名日志以供参考。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
