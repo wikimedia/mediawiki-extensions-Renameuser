@@ -55,6 +55,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author SPQRobin
  * @author Siebrand
  * @author The Evil IP address
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
@@ -66,7 +67,7 @@ $messages['qqq'] = array(
 	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
-	'right-renameuser' => '{{doc-right}}',
+	'right-renameuser' => '{{doc-right|renameuser}}',
 	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
 
@@ -2494,6 +2495,7 @@ Log penukaran nama ditunjukkan di bawah sebagai rujukan.',
 $messages['mt'] = array(
 	'renameuser' => 'Semmi utent mill-ġdid',
 	'renameuser-linkoncontribs' => 'semmi l-utent mill-ġdid',
+	'renameuser-linkoncontribs-text' => "Erġa' semmi lil dan l-utent",
 	'renameuserold' => 'Isem tal-utent attwali:',
 	'renameusernew' => 'Isem tal-utent il-ġdid:',
 	'renameuserreason' => 'Raġuni għall-bidla fl-isem:',
