@@ -2500,6 +2500,7 @@ $messages['mt'] = array(
 	'renameusernew' => 'Isem tal-utent il-ġdid:',
 	'renameuserreason' => 'Raġuni għall-bidla fl-isem:',
 	'renameusermove' => "Mexxi l-paġna tal-utent, il-paġna ta' diskussjoni u s-sottopaġni taħt l-isem il-ġdid",
+	'renameusersuppress' => 'Toħloqx rindirizzi lejn l-isem il-ġdid',
 	'renameuserreserve' => 'Imblokka l-użu tal-isem il-qadim fil-futur',
 	'renameuserwarnings' => 'Twissijiet:',
 	'renameuserconfirm' => 'Iva, semmi mill-ġdid dan l-utent',
