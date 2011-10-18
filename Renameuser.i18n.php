@@ -2133,16 +2133,18 @@ Bes esu joot un versöök et noch ens.',
 Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
+ * @author Gomada
  */
 $messages['ku-latn'] = array(
 	'renameuser' => 'Navî bikarhênerê biguherîne',
 	'renameuser-linkoncontribs' => 'navî bikarhênerê biguherîne',
 	'renameuser-linkoncontribs-text' => 'Navê vî bikarhênerî biguherîne',
-	'renameuserold' => 'Navî niha:',
-	'renameusernew' => 'Navî nuh:',
+	'renameuserold' => 'Navê niha:',
+	'renameusernew' => 'Navê nû:',
 	'renameuserreason' => 'Sedema ji bo navguhertinê:',
+	'renameuserwarnings' => 'Hişyarî:',
 	'renameuserconfirm' => 'Erê, navê vî bikarhênerî biguherîne',
 	'renameusersubmit' => 'Bike',
 	'renameusererrordoesnotexist' => 'Bikarhêner "<nowiki>$1</nowiki>" tune ye.',
