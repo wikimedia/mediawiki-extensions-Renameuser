@@ -20,7 +20,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  *
  * @ingroup Maintenance
- * @author Ariel Glenn <ariel@wikimedia.orf>
+ * @author Ariel Glenn <ariel@wikimedia.org>
  */
 
 $IP = getenv( 'MW_INSTALL_PATH' );
@@ -42,6 +42,7 @@ class RenameUserCleanup extends Maintenance {
 		$this->output( "Rename User Cleanup starting...\n\n" );
 		$olduser = User::newFromName( $this->getOption( 'olduser' ) );
 		$newuser = User::newFromName( $this->getOption( 'newuser' ) );
+
 		if ( !$newuser->getId() ) {
 			$this->error( "No such user: " . $this->getOption( 'newuser' ), true );
 			exit(1);
@@ -79,8 +80,14 @@ class RenameUserCleanup extends Maintenance {
 				__METHOD__
 			);
 			if (! $result ||  ! $result->numRows() ) {
-				print("No log entry found for a rename of ".$olduser->getName()." to ".$newuser->getName().", giving up\n");
-				exit(1);
+				print("No log entry found for a rename of ".$olduser->getName()." to ".$newuser->getName().", proceed anyways??? [N/y] ");
+				$stdin = fopen ("php://stdin","rt");
+				$line = fgets($stdin);
+				fclose($stdin);
+				if ( $line[0] != "Y" && $line[0] != "y" ) {
+					print("Exiting at user's request\n");
+					exit(1);
+				}
 			}
 			else {
 				foreach ( $result as $row ) {
@@ -93,7 +100,7 @@ class RenameUserCleanup extends Maintenance {
 				print("Found log entry of the rename: ".$olduser->getName()." to ".$newuser->getName()." on $row->log_timestamp\n");
 			}
 		}
-		if ($result->numRows() > 1) {
+		if ($result && $result->numRows() > 1) {
 			print("More than one rename entry found in the log, not sure what to do. Continue anyways? [N/y]  ");
 			$stdin = fopen ("php://stdin","rt");
 			$line = fgets($stdin);
