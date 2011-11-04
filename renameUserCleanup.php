@@ -80,12 +80,16 @@ class RenameUserCleanup extends Maintenance {
 
 	public function checkRenameLog( $olduser, $newuser ) {
 		$dbr = wfGetDB( DB_SLAVE );
+
+		$oldTitle = Title::makeTitle( NS_USER, $olduser->getName() );
+		$newTitle = Title::makeTitle( NS_USER, $newuser->getName() );
+
 		$result = $dbr->select( 'logging', '*',
 			array( 'log_type' => 'renameuser',
 				'log_action'    => 'renameuser',
 				'log_namespace' => NS_USER,
-				'log_title'     => $olduser->getName(),
-				'log_params'    => $newuser->getName()
+				'log_title'     => $oldTitle->getDBkey(),
+				'log_params'    => $newTitle->getDBkey()
 			     ),
 			__METHOD__
 		);
