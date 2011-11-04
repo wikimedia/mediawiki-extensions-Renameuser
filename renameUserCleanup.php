@@ -82,14 +82,13 @@ class RenameUserCleanup extends Maintenance {
 		$dbr = wfGetDB( DB_SLAVE );
 
 		$oldTitle = Title::makeTitle( NS_USER, $olduser->getName() );
-		$newTitle = Title::makeTitle( NS_USER, $newuser->getName() );
 
 		$result = $dbr->select( 'logging', '*',
 			array( 'log_type' => 'renameuser',
 				'log_action'    => 'renameuser',
 				'log_namespace' => NS_USER,
 				'log_title'     => $oldTitle->getDBkey(),
-				'log_params'    => $newTitle->getDBkey()
+				'log_params'    => $newuser->getName()
 			     ),
 			__METHOD__
 		);
@@ -153,7 +152,7 @@ class RenameUserCleanup extends Maintenance {
 			array( $usernamefield => $olduser->getName(), $useridfield => $uid ), __METHOD__ );
 
 		if ( $contribs == 0 ) {
-			print "No edits to be re-attributed from table $table\n" ;
+			print "No edits to be re-attributed from table $table for uid $uid\n" ;
 			return(0);
 		}
 
