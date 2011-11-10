@@ -1736,25 +1736,39 @@ $messages['io'] = array(
 /** Icelandic (Íslenska)
  * @author Cessator
  * @author S.Örvarr.S
+ * @author Snævar
  * @author Spacebirdy
  * @author Ævar Arnfjörð Bjarmason
  * @author לערי ריינהארט
  */
 $messages['is'] = array(
 	'renameuser' => 'Breyta notandanafni',
+	'renameuser-linkoncontribs-text' => 'breyta notendanafni notandans',
 	'renameuserold' => 'Núverandi notandanafn:',
 	'renameusernew' => 'Nýja notandanafnið:',
 	'renameuserreason' => 'Ástæða:',
+	'renameusermove' => 'Færa notendasíðu og notendaspjallsíðu (og undirsíður þeirra) á nýja nafnið',
+	'renameusersuppress' => 'Ekki skilja eftir tilvísun',
+	'renameuserreserve' => 'Banna notkun á gamla notendanafninu',
+	'renameuserwarnings' => 'Viðvaranir:',
+	'renameuserconfirm' => 'Já, breyta nafni notandans',
 	'renameusersubmit' => 'Senda',
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
 	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
 	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
+	'renameuser-error-same-user' => 'Óheimilt er að breyta nafni notanda aftur á það notendanafn sem hann hafði áður.',
+	'renameusersuccess' => 'Nafn notandans "<nowiki>$1</nowiki>" hefur verið breytt í "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Síða sem heitir $1 er nú þegar til og það er ekki hægt að búa til nýja grein með sama heiti.',
 	'renameuser-page-moved' => 'Síðan $1 hefur verið færð á $2.',
 	'renameuser-page-unmoved' => 'Ekki var hægt að færa síðuna $1 á $2.',
 	'renameuserlogpage' => 'Skrá yfir nafnabreytingar notenda',
 	'renameuserlogpagetext' => 'Þetta er skrá yfir nýlegar breytingar á notendanöfnum.',
+	'renameuserlogentry' => 'breytti nafni $1 í "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 breyting|$1 breytingar}}. Ástæða: $2',
+	'renameuser-move-log' => 'Færði síðuna sjálfvirkt þegar notendanafni "[[User:$1|$1]]" var breytt í "[[User:$2|$2]]"',
+	'right-renameuser' => 'Breyta notandanafni notenda',
+	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt. 
+Síðasta færsla notandans úr skrá yfir nafnabreytingar notenda er sýnd hér fyrir neðan til skýringar:',
 );
 
 /** Italian (Italiano)
