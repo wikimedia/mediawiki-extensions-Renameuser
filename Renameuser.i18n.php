@@ -1236,25 +1236,25 @@ Le journal des renommages est disponible ci-dessous pour information.',
  */
 $messages['frp'] = array(
 	'renameuser' => 'Renomar l’utilisator',
-	'renameuser-linkoncontribs' => 'renomar l’utilisator',
-	'renameuser-linkoncontribs-text' => 'Renomar ceti utilisator',
-	'renameuser-desc' => "Apond una [[Special:Renameuser|pâge spèciâla]] por renomar un utilisator (at fôta des drêts de ''renameuser'').",
-	'renameuserold' => 'Nom d’ora a l’utilisator :',
-	'renameusernew' => 'Novél nom a l’utilisator :',
+	'renameuser-linkoncontribs' => 'renomar l’usanciér',
+	'renameuser-linkoncontribs-text' => 'Renomar ceti usanciér',
+	'renameuser-desc' => "Apond una [[Special:Renameuser|pâge spèciâla]] por renomar un usanciér (at fôta des drêts de ''renameuser'').",
+	'renameuserold' => 'Nom d’ora a l’usanciér :',
+	'renameusernew' => 'Novél nom a l’usanciér :',
 	'renameuserreason' => 'Rêson du changement de nom :',
-	'renameusermove' => 'Renomar totes les pâges a l’utilisator vers lo novél nom',
+	'renameusermove' => 'Renomar totes les pâges a l’usanciér vers lo novél nom',
 	'renameusersuppress' => 'Pas fâre de redirèccion de vers lo novél nom',
 	'renameuserreserve' => 'Resèrvar lo viely nom por un usâjo a vegnir',
 	'renameuserwarnings' => 'Avèrtissements :',
-	'renameuserconfirm' => 'Ouè, renomar l’utilisator',
+	'renameuserconfirm' => 'Ouè, renomar l’usanciér',
 	'renameusersubmit' => 'Sometre',
-	'renameusererrordoesnotexist' => 'L’utilisator « <nowiki>$1</nowiki> » ègziste pas.',
-	'renameusererrorexists' => 'L’utilisator « <nowiki>$1</nowiki> » ègziste ja.',
+	'renameusererrordoesnotexist' => 'L’usanciér « <nowiki>$1</nowiki> » ègziste pas.',
+	'renameusererrorexists' => 'L’usanciér « <nowiki>$1</nowiki> » ègziste ja.',
 	'renameusererrorinvalid' => 'Lo nom d’utilisator « <nowiki>$1</nowiki> » est envalido.',
 	'renameuser-error-request' => 'Un problèmo ègziste avouéc la reçua de la requéta.
 Volyéd tornar arriér et pués tornar èprovar.',
-	'renameuser-error-same-user' => 'Vos pouede pas renomar un utilisator du mémo nom que dês devant.',
-	'renameusersuccess' => 'L’utilisator « <nowiki>$1</nowiki> » at étâ renomâ en « <nowiki>$2</nowiki> ».',
+	'renameuser-error-same-user' => 'Vos pouede pas renomar un usanciér du mémo nom que dês devant.',
+	'renameusersuccess' => 'L’usanciér « <nowiki>$1</nowiki> » at étâ renomâ en « <nowiki>$2</nowiki> ».',
 	'renameuser-page-exists' => 'La pâge $1 ègziste ja et pôt pas étre remplaciê ôtomaticament.',
 	'renameuser-page-moved' => 'La pâge $1 at étâ dèplaciê vers $2.',
 	'renameuser-page-unmoved' => 'La pâge $1 pôt pas étre renomâ en $2.',
@@ -1262,9 +1262,9 @@ Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuserlogpagetext' => 'O est lo jornal des changements de nom d’utilisator.',
 	'renameuserlogentry' => 'at renomâ « $1 » en « $2 »',
 	'renameuser-log' => '$1 changement{{PLURAL:$1||s}}. Rêson : $2',
-	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’utilisator « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
+	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’usanciér « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
 	'right-renameuser' => 'Renomar des utilisators',
-	'renameuser-renamed-notice' => 'Ceti utilisator at étâ renomâ.
+	'renameuser-renamed-notice' => 'Ceti usanciér at étâ renomâ.
 Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
 );
 
@@ -2437,7 +2437,9 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaajawa
  * @author Kaustubh
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'renameuser' => 'सदस्यनाम बदला',
@@ -2447,6 +2449,7 @@ $messages['mr'] = array(
 	'renameusernew' => 'नवीन सदस्यनाम:',
 	'renameuserreason' => 'नाम बदलण्याचे कारण:',
 	'renameusermove' => 'सदस्य तसेच सदस्य चर्चापान (तसेच त्यांची उपपाने) नवीन सदस्यनामाकडे स्थानांतरीत करा',
+	'renameuserwarnings' => 'ताकीद:',
 	'renameusersubmit' => 'पाठवा',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" नावाचा सदस्य अस्तित्वात नाही.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" नावाचा सदस्य अगोदरच अस्तित्वात आहे',
@@ -2459,7 +2462,7 @@ $messages['mr'] = array(
 	'renameuser-page-unmoved' => '$1 हे पान $2 मथळ्याखाली स्थानांतरीत करू शकत नाही.',
 	'renameuserlogpage' => 'सदस्यनाम बदल यादी',
 	'renameuserlogpagetext' => 'ही सदस्यनामांमध्ये केलेल्या बदलांची यादी आहे.',
-	'renameuserlogentry' => 'नी $1 ला "$2" केले',
+	'renameuserlogentry' => '$1 ला "$2" केले',
 	'renameuser-log' => '{{PLURAL:$1|१ संपादन|$1 संपादने}}. कारण: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" ला "[[User:$2|$2]]" बदलताना आपोआप सदस्य पान स्थानांतरीत केलेले आहे.',
 	'right-renameuser' => 'सदस्यांची नावे बदला',
