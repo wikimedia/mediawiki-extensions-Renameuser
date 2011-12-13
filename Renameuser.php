@@ -18,7 +18,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Renameuser',
 	'author'         => array( 'Ævar Arnfjörð Bjarmason', 'Aaron Schulz' ),
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:Renameuser',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:Renameuser',
 	'descriptionmsg' => 'renameuser-desc',
 );
 
