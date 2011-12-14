@@ -2450,6 +2450,7 @@ $messages['mr'] = array(
 	'renameusernew' => 'नवीन सदस्यनाम:',
 	'renameuserreason' => 'नाम बदलण्याचे कारण:',
 	'renameusermove' => 'सदस्य तसेच सदस्य चर्चापान (तसेच त्यांची उपपाने) नवीन सदस्यनामाकडे स्थानांतरीत करा',
+	'renameuserreserve' => 'जुने सदस्य खाते पुढील वापरासाठी अवरुद्ध करा',
 	'renameuserwarnings' => 'ताकीद:',
 	'renameuserconfirm' => 'होय, सदस्याचे नाव बदला',
 	'renameusersubmit' => 'पाठवा',
