@@ -22,10 +22,10 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'renameuser-desc',
 );
 
-# Internationalisation file
+# Internationalisation files
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['Renameuser'] = $dir . 'Renameuser.i18n.php';
-$wgExtensionAliasesFiles['Renameuser'] = $dir . 'Renameuser.alias.php';
+$wgExtensionMessagesFiles['RenameuserAliases'] = $dir . 'Renameuser.alias.php';
 
 /**
  * Users with more than this number of edits will have their rename operation
