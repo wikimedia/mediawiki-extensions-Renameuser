@@ -2440,6 +2440,7 @@ $messages['mn'] = array(
  * @author Kaajawa
  * @author Kaustubh
  * @author Rahuldeshmukh101
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'renameuser' => 'सदस्यनाम बदला',
@@ -2470,6 +2471,8 @@ $messages['mr'] = array(
 	'renameuser-log' => '{{PLURAL:$1|१ संपादन|$1 संपादने}}. कारण: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" ला "[[User:$2|$2]]" बदलताना आपोआप सदस्य पान स्थानांतरीत केलेले आहे.',
 	'right-renameuser' => 'सदस्यांची नावे बदला',
+	'renameuser-renamed-notice' => 'या सदस्यास पुनर्नामित करण्यात आले आहे.
+पुनर्नामाचा क्रमलेख संदर्भासाठी खाली दिलेला आहे.',
 );
 
 /** Malay (Bahasa Melayu)
