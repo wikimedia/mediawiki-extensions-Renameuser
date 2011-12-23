@@ -3612,6 +3612,7 @@ $messages['sr-el'] = array(
 	'renameusernew' => 'Novo korisničko ime:',
 	'renameuserreason' => 'Razlog preimenovanja:',
 	'renameusermove' => 'Premesti korisničku stranicu i stranicu za razgovor (i njihove podstranice) na novo ime',
+	'renameusersuppress' => 'Ne pravite preusmerenja na novi naziv',
 	'renameuserreserve' => 'Blokiraj staro korisničko ime za dalju upotrebu',
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, preimenuj korisničko ime.',
