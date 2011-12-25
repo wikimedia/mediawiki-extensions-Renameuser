@@ -477,7 +477,7 @@ $messages['bn'] = array(
 	'renameusermove' => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
 	'renameuserwarnings' => 'সতর্কীকরণ:',
 	'renameuserconfirm' => 'হ্যাঁ, ব্যবহারকারীর নাম পরিবর্তন করো',
-	'renameusersubmit' => 'জমা দিন',
+	'renameusersubmit' => 'জমা দাও',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ব্যবহারকারী নামটি ঠিক নয়।',
@@ -2561,6 +2561,44 @@ $messages['nan'] = array(
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'renameuser' => 'Døp om bruker',
+	'renameuser-linkoncontribs' => 'døp om bruker',
+	'renameuser-linkoncontribs-text' => 'Døp om denne brukeren',
+	'renameuser-desc' => "Legger til en [[Special:Renameuser|spesialside]] for å døpe om en bruker (krever ''renameuser''-rettigheter)",
+	'renameuserold' => 'Nåværende brukernavn:',
+	'renameusernew' => 'Nytt brukernavn:',
+	'renameuserreason' => 'Årsak for omdøping:',
+	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
+	'renameusersuppress' => 'Ikke opprett omdirigeringer til det nye navnet',
+	'renameuserreserve' => 'Blokker det gamle brukernavnet fra framtidig bruk',
+	'renameuserwarnings' => 'Advarsler:',
+	'renameuserconfirm' => 'Ja, døp om brukeren',
+	'renameusersubmit' => 'Utfør',
+	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke.',
+	'renameusererrorexists' => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede.',
+	'renameusererrorinvalid' => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig.',
+	'renameuser-error-request' => 'Det var et problem med å motta forespørselen.
+Gå tilbake og prøv igjen.',
+	'renameuser-error-same-user' => 'Du kan ikke gi en bruker samme navn som han/hun allerede har.',
+	'renameusersuccess' => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>».',
+	'renameuser-page-exists' => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
+	'renameuser-page-moved' => 'Siden $1 har blitt flyttet til $2.',
+	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
+	'renameuserlogpage' => 'Omdøpingslogg',
+	'renameuserlogpagetext' => 'Dette er en logg over endringer i brukernavn.',
+	'renameuserlogentry' => 'døpte om $1 til «$2»',
+	'renameuser-log' => '{{PLURAL:$1|1 bidrag|$1 bidrag}}. Årsak: $2',
+	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
+	'right-renameuser' => 'Døpe om brukere',
+	'renameuser-renamed-notice' => 'Denne brukeren er døpt om.
+Til informasjon er omdøpningsloggen vist nedenfor.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -2706,44 +2744,6 @@ Gå attende og prøv på nytt.',
 	'right-renameuser' => 'Døypa om brukarar',
 	'renameuser-renamed-notice' => 'Denne brukaren har fått nytt namn.
 Til informasjon er omdøpingsloggen synt nedanfor.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'renameuser' => 'Døp om bruker',
-	'renameuser-linkoncontribs' => 'døp om bruker',
-	'renameuser-linkoncontribs-text' => 'Døp om denne brukeren',
-	'renameuser-desc' => "Legger til en [[Special:Renameuser|spesialside]] for å døpe om en bruker (krever ''renameuser''-rettigheter)",
-	'renameuserold' => 'Nåværende brukernavn:',
-	'renameusernew' => 'Nytt brukernavn:',
-	'renameuserreason' => 'Årsak for omdøping:',
-	'renameusermove' => 'Flytt bruker- og brukerdiskusjonssider (og deres undersider) til nytt navn',
-	'renameusersuppress' => 'Ikke opprett omdirigeringer til det nye navnet',
-	'renameuserreserve' => 'Blokker det gamle brukernavnet fra framtidig bruk',
-	'renameuserwarnings' => 'Advarsler:',
-	'renameuserconfirm' => 'Ja, døp om brukeren',
-	'renameusersubmit' => 'Utfør',
-	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke.',
-	'renameusererrorexists' => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede.',
-	'renameusererrorinvalid' => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig.',
-	'renameuser-error-request' => 'Det var et problem med å motta forespørselen.
-Gå tilbake og prøv igjen.',
-	'renameuser-error-same-user' => 'Du kan ikke gi en bruker samme navn som han/hun allerede har.',
-	'renameusersuccess' => 'Brukeren «<nowiki>$1</nowiki>» har blitt omdøpt til «<nowiki>$2</nowiki>».',
-	'renameuser-page-exists' => 'Siden $1 finnes allerede, og kunne ikke erstattes automatisk.',
-	'renameuser-page-moved' => 'Siden $1 har blitt flyttet til $2.',
-	'renameuser-page-unmoved' => 'Siden $1 kunne ikke flyttes til $2.',
-	'renameuserlogpage' => 'Omdøpingslogg',
-	'renameuserlogpagetext' => 'Dette er en logg over endringer i brukernavn.',
-	'renameuserlogentry' => 'døpte om $1 til «$2»',
-	'renameuser-log' => '{{PLURAL:$1|1 bidrag|$1 bidrag}}. Årsak: $2',
-	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
-	'right-renameuser' => 'Døpe om brukere',
-	'renameuser-renamed-notice' => 'Denne brukeren er døpt om.
-Til informasjon er omdøpningsloggen vist nedenfor.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
