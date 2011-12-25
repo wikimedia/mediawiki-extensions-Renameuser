@@ -219,7 +219,7 @@ $specialPageAliases['nn'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['no'] = array(
+$specialPageAliases['nb'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 

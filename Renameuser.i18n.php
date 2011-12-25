@@ -2712,7 +2712,7 @@ Til informasjon er omdøpingsloggen synt nedanfor.',
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'renameuser' => 'Døp om bruker',
 	'renameuser-linkoncontribs' => 'døp om bruker',
 	'renameuser-linkoncontribs-text' => 'Døp om denne brukeren',
