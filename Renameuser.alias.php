@@ -95,12 +95,12 @@ $specialPageAliases['fr'] = array(
 
 /** Franco-Provençal (Arpetan) */
 $specialPageAliases['frp'] = array(
-	'Renameuser' => array( 'Renomar_l\'utilisator', 'RenomarLUtilisator' ),
+	'Renameuser' => array( 'Renomar_l\'usanciér', 'RenomarLUsanciér' ),
 );
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'Renameuser' => array( 'Renomear_usuario' ),
+	'Renameuser' => array( 'Renomear_o_usuario' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -203,6 +203,11 @@ $specialPageAliases['mt'] = array(
 	'Renameuser' => array( 'BiddelIsemUtent' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'Renameuser' => array( 'Gebruker_herneumen' ),
@@ -216,11 +221,6 @@ $specialPageAliases['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
 	'Renameuser' => array( 'Døyp_om_brukar' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
 /** Occitan (Occitan) */
@@ -240,7 +240,7 @@ $specialPageAliases['ps'] = array(
 
 /** Portuguese (Português) */
 $specialPageAliases['pt'] = array(
-	'Renameuser' => array( 'Alterar nome de utilizador' ),
+	'Renameuser' => array( 'Alterar_nome_de_utilizador' ),
 );
 
 /** Brazilian Portuguese (Português do Brasil) */
@@ -302,8 +302,3 @@ $specialPageAliases['vi'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'Renameuser' => array( '重命名用户' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
