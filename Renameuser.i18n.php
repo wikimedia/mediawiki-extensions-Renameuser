@@ -1446,15 +1446,20 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'renameuser' => 'सदस्यनाम बदलें',
+	'renameuser-linkoncontribs' => 'सदस्यनाम बदलें',
+	'renameuser-linkoncontribs-text' => 'इस सदस्य के नाम बदलें',
 	'renameuser-desc' => "सदस्यनाम बदलें (''सदस्यनाम बदलने अधिकार'' अनिवार्य)",
 	'renameuserold' => 'सद्य सदस्यनाम:',
 	'renameusernew' => 'नया सदस्यनाम:',
 	'renameuserreason' => 'नाम बदलने के कारण:',
 	'renameusermove' => 'सदस्य पृष्ठ और वार्ता पृष्ठ (और उनके सबपेज) नये नाम की ओर भेजें',
+	'renameuserwarnings' => 'चेतावनी:',
+	'renameuserconfirm' => 'हाँ, सदस्य के नाम बदलें',
 	'renameusersubmit' => 'भेजें',
 	'renameusererrordoesnotexist' => 'सदस्य "<nowiki>$1</nowiki>" अस्तित्वमें नहीं हैं।',
 	'renameusererrorexists' => 'सदस्य "<nowiki>$1</nowiki>" पहले से अस्तित्वमें हैं।',
