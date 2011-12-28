@@ -1714,6 +1714,43 @@ $messages['ig'] = array(
 	'renameuser-page-unmoved' => 'Ihü $1 énweghịkị páfù gá $2.',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'renameuser' => 'Naganan ti agar-aramat',
+	'renameuser-linkoncontribs' => 'naganan ti agar-aramat',
+	'renameuser-linkoncontribs-text' => 'Naganan daytoy nga agar-aramat',
+	'renameuser-desc' => "Agnayon ti [[Special:Renameuser|naipangruna a panid]] nga agpanagan ti agar-aramat (masapul ti ''naganan ti agar-aramat'' a karbengan)",
+	'renameuserold' => 'Agdama a nagan ti agar-aramat:',
+	'renameusernew' => 'Baro a nagan ti agar-aramat:',
+	'renameuserreason' => 'Rason ti panagnagan:',
+	'renameusermove' => 'Iyalis ti agar-aramat ket tungtungan a pampanid (ken dagiti ap-apo a panid) iti baro a nagan',
+	'renameusersuppress' => 'Saan nga agaramid kadagiti baw-ing iti baro a nagan',
+	'renameuserreserve' => 'Serraan ti daan a nagan ti agar-aramat manipud ti masakbayan a pag-usar.',
+	'renameuserwarnings' => 'Dagiti ballaag:',
+	'renameuserconfirm' => 'Wen, naganan ti agar-aramat',
+	'renameusersubmit' => 'Ited',
+	'renameusererrordoesnotexist' => 'Ti agar-aramat "<nowiki>$1</nowiki>" ket awan.',
+	'renameusererrorexists' => 'Ti agar-aramat "<nowiki>$1</nowiki>" ket addaanen.',
+	'renameusererrorinvalid' => 'Ti nagan ti agar-aramat "<nowiki>$1</nowiki>" ket imbalido.',
+	'renameuser-error-request' => 'Adda pakirut ti pinakaala ti kiddaw.
+Pangngaasi nga agsubli ken padasen manen.',
+	'renameuser-error-same-user' => 'Saan mo a managanan ti agar-aramat a kasdi.',
+	'renameusersuccess' => 'Ti agar-aramat "<nowiki>$1</nowiki>" ket nanaganan iti "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Ti panid a $1 ket addaan ken saan a mautomatiko a suratan manen.',
+	'renameuser-page-moved' => 'Ti panid $1 ket naiyalis idiay $2.',
+	'renameuser-page-unmoved' => 'Ti panid  $1 ket saan a maiyalis idiay $2.',
+	'renameuserlogpage' => 'Listaan ti panagnagan ti agar-aramat',
+	'renameuserlogpagetext' => 'Listaan daytoy kadagiti sinukatan a nag-nagan ti agararamat.',
+	'renameuserlogentry' => 'ninaganan $1 iti "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 urnos|$1 ur-urnos}}. Rason: $2',
+	'renameuser-move-log' => 'Automatiko nga iyalis ti panid bayat nagnaganan ti agar-aramat "[[User:$1|$1]]" iti "[[User:$2|$2]]"',
+	'right-renameuser' => 'Naganan dagiti agar-aramat',
+	'renameuser-renamed-notice' => 'Nanaganen daytoy nga agar-aramat.
+Ti listaan ti nagnaganan ket naited dita baba para iti reperensia.',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  * @author Wyvernoid
@@ -2337,6 +2374,7 @@ $messages['lv'] = array(
 	'renameusersuccess' => 'Lietotājs "<nowiki>$1</nowiki>" pārdēvēts par "<nowiki>$2</nowiki>".',
 	'renameuserlogpage' => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
+	'renameuserlogentry' => 'pārsauca $1 par "$2"',
 	'right-renameuser' => 'Pārsaukt lietotājus',
 );
 
