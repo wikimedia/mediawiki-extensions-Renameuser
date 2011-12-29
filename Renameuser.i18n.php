@@ -1458,6 +1458,8 @@ $messages['hi'] = array(
 	'renameusernew' => 'नया सदस्यनाम:',
 	'renameuserreason' => 'नाम बदलने के कारण:',
 	'renameusermove' => 'सदस्य पृष्ठ और वार्ता पृष्ठ (और उनके सबपेज) नये नाम की ओर भेजें',
+	'renameusersuppress' => 'नूतन नाम को अनुप्रेषित ना करें',
+	'renameuserreserve' => 'पुरानी सदस्यनाम को अवरोध करें',
 	'renameuserwarnings' => 'चेतावनी:',
 	'renameuserconfirm' => 'हाँ, सदस्य के नाम बदलें',
 	'renameusersubmit' => 'भेजें',
@@ -4161,10 +4163,12 @@ $messages['vec'] = array(
 Qua soto ghe xe el riferimento sul registro de rinomina.',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel')
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
+	'renameuser' => 'Udesnimitada kävutajad',
+	'renameuserold' => 'Nügüdläine kävutajannimi:',
 	'renameusernew' => "Uz' kävutajan nimi:",
 	'renameuserreason' => 'Udesnimitandan sü:',
 	'renameusersubmit' => 'Tehta',
