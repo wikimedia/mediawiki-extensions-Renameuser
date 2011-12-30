@@ -3790,15 +3790,26 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Shanmugamp7
  * @author TRYPPN
  */
 $messages['ta'] = array(
+	'renameuser' => 'பயனரை பெயர்மாற்று',
+	'renameuser-linkoncontribs' => 'பயனரை பெயர்மாற்று',
+	'renameuser-linkoncontribs-text' => 'இந்த பயனரை பெயர்மாற்று',
 	'renameuserold' => 'தற்போதைய பயனர் பெயர்:',
 	'renameusernew' => 'புதிய பயனர் பெயர்:',
 	'renameuserreason' => 'மறுபெயருக்கான காரணம்:',
 	'renameuserwarnings' => 'எச்சரிக்கை:',
 	'renameuserconfirm' => 'சரி, பயனருக்கு மாற்றுப்பெயர் கொடுக்கவும்',
 	'renameusersubmit' => 'சமர்ப்பி',
+	'renameuserlogpage' => 'பயனரை பெயர்மாற்றுதல் குறிப்பேடு',
+	'renameuserlogpagetext' => 'இது பயனர் பெயர் மாற்றத்திற்கான குறிப்பேடு',
+	'renameuserlogentry' => 'பெயர் மற்றம் செய்யப்பட்டது $1 லிருந்து "$2" க்கு',
+	'renameuser-log' => '{{PLURAL:$1|1 திருத்தம்|$1 திருத்தங்கள்}}. காரணம்: $2',
+	'right-renameuser' => 'பயனர்களை மாற்று பெயரிடு',
+	'renameuser-renamed-notice' => 'இந்த பயனர் பெயர் மாற்றப்பட்டது.
+மாற்றுப்பெயரிடுதல் குறிப்பேடு குறிப்புதவிக்காக கீழே வழங்கப்பட்டுள்ளது',
 );
 
 /** Telugu (తెలుగు)
