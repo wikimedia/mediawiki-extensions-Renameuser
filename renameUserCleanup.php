@@ -49,16 +49,19 @@ class RenameUserCleanup extends Maintenance {
 		$this->checkRenameLog( $olduser, $newuser );
 
 		if ( $olduid ) {
-			$this->doUpdates( $olduser, $newuser, $olduid, $dbw );
+			$this->doUpdates( $olduser, $newuser, $olduid );
 		}
-		$this->doUpdates( $olduser, $newuser, $newuser->getId(), $dbw );
-		$this->doUpdates( $olduser, $newuser, 0, $dbw );
+		$this->doUpdates( $olduser, $newuser, $newuser->getId() );
+		$this->doUpdates( $olduser, $newuser, 0 );
 		
 		print "Done!\n";
 		exit(0);
 	}
 
-
+	/**
+	 * @param $olduser User
+	 * @param $newuser User
+	 */
 	public function checkUserExistence( $olduser, $newuser ) {
 		if ( !$newuser->getId() ) {
 			$this->error( "No such user: " . $this->getOption( 'newuser' ), true );
@@ -78,6 +81,10 @@ class RenameUserCleanup extends Maintenance {
 		}
 	}
 
+	/**
+	 * @param $olduser User
+	 * @param $newuser User
+	 */
 	public function checkRenameLog( $olduser, $newuser ) {
 		$dbr = wfGetDB( DB_SLAVE );
 
@@ -111,14 +118,12 @@ class RenameUserCleanup extends Maintenance {
 					print "Exiting at user's request\n";
 					exit(1);
 				}
-			}
-			else {
+			} else {
 				foreach ( $result as $row ) {
 					print "Found possible log entry of the rename, please check: ".$row->log_title." with comment ".$row->log_comment." on $row->log_timestamp\n";
 				}
 			}
-		}
-		else {
+		} else {
 			foreach ( $result as $row ) {
 				print "Found log entry of the rename: ".$olduser->getName()." to ".$newuser->getName()." on $row->log_timestamp\n";
 			}
@@ -135,8 +140,12 @@ class RenameUserCleanup extends Maintenance {
 		}
 	}
 
-
-	public function doUpdates( $olduser, $newuser, $uid, $dbw ) {
+	/**
+	 * @param $olduser User
+	 * @param $newuser User
+	 * @param $uid
+	 */
+	public function doUpdates( $olduser, $newuser, $uid ) {
 		$this->updateTable( 'revision', 'rev_user_text', 'rev_user', 'rev_timestamp', $olduser, $newuser, $uid );
 		$this->updateTable( 'archive', 'ar_user_text', 'ar_user', 'ar_timestamp',  $olduser, $newuser, $uid );
 		$this->updateTable( 'logging', 'log_user_text', 'log_user', 'log_timestamp', $olduser, $newuser, $uid );
@@ -145,7 +154,17 @@ class RenameUserCleanup extends Maintenance {
 		$this->updateTable( 'filearchive', 'fa_user_text','fa_user', 'fa_timestamp', $olduser, $newuser, $uid );
 	}
 
-	public function updateTable( $table,$usernamefield,$useridfield,$timestampfield,$olduser,$newuser,$uid ) {
+	/**
+	 * @param $table
+	 * @param $usernamefield
+	 * @param $useridfield
+	 * @param $timestampfield
+	 * @param $olduser User
+	 * @param $newuser User
+	 * @param $uid
+	 * @return int
+	 */
+	public function updateTable( $table, $usernamefield, $useridfield, $timestampfield, $olduser, $newuser, $uid ) {
 		$dbw = wfGetDB( DB_MASTER );
 
 		$contribs = $dbw->selectField( $table, 'count(*)',
@@ -199,8 +218,7 @@ class RenameUserCleanup extends Maintenance {
 			if ( $success ) {
 				$rowsDone = $dbw->affectedRows();
 				$dbw->commit();
-			}
-			else {
+			} else {
 				print "Problem with the update, rolling back and exiting\n";
 				$dbw->rollback();
 				exit(1);
