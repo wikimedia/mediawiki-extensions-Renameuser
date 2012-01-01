@@ -1181,10 +1181,31 @@ Alla on ote tunnusten vaihtolokista.',
 );
 
 /** Faroese (Føroyskt)
+ * @author EileenSanda
  * @author Spacebirdy
  */
 $messages['fo'] = array(
+	'renameuser' => 'Umdoyp brúkara',
+	'renameuser-linkoncontribs' => 'umdoyp brúkara',
+	'renameuser-linkoncontribs-text' => 'Umdoyp henda brúkara',
+	'renameuserold' => 'Rætta brúkaranavn:',
 	'renameusernew' => 'Nýtt brúkaranavn:',
+	'renameuserreason' => 'Orsøk til nýtt navn:',
+	'renameuserwarnings' => 'Ávaringar:',
+	'renameuserconfirm' => 'Ja, gev hesum brúkara nýtt navn',
+	'renameusersubmit' => 'Send inn',
+	'renameusererrordoesnotexist' => 'Brúkarin "<nowiki>$1</nowiki>" er ikki til.',
+	'renameusererrorexists' => 'Brúkarin "<nowiki>$1</nowiki>" er long til.',
+	'renameusererrorinvalid' => 'Brúkaranavnið "<nowiki>$1</nowiki>" er ógyldugt.',
+	'renameuser-error-request' => 'Har var ein trupulleiki við at móttaka fyrispurningin.
+Vinarliga far aftur og royn enn einaferð.',
+	'renameuser-page-moved' => 'Síðan $1 er blivin flutt til $2.',
+	'renameuser-page-unmoved' => 'Síðan $1 kundi ikki verða flutt til $2.',
+	'renameuserlogentry' => 'umdoypti $1 til "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 rætting|$1 rættingar}}. Orsøk: $2',
+	'right-renameuser' => 'Umdoyp brúkarar',
+	'renameuser-renamed-notice' => 'Hesin brúkari hevur fingið nýtt navn.
+Loggurin fyri navnabroytingina er givin niðanfyri fyri keldu ávísing.',
 );
 
 /** French (Français)
@@ -4324,6 +4345,7 @@ $messages['yo'] = array(
 	'renameuserold' => 'Orúkọ oníṣe ìsinsìnyí:',
 	'renameusernew' => 'Orúkọ oníṣe tuntun:',
 	'renameuserwarnings' => 'Àwọn ìkìlọ̀:',
+	'renameusersubmit' => 'Fúnsílẹ̀',
 	'renameusererrordoesnotexist' => 'Oníṣe "<nowiki>$1</nowiki>" kò sí.',
 	'renameusererrorexists' => 'Oníṣe "<nowiki>$1</nowiki>" tilẹ̀ wà tẹ́lẹ̀.',
 	'renameuserlogentry' => 'ṣàtúnsọlórúkọ $1 sí $2',
