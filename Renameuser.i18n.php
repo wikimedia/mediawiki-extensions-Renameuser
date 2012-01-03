@@ -3369,6 +3369,13 @@ $messages['rue'] = array(
 Про перегляд є ниже указаный выпис з лоґу переменовань хоснователїв.',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'renameuserwarnings' => 'चेतावनी:',
+);
+
 /** Sakha (Саха тыла)
  * @author HalanTul
  */
