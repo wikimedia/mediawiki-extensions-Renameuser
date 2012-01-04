@@ -82,6 +82,7 @@ $messages['saz'] = array(
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  * @author SPQRobin
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'renameuser' => 'Hernoem gebruiker',
@@ -92,6 +93,7 @@ $messages['af'] = array(
 	'renameusernew' => 'Nuwe gebruikersnaam:',
 	'renameuserreason' => 'Rede vir hernoeming:',
 	'renameusermove' => 'Hernoem gebruikers- en besprekingsbladsye (met subblaaie) na nuwe naam',
+	'renameusersuppress' => 'Moenie skep aansture na die nuwe naam',
 	'renameuserreserve' => 'Voorkom dat die ou gebruiker in die toekoms weer gebruik kan word',
 	'renameuserwarnings' => 'Waarskuwings:',
 	'renameuserconfirm' => 'Ja, hernoem die gebruiker',
