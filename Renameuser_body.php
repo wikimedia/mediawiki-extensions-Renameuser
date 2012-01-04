@@ -22,7 +22,7 @@ class SpecialRenameuser extends SpecialPage {
 	 * @param mixed $par Parameter passed to the page
 	 */
 	public function execute( $par ) {
-		global $wgOut, $wgUser, $wgRequest, $wgContLang, $wgLang;
+		global $wgOut, $wgUser, $wgRequest, $wgContLang;
 		global $wgCapitalLinks;
 
 		$this->setHeaders();
@@ -342,8 +342,7 @@ class SpecialRenameuser extends SpecialPage {
 	/**
 	 * @param $username Title
 	 * @param $type
-	 * @param $out
-	 * @return void
+	 * @param $out OutputPage
 	 */
 	function showLogExtract( $username, $type, &$out ) {
 		# Show relevant lines from the logs:
@@ -388,8 +387,9 @@ class RenameuserSQL {
 	/**
 	 * Constructor
 	 *
-	 * @param string $old The old username
-	 * @param string $new The new username
+	 * @param $old string The old username
+	 * @param $new string The new username
+	 * @param $uid
 	 */
 	function __construct( $old, $new, $uid ) {
 		$this->old = $old;

@@ -101,8 +101,7 @@ function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
 	global $wgUser;
 
 	if ( $wgUser->isAllowed( 'renameuser' ) && $id ) {
-		$sk = $wgUser->getSkin();
-		$tools[] = $sk->link(
+		$tools[] = Linker::link(
 			SpecialPage::getTitleFor( 'Renameuser' ),
 			wfMsg( 'renameuser-linkoncontribs' ),
 			array( 'title' => wfMsgExt( 'renameuser-linkoncontribs-text', 'parseinline' ) ),
