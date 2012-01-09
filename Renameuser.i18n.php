@@ -123,11 +123,15 @@ Relevante inligting uit die logboek van gebruikersnaamwysigings word hier onder 
  */
 $messages['an'] = array(
 	'renameuser' => 'Renombrar un usuario',
+	'renameuser-linkoncontribs' => "cambiar o nombre d'iste usuario",
+	'renameuser-linkoncontribs-text' => "Cambiar o nombre d'iste usuario",
 	'renameuser-desc' => "Renombrar un usuario (amenista os dreitos de ''renameuser'')",
 	'renameuserold' => 'Nombre actual:',
 	'renameusernew' => 'Nombre nuevo:',
 	'renameuserreason' => "Razón d'o cambeo de nombre:",
 	'renameusermove' => "Tresladar as pachinas d'usuario y de descusión (y as suyas sozpachinas) ta o nuevo nombre",
+	'renameusersuppress' => 'No creyar reendreceras ta o nuevo nombre',
+	'renameuserreserve' => "Bloqueyar l'antigo nombre d'usuario ta privar que torne a ser usau",
 	'renameuserwarnings' => 'Alvertencias:',
 	'renameuserconfirm' => "Sí, quiero cambiar o nombre de l'usuario",
 	'renameusersubmit' => 'Ninviar',
@@ -146,6 +150,8 @@ $messages['an'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 edición|$1 edicions}}. Razón: $2',
 	'renameuser-move-log' => 'Pachina tresladata automaticament en renombrar o usuario "[[User:$1|$1]]" como "[[User:$2|$2]]"',
 	'right-renameuser' => 'Renombrar usuarios',
+	'renameuser-renamed-notice' => "O nombre d'iste usuario s'ha modificau.
+O rechistro de cambeos de nombre d'usuario se proveye debaixo ta mas referencia.",
 );
 
 /** Old English (Ænglisc)
