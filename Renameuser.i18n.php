@@ -3305,6 +3305,7 @@ L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
  * @author Ahonc
  * @author EugeneZelenko
  * @author Innv
+ * @author KPu3uC B Poccuu
  * @author Kaganer
  * @author Александр Сигачёв
  */
@@ -3312,7 +3313,7 @@ $messages['ru'] = array(
 	'renameuser' => 'Переименовать участника',
 	'renameuser-linkoncontribs' => 'переименовать участника',
 	'renameuser-linkoncontribs-text' => 'Переименовать этого участника',
-	'renameuser-desc' => "Переименование участника (требуются права ''renameuser'')",
+	'renameuser-desc' => 'Добавляет [[Special:Renameuser|возможность]] переименования пользователей (требуется право <code>renameuser</code>)',
 	'renameuserold' => 'Имя в настоящий момент:',
 	'renameusernew' => 'Новое имя:',
 	'renameuserreason' => 'Причина переименования:',
@@ -3333,7 +3334,7 @@ $messages['ru'] = array(
 	'renameuser-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'renameuserlogpage' => 'Журнал переименований участников',
 	'renameuserlogpagetext' => 'Это журнал произведённых переименований зарегистрированных участников.',
-	'renameuserlogentry' => 'переименовал $1 в «$2»',
+	'renameuserlogentry' => 'переименовал «$1» в «$2»',
 	'renameuser-log' => '$1 {{PLURAL:$1|правка|правки|правок}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'right-renameuser' => 'переименование участников',
