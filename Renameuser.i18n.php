@@ -1816,7 +1816,9 @@ $messages['io'] = array(
  */
 $messages['is'] = array(
 	'renameuser' => 'Breyta notandanafni',
+	'renameuser-linkoncontribs' => 'breyta notendanafni',
 	'renameuser-linkoncontribs-text' => 'breyta notendanafni notandans',
+	'renameuser-desc' => "Bætir við [[Special:Renameuser|kerfissíðu]] til að breyta notendanafni (þarfnast ''renameuser'' réttinda)",
 	'renameuserold' => 'Núverandi notandanafn:',
 	'renameusernew' => 'Nýja notandanafnið:',
 	'renameuserreason' => 'Ástæða:',
@@ -1829,6 +1831,8 @@ $messages['is'] = array(
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
 	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
 	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
+	'renameuser-error-request' => 'Mistókst að sækja beiðnina um breytingu notendanafnsins.
+Vinsamlegast farðu til baka og reyndu aftur.',
 	'renameuser-error-same-user' => 'Óheimilt er að breyta nafni notanda aftur á það notendanafn sem hann hafði áður.',
 	'renameusersuccess' => 'Nafn notandans "<nowiki>$1</nowiki>" hefur verið breytt í "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'Síða sem heitir $1 er nú þegar til og það er ekki hægt að búa til nýja grein með sama heiti.',
