@@ -1436,8 +1436,23 @@ $messages['gsw'] = array(
 S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author KartikMistry
+ */
+$messages['gu'] = array(
+	'renameuser' => 'સભ્યનામ બદલો',
+	'renameuser-linkoncontribs' => 'સભ્યનામ બદલો',
+	'renameuser-linkoncontribs-text' => 'આ સભ્યનું નામ બદલો',
+	'renameuserold' => 'હાલનું સભ્યનામ:',
+	'renameusernew' => 'નવું સભ્યનામ:',
+	'renameuserreason' => 'નામ બદલવાનું કારણ:',
+	'renameuserwarnings' => 'ચેતવણીઓ:',
+	'renameuserconfirm' => 'હા, સભ્યનું નામ બદલો',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Ofekalef
  * @author Rotem Liss
  * @author YaronSh
  */
@@ -1453,7 +1468,7 @@ $messages['he'] = array(
 	'renameusersuppress' => 'לא ליצור הפניות לשם החדש',
 	'renameuserreserve' => 'חסימת שם המשתמש הישן לשימוש נוסף',
 	'renameuserwarnings' => 'אזהרות:',
-	'renameuserconfirm' => 'כן, שנה את שם המשתמש',
+	'renameuserconfirm' => 'כן, לשנות את שם המשתמש',
 	'renameusersubmit' => 'שינוי שם משתמש',
 	'renameusererrordoesnotexist' => 'המשתמש "<nowiki>$1</nowiki>" אינו קיים.',
 	'renameusererrorexists' => 'המשתמש "<nowiki>$1</nowiki>" כבר קיים.',
