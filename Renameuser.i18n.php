@@ -1438,6 +1438,7 @@ S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
 
 /** Gujarati (ગુજરાતી)
  * @author KartikMistry
+ * @author Sushant savla
  */
 $messages['gu'] = array(
 	'renameuser' => 'સભ્યનામ બદલો',
@@ -1448,6 +1449,12 @@ $messages['gu'] = array(
 	'renameuserreason' => 'નામ બદલવાનું કારણ:',
 	'renameuserwarnings' => 'ચેતવણીઓ:',
 	'renameuserconfirm' => 'હા, સભ્યનું નામ બદલો',
+	'renameusersubmit' => 'જમા કરો',
+	'renameusererrordoesnotexist' => 'આ સભ્ય  "<nowiki>$1</nowiki>" મોજૂદ નથી.',
+	'renameusererrorexists' => 'આ સભ્ય  "<nowiki>$1</nowiki>" પહેલેથી હાજર છે.',
+	'renameuser-page-moved' => 'પાના $1 ને $2 પર ખસેડાયું',
+	'renameuserlogpage' => 'સભ્ય નામફેરનો લોગ',
+	'right-renameuser' => 'સભ્યોના નામ બદલો',
 );
 
 /** Hebrew (עברית)
