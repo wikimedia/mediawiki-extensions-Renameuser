@@ -1454,6 +1454,8 @@ $messages['gu'] = array(
 	'renameusererrorexists' => 'આ સભ્ય  "<nowiki>$1</nowiki>" પહેલેથી હાજર છે.',
 	'renameuser-page-moved' => 'પાના $1 ને $2 પર ખસેડાયું',
 	'renameuserlogpage' => 'સભ્ય નામફેરનો લોગ',
+	'renameuserlogentry' => '$1 નું નામ "$2" કર્યું',
+	'renameuser-log' => '{{PLURAL:$1|૧ ફેરફાર|$1 ફેરફારો}}. કારણ: $2',
 	'right-renameuser' => 'સભ્યોના નામ બદલો',
 );
 
