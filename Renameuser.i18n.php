@@ -216,6 +216,8 @@ $messages['arc'] = array(
 	'renameuserwarnings' => 'ܙܘܗܪ̈ܐ:',
 	'renameuserconfirm' => 'ܐܝܢ, ܫܚܠܦ ܫܡܐ ܕܡܦܠܚܢܐ',
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
+	'renameuserlogentry' => 'ܬܢܐ ܠܫܘܡܗܐ $1 ܒܫܡ "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 ܫܘܚܠܦܐ|$1 ܫܘܚܠܦ̈ܐ}}. ܥܠܬܐ: $2',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -1447,13 +1449,19 @@ $messages['gu'] = array(
 	'renameuserold' => 'હાલનું સભ્યનામ:',
 	'renameusernew' => 'નવું સભ્યનામ:',
 	'renameuserreason' => 'નામ બદલવાનું કારણ:',
+	'renameuserreserve' => 'જૂના સભ્યનામને ભવિષ્યનો વપરાશ પ્રતિબંધીત કરો',
 	'renameuserwarnings' => 'ચેતવણીઓ:',
 	'renameuserconfirm' => 'હા, સભ્યનું નામ બદલો',
 	'renameusersubmit' => 'જમા કરો',
 	'renameusererrordoesnotexist' => 'આ સભ્ય  "<nowiki>$1</nowiki>" મોજૂદ નથી.',
 	'renameusererrorexists' => 'આ સભ્ય  "<nowiki>$1</nowiki>" પહેલેથી હાજર છે.',
+	'renameuser-error-request' => 'તમારી અરજી પ્રાપ્ત કરતાં કાંઈ ત્રુટી થઈ
+મહેરબાની કરી ફરી પ્રયત્ન કરશો',
+	'renameuser-page-exists' => 'પાનું  $1 પહેલેથી અસ્તિત્વમાં છે તેના પર સ્વયંચલિત નવું લેખન ન થાય.',
 	'renameuser-page-moved' => 'પાના $1 ને $2 પર ખસેડાયું',
+	'renameuser-page-unmoved' => 'પાના $1ને $2 પર ન લઈ જઈ શકાયું',
 	'renameuserlogpage' => 'સભ્ય નામફેરનો લોગ',
+	'renameuserlogpagetext' => 'સભ્યના દ્વારા થયેલા ફેરફરની આ સંપાદન યાદિ છે .',
 	'renameuserlogentry' => '$1 નું નામ "$2" કર્યું',
 	'renameuser-log' => '{{PLURAL:$1|૧ ફેરફાર|$1 ફેરફારો}}. કારણ: $2',
 	'right-renameuser' => 'સભ્યોના નામ બદલો',
