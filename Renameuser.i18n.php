@@ -1455,8 +1455,10 @@ $messages['gu'] = array(
 	'renameusersubmit' => 'જમા કરો',
 	'renameusererrordoesnotexist' => 'આ સભ્ય  "<nowiki>$1</nowiki>" મોજૂદ નથી.',
 	'renameusererrorexists' => 'આ સભ્ય  "<nowiki>$1</nowiki>" પહેલેથી હાજર છે.',
+	'renameusererrorinvalid' => 'સભ્યનામ "<nowiki>$1</nowiki>" અયોગ્ય છે.',
 	'renameuser-error-request' => 'તમારી અરજી પ્રાપ્ત કરતાં કાંઈ ત્રુટી થઈ
 મહેરબાની કરી ફરી પ્રયત્ન કરશો',
+	'renameuser-error-same-user' => 'તમે સભ્યને ફરીથી પહેલાનું નામ આપી શકશો નહી.',
 	'renameuser-page-exists' => 'પાનું  $1 પહેલેથી અસ્તિત્વમાં છે તેના પર સ્વયંચલિત નવું લેખન ન થાય.',
 	'renameuser-page-moved' => 'પાના $1 ને $2 પર ખસેડાયું',
 	'renameuser-page-unmoved' => 'પાના $1ને $2 પર ન લઈ જઈ શકાયું',
@@ -1465,6 +1467,8 @@ $messages['gu'] = array(
 	'renameuserlogentry' => '$1 નું નામ "$2" કર્યું',
 	'renameuser-log' => '{{PLURAL:$1|૧ ફેરફાર|$1 ફેરફારો}}. કારણ: $2',
 	'right-renameuser' => 'સભ્યોના નામ બદલો',
+	'renameuser-renamed-notice' => 'આ સભ્યનું નામ પરિવર્તન થયું છે.
+નામ પરિવર્તન લોગ તમારા સંદર્ભ માટે અહીં આપેલ છે',
 );
 
 /** Hebrew (עברית)
