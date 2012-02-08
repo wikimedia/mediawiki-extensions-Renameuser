@@ -1449,6 +1449,8 @@ $messages['gu'] = array(
 	'renameuserold' => 'હાલનું સભ્યનામ:',
 	'renameusernew' => 'નવું સભ્યનામ:',
 	'renameuserreason' => 'નામ બદલવાનું કારણ:',
+	'renameusermove' => 'સભ્ય અને ગપ્પાં પાનાંઓ (અને તેમનાં ઉપપાનાંઓ) નવાં નામ પર ખસેડો',
+	'renameusersuppress' => 'નવા નામ પર દિશા નિર્દેશનો ન રચશો',
 	'renameuserreserve' => 'જૂના સભ્યનામને ભવિષ્યનો વપરાશ પ્રતિબંધીત કરો',
 	'renameuserwarnings' => 'ચેતવણીઓ:',
 	'renameuserconfirm' => 'હા, સભ્યનું નામ બદલો',
@@ -1459,6 +1461,7 @@ $messages['gu'] = array(
 	'renameuser-error-request' => 'તમારી અરજી પ્રાપ્ત કરતાં કાંઈ ત્રુટી થઈ
 મહેરબાની કરી ફરી પ્રયત્ન કરશો',
 	'renameuser-error-same-user' => 'તમે સભ્યને ફરીથી પહેલાનું નામ આપી શકશો નહી.',
+	'renameusersuccess' => 'સભ્ય "<nowiki>$1</nowiki>" નું નામ બદલીને "<nowiki>$2</nowiki>" કરાયું છે.',
 	'renameuser-page-exists' => 'પાનું  $1 પહેલેથી અસ્તિત્વમાં છે તેના પર સ્વયંચલિત નવું લેખન ન થાય.',
 	'renameuser-page-moved' => 'પાના $1 ને $2 પર ખસેડાયું',
 	'renameuser-page-unmoved' => 'પાના $1ને $2 પર ન લઈ જઈ શકાયું',
