@@ -1469,6 +1469,7 @@ $messages['gu'] = array(
 	'renameuserlogpagetext' => 'સભ્યના દ્વારા થયેલા ફેરફરની આ સંપાદન યાદિ છે .',
 	'renameuserlogentry' => '$1 નું નામ "$2" કર્યું',
 	'renameuser-log' => '{{PLURAL:$1|૧ ફેરફાર|$1 ફેરફારો}}. કારણ: $2',
+	'renameuser-move-log' => 'સભ્ય "[[User:$1|$1]]" થી "[[User:$2|$2]]" નામ બદલતી વખતે આપમેળે પાનું ખસેડ્યું',
 	'right-renameuser' => 'સભ્યોના નામ બદલો',
 	'renameuser-renamed-notice' => 'આ સભ્યનું નામ પરિવર્તન થયું છે.
 નામ પરિવર્તન લોગ તમારા સંદર્ભ માટે અહીં આપેલ છે',
