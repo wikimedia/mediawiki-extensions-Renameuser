@@ -1446,6 +1446,7 @@ $messages['gu'] = array(
 	'renameuser' => 'સભ્યનામ બદલો',
 	'renameuser-linkoncontribs' => 'સભ્યનામ બદલો',
 	'renameuser-linkoncontribs-text' => 'આ સભ્યનું નામ બદલો',
+	'renameuser-desc' => "સભ્યનું નામાંતરણ કરવા માટે [[Special:Renameuser|special page]] ઉમેરે છે (''renameuser'' હક્ક જરૂરી)",
 	'renameuserold' => 'હાલનું સભ્યનામ:',
 	'renameusernew' => 'નવું સભ્યનામ:',
 	'renameuserreason' => 'નામ બદલવાનું કારણ:',
