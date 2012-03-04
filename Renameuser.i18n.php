@@ -2038,6 +2038,7 @@ Mangga balènana lan nyoba manèh.',
  * @author BRUTE
  * @author Dawid Deutschland
  * @author Malafaya
+ * @author Nodar Kherkheulidze
  * @author Sopho
  */
 $messages['ka'] = array(
@@ -2053,20 +2054,20 @@ $messages['ka'] = array(
 	'renameuserwarnings' => 'გაფრთხილებები:',
 	'renameuserconfirm' => 'დიახ, მსურს სახელის გადარქმევა',
 	'renameusersubmit' => 'გაგზავნა',
-	'renameusererrordoesnotexist' => 'მომხმარებელი "<nowiki>$1</nowiki>" არ არსებობს',
+	'renameusererrordoesnotexist' => 'მომხმარებელი „<nowiki>$1</nowiki>“ არ არსებობს',
 	'renameusererrorexists' => 'მომხმარებელი "<nowiki>$1</nowiki>" უკვე არსებობს',
-	'renameusererrorinvalid' => 'მომხმარებლის სახელი "<nowiki>$1</nowiki>" არასწორია',
+	'renameusererrorinvalid' => 'მომხმარებლის სახელი „<nowiki>$1</nowiki>“ არასწორია',
 	'renameuser-error-request' => 'მოთხოვნის მიღებასთან დაკავშირებით რაღაც პრობლემაა. გთხოვთ, ხელახლა სცადეთ.',
 	'renameuser-error-same-user' => 'თქვენ არ შეგიძლიათ დაარქვათ მომხმარებელს იგივე სახელი, რაც ერქვა წინათ.',
-	'renameusersuccess' => 'მომხმარებლის სახელი - "<nowiki>$1</nowiki>", შეიცვალა "<nowiki>$2</nowiki>"-ით',
+	'renameusersuccess' => 'მომხმარებლის სახელი — „<nowiki>$1</nowiki>“, შეიცვალა „<nowiki>$2</nowiki>-ით“',
 	'renameuser-page-exists' => 'გვერდი $1 უკვე არსებობს და მისი ავტომატურად შენაცვლება შეუძლებელია.',
 	'renameuser-page-moved' => 'გვერდი $1 გადატანილია $2-ზე.',
 	'renameuser-page-unmoved' => 'არ მოხერხდა გვერდის $1 გადატანა $2-ზე.',
 	'renameuserlogpage' => 'მომხმარებლის სახელის გადარქმევის რეგისტრაციის ჟურნალი',
 	'renameuserlogpagetext' => 'ეს არის ჟურნალი, სადაც აღრიცხულია მომხმარებლის სახელთა ცვლილებები',
-	'renameuserlogentry' => 'სახელი გადაერქვა $1-ს "$2"-ზე',
+	'renameuserlogentry' => 'სახელი გადაერქვა $1-ს „$2-ზე“',
 	'renameuser-log' => '$1 რედაქცია. მიზეზი: $2',
-	'renameuser-move-log' => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის "[[User:$1|$1]]" სახელის შეცვლისას "[[User:$2|$2]]-ით"',
+	'renameuser-move-log' => 'ავტომატურად იქნა გადატანილი გვერდი მომხმარებლის „[[User:$1|$1]]“ სახელის შეცვლისას „[[User:$2|$2]]-ით“',
 	'right-renameuser' => 'მომხმარებლების სახელის გადარქმევა',
 	'renameuser-renamed-notice' => 'ამ მომხმარებელს სახელი გადაერქვა.
 ქვემოთ მოყვანილია სახელის გადარქმევის ჟურნალი.',
