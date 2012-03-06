@@ -1480,6 +1480,7 @@ $messages['gu'] = array(
  * @author Amire80
  * @author Ofekalef
  * @author Rotem Liss
+ * @author Rotemliss
  * @author YaronSh
  */
 $messages['he'] = array(
@@ -1503,7 +1504,7 @@ $messages['he'] = array(
 	'renameuser-error-same-user' => 'אינכם יכולים לשנות את שם המשתמש לשם זהה לשמו הישן.',
 	'renameusersuccess' => 'שם המשתמש של "<nowiki>$1</nowiki>" שונה ל"<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'הדף $1 כבר קיים ולא ניתן לדרוס אותו אוטומטית.',
-	'renameuser-page-moved' => 'הדף $1 הועבר ל$2.',
+	'renameuser-page-moved' => 'הדף $1 הועבר לשם $2.',
 	'renameuser-page-unmoved' => 'לא ניתן היה להעביר את הדף $1 ל$2.',
 	'renameuserlogpage' => 'יומן שינויי שמות משתמש',
 	'renameuserlogpagetext' => 'זהו יומן השינויים בשמות המשתמשים.',
