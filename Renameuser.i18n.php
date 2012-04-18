@@ -3658,6 +3658,7 @@ Prosimo, pojdite nazaj in poskusite znova.',
 	'renameuserlogentry' => '- preimenovanje $1 v »$2«',
 	'renameuser-log' => '$1 {{PLURAL:$1|urejanje|urejanji|urejanja|urejanj}}. Razlog: $2',
 	'renameuser-move-log' => 'Samodejno prestavljanje strani pri preimenovanju uporabnika »[[User:$1|$1]]« v »[[User:$2|$2]]«',
+	'action-renameuser' => 'preimenovanje uporabnikov',
 	'right-renameuser' => 'Preimenovanje uporabnikov',
 	'renameuser-renamed-notice' => 'Ta uporabnik je bil preimenovan.
 Dnevnik preimenovanja je naveden spodaj.',
