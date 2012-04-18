@@ -1,8 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "RenameUser extension\n";
-	exit( 1 );
-}
 
 /**
  * Special page allows authorised users to rename
@@ -258,10 +254,17 @@ class SpecialRenameuser extends SpecialPage {
 			$wgUser->setName( $newusername->getText() );
 		}
 
-		// Log this rename
-		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ),
-			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		// Log this rename, updated to 1.19+ Log form.
+		//	https://www.mediawiki.org/wiki/Logging_to_Special:Log
+		$logEntry = new ManualLogEntry( 'renameuser', 'renamed' );
+		$logEntry->setPerformer( $wgUser );
+		$logEntry->setTarget( $oldusername );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( array(
+			'4::olduser' => $oldusername,
+			'5::newuser' => $newusername->getText()) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 
 		// Move any user pages
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
@@ -300,7 +303,7 @@ class SpecialRenameuser extends SpecialPage {
 				} else {
 					$success = $oldPage->moveTo(
 								$newPage,
-								false, 
+								false,
 								wfMessage(
 									'renameuser-move-log',
 									$oldusername->getText(),
@@ -567,5 +570,20 @@ class RenameuserSQL {
 
 		wfProfileOut( __METHOD__ );
 		return true;
+	}
+}
+
+class RenameuserLogFormatter extends LogFormatter {
+	protected function getMessageParameters() {
+		$params = parent::getMessageParameters();
+		// Old user name
+		if ( isset( $params[3] ) && $params[3] instanceof Title ) {
+			$params[3] = Message::rawParam( Linker::link( $params[3], $params[3]->getText() ) );
+		}
+		// New user name
+		if ( isset( $params[4] ) ) {
+			$params[4] = Message::rawParam( Linker::link( Title::newFromText( $params[4], NS_USER ), $params[4] ) );
+		}
+		return $params;
 	}
 }
