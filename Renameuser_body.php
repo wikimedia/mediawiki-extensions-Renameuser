@@ -258,10 +258,17 @@ class SpecialRenameuser extends SpecialPage {
 			$wgUser->setName( $newusername->getText() );
 		}
 
-		// Log this rename
-		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ),
-			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		// Log this rename, updated to 1.19+ Log form.
+		//	https://www.mediawiki.org/wiki/Logging_to_Special:Log
+		$logEntry = new ManualLogEntry( 'renameuser', 'renamed' );
+		$logEntry->setPerformer( $wgUser );
+		$logEntry->setTarget( $oldusername );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( array(
+			'4::olduser' => $oldusername,
+			'5::newuser' => $newusername->getText()) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 
 		// Move any user pages
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
@@ -300,7 +307,7 @@ class SpecialRenameuser extends SpecialPage {
 				} else {
 					$success = $oldPage->moveTo(
 								$newPage,
-								false, 
+								false,
 								wfMessage(
 									'renameuser-move-log',
 									$oldusername->getText(),
