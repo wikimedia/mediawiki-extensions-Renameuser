@@ -36,9 +36,9 @@ Please go back and try again.',
 	'renameuser-page-moved'   => 'The page $1 has been moved to $2.',
 	'renameuser-page-unmoved' => 'The page $1 could not be moved to $2.',
 
-	'renameuserlogpage'     => 'User rename log',
-	'renameuserlogpagetext' => 'This is a log of changes to user names.',
-	'renameuserlogentry'    => 'renamed $1 to "$2"',
+	'log-name-renameuser'     => 'User rename log',
+	'log-description-renameuser' => 'This is a log of changes to user names.',
+	'logentry-renameuser-renamed'    => '$1 renamed $4 to $5',
 	'renameuser-log'        => '{{PLURAL:$1|1 edit|$1 edits}}. Reason: $2',
 	'renameuser-move-log'   => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
 
@@ -65,9 +65,13 @@ $messages['qqq'] = array(
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
-	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
-* Parameter $1 is the original username
-* Parameter $2 is the new username',
+	'log-name-renameuser'     => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
+	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
+	'logentry-renameuser-renamed' => 'Used in [[Special:Log/renameuser]]. Parameters:
+* $1 is the user that executed the rename.
+* $2 is the name if the user that executed the rename (optional, used for GENDER)
+* $4 is the old name of the renamed user
+* $5 is the new name of the renamed user.',
 	'right-renameuser' => '{{doc-right|renameuser}}',
 	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
