@@ -1,8 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "RenameUser extension\n";
-	exit( 1 );
-}
 
 /**
  * Special page allows authorised users to rename
@@ -258,10 +254,19 @@ class SpecialRenameuser extends SpecialPage {
 			$wgUser->setName( $newusername->getText() );
 		}
 
-		// Log this rename
-		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ),
-			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		// Log this rename, updated to 1.19+ Log form.
+		//	https://www.mediawiki.org/wiki/Logging_to_Special:Log
+		$logEntry = new ManualLogEntry( 'renameuser', 'renamed' );
+		$logEntry->setPerformer( $wgUser );
+		$logEntry->setTarget( $oldusername );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( array(
+			'4::olduser' => $oldusername->getText(),
+			'5::newuser' => $newusername->getText(),
+			'6::edits' => $contribs
+		) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 
 		// Move any user pages
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
@@ -300,7 +305,7 @@ class SpecialRenameuser extends SpecialPage {
 				} else {
 					$success = $oldPage->moveTo(
 								$newPage,
-								false, 
+								false,
 								wfMessage(
 									'renameuser-move-log',
 									$oldusername->getText(),
@@ -567,5 +572,64 @@ class RenameuserSQL {
 
 		wfProfileOut( __METHOD__ );
 		return true;
+	}
+}
+
+class RenameuserLogFormatter extends LogFormatter {
+protected function getMessageParameters() {
+	$params = parent::getMessageParameters();
+
+	$backwardCompat = false;
+
+	// Handle old log entries.
+	if( !isset( $params[5] ) ) {
+		// Observed some cases in old logs where this value is not set.
+		// Probably "the log version before this version".
+		if( isset( $params[3] ) ) {
+			$params[4] = $params[3];
+		} else {
+			$params[4] = "<error>";
+		}
+		$params[3] = $params[2]['raw'];
+		$backwardCompat = true;
+	}
+
+	// Nice link to old user page
+	if ( $backwardCompat === false ) {
+		$params[3] = Message::rawParam( Linker::link( Title::newFromText( $params[3], NS_USER ), $params[3] ) );
+	} else {
+		$params[3] = Message::rawParam( $params[3] );
+	}
+
+	// Nice link to new user page
+	$params[4] = Message::rawParam( Linker::link( Title::newFromText( $params[4], NS_USER ), $params[4] ) );
+
+	return $params;
+}
+
+	/**
+	 * Gets the luser provided comment. Modified core method to change Linker::commentBlock.
+	 * @return string HTML
+	 */
+	public function getComment() {
+		if ( $this->canView( LogPage::DELETED_COMMENT ) ) {
+			$params = parent::getMessageParameters();
+
+			if ( isset( $params[5] ) ) {
+				$comment = Linker::commentBlock( wfMessage( 'renameuser-log', $params[5] )->rawParams( $this->entry->getComment() )->escaped() );
+			} else {
+				$comment = Linker::commentBlock( $this->entry->getComment() );
+			}
+
+			// No hard coded spaces thanx
+			$element = ltrim( $comment );
+			if ( $this->entry->isDeleted( LogPage::DELETED_COMMENT ) ) {
+				$element = $this->styleRestricedElement( $element );
+			}
+		} else {
+			$element = $this->getRestrictedElement( 'rev-deleted-comment' );
+		}
+
+		return $element;
 	}
 }
