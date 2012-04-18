@@ -34,34 +34,8 @@ $wgExtensionMessagesFiles['RenameuserAliases'] = $dir . 'Renameuser.alias.php';
 define( 'RENAMEUSER_CONTRIBJOB', 5000 );
 
 # Add a new log type
-global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
-$wgLogTypes[]                          = 'renameuser';
-$wgLogNames['renameuser']              = 'renameuserlogpage';
-$wgLogHeaders['renameuser']            = 'renameuserlogpagetext';
-# $wgLogActions['renameuser/renameuser'] = 'renameuserlogentry';
-$wgLogActionsHandlers['renameuser/renameuser'] = 'wfRenameUserLogActionText'; // deal with old breakage
-
-/**
- * @param $type
- * @param $action
- * @param $title Title
- * @param $skin Skin
- * @param $params array
- * @param $filterWikilinks bool
- * @return String
- */
-function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null, $params = array(), $filterWikilinks = false ) {
-	if ( !$title || $title->getNamespace() !== NS_USER ) {
-		$rv = ''; // handled in comment, the old way
-	} else {
-		$titleLink = $skin ?
-			$skin->makeLinkObj( $title, htmlspecialchars( $title->getPrefixedText() ) ) : htmlspecialchars( $title->getText() );
-		# Add title to params
-		array_unshift( $params, $titleLink );
-		$rv = wfMsg( 'renameuserlogentry', $params );
-	}
-	return $rv;
-}
+$wgLogTypes[] = 'renameuser';
+$wgLogActionsHandlers['renameuser/*'] = 'LogFormatter';
 
 $wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/Renameuser_body.php';
 $wgAutoloadClasses['RenameUserJob'] = dirname( __FILE__ ) . '/RenameUserJob.php';
