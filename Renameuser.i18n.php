@@ -1228,6 +1228,7 @@ Loggurin fyri navnabroytingina er givin niðanfyri fyri keldu ávísing.',
 /** French (Français)
  * @author Cedric31
  * @author Crochet.david
+ * @author DavidL
  * @author Gomoko
  * @author Grondin
  * @author Hégésippe Cormier
@@ -1266,7 +1267,7 @@ $messages['fr'] = array(
 	'renameuser-log' => '$1 modification{{PLURAL:$1||s}}. Motif : $2',
 	'renameuser-move-log' => 'Page déplacée automatiquement lorsque l’utilisateur « [[User:$1|$1]] » est devenu « [[User:$2|$2]] »',
 	'action-renameuser' => 'renommer les utilisateurs',
-	'right-renameuser' => 'Renommer des utilisateurs',
+	'right-renameuser' => 'Renommer les utilisateurs',
 	'renameuser-renamed-notice' => 'Cet utilisateur a été renommé.
 Le journal des renommages est disponible ci-dessous pour information.',
 );
@@ -1954,6 +1955,7 @@ Il registro delle rinomine è riportato di seguito per informazione.',
  * @author Hosiryuhosi
  * @author Marine-Blue
  * @author Ohgi
+ * @author Shirayuki
  * @author Suisui
  * @author 青子守歌
  */
@@ -1985,7 +1987,8 @@ $messages['ja'] = array(
 	'renameuserlogentry' => '$1 を「$2」へ利用者名変更しました',
 	'renameuser-log' => '{{PLURAL:$1|投稿数}}$1回。理由: $2',
 	'renameuser-move-log' => '名前の変更と共に「[[User:$1|$1]]」を「[[User:$2|$2]]」へ自動的に移動しました',
-	'right-renameuser' => '利用者名変更',
+	'action-renameuser' => '利用者名を変更',
+	'right-renameuser' => '利用者名を変更',
 	'renameuser-renamed-notice' => 'この利用者は改名しました。参考のため、改名記録を以下に載せます。',
 );
 
