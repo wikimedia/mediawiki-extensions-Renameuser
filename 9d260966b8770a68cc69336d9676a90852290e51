@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAJX//+Ws\u003d",
+        "filename": "Renameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 110
+      },
+      "writtenOn": "2012-04-20T06:09:01Z",
+      "side": 1,
+      "message": "please remove this whitespace",
+      "revId": "9d260966b8770a68cc69336d9676a90852290e51",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAJX//+Wo\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 110
+      },
+      "writtenOn": "2012-04-20T06:09:01Z",
+      "side": 1,
+      "message": "Trailing single whitespace",
+      "revId": "9d260966b8770a68cc69336d9676a90852290e51",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAJX//+Wk\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 110
+      },
+      "writtenOn": "2012-04-20T06:09:01Z",
+      "side": 1,
+      "message": "Whitespaces in lines 270, 272 and 277",
+      "revId": "9d260966b8770a68cc69336d9676a90852290e51",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
