@@ -2414,6 +2414,7 @@ $messages['li'] = array(
 	'renameuserlogentry' => 'haet $1 hernömp nao "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkinge}}. Ree: $2',
 	'renameuser-move-log' => 'Automatisch hernömp bie \'t wiezige van gebroeker "[[User:$1|$1]]" nao "[[User:$2|$2]]"',
+	'action-renameuser' => 'gebroekers van naam te verangere',
 	'right-renameuser' => 'Gebroekers hernaome',
 	'renameuser-renamed-notice' => "Deze gebroeker is herneump.
 Relevante regels oet 't logbook staon hieónger.",
