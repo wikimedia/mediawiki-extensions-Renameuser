@@ -1083,6 +1083,7 @@ Palun ürita uuesti.',
 	'renameuserlogentry' => 'nimetas kasutaja $1 ümber kasutajaks "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redigeerimine|$1 redigeerimist}}. Põhjus: $2',
 	'renameuser-move-log' => 'Teisaldatud automaatselt, kui kasutaja "[[User:$1|$1]]" nimetati ümber kasutajaks "[[User:$2|$2]]"',
+	'action-renameuser' => 'kasutajaid ümber nimetadata',
 	'right-renameuser' => 'Muuta kasutajanimesid',
 	'renameuser-renamed-notice' => 'Kasutaja on ümbernimetatud.
 Allpool on toodud ümbernimetamislogi.',
@@ -1444,6 +1445,7 @@ $messages['gsw'] = array(
 	'renameuserlogentry' => 'het „$1“ in „$2“ umgnännt',
 	'renameuser-log' => '{{PLURAL:$1|1 Bearbeitig|$1 Bearbeitige}}. Grund: $2',
 	'renameuser-move-log' => 'dur d Umnännig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte',
+	'action-renameuser' => 'Benutzer umznänne',
 	'right-renameuser' => 'Benutzer umnänne',
 	'renameuser-renamed-notice' => 'Dää Benutzer isch umgnännt wore.
 S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
