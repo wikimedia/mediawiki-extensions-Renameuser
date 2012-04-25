@@ -694,6 +694,7 @@ $messages['cs'] = array(
 	'renameuserlogentry' => 'přejmenovává $1 na „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 editace|$1 editace|$1 editací}}. Zdůvodnění: $2',
 	'renameuser-move-log' => 'Automatický přesun při přejmenování uživatele „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
+	'action-renameuser' => 'přejmenovávat uživatele',
 	'right-renameuser' => 'Přejmenovávání uživatelů',
 	'renameuser-renamed-notice' => 'Tento uživatel byl přejmenován.
 Pro přehled je níže zobrazen výpis z knihy přejmenování uživatelů.',
