@@ -541,6 +541,7 @@ $messages['br'] = array(
 	'renameuserlogentry' => 'en deus adanvet $1 e "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 degasadenn|$1 degasadenn}}. Abeg : $2',
 	'renameuser-move-log' => 'Pajenn dilec\'hiet ent emgefreek e-ser adenvel an implijer "[[User:$1|$1]]" e "[[User:$2|$2]]"',
+	'action-renameuser' => 'Adenvel implijerien',
 	'right-renameuser' => 'Adenvel implijerien',
 	'renameuser-renamed-notice' => "Adanvet eo bet an implijer-mañ.
 A-is emañ marilh an adanvadurioù, ma'z oc'h dedennet.",
@@ -3865,6 +3866,7 @@ $messages['su'] = array(
  * @author Dafer45
  * @author Habj
  * @author Lejonel
+ * @author Lokal Profil
  * @author M.M.S.
  * @author Najami
  * @author Per
@@ -3897,6 +3899,7 @@ $messages['sv'] = array(
 	'renameuserlogentry' => 'bytte namn på $1 till "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redigering|$1 redigeringar}}. Anledning: $2',
 	'renameuser-move-log' => 'Flyttade automatiskt sidan när namnet byttes på användaren "[[User:$1|$1]]" till "[[User:$2|$2]]"',
+	'action-renameuser' => 'ändra namn på användaren',
 	'right-renameuser' => 'Ändra användares namn',
 	'renameuser-renamed-notice' => 'Användaren har fått ett nytt namn.
 Som referens återfinns omdöpningsloggen nedan.',
