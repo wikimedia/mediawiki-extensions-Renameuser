@@ -166,6 +166,7 @@ $messages['ang'] = array(
 
 /** Arabic (العربية)
  * @author Aiman titi
+ * @author DRIHEM
  * @author Meno25
  * @author Mido
  * @author OsamaK
@@ -199,6 +200,7 @@ $messages['ar'] = array(
 	'renameuserlogentry' => 'أعاد تسمية $1 باسم "$2"',
 	'renameuser-log' => '{{PLURAL:$1||تعديل واحد|تعديلان|$1 تعديلات|$1 تعديلًا|$1 تعديل}}. السبب: $2',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
+	'action-renameuser' => 'إعادة تسمية المستخدمين',
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
 	'renameuser-renamed-notice' => 'لقد تمت إعادة تسمية {{GENDER:$1|هذا المستخدم|هذه المستخدمة}}.
 سجل إعادة التسمية معروض بالأسفل كمرجع:',
