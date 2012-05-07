@@ -3723,6 +3723,7 @@ Regjistri i riemërimit është poshtë për referencë.',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author FriedrickMILBarbarossa
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -3753,9 +3754,9 @@ $messages['sr-ec'] = array(
 	'renameuser-page-exists' => 'Страница $1 већ постоји и не може се заменити.',
 	'renameuser-page-moved' => 'Страница $1 је премештена у $2.',
 	'renameuser-page-unmoved' => 'Страница $1 не може да се премести на $2.',
-	'renameuserlogpage' => 'Историја преименовања корисника',
+	'renameuserlogpage' => 'Дневник преименовања корисника',
 	'renameuserlogpagetext' => 'Ово је историја измена корисничких имена.',
-	'renameuserlogentry' => '{{GENDER:|је преименовао|је преименовала|преименова}} $1 у „$2“',
+	'renameuserlogentry' => '{{GENDER:|је преименовао|је преименовала|је преименовао}} $1 у „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}.
 Разлог: $2',
 	'renameuser-move-log' => 'Премештене странице приликом преименовања корисника: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
@@ -3765,6 +3766,7 @@ $messages['sr-ec'] = array(
 );
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
+ * @author FriedrickMILBarbarossa
  * @author Liangent
  * @author Michaello
  * @author Жељко Тодоровић
@@ -3792,7 +3794,7 @@ $messages['sr-el'] = array(
 	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može biti automatski presnimljena.',
 	'renameuser-page-moved' => 'Stranica $1 je premeštena na $2.',
 	'renameuser-page-unmoved' => 'Stranica $1 ne može biti premeštena na $2.',
-	'renameuserlogpage' => 'Istorija preimenovanja korisnika',
+	'renameuserlogpage' => 'Dnevnik preimenovanja korisnika',
 	'renameuserlogpagetext' => 'Ovo je istorija izmena korisničkih imena.',
 	'renameuserlogentry' => 'je preimenovao $1 u „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 izmena|$1 izmene|$1 izmena}}. Razlog: $2',
