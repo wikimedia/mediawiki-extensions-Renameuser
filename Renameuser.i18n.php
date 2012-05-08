@@ -23,6 +23,7 @@ $messages['en'] = array(
 	'renameuserwarnings'  => 'Warnings:',
 	'renameuserconfirm'   => 'Yes, rename the user',
 	'renameusersubmit'    => 'Submit',
+	'renameuser-submit-blocklog' => 'Show block log for user',
 
 	'renameusererrordoesnotexist' => 'The user "<nowiki>$1</nowiki>" does not exist.',
 	'renameusererrorexists'       => 'The user "<nowiki>$1</nowiki>" already exists.',
@@ -59,6 +60,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
 	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => '{{desc}}',
@@ -1908,7 +1910,7 @@ Vinsamlegast farðu til baka og reyndu aftur.',
 	'renameuser-log' => '{{PLURAL:$1|1 breyting|$1 breytingar}}. Ástæða: $2',
 	'renameuser-move-log' => 'Færði síðuna sjálfvirkt þegar notendanafni "[[User:$1|$1]]" var breytt í "[[User:$2|$2]]"',
 	'right-renameuser' => 'Breyta notandanafni notenda',
-	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt. 
+	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt.
 Síðasta færsla notandans úr skrá yfir nafnabreytingar notenda er sýnd hér fyrir neðan til skýringar:',
 );
 
