@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAALX//+qU\u003d",
+        "filename": "Renameuser.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-11T19:45:07Z",
+      "side": 1,
+      "message": "Is anything still using this function?",
+      "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAALX//+qY\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-11T19:45:07Z",
+      "side": 1,
+      "message": "Why didn\u0027t you leave the target as the old user? Now when people list renames for a user (via ?page\u003dUser:x) it won\u0027t list them.",
+      "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAALX//+qA\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-11T19:45:07Z",
+      "side": 1,
+      "message": "I recommend using LogPage::addRelations( \u0027oldname\u0027, array( $oldusername ), $logid ). This way, you can also list renames to/from a user using LogEventsList::showLogExtract() by adding le_field, le_log_id conditions to $conds. RevisionDelete uses this to get log entries that effect specific revision IDs.",
+      "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
