@@ -53,6 +53,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Meno25
+ * @author Nike
  * @author SPQRobin
  * @author Siebrand
  * @author The Evil IP address
@@ -68,6 +69,7 @@ $messages['qqq'] = array(
 	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
+	'action-renameuser' => '{{Doc-action|renameuser}}',
 	'right-renameuser' => '{{doc-right|renameuser}}',
 	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
@@ -1283,7 +1285,7 @@ Le journal des renommages est disponible ci-dessous pour information.',
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'renameuser' => 'Renomar l’utilisator',
+	'renameuser' => 'Renomar l’usanciér',
 	'renameuser-linkoncontribs' => 'renomar l’usanciér',
 	'renameuser-linkoncontribs-text' => 'Renomar ceti usanciér',
 	'renameuser-desc' => "Apond una [[Special:Renameuser|pâge spèciâla]] por renomar un usanciér (at fôta des drêts de ''renameuser'').",
@@ -1298,7 +1300,7 @@ $messages['frp'] = array(
 	'renameusersubmit' => 'Sometre',
 	'renameusererrordoesnotexist' => 'L’usanciér « <nowiki>$1</nowiki> » ègziste pas.',
 	'renameusererrorexists' => 'L’usanciér « <nowiki>$1</nowiki> » ègziste ja.',
-	'renameusererrorinvalid' => 'Lo nom d’utilisator « <nowiki>$1</nowiki> » est envalido.',
+	'renameusererrorinvalid' => 'Lo nom d’usanciér « <nowiki>$1</nowiki> » est envalido.',
 	'renameuser-error-request' => 'Un problèmo ègziste avouéc la reçua de la requéta.
 Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuser-error-same-user' => 'Vos pouede pas renomar un usanciér du mémo nom que dês devant.',
@@ -1306,12 +1308,12 @@ Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuser-page-exists' => 'La pâge $1 ègziste ja et pôt pas étre remplaciê ôtomaticament.',
 	'renameuser-page-moved' => 'La pâge $1 at étâ dèplaciê vers $2.',
 	'renameuser-page-unmoved' => 'La pâge $1 pôt pas étre renomâ en $2.',
-	'renameuserlogpage' => 'Jornal des changements de nom d’utilisator',
-	'renameuserlogpagetext' => 'O est lo jornal des changements de nom d’utilisator.',
+	'renameuserlogpage' => 'Jornal des changements de nom d’usanciér',
+	'renameuserlogpagetext' => 'O est lo jornal des changements de nom d’usanciér.',
 	'renameuserlogentry' => 'at renomâ « $1 » en « $2 »',
 	'renameuser-log' => '$1 changement{{PLURAL:$1||s}}. Rêson : $2',
 	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’usanciér « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
-	'right-renameuser' => 'Renomar des utilisators',
+	'right-renameuser' => 'Renomar des usanciérs',
 	'renameuser-renamed-notice' => 'Ceti usanciér at étâ renomâ.
 Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
 );
@@ -2867,8 +2869,10 @@ Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter 
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Dittaeva
  * @author Gunnernett
  * @author Harald Khan
+ * @author Njardarlogar
  * @author Ranveig
  */
 $messages['nn'] = array(
@@ -2879,6 +2883,7 @@ $messages['nn'] = array(
 	'renameusernew' => 'Nytt brukarnamn:',
 	'renameuserreason' => 'Årsak for omdøyping:',
 	'renameusermove' => 'Flytt brukar- og brukardiskusjonssider (og deira undersider) til nytt namn.',
+	'renameusersuppress' => 'Ikkje opprett omdirigeringar til det nye namnet',
 	'renameuserreserve' => 'Blokker det gamle brukarnamnet for framtidig bruk',
 	'renameuserwarnings' => 'Åtvaringar:',
 	'renameuserconfirm' => 'Ja, endra namn på brukaren',
@@ -3044,6 +3049,7 @@ $messages['pfl'] = array(
  * @author Leinad
  * @author Maikking
  * @author Nux
+ * @author Sovq
  * @author Sp5uhe
  * @author WarX
  * @author Wpedzich
@@ -3515,10 +3521,12 @@ $messages['sc'] = array(
 );
 
 /** Sicilian (Sicilianu)
+ * @author Gmelfi
  * @author Santu
  */
 $messages['scn'] = array(
 	'renameuser' => 'Rinòmina utenti',
+	'renameuser-linkoncontribs' => "Rinòmina l'utenti",
 	'renameuser-desc' => "Funzioni pi rinuminari n'utenti (addumanna li diritti di ''renameuser'')",
 	'renameuserold' => 'Nomu utenti dô prisenti:',
 	'renameusernew' => 'Novu nomu utenti:',
@@ -4026,7 +4034,7 @@ $messages['tg-cyrl'] = array(
 	'right-renameuser' => 'Тағйири номи корбарон',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -4301,7 +4309,7 @@ $messages['vec'] = array(
 Qua soto ghe xe el riferimento sul registro de rinomina.',
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
