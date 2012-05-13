@@ -2851,7 +2851,8 @@ $messages['nl'] = array(
 	'renameusererrordoesnotexist' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat niet.',
 	'renameusererrorexists' => 'De gebruiker "<nowiki>$1</nowiki>" bestaat al.',
 	'renameusererrorinvalid' => 'De gebruikersnaam "<nowiki>$1</nowiki>" is ongeldig.',
-	'renameuser-error-request' => 'Er was een probleem bij het ontvangen van de aanvraag.  Gelieve terug te gaan en opnieuwe te proberen.',
+	'renameuser-error-request' => 'Er was een probleem bij het ontvangen van de aanvraag.
+Ga terug en probeer het opnieuw.',
 	'renameuser-error-same-user' => 'U kunt geen gebruiker hernoemen naar dezelfde naam.',
 	'renameusersuccess' => 'De gebruiker "<nowiki>$1</nowiki>" is hernoemd naar "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'De pagina $1 bestaat al en kan niet automatisch overschreven worden.',
