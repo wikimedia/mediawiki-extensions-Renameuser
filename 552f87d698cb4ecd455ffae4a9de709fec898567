@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAALX//7KI\u003d",
+        "filename": "Renameuser.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 92
+      },
+      "writtenOn": "2012-05-22T11:28:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAALX//+qU\u003d",
+      "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAALX//+qY\u003d",
         "filename": "Renameuser_body.php",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2012-05-11T19:45:07Z",
       "side": 1,
       "message": "Why didn\u0027t you leave the target as the old user? Now when people list renames for a user (via ?page\u003dUser:x) it won\u0027t list them.",
+      "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAALX//7Jg\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 92
+      },
+      "writtenOn": "2012-05-22T11:28:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAALX//+qY\u003d",
       "revId": "552f87d698cb4ecd455ffae4a9de709fec898567",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
