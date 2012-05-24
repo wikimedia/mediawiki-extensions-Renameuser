@@ -830,10 +830,12 @@ $messages['de'] = array(
 	'renameuserwarnings' => 'Warnungen:',
 	'renameuserconfirm' => 'Ja, Benutzer umbenennen',
 	'renameusersubmit' => 'Umbenennen',
-	'renameusererrordoesnotexist' => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert nicht.',
-	'renameusererrorexists' => 'Der Benutzername „<nowiki>$1</nowiki>“ existiert bereits.',
+	'renameuser-submit-blocklog' => 'Benutzersperr-Logbuch zum Benutzer anzeigen',
+	'renameusererrordoesnotexist' => 'Der Benutzername „<nowiki>$1</nowiki>“ ist nicht vorhanden.',
+	'renameusererrorexists' => 'Der Benutzername „<nowiki>$1</nowiki>“ ist bereits vorhanden.',
 	'renameusererrorinvalid' => 'Der Benutzername „<nowiki>$1</nowiki>“ ist ungültig.',
-	'renameuser-error-request' => 'Es gab ein Problem beim Empfang der Anfrage. Bitte nochmal versuchen.',
+	'renameuser-error-request' => 'Es gab ein Problem beim Empfang der Anfrage.
+Bitte nochmal versuchen.',
 	'renameuser-error-same-user' => 'Alter und neuer Benutzername sind identisch.',
 	'renameusersuccess' => 'Der Benutzer „<nowiki>$1</nowiki>“ wurde erfolgreich in „<nowiki>$2</nowiki>“ umbenannt.',
 	'renameuser-page-exists' => 'Die Seite „$1“ ist bereits vorhanden und kann nicht automatisch überschrieben werden.',
@@ -904,6 +906,7 @@ $messages['dsb'] = array(
 	'renameuserwarnings' => 'Warnowanja:',
 	'renameuserconfirm' => 'Jo, wužywarja pśemjeniś',
 	'renameusersubmit' => 'Pśemjeniś',
+	'renameuser-submit-blocklog' => 'Blokěrowański protokol za wužywarja pokazaś',
 	'renameusererrordoesnotexist' => 'Wužywaŕ "<nowiki>$1</nowiki>" njeeksistěrujo.',
 	'renameusererrorexists' => 'Wužywaŕ "<nowiki>$1</nowiki>" južo eksistěrujo.',
 	'renameusererrorinvalid' => 'Wužywarske mě "<nowiki>$1</nowiki>" jo njepłaśiwe.',
@@ -1019,6 +1022,7 @@ Jen la protokolo pri renomigado por via referenco.',
  * @author Sanbec
  * @author Spacebirdy
  * @author Translationista
+ * @author Vivaelcelta
  */
 $messages['es'] = array(
 	'renameuser' => 'Cambiar el nombre de usuario',
@@ -1034,6 +1038,7 @@ $messages['es'] = array(
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => 'Sí, cambiar el nombre del usuario',
 	'renameusersubmit' => 'Enviar',
+	'renameuser-submit-blocklog' => 'Mostrar el registro de bloque para el usuario',
 	'renameusererrordoesnotexist' => 'El usuario «<nowiki>$1</nowiki>» no existe',
 	'renameusererrorexists' => 'El usuario «<nowiki>$1</nowiki>» ya existe',
 	'renameusererrorinvalid' => 'El nombre de usuario «<nowiki>$1</nowiki>» no es válido',
@@ -1173,6 +1178,7 @@ $messages['fa'] = array(
  * @author Centerlink
  * @author Crt
  * @author Nike
+ * @author Pxos
  * @author Str4nd
  */
 $messages['fi'] = array(
@@ -1203,6 +1209,7 @@ $messages['fi'] = array(
 	'renameuserlogentry' => 'on nimennyt käyttäjän $1 käyttäjäksi ”$2”',
 	'renameuser-log' => 'Tehnyt {{PLURAL:$1|yhden muokkauksen|$1 muokkausta}}. $2',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
+	'action-renameuser' => 'nimetä käyttäjätunnuksia uudelleen',
 	'right-renameuser' => 'Nimetä käyttäjätunnuksia uudelleen',
 	'renameuser-renamed-notice' => 'Tämä käyttäjä on nimetty uudelleen.
 Alla on ote tunnusten vaihtolokista.',
@@ -1395,6 +1402,7 @@ $messages['gl'] = array(
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => 'Si, renomear este usuario',
 	'renameusersubmit' => 'Enviar',
+	'renameuser-submit-blocklog' => 'Mostrar o rexistro de bloqueos do usuario',
 	'renameusererrordoesnotexist' => 'O usuario "<nowiki>$1</nowiki>" non existe.',
 	'renameusererrorexists' => 'O usuario "<nowiki>$1</nowiki>" xa existe.',
 	'renameusererrorinvalid' => 'O nome de usuario "<nowiki>$1</nowiki>" non é válido.',
@@ -1520,6 +1528,7 @@ $messages['he'] = array(
 	'renameuserwarnings' => 'אזהרות:',
 	'renameuserconfirm' => 'כן, לשנות את שם המשתמש',
 	'renameusersubmit' => 'שינוי שם משתמש',
+	'renameuser-submit-blocklog' => 'הצגת יומן החסימות של המשתמש',
 	'renameusererrordoesnotexist' => 'המשתמש "<nowiki>$1</nowiki>" אינו קיים.',
 	'renameusererrorexists' => 'המשתמש "<nowiki>$1</nowiki>" כבר קיים.',
 	'renameusererrorinvalid' => 'שם המשתמש "<nowiki>$1</nowiki>" אינו תקין.',
@@ -1668,6 +1677,7 @@ $messages['hsb'] = array(
 	'renameuserwarnings' => 'Warnowanja:',
 	'renameuserconfirm' => 'Haj, wužiwarja přemjenować',
 	'renameusersubmit' => 'Składować',
+	'renameuser-submit-blocklog' => 'Blokowanski protokol za wužiwarja pokazać',
 	'renameusererrordoesnotexist' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeeksistuje.',
 	'renameusererrorexists' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ hižo eksistuje.',
 	'renameusererrorinvalid' => 'Wužiwarske mjeno „<nowiki>$1</nowiki>“ njeje płaćiwe.',
@@ -1940,6 +1950,7 @@ $messages['it'] = array(
 	'renameuserwarnings' => 'Avvisi:',
 	'renameuserconfirm' => 'Sì, rinomina questo utente',
 	'renameusersubmit' => 'Invia',
+	'renameuser-submit-blocklog' => "Mostra registro dei blocchi per l'utente",
 	'renameusererrordoesnotexist' => 'L\'utente "<nowiki>$1</nowiki>" non esiste',
 	'renameusererrorexists' => 'L\'utente "<nowiki>$1</nowiki>" esiste già',
 	'renameusererrorinvalid' => 'Il nome utente "<nowiki>$1</nowiki>" non è valido',
@@ -2529,6 +2540,7 @@ $messages['mk'] = array(
 	'renameuserwarnings' => 'Предупредувања:',
 	'renameuserconfirm' => 'Да, преименувај го корисникот',
 	'renameusersubmit' => 'Внеси',
+	'renameuser-submit-blocklog' => 'Дневник на блокирања за корисникот',
 	'renameusererrordoesnotexist' => 'Корисникот „<nowiki>$1</nowiki>“ не постои',
 	'renameusererrorexists' => 'Корисникот „<nowiki>$1</nowiki>“ веќе постои',
 	'renameusererrorinvalid' => 'Корисничкото име „<nowiki>$1</nowiki>“ не е важечко.',
@@ -4342,6 +4354,7 @@ $messages['vi'] = array(
 	'renameuserwarnings' => 'Cảnh báo:',
 	'renameuserconfirm' => 'Đổi tên người dùng',
 	'renameusersubmit' => 'Thực hiện',
+	'renameuser-submit-blocklog' => 'Xem nhật trình cấm người dùng',
 	'renameusererrordoesnotexist' => 'Thành viên “<nowiki>$1</nowiki>” không tồn tại.',
 	'renameusererrorexists' => 'Thành viên “<nowiki>$1</nowiki>” đã hiện hữu.',
 	'renameusererrorinvalid' => 'Tên thành viên “<nowiki>$1</nowiki>” không hợp lệ.',
