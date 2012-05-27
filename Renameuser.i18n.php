@@ -422,6 +422,7 @@ $messages['be-tarask'] = array(
 	'renameuserwarnings' => 'Папярэджаньні:',
 	'renameuserconfirm' => 'Так, перайменаваць удзельніка',
 	'renameusersubmit' => 'Перайменаваць',
+	'renameuser-submit-blocklog' => 'Паказаць журнал блякаваньняў удзельніка',
 	'renameusererrordoesnotexist' => 'Рахунак «<nowiki>$1</nowiki>» не існуе.',
 	'renameusererrorexists' => 'Рахунак «<nowiki>$1</nowiki>» ужо існуе.',
 	'renameusererrorinvalid' => 'Няслушнае імя ўдзельніка «<nowiki>$1</nowiki>».',
@@ -1270,6 +1271,7 @@ $messages['fr'] = array(
 	'renameuserwarnings' => 'Avertissements :',
 	'renameuserconfirm' => 'Oui, renommer l’utilisateur',
 	'renameusersubmit' => 'Soumettre',
+	'renameuser-submit-blocklog' => "Afficher le journal de blocage de l'utilisateur",
 	'renameusererrordoesnotexist' => 'L’utilisateur « <nowiki>$1</nowiki> » n’existe pas',
 	'renameusererrorexists' => 'L’utilisateur « <nowiki>$1</nowiki> » existe déjà',
 	'renameusererrorinvalid' => 'Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide',
@@ -2239,6 +2241,7 @@ $messages['kn'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
 	'renameuser' => '계정 이름 변경',
@@ -2254,6 +2257,7 @@ $messages['ko'] = array(
 	'renameuserwarnings' => '경고:',
 	'renameuserconfirm' => '예, 이름을 변경합니다.',
 	'renameusersubmit' => '변경',
+	'renameuser-submit-blocklog' => '사용자 차단 기록 보이기',
 	'renameusererrordoesnotexist' => '‘<nowiki>$1</nowiki>’ 사용자가 존재하지 않습니다.',
 	'renameusererrorexists' => '‘<nowiki>$1</nowiki>’ 사용자가 이미 존재합니다.',
 	'renameusererrorinvalid' => '‘<nowiki>$1</nowiki>’ 사용자 이름이 잘못되었습니다.',
@@ -3681,6 +3685,7 @@ $messages['sl'] = array(
 	'renameuserwarnings' => 'Opozorila:',
 	'renameuserconfirm' => 'Da, preimenuj uporabnika',
 	'renameusersubmit' => 'Potrdi',
+	'renameuser-submit-blocklog' => 'Pokaži dnevnik blokiranja uporabnika',
 	'renameusererrordoesnotexist' => 'Uporabnik »<nowiki>$1</nowiki>« ne obstaja.',
 	'renameusererrorexists' => 'Uporabnik »<nowiki>$1</nowiki>« že obstaja.',
 	'renameusererrorinvalid' => 'Uporabniško ime »<nowiki>$1</nowiki>« ni veljavno.',
