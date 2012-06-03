@@ -558,7 +558,7 @@ $messages['bn'] = array(
 	'right-renameuser' => 'ব্যবহারকারীদের পুনরায় নাম দাও',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Gwendal
  * @author Y-M D
@@ -711,7 +711,7 @@ $messages['crh-cyrl'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 денъишиклик|$1 денъишиклик}} япкъан. Себеп: $2',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Li-sung
  * @author Martin Kozák
@@ -900,6 +900,7 @@ Zur Information folgt das Benutzernamenänderungs-Logbuch.',
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -930,6 +931,7 @@ kerem kerê agêrê newe ra tesel bıkerê, bıcerbnê',
 	'renameuserlogentry' => '$1newe ra neme bı: "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edit|$1 edit}}. çıra: $2',
 	'renameuser-move-log' => 'wexta ke karber "[[User:$1|$1]]" no name ra kırışiya "[[User:$2|$2]]" no name re ya newe ra name diyêne pel zi otomotikmen kırişiya',
+	'action-renameuser' => 'nameyê karberi bıvurne',
 	'right-renameuser' => 'nameyê karberan bıvurn',
 	'renameuser-renamed-notice' => 'nameyê na/no karberi/e vuriya.
 qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
@@ -1055,7 +1057,7 @@ Bonvolu retroigi kaj reprovi.',
 Jen la protokolo pri renomigado por via referenco.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Alhen
  * @author Armando-Martin
  * @author Dferg
@@ -1106,7 +1108,7 @@ Por favor, vuelve atrás e inténtalo de nuevo.',
 El registro de cambios de nombre de usuario se provee debajo para mayor referencia.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Jaan513
  * @author Pikne
@@ -1220,7 +1222,7 @@ $messages['fa'] = array(
 سیاهه تغییر نام در ادامه آمده است.',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Agony
  * @author Centerlink
  * @author Crt
@@ -1481,6 +1483,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -1497,6 +1500,7 @@ $messages['gsw'] = array(
 	'renameuserwarnings' => 'Warnige:',
 	'renameuserconfirm' => 'Jo, Benutzer umnänne',
 	'renameusersubmit' => 'Umnänne',
+	'renameuser-submit-blocklog' => 'Benutzersperrlogbuech vo däm Benutzer aazeige',
 	'renameusererrordoesnotexist' => 'Dr Benutzername „<nowiki>$1</nowiki>“ git s nit.',
 	'renameusererrorexists' => 'Dr Benutzername „<nowiki>$1</nowiki>“ git s scho.',
 	'renameusererrorinvalid' => 'Dr Benutzername „<nowiki>$1</nowiki>“ isch uugiltig.',
@@ -1784,7 +1788,7 @@ $messages['hu'] = array(
 Alább látható a szerkesztőátnevezési napló tájékoztatásként.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -3381,7 +3385,7 @@ $messages['rmy'] = array(
 	'renameusersubmit' => 'De le jeneske aver nav',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Cin
  * @author Emily
  * @author Firilacroco
@@ -3463,7 +3467,7 @@ Pe piacere tuèrne rrete e pruève 'n'otra vote.",
 L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ahonc
  * @author DR
  * @author EugeneZelenko
