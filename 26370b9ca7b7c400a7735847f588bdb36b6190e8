@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAL3///RI\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 579,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Why is this function not indented?",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///Pc\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 585,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Could use more comments about the old format (e.g. what 3,4, and 5 are)...but this looks OK.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///PY\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 598,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "It\u0027s preferable to check what is true rather than what is false since there are less negatives to reason about.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///Qg\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 599,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Please use makeTitle(), to handle invalid legacy titles. In fact with renameuser, sometimes legacy usernames/titles are renamed to valid ones when the restrictions change. Also, the second argument to Linker::link() does not get escaped. It is assumed to be already appropriately escaped.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///Pk\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 601,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Needs escaping.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///Pg\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 605,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Same as above.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///PE\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 614,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "It\u0027s unfortunate that this duplicates permission checks. Why can\u0027t the edit count stuff go in the action message. So maybe you could override getMessageKey() to use a message with the edit count for new rows and use a message without one for legacy rows. That way, I don\u0027t think you need to override getComment() at all.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAL3///PI\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 12
+      },
+      "lineNbr": 618,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-07T18:53:24Z",
+      "side": 1,
+      "message": "Needs a comment that his is for b/c. Maybe replace the legacy checks with \"$this-\u003eentry-\u003eisLegacy()\" to get pre-LogFormatter rows.",
+      "revId": "26370b9ca7b7c400a7735847f588bdb36b6190e8",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
