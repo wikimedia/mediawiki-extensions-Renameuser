@@ -1937,7 +1937,7 @@ $messages['io'] = array(
 	'right-renameuser' => 'Rinomar uzanti',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author Cessator
  * @author S.Örvarr.S
  * @author Snævar
@@ -1959,6 +1959,7 @@ $messages['is'] = array(
 	'renameuserwarnings' => 'Viðvaranir:',
 	'renameuserconfirm' => 'Já, breyta nafni notandans',
 	'renameusersubmit' => 'Senda',
+	'renameuser-submit-blocklog' => 'Sýna bönnunar skrá notandans',
 	'renameusererrordoesnotexist' => 'Notandinn „<nowiki>$1</nowiki>“ er ekki til',
 	'renameusererrorexists' => 'Notandinn „<nowiki>$1</nowiki>“ er nú þegar til',
 	'renameusererrorinvalid' => 'Notandanafnið „<nowiki>$1</nowiki>“ er ógilt',
@@ -1974,8 +1975,9 @@ Vinsamlegast farðu til baka og reyndu aftur.',
 	'renameuserlogentry' => 'breytti nafni $1 í "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 breyting|$1 breytingar}}. Ástæða: $2',
 	'renameuser-move-log' => 'Færði síðuna sjálfvirkt þegar notendanafni "[[User:$1|$1]]" var breytt í "[[User:$2|$2]]"',
+	'action-renameuser' => 'endurnefna notendur',
 	'right-renameuser' => 'Breyta notandanafni notenda',
-	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt.
+	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt. 
 Síðasta færsla notandans úr skrá yfir nafnabreytingar notenda er sýnd hér fyrir neðan til skýringar:',
 );
 
@@ -2372,6 +2374,7 @@ Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.
 
 /** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
+ * @author Ghybu
  * @author Gomada
  */
 $messages['ku-latn'] = array(
@@ -2389,6 +2392,7 @@ $messages['ku-latn'] = array(
 	'renameuser-page-exists' => 'Rûpela $1 berê heye û ew nikane otomatîk were jêbirin.',
 	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
 	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
+	'renameuserlogpage' => 'Guhertina navê bikarhêner',
 	'renameuser-log' => 'yê $1 beşdarîyên xwe hebû. $2',
 	'right-renameuser' => 'Navê bikarhêneran biguherîne:',
 );
