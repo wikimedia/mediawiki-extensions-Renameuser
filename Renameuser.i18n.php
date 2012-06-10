@@ -2045,7 +2045,7 @@ $messages['ja'] = array(
 	'renameuserold' => '現在の利用者名:',
 	'renameusernew' => '新しい利用者名:',
 	'renameuserreason' => '変更理由:',
-	'renameusermove' => '利用者ページと会話ページ（およびそれらのサブページ）を新しい名前に移動',
+	'renameusermove' => '利用者ページと会話ページ（およびそれらの下位ページ）を新しい名前に移動',
 	'renameusersuppress' => '新しい名前へのリダイレクトを作成しない',
 	'renameuserreserve' => '旧利用者名の今後の使用をブロック',
 	'renameuserwarnings' => '警告:',
@@ -2055,7 +2055,7 @@ $messages['ja'] = array(
 	'renameusererrorexists' => '利用者「<nowiki>$1</nowiki>」は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名「<nowiki>$1</nowiki>」は無効な値です。',
 	'renameuser-error-request' => '要求を正常に受け付けることができませんでした。戻ってから再度お試しください。',
-	'renameuser-error-same-user' => '現在と同じ利用者名に変更することは出来ません。',
+	'renameuser-error-same-user' => '現在と同じ利用者名には変更できません。',
 	'renameusersuccess' => '利用者「<nowiki>$1</nowiki>」を「<nowiki>$2</nowiki>」に変更しました。',
 	'renameuser-page-exists' => '$1 が既に存在しているため、自動で上書きできませんでした。',
 	'renameuser-page-moved' => '$1 を $2 に移動しました。',
@@ -4480,7 +4480,7 @@ $messages['vo'] = array(
 	'right-renameuser' => 'Votanemön gebanis',
 );
 
-/** Walloon (Walon)
+/** Walloon (walon)
  * @author Srtxg
  */
 $messages['wa'] = array(
@@ -4489,6 +4489,7 @@ $messages['wa'] = array(
 	'renameusernew' => "Novea no d' elodjaedje:",
 	'renameuserreason' => 'Råjhon pol rilomaedje:',
 	'renameusermove' => "Displaecî les pådjes d' uzeu et d' copene (eyet leus dzo-pådjes) viè l' novea no",
+	'renameuserwarnings' => 'Adviertixhmints:',
 	'renameusersubmit' => 'Evoye',
 	'renameusererrordoesnotexist' => "L' uzeu «<nowiki>$1</nowiki>» n' egzistêye nén",
 	'renameusererrorexists' => "L' uzeu «<nowiki>$1</nowiki>» egzistêye dedja",
