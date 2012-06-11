@@ -916,6 +916,7 @@ $messages['diq'] = array(
 	'renameuserwarnings' => 'hişyariyi',
 	'renameuserconfirm' => 'bele karberi newe ra name bıker',
 	'renameusersubmit' => 'bierşawê/biruşnê',
+	'renameuser-submit-blocklog' => 'Rocekanê bloqandê karbari bıvin',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" no name de yew karber çino.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" karber ca ra esto',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" nameyê karberi nemeqbulo',
@@ -1981,7 +1982,7 @@ Vinsamlegast farðu til baka og reyndu aftur.',
 Síðasta færsla notandans úr skrá yfir nafnabreytingar notenda er sýnd hér fyrir neðan til skýringar:',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author .anaconda
  * @author Beta16
  * @author BrokenArrow
@@ -2014,12 +2015,12 @@ $messages['it'] = array(
 	'renameusersuccess' => 'L\'utente "<nowiki>$1</nowiki>" è stato rinominato in "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'La pagina $1 esiste già; impossibile sovrascriverla automaticamente.',
 	'renameuser-page-moved' => 'La pagina $1 è stata spostata a $2.',
-	'renameuser-page-unmoved' => 'Impossibile spostare la pagina $1 a $2.',
+	'renameuser-page-unmoved' => 'La pagina $1 non può essere spostata a $2.',
 	'renameuserlogpage' => 'Utenti rinominati',
 	'renameuserlogpagetext' => 'Di seguito sono elencate le modifiche ai nomi utente.',
 	'renameuserlogentry' => 'ha rinominato $1 in "$2"',
 	'renameuser-log' => 'Che ha {{PLURAL:$1|un contributo|$1 contributi}}. Motivo: $2',
-	'renameuser-move-log' => 'Spostamento automatico della pagina - utente rinominato da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Pagina spostata automaticamente durante la rinomina dell\'utente "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'action-renameuser' => 'rinominare gli utenti',
 	'right-renameuser' => 'Rinomina gli utenti',
 	'renameuser-renamed-notice' => 'Questo utente è stato rinominato.
