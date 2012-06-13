@@ -2379,22 +2379,27 @@ Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.
  * @author Gomada
  */
 $messages['ku-latn'] = array(
-	'renameuser' => 'Navî bikarhênerê biguherîne',
-	'renameuser-linkoncontribs' => 'navî bikarhênerê biguherîne',
+	'renameuser' => 'Navê bikarhêner biguherîne',
+	'renameuser-linkoncontribs' => 'navê bikarhêner biguherîne',
 	'renameuser-linkoncontribs-text' => 'Navê vî bikarhênerî biguherîne',
 	'renameuserold' => 'Navê niha:',
 	'renameusernew' => 'Navê nû:',
-	'renameuserreason' => 'Sedema ji bo navguhertinê:',
+	'renameuserreason' => 'Sedema navguherandinê:',
+	'renameusermove' => 'Rûpelên bikarhêner û gotûbêjê xwe (û binrûpelên xwe) bigerîne berve navê nû',
 	'renameuserwarnings' => 'Hişyarî:',
 	'renameuserconfirm' => 'Erê, navê vî bikarhênerî biguherîne',
 	'renameusersubmit' => 'Bike',
 	'renameusererrordoesnotexist' => 'Bikarhêner "<nowiki>$1</nowiki>" tune ye.',
-	'renameusersuccess' => 'Navî bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
-	'renameuser-page-exists' => 'Rûpela $1 berê heye û ew nikane otomatîk were jêbirin.',
+	'renameusererrorexists' => 'Bikarhêner "<nowiki>$1</nowiki>" berê heye.',
+	'renameusererrorinvalid' => 'Navê "<nowiki>$1</nowiki>" ji bikarhêneran re nayê qebûlkirin.',
+	'renameusersuccess' => 'Navê bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Rûpelê $1 berê heye û nikane otomatîk were guherandin.',
 	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
 	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
 	'renameuserlogpage' => 'Guhertina navê bikarhêner',
-	'renameuser-log' => 'yê $1 beşdarîyên xwe hebû. $2',
+	'renameuserlogentry' => 'navê $1 kir "$2"',
+	'renameuser-log' => '{{PLURAL:$1|1 beşdarî|$1 beşdarî}}. Sedem: $2',
+	'renameuser-move-log' => 'Otomatîk hate guherandin, ji ber ku "[[User:$1|$1]]" navê xwe guherand û niha bû "[[User:$2|$2]]"',
 	'right-renameuser' => 'Navê bikarhêneran biguherîne:',
 );
 
