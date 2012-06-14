@@ -61,13 +61,13 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
 	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => '{{desc}}',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
+	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
 	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
@@ -302,7 +302,7 @@ $messages['as'] = array(
 তথ্যসূত্ৰ হিচাপে পুনৰ্নামাকৰণ ল'গ তলত দিয়া হ'ল।",
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -340,7 +340,7 @@ $messages['ast'] = array(
 El rexistru de renomaos s'ufre darréu pa referencia.",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  * @author Vugar 1981
@@ -487,7 +487,7 @@ $messages['be-tarask'] = array(
 Журнал перайменаваньняў удзельнікаў пададзены ніжэй для даведкі.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
@@ -598,7 +598,7 @@ $messages['br'] = array(
 A-is emañ marilh an adanvadurioù, ma'z oc'h dedennet.",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -635,7 +635,7 @@ Molimo Vas da se vratite nazad i pokušate ponovo.',
 Zapisnik preimenovanje je prikazan ispod kao referenca.',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author El libre
  * @author Juanpabl
  * @author Paucabot
@@ -686,7 +686,7 @@ $messages['ce'] = array(
 	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
 );
 
-/** Sorani (کوردی) */
+/** Sorani Kurdish (کوردی) */
 $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
 );
@@ -816,7 +816,7 @@ Ewch yn ôl a cheisio eto, os gwelwch yn dda.',
 Mae'r lòg ail-enwi defnyddwyr i'w weld isod.",
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Froztbyte
  * @author Peter Alberti
@@ -1152,7 +1152,7 @@ Palun ürita uuesti.',
 Allpool on toodud ümbernimetamislogi.',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Theklan
  */
@@ -1176,7 +1176,7 @@ $messages['eu'] = array(
 	'right-renameuser' => 'Lankideak berrizendatu',
 );
 
-/** Extremaduran (Estremeñu)
+/** Extremaduran (estremeñu)
  * @author Better
  */
 $messages['ext'] = array(
@@ -1265,7 +1265,7 @@ $messages['fi'] = array(
 Alla on ote tunnusten vaihtolokista.',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author EileenSanda
  * @author Spacebirdy
  */
@@ -1293,7 +1293,7 @@ Vinarliga far aftur og royn enn einaferð.',
 Loggurin fyri navnabroytingina er givin niðanfyri fyri keldu ávísing.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Cedric31
  * @author Crochet.david
  * @author DavidL
@@ -1341,7 +1341,7 @@ $messages['fr'] = array(
 Le journal des renommages est disponible ci-dessous pour information.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1378,7 +1378,7 @@ Volyéd tornar arriér et pués tornar èprovar.',
 Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  */
 $messages['fur'] = array(
@@ -1672,7 +1672,7 @@ Meharbani kar ke laut ke fir kosis karo.',
 	'right-renameuser' => 'Sadasya log ke naam badlo',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -1751,7 +1751,7 @@ $messages['hsb'] = array(
 Protokol přemjenowanjow je deleka jako referenca podaty.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Adam78
  * @author Dani
  * @author Tgr
@@ -2071,7 +2071,7 @@ $messages['ja'] = array(
 	'renameuser-renamed-notice' => 'この利用者は改名しました。参考のため、改名記録を以下に載せます。',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  * @author Ælsån
  */
@@ -2513,7 +2513,7 @@ $messages['li'] = array(
 Relevante regels oet 't logbook staon hieónger.",
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Hugo.arg
@@ -2550,7 +2550,7 @@ Prašome eiti atgal ir bandyti iš naujo.',
 	'right-renameuser' => 'Pervadinti naudotojus',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Papuass
  * @author Xil
  */
@@ -2591,7 +2591,7 @@ $messages['mg'] = array(
 	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  * @author Misos
@@ -2671,7 +2671,7 @@ $messages['ml'] = array(
 പുനർനാമകരണ രേഖ അവലംബമായി പരിശോധിക്കാനായി താഴെ കൊടുത്തിരിക്കുന്നു.',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -2956,7 +2956,7 @@ Ga terug en probeer het opnieuw.',
 Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter referentie weergegeven.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Dittaeva
  * @author Gunnernett
  * @author Harald Khan
@@ -3007,7 +3007,7 @@ $messages['nso'] = array(
 	'renameuser-page-moved' => 'Letlakala $1 le hudušitšwe go $2',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Boulaur
  * @author Cedric31
  */
@@ -3132,7 +3132,7 @@ $messages['pfl'] = array(
 	'renameusersubmit' => 'Benutzer umbenenne',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Leinad
  * @author Maikking
@@ -3278,7 +3278,7 @@ $messages['ps'] = array(
 	'right-renameuser' => 'کارن-نومونه بدلول',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Giro720
  * @author Hamilton Abreu
@@ -3319,7 +3319,7 @@ Retorne e tente de novo.',
 É apresentado abaixo o registo de alteração do nome de utilizadores.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Giro720
  */
@@ -3445,7 +3445,7 @@ Vă rugăm să vă întoarceți și să reîncercați.',
 Jurnalul redenumirilor este furnizat mai jos pentru referință.',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -3569,7 +3569,7 @@ $messages['sa'] = array(
 	'renameuserwarnings' => 'चेतावनी:',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -3605,7 +3605,7 @@ $messages['sah'] = array(
 Аллара аат уларыйыытын сурунаала көстөр.',
 );
 
-/** Sardinian (Sardu)
+/** Sardinian (sardu)
  * @author Andria
  * @author Marzedu
  */
@@ -3613,7 +3613,7 @@ $messages['sc'] = array(
 	'renameusernew' => 'Nou nùmene usuàriu:',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Gmelfi
  * @author Santu
  */
@@ -3655,7 +3655,7 @@ $messages['sgs'] = array(
 	'renameusersuccess' => 'Nauduotuos "<nowiki>$1</nowiki>" bova parvadėnts i "<nowiki>$2</nowiki>".',
 );
 
-/** Serbo-Croatian (Srpskohrvatski)
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -3702,7 +3702,7 @@ $messages['si'] = array(
 ප්‍රතිනම්කෙරුම් ලඝු-සටහන පහත දක්වා ඇත.',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Jkjk
  */
@@ -3739,7 +3739,7 @@ $messages['sk'] = array(
 Dolu nájdete záznam premenovaní.',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -3787,7 +3787,7 @@ $messages['sli'] = array(
 	'renameuserreason' => 'Grund:',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Dori
  * @author Mikullovci11
  * @author Olsi
@@ -3826,7 +3826,7 @@ Ju lutemi kthehuni prapa dhe provoni përsëri.',
 Regjistri i riemërimit është poshtë për referencë.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author FriedrickMILBarbarossa
  * @author Millosh
  * @author Rancher
@@ -3869,7 +3869,7 @@ $messages['sr-ec'] = array(
 Историја промена имена је приложена испод, као информација.',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author FriedrickMILBarbarossa
  * @author Liangent
  * @author Michaello
@@ -3968,7 +3968,7 @@ $messages['su'] = array(
 	'renameuser-move-log' => 'Otomatis mindahkeun kaca nalika ngaganti ngaran "[[User:$1|$1]]" jadi "[[User:$2|$2]]"',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Cohan
  * @author Dafer45
@@ -4079,7 +4079,7 @@ $messages['te'] = array(
 మీ సమాచారం కోసం పేరుమార్పుల చిట్టాని క్రింద ఇచ్చాం.',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -4097,7 +4097,7 @@ $messages['tet'] = array(
 	'right-renameuser' => "Fó naran foun ba uza-na'in sira",
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -4128,7 +4128,7 @@ $messages['tg-cyrl'] = array(
 	'right-renameuser' => 'Тағйири номи корбарон',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -4321,7 +4321,7 @@ Lütfen geri dönüp tekrar deneyin.',
 Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author EugeneZelenko
@@ -4367,7 +4367,7 @@ $messages['ur'] = array(
 	'renameuser-log' => 'جن کی $1 ترامیم تھیں. $2',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -4592,7 +4592,7 @@ $messages['yue'] = array(
 	'right-renameuser' => '改用戶名',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Bencmq
  * @author Gaoxuewei
  * @author Gzdavidwong
@@ -4635,7 +4635,7 @@ $messages['zh-hans'] = array(
 	'renameuser-renamed-notice' => '本用户已更名。下面提供更名日志以供参考。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Gaoxuewei
  * @author Horacewai2
  * @author Mark85296341
