@@ -4322,6 +4322,7 @@ Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
 );
 
 /** Ukrainian (українська)
+ * @author A1
  * @author AS
  * @author Ahonc
  * @author EugeneZelenko
@@ -4342,6 +4343,7 @@ $messages['uk'] = array(
 	'renameuserwarnings' => 'Попередження:',
 	'renameuserconfirm' => 'Так, перейменувати користувача',
 	'renameusersubmit' => 'Виконати',
+	'renameuser-submit-blocklog' => 'Показати журнал блокувань користувача',
 	'renameusererrordoesnotexist' => 'Користувач з іменем «<nowiki>$1</nowiki>» не зареєстрований.',
 	'renameusererrorexists' => 'Користувач з іменем «<nowiki>$1</nowiki>» уже зареєстрований.',
 	'renameusererrorinvalid' => "Недопустиме ім'я користувача: <nowiki>$1</nowiki>.",
