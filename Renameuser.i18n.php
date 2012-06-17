@@ -912,6 +912,7 @@ $messages['diq'] = array(
 	'renameusernew' => 'nameyê karberi yo newe',
 	'renameuserreason' => 'çıra:',
 	'renameusermove' => 'nameyê karberan u pelê werêaameyişan bıkırışi nameyo newe',
+	'renameusersuppress' => 'Name de newi re hetenayışo newe vıraştış',
 	'renameuserreserve' => 'nameyê karberi yo verini bloke bıker.',
 	'renameuserwarnings' => 'hişyariyi',
 	'renameuserconfirm' => 'bele karberi newe ra name bıker',
@@ -2660,7 +2661,7 @@ $messages['ml'] = array(
 	'renameuser-page-exists' => '$1 എന്ന താൾ നിലവിലുള്ളതിനാൽ അതിനെ യാന്ത്രികമായി മാറ്റാൻ കഴിയില്ല.',
 	'renameuser-page-moved' => '$1 എന്ന താൾ $2 എന്നാക്കിയിരിക്കുന്നു.',
 	'renameuser-page-unmoved' => '$1 എന്ന താൾ $2 എന്നാക്കാൻ സാദ്ധ്യമല്ല.',
-	'renameuserlogpage' => 'ഉപയോക്തൃനാമം പുനർനാമകരണം നടത്തിയതിന്റെ പ്രവർത്തനരേഖ',
+	'renameuserlogpage' => 'ഉപയോക്തൃ പുനർനാമകരണ രേഖ',
 	'renameuserlogpagetext' => 'ഈ പ്രവർത്തനരേഖ ഉപയോക്തൃനാമം പുനർനാമകരണം നടത്തിയതിന്റേതാണ്‌.',
 	'renameuserlogentry' => '$1 എന്ന ഉപയോക്താവിനെ "$2" എന്നു പുനർനാമകരണം ചെയ്തിരിക്കുന്നു.',
 	'renameuser-log' => '{{PLURAL:$1|ഒരു തിരുത്തൽ|$1 തിരുത്തലുകൾ}}. കാരണം: $2',
@@ -3133,6 +3134,7 @@ $messages['pfl'] = array(
 );
 
 /** Polish (polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Leinad
  * @author Maikking
@@ -3156,6 +3158,7 @@ $messages['pl'] = array(
 	'renameuserwarnings' => 'Ostrzeżenia:',
 	'renameuserconfirm' => 'Zmień nazwę użytkownika',
 	'renameusersubmit' => 'Zmień',
+	'renameuser-submit-blocklog' => 'Pokaż blok dziennika dla użytkownika',
 	'renameusererrordoesnotexist' => 'Użytkownik „<nowiki>$1</nowiki>” nie istnieje',
 	'renameusererrorexists' => 'Użytkownik „<nowiki>$1</nowiki>” już istnieje',
 	'renameusererrorinvalid' => 'Niepoprawna nazwa użytkownika „<nowiki>$1</nowiki>”',
@@ -3171,6 +3174,7 @@ Cofnij się i spróbuj jeszcze raz.',
 	'renameuserlogentry' => 'zmienił nazwę użytkownika $1 na „$2”',
 	'renameuser-log' => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
+	'action-renameuser' => 'zmiana nazw użytkowników',
 	'right-renameuser' => 'Zmiana nazw kont użytkowników',
 	'renameuser-renamed-notice' => 'Nazwa konta {{GENDER:$1|tego użytkownika|tej użytkowniczki|użytkownika(‐czki)}} została zmieniona.
 Rejestr zmian nazw kont użytkowników znajduje się poniżej.',
@@ -4618,6 +4622,7 @@ $messages['zh-hans'] = array(
 	'renameuserwarnings' => '警告：',
 	'renameuserconfirm' => '是，更改用户名',
 	'renameusersubmit' => '提交',
+	'renameuser-submit-blocklog' => '显示用户的封禁日志',
 	'renameusererrordoesnotexist' => '用户“<nowiki>$1</nowiki>”不存在。',
 	'renameusererrorexists' => '用户“<nowiki>$1</nowiki>”已经存在。',
 	'renameusererrorinvalid' => '用户名“<nowiki>$1</nowiki>”无效。',
@@ -4633,7 +4638,7 @@ $messages['zh-hans'] = array(
 	'renameuser-log' => '$1个编辑。原因：$2',
 	'renameuser-move-log' => '当更改用户名“[[User:$1|$1]]”为“[[User:$2|$2]]”时自动移动页面',
 	'action-renameuser' => '更改用户名',
-	'right-renameuser' => '更名用户',
+	'right-renameuser' => '更改用户名',
 	'renameuser-renamed-notice' => '本用户已更名。下面提供更名日志以供参考。',
 );
 
