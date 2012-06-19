@@ -1435,7 +1435,7 @@ $messages['ga'] = array(
 	'renameuser-log' => '{{PLURAL:$1|Athrú amháin|$1 athruithe}}. Fáth: $2',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Prevert
  * @author Toliño
@@ -4250,6 +4250,7 @@ $messages['tl'] = array(
 	'renameuserwarnings' => 'Mga babala:',
 	'renameuserconfirm' => 'Oo, pangalanang muli ang tagagamit',
 	'renameusersubmit' => 'Ipasa',
+	'renameuser-submit-blocklog' => 'Ipakita ang talaan ng pagharang para sa tagagamit',
 	'renameusererrordoesnotexist' => 'Hindi pa umiiral ang tagagamit na "<nowiki>$1</nowiki>".',
 	'renameusererrorexists' => 'Umiiral na ang tagagamit na "<nowiki>$1</nowiki>".',
 	'renameusererrorinvalid' => 'Hindi tanggap ang pangalan ng tagagamit na "<nowiki>$1</nowiki>".',
@@ -4265,6 +4266,7 @@ Magbalik lamang at subukan uli.',
 	'renameuserlogentry' => 'muling pinangalan si $1 patungo sa "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 pagbabago|$1 mga pagbabago}}. Dahilan: $2',
 	'renameuser-move-log' => 'Kusang inilipat ang pahina habang muling pinapangalanan ang tagagamit na si "[[User:$1|$1]]" patungo sa "[[User:$2|$2]]"',
+	'action-renameuser' => 'muling pangalanan ang mga tagagamit',
 	'right-renameuser' => 'Muling pangalanan ang mga tagagamit',
 	'renameuser-renamed-notice' => 'Napangalanan nang muli ang tagagamit na ito.
 Ibinigay sa ibaba ang talaan ng pagpapangalang muli para masangguni.',
