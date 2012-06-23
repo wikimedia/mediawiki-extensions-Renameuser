@@ -3139,6 +3139,7 @@ $messages['pfl'] = array(
  * @author Leinad
  * @author Maikking
  * @author Nux
+ * @author Remedios44
  * @author Sovq
  * @author Sp5uhe
  * @author WarX
@@ -3158,7 +3159,7 @@ $messages['pl'] = array(
 	'renameuserwarnings' => 'Ostrzeżenia:',
 	'renameuserconfirm' => 'Zmień nazwę użytkownika',
 	'renameusersubmit' => 'Zmień',
-	'renameuser-submit-blocklog' => 'Pokaż blok dziennika dla użytkownika',
+	'renameuser-submit-blocklog' => 'Pokaż rejestr blokad użytkownika',
 	'renameusererrordoesnotexist' => 'Użytkownik „<nowiki>$1</nowiki>” nie istnieje',
 	'renameusererrorexists' => 'Użytkownik „<nowiki>$1</nowiki>” już istnieje',
 	'renameusererrorinvalid' => 'Niepoprawna nazwa użytkownika „<nowiki>$1</nowiki>”',
