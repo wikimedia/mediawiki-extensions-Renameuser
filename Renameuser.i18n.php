@@ -4667,6 +4667,7 @@ $messages['zh-hant'] = array(
 	'renameuserwarnings' => '警告：',
 	'renameuserconfirm' => '是，為用戶重新命名',
 	'renameusersubmit' => '提交',
+	'renameuser-submit-blocklog' => '顯示用戶的封禁日誌',
 	'renameusererrordoesnotexist' => '用戶「<nowiki>$1</nowiki>」不存在',
 	'renameusererrorexists' => '用戶「<nowiki>$1</nowiki>」已存在',
 	'renameusererrorinvalid' => '用戶名「<nowiki>$1</nowiki>」不可用',
