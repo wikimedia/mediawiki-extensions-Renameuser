@@ -1228,6 +1228,7 @@ $messages['fa'] = array(
  * @author Agony
  * @author Centerlink
  * @author Crt
+ * @author Linnea
  * @author Nike
  * @author Pxos
  * @author Str4nd
@@ -1246,6 +1247,7 @@ $messages['fi'] = array(
 	'renameuserwarnings' => 'Varoitukset:',
 	'renameuserconfirm' => 'Kyllä, uudelleennimeä käyttäjä',
 	'renameusersubmit' => 'Nimeä',
+	'renameuser-submit-blocklog' => 'Näytä käyttäjän estoloki',
 	'renameusererrordoesnotexist' => 'Tunnusta ”<nowiki>$1</nowiki>” ei ole',
 	'renameusererrorexists' => 'Tunnus ”<nowiki>$1</nowiki>” on jo olemassa',
 	'renameusererrorinvalid' => 'Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen',
