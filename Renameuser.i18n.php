@@ -320,6 +320,7 @@ $messages['ast'] = array(
 	'renameuserwarnings' => 'Avisos:',
 	'renameuserconfirm' => "Sí, renomar l'usuariu",
 	'renameusersubmit' => 'Unviar',
+	'renameuser-submit-blocklog' => 'Amosar el rexistru de bloqueos del usuariu',
 	'renameusererrordoesnotexist' => 'L\'usuariu "<nowiki>$1</nowiki>" nun esiste.',
 	'renameusererrorexists' => 'L\'usuariu "<nowiki>$1</nowiki>" yá esiste.',
 	'renameusererrorinvalid' => 'El nome d\'usuariu "<nowiki>$1</nowiki>" nun ye válidu.',
