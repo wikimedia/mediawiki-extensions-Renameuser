@@ -23,6 +23,11 @@ $specialPageAliases['arz'] = array(
 	'Renameuser' => array( 'سمّى_تانى_يوزر' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'Renameuser' => array( 'সদস্য_পুণঃনামাকৰণ' ),
+);
+
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'Renameuser' => array( 'Преименуване' ),
@@ -63,7 +68,7 @@ $specialPageAliases['diq'] = array(
 	'Renameuser' => array( 'NamedayışêKarberi' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'Renameuser' => array( 'Wužywarja pśemjeniś' ),
 );
@@ -113,7 +118,7 @@ $specialPageAliases['frp'] = array(
 	'Renameuser' => array( 'Renomar_l\'usanciér', 'RenomarLUsanciér' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'Renameuser' => array( 'Renomear_o_usuario' ),
 );
@@ -138,7 +143,7 @@ $specialPageAliases['hr'] = array(
 	'Renameuser' => array( 'Preimenuj_suradnika' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'Renameuser' => array( 'Wužiwarja přemjenować' ),
 );
