@@ -122,7 +122,7 @@ $messages['af'] = array(
 Relevante inligting uit die logboek van gebruikersnaamwysigings word hier onder ter verwysing weergegee.',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  * @author SMP
  */
@@ -446,7 +446,7 @@ $messages['bcl'] = array(
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -754,7 +754,7 @@ $messages['cs'] = array(
 Pro přehled je níže zobrazen výpis z knihy přejmenování uživatelů.',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author Svetko
  * @author ОйЛ
  */
@@ -797,6 +797,7 @@ $messages['cy'] = array(
 	'renameuserwarnings' => 'Rhybuddion:',
 	'renameuserconfirm' => "Parhau gyda'r ail-enwi",
 	'renameusersubmit' => 'Anfon',
+	'renameuser-submit-blocklog' => "Dangoser lòg rhwystro'r defnyddiwr",
 	'renameusererrordoesnotexist' => 'Nid yw\'r defnyddiwr "<nowiki>$1</nowiki>" yn bodoli.',
 	'renameusererrorexists' => 'Mae\'r defnyddiwr "<nowiki>$1</nowiki>" eisoes yn bodoli.',
 	'renameusererrorinvalid' => 'Mae\'r enw defnyddiwr "<nowiki>$1</nowiki>" yn annilys',
@@ -812,6 +813,7 @@ Ewch yn ôl a cheisio eto, os gwelwch yn dda.',
 	'renameuserlogentry' => 'wedi ail-enwi $1 yn "$2"',
 	'renameuser-log' => '$1 {{PLURAL:$1|golygiad|golygiad|olygiad|golygiad|golygiad|o olygiadau}}. Rheswm: $2',
 	'renameuser-move-log' => 'Wedi symud y dudalen yn awtomatig wrth ail-enwi\'r defnyddiwr "[[User:$1|$1]]" i "[[User:$2|$2]]"',
+	'action-renameuser' => 'ail-enwi defnyddwyr',
 	'right-renameuser' => 'Ail-enwi defnyddwyr',
 	'renameuser-renamed-notice' => "Mae'r defnyddiwr hwn wedi ei ail-enwi.
 Mae'r lòg ail-enwi defnyddwyr i'w weld isod.",
@@ -940,7 +942,7 @@ kerem kerê agêrê newe ra tesel bıkerê, bıcerbnê',
 qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -1716,7 +1718,7 @@ $messages['hr'] = array(
 Evidencija preimenovanja suradnika je prikazana ispod kao obavijest.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Dundak
  * @author Michawiki
  */
@@ -3534,7 +3536,7 @@ $messages['ru'] = array(
 Ниже для справки приведён журнал переименований.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -3654,7 +3656,7 @@ $messages['scn'] = array(
 	'right-renameuser' => "Ri-nòmina l'utenti",
 );
 
-/** Samogitian (Žemaitėška)
+/** Samogitian (žemaitėška)
  * @author Hugo.arg
  */
 $messages['sgs'] = array(
