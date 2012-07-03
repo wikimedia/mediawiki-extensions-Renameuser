@@ -3730,6 +3730,7 @@ $messages['sk'] = array(
 	'renameuserwarnings' => 'Upozornenia:',
 	'renameuserconfirm' => 'Áno, premenovať používateľa',
 	'renameusersubmit' => 'Odoslať',
+	'renameuser-submit-blocklog' => 'Zobraziť záznam blokovaní používateľa',
 	'renameusererrordoesnotexist' => 'Používateľ „<nowiki>$1</nowiki>“  neexistuje',
 	'renameusererrorexists' => 'Používateľ „<nowiki>$1</nowiki>“ už existuje',
 	'renameusererrorinvalid' => 'Používateľské meno „<nowiki>$1</nowiki>“ je neplatné',
@@ -3744,6 +3745,7 @@ $messages['sk'] = array(
 	'renameuserlogentry' => 'premenoval používateľa $1 na „$2”',
 	'renameuser-log' => 'mal {{PLURAL:$1|1 úpravu|$1 úpravy|$1 úprav}}. Dôvod: $2',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
+	'action-renameuser' => 'premenovať používateľov',
 	'right-renameuser' => 'Premenovávať používateľov',
 	'renameuser-renamed-notice' => 'Tento používateľ bol premenovaný.
 Dolu nájdete záznam premenovaní.',
