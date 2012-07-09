@@ -315,7 +315,7 @@ $specialPageAliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'Renameuser' => array( 'Muling pangalan ang tagagamit' ),
+	'Renameuser' => array( 'Muling_pangalan_ang_tagagamit' ),
 );
 
 /** Turkish (Türkçe) */
