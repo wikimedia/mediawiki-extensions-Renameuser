@@ -364,7 +364,7 @@ $messages['az'] = array(
 	'right-renameuser' => 'istifadəçilərin adını dəyiş',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author ҒатаУлла
  */
@@ -679,7 +679,7 @@ Torneu enrere i torneu-ho a intentar.",
 A continuació es proporciona el registre de reanomenaments per a més informació.",
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -692,7 +692,7 @@ $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
 );
 
-/** Crimean Turkish (Latin script) (‪Qırımtatarca (Latin)‬)
+/** Crimean Turkish (Latin script) (‪qırımtatarca (Latin)‬)
  * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
@@ -702,7 +702,7 @@ $messages['crh-latn'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 deñişiklik|$1 deñişiklik}} yapqan. Sebep: $2',
 );
 
-/** Crimean Turkish (Cyrillic script) (‪Къырымтатарджа (Кирилл)‬)
+/** Crimean Turkish (Cyrillic script) (‪къырымтатарджа (Кирилл)‬)
  * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
@@ -2204,7 +2204,7 @@ $messages['kk-arab'] = array(
 	'renameuser-move-log' => '«[[User:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[User:$2|$2]]» دەگەنگە اۋىسقاندا بەت وزدىك تۇردە جىلجىتىلدى',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
 $messages['kk-cyrl'] = array(
 	'renameuser' => 'Қатысушыны қайта атау',
 	'renameuserold' => 'Ағымдағы қатысушы аты:',
@@ -2226,7 +2226,7 @@ $messages['kk-cyrl'] = array(
 	'renameuser-move-log' => '«[[User:$1|$1]]» деген қатысушы атын «[[User:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
 $messages['kk-latn'] = array(
 	'renameuser' => 'Qatıswşını qaýta ataw',
 	'renameuserold' => 'Ağımdağı qatıswşı atı:',
@@ -2787,7 +2787,7 @@ $messages['mt'] = array(
 	'renameusererrorinvalid' => 'L-isem tal-utent "<nowiki>$1</nowiki>" hu invalidu.',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -2812,8 +2812,9 @@ $messages['nan'] = array(
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
+ * @author Danmichaelo
+ * @author Event
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -2830,6 +2831,7 @@ $messages['nb'] = array(
 	'renameuserwarnings' => 'Advarsler:',
 	'renameuserconfirm' => 'Ja, døp om brukeren',
 	'renameusersubmit' => 'Utfør',
+	'renameuser-submit-blocklog' => 'Vis blokkeringslogg for bruker',
 	'renameusererrordoesnotexist' => 'Brukeren «<nowiki>$1</nowiki>» finnes ikke.',
 	'renameusererrorexists' => 'Brukeren «<nowiki>$1</nowiki>» finnes allerede.',
 	'renameusererrorinvalid' => 'Brukernavnet «<nowiki>$1</nowiki>» er ugyldig.',
@@ -2845,9 +2847,10 @@ Gå tilbake og prøv igjen.',
 	'renameuserlogentry' => 'døpte om $1 til «$2»',
 	'renameuser-log' => '{{PLURAL:$1|1 bidrag|$1 bidrag}}. Årsak: $2',
 	'renameuser-move-log' => 'Flyttet side automatisk under omdøping av brukeren «[[User:$1|$1]]» til «[[User:$2|$2]]»',
-	'right-renameuser' => 'Døpe om brukere',
-	'renameuser-renamed-notice' => 'Denne brukeren er døpt om.
-Til informasjon er omdøpningsloggen vist nedenfor.',
+	'action-renameuser' => 'endre navn på brukere',
+	'right-renameuser' => 'Endre navn på brukere',
+	'renameuser-renamed-notice' => 'Denne brukeren har fått endret navn.
+Til informasjon er navnendringsloggen vist nedenfor.',
 );
 
 /** Low German (Plattdüütsch)
@@ -4420,7 +4423,7 @@ $messages['vec'] = array(
 Qua soto ghe xe el riferimento sul registro de rinomina.',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
