@@ -54,6 +54,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Meno25
+ * @author Nemo bis
  * @author Nike
  * @author SPQRobin
  * @author Siebrand
@@ -68,6 +69,7 @@ $messages['qqq'] = array(
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
 	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
+	'renameuserlogpage' => '{{doc-logpage}}',
 	'renameuserlogentry' => 'Used in [[Special:Log/renameuser]].
 * Parameter $1 is the original username
 * Parameter $2 is the new username',
