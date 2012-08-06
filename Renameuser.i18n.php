@@ -4656,7 +4656,7 @@ $messages['zh-hans'] = array(
 	'renameuserlogentry' => '更名$1为“$2”',
 	'renameuser-log' => '$1个编辑。原因：$2',
 	'renameuser-move-log' => '当更改用户名“[[User:$1|$1]]”为“[[User:$2|$2]]”时自动移动页面',
-	'action-renameuser' => '更改用户名',
+	'action-renameuser' => '重命名用户',
 	'right-renameuser' => '更改用户名',
 	'renameuser-renamed-notice' => '本用户已更名。下面提供更名日志以供参考。',
 );
@@ -4664,6 +4664,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文（繁體）‬)
  * @author Gaoxuewei
  * @author Horacewai2
+ * @author Liangent
  * @author Mark85296341
  * @author Simon Shek
  * @author Waihorace
@@ -4699,7 +4700,7 @@ $messages['zh-hant'] = array(
 	'renameuserlogentry' => '已經把 $1 重新命名為「$2」',
 	'renameuser-log' => '擁有 $1 次編輯。 理由：$2',
 	'renameuser-move-log' => '當由「[[User:$1|$1]]」重新命名作「[[User:$2|$2]]」時已經自動移動用戶頁',
-	'action-renameuser' => '更改用戶名',
+	'action-renameuser' => '重命名用戶',
 	'right-renameuser' => '重新命名用戶',
 	'renameuser-renamed-notice' => '該用戶已被重新命名。
 以下列出更改用戶名日誌以供參考。',
