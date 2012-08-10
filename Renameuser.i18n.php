@@ -2816,6 +2816,15 @@ $messages['mt'] = array(
 	'renameusererrordoesnotexist' => 'L-utent "<nowiki>$1</nowiki>" ma jeżistix.',
 	'renameusererrorexists' => 'L-utent "<nowiki>$1</nowiki>" diġà jeżisti.',
 	'renameusererrorinvalid' => 'L-isem tal-utent "<nowiki>$1</nowiki>" hu invalidu.',
+	'renameuser-page-moved' => 'Il-paġna $1 tmexxiet lejn $2.',
+	'renameuser-page-unmoved' => 'Il-paġna $1 ma setgħetx titmexxa lejn $2.',
+	'renameuserlogpage' => 'Reġistru tal-utenti msemmijin mill-ġdid',
+	'renameuserlogpagetext' => "Dan huwa r-reġistru ta' tibdil tal-ismijiet tal-utenti.",
+	'renameuserlogentry' => 'biddel l-isem ta\' $1 għal "$2"',
+	'renameuser-log' => '{{PLURAL:$1|modifika waħda|$1 modifiki}}. Raġuni: $2',
+	'renameuser-move-log' => 'Paġna mmexxiha matul il-bidla tal-utent "[[User:$1|$1]]" għal "[[User:$2|$2]]"',
+	'action-renameuser' => 'tbiddel l-ismijiet tal-utenti',
+	'right-renameuser' => 'Ibiddel l-isem tal-utenti',
 );
 
 /** Erzya (эрзянь)
@@ -3747,6 +3756,7 @@ $messages['sh'] = array(
  * @author Budhajeewa
  * @author තඹරු විජේසේකර
  * @author නන්දිමිතුරු
+ * @author පසිඳු කාවින්ද
  * @author ශ්වෙත
  */
 $messages['si'] = array(
@@ -3778,6 +3788,7 @@ $messages['si'] = array(
 	'renameuserlogentry' => '$1, "$2" ලෙස ප්‍රතිනම් කෙරිනි',
 	'renameuser-log' => '{{PLURAL:$1|එක් සංස්කරණයක්|සංස්කරණ $1 ක්}}. හේතුව: $2',
 	'renameuser-move-log' => 'පරිශීලක "[[User:$1|$1]]", "[[User:$2|$2]]" වෙත ප්‍රතිනම්කරන අතරතුර පිටුව ස්‍වයංක්‍රීයව ගෙනයන ලදී',
+	'action-renameuser' => 'පරිශීලකයන් ප්‍රතිනම් කරන්න',
 	'right-renameuser' => 'පරිශීලකයන් ප්‍රතිනම් කරන්න',
 	'renameuser-renamed-notice' => 'මෙම පරිශීලකයා ප්‍රතිනම්කර ඇත.
 ප්‍රතිනම්කෙරුම් ලඝු-සටහන පහත දක්වා ඇත.',
@@ -3931,6 +3942,7 @@ $messages['sr-ec'] = array(
 	'renameuserwarnings' => 'Упозорења:',
 	'renameuserconfirm' => 'Да, преименуј корисника',
 	'renameusersubmit' => 'Прихвати',
+	'renameuser-submit-blocklog' => 'Дневник блокирања за корисника',
 	'renameusererrordoesnotexist' => 'Корисник „<nowiki>$1</nowiki>“ не постоји.',
 	'renameusererrorexists' => 'Корисник „<nowiki>$1</nowiki>“ већ постоји.',
 	'renameusererrorinvalid' => 'Погрешно корисничко име: "<nowiki>$1</nowiki>"',
@@ -3947,6 +3959,7 @@ $messages['sr-ec'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 измена|$1 измене|$1 измена}}.
 Разлог: $2',
 	'renameuser-move-log' => 'Премештене странице приликом преименовања корисника: „[[User:$1|$1]]“ у „[[User:$2|$2]]“.',
+	'action-renameuser' => 'преименовање корисника',
 	'right-renameuser' => 'преименовање корисничких имена',
 	'renameuser-renamed-notice' => 'Овом кориснику је промењено име.
 Историја промена имена је приложена испод, као информација.',
@@ -4103,6 +4116,7 @@ $messages['sw'] = array(
 
 /** Tamil (தமிழ்)
  * @author Balajijagadesh
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author TRYPPN
  */
@@ -4113,10 +4127,17 @@ $messages['ta'] = array(
 	'renameuserold' => 'தற்போதைய பயனர் பெயர்:',
 	'renameusernew' => 'புதிய பயனர் பெயர்:',
 	'renameuserreason' => 'மறுபெயருக்கான காரணம்:',
+	'renameusermove' => 'பயனர் பக்கம் மற்றும் பேச்சுப் பக்கங்களை (அவற்றின் துணைப்பக்கங்களுடன்) புதிய பெயருக்கு நகர்த்து',
+	'renameusersuppress' => 'புதுப் பெயருக்கு வழிமாற்றுகளை உருவாக்க வேண்டாம்',
 	'renameuserwarnings' => 'எச்சரிக்கை:',
 	'renameuserconfirm' => 'சரி, பயனருக்கு மாற்றுப்பெயர் கொடுக்கவும்',
 	'renameusersubmit' => 'சமர்ப்பி',
 	'renameuser-submit-blocklog' => 'பயனாளரின் தடை உள்ளீட்டை காட்டு',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" என்ற பெயரிலான பயனர் இல்லை.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" என்ற பெயரில் ஏற்கனவே பயனர் ஒருவர் உள்ளார்.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" என்ற பயனர் பெயர் செல்லாது.',
+	'renameuser-error-same-user' => 'பயனர் பெயரை மாற்றும் போது அதே பெயரை நீங்கள் தரமுடியாது.',
+	'renameuser-page-exists' => 'பக்கம் $1 ஏற்கனவே  உள்ளது. தானாக மேலெழுத இயலாது.',
 	'renameuserlogpage' => 'பயனரை பெயர்மாற்றுதல் குறிப்பேடு',
 	'renameuserlogpagetext' => 'இது பயனர் பெயர் மாற்றத்திற்கான குறிப்பேடு',
 	'renameuserlogentry' => 'பெயர் மற்றம் செய்யப்பட்டது $1 லிருந்து "$2" க்கு',
