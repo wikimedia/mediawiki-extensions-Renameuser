@@ -190,7 +190,7 @@ $messages['ar'] = array(
 	'renameuserreserve' => 'احفظ اسم المستخدم القديم ضد الاستخدام',
 	'renameuserwarnings' => 'التحذيرات:',
 	'renameuserconfirm' => 'نعم، أعد تسمية المستخدم',
-	'renameusersubmit' => 'أرسل',
+	'renameusersubmit' => 'إرسال',
 	'renameuser-submit-blocklog' => 'أظهر سجل المنع الخاص بالمستخدم',
 	'renameusererrordoesnotexist' => 'لا يوجد مستخدم بالاسم "<nowiki>$1</nowiki>"',
 	'renameusererrorexists' => 'المستخدم "<nowiki>$1</nowiki>" موجود بالفعل',
@@ -1556,6 +1556,7 @@ $messages['gu'] = array(
 	'renameuserwarnings' => 'ચેતવણીઓ:',
 	'renameuserconfirm' => 'હા, સભ્યનું નામ બદલો',
 	'renameusersubmit' => 'જમા કરો',
+	'renameuser-submit-blocklog' => 'સભ્ય માટે પ્રતિબંધ લૉગ બતાવો',
 	'renameusererrordoesnotexist' => 'આ સભ્ય  "<nowiki>$1</nowiki>" મોજૂદ નથી.',
 	'renameusererrorexists' => 'આ સભ્ય  "<nowiki>$1</nowiki>" પહેલેથી હાજર છે.',
 	'renameusererrorinvalid' => 'સભ્યનામ "<nowiki>$1</nowiki>" અયોગ્ય છે.',
@@ -1571,6 +1572,7 @@ $messages['gu'] = array(
 	'renameuserlogentry' => '$1 નું નામ "$2" કર્યું',
 	'renameuser-log' => '{{PLURAL:$1|૧ ફેરફાર|$1 ફેરફારો}}. કારણ: $2',
 	'renameuser-move-log' => 'સભ્ય "[[User:$1|$1]]" થી "[[User:$2|$2]]" નામ બદલતી વખતે આપમેળે પાનું ખસેડ્યું',
+	'action-renameuser' => 'સભ્યોનાં નામ બદલો',
 	'right-renameuser' => 'સભ્યોના નામ બદલો',
 	'renameuser-renamed-notice' => 'આ સભ્યનું નામ પરિવર્તન થયું છે.
 નામ પરિવર્તન લોગ તમારા સંદર્ભ માટે અહીં આપેલ છે',
@@ -4111,9 +4113,21 @@ $messages['sv'] = array(
 Som referens återfinns omdöpningsloggen nedan.',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Stephenwanjau
+ */
 $messages['sw'] = array(
+	'renameuser' => 'Badili jina la mtumiaji',
+	'renameuser-linkoncontribs' => 'badili jina la mtumiaji',
+	'renameuser-linkoncontribs-text' => 'Badili jina la mtumiaji huyu',
+	'renameuserold' => 'Jina la sasa la mtumiaji:',
+	'renameusernew' => 'Jina lipya la mtumiaji:',
+	'renameuserreason' => 'Sababu ya kubadili jina:',
+	'renameuserwarnings' => 'Ilani:',
+	'renameuserconfirm' => 'Ndiyo, badili jina la mtumiaji',
 	'renameusersubmit' => 'Wasilisha',
+	'renameuser-page-moved' => 'Ukurasa wa $1 umehamishwa hadi $2.',
+	'renameuser-page-unmoved' => 'Ukurasa $1 haungesongezwa hadi $2.',
 );
 
 /** Tamil (தமிழ்)
