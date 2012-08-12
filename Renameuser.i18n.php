@@ -639,6 +639,7 @@ Zapisnik preimenovanje je prikazan ispod kao referenca.',
 );
 
 /** Catalan (català)
+ * @author Arnaugir
  * @author El libre
  * @author Juanpabl
  * @author Paucabot
@@ -661,6 +662,7 @@ $messages['ca'] = array(
 	'renameuserwarnings' => 'Advertències:',
 	'renameuserconfirm' => "Sí, reanomena l'usuari",
 	'renameusersubmit' => 'Tramet',
+	'renameuser-submit-blocklog' => "Mostra el registre de bloquejos per l'usuari",
 	'renameusererrordoesnotexist' => "L'usuari «<nowiki>$1</nowiki>» no existeix",
 	'renameusererrorexists' => "L'usuari «<nowiki>$1</nowiki>» ja existeix",
 	'renameusererrorinvalid' => "El nom d'usuari «<nowiki>$1</nowiki>» no és vàlid",
@@ -676,6 +678,7 @@ Torneu enrere i torneu-ho a intentar.",
 	'renameuserlogentry' => 'ha reanomenat $1 a "$2"',
 	'renameuser-log' => '{{PLURAL:$1|Una contribució|$1 contribucions}}. Motiu: $2',
 	'renameuser-move-log' => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
+	'action-renameuser' => 'reanomena usuaris',
 	'right-renameuser' => 'Reanomenar usuaris',
 	'renameuser-renamed-notice' => "S'ha canviat el nom d'aquest usuari.
 A continuació es proporciona el registre de reanomenaments per a més informació.",
@@ -2124,19 +2127,24 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
 	'renameuser' => 'Ngganti jeneng panganggo',
+	'renameuser-linkoncontribs' => 'ganti jeneng panganggo',
+	'renameuser-linkoncontribs-text' => 'Ganti jenengé panganggo iki',
 	'renameuser-desc' => "Ngganti jeneng panganggo (perlu hak aksès ''renameuser'')",
 	'renameuserold' => 'Jeneng panganggo saiki:',
 	'renameusernew' => 'Jeneng panganggo anyar:',
 	'renameuserreason' => 'Alesan ganti jeneng:',
 	'renameusermove' => 'Mindhah kaca panganggo lan kaca dhiskusiné (sarta subkaca-kacané) menyang jeneng anyar',
+	'renameusersuppress' => 'Aja gawé pangalihan kanggo jeneng anyar',
 	'renameuserreserve' => 'Blokir utawa cadhangaké jeneng panganggo lawas supaya ora bisa dianggo manèh',
 	'renameuserwarnings' => 'Pènget:',
 	'renameuserconfirm' => 'Ya, ganti jeneng panganggo kasebut',
 	'renameusersubmit' => 'Kirim',
+	'renameuser-submit-blocklog' => 'Tuduhaké log blokir kanggo panganggo',
 	'renameusererrordoesnotexist' => 'Panganggo "<nowiki>$1</nowiki>" ora ana.',
 	'renameusererrorexists' => 'Panganggo "<nowiki>$1</nowiki>" wis ana.',
 	'renameusererrorinvalid' => 'Jeneng panganggo "<nowiki>$1</nowiki>" ora absah',
@@ -2150,8 +2158,9 @@ Mangga balènana lan nyoba manèh.',
 	'renameuserlogpage' => 'Log ganti jeneng panganggo',
 	'renameuserlogpagetext' => 'Iki log owah-owahan jeneng panganggo',
 	'renameuserlogentry' => 'Ganti jeneng $1 dadi "$2"',
-	'renameuser-log' => 'sing wis duwé $1 suntingan. Alesan: $2',
+	'renameuser-log' => '{{PLURAL:$1|1 suntingan|$1 suntingan}}. Alesan: $2',
 	'renameuser-move-log' => 'Sacara otomatis mindhah kaca nalika ngganti jeneng panganggo "[[User:$1|$1]]" dadi "[[User:$2|$2]]"',
+	'action-renameuser' => 'ganti jeneng panganggo',
 	'right-renameuser' => 'Ganti jeneng panganggo-panganggo',
 );
 
@@ -3333,6 +3342,7 @@ $messages['ps'] = array(
 	'renameuserlogpage' => 'د کارن-نوم يادښت',
 	'renameuserlogentry' => 'د $1 نوم، "$2" ته بدل شو',
 	'renameuser-log' => '{{PLURAL:$1|1 سمون|$1 سمونونه}}. سبب: $2',
+	'action-renameuser' => 'کارن-نومونه بدلول',
 	'right-renameuser' => 'کارن-نومونه بدلول',
 );
 
@@ -3887,6 +3897,7 @@ $messages['sli'] = array(
 
 /** Albanian (shqip)
  * @author Dori
+ * @author FatosMorina
  * @author Mikullovci11
  * @author Olsi
  */
@@ -3904,6 +3915,7 @@ $messages['sq'] = array(
 	'renameuserwarnings' => 'Paralajmërimet:',
 	'renameuserconfirm' => 'Po, ndërrojë emrin e përdoruesit',
 	'renameusersubmit' => 'Ndryshoje',
+	'renameuser-submit-blocklog' => 'Shfaq shënimet e bllokimit për përdoruesin',
 	'renameusererrordoesnotexist' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" nuk ekziston',
 	'renameusererrorexists' => 'Përdoruesi me emër "<nowiki>$1</nowiki>" ekziston',
 	'renameusererrorinvalid' => 'Emri "<nowiki>$1</nowiki>" nuk është i lejuar',
@@ -3919,6 +3931,7 @@ Ju lutemi kthehuni prapa dhe provoni përsëri.',
 	'renameuserlogentry' => 'riemëruar $1 tek "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 redaktim|$1 redaktime}}. Arsyeja: $2',
 	'renameuser-move-log' => 'Lëvizi faqen automatikisht kur riemëroi përdoruesin "[[User:$1|$1]]" në "[[User:$2|$2]]"',
+	'action-renameuser' => 'riemëro përdoruesit',
 	'right-renameuser' => 'Riemëroni përdorueset',
 	'renameuser-renamed-notice' => 'Ky përdorues është riemëruar.
 Regjistri i riemërimit është poshtë për referencë.',
@@ -4135,6 +4148,7 @@ $messages['sw'] = array(
  * @author Karthi.dr
  * @author Shanmugamp7
  * @author TRYPPN
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'renameuser' => 'பயனரை பெயர்மாற்று',
@@ -4145,6 +4159,7 @@ $messages['ta'] = array(
 	'renameuserreason' => 'மறுபெயருக்கான காரணம்:',
 	'renameusermove' => 'பயனர் பக்கம் மற்றும் பேச்சுப் பக்கங்களை (அவற்றின் துணைப்பக்கங்களுடன்) புதிய பெயருக்கு நகர்த்து',
 	'renameusersuppress' => 'புதுப் பெயருக்கு வழிமாற்றுகளை உருவாக்க வேண்டாம்',
+	'renameuserreserve' => 'எதிர்காலப் பயன்பாட்டிலிருந்து பழைய பயனர் பெயரைத் தடை செய்யவும்',
 	'renameuserwarnings' => 'எச்சரிக்கை:',
 	'renameuserconfirm' => 'சரி, பயனருக்கு மாற்றுப்பெயர் கொடுக்கவும்',
 	'renameusersubmit' => 'சமர்ப்பி',
@@ -4152,8 +4167,12 @@ $messages['ta'] = array(
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" என்ற பெயரிலான பயனர் இல்லை.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" என்ற பெயரில் ஏற்கனவே பயனர் ஒருவர் உள்ளார்.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" என்ற பயனர் பெயர் செல்லாது.',
+	'renameuser-error-request' => 'வேண்டுகோளைப் பெறுவதில் ஒரு சிக்கல்.
+தயவு செய்து பின்சென்று மீண்டும் முயலவும்.',
 	'renameuser-error-same-user' => 'பயனர் பெயரை மாற்றும் போது அதே பெயரை நீங்கள் தரமுடியாது.',
 	'renameuser-page-exists' => 'பக்கம் $1 ஏற்கனவே  உள்ளது. தானாக மேலெழுத இயலாது.',
+	'renameuser-page-moved' => 'பக்கம் $1 $2 எனுந்தலைப்புக்கு நகர்த்தப்பட்டுள்ளது.',
+	'renameuser-page-unmoved' => 'பக்கம் $1 என்பதை $2 என்பதற்கு நகர்த்த முடியவில்லை.',
 	'renameuserlogpage' => 'பயனரை பெயர்மாற்றுதல் குறிப்பேடு',
 	'renameuserlogpagetext' => 'இது பயனர் பெயர் மாற்றத்திற்கான குறிப்பேடு',
 	'renameuserlogentry' => 'பெயர் மற்றம் செய்யப்பட்டது $1 லிருந்து "$2" க்கு',
