@@ -1392,6 +1392,7 @@ Volyéd tornar arriér et pués tornar èprovar.',
 	'renameuserlogentry' => 'at renomâ « $1 » en « $2 »',
 	'renameuser-log' => '$1 changement{{PLURAL:$1||s}}. Rêson : $2',
 	'renameuser-move-log' => 'Pâge dèplaciê ôtomaticament quand l’usanciér « [[User:$1|$1]] » est vegnu « [[User:$2|$2]] »',
+	'action-renameuser' => 'renomar los utilisators',
 	'right-renameuser' => 'Renomar des usanciérs',
 	'renameuser-renamed-notice' => 'Ceti usanciér at étâ renomâ.
 Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
@@ -1775,6 +1776,7 @@ Protokol přemjenowanjow je deleka jako referenca podaty.',
 /** Hungarian (magyar)
  * @author Adam78
  * @author Dani
+ * @author Dj
  * @author Tgr
  */
 $messages['hu'] = array(
@@ -1805,6 +1807,7 @@ $messages['hu'] = array(
 	'renameuserlogentry' => 'átnevezte $1 azonosítóját (az új név: „$2”)',
 	'renameuser-log' => '$1 szerkesztése van. Indoklás: $2',
 	'renameuser-move-log' => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
+	'action-renameuser' => 'felhasználó átnevezése',
 	'right-renameuser' => 'felhasználók átnevezése',
 	'renameuser-renamed-notice' => 'Ezt a szerkesztőt átnevezték.
 Alább látható a szerkesztőátnevezési napló tájékoztatásként.',
@@ -2331,12 +2334,12 @@ $messages['kn'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'renameuser' => '계정 이름 바꾸기',
+	'renameuser' => '사용자 이름 바꾸기',
 	'renameuser-linkoncontribs' => '이름 바꾸기',
 	'renameuser-linkoncontribs-text' => '이 사용자의 계정 이름을 바꿉니다.',
-	'renameuser-desc' => "계정 이름 바꾸기를 위한 [[Special:Renameuser|특수 문서]]를 추가 ('''renameuser''' 권한 필요)",
-	'renameuserold' => '기존 계정 이름:',
-	'renameusernew' => '새 계정 이름:',
+	'renameuser-desc' => "사용자 이름을 바꾸기를 위한 [[Special:Renameuser|특수 문서]]를 추가 ('''renameuser''' 권한 필요)",
+	'renameuserold' => '기존 사용자 이름:',
+	'renameusernew' => '새 사용자 이름:',
 	'renameuserreason' => '바꾸는 이유:',
 	'renameusermove' => '사용자 문서와 토론 문서, 하위 문서를 새 사용자 이름으로 이동하기',
 	'renameusersuppress' => '새 이름으로 넘겨주기를 만들지 않기',
@@ -2356,13 +2359,13 @@ $messages['ko'] = array(
 	'renameuser-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
 	'renameuser-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
 	'renameuserlogpage' => '이름 바꾸기 기록',
-	'renameuserlogpagetext' => '계정 이름 바꾸기 기록입니다.',
+	'renameuserlogpagetext' => '사용자 이름 바꾸기 기록입니다.',
 	'renameuserlogentry' => '$1 사용자에서 "$2" 사용자로 이름을 바꾸었습니다.',
 	'renameuser-log' => '기여 $1회. 이유: $2',
 	'renameuser-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|$2]]" 사용자로 바꾸면서 문서를 자동으로 이동함',
-	'action-renameuser' => '계정 이름을 바꿀',
-	'right-renameuser' => '계정 이름 바꾸기',
-	'renameuser-renamed-notice' => '이 사용자의 계정 이름을 바꾸었습니다.
+	'action-renameuser' => '사용자 이름을 바꿀',
+	'right-renameuser' => '사용자 이름 바꾸기',
+	'renameuser-renamed-notice' => '이 사용자의 이름을 바꾸었습니다.
 아래의 이름 바꾸기 기록을 참고하십시오.',
 );
 
@@ -2598,6 +2601,7 @@ Prašome eiti atgal ir bandyti iš naujo.',
 	'renameuserlogentry' => 'pervadintas $1 į „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 redagavimas|$1 redagavimų(ai)}}. Priežastis: $2',
 	'renameuser-move-log' => 'Puslapis automatiškai perkeltas, kai buvo pervadinamas naudotojas "[[User:$1|$1]]" į "[[User:$2|$2]]"',
+	'action-renameuser' => 'pervadinti naudotojus',
 	'right-renameuser' => 'Pervadinti naudotojus',
 );
 
