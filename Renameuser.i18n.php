@@ -531,6 +531,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Nasir8891
  */
 $messages['bn'] = array(
 	'renameuser' => 'ব্যবহারকারী নামান্তর করো',
@@ -541,9 +542,12 @@ $messages['bn'] = array(
 	'renameusernew' => 'নতুন ব্যবহারকারী নাম:',
 	'renameuserreason' => 'নামান্তরের কারণ:',
 	'renameusermove' => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
+	'renameusersuppress' => 'নতুন নামে রিডাইরেক্ট করবেন না',
+	'renameuserreserve' => 'ভবিষ্যতে উদ্দেশ্যে পুরাতন ব্যবহারকারী নাম ব্লক করা হল',
 	'renameuserwarnings' => 'সতর্কীকরণ:',
 	'renameuserconfirm' => 'হ্যাঁ, ব্যবহারকারীর নাম পরিবর্তন করো',
 	'renameusersubmit' => 'জমা দাও',
+	'renameuser-submit-blocklog' => 'ব্যবহারকারীর ব্লক লগ দেখুন',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" নামের কোন ব্যবহারকারী নাই।',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ব্যবহারকারী ইতিমধ্যে বিদ্যমান আছে।',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ব্যবহারকারী নামটি ঠিক নয়।',
@@ -558,7 +562,10 @@ $messages['bn'] = array(
 	'renameuserlogentry' => '$1 থেকে "$2" তে নামান্তর করা হয়েছে',
 	'renameuser-log' => '{{PLURAL:$1|1 সম্পাদনা|$1 সম্পাদনাসমূহ}}। কারণ: $2',
 	'renameuser-move-log' => 'যখন ব্যবহারকারী "[[User:$1|$1]]" থেকে "[[User:$2|$2]]" তে নামান্তরিত হবে তখন সয়ঙ্ক্রিয়ভাবে পাতা সরিয়ে নেওয়া হয়েছে',
+	'action-renameuser' => 'ব্যবহারকারী নাম পরিবর্তন',
 	'right-renameuser' => 'ব্যবহারকারীদের পুনরায় নাম দাও',
+	'renameuser-renamed-notice' => 'এই ব্যবহারকারীর নাম পরিবর্তন করা হয়েছে।
+সূত্র হিসাবে নিচে নাম পরিবর্তন লগ দেওয়া হল।',
 );
 
 /** Breton (brezhoneg)
@@ -2821,6 +2828,7 @@ $messages['mt'] = array(
 	'renameuser' => 'Semmi utent mill-ġdid',
 	'renameuser-linkoncontribs' => 'semmi l-utent mill-ġdid',
 	'renameuser-linkoncontribs-text' => "Erġa' semmi lil dan l-utent",
+	'renameuser-desc' => "Iżżid [[Special:Renameuser|paġna speċjali]] sabiex issemmi utent mill-ġdid (huwa neċessarju li tħaddan id-dritt ''renameuser'')",
 	'renameuserold' => 'Isem tal-utent attwali:',
 	'renameusernew' => 'Isem tal-utent il-ġdid:',
 	'renameuserreason' => 'Raġuni għall-bidla fl-isem:',
@@ -2830,9 +2838,14 @@ $messages['mt'] = array(
 	'renameuserwarnings' => 'Twissijiet:',
 	'renameuserconfirm' => 'Iva, semmi mill-ġdid dan l-utent',
 	'renameusersubmit' => 'Ibgħat',
+	'renameuser-submit-blocklog' => 'Uri r-reġistru tal-imblukkar għall-utent',
 	'renameusererrordoesnotexist' => 'L-utent "<nowiki>$1</nowiki>" ma jeżistix.',
 	'renameusererrorexists' => 'L-utent "<nowiki>$1</nowiki>" diġà jeżisti.',
 	'renameusererrorinvalid' => 'L-isem tal-utent "<nowiki>$1</nowiki>" hu invalidu.',
+	'renameuser-error-request' => "Kien hemm problema fl-ilqugħ tar-rikjesta tiegħek. Jekk jogħġbok mur lura u erġa' pprova.",
+	'renameuser-error-same-user' => 'Ma tistax issemmi utent l-istess isem li kellu qabel.',
+	'renameusersuccess' => 'L-utent "<nowiki>$1</nowiki>" issemma mill-ġdid għal "<nowiki>$2</nowiki>".',
+	'renameuser-page-exists' => 'Il-paġna $1 diġà teżisti u ma tistax tiġi miktuba fuqha awtomatikament.',
 	'renameuser-page-moved' => 'Il-paġna $1 tmexxiet lejn $2.',
 	'renameuser-page-unmoved' => 'Il-paġna $1 ma setgħetx titmexxa lejn $2.',
 	'renameuserlogpage' => 'Reġistru tal-utenti msemmijin mill-ġdid',
@@ -2842,6 +2855,7 @@ $messages['mt'] = array(
 	'renameuser-move-log' => 'Paġna mmexxiha matul il-bidla tal-utent "[[User:$1|$1]]" għal "[[User:$2|$2]]"',
 	'action-renameuser' => 'tbiddel l-ismijiet tal-utenti',
 	'right-renameuser' => 'Ibiddel l-isem tal-utenti',
+	'renameuser-renamed-notice' => "Dan l-utent reġa' ssemma mill-ġdid. Ir-reġistru tal-ismijiet ġodda huwa mogħti bħala referenza.",
 );
 
 /** Erzya (эрзянь)
@@ -3791,6 +3805,7 @@ $messages['si'] = array(
 	'renameuserwarnings' => 'අවවාදයන්:',
 	'renameuserconfirm' => 'ඔව්, පරිශීලකයා යළි-නම්කරන්න',
 	'renameusersubmit' => 'යොමන්න',
+	'renameuser-submit-blocklog' => 'පරිශීලක සඳහා වාරණ ලඝු සටහන පෙන්වන්න',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" පරිශීලකයා නොපවතී.',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" පරිශීලකයා දැනටමත් පවතියි.',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" පරිශීලක නාමය අනීතිකයි.',
@@ -4131,6 +4146,7 @@ Som referens återfinns omdöpningsloggen nedan.',
 );
 
 /** Swahili (Kiswahili)
+ * @author Kwisha
  * @author Stephenwanjau
  */
 $messages['sw'] = array(
@@ -4145,6 +4161,8 @@ $messages['sw'] = array(
 	'renameusersubmit' => 'Wasilisha',
 	'renameuser-page-moved' => 'Ukurasa wa $1 umehamishwa hadi $2.',
 	'renameuser-page-unmoved' => 'Ukurasa $1 haungesongezwa hadi $2.',
+	'action-renameuser' => 'badili jina la mtumiaji',
+	'right-renameuser' => 'Badili jina la watumiaji',
 );
 
 /** Tamil (தமிழ்)
