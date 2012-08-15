@@ -2088,6 +2088,7 @@ $messages['ja'] = array(
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => 'はい、利用者名を変更します',
 	'renameusersubmit' => '変更',
+	'renameuser-submit-blocklog' => '利用者のブロック記録を表示',
 	'renameusererrordoesnotexist' => '利用者「<nowiki>$1</nowiki>」は存在しません。',
 	'renameusererrorexists' => '利用者「<nowiki>$1</nowiki>」は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名「<nowiki>$1</nowiki>」は無効な値です。',
@@ -3035,6 +3036,13 @@ Ga terug en probeer het opnieuw.',
 	'right-renameuser' => 'Gebruikers hernoemen',
 	'renameuser-renamed-notice' => 'Deze gebruiker is hernoemd.
 Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter referentie weergegeven.',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'renameuser-error-same-user' => 'Je kunt geen gebruiker hernoemen naar dezelfde naam.',
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
