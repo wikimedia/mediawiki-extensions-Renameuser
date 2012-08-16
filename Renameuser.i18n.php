@@ -2173,6 +2173,8 @@ Mangga balènana lan nyoba manèh.',
 	'renameuser-move-log' => 'Sacara otomatis mindhah kaca nalika ngganti jeneng panganggo "[[User:$1|$1]]" dadi "[[User:$2|$2]]"',
 	'action-renameuser' => 'ganti jeneng panganggo',
 	'right-renameuser' => 'Ganti jeneng panganggo-panganggo',
+	'renameuser-renamed-notice' => 'Panganggo iki wis diganti jenengé.
+Log panggantèn jeneng sumadhiya ngisor iki kanggo rujukan.',
 );
 
 /** Georgian (ქართული)
@@ -3668,6 +3670,7 @@ $messages['sa'] = array(
 	'renameuser' => 'यॊजकस्य पुनर्नामकरणं क्रियताम्',
 	'renameuser-linkoncontribs' => 'यॊजकनाम परिवर्त्यताम्',
 	'renameuser-linkoncontribs-text' => 'अस्य योजकस्य नाम परिवर्त्यताम्',
+	'renameuser-desc' => "योजकस्य पुनर्नामकरणं कर्तुं (''योजकपुनर्नाम''अधिकारः अपेक्षितः)  [[Special:Renameuser|विशेषपृष्ठम्]] योजयति",
 	'renameuserold' => 'प्रस्तुतयोजकनाम :',
 	'renameusernew' => 'नूतनयोजकनाम :',
 	'renameuserreason' => 'नामपरिवर्तनस्य कारणम् :',
@@ -4537,10 +4540,16 @@ $messages['uk'] = array(
 Для довідки нижче наведений журнал перейменувань.',
 );
 
-/** Urdu (اردو) */
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
 $messages['ur'] = array(
 	'renameuser' => 'صارف کا نام تبدیل کریں',
+	'renameuserwarnings' => 'انتباہ:',
+	'renameusersubmit' => 'جمع کرائیں',
 	'renameuser-log' => 'جن کی $1 ترامیم تھیں. $2',
+	'action-renameuser' => 'صارفین کو نیا نام دیںکے',
+	'right-renameuser' => 'صارفین کو نیا نام دیںکے',
 );
 
 /** vèneto (vèneto)
