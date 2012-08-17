@@ -2635,6 +2635,7 @@ $messages['lv'] = array(
 	'renameuserlogpage' => 'Lietotāju pārdēvēšanas reģistrs',
 	'renameuserlogpagetext' => 'Lietotājvārdu maiņas reģistrs',
 	'renameuserlogentry' => 'pārsauca $1 par "$2"',
+	'action-renameuser' => 'pārsaukt lietotājus',
 	'right-renameuser' => 'Pārsaukt lietotājus',
 );
 
