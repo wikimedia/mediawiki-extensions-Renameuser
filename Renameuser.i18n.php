@@ -2092,20 +2092,22 @@ $messages['ja'] = array(
 	'renameusererrordoesnotexist' => '利用者「<nowiki>$1</nowiki>」は存在しません。',
 	'renameusererrorexists' => '利用者「<nowiki>$1</nowiki>」は既に存在しています。',
 	'renameusererrorinvalid' => '利用者名「<nowiki>$1</nowiki>」は無効な値です。',
-	'renameuser-error-request' => '要求を正常に受け付けることができませんでした。戻ってから再度お試しください。',
+	'renameuser-error-request' => '要求を正常に受け付けることができませんでした。
+戻ってから再度お試しください。',
 	'renameuser-error-same-user' => '現在と同じ利用者名には変更できません。',
-	'renameusersuccess' => '利用者「<nowiki>$1</nowiki>」を「<nowiki>$2</nowiki>」に変更しました。',
-	'renameuser-page-exists' => '$1 が既に存在しているため、自動で上書きできませんでした。',
+	'renameusersuccess' => '利用者名を「<nowiki>$1</nowiki>」から「<nowiki>$2</nowiki>」に変更しました。',
+	'renameuser-page-exists' => '$1 が既に存在するため、自動での上書きはできませんでした。',
 	'renameuser-page-moved' => '$1 を $2 に移動しました。',
 	'renameuser-page-unmoved' => '$1 を $2 に移動できませんでした。',
 	'renameuserlogpage' => '利用者名変更記録',
-	'renameuserlogpagetext' => 'これは、利用者名の変更を記録したものです。',
+	'renameuserlogpagetext' => 'これは、利用者名変更の記録です。',
 	'renameuserlogentry' => '$1 を「$2」へ利用者名変更しました',
 	'renameuser-log' => '{{PLURAL:$1|$1 回の編集}}。理由: $2',
-	'renameuser-move-log' => '名前の変更と共に「[[User:$1|$1]]」を「[[User:$2|$2]]」へ自動的に移動しました',
+	'renameuser-move-log' => '「[[User:$1|$1]]」から「[[User:$2|$2]]」への利用者名変更に伴い、ページを自動的に移動しました',
 	'action-renameuser' => '利用者名を変更',
 	'right-renameuser' => '利用者名を変更',
-	'renameuser-renamed-notice' => 'この利用者は改名しました。参考のため、改名記録を以下に載せます。',
+	'renameuser-renamed-notice' => 'この利用者は利用者名を変更しました。
+参考のため、利用者名変更記録を以下に示します。',
 );
 
 /** Jutish (jysk)
@@ -3516,7 +3518,7 @@ $messages['ro'] = array(
 	'renameuserold' => 'Numele de utilizator existent:',
 	'renameusernew' => 'Noul nume de utilizator:',
 	'renameuserreason' => 'Motivul schimbării numelui:',
-	'renameusermove' => 'Mută pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
+	'renameusermove' => 'Redenumește pagina de utilizator și pagina de discuții (și subpaginile lor) la noul nume',
 	'renameusersuppress' => 'Nu crea redirecționări către noul nume',
 	'renameuserreserve' => 'Blochează vechiul nume de utilizator pentru utilizări viitoare',
 	'renameuserwarnings' => 'Avertizări:',
