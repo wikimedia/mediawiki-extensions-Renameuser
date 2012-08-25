@@ -2104,7 +2104,7 @@ $messages['ja'] = array(
 	'renameuserlogentry' => '$1 を「$2」へ利用者名変更しました',
 	'renameuser-log' => '{{PLURAL:$1|$1 回の編集}}。理由: $2',
 	'renameuser-move-log' => '「[[User:$1|$1]]」から「[[User:$2|$2]]」への利用者名変更に伴い、ページを自動的に移動しました',
-	'action-renameuser' => '利用者名を変更',
+	'action-renameuser' => '利用者名の変更',
 	'right-renameuser' => '利用者名を変更',
 	'renameuser-renamed-notice' => 'この利用者は利用者名を変更しました。
 参考のため、利用者名変更記録を以下に示します。',
