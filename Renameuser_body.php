@@ -1,8 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "RenameUser extension\n";
-	exit( 1 );
-}
 
 /**
  * Special page allows authorised users to rename
@@ -264,10 +260,19 @@ class SpecialRenameuser extends SpecialPage {
 			$wgUser->setName( $newusername->getText() );
 		}
 
-		// Log this rename
-		$log = new LogPage( 'renameuser' );
-		$log->addEntry( 'renameuser', $oldusername, wfMsgExt( 'renameuser-log', array( 'parsemag', 'content' ),
-			$wgContLang->formatNum( $contribs ), $reason ), $newusername->getText() );
+		// Log this rename, updated to 1.19+ Log form.
+		//	https://www.mediawiki.org/wiki/Logging_to_Special:Log
+		$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
+		$logEntry->setPerformer( $wgUser );
+		$logEntry->setTarget( $oldusername );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( array(
+			'4::olduser' => $oldusername->getText(),
+			'5::newuser' => $newusername->getText(),
+			'6::edits' => $contribs
+		) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 
 		// Move any user pages
 		if ( $wgRequest->getCheck( 'movepages' ) && $wgUser->isAllowed( 'move' ) ) {
@@ -573,5 +578,81 @@ class RenameuserSQL {
 
 		wfProfileOut( __METHOD__ );
 		return true;
+	}
+}
+
+class RenameuserLogFormatter extends LogFormatter {
+	protected function getMessageParameters() {
+		$params = parent::getMessageParameters();
+
+		$backwardCompat = false;
+
+		// Handle old log entries.
+		if( !isset( $params[5] ) ) {
+			// Observed some cases in old logs where this value is not set.
+			// Probably "the log version before this version".
+			if( isset( $params[3] ) ) {
+				$params[4] = $params[3];
+			} else {
+				$params[4] = "<error>";
+			}
+			$params[3] = $params[2]['raw'];
+			$backwardCompat = true;
+		}
+
+		// Nice link to old user page
+		if ( $backwardCompat === true ) {
+			// @todo Comment by Aaron: Needs escaping.
+			$params[3] = Message::rawParam( $params[3] );
+		} else {
+			// @todo Comment by Aaron: Please use makeTitle(), to handle
+			// invalid legacy titles. In fact with renameuser, sometimes
+			// legacy usernames/titles are renamed to valid ones when
+			// the restrictions change. Also, the second argument to
+			// Linker::link() does not get escaped. It is assumed to be
+			// already appropriately escaped.
+			$params[3] = Message::rawParam( Linker::link( Title::newFromText( $params[3], NS_USER ), $params[3] ) );
+		}
+
+		// Nice link to new user page
+		// @todo Comment by Aaron: Needs escaping.
+		$params[4] = Message::rawParam( Linker::link( Title::newFromText( $params[4], NS_USER ), $params[4] ) );
+
+		return $params;
+	}
+
+	/**
+	 * Gets the luser provided comment. Modified core method to change Linker::commentBlock.
+	 * @return string HTML
+	 *
+	 * @todo Comment by Aaron: t's unfortunate that this duplicates permission
+	 * checks. Why can't the edit count stuff go in the action message. So maybe
+	 * you could override getMessageKey() to use a message with the edit count
+	 * for new rows and use a message without one for legacy rows. That way, I
+	 * don't think you need to override getComment() at all.
+	 */
+	public function getComment() {
+		if ( $this->canView( LogPage::DELETED_COMMENT ) ) {
+			$params = parent::getMessageParameters();
+
+			// @todo Comment by Aaron: Needs a comment that his is for b/c.
+			// Maybe replace the legacy checks with "$this->entry->isLegacy()"
+			// to get pre-LogFormatter rows.
+			if ( isset( $params[5] ) ) {
+				$comment = Linker::commentBlock( wfMessage( 'renameuser-log', $params[5] )->rawParams( $this->entry->getComment() )->escaped() );
+			} else {
+				$comment = Linker::commentBlock( $this->entry->getComment() );
+			}
+
+			// No hard coded spaces thanx
+			$element = ltrim( $comment );
+			if ( $this->entry->isDeleted( LogPage::DELETED_COMMENT ) ) {
+				$element = $this->styleRestricedElement( $element );
+			}
+		} else {
+			$element = $this->getRestrictedElement( 'rev-deleted-comment' );
+		}
+
+		return $element;
 	}
 }
