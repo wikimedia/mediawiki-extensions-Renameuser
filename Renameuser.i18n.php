@@ -4506,6 +4506,7 @@ Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
  * @author AS
  * @author Ahonc
  * @author EugeneZelenko
+ * @author Microcell
  * @author Prima klasy4na
  * @author Тест
  */
@@ -4538,6 +4539,7 @@ $messages['uk'] = array(
 	'renameuserlogentry' => 'перейменував $1 на «$2»',
 	'renameuser-log' => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
 	'renameuser-move-log' => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
+	'action-renameuser' => 'перейменування користувачів',
 	'right-renameuser' => 'Перейменування користувачів',
 	'renameuser-renamed-notice' => 'Цей користувач був перейменований.
 Для довідки нижче наведений журнал перейменувань.',
