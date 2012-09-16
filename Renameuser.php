@@ -23,9 +23,8 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 # Internationalisation files
-$dir = dirname( __FILE__ ) . '/';
-$wgExtensionMessagesFiles['Renameuser'] = $dir . 'Renameuser.i18n.php';
-$wgExtensionMessagesFiles['RenameuserAliases'] = $dir . 'Renameuser.alias.php';
+$wgExtensionMessagesFiles['Renameuser'] = __DIR__ . '/Renameuser.i18n.php';
+$wgExtensionMessagesFiles['RenameuserAliases'] = __DIR__ . '/Renameuser.alias.php';
 
 /**
  * Users with more than this number of edits will have their rename operation
@@ -58,13 +57,13 @@ function wfRenameUserLogActionText( $type, $action, $title = null, $skin = null,
 			$skin->makeLinkObj( $title, htmlspecialchars( $title->getPrefixedText() ) ) : htmlspecialchars( $title->getText() );
 		# Add title to params
 		array_unshift( $params, $titleLink );
-		$rv = wfMsg( 'renameuserlogentry', $params );
+		$rv = wfMessage( 'renameuserlogentry' )->params( $params )->text();
 	}
 	return $rv;
 }
 
-$wgAutoloadClasses['SpecialRenameuser'] = dirname( __FILE__ ) . '/Renameuser_body.php';
-$wgAutoloadClasses['RenameUserJob'] = dirname( __FILE__ ) . '/RenameUserJob.php';
+$wgAutoloadClasses['SpecialRenameuser'] = __DIR__ . '/Renameuser_body.php';
+$wgAutoloadClasses['RenameUserJob'] = __DIR__ . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
@@ -103,8 +102,8 @@ function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
 	if ( $wgUser->isAllowed( 'renameuser' ) && $id ) {
 		$tools[] = Linker::link(
 			SpecialPage::getTitleFor( 'Renameuser' ),
-			wfMsg( 'renameuser-linkoncontribs' ),
-			array( 'title' => wfMsgExt( 'renameuser-linkoncontribs-text', 'parseinline' ) ),
+			wfMessage( 'renameuser-linkoncontribs' )->text(),
+			array( 'title' => wfMessage( 'renameuser-linkoncontribs-text' )->parse() ),
 			array( 'oldusername' => $nt->getText() )
 		);
 	}
