@@ -4115,6 +4115,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Ainali
  * @author Boivie
  * @author Cohan
  * @author Dafer45
@@ -4139,6 +4140,7 @@ $messages['sv'] = array(
 	'renameuserwarnings' => 'Varningar:',
 	'renameuserconfirm' => 'Ja, byt namn på användaren',
 	'renameusersubmit' => 'Verkställ',
+	'renameuser-submit-blocklog' => 'Visa blockeringslogg för användare',
 	'renameusererrordoesnotexist' => 'Användaren "<nowiki>$1</nowiki>" finns inte',
 	'renameusererrorexists' => 'Användaren "<nowiki>$1</nowiki>" finns redan.',
 	'renameusererrorinvalid' => 'Användarnamnet "<nowiki>$1</nowiki>" är ogiltigt.',
