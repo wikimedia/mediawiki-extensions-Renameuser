@@ -228,7 +228,7 @@ $specialPageAliases['mt'] = array(
 	'Renameuser' => array( 'BiddelIsemUtent' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
@@ -243,7 +243,7 @@ $specialPageAliases['nl'] = array(
 	'Renameuser' => array( 'GebruikerHernoemen' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'Renameuser' => array( 'Døyp_om_brukar' ),
 );
@@ -293,7 +293,7 @@ $specialPageAliases['sq'] = array(
 	'Renameuser' => array( 'RiemërtoPërdorues' ),
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬) */
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $specialPageAliases['sr-ec'] = array(
 	'Renameuser' => array( 'Преименуј_корисника' ),
 );
@@ -328,7 +328,7 @@ $specialPageAliases['vi'] = array(
 	'Renameuser' => array( 'Đổi_tên_thành_viên', 'Đổi_tên_người_dùng' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Renameuser' => array( '重命名用户' ),
 );

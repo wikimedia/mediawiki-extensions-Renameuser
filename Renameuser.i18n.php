@@ -4559,6 +4559,14 @@ $messages['ur'] = array(
 	'right-renameuser' => 'صارفین کو نیا نام دیںکے',
 );
 
+/** Uzbek (oʻzbekcha)
+ * @author CoderSI
+ */
+$messages['uz'] = array(
+	'renameuserlogpage' => 'Ishtirokchilarni qayta nomlash qaydlari',
+	'renameuserlogentry' => '"$1"ni "$2"ga qayta nomladi',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
