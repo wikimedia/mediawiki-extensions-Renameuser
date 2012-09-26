@@ -4015,7 +4015,7 @@ $messages['sr-ec'] = array(
 Историја промена имена је приложена испод, као информација.',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author FriedrickMILBarbarossa
  * @author Liangent
  * @author Michaello
@@ -4035,6 +4035,7 @@ $messages['sr-el'] = array(
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, preimenuj korisničko ime.',
 	'renameusersubmit' => 'Prihvati',
+	'renameuser-submit-blocklog' => 'Dnevnik blokiranja za korisnika',
 	'renameusererrordoesnotexist' => 'Korisnik "<nowiki>$1</nowiki>" ne postoji',
 	'renameusererrorexists' => 'Korisnik "<nowiki>$1</nowiki>" već postoji',
 	'renameusererrorinvalid' => 'Pogrešno korisničko ime: "<nowiki>$1</nowiki>"',
@@ -4049,6 +4050,7 @@ $messages['sr-el'] = array(
 	'renameuserlogentry' => 'je preimenovao $1 u „$2“',
 	'renameuser-log' => '{{PLURAL:$1|1 izmena|$1 izmene|$1 izmena}}. Razlog: $2',
 	'renameuser-move-log' => 'Automatski pomerene stranice prilikom preimenovanja korisničkog imena: „[[User:$1|$1]]“ u „[[User:$2|$2]]“.',
+	'action-renameuser' => 'preimenovanje korisnika',
 	'right-renameuser' => 'preimenovanje korisničkih imena',
 	'renameuser-renamed-notice' => 'Ovom korisniku je promenjeno ime.
 Istorija promena imena je priložena ispod, kao informacija.',
