@@ -2070,6 +2070,7 @@ Il registro delle rinomine è riportato di seguito per informazione.',
  * @author Hosiryuhosi
  * @author Marine-Blue
  * @author Ohgi
+ * @author Penn Station
  * @author Shirayuki
  * @author Suisui
  * @author 青子守歌
@@ -2103,7 +2104,7 @@ $messages['ja'] = array(
 	'renameuserlogpagetext' => 'これは、利用者名変更の記録です。',
 	'renameuserlogentry' => '$1 を「$2」へ利用者名変更しました',
 	'renameuser-log' => '{{PLURAL:$1|$1 回の編集}}。理由: $2',
-	'renameuser-move-log' => '「[[User:$1|$1]]」から「[[User:$2|$2]]」への利用者名変更に伴い、ページを自動的に移動しました',
+	'renameuser-move-log' => 'ページを自動的に移動しました（利用者名変更のため：「[[User:$1|$1]]」から「[[User:$2|$2]]」）',
 	'action-renameuser' => '利用者名の変更',
 	'right-renameuser' => '利用者名を変更',
 	'renameuser-renamed-notice' => 'この利用者は利用者名を変更しました。
