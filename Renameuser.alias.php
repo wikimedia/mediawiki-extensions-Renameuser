@@ -28,6 +28,11 @@ $specialPageAliases['as'] = array(
 	'Renameuser' => array( 'সদস্য_পুণঃনামাকৰণ' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'Renameuser' => array( 'RenameUser' ),
+);
+
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'Renameuser' => array( 'Преименуване' ),
