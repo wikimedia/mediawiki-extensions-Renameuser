@@ -448,7 +448,7 @@ $messages['bcl'] = array(
 	'renameuser-log' => '$1 mga hirá. Rasón: $2',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -704,7 +704,7 @@ $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
 );
 
-/** Crimean Turkish (Latin script) (‪qırımtatarca (Latin)‬)
+/** Crimean Turkish (Latin script) (qırımtatarca (Latin)‎)
  * @author Don Alessandro
  */
 $messages['crh-latn'] = array(
@@ -714,7 +714,7 @@ $messages['crh-latn'] = array(
 	'renameuser-log' => '{{PLURAL:$1|1 deñişiklik|$1 deñişiklik}} yapqan. Sebep: $2',
 );
 
-/** Crimean Turkish (Cyrillic script) (‪къырымтатарджа (Кирилл)‬)
+/** Crimean Turkish (Cyrillic script) (къырымтатарджа (Кирилл)‎)
  * @author Don Alessandro
  */
 $messages['crh-cyrl'] = array(
@@ -2223,7 +2223,7 @@ $messages['ka'] = array(
 ქვემოთ მოყვანილია სახელის გადარქმევის ჟურნალი.',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬) */
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏) */
 $messages['kk-arab'] = array(
 	'renameuser' => 'قاتىسۋشىنى قايتا اتاۋ',
 	'renameuserold' => 'اعىمداعى قاتىسۋشى اتى:',
@@ -2245,7 +2245,7 @@ $messages['kk-arab'] = array(
 	'renameuser-move-log' => '«[[User:$1|$1]]» دەگەن قاتىسۋشى اتىن «[[User:$2|$2]]» دەگەنگە اۋىسقاندا بەت وزدىك تۇردە جىلجىتىلدى',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬) */
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎) */
 $messages['kk-cyrl'] = array(
 	'renameuser' => 'Қатысушыны қайта атау',
 	'renameuserold' => 'Ағымдағы қатысушы аты:',
@@ -2267,7 +2267,7 @@ $messages['kk-cyrl'] = array(
 	'renameuser-move-log' => '«[[User:$1|$1]]» деген қатысушы атын «[[User:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬) */
+/** Kazakh (Latin script) (qazaqşa (latın)‎) */
 $messages['kk-latn'] = array(
 	'renameuser' => 'Qatıswşını qaýta ataw',
 	'renameuserold' => 'Ağımdağı qatıswşı atı:',
@@ -2421,7 +2421,7 @@ Bes esu joot un versöök et noch ens.',
 Dat kanns De unge en däm Ußzoch uss_em Logbooch vum Metmacher Ömnänne fenge.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  * @author Ghybu
  * @author Gomada
@@ -2890,7 +2890,7 @@ $messages['nan'] = array(
 	'renameuserlogpagetext' => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá miâ-jī ê tōng-chok.',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Danmichaelo
  * @author Event
  * @author Nghtwlkr
@@ -3044,14 +3044,14 @@ Ga terug en probeer het opnieuw.',
 Relevante regels uit het logboek gebruikersnaamwijzigingen worden hieronder ter referentie weergegeven.',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
 	'renameuser-error-same-user' => 'Je kunt geen gebruiker hernoemen naar dezelfde naam.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Dittaeva
  * @author Gunnernett
  * @author Harald Khan
@@ -3971,7 +3971,7 @@ Ju lutemi kthehuni prapa dhe provoni përsëri.',
 Regjistri i riemërimit është poshtë për referencë.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author FriedrickMILBarbarossa
  * @author Millosh
  * @author Rancher
@@ -4795,7 +4795,7 @@ $messages['yue'] = array(
 	'right-renameuser' => '改用戶名',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Gaoxuewei
  * @author Gzdavidwong
@@ -4839,7 +4839,7 @@ $messages['zh-hans'] = array(
 	'renameuser-renamed-notice' => '本用户已更名。下面提供更名日志以供参考。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Gaoxuewei
  * @author Horacewai2
  * @author Liangent
