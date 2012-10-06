@@ -25,7 +25,7 @@ $specialPageAliases['arz'] = array(
 
 /** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
-	'Renameuser' => array( 'সদস্য_পুণৰ্নামকৰণ' ),
+	'Renameuser' => array( 'সদস্য_পুনৰ্নামকৰণ' ),
 );
 
 /** Bashkir (башҡортса) */
