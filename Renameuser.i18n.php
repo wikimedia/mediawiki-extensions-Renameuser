@@ -1178,6 +1178,7 @@ Allpool on toodud ümbernimetamislogi.',
 /** Basque (euskara)
  * @author An13sa
  * @author Theklan
+ * @author Xabier Armendaritz
  */
 $messages['eu'] = array(
 	'renameuser' => 'Erabiltzaile bati izena aldatu',
@@ -1191,7 +1192,7 @@ $messages['eu'] = array(
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" erabiltzaile izena okerra da',
 	'renameusersuccess' => '"<nowiki>$1</nowiki>" lankidearen izen berria "<nowiki>$2</nowiki>" da',
 	'renameuser-page-exists' => 'Badago $1 orrialdea, eta ezin da automatikoki gainidatzi.',
-	'renameuser-page-moved' => '$1 orrialde $2(e)ra mugitu da.',
+	'renameuser-page-moved' => '$1 orria $2 izenera aldatu da.',
 	'renameuser-page-unmoved' => 'Ezin izan da $1 orrialdea $2(e)ra mugitu.',
 	'renameuserlogpage' => 'Erabiltzaileen izen aldaketa erregistroa',
 	'renameuserlogpagetext' => 'Erabiltzaileen izen aldaketen erregistroa da hau',
