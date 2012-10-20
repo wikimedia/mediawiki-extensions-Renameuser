@@ -875,6 +875,7 @@ Til information er omdøbningsloggen vist nedenfor.',
 
 /** German (Deutsch)
  * @author Kghbln
+ * @author Metalhead64
  * @author Raimond Spekking
  * @author Spacebirdy
  * @author The Evil IP address
@@ -1220,7 +1221,7 @@ $messages['fa'] = array(
 	'renameuser-desc' => "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از اختیارات ''تغییرنام'' است)",
 	'renameuserold' => 'نام کاربری کنونی:',
 	'renameusernew' => 'نام کاربری نو:',
-	'renameuserreason' => 'علت تغییر نام کاربری:',
+	'renameuserreason' => 'دلیل:',
 	'renameusermove' => 'صفحه‌های کاربری و بحث (به همراه زیر صفحه‌هایشان) به نام جدید منتقل کن',
 	'renameusersuppress' => 'تغییرمسیر به نام جدید ایجاد نکن',
 	'renameuserreserve' => 'نام کاربری قبلی را در مقابل استفادهٔ مجدد حفظ کن',
