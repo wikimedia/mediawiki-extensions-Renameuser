@@ -828,6 +828,7 @@ Mae'r lòg ail-enwi defnyddwyr i'w weld isod.",
 
 /** Danish (dansk)
  * @author Byrial
+ * @author Christian List
  * @author Froztbyte
  * @author Hylle
  * @author Peter Alberti
@@ -839,7 +840,7 @@ $messages['da'] = array(
 	'renameuser-desc' => "Laver en [[Special:Renameuser|specialside]] til at omdøbe en bruger (kræver rettigheden ''renameuser'')",
 	'renameuserold' => 'Nuværende brugernavn:',
 	'renameusernew' => 'Nyt brugernavn:',
-	'renameuserreason' => 'Årsag til omdøbning:', # Fuzzy
+	'renameuserreason' => 'Begrundelse:',
 	'renameusermove' => 'Flyt bruger- og diskussionssider (og deres undersider) til nyt navn',
 	'renameusersuppress' => 'Opret ikke omdirigeringer til det nye navn',
 	'renameuserreserve' => 'Bloker det gamle brugernavn fra fremtidig brug',
