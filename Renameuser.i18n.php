@@ -1261,7 +1261,7 @@ $messages['fi'] = array(
 	'renameuser-desc' => "Mahdollistaa käyttäjän uudelleennimeämisen (vaatii ''renameuser''-oikeudet).",
 	'renameuserold' => 'Nykyinen tunnus',
 	'renameusernew' => 'Uusi tunnus',
-	'renameuserreason' => 'Kommentti', # Fuzzy
+	'renameuserreason' => 'Syy',
 	'renameusermove' => 'Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle',
 	'renameusersuppress' => 'Älä luo ohjauksia uuteen nimeen',
 	'renameuserreserve' => 'Estä entinen käyttäjänimi tulevalta käytöltä',
@@ -1325,6 +1325,7 @@ Loggurin fyri navnabroytingina er givin niðanfyri fyri keldu ávísing.',
  * @author Grondin
  * @author Hégésippe Cormier
  * @author IAlex
+ * @author Nicolas NALLET
  * @author Peter17
  * @author PieRRoMaN
  * @author Urhixidur
@@ -1337,7 +1338,7 @@ $messages['fr'] = array(
 	'renameuser-desc' => "Renomme un utilisateur (nécessite les droits de ''renameuser'')",
 	'renameuserold' => 'Nom actuel de l’utilisateur :',
 	'renameusernew' => 'Nouveau nom de l’utilisateur :',
-	'renameuserreason' => 'Motif du changement de nom :', # Fuzzy
+	'renameuserreason' => 'Raison(s) du changement de nom :',
 	'renameusermove' => 'Renommer toutes les pages de l’utilisateur vers le nouveau nom',
 	'renameusersuppress' => 'Ne pas créer de redirection vers le nouveau nom',
 	'renameuserreserve' => 'Réserver l’ancien nom pour un usage futur',
