@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAB23///8U\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 98
+      },
+      "writtenOn": "2012-10-31T02:45:09Z",
+      "side": 1,
+      "message": "Deprecated.",
+      "revId": "7c3173528bded804e4b4c2eeb3e020fdae9d345a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAB23///8Q\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 98
+      },
+      "writtenOn": "2012-10-31T02:45:09Z",
+      "side": 1,
+      "message": "Deprecated.",
+      "revId": "7c3173528bded804e4b4c2eeb3e020fdae9d345a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
