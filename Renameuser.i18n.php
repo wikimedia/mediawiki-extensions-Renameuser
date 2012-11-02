@@ -454,7 +454,7 @@ $messages['be-tarask'] = array(
 	'renameuser-desc' => "Дадае [[Special:Renameuser|спэцыяльную старонку]] для перайменаваньня рахунку ўдзельніка (неабходныя правы на ''перайменаваньне ўдзельніка'')",
 	'renameuserold' => 'Цяперашняе імя ўдзельніка:',
 	'renameusernew' => 'Новае імя:',
-	'renameuserreason' => 'Прычына перайменаваньня:', # Fuzzy
+	'renameuserreason' => 'Прычына:',
 	'renameusermove' => 'Перайменаваць старонкі ўдзельніка і гутарак (і іх падстаронкі)',
 	'renameusersuppress' => 'Не ствараць перанакіраваньні на новую назву рахунку',
 	'renameuserreserve' => 'Заблякаваць старое імя ўдзельніка для выкарыстаньня ў будучыні',
@@ -993,6 +993,7 @@ Protokol pśemjenjowanjow jo dołojce ako referenca pódany.',
 );
 
 /** Greek (Ελληνικά)
+ * @author Aitolos
  * @author Badseed
  * @author Consta
  * @author Dead3y3
@@ -1009,7 +1010,7 @@ $messages['el'] = array(
 	'renameuser-desc' => "Προσθέτει μια [[Special:Renameuser|ειδική σελίδα]] για την μετονομασία ενός χρήστη (είναι απαραίτητο το δικαίωμα ''renameuser'')",
 	'renameuserold' => 'Τρέχον όνομα χρήστη:',
 	'renameusernew' => 'Νέο όνομα χρήστη:',
-	'renameuserreason' => 'Λόγος μετονομασίας:', # Fuzzy
+	'renameuserreason' => 'Αιτία:',
 	'renameusermove' => 'Μετακίνηση της σελίδας χρήστη και της σελίδας συζήτησης χρήστη (και των υποσελίδων τους) στο καινούργιο όνομα',
 	'renameusersuppress' => 'Μην δημιουργείτε ανακατευθύνσεις στο νέο όνομα',
 	'renameuserreserve' => 'Φραγή του παλιού ονόματος χρήστη/χρήστριας από μελλοντική χρήση',
@@ -4739,13 +4740,14 @@ $messages['yi'] = array(
 	'renameuser-desc' => "לייגט צו א [[Special:Renameuser|באַזונדערן בלאַט]] צו בײַטן א באַניצער נאָמען (פֿאדערט ''renameuser'' רעכט)",
 	'renameuserold' => 'לויפיגער באַניצער-נאָמען:',
 	'renameusernew' => 'נײַער באַניצער-נאָמען:',
-	'renameuserreason' => 'סיבה פֿאַר ענדערן נאָמען:', # Fuzzy
+	'renameuserreason' => 'אורזאַך:',
 	'renameusermove' => 'באַוועגן באַניצער און שמועס בלעטער (מיט זייערע אונטערבלעטער) צו נײַעם נאָמען',
 	'renameusersuppress' => 'שאַפֿט נישט קיין ווייטערפֿירונגען צום נײַעם נאָמען',
 	'renameuserreserve' => 'בלאקירן דעם אַלטן באַניצער־נאָמען פֿון נוץ אין צוקונפֿט',
 	'renameuserwarnings' => 'ווארענונגען:',
 	'renameuserconfirm' => 'יאָ, ענדער דעם באַניצער־נאָמען',
 	'renameusersubmit' => 'אײַנגעבן',
+	'renameuser-submit-blocklog' => 'ווײַזן בלאקירן לאג פאר באניצער',
 	'renameusererrordoesnotexist' => 'דער באַניצער "<nowiki>$1</nowiki>" עקזיסטירט נישט.',
 	'renameusererrorexists' => 'דער באַניצער "<nowiki>$1</nowiki>" עקזיסטירט שוין.',
 	'renameusererrorinvalid' => 'דער באַניצער נאָמען  "<nowiki>$1</nowiki>" איז נישט גילטיק.',
@@ -4761,6 +4763,7 @@ $messages['yi'] = array(
 	'renameuserlogentry' => 'מ\'האט דעם נאָמען $1 געענדערט צו "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 רעדאַקטירונג|$1 רעדאַקטירונגען}}. גרונד: $2',
 	'renameuser-move-log' => 'אויטאמאַטיש באַוועגט בלאַט דורך ענדערן באַניצער־נאָמען פֿון "[[User:$1|$1]]" צו "[[User:$2|$2]]"',
+	'action-renameuser' => 'בײַטן באַניצער נעמען',
 	'right-renameuser' => 'בײַטן באַניצער נעמען',
 	'renameuser-renamed-notice' => 'דער נאָמען פֿון דעם באַניצער איז געענדערט געווארן.
 דער ענדערן נעמען לאגבוך ווערט געוויזן אונטן.',
