@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAACOn////0\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 98
+      },
+      "writtenOn": "2012-11-03T20:32:13Z",
+      "side": 1,
+      "message": "Why are you making a new variable for this? It\u0027s only used once!",
+      "revId": "0ad5d7e8ea84706f6d7dda9e11cba0f97524d8ee",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
