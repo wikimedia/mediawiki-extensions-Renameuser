@@ -3438,13 +3438,14 @@ $messages['pt-br'] = array(
 	'renameuser-desc' => "Adiciona uma [[Special:Renameuser|página especial]] para renomear um usuário (requer privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de usuário atual:',
 	'renameusernew' => 'Novo nome de usuário:',
-	'renameuserreason' => 'Motivo da alteração de nome:', # Fuzzy
+	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Mover as páginas de usuário, páginas de discussão de usuário e sub-páginas para o novo nome',
 	'renameusersuppress' => 'Não criar redirecionamentos para o novo nome',
 	'renameuserreserve' => 'Impedir novos usos do antigo nome de usuário',
 	'renameuserwarnings' => 'Alertas:',
 	'renameuserconfirm' => 'Sim, renomeie o usuário',
 	'renameusersubmit' => 'Enviar',
+	'renameuser-submit-blocklog' => 'Mostrar registro de bloqueios do usuário',
 	'renameusererrordoesnotexist' => 'Não existe um usuário "<nowiki>$1</nowiki>".',
 	'renameusererrorexists' => 'Já existe um usuário "<nowiki>$1</nowiki>".',
 	'renameusererrorinvalid' => 'O nome de usuário "<nowiki>$1</nowiki>" é inválido.',
@@ -3460,6 +3461,7 @@ Retorne e tente novamente.',
 	'renameuserlogentry' => 'renomeou $1 para "$2"',
 	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
 	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+	'action-renameuser' => 'renomear usuários',
 	'right-renameuser' => 'Renomear usuários',
 	'renameuser-renamed-notice' => 'Este usuário foi renomeado.
 O registro de renomeação é fornecido abaixo para referência.',
@@ -4135,6 +4137,7 @@ $messages['su'] = array(
  * @author Ainali
  * @author Boivie
  * @author Cohan
+ * @author Cybjit
  * @author Dafer45
  * @author Habj
  * @author Lejonel
@@ -4150,7 +4153,7 @@ $messages['sv'] = array(
 	'renameuser-desc' => "Lägger till en [[Special:Renameuser|specialsida]] för att byta namn på en användare (kräver behörigheten ''renameuser'')",
 	'renameuserold' => 'Nuvarande användarnamn:',
 	'renameusernew' => 'Nytt användarnamn:',
-	'renameuserreason' => 'Anledning till namnbytet:', # Fuzzy
+	'renameuserreason' => 'Anledning:',
 	'renameusermove' => 'Flytta användarsidan och användardiskussionen (och deras undersidor) till det nya namnet',
 	'renameusersuppress' => 'Skapa inte omdirigeringar till det nya namnet',
 	'renameuserreserve' => 'Reservera det gamla användarnamnet från framtida användning',
