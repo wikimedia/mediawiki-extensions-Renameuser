@@ -57,6 +57,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Nemo bis
  * @author Nike
  * @author SPQRobin
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  * @author Umherirrender
@@ -64,7 +65,7 @@ The rename log is provided below for reference.', # Supports GENDER
 $messages['qqq'] = array(
 	'renameuser-linkoncontribs' => 'Link description used on Special:Contributions and Special:DeletedContributions. Only added if a user has rights to rename users.',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
-	'renameuser-desc' => '{{desc}}',
+	'renameuser-desc' => '{{desc|name=Rename user|url=http://www.mediawiki.org/wiki/Extension:Renameuser}}',
 	'renameuser-summary' => '{{notranslate}}',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
 	'renameuserwarnings' => '{{Identical|Warning}}',
@@ -2513,7 +2514,7 @@ $messages['lb'] = array(
 	'renameuser-desc' => "Benotzernumm änneren (Dir braucht dofir  ''renameuser''-Rechter)",
 	'renameuserold' => 'Aktuelle Benotzernumm:',
 	'renameusernew' => 'Neie Benotzernumm:',
-	'renameuserreason' => "Grond fir d'Ëmbenennung:", # Fuzzy
+	'renameuserreason' => 'Grond:',
 	'renameusermove' => 'Benotzer- an Diskussiounssäiten (an déi jeweileg Ënnersäiten) op den neie Benotzernumm réckelen',
 	'renameusersuppress' => 'Maacht keng Viruleedungen op den neien Numm',
 	'renameuserreserve' => 'Den ale Benotzernumm fir de weitere Gebrauch spären',
