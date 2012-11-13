@@ -2196,7 +2196,7 @@ $messages['ka'] = array(
 	'renameuser-desc' => 'ამატებს მომხმარებლების სახელის გადარქმევის [[Special:Renameuser|შესაძლებლობას]] (საჭიროა უფლება <code>renameuser</code>)',
 	'renameuserold' => 'ამჟამინდელი მომხმარებლის სახელი:',
 	'renameusernew' => 'ახალი მომხმარებლის სახელი:',
-	'renameuserreason' => 'სახელის შეცვლის მიზეზი:', # Fuzzy
+	'renameuserreason' => 'მიზეზი:',
 	'renameusermove' => 'მომხმარებლისა და განხილვის გვერდების (და მათი დაქვემდებარებული გვერდების) გადატანა ახალ დასახელებაზე',
 	'renameusersuppress' => 'არ გადაამისამართოთ ახალ სახელზე',
 	'renameuserreserve' => 'ძველი მომხმარებლის სახელის სამომავლო გამოყენების აკრძალვა',
@@ -4824,6 +4824,7 @@ $messages['yue'] = array(
  * @author Hydra
  * @author Liangent
  * @author PhiLiP
+ * @author Shizhao
  * @author Xiaomingyan
  * @author Yfdyh000
  */
@@ -4834,7 +4835,7 @@ $messages['zh-hans'] = array(
 	'renameuser-desc' => "添加更改用户名的[[Special:Renameuser|特殊页面]]（需要''renameuser''权限）",
 	'renameuserold' => '当前用户名：',
 	'renameusernew' => '新用户名：',
-	'renameuserreason' => '更名原因：', # Fuzzy
+	'renameuserreason' => '原因：',
 	'renameusermove' => '移动用户和讨论页面（和子页面）至新用户名',
 	'renameusersuppress' => '不创建至新用户名的重定向页',
 	'renameuserreserve' => '封锁旧用户名，使其不能在未来使用',
