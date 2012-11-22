@@ -288,6 +288,11 @@ $specialPageAliases['ru'] = array(
 	'Renameuser' => array( 'Переименовать_участника' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'Renameuser' => array( 'RinominaUtente' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'Renameuser' => array( 'PremenovaťPoužívateľa' ),
