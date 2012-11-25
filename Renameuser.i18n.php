@@ -640,6 +640,7 @@ Zapisnik preimenovanje je prikazan ispod kao referenca.',
 );
 
 /** Catalan (català)
+ * @author Aleator
  * @author Arnaugir
  * @author El libre
  * @author Juanpabl
@@ -656,7 +657,7 @@ $messages['ca'] = array(
 	'renameuser-desc' => "Reanomena un usuari (necessita drets de ''renameuser'')",
 	'renameuserold' => "Nom d'usuari actual:",
 	'renameusernew' => "Nou nom d'usuari:",
-	'renameuserreason' => 'Motiu pel canvi:', # Fuzzy
+	'renameuserreason' => 'Motiu:',
 	'renameusermove' => "Reanomena la pàgina d'usuari, la de discussió i les subpàgines que tingui al nou nom",
 	'renameusersuppress' => 'No creis redireccions cap al nou nom',
 	'renameuserreserve' => "Bloca el nom d'usuari antic d'usos futurs",
