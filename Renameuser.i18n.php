@@ -488,6 +488,7 @@ $messages['be-tarask'] = array(
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
+ * @author Stanqo
  * @author Turin
  */
 $messages['bg'] = array(
@@ -504,6 +505,7 @@ $messages['bg'] = array(
 	'renameuserwarnings' => 'Предупреждения:',
 	'renameuserconfirm' => 'Да, преименуване на потребителя',
 	'renameusersubmit' => 'Изпълнение',
+	'renameuser-submit-blocklog' => 'Покажи блокиранията за потребител',
 	'renameusererrordoesnotexist' => 'Потребителят „<nowiki>$1</nowiki>“ не съществува.',
 	'renameusererrorexists' => 'Потребителят „<nowiki>$1</nowiki>“ вече съществува.',
 	'renameusererrorinvalid' => 'Потребителското име „<nowiki>$1</nowiki>“ е невалидно.',
@@ -534,7 +536,7 @@ $messages['bn'] = array(
 	'renameuser-desc' => "একজন ব্যবহারকারীকে নামান্তর করুন (''ব্যবহাকারী নামান্তর'' অধিকার প্রয়োজন)",
 	'renameuserold' => 'বর্তমান ব্যবহারকারী নাম:',
 	'renameusernew' => 'নতুন ব্যবহারকারী নাম:',
-	'renameuserreason' => 'নামান্তরের কারণ:', # Fuzzy
+	'renameuserreason' => 'কারণ:',
 	'renameusermove' => 'ব্যবহারকারী এবং আলাপের পাতা (এবং তার উপপাতাসমূহ) নতুন নামে সরিয়ে নাও',
 	'renameusersuppress' => 'নতুন নামে রিডাইরেক্ট করবেন না',
 	'renameuserreserve' => 'ভবিষ্যতে উদ্দেশ্যে পুরাতন ব্যবহারকারী নাম ব্লক করা হল',
