@@ -238,7 +238,7 @@ $specialPageAliases['nb'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Renameuser' => array( 'Gebruker_herneumen' ),
 );

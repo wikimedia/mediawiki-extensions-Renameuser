@@ -4532,6 +4532,7 @@ Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
  * @author A1
  * @author AS
  * @author Ahonc
+ * @author Base
  * @author EugeneZelenko
  * @author Microcell
  * @author Prima klasy4na
@@ -4544,7 +4545,7 @@ $messages['uk'] = array(
 	'renameuser-desc' => "Перейменування користувача (потрібні права ''renameuser'')",
 	'renameuserold' => "Поточне ім'я:",
 	'renameusernew' => "Нове ім'я:",
-	'renameuserreason' => 'Причина перейменування:', # Fuzzy
+	'renameuserreason' => 'Причина:',
 	'renameusermove' => 'Перейменувати також сторінку користувача, сторінку обговорення та їхні підсторінки',
 	'renameusersuppress' => 'Не створюйте перенаправлення на нову назву',
 	'renameuserreserve' => "Зарезервувати старе ім'я користувача для подальшого використання",
