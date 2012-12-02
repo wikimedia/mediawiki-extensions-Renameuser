@@ -198,6 +198,11 @@ $specialPageAliases['ksh'] = array(
 	'Renameuser' => array( 'Metmaacher ömnänne', 'Medmaacher ömnänne', 'Metmaacher ömnenne', 'Medmaacher ömnenne', 'Metmaacher ömdäufe', 'Medmaacher ömdäufe' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'Renameuser' => array( 'DashenwelDevnydhyer' ),
+);
+
 /** Latin (Latina) */
 $specialPageAliases['la'] = array(
 	'Renameuser' => array( 'Usorem renominare' ),
