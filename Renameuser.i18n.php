@@ -73,7 +73,7 @@ $messages['qqq'] = array(
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
 	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
-	'log-name-renameuser'     => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
+	'log-name-renameuser' => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
 	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
 	'logentry-renameuser-renameuser' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
 * $4 is the old name of the renamed user
@@ -84,7 +84,7 @@ $messages['qqq'] = array(
 * $5 is the new name of the renamed user',
 	'logentry-renameuser-renameuser-legaciest' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
 Note that only user name is included in this legacy log entry, everything else is hardcoded into log comment.',
-	'renameuser-move-log'            => 'Reason for a page move when a page is moved because of a user rename. Parameters:
+	'renameuser-move-log' => 'Reason for a page move when a page is moved because of a user rename. Parameters:
 * $1 is the old username;
 * $2 is the new username.',
 	'action-renameuser' => '{{Doc-action|renameuser}}',
@@ -527,10 +527,7 @@ $messages['bg'] = array(
 	'renameuser-page-exists' => 'Страницата $1 вече съществува и не може да бъде автоматично заместена.',
 	'renameuser-page-moved' => 'Страницата $1 беше преместена като $2.',
 	'renameuser-page-unmoved' => 'Страницата $1 не можа да бъде преместена като $2.',
-	'renameuserlogpage' => 'Дневник на преименуванията',
-	'renameuserlogpagetext' => 'В този дневник се записват преименуванията на потребители.',
-	'renameuserlogentry' => 'преименува $1 на „$2“',
-	'renameuser-log' => '{{PLURAL:$1|една редакция|$1 редакции}}. Причина: $2',
+	'log-name-renameuser' => 'Дневник на преименуванията',
 	'renameuser-move-log' => 'Автоматично преместена страница при преименуването на потребител "[[User:$1|$1]]" като "[[User:$2|$2]]"',
 	'right-renameuser' => 'преименуване на потребители',
 	'renameuser-renamed-notice' => 'Потребителят беше преименуван.
@@ -4574,10 +4571,7 @@ $messages['uk'] = array(
 	'renameuser-page-exists' => 'Сторінка $1 вже існує і не може бути перезаписана автоматично.',
 	'renameuser-page-moved' => 'Сторінка $1 була перейменована на $2.',
 	'renameuser-page-unmoved' => 'Сторінка $1 не може бути перейменована на $2.',
-	'renameuserlogpage' => 'Журнал перейменувань користувачів',
-	'renameuserlogpagetext' => 'Це журнал здійснених перейменувань зареєстрованих користувачів.',
-	'renameuserlogentry' => 'перейменував $1 на «$2»',
-	'renameuser-log' => 'мав $1 {{PLURAL:$1|редагування|редагування|редагувань}}. Причина: $2',
+	'log-name-renameuser' => 'Журнал перейменувань користувачів',
 	'renameuser-move-log' => 'Автоматичне перейменування сторінки при перейменуванні користувача «[[User:$1|$1]]» на «[[User:$2|$2]]»',
 	'action-renameuser' => 'перейменування користувачів',
 	'right-renameuser' => 'Перейменування користувачів',
