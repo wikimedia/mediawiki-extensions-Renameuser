@@ -282,7 +282,7 @@ class SpecialRenameuser extends SpecialPage {
 		// Log this rename, updated to 1.19+ Log form.
 		//	https://www.mediawiki.org/wiki/Logging_to_Special:Log
 		$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
-		$logEntry->setPerformer( $wgUser );
+		$logEntry->setPerformer( $this->getUser() );
 		$logEntry->setTarget( $oldusername );
 		$logEntry->setComment( $reason );
 		$logEntry->setParameters( array(
@@ -646,7 +646,7 @@ class RenameuserLogFormatter extends LogFormatter {
 			if ( !$title instanceof Title ) {
 				$link = "[[User:$text]]";
 			} else {
-				$link = '[[' . $title->getPrefixedTextText() . ']]';
+				$link = '[[' . $title->getPrefixedText() . ']]';
 			}
 		}
 		return $link;
