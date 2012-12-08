@@ -40,7 +40,7 @@ Please go back and try again.',
 	'log-name-renameuser' => 'User rename log',
 	'log-description-renameuser' => 'This is a log of changes to user names.',
 
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|renamed}} user $4 ({{PLURAL:$5|$6 edit|$6 edits}}) to $5',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|renamed}} user $4 ({{PLURAL:$6|$6 edit|$6 edits}}) to $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 renamed user $4 to $5',
 	'logentry-renameuser-renameuser-legaciest' => '$1',
 	'renameuser-move-log' => 'Automatically moved page while renaming the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
