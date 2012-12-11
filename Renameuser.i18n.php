@@ -299,10 +299,7 @@ $messages['as'] = array(
 	'renameuser-page-exists' => '$1 পৃষ্ঠাখন ইতিমধ্যেই আছে আৰু তাৰ ওপৰত স্বয়ংক্ৰিয়ভাৱে লিখিব নোৱাৰি।',
 	'renameuser-page-moved' => "$1 পৃষ্ঠাখন $2-লৈ স্থানান্তৰ কৰা হ'ল।",
 	'renameuser-page-unmoved' => '$1 পৃষ্ঠাখন $2-লৈ স্থানান্তৰ কৰা সম্ভৱ নহয়।',
-	'renameuserlogpage' => "সদস্যৰ পুনৰ্নামাকৰণ ল'গ",
-	'renameuserlogpagetext' => 'সদস্যনামৰ পৰিৱৰ্তনসমূহৰ ল’গ',
-	'renameuserlogentry' => '$1ক "$2"লৈ পুনৰ্নামাকৰণ কৰা হ\'ল',
-	'renameuser-log' => '{{PLURAL:$1|1 সম্পাদনা|$1 সম্পাদনাসমূহ}}। কাৰণ: $2',
+	'log-name-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ অভিলেখ',
 	'renameuser-move-log' => 'সদস্য "[[User:$1|$1]]"ক "[[User:$2|$2]]"লৈ পুনৰ্নামাকৰণ কৰোঁতে স্বয়ংক্ৰিয়ভাৱে পৃষ্ঠা স্থানান্তৰ হ\'ল।',
 	'action-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ কৰক',
 	'right-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ কৰক',
@@ -996,7 +993,7 @@ $messages['dsb'] = array(
 	'renameuser-page-unmoved' => 'Bok $1 njejo se do $2 pśesunuś dał.',
 	'log-name-renameuser' => 'Protokol wužywarskich pśemjenjenjow',
 	'log-description-renameuser' => 'Toś to jo protokol změnow na wužywarskich mjenjach.',
-	'logentry-renameuser-renameuser' => '$1 jo wužywarja $4 ({{PLURAL:$6|$6 změna|$6 změnje|$6 změny|$6 změnow}}) do $5 {{GENDER:$2|pśemjenił|pśemjenił}}', # Fuzzy
+	'logentry-renameuser-renameuser' => '$1 jo wužywarja $4 ({{PLURAL:$6|$6 změna|$6 změnje|$6 změny|$6 změnow}}) do $5 {{GENDER:$2|pśemjenił|pśemjenił}}',
 	'logentry-renameuser-renameuser-legacier' => '$1 jo wužywarja $4 do $5 pśemjenił',
 	'renameuser-move-log' => 'Pśi pśemjenjowanju wužywarja "[[User:$1|$1]]" do "[[User:$2|$2]]" awtomatiski pśesunjony bok',
 	'action-renameuser' => 'wužywarjow pśemjeniś',
@@ -1784,7 +1781,7 @@ $messages['hsb'] = array(
 	'renameuser-page-unmoved' => 'Njemóžno stronu $1 pod titul $2 přesunyć.',
 	'log-name-renameuser' => 'Protokol přemjenowanja wužiwarjow',
 	'log-description-renameuser' => 'To je protokol změnow wužiwarskich mjenow.',
-	'logentry-renameuser-renameuser' => '$1 je wužiwarja $4 ({{PLURAL:$6|$6 změna|$6 změnje|$6 změny|$6 změnow}}) do $5 {{GENDER:$2|přemjenował|přemjenował}}', # Fuzzy
+	'logentry-renameuser-renameuser' => '$1 je wužiwarja $4 ({{PLURAL:$6|$6 změna|$6 změnje|$6 změny|$6 změnow}}) do $5 {{GENDER:$2|přemjenował|přemjenował}}',
 	'logentry-renameuser-renameuser-legacier' => '$1 je wužiwarja $4 do $5 přemjenował',
 	'renameuser-move-log' => 'Přez přemjenowanje wužiwarja „[[User:$1|$1]]“ na „[[User:$2|$2]]“ awtomatisce přesunjena strona.',
 	'action-renameuser' => 'wužiwarjow přemjenować',
@@ -3050,10 +3047,10 @@ Ga terug en probeer het opnieuw.',
 	'renameuser-page-exists' => 'De pagina $1 bestaat al en kan niet automatisch overschreven worden.',
 	'renameuser-page-moved' => 'De pagina $1 is hernoemd naar $2.',
 	'renameuser-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
-	'renameuserlogpage' => 'Logboek gebruikersnaamwijzigingen',
-	'renameuserlogpagetext' => 'Hieronder staan gebruikersnamen die gewijzigd zijn.',
-	'renameuserlogentry' => 'heeft $1 hernoemd naar "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 bewerking|$1 bewerkingen}}. Reden: $2',
+	'log-name-renameuser' => 'Logboek gebruikersnaamwijzigingen',
+	'log-description-renameuser' => 'Hieronder staan gebruikersnamen die gewijzigd zijn.',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|heeft}} gebruiker $4 ($6 {{PLURAL:$6|bewerking|bewerkingen}}) hernoemd naar $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 heeft de gebruiker $4 hernoemd naar $5',
 	'renameuser-move-log' => 'Automatisch hernoemd bij het wijzigen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
 	'action-renameuser' => 'gebruikers te hernoemen',
 	'right-renameuser' => 'Gebruikers hernoemen',
@@ -3251,6 +3248,7 @@ $messages['pfl'] = array(
  * @author Leinad
  * @author Maikking
  * @author Nux
+ * @author Odie2
  * @author Remedios44
  * @author Sovq
  * @author Sp5uhe
@@ -3282,10 +3280,7 @@ Cofnij się i spróbuj jeszcze raz.',
 	'renameuser-page-exists' => 'Strona „$1” już istnieje i nie może być automatycznie nadpisana.',
 	'renameuser-page-moved' => 'Strona „$1” została przeniesiona pod nazwę „$2”.',
 	'renameuser-page-unmoved' => 'Strona „$1” nie mogła zostać przeniesiona pod nazwę „$2”.',
-	'renameuserlogpage' => 'Zmiany nazw użytkowników',
-	'renameuserlogpagetext' => 'To jest rejestr zmian nazw użytkowników',
-	'renameuserlogentry' => 'zmienił nazwę użytkownika $1 na „$2”',
-	'renameuser-log' => '$1 {{PLURAL:$1|edycja|edycje|edycji}}. Powód: $2',
+	'log-name-renameuser' => 'Zmiany nazw użytkowników',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
 	'action-renameuser' => 'zmiana nazw użytkowników',
 	'right-renameuser' => 'Zmiana nazw kont użytkowników',
