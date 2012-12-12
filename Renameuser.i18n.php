@@ -281,7 +281,7 @@ $messages['as'] = array(
 	'renameuser-desc' => "এজন ব্যৱহাৰকাৰীৰ পুনৰ্নামাকৰণ কৰিবলৈ এখন [[Special:Renameuser|বিশেষ পৃষ্ঠা]] যোগ দিয়ে (''renameuser'' অধিকাৰৰ প্ৰয়োজন)",
 	'renameuserold' => 'বৰ্তমানৰ সদস্যনাম:',
 	'renameusernew' => 'নতুন সদস্যনাম:',
-	'renameuserreason' => 'পুনৰ্নামাকৰণৰ কাৰণ:', # Fuzzy
+	'renameuserreason' => 'কাৰণ:',
 	'renameusermove' => 'সদস্যপৃষ্ঠা আৰু আলোচনা পৃষ্ঠা (আৰু সেইবোৰৰ উপপৃষ্ঠা) নতুন নামলৈ স্থানান্তৰ কৰক',
 	'renameusersuppress' => 'নতুন নামলৈ পুনৰ্নিৰ্দেশ সৃষ্টি কৰিব নালাগে',
 	'renameuserreserve' => 'ভৱিষ্যত ব্যৱহাৰৰ বাবে পুৰণা সদস্যনামটো বাৰণ কৰক',
@@ -300,6 +300,7 @@ $messages['as'] = array(
 	'renameuser-page-moved' => "$1 পৃষ্ঠাখন $2-লৈ স্থানান্তৰ কৰা হ'ল।",
 	'renameuser-page-unmoved' => '$1 পৃষ্ঠাখন $2-লৈ স্থানান্তৰ কৰা সম্ভৱ নহয়।',
 	'log-name-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ অভিলেখ',
+	'logentry-renameuser-renameuser-legacier' => 'সদস্য $4ৰ পৰা $5লৈ, $1’য়ে পুনৰ নামাকৰণ কৰিলে',
 	'renameuser-move-log' => 'সদস্য "[[User:$1|$1]]"ক "[[User:$2|$2]]"লৈ পুনৰ্নামাকৰণ কৰোঁতে স্বয়ংক্ৰিয়ভাৱে পৃষ্ঠা স্থানান্তৰ হ\'ল।',
 	'action-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ কৰক',
 	'right-renameuser' => 'সদস্যৰ পুনৰ্নামাকৰণ কৰক',
@@ -367,6 +368,29 @@ $messages['az'] = array(
 	'renameuser-page-unmoved' => '$1 $2 səhifəsinə köçürülə bilinmir.',
 	'renameuserlogpage' => 'İstifadəçi adı dəyişmə gündəliyi',
 	'right-renameuser' => 'istifadəçilərin adını dəyiş',
+);
+
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'renameuser' => 'ایستیفاده‌چی آدینی دییش',
+	'renameuser-linkoncontribs' => 'ایستیفاده‌چی آدینی دییش',
+	'renameuser-linkoncontribs-text' => 'بو ایستیفاده‌چی‌نین آدینی دییش',
+	'renameusernew' => 'یئنی ایستیفاده‌چی آدی:',
+	'renameuserreason' => 'ندن:',
+	'renameuserwarnings' => 'خبردارلیق‌لار:',
+	'renameuserconfirm' => 'بلی، ایستیفاده‌چی‌نین آدینی دییش',
+	'renameusersubmit' => 'گؤندر',
+	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" ایستیفاده‌چی آدی مؤوجود دئییل.',
+	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ایستیفاده‌چی آدی آرتیق مؤوجوددور.',
+	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ایستیفاده‌چی آدی یولوئریلمزدیر.',
+	'renameuser-page-exists' => '$1 مادده‌سی اونسوز دا وار اولماقدا‌دیر، و آوتوماتیک اولا‌راق یئنی‌دن یازیلا بیلمز.',
+	'renameuser-page-moved' => '$1 صحیفه‌سی $2 صحیفه‌سینه کؤچورولوب.',
+	'renameuser-page-unmoved' => '$1 صحیفه‌سی $2 صحیفه‌سینه کؤچوروله بیلینمیر.',
+	'log-name-renameuser' => 'ایستیفاده‌چی آدی دییشمه گونده‌لیگی',
+	'action-renameuser' => 'ایستیفاده‌چی‌لرین آدینی دییش',
+	'right-renameuser' => 'ایستیفاده‌چی‌لرین آدینی دییش',
 );
 
 /** Bashkir (башҡортса)
