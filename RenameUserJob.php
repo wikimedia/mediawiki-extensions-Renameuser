@@ -10,8 +10,8 @@ class RenameUserJob extends Job {
 	 * @param Title $title Associated title
 	 * @param array $params Job parameters
 	 */
-	public function __construct( $title, $params ) {
-		parent::__construct( 'renameUser', $title, $params );
+	public function __construct( $title, $params = '', $id = 0 ) {
+		parent::__construct( 'renameUser', $title, $params, $id );
 	}
 
 	/**
