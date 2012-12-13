@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAADbX//yL4\u003d",
+        "filename": "RenameUserJob.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2012-12-13T08:54:05Z",
+      "side": 1,
+      "message": "false/array() makes more sense as default value to params.",
+      "revId": "1ce8b9addab66ad8d0f14a9bf0a362c2d6656485",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
