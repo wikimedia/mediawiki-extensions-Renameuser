@@ -949,15 +949,16 @@ Zur Information folgt das Benutzernamenänderungs-Logbuch.',
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Mirzali
  * @author Xoser
  */
 $messages['diq'] = array(
-	'renameuser' => 'nameyê karberi bıvurn',
-	'renameuser-linkoncontribs' => 'name bivurne',
-	'renameuser-linkoncontribs-text' => 'Nameyê ena karber bivurne',
+	'renameuser' => 'Karberi newe ra name ke',
+	'renameuser-linkoncontribs' => 'karberi newe ra name ke',
+	'renameuser-linkoncontribs-text' => 'Nê karberi newe ra name ke',
 	'renameuser-desc' => "qey newe ra namedayişê karberi re yew [[Special:Renameuser|pelo xas]] têare keno (gani heqqê ''karberi re newe ra name bıde'' bıbo )",
-	'renameuserold' => 'nameyê karberi yo nıkayi',
-	'renameusernew' => 'nameyê karberi yo newe',
+	'renameuserold' => 'nameyê karberio nıkayên:',
+	'renameusernew' => 'Nameyê karberio newe:',
 	'renameuserreason' => 'Sebeb:',
 	'renameusermove' => 'nameyê karberan u pelê werêaameyişan bıkırışi nameyo newe',
 	'renameusersuppress' => 'Name de newi re hetenayışo newe vıraştış',
@@ -981,8 +982,8 @@ kerem kerê agêrê newe ra tesel bıkerê, bıcerbnê',
 	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|Nameya}} Karber de $4 $5 ra ({{PLURAL:$6|$6 vurnayış|$6 vurnayışi}})',
 	'logentry-renameuser-renameuser-legacier' => "$1'i  $4 ra namey cı berd $5",
 	'renameuser-move-log' => 'wexta ke karber "[[User:$1|$1]]" no name ra kırışiya "[[User:$2|$2]]" no name re ya newe ra name diyêne pel zi otomotikmen kırişiya',
-	'action-renameuser' => 'nameyê karberi bıvurne',
-	'right-renameuser' => 'nameyê karberan bıvurn',
+	'action-renameuser' => 'karberan newe ra name ke',
+	'right-renameuser' => 'Karberan newe ra name ke',
 	'renameuser-renamed-notice' => 'nameyê na/no karberi/e vuriya.
 qey referansi rocaneyê vuriyayişê nameyi cêr de yo.',
 );
@@ -1102,6 +1103,9 @@ Bonvolu retroigi kaj reprovi.',
 	'renameuser-page-moved' => 'La paĝo $1 estis movita al $2.',
 	'renameuser-page-unmoved' => 'La paĝo $1 ne povis esti movita al $2.',
 	'log-name-renameuser' => 'Protokolo pri alinomigoj de uzantoj',
+	'log-description-renameuser' => 'Jen protokolo pri ŝanĝoj de salutnomoj.',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|alinomiĝis}} uzanton $4 ({{PLURAL:$6|$6 redakto|$6 redaktoj}}) al $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 alinomigis uzanton $4 al $5',
 	'renameuser-move-log' => 'Aŭtomate movis paĝon dum alinomigo de la uzanto "[[User:$1|$1]]" al "[[User:$2|$2]]"',
 	'action-renameuser' => 'Alinomigi uzantojn',
 	'right-renameuser' => 'Alinomigi uzantojn',
@@ -3266,6 +3270,7 @@ $messages['pfl'] = array(
  * @author Derbeth
  * @author Leinad
  * @author Maikking
+ * @author Matma Rex
  * @author Nux
  * @author Odie2
  * @author Remedios44
@@ -3281,7 +3286,7 @@ $messages['pl'] = array(
 	'renameuser-desc' => "Zmiana nazwy użytkownika (wymaga posiadania uprawnień ''renameuser'')",
 	'renameuserold' => 'Obecna nazwa użytkownika:',
 	'renameusernew' => 'Nowa nazwa użytkownika:',
-	'renameuserreason' => 'Przyczyna zmiany nazwy:', # Fuzzy
+	'renameuserreason' => 'Powód:',
 	'renameusermove' => 'Przeniesienie strony osobistej i strony dyskusji użytkownika (oraz ich podstron) pod nową nazwę użytkownika',
 	'renameusersuppress' => 'Nie twórz przekierowania do nowej nazwy',
 	'renameuserreserve' => 'Zablokuj starą nazwę użytkownika przed możliwością użycia jej',
@@ -3300,6 +3305,9 @@ Cofnij się i spróbuj jeszcze raz.',
 	'renameuser-page-moved' => 'Strona „$1” została przeniesiona pod nazwę „$2”.',
 	'renameuser-page-unmoved' => 'Strona „$1” nie mogła zostać przeniesiona pod nazwę „$2”.',
 	'log-name-renameuser' => 'Zmiany nazw użytkowników',
+	'log-description-renameuser' => 'To jest rejestr zmian nazw użytkowników',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|zmienił|zmieniła}} nazwę użytkownika $4 ({{PLURAL:$6|$6 edycja|$6 edycje|$6 edycji}}) na $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 zmienił(a) nazwę użytkownika $4 na $5',
 	'renameuser-move-log' => 'Automatyczne przeniesienie stron użytkownika po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”',
 	'action-renameuser' => 'zmiana nazw użytkowników',
 	'right-renameuser' => 'Zmiana nazw kont użytkowników',
