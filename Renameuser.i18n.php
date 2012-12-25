@@ -4856,6 +4856,7 @@ $messages['yue'] = array(
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Hydra
+ * @author Hzy980512
  * @author Liangent
  * @author PhiLiP
  * @author Shizhao
@@ -4886,10 +4887,10 @@ $messages['zh-hans'] = array(
 	'renameuser-page-exists' => '页面$1己经存在，不能被自动覆盖。',
 	'renameuser-page-moved' => '页面$1已移动至$2。',
 	'renameuser-page-unmoved' => '页面$1不能移动至$2。',
-	'renameuserlogpage' => '用户更名日志',
-	'renameuserlogpagetext' => '这是用户名更改的日志。',
-	'renameuserlogentry' => '更名$1为“$2”',
-	'renameuser-log' => '$1个编辑。原因：$2',
+	'log-name-renameuser' => '用户更名日志',
+	'log-description-renameuser' => '这是对用户名改动的日志。',
+	'logentry-renameuser-renameuser' => '$1{{GENDER:$2|将}}用户$4（$6次编辑）重命名成$5',
+	'logentry-renameuser-renameuser-legacier' => '$1将用户$4重命名成$5',
 	'renameuser-move-log' => '当更改用户名“[[User:$1|$1]]”为“[[User:$2|$2]]”时自动移动页面',
 	'action-renameuser' => '重命名用户',
 	'right-renameuser' => '更改用户名',
