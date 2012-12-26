@@ -510,6 +510,7 @@ $messages['be-tarask'] = array(
 	'log-name-renameuser' => 'Журнал перайменаваньняў удзельнікаў',
 	'log-description-renameuser' => 'Гэта журнал перайменаваньняў рахункаў удзельнікаў.',
 	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|перайменаваў|перайменавала}} $4 ($6 {{PLURAL:$6|праўка|праўкі|правак}}) у $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 перайменаваў удзельніка $4 у $5',
 	'renameuser-move-log' => 'Аўтаматычнае перайменаваньне старонкі ў сувязі зь перайменаваньнем рахунку ўдзельніка з «[[User:$1|$1]]» у «[[User:$2|$2]]»',
 	'action-renameuser' => 'пераймяноўваць удзельнікаў',
 	'right-renameuser' => 'перайменаваньне ўдзельнікаў',
