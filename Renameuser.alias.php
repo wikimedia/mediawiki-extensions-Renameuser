@@ -347,3 +347,8 @@ $specialPageAliases['vi'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'Renameuser' => array( '重命名用户' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'Renameuser' => array( '重命名用戶' ),
+);
