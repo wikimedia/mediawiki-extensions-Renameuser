@@ -4559,6 +4559,18 @@ Lütfen geri dönüp tekrar deneyin.',
 Referans için ad değiştirme günlüğü aşağıda sağlanmıştır.',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'renameuserreason' => 'سەۋەب:',
+	'renameuserwarnings' => 'ئاگاھلاندۇرۇشلار:',
+	'renameusersubmit' => 'تاپشۇر',
+	'renameuser-page-exists' => '$1 بەت مەۋجۇد، ئۆزلۈكىدىن قاپلىۋەتكىلى بولمايدۇ.',
+	'renameuser-page-moved' => '$1 بەت $2 گە يۆتكەلدى.',
+	'renameuser-page-unmoved' => '$1 بەتنى $2 گە يۆتكىيەلمىدى.',
+);
+
 /** Ukrainian (українська)
  * @author A1
  * @author AS
