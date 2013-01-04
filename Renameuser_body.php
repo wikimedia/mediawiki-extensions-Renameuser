@@ -121,7 +121,7 @@ class SpecialRenameuser extends SpecialPage {
 			$warningsHtml = array();
 			foreach ( $warnings as $warning ) {
 				$warningsHtml[] = is_array( $warning ) ?
-					$this->msg( $warning[0] )->rawParams( array_shift( $warning ) )->escaped() :
+					$this->msg( $warning[0] )->rawParams( array_slice( $warning, 1 ) )->escaped() :
 					$this->msg( $warning )->escaped();
 			}
 
