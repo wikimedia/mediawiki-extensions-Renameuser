@@ -416,16 +416,32 @@ class RenameuserSQL {
 	var $tables;
 
 	/**
+	  * Flag that can be set to false, in case another process has already started
+	  * the updates and the old username has already been renamed in the user table.
+	  *
+	  * @var bool
+	  * @access private
+	  */
+	var $updateUserTable;
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
 	 * @param $new string The new username
 	 * @param $uid
+	 * @param $options Array of options
+	 *	'updateUserTable' - bool, whether to update the user table
 	 */
-	function __construct( $old, $new, $uid ) {
+	function __construct( $old, $new, $uid, $options = array() ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
+		$this->updateUserTable = true;
+
+		if ( isset ( $options['updateUserTable'] ) ) {
+			$this->updateUserTable = $options['updateUserTable'];
+		}
 
 		$this->tables = array(); // Immediate updates
 		$this->tables['image'] = array( 'img_user_text', 'img_user' );
@@ -464,18 +480,22 @@ class RenameuserSQL {
 		$dbw->begin();
 		wfRunHooks( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
 
-		// Rename and touch the user before re-attributing edits,
-		// this avoids users still being logged in and making new edits while
-		// being renamed, which leaves edits at the old name.
-		$dbw->update( 'user',
-			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
-			array( 'user_name' => $this->old ),
-			__METHOD__
-		);
-		if ( !$dbw->affectedRows() ) {
-			$dbw->rollback();
-			return false;
+		if ( $this->updateUserTable ) {
+			// Rename and touch the user before re-attributing edits,
+			// this avoids users still being logged in and making new edits while
+			// being renamed, which leaves edits at the old name.
+			$dbw->update( 'user',
+				array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
+				array( 'user_name' => $this->old, 'user_id' => $this->uid ),
+				__METHOD__
+			);
+
+			if ( !$dbw->affectedRows() ) {
+				$dbw->rollback();
+				return false;
+			}
 		}
+
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
