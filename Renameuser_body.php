@@ -416,16 +416,27 @@ class RenameuserSQL {
 	var $tables;
 
 	/**
+	  * Flag to skip sanity checks, in case another
+	  * process has already started the updates.
+	  *
+	  * @var bool
+	  * @access private
+	  */
+	var $skipSanityChecks;
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
 	 * @param $new string The new username
 	 * @param $uid
+	 * @param $skipSanityChecks bool
 	 */
-	function __construct( $old, $new, $uid ) {
+	function __construct( $old, $new, $uid, $skipSanityChecks = false ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
+		$this->skipSanityChecks = $skipSanityChecks;
 
 		$this->tables = array(); // Immediate updates
 		$this->tables['image'] = array( 'img_user_text', 'img_user' );
@@ -472,10 +483,12 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
-		if ( !$dbw->affectedRows() ) {
+
+		if ( !$dbw->affectedRows() && !$this->skipSanityChecks ) {
 			$dbw->rollback();
 			return false;
 		}
+
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
