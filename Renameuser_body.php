@@ -416,16 +416,26 @@ class RenameuserSQL {
 	var $tables;
 
 	/**
+	  * Flag to skip updating the UserTable, in the event
+	  * another process has handled this already.
+	  *
+	  * @var bool
+	  * @access private
+	  */
+	var $skipUserTable;
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
 	 * @param $new string The new username
 	 * @param $uid
 	 */
-	function __construct( $old, $new, $uid ) {
+	function __construct( $old, $new, $uid, $skipUserTable = false ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
+		$this->skipUserTable = $skipUserTable;
 
 		$this->tables = array(); // Immediate updates
 		$this->tables['image'] = array( 'img_user_text', 'img_user' );
@@ -467,15 +477,25 @@ class RenameuserSQL {
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
 		// being renamed, which leaves edits at the old name.
-		$dbw->update( 'user',
-			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
-			array( 'user_name' => $this->old ),
-			__METHOD__
-		);
+		if ( !$skipUserTable ) {
+			$dbw->update( 'user',
+				array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
+				array( 'user_name' => $this->old ),
+				__METHOD__
+			);
+		} else {
+			// If another process has renamed, just touch the user
+			$dbw->update( 'user',
+				array( 'user_touched' => $dbw->timestamp() ),
+				array( 'user_name' => $this->new ),
+				__METHOD__
+			);
+		}
 		if ( !$dbw->affectedRows() ) {
 			$dbw->rollback();
 			return false;
 		}
+
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
