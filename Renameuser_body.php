@@ -416,16 +416,27 @@ class RenameuserSQL {
 	var $tables;
 
 	/**
+	  * Flag that can be set to false, in case another process has already started
+	  * the updates and the old username does not exist in the user table.
+	  *
+	  * @var bool
+	  * @access private
+	  */
+	var $checkIfUserExists;
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
 	 * @param $new string The new username
 	 * @param $uid
+	 * @param $skipSanityChecks bool
 	 */
-	function __construct( $old, $new, $uid ) {
+	function __construct( $old, $new, $uid, $checkIfUserExists = true ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
+		$this->checkIfUserExists = $checkIfUserExists;
 
 		$this->tables = array(); // Immediate updates
 		$this->tables['image'] = array( 'img_user_text', 'img_user' );
@@ -472,10 +483,12 @@ class RenameuserSQL {
 			array( 'user_name' => $this->old ),
 			__METHOD__
 		);
-		if ( !$dbw->affectedRows() ) {
+
+		if ( !$dbw->affectedRows() && $this->checkIfUserExists ) {
 			$dbw->rollback();
 			return false;
 		}
+
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
