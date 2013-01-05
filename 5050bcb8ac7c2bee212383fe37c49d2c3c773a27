@@ -33,6 +33,23 @@
       "revId": "5050bcb8ac7c2bee212383fe37c49d2c3c773a27",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAADgX//30A\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2013-01-05T03:19:54Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be more sane to change the variable name to smth. like $skipSanityChecks and then just check for that over here? That\u0027s sounds like a much more generic solution than the one applied....",
+      "revId": "5050bcb8ac7c2bee212383fe37c49d2c3c773a27",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
