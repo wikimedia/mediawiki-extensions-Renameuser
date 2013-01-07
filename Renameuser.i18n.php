@@ -1272,10 +1272,10 @@ $messages['fa'] = array(
 	'renameuser-page-exists' => 'صفحهٔ $1 از قبل وجود داشته و به طور خودکار قابل بازنویسی نیست.',
 	'renameuser-page-moved' => 'صفحهٔ $1 به $2 انتقال داده شد.',
 	'renameuser-page-unmoved' => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
-	'renameuserlogpage' => 'سیاهه تغییر نام کاربر',
-	'renameuserlogpagetext' => 'این سیاههٔ تغییر نام کاربران است',
-	'renameuserlogentry' => 'نام $1 را به $2 تغییر داد',
-	'renameuser-log' => '$1 ویرایش. دلیل: $2',
+	'log-name-renameuser' => 'سیاهه تغییر نام کاربر',
+	'log-description-renameuser' => 'این سیاههٔ تغییر نام کاربران است.',
+	'logentry-renameuser-renameuser' => '$1 نام $4 ({{PLURAL:$6|$6 ویرایش|}}) را به $5 {{GENDER:$2|تغییر داد}}',
+	'logentry-renameuser-renameuser-legacier' => '$1 نام کاربری $4 را به $5 تغییر داد',
 	'renameuser-move-log' => 'صفحه در ضمن تغییر نام «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار انتقال داده شد.',
 	'action-renameuser' => 'تغییر نام کاربران',
 	'right-renameuser' => 'تغییر نام کاربران',
@@ -3467,6 +3467,7 @@ Volte atrás e tente de novo, por favor.',
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Giro720
+ * @author Opraco
  * @author 555
  */
 $messages['pt-br'] = array(
@@ -3494,10 +3495,8 @@ Retorne e tente novamente.',
 	'renameuser-page-exists' => 'Já existe a página $1. Não é possível sobrescrever automaticamente.',
 	'renameuser-page-moved' => 'A página $1 foi movida com sucesso para $2.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
-	'renameuserlogpage' => 'Registro de renomeação de usuários',
-	'renameuserlogpagetext' => 'Este é um registro de alterações efetuadas em nomes de usuários.',
-	'renameuserlogentry' => 'renomeou $1 para "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
+	'log-name-renameuser' => 'Registro de renomeação de usuários',
+	'logentry-renameuser-renameuser' => '$1 renomeou $4 (com $6 ediç{{PLURAL:$6|ão|ões}}) para $5', # Fuzzy
 	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'action-renameuser' => 'renomear usuários',
 	'right-renameuser' => 'Renomear usuários',
