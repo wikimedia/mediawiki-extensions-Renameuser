@@ -708,10 +708,8 @@ Torneu enrere i torneu-ho a intentar.",
 	'renameuser-page-exists' => 'La pàgina «$1» ja existeix i no pot ser sobreescrita automàticament',
 	'renameuser-page-moved' => "La pàgina «$1» s'ha reanomenat com a «$2».",
 	'renameuser-page-unmoved' => "La pàgina $1 no s'ha pogut reanomenar com a «$2».",
-	'renameuserlogpage' => "Registre del canvi de nom d'usuari",
-	'renameuserlogpagetext' => "Aquest és un registre dels canvis als noms d'usuari",
-	'renameuserlogentry' => 'ha reanomenat $1 a "$2"',
-	'renameuser-log' => '{{PLURAL:$1|Una contribució|$1 contribucions}}. Motiu: $2',
+	'log-name-renameuser' => "Registre de canvis de nom d'usuari",
+	'logentry-renameuser-renameuser' => "$1 {{GENDER:$2|ha reanomenat}} l'usuari $4 ({{PLURAL:$6|$6 edició|$6 edicions}}) a $5",
 	'renameuser-move-log' => "S'ha reanomenat automàticament la pàgina mentre es reanomenava l'usuari «[[User:$1|$1]]» com «[[User:$2|$2]]»",
 	'action-renameuser' => 'reanomena usuaris',
 	'right-renameuser' => 'Reanomenar usuaris',
@@ -3426,6 +3424,7 @@ $messages['ps'] = array(
  * @author Giro720
  * @author Hamilton Abreu
  * @author Malafaya
+ * @author Opraco
  * @author Waldir
  * @author 555
  */
@@ -3454,10 +3453,9 @@ Volte atrás e tente de novo, por favor.',
 	'renameuser-page-exists' => 'Já existe a página $1. Não é possível sobrescrever automaticamente.',
 	'renameuser-page-moved' => 'A página $1 foi movida para $2.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
-	'renameuserlogpage' => 'Registo de alteração do nome de utilizadores',
-	'renameuserlogpagetext' => 'Este é um registo de alterações efectuadas a nomes de utilizadores.',
-	'renameuserlogentry' => 'mudou nome $1 para "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 edição|$1 edições}}. Motivo: $2',
+	'log-name-renameuser' => 'Registo de alteração do nome de utilizadores',
+	'log-description-renameuser' => 'Este é um registo de alterações efectuadas a nomes de utilizadores.',
+	'logentry-renameuser-renameuser-legacier' => '$1 renomeou $4 para $5',
 	'renameuser-move-log' => 'Página movida automaticamente ao alterar o nome do utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'action-renameuser' => 'alterar nomes de utilizadores',
 	'right-renameuser' => 'Alterar nomes de utilizadores',
