@@ -208,10 +208,9 @@ $messages['ar'] = array(
 	'renameuser-page-exists' => 'الصفحة $1 موجودة بالفعل ولا يمكن إنشاء أخرى مكانها أوتوماتيكيا.',
 	'renameuser-page-moved' => 'تم نقل الصفحة $1 إلى $2.',
 	'renameuser-page-unmoved' => 'لم يتمكن من نقل الصفحة $1 إلى $2.',
-	'renameuserlogpage' => 'سجل إعادة تسمية المستخدمين',
-	'renameuserlogpagetext' => 'هذا سجل بالتغييرات في أسماء المستخدمين',
-	'renameuserlogentry' => 'أعاد تسمية $1 باسم "$2"',
-	'renameuser-log' => '{{PLURAL:$1||تعديل واحد|تعديلان|$1 تعديلات|$1 تعديلًا|$1 تعديل}}. السبب: $2',
+	'log-name-renameuser' => 'سجل إعادة تسمية المستخدمين',
+	'log-description-renameuser' => 'هذا سجل بالتغييرات في أسماء المستخدمين.',
+	'logentry-renameuser-renameuser-legacier' => '$1 أعاد تسمية $4 إلى $5',
 	'renameuser-move-log' => 'نقل الصفحة تلقائيا خلال إعادة تسمية المستخدم من "[[User:$1|$1]]" إلى "[[User:$2|$2]]"',
 	'action-renameuser' => 'إعادة تسمية المستخدمين',
 	'right-renameuser' => 'إعادة تسمية المستخدمين',
@@ -3178,6 +3177,7 @@ Lo jornal dels cambiaments de noms es disponible çaijós per informacion.',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
  */
@@ -3188,13 +3188,14 @@ $messages['or'] = array(
 	'renameuser-desc' => "ଜଣେ ସଭ୍ୟଙ୍କର ନାମ ବଦଳାଇବା ପାଇଁ ଏକ [[Special:Renameuser|ବିଶେଷ ପୃଷ୍ଠା]] ଯୋଡ଼ିଥାଏ ।(''ନୂଆ ନାମକରଣ'' ଅଧିକାର ଲୋଡ଼ା)",
 	'renameuserold' => 'ଏବେକାର ଇଉଜର ନାମ:',
 	'renameusernew' => 'ନୂଆ ଇଉଜର ନାମ:',
-	'renameuserreason' => 'ନାମ ବଦଳାଇବାର କାରଣ:', # Fuzzy
+	'renameuserreason' => 'କାରଣ:',
 	'renameusermove' => 'ସଭ୍ୟ, ତାହାଙ୍କର ଆଲୋଚନା ପୃଷ୍ଠାମାନଙ୍କୁ (ତଥା ସାନପୃଷ୍ଠାମାନଙ୍କୁ)ନୂଆ ନାମକୁ ଘୁଞ୍ଚାଇବେ',
 	'renameusersuppress' => 'ନୂଆ ନାମକୁ ପୁନପ୍ରେରଣ କରନ୍ତୁ ନାହିଁ',
 	'renameuserreserve' => 'ଭବିଷ୍ୟତ ବ୍ୟବହାରରେ ପୁରୁଣା ଇଉଜର ନାମକୁ ଅଟକାଇ ଦିଅନ୍ତୁ',
 	'renameuserwarnings' => 'ଚେତାବନୀ:',
 	'renameuserconfirm' => 'ହଁ, ସଭ୍ୟଙ୍କ ନାମ ବଦଳାଇ ଦେବେ',
 	'renameusersubmit' => 'ଦାଖଲକରିବା',
+	'renameuser-submit-blocklog' => 'ବ୍ୟବହାରକାରୀଙ୍କ ପାଇଁ କିଳାଯାଇଥିବା ତାଲିକା ଦେଖିବେ',
 	'renameusererrordoesnotexist' => '"<nowiki>$1</nowiki>" ନାମକ ସଭ୍ୟଜଣକ ଏଠାରେ ନାହାନ୍ତି ।',
 	'renameusererrorexists' => '"<nowiki>$1</nowiki>" ନାମକ ସଭ୍ୟଜଣକ ଆଗରୁ ଅଛନ୍ତି ।',
 	'renameusererrorinvalid' => '"<nowiki>$1</nowiki>" ଇଉଜର ନାମଟି ଅଚଳ ଅଟେ ।',
@@ -3205,10 +3206,10 @@ $messages['or'] = array(
 	'renameuser-page-exists' => '$1 ପୃଷ୍ଠାଟି ଆଗରୁ ଅଛି ଓ ଆଉଥରେ ଲେଖାଯାଇପାରିବ ନାହିଁ ।',
 	'renameuser-page-moved' => '$1 ପୃଷ୍ଠାଟିକୁ $2କୁ ଘୁଞ୍ଚାଇ ଦିଆଗଲା ।',
 	'renameuser-page-unmoved' => '$1 ପୃଷ୍ଠାଟି $2କୁ ଘୁଞ୍ଚାଯାଇ ପାରିବ ନାହିଁ ।',
-	'renameuserlogpage' => 'ସଭ୍ୟ ନାମବଦଳ ଇତିହାସ',
-	'renameuserlogpagetext' => 'ସଭ୍ୟଙ୍କ ନାମ ବଦଳର ଏହା ଏକ ଇତିହାସ ।',
-	'renameuserlogentry' => '$1 ରୁ "$2" କୁ ନାମ ବଦଳାଗଲା',
-	'renameuser-log' => '{{PLURAL:$1|ସମ୍ପାଦନାଟିଏ|$1 ଗୋଟି ସମ୍ପାଦନା}} । କାରଣ: $2',
+	'log-name-renameuser' => 'ସଭ୍ୟ ନାମବଦଳ ଇତିହାସ',
+	'log-description-renameuser' => 'ସଭ୍ୟଙ୍କ ନାମ ବଦଳର ଏହା ଏକ ଇତିହାସ ।',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|renamed}} user $4 ({{PLURAL:$6|$6 edit|$6 edits}}) to $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 $4ଙ୍କ ନାମ $5କୁ ବଦଳାଇଲେ',
 	'renameuser-move-log' => 'ସଭ୍ୟ "[[User:$1|$1]]"ରୁ "[[User:$2|$2]]"କୁ ନାମ ବଦଳ କଲାବେଳେ ବେଳେ ଛାଏଁ ଛାଏଁ ପୃଷ୍ଠାଟି ଘୁଞ୍ଚାଇ ଦିଆଗଲା',
 	'action-renameuser' => 'ବ୍ୟବହାରକାରୀଙ୍କ ନାମବଦଳା',
 	'right-renameuser' => 'ସଭ୍ୟମାନଙ୍କ ନାମଟି ବଦଳାଇବେ',
