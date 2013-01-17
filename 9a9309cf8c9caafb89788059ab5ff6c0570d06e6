@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAADhH//6Yw\u003d",
+        "filename": "cleanupArchiveUserText.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 98
+      },
+      "writtenOn": "2013-01-17T22:26:33Z",
+      "side": 1,
+      "message": "You could just do __DIR__ here...",
+      "revId": "9a9309cf8c9caafb89788059ab5ff6c0570d06e6",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
