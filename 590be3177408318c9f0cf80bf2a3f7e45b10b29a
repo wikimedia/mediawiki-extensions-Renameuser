@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAADhH//59M\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2013-01-18T09:14:07Z",
+      "side": 1,
+      "message": "s/does not exist/might not exist/ As we are still trying to rename him and only skip the result checking",
+      "revId": "590be3177408318c9f0cf80bf2a3f7e45b10b29a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAADhH//59I\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2013-01-18T09:14:07Z",
+      "side": 1,
+      "message": "We should consider using an options array here (especially if we plan to add more...)",
+      "revId": "590be3177408318c9f0cf80bf2a3f7e45b10b29a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
