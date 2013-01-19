@@ -4639,6 +4639,7 @@ $messages['uz'] = array(
 
 /** vèneto (vèneto)
  * @author Candalua
+ * @author GatoSelvadego
  */
 $messages['vec'] = array(
 	'renameuser' => 'Rinomina utente',
@@ -4647,7 +4648,7 @@ $messages['vec'] = array(
 	'renameuser-desc' => "Funsion par rinominar un utente (ghe vole i diriti de ''renameuser'')",
 	'renameuserold' => 'Vecio nome utente:',
 	'renameusernew' => 'Novo nome utente:',
-	'renameuserreason' => 'Motivo del canbio nome', # Fuzzy
+	'renameuserreason' => 'Motivo:',
 	'renameusermove' => 'Rinomina anca la pagina utente, la pagina de discussion e le relative sotopagine',
 	'renameusersuppress' => 'No stà crear rimandi al nome novo',
 	'renameuserreserve' => "Tien da conto el vecio nome utente par inpedir che'l vegna doparà in futuro",
@@ -4663,10 +4664,7 @@ $messages['vec'] = array(
 	'renameuser-page-exists' => 'La pagina $1 la esiste de zà; no se pole sovrascrìvarla automaticamente.',
 	'renameuser-page-moved' => 'La pagina $1 la xe stà spostà a $2.',
 	'renameuser-page-unmoved' => 'No se pole spostar la pagina $1 a $2.',
-	'renameuserlogpage' => 'Registro dei utenti rinominà',
-	'renameuserlogpagetext' => 'De seguito vien presentà el registro de le modifiche ai nomi utente',
-	'renameuserlogentry' => 'gà rinominà $1 in "$2"',
-	'renameuser-log' => '{{PLURAL:$1|1 contributo|$1 contributi}}. Motivo: $2',
+	'log-name-renameuser' => 'Registro dei utenti rinominà',
 	'renameuser-move-log' => 'Spostamento automatico de la pagina - utente rinominà da "[[User:$1|$1]]" a "[[User:$2|$2]]"',
 	'right-renameuser' => 'Rinomina utenti',
 	'renameuser-renamed-notice' => 'Sto utente el gà canbià nome.
