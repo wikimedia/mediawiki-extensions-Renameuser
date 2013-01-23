@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAADiH///W0\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2013-01-23T18:02:14Z",
+      "side": 1,
+      "message": "Can the option just be called \u0027checkIfUserExists\u0027, it\u0027s clearer.",
+      "revId": "4cda7f9c293eb10969edc197c85722ba1f06faa5",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
