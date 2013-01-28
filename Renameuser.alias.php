@@ -243,7 +243,7 @@ $specialPageAliases['nb'] = array(
 	'Renameuser' => array( 'Gi_en_bruker_nytt_navn' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Renameuser' => array( 'Gebruker_herneumen' ),
 );
