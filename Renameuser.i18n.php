@@ -218,14 +218,18 @@ $messages['ar'] = array(
  * @author Michaelovic
  */
 $messages['arc'] = array(
-	'renameuser' => 'ܫܚܠܦ ܫܡܐ ܕܡܦܠܚܢܐ',
-	'renameuser-linkoncontribs' => 'ܫܚܠܦ ܫܡܐ ܕܡܦܠܚܢܐ',
-	'renameuser-linkoncontribs-text' => 'ܫܚܠܦ ܫܡܐ ܕܗܢܐ ܡܦܠܚܢܐ',
+	'renameuser' => 'ܬܢܝ ܫܘܡܗܐ ܕܡܦܠܚܢܐ',
+	'renameuser-linkoncontribs' => 'ܬܢܝ ܫܘܡܗܐ ܕܡܦܠܚܢܐ',
+	'renameuser-linkoncontribs-text' => 'ܬܢܝ ܫܘܡܗܐ ܕܗܢܐ ܡܦܠܚܢܐ',
 	'renameuserold' => 'ܫܡܐ ܕܡܦܠܚܢܐ ܥܬܝܩܐ:',
 	'renameusernew' => 'ܫܡܐ ܕܡܦܠܚܢܐ ܚܕܬܐ:',
+	'renameuserreason' => 'ܥܠܬܐ:',
 	'renameuserwarnings' => 'ܙܘܗܪ̈ܐ:',
 	'renameuserconfirm' => 'ܐܝܢ, ܫܚܠܦ ܫܡܐ ܕܡܦܠܚܢܐ',
 	'renameusersubmit' => 'ܡܨܝܘܬܐ',
+	'log-name-renameuser' => 'ܣܓܠܐ ܕܬܘܢܝ ܫܘܡܗܐ ܕܡܦܠܚܢ̈ܐ',
+	'action-renameuser' => 'ܬܢܝ ܫܘܡܗܐ ܕܡܦܠܚܢܐ',
+	'right-renameuser' => 'ܬܢܝ ܫܘܡܗܐ ܕܡܦܠܚܢܐ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
