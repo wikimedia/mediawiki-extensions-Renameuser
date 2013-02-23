@@ -35,52 +35,17 @@ define( 'RENAMEUSER_CONTRIBJOB', 5000 );
 # Add a new log type
 $wgLogTypes[] = 'renameuser';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'RenameuserLogFormatter';
-$wgAutoloadClasses['SpecialRenameuser'] = __DIR__ . '/Renameuser_body.php';
-$wgAutoloadClasses['RenameuserLogFormatter'] = __DIR__ . '/Renameuser_body.php';
+
+$wgAutoloadClasses['RenameuserHooks'] = __DIR__ . '/Renameuser.hooks.php';
 $wgAutoloadClasses['RenameUserJob'] = __DIR__ . '/RenameUserJob.php';
+$wgAutoloadClasses['RenameuserLogFormatter'] = __DIR__ . '/RenameuserLogFormatter.php';
+$wgAutoloadClasses['RenameuserSQL'] = __DIR__ . '/RenameuserSQL.php';
+$wgAutoloadClasses['SpecialRenameuser'] = __DIR__ . '/SpecialRenameuser.php';
+
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
 $wgJobClasses['renameUser'] = 'RenameUserJob';
 
-$wgHooks['ShowMissingArticle'][] = 'wfRenameUserShowLog';
-$wgHooks['ContributionsToolLinks'][] = 'wfRenameuserOnContribsLink';
+$wgHooks['ShowMissingArticle'][] = 'RenameuserHooks::onShowMissingArticle';
+$wgHooks['ContributionsToolLinks'][] = 'RenameuserHooks::onContributionsToolLinks';
 
-/**
- * Show a log if the user has been renamed and point to the new username.
- * Don't show the log if the $oldUserName exists as a user.
- *
- * @param $article Article
- * @return bool
- */
-function wfRenameUserShowLog( $article ) {
-	global $wgOut;
-	$title = $article->getTitle();
-	$oldUser = User::newFromName( $title->getBaseText() );
-	if ( ($title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) && ($oldUser && $oldUser->isAnon() )) {
-		// Get the title for the base userpage
-		$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
-		LogEventsList::showLogExtract( $wgOut, 'renameuser', $page, '', array( 'lim' => 10, 'showIfEmpty' => false,
-			'msgKey' => array( 'renameuser-renamed-notice', $title->getBaseText() ) ) );
-	}
-	return true;
-}
-
-/**
- * @param $id
- * @param $nt Title
- * @param $tools
- * @return bool
- */
-function wfRenameuserOnContribsLink( $id, $nt, &$tools ) {
-	global $wgUser;
-
-	if ( $wgUser->isAllowed( 'renameuser' ) && $id ) {
-		$tools[] = Linker::link(
-			SpecialPage::getTitleFor( 'Renameuser' ),
-			wfMessage( 'renameuser-linkoncontribs' )->text(),
-			array( 'title' => wfMessage( 'renameuser-linkoncontribs-text' )->parse() ),
-			array( 'oldusername' => $nt->getText() )
-		);
-	}
-	return true;
-}
