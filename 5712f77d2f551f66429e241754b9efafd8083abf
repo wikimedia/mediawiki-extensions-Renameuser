@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "DnfnS31o",
+        "filename": "Renameuser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2013-02-23T19:54:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "DnbnzRwk",
+      "revId": "5712f77d2f551f66429e241754b9efafd8083abf",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "DndnuAyM",
         "filename": "SpecialRenameuser.php",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-02-23T19:26:54Z",
       "side": 1,
       "message": "This should left alone (pointing to the extension entry point). This is what people used to include() in LocalSettings oddly enough.",
+      "revId": "5712f77d2f551f66429e241754b9efafd8083abf",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "DndnXI0k",
+        "filename": "SpecialRenameuser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2013-02-23T19:54:40Z",
+      "side": 1,
+      "message": "You\u0027re right... weird",
+      "parentUuid": "DndnuAyM",
       "revId": "5712f77d2f551f66429e241754b9efafd8083abf",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
