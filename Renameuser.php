@@ -35,8 +35,9 @@ define( 'RENAMEUSER_CONTRIBJOB', 5000 );
 # Add a new log type
 $wgLogTypes[] = 'renameuser';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'RenameuserLogFormatter';
-$wgAutoloadClasses['SpecialRenameuser'] = __DIR__ . '/Renameuser_body.php';
-$wgAutoloadClasses['RenameuserLogFormatter'] = __DIR__ . '/Renameuser_body.php';
+$wgAutoloadClasses['SpecialRenameuser'] = __DIR__ . '/SpecialRenameuser.php';
+$wgAutoloadClasses['RenameuserLogFormatter'] = __DIR__ . '/RenameuserLogFormatter.php';
+$wgAutoloadClasses['RenameuserSQL'] = __DIR__ . '/RenameuserSQL.php';
 $wgAutoloadClasses['RenameUserJob'] = __DIR__ . '/RenameUserJob.php';
 $wgSpecialPages['Renameuser'] = 'SpecialRenameuser';
 $wgSpecialPageGroups['Renameuser'] = 'users';
