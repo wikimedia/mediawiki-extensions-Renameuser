@@ -80,7 +80,7 @@ $specialPageAliases['dsb'] = array(
 
 /** Divehi (ދިވެހިބަސް) */
 $specialPageAliases['dv'] = array(
-	'Renameuser' => array( 'މެމްބަރުގެ ނަން ބަދަލު ކުރައްވާ' ),
+	'Renameuser' => array( 'މެމްބަރުގެ_ނަން_ބަދަލު_ކުރައްވާ' ),
 );
 
 /** Greek (Ελληνικά) */
