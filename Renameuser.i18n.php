@@ -3746,6 +3746,7 @@ $messages['si'] = array(
 /** Slovak (slovenčina)
  * @author Helix84
  * @author Jkjk
+ * @author KuboF
  */
 $messages['sk'] = array(
 	'renameuser' => 'Premenovať používateľa',
@@ -3754,7 +3755,7 @@ $messages['sk'] = array(
 	'renameuser-desc' => "Premenovať používateľa (vyžaduje právo ''renameuser'')",
 	'renameuserold' => 'Súčasné používateľské meno:',
 	'renameusernew' => 'Nové používateľské meno:',
-	'renameuserreason' => 'Dôvod premenovania:', # Fuzzy
+	'renameuserreason' => 'Dôvod:',
 	'renameusermove' => 'Presunúť používateľské a diskusné stránky (a ich podstránky) na nový názov',
 	'renameusersuppress' => 'Nevytvárať presmerovania na nový názov',
 	'renameuserreserve' => 'Vyhradiť staré používateľské meno (zabrániť ďalšiemu použitiu)',
@@ -3773,6 +3774,8 @@ $messages['sk'] = array(
 	'renameuser-page-unmoved' => 'Stránku $1 nebolo možné presunúť na $2.',
 	'log-name-renameuser' => 'Záznam premenovaní používateľov',
 	'log-description-renameuser' => 'Toto je záznam premenovaní používateľov',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|premenoval|premenovala}} používateľa $4 ({{PLURAL:$6|$6 úprava|$6 úpravy|$6 úprav}}) na $5',
+	'logentry-renameuser-renameuser-legacier' => '$1 premenoval používateľa $4 na $5',
 	'renameuser-move-log' => 'Automaticky presunutá stránka počas premenovania používateľa „[[User:$1|$1]]“ na „[[User:$2|$2]]“',
 	'action-renameuser' => 'premenovať používateľov',
 	'right-renameuser' => 'Premenovávať používateľov',
