@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "DoI482C4",
+        "filename": "SpecialRenameuser.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2013-03-05T18:36:27Z",
+      "side": 1,
+      "message": "__DIR__ has not trailing slash. Also I don\u0027t see a reason to make this go from require -\u003e include.",
+      "revId": "9008bb3d60af2c974c4b76f56513bfc9ea1b7cfb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
