@@ -73,6 +73,14 @@ $messages['qqq'] = array(
 	'renameuserwarnings' => '{{Identical|Warning}}',
 	'renameusersubmit' => '{{Identical|Submit}}',
 	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
+	'renameusererrordoesnotexist' => 'Used as error message. Parameters:
+* $1 - username
+See also:
+* {{msg-mw|Renameusererrorexists}}',
+	'renameusererrorexists' => 'Used as error message. Parameters:
+* $1 - username
+See also:
+* {{msg-mw|Renameusererrordoesnotexist}}',
 	'log-name-renameuser' => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
 	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
 	'logentry-renameuser-renameuser' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
