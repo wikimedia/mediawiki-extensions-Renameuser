@@ -81,12 +81,31 @@ See also:
 * $1 - username
 See also:
 * {{msg-mw|Renameusererrordoesnotexist}}',
+	'renameusererrorinvalid' => 'Used as error message when renaming user in [[Special:Renameuser]]. Parameters:
+* $1 - old username, or new username',
+	'renameusersuccess' => 'Used as success message when renaming user in [[Special:Renameuser]]. Parameters:
+* $1 - old username
+* $2 - new username',
+	'renameuser-page-exists' => 'Used when renaming user in [[Special:Renameuser]]. Parameters:
+* $1 - new page title (with link)',
+	'renameuser-page-moved' => 'Used as success message when renaming user in [[Special:Renameuser]]. Parameters:
+* $1 - old page title (with link)
+* $2 - new page title (with link)
+See also:
+* {{msg-mw|Renameuser-page-unmoved}}',
+	'renameuser-page-unmoved' => 'Used as failure message when renaming user in [[Special:Renameuser]]. Parameters:
+* $1 - old page title (with link)
+* $2 - new page title (with link)
+See also:
+* {{msg-mw|Renameuser-page-moved}}',
 	'log-name-renameuser' => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
 	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
-	'logentry-renameuser-renameuser' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
-* $4 is the old name of the renamed user
-* $5 is the new name of the renamed user
-* $6 number of edits made by the user', # Fuzzy
+	'logentry-renameuser-renameuser' => 'Used in [[Special:Log/renameuser]].
+
+{{logentry}}
+* $4 - the old name of the renamed user
+* $5 - the new name of the renamed user
+* $6 - number of edits made by the user',
 	'logentry-renameuser-renameuser-legacier' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
 * $4 is the old name of the renamed user
 * $5 is the new name of the renamed user',
