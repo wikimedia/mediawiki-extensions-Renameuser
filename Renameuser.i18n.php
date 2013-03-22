@@ -98,17 +98,19 @@ See also:
 * $2 - new page title (with link)
 See also:
 * {{msg-mw|Renameuser-page-moved}}',
-	'log-name-renameuser' => 'The name of the log in the list on [[Special:Log]] as well as log page title and page header for [[Special:Log/renameuser]].',
-	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
-	'logentry-renameuser-renameuser' => 'Used in [[Special:Log/renameuser]].
+	'log-name-renameuser' => '{{doc-logpage}}
 
-{{logentry}}
+As well as log page title and page header for [[Special:Log/renameuser]].',
+	'log-description-renameuser' => 'Log description on [[Special:Log/renameuser]].',
+	'logentry-renameuser-renameuser' => '{{logentry|[[Special:Log/renameuser]]}}
+Parameters:
 * $4 - the old name of the renamed user
 * $5 - the new name of the renamed user
 * $6 - number of edits made by the user',
-	'logentry-renameuser-renameuser-legacier' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
-* $4 is the old name of the renamed user
-* $5 is the new name of the renamed user',
+	'logentry-renameuser-renameuser-legacier' => '{{logentry|[[Special:Log/renameuser]]}}
+Parameters:
+* $4 - the old name of the renamed user
+* $5 - the new name of the renamed user',
 	'logentry-renameuser-renameuser-legaciest' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
 Note that only user name is included in this legacy log entry, everything else is hardcoded into log comment.',
 	'renameuser-move-log' => 'Reason for a page move when a page is moved because of a user rename. Parameters:
