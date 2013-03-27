@@ -65,6 +65,7 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'renameuser' => '{{doc-special|RenameUser}}',
 	'renameuser-linkoncontribs' => 'Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to rename users.',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => '{{desc|name=Rename user|url=http://www.mediawiki.org/wiki/Extension:Renameuser}}',
@@ -1715,6 +1716,7 @@ Meharbani kar ke laut ke fir kosis karo.',
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
+ * @author Roberta F.
  * @author SpeedyGonsales
  * @author Tivek
  */
@@ -1732,6 +1734,7 @@ $messages['hr'] = array(
 	'renameuserwarnings' => 'Upozorenja:',
 	'renameuserconfirm' => 'Da, preimenuj suradnika',
 	'renameusersubmit' => 'Potvrdi',
+	'renameuser-submit-blocklog' => 'Prikaži suradnikovu ili suradničinu evidenciju blokiranja',
 	'renameusererrordoesnotexist' => 'Suradnik "<nowiki>$1</nowiki>" ne postoji (suradničko ime nije zauzeto).',
 	'renameusererrorexists' => 'Suradničko ime "<nowiki>$1</nowiki>" već postoji',
 	'renameusererrorinvalid' => 'Suradničko ime "<nowiki>$1</nowiki>" nije valjano',
