@@ -739,9 +739,11 @@ $messages['ce'] = array(
 );
 
 /** Sorani Kurdish (کوردی)
+ * @author Calak
  */
 $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
+	'log-name-renameuser' => 'لۆگی گۆڕینی ناوی بەکارھێنەر',
 );
 
 /** Crimean Turkish (Cyrillic script) (къырымтатарджа (Кирилл)‎)
