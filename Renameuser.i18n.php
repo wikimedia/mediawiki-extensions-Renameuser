@@ -70,9 +70,26 @@ $messages['qqq'] = array(
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => '{{desc|name=Rename user|url=http://www.mediawiki.org/wiki/Extension:Renameuser}}',
 	'renameuser-summary' => '{{notranslate}}',
+	'renameuserold' => 'Used as label for the "Old username" input box in [[Special:RenameUser]].
+
+See also:
+* {{msg-mw|Renameusernew}}',
+	'renameusernew' => 'Used as label for the "New username" input box in [[Special:RenameUser]].
+
+See also:
+* {{msg-mw|Renameuserold}}',
+	'renameuserreason' => 'Used as label for the "Reason to rename user" input box in [[Special:RenameUser]].
+{{Identical|Reason}}',
+	'renameusermove' => 'Used as label for the "Move pages" checkbox in the "Rename user" form in [[Special:RenameUser]].',
+	'renameusersuppress' => 'Used as label for the "Suppress redirect" checkbox in the "Rename user" form in [[Special:RenameUser]].',
 	'renameuserreserve' => 'Option to block the old username (after it has been renamed) from being used again.',
-	'renameuserwarnings' => '{{Identical|Warning}}',
-	'renameusersubmit' => '{{Identical|Submit}}',
+	'renameuserwarnings' => 'Used as label in [[Special:RenameUser]].
+
+Followed by a list of the warnings.
+{{Identical|Warning}}',
+	'renameuserconfirm' => 'Used as label for the "Confirm action" checkbox in the "Rename user" form in [[Special:RenameUser]].',
+	'renameusersubmit' => 'Used as label for the Submit button in the "Rename user" form in [[Special:RenameUser]].
+{{Identical|Submit}}',
 	'renameuser-submit-blocklog' => 'Button text. When clicked, the block log entries for a given user will be displayed.',
 	'renameusererrordoesnotexist' => 'Used as error message. Parameters:
 * $1 - username
@@ -84,6 +101,8 @@ See also:
 * {{msg-mw|Renameusererrordoesnotexist}}',
 	'renameusererrorinvalid' => 'Used as error message when renaming user in [[Special:Renameuser]]. Parameters:
 * $1 - old username, or new username',
+	'renameuser-error-request' => 'Used as error message when renaming user in [[Special:Renameuser]].',
+	'renameuser-error-same-user' => 'Used as error message when renaming user in [[Special:Renameuser]].',
 	'renameusersuccess' => 'Used as success message when renaming user in [[Special:Renameuser]]. Parameters:
 * $1 - old username
 * $2 - new username',
