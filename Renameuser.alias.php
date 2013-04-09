@@ -23,7 +23,7 @@ $specialPageAliases['arz'] = array(
 	'Renameuser' => array( 'سمّى_تانى_يوزر' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'Renameuser' => array( 'সদস্য_পুনৰ্নামকৰণ' ),
 );
