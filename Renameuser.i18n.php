@@ -1591,6 +1591,7 @@ S Umnännigs-Logbuech wird do unte ufgfiert as Quälle.',
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
  * @author KartikMistry
  * @author Sushant savla
  */
@@ -1601,7 +1602,7 @@ $messages['gu'] = array(
 	'renameuser-desc' => "સભ્યનું નામાંતરણ કરવા માટે [[Special:Renameuser|special page]] ઉમેરે છે (''renameuser'' હક્ક જરૂરી)",
 	'renameuserold' => 'હાલનું સભ્યનામ:',
 	'renameusernew' => 'નવું સભ્યનામ:',
-	'renameuserreason' => 'નામ બદલવાનું કારણ:', # Fuzzy
+	'renameuserreason' => 'કારણ:',
 	'renameusermove' => 'સભ્ય અને ગપ્પાં પાનાંઓ (અને તેમનાં ઉપપાનાંઓ) નવાં નામ પર ખસેડો',
 	'renameusersuppress' => 'નવા નામ પર દિશા નિર્દેશનો ન રચશો',
 	'renameuserreserve' => 'જૂના સભ્યનામને ભવિષ્યનો વપરાશ પ્રતિબંધીત કરો',
