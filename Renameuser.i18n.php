@@ -2649,6 +2649,13 @@ $messages['mg'] = array(
 	'right-renameuser' => "Manova ny anaran'ny mpikambana",
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'log-name-renameuser' => 'Log panggantian namo pangguno',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
