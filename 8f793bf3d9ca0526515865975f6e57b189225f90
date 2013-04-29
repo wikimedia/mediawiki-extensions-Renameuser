@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "Dv3Zrcbk",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2013-04-29T22:39:41Z",
+      "side": 1,
+      "message": "How does this deal with the memcached problem you experienced. That should already be handled by the delete() below...though that of course can have races. Maybe the cache could be \"salted\" for a minute like FileBackend does.",
+      "revId": "8f793bf3d9ca0526515865975f6e57b189225f90",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
