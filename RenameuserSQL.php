@@ -121,6 +121,10 @@ class RenameuserSQL {
 		$authUser = $wgAuth->getUserInstance( $user );
 		$authUser->resetAuthToken();
 
+		// Clear the cached data stored in the User object, including the
+		// username. (bug 47848)
+		$user->clearInstanceCache( true );
+
 		// Delete from memcached.
 		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
 
