@@ -3356,6 +3356,7 @@ $messages['ps'] = array(
 /** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Malafaya
  * @author Opraco
  * @author Waldir
@@ -3366,7 +3367,7 @@ $messages['pt'] = array(
 	'renameuser-linkoncontribs' => 'alterar nome do utilizador',
 	'renameuser-linkoncontribs-text' => 'Alterar o nome deste utilizador',
 	'renameuser-desc' => "[[Special:Renameuser|Página especial]] para alterar o nome de um utilizador (requer o privilégio ''renameuser'')",
-	'renameuserold' => 'Nome de utilizador actual:',
+	'renameuserold' => 'Nome de usuário atual:',
 	'renameusernew' => 'Novo nome de utilizador:',
 	'renameuserreason' => 'Motivo da alteração de nome:', # Fuzzy
 	'renameusermove' => 'Mover as páginas e subpáginas de utilizador e as respectivas discussões para o novo nome',
