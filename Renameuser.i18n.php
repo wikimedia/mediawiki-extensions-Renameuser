@@ -2654,6 +2654,7 @@ $messages['mg'] = array(
  */
 $messages['min'] = array(
 	'log-name-renameuser' => 'Log panggantian namo pangguno',
+	'right-renameuser' => 'Mangganti namo pangguno',
 );
 
 /** Macedonian (македонски)
