@@ -751,10 +751,12 @@ A continuació es proporciona el registre de reanomenaments per a més informaci
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
 	'renameuser' => 'Декъашхон цlе хийца',
 	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
+	'renameuserreason' => 'Бахьан:',
 );
 
 /** Sorani Kurdish (کوردی)
