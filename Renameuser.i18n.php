@@ -757,6 +757,7 @@ $messages['ce'] = array(
 	'renameuser' => 'Декъашхон цlе хийца',
 	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
 	'renameuserreason' => 'Бахьан:',
+	'renameuser-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 );
 
 /** Sorani Kurdish (کوردی)
