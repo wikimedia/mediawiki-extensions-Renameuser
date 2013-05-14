@@ -2657,6 +2657,7 @@ $messages['mg'] = array(
  */
 $messages['min'] = array(
 	'log-name-renameuser' => 'Log panggantian namo pangguno',
+	'log-description-renameuser' => 'Di bawah ko log panggantian namo pangguno',
 	'right-renameuser' => 'Mangganti namo pangguno',
 );
 
