@@ -205,7 +205,7 @@ $specialPageAliases['kw'] = array(
 
 /** Latin (Latina) */
 $specialPageAliases['la'] = array(
-	'Renameuser' => array( 'Usorem renominare' ),
+	'Renameuser' => array( 'Usorem_renominare' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
