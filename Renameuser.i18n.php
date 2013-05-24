@@ -2664,6 +2664,7 @@ $messages['mg'] = array(
 $messages['min'] = array(
 	'log-name-renameuser' => 'Log panggantian namo pangguno',
 	'log-description-renameuser' => 'Di bawah ko log panggantian namo pangguno',
+	'renameuser-move-log' => 'Sacaro otomatih mamindahan laman wakatu mangganti namo pangguno "[[User:$1|$1]]" manjadi "[[User:$2|$2]]"',
 	'right-renameuser' => 'Mangganti namo pangguno',
 );
 
