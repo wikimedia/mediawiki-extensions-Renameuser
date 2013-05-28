@@ -1823,6 +1823,7 @@ Protokol přemjenowanjow je deleka jako referenca podaty.',
  * @author Adam78
  * @author Dani
  * @author Dj
+ * @author Hunyadym
  * @author Tgr
  */
 $messages['hu'] = array(
@@ -1849,7 +1850,7 @@ $messages['hu'] = array(
 	'renameuser-page-moved' => '$1 át lett nevezve $2 névre',
 	'renameuser-page-unmoved' => '$1-t nem sikerült $2 névre nevezi',
 	'log-name-renameuser' => 'Felhasználóátnevezési napló',
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|átnevezte}} $4 szerkesztőt ({{PLURAL:$6|egy|$6}} szerkesztés) erre: $4', # Fuzzy
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|átnevezte}} $4 szerkesztőt ({{PLURAL:$6|egy|$6}} szerkesztés) erre: $5', # Fuzzy
 	'logentry-renameuser-renameuser-legacier' => '$1 átnevezte $4 szerkesztőt erre: $5',
 	'renameuser-move-log' => '„[[User:$1|$1]]” „[[User:$2|$2]]” névre való átnevezése közben automatikusan átnevezett oldal',
 	'action-renameuser' => 'felhasználó átnevezése',
