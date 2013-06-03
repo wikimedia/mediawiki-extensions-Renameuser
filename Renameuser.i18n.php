@@ -1460,6 +1460,43 @@ Volyéd tornar arriér et pués tornar èprovar.',
 Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'renameuser' => 'Brüker amnääm',
+	'renameuser-linkoncontribs' => 'brüker amnääm',
+	'renameuser-linkoncontribs-text' => 'Didiar brüker amnääm',
+	'renameuser-desc' => 'Diar komt en [[Special:Renameuser|spezial-sidj]] tu, am en brükernööm tu feranrin',
+	'renameuserold' => 'Uugenblakelk brükernööm:',
+	'renameusernew' => 'Nei brükernööm:',
+	'renameuserreason' => 'Grünj:',
+	'renameusermove' => 'Fersküüw brükersidj an diskusjuunssidj (mä onersidjen) tu di nei brükernööm',
+	'renameusersuppress' => 'Nian widjerfeerangen üüb di nei brükernööm iinracht',
+	'renameuserreserve' => 'Di ual brükernööm spere',
+	'renameuserwarnings' => 'Wäärnangen:',
+	'renameuserconfirm' => 'Ja, di brüker amnääm',
+	'renameusersubmit' => 'Auerdreeg',
+	'renameuser-submit-blocklog' => 'Sper-logbuk för didiar brüker uunwise',
+	'renameusererrordoesnotexist' => 'Son brüker "<nowiki>$1</nowiki>" jaft at ei.',
+	'renameusererrorexists' => 'Son brüker "<nowiki>$1</nowiki>" jaft at al.',
+	'renameusererrorinvalid' => 'Di brükernööm "<nowiki>$1</nowiki>" as ferkiard.',
+	'renameuser-error-request' => "Diar as wat skiaf gingen bi't aurdreegen. Ferschük det man noch ans.",
+	'renameuser-error-same-user' => 'Di nei an di ual brükernööm san likedenang.',
+	'renameusersuccess' => 'Di brüker "<nowiki>$1</nowiki>" as tu "<nowiki>$2</nowiki>" amnäämd wurden.',
+	'renameuser-page-exists' => 'Det sidj „$1“ as al diar an koon ei automaatisk auerskrewen wurd.',
+	'renameuser-page-moved' => 'Det sidj $1 as efter $2 fersköwen wurden.',
+	'renameuser-page-unmoved' => 'Det sidj $1 küd ei efter $2 fersköwen wurd.',
+	'log-name-renameuser' => 'Amnääm-logbuk',
+	'log-description-renameuser' => 'Det as det logbuk auer feranrangen faan brükernöömer.',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|hää}} brüker „$4“ (mä {{PLURAL:$6|ian feranrang|$6 feranrangen}}) tu „$5“ amnäämd.',
+	'logentry-renameuser-renameuser-legacier' => '$1 hää brüker $4 amnäämd tu $5',
+	'renameuser-move-log' => "Det sidj as bi't amnäämen faan „[[User:$1|$1]]“ tu „[[User:$2|$2]]“ automaatisk fersköwen wurden",
+	'action-renameuser' => 'brükern amnääm',
+	'right-renameuser' => 'Brükern amnääm',
+	'renameuser-renamed-notice' => "Didiar brüker as amnäämd wurden. Uun't amnääm-logbuk oner stäänt muar diartu.",
+);
+
 /** Friulian (furlan)
  * @author Klenje
  */
@@ -1974,6 +2011,9 @@ Pangngaasi nga agsubli ken padasen manen.',
 	'renameuser-page-moved' => 'Ti panid $1 ket naiyalisen idiay $2.',
 	'renameuser-page-unmoved' => 'Ti panid  $1 ket saan a maiyalis idiay $2.',
 	'log-name-renameuser' => 'Listaan ti panaginaganan manen ti agar-aramat',
+	'log-description-renameuser' => 'Daytoy ket listaan kadagiti panagbalbaliw kadagiti nagan ti agar-aramat.',
+	'logentry-renameuser-renameuser' => 'Ni $1 ket {{GENDER:$2|ninagananna}} ti agar-aramat a ni $4 ({{PLURAL:$6|$6 nga inurnos|$6 kadagiti inurnos}}) iti $5',
+	'logentry-renameuser-renameuser-legacier' => 'Ni $1 ket ninagananna ti agar-aramat a ni $4 iti $5',
 	'renameuser-move-log' => 'Automatiko nga iyalis ti panid bayat a nagnaganan manen ti agar-aramat "[[User:$1|$1]]" iti "[[User:$2|$2]]"',
 	'action-renameuser' => 'inaganan manen dagiti agar-aramat',
 	'right-renameuser' => 'Inaganan manen dagiti agar-aramat',
