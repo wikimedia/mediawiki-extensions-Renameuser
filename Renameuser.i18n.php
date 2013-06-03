@@ -315,7 +315,7 @@ $messages['arz'] = array(
 	'right-renameuser' => 'غير اسم اليوزرز',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Gitartha.bordoloi
  */
@@ -1149,6 +1149,7 @@ Jen la protokolo pri renomigado por via referenco.',
  * @author Jatrobat
  * @author Lin linao
  * @author Locos epraix
+ * @author MarcoAurelio
  * @author Ralgis
  * @author Remember the dot
  * @author Sanbec
@@ -1341,7 +1342,7 @@ $messages['fi'] = array(
 	'renameuser-page-unmoved' => 'Sivun $1 siirtäminen nimelle $2 ei onnistunut.',
 	'log-name-renameuser' => 'Tunnusten vaihdot',
 	'log-description-renameuser' => 'Tämä on loki käyttäjätunnuksien vaihdoista.',
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|nimesi}} käyttäjän $4 ({{PLURAL:$6|$6 muokkaus|$6 muokkausta}}) uudelle nimelle $5', # Fuzzy
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|nimesi}} käyttäjän $4 ({{PLURAL:$6|$6 muokkaus|$6 muokkausta}}) uudelle nimelle $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 nimesi käyttäjän $4 uudelle nimelle $5',
 	'renameuser-move-log' => 'Siirretty automaattisesti tunnukselta ”[[User:$1|$1]]” tunnukselle ”[[User:$2|$2]]”',
 	'action-renameuser' => 'nimetä käyttäjätunnuksia uudelleen',
@@ -2933,7 +2934,7 @@ $messages['nan'] = array(
 	'renameuser-page-moved' => '$1 í-keng sóa khì tī $2.',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Danmichaelo
  * @author Event
  * @author Nghtwlkr
@@ -2999,7 +3000,7 @@ $messages['nds'] = array(
 	'right-renameuser' => 'Brukers ne’en Naam geven',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -3088,7 +3089,7 @@ $messages['nl-informal'] = array(
 	'renameuser-error-same-user' => 'Je kunt geen gebruiker hernoemen naar dezelfde naam.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Dittaeva
  * @author Gunnernett
  * @author Harald Khan
@@ -3170,7 +3171,7 @@ $messages['oc'] = array(
 Lo jornal dels cambiaments de noms es disponible çaijós per informacion.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
