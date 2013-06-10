@@ -757,6 +757,7 @@ $messages['ce'] = array(
 	'renameuser' => 'Декъашхон цlе хийца',
 	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
 	'renameuserreason' => 'Бахьан:',
+	'renameuser-page-exists' => 'Агӏо $1 йолуш ю цундела и ша юху дӏаязъян йиш яц.',
 	'renameuser-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 );
 
