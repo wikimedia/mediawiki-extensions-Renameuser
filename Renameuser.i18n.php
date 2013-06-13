@@ -3618,6 +3618,7 @@ L'archivije de le renomenaziune 'u iacchie aqquà sotte cumme referimende.",
 
 /** Russian (русский)
  * @author Ahonc
+ * @author Anonim.one
  * @author DCamer
  * @author DR
  * @author EugeneZelenko
@@ -3652,7 +3653,7 @@ $messages['ru'] = array(
 	'renameuser-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'log-name-renameuser' => 'Журнал переименований участников',
 	'log-description-renameuser' => 'Это журнал произведённых переименований зарегистрированных участников.',
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|переименовал}} пользователя $4 ({{PLURAL:$6|$6 правка|$6 правки|$6 правок}}) в $5',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|переименовал}} участника $4 ({{PLURAL:$6|$6 правка|$6 правки|$6 правок}}) в $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 переименовал пользователя $4 в $5',
 	'renameuser-move-log' => 'Автоматически в связи с переименованием учётной записи «[[User:$1|$1]]» в «[[User:$2|$2]]»',
 	'action-renameuser' => 'переименование участников',
