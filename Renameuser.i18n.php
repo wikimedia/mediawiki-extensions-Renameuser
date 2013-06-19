@@ -1467,7 +1467,7 @@ Lo jornal des changements de nom est disponiblo ce-desot por enformacion.',
  */
 $messages['frr'] = array(
 	'renameuser' => 'Brüker amnääm',
-	'renameuser-linkoncontribs' => 'brüker amnääm',
+	'renameuser-linkoncontribs' => 'Brüker amnääm',
 	'renameuser-linkoncontribs-text' => 'Didiar brüker amnääm',
 	'renameuser-desc' => 'Diar komt en [[Special:Renameuser|spezial-sidj]] tu, am en brükernööm tu feranrin',
 	'renameuserold' => 'Uugenblakelk brükernööm:',
