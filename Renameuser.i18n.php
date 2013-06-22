@@ -65,8 +65,10 @@ The rename log is provided below for reference.', # Supports GENDER
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'renameuser' => '{{doc-special|RenameUser}}',
-	'renameuser-linkoncontribs' => 'Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to rename users.',
+	'renameuser' => '{{doc-special|RenameUser}}
+{{Identical|Rename user}}',
+	'renameuser-linkoncontribs' => 'Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to rename users.
+{{Identical|Rename user}}',
 	'renameuser-linkoncontribs-text' => 'Tooltip for {{msg-mw|renameuser-linkoncontribs}}.',
 	'renameuser-desc' => '{{desc|name=Rename user|url=http://www.mediawiki.org/wiki/Extension:Renameuser}}',
 	'renameuser-summary' => '{{notranslate}}',
@@ -136,8 +138,10 @@ Note that only user name is included in this legacy log entry, everything else i
 	'renameuser-move-log' => 'Reason for a page move when a page is moved because of a user rename. Parameters:
 * $1 is the old username;
 * $2 is the new username.',
-	'action-renameuser' => '{{Doc-action|renameuser}}',
-	'right-renameuser' => '{{doc-right|renameuser}}',
+	'action-renameuser' => '{{Doc-action|renameuser}}
+{{Identical|Rename user}}',
+	'right-renameuser' => '{{doc-right|renameuser}}
+{{Identical|Rename user}}',
 	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
 );
 
@@ -1362,7 +1366,7 @@ $messages['fo'] = array(
 	'renameuser-linkoncontribs-text' => 'Umdoyp henda brúkara',
 	'renameuserold' => 'Rætta brúkaranavn:',
 	'renameusernew' => 'Nýtt brúkaranavn:',
-	'renameuserreason' => 'Orsøk til nýtt navn:', # Fuzzy
+	'renameuserreason' => 'Orsøk:',
 	'renameuserwarnings' => 'Ávaringar:',
 	'renameuserconfirm' => 'Ja, gev hesum brúkara nýtt navn',
 	'renameusersubmit' => 'Send inn',
