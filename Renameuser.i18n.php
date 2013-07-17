@@ -535,8 +535,8 @@ Pakibalik tabi asin otroha giraray.',
 	'renameuser-error-same-user' => 'Ika dae makakapangaran otro nin sarong paragamit na kaparehong bagay na siring sa dati.',
 	'renameusersuccess' => 'An paragamit "<nowiki>$1</nowiki>" pinagngaranan otro na magin "<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'An pahina na $1 eksistido na asin dae tabi awtomatikong masasalambawan.',
-	'renameuser-page-moved' => 'An páhinang $1 piglipat sa $2.',
-	'renameuser-page-unmoved' => 'An páhinang $1 dai mailipat sa $2.',
+	'renameuser-page-moved' => 'An páhinang $1 pinagbalyo na sa $2.',
+	'renameuser-page-unmoved' => 'An páhinang $1 dai maipagbabalyo pasiring sa $2.',
 	'log-name-renameuser' => 'Talaan nin paragamit na pinagngaranan otro',
 	'log-description-renameuser' => 'Iyo ini an sarong talaan kan mga kaliwatan sa mga pangaran nin paragamit.',
 	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|pinagngaranan otro}} paragamit $4 ({{PLURAL:$6|$6 pagliwat|$6 mga pagliwat}}) na magin $5',
@@ -3042,7 +3042,7 @@ $messages['nds-nl'] = array(
 	'renameuser-linkoncontribs' => 'gebruker herneumen',
 	'renameuserold' => 'Gebrukersnaam noen',
 	'renameusernew' => 'Nieje gebrukersnaam:',
-	'renameuserreason' => 'Reden veur t herneumen:', # Fuzzy
+	'renameuserreason' => 'Reden:',
 	'renameusermove' => 'Herneum gebruker en gebrukersziejen (en ziejen die deronder vallen) naor de nieje naam.',
 	'renameusersuppress' => 'Gien deurverwiezingen maken naor de nieje naam',
 	'renameuserreserve' => 'Veurkoemen dat de ouwe gebruker opniej eregistreerd wörden',
@@ -4170,6 +4170,7 @@ $messages['su'] = array(
  * @author Cybjit
  * @author Dafer45
  * @author Habj
+ * @author Jopparn
  * @author Lejonel
  * @author Lokal Profil
  * @author M.M.S.
@@ -4201,6 +4202,7 @@ $messages['sv'] = array(
 	'renameuser-page-moved' => 'Sidan $1 har flyttats till $2.',
 	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
 	'log-name-renameuser' => 'Logg över användarnamnsbyten',
+	'logentry-renameuser-renameuser-legacier' => '$1 bytte namn på användare $4 till $5',
 	'renameuser-move-log' => 'Flyttade automatiskt sidan när namnet byttes på användaren "[[User:$1|$1]]" till "[[User:$2|$2]]"',
 	'action-renameuser' => 'ändra namn på användaren',
 	'right-renameuser' => 'Ändra användares namn',
