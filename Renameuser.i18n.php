@@ -874,6 +874,7 @@ $messages['cu'] = array(
 	'renameusererrorinvalid' => 'имѧ ⁖ <nowiki>$1</nowiki> ⁖ нѣстъ годѣ',
 	'log-name-renameuser' => 'польꙃєватєлъ прѣимєнованиꙗ їсторїꙗ',
 	'log-description-renameuser' => 'сѥ ѥстъ їсторїꙗ польꙃєватєльскъ имєнъ иꙁмѣнѥниꙗ',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|нарєчє}} польꙃєватєлъ ⁖ $4 ⁖ ({{PLURAL:$6|$6 мѣна|$6 мѣни|$6 мѣнъ}}) имєньмь ⁖ $5 ⁖',
 );
 
 /** Chuvash (Чӑвашла)
@@ -2528,7 +2529,7 @@ $messages['ku-latn'] = array(
 	'renameusererrorinvalid' => 'Navê "<nowiki>$1</nowiki>" ji bikarhêneran re nayê qebûlkirin.',
 	'renameusersuccess' => 'Navê bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Rûpelê $1 berê heye û nikane otomatîk were guherandin.',
-	'renameuser-page-moved' => 'Rûpela $1 çû cihê $2.',
+	'renameuser-page-moved' => 'Rûpela $2 çû cihê $1.',
 	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
 	'log-name-renameuser' => 'Guhertina navê bikarhêner',
 	'renameuser-move-log' => 'Otomatîk hate guherandin, ji ber ku "[[User:$1|$1]]" navê xwe guherand û niha bû "[[User:$2|$2]]"',
