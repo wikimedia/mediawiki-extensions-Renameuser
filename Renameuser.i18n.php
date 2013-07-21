@@ -787,7 +787,7 @@ A continuació es proporciona el registre de reanomenaments per a més informaci
  * @author Умар
  */
 $messages['ce'] = array(
-	'renameuser' => 'Декъашхон цlе хийца',
+	'renameuser' => 'Декъашхочун цӀе хийца',
 	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
 	'renameuserreason' => 'Бахьан:',
 	'renameuser-page-exists' => 'Агӏо $1 йолуш ю цундела и ша юху дӏаязъян йиш яц.',
