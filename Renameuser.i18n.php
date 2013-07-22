@@ -788,8 +788,9 @@ A continuació es proporciona el registre de reanomenaments per a més informaci
  */
 $messages['ce'] = array(
 	'renameuser' => 'Декъашхочун цӀе хийца',
-	'renameuser-linkoncontribs' => 'декъашхон цlе хийца',
+	'renameuser-linkoncontribs' => 'декъашхочун цӀе хийца',
 	'renameuserreason' => 'Бахьан:',
+	'renameusersubmit' => 'Кхочушдé',
 	'renameuser-page-exists' => 'Агӏо $1 йолуш ю цундела и ша юху дӏаязъян йиш яц.',
 	'renameuser-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 );
@@ -2529,7 +2530,7 @@ $messages['ku-latn'] = array(
 	'renameusererrorinvalid' => 'Navê "<nowiki>$1</nowiki>" ji bikarhêneran re nayê qebûlkirin.',
 	'renameusersuccess' => 'Navê bikarhênerê "<nowiki>$1</nowiki>" bû "<nowiki>$2</nowiki>"',
 	'renameuser-page-exists' => 'Rûpelê $1 berê heye û nikane otomatîk were guherandin.',
-	'renameuser-page-moved' => 'Rûpela $2 çû cihê $1.',
+	'renameuser-page-moved' => 'Navê $1 weke $2 hate guhertin.',
 	'renameuser-page-unmoved' => 'Rûpela $1 nikanî çûba ciha $2.',
 	'log-name-renameuser' => 'Guhertina navê bikarhêner',
 	'renameuser-move-log' => 'Otomatîk hate guherandin, ji ber ku "[[User:$1|$1]]" navê xwe guherand û niha bû "[[User:$2|$2]]"',
