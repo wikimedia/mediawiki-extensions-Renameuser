@@ -3479,7 +3479,7 @@ Volte atrás e tente de novo, por favor.',
 	'renameuser-page-moved' => 'A página $1 foi movida para $2.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
 	'log-name-renameuser' => 'Registo de alteração do nome de utilizadores',
-	'log-description-renameuser' => 'Este é um registo de alterações efectuadas a nomes de utilizadores.',
+	'log-description-renameuser' => 'Este é um registro de alterações efetuadas a nomes de utilizadores.',
 	'logentry-renameuser-renameuser' => '$1 renomeou $4 (com $6 edições) para $5', # Fuzzy
 	'logentry-renameuser-renameuser-legacier' => '$1 renomeou $4 para $5',
 	'renameuser-move-log' => 'Página movida automaticamente ao alterar o nome do utilizador "[[User:$1|$1]]" para "[[User:$2|$2]]"',
