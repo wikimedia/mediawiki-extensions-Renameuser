@@ -802,6 +802,7 @@ $messages['ce'] = array(
 $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
 	'log-name-renameuser' => 'لۆگی گۆڕینی ناوی بەکارھێنەر',
+	'right-renameuser' => 'گۆڕینی ناوی بەکارھێنەران',
 );
 
 /** Crimean Turkish (Cyrillic script) (къырымтатарджа (Кирилл)‎)
