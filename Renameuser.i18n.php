@@ -4045,6 +4045,7 @@ Regjistri i riemërimit është poshtë për referencë.',
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author FriedrickMILBarbarossa
+ * @author Milicevic01
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -4058,7 +4059,7 @@ $messages['sr-ec'] = array(
 	'renameuser-desc' => "Додаје [[Special:Renameuser|посебну страницу]] за преименовање корисника (потребно право ''renameuser'')",
 	'renameuserold' => 'Тренутно корисничко име:',
 	'renameusernew' => 'Ново корисничко име:',
-	'renameuserreason' => 'Разлог:', # Fuzzy
+	'renameuserreason' => 'Разлог:',
 	'renameusermove' => 'Премести корисничку страницу и страницу за разговор (и њихове подстранице) на нови назив',
 	'renameusersuppress' => 'Не правите преусмерења на нови назив',
 	'renameuserreserve' => 'Блокирај старо корисничко име за даљу употребу',
@@ -4088,6 +4089,7 @@ $messages['sr-ec'] = array(
  * @author FriedrickMILBarbarossa
  * @author Liangent
  * @author Michaello
+ * @author Milicevic01
  * @author Жељко Тодоровић
  */
 $messages['sr-el'] = array(
@@ -4097,7 +4099,7 @@ $messages['sr-el'] = array(
 	'renameuser-desc' => "Dodaje [[Special:Renameuser|posebnu stranicu]] za preimenovanje korisnika (potrebno pravo ''renameuser'').",
 	'renameuserold' => 'Trenutno korisničko ime:',
 	'renameusernew' => 'Novo korisničko ime:',
-	'renameuserreason' => 'Razlog preimenovanja:', # Fuzzy
+	'renameuserreason' => 'Razlog:',
 	'renameusermove' => 'Premesti korisničku stranicu i stranicu za razgovor (i njihove podstranice) na novo ime',
 	'renameusersuppress' => 'Ne pravite preusmerenja na novi naziv',
 	'renameuserreserve' => 'Blokiraj staro korisničko ime za dalju upotrebu',
