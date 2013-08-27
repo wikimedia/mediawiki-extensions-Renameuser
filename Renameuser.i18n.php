@@ -142,7 +142,8 @@ Note that only user name is included in this legacy log entry, everything else i
 {{Identical|Rename user}}',
 	'right-renameuser' => '{{doc-right|renameuser}}
 {{Identical|Rename user}}',
-	'renameuser-renamed-notice' => 'This message supports the use of GENDER with parameter $1.',
+	'renameuser-renamed-notice' => 'Parameters:
+* $1 - (Optional) username, for GENDER support',
 );
 
 /** Afrikaans (Afrikaans)
