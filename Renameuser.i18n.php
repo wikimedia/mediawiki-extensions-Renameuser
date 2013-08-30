@@ -4334,6 +4334,7 @@ $messages['tet'] = array(
 	'renameusererrordoesnotexist' => 'Uza-na\'in "<nowiki>$1</nowiki>" la iha.',
 	'renameuser-page-moved' => 'Book tiha pájina $1 ba $2.',
 	'renameuser-page-unmoved' => 'La bele book pájina $1 ba $2.',
+	'logentry-renameuser-renameuser-legacier' => '$1 muda naran uza-na\'in "$4" nian. Naran foun: "$5"',
 	'right-renameuser' => "Fó naran foun ba uza-na'in sira",
 );
 
