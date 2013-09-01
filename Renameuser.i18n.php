@@ -136,8 +136,8 @@ Parameters:
 	'logentry-renameuser-renameuser-legaciest' => 'Used in [[Special:Log/renameuser]]. {{logentry}}
 Note that only user name is included in this legacy log entry, everything else is hardcoded into log comment.',
 	'renameuser-move-log' => 'Reason for a page move when a page is moved because of a user rename. Parameters:
-* $1 is the old username;
-* $2 is the new username.',
+* $1 - the old username
+* $2 - the new username',
 	'action-renameuser' => '{{Doc-action|renameuser}}
 {{Identical|Rename user}}',
 	'right-renameuser' => '{{doc-right|renameuser}}
