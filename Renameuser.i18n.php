@@ -795,6 +795,7 @@ $messages['ce'] = array(
 	'renameuser-page-exists' => 'Агӏо $1 йолуш ю цундела и ша юху дӏаязъян йиш яц.',
 	'renameuser-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 	'log-name-renameuser' => 'Декъашхойн цӀераш хийцар долу тептар',
+	'renameuser-move-log' => 'Автоматически декъашхочун цӀе хийцина дела «[[User:$1|$1]]» оцу «[[User:$2|$2]]»',
 );
 
 /** Sorani Kurdish (کوردی)
