@@ -3502,6 +3502,7 @@ Volte atrás e tente de novo, por favor.',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Giro720
  * @author Opraco
  * @author 555
@@ -3533,7 +3534,7 @@ Retorne e tente novamente.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
 	'log-name-renameuser' => 'Registro de renomeação de usuários',
 	'log-description-renameuser' => 'Este é um registro de alterações efetuadas em nomes de usuários.',
-	'logentry-renameuser-renameuser' => '$1 renomeou $4 (com $6 ediç{{PLURAL:$6|ão|ões}}) para $5', # Fuzzy
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|renomeou}} $4 (com $6 ediç{{PLURAL:$6|ão|ões}}) para $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 renomeou $4 para $5',
 	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'action-renameuser' => 'renomear usuários',
