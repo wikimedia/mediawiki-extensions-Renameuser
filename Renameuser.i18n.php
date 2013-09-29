@@ -1718,6 +1718,7 @@ $messages['gu'] = array(
  * @author Rotem Liss
  * @author Rotemliss
  * @author YaronSh
+ * @author ערן
  */
 $messages['he'] = array(
 	'renameuser' => 'שינוי שם משתמש',
@@ -1745,7 +1746,7 @@ $messages['he'] = array(
 	'renameuser-page-unmoved' => 'לא ניתן היה להעביר את הדף $1 ל$2.',
 	'log-name-renameuser' => 'יומן שינויי שמות משתמש',
 	'log-description-renameuser' => 'זהו יומן השינויים בשמות המשתמשים.',
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|שינה|שינתה}} את שם המשתמש $4 ({{PLURAL:$6|עריכה אחת|$6 עריכות}}) אל $5',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|שינה|שינתה}} את שם המשתמש $4 &rlm;({{PLURAL:$6|עריכה אחת|$6 עריכות}}) אל $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 {{GENDER:$2|שינה|שינתה}} את שם המשתמש $4 ל{{GRAMMAR:תחילית|$5}}',
 	'renameuser-move-log' => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל־"[[User:$2|$2]]"',
 	'action-renameuser' => 'לשנות שמות משתמש',
@@ -2589,6 +2590,7 @@ Commodule notatio renominationum usoris subter datur.',
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'renameuser' => 'Benotzernumm änneren',
@@ -2612,7 +2614,7 @@ $messages['lb'] = array(
 Gitt w.e.g. zréck a versicht et nach eng Kéier.',
 	'renameuser-error-same-user' => 'Dir kënnt kee Benotzernumm änneren, an him deselwechten Numm erëmginn.',
 	'renameusersuccess' => 'De Benotzer "<nowiki>$1</nowiki>" gouf "<nowiki>$2</nowiki>" ëmbenannt.',
-	'renameuser-page-exists' => "D'Säit $1 gëtt et schonns a kann net automatesch iwwerschriwwe ginn.",
+	'renameuser-page-exists' => "D'Säit $1 gëtt et schonn a kann net automatesch iwwerschriwwe ginn.",
 	'renameuser-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
 	'renameuser-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
 	'log-name-renameuser' => 'Logbuch vun den Ännerunge vum Benotzernumm',
@@ -4220,6 +4222,8 @@ $messages['sv'] = array(
 	'renameuser-page-moved' => 'Sidan $1 har flyttats till $2.',
 	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
 	'log-name-renameuser' => 'Logg över användarnamnsbyten',
+	'log-description-renameuser' => 'Detta är en logg över ändringar av användarnamn',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|omdöpt}} användare $4 ({{PLURAL:$6|$6 redigering|$6  redigeringar}}) till $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 bytte namn på användare $4 till $5',
 	'renameuser-move-log' => 'Flyttade automatiskt sidan när namnet byttes på användaren "[[User:$1|$1]]" till "[[User:$2|$2]]"',
 	'action-renameuser' => 'ändra namn på användaren',
