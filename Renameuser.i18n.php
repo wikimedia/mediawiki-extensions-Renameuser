@@ -804,6 +804,7 @@ $messages['ce'] = array(
 $messages['ckb'] = array(
 	'renameusersubmit' => 'ناردن',
 	'log-name-renameuser' => 'لۆگی گۆڕینی ناوی بەکارھێنەر',
+	'logentry-renameuser-renameuser' => '$1 ناوی بەکارھێنەر $4ی ({{PLURAL:$6|$6 دەستکاری}}) {{GENDER:$2|گۆڕی}} بۆ $5',
 	'right-renameuser' => 'گۆڕینی ناوی بەکارھێنەران',
 );
 
@@ -3512,12 +3513,12 @@ Volte atrás e tente de novo, por favor.',
 $messages['pt-br'] = array(
 	'renameuser' => 'Renomear usuário',
 	'renameuser-linkoncontribs' => 'renomear usuário',
-	'renameuser-linkoncontribs-text' => 'excluir este usuário',
+	'renameuser-linkoncontribs-text' => 'Renomear este usuário',
 	'renameuser-desc' => "Adiciona uma [[Special:Renameuser|página especial]] para renomear um usuário (requer privilégio ''renameuser'')",
 	'renameuserold' => 'Nome de usuário atual:',
 	'renameusernew' => 'Novo nome de usuário:',
 	'renameuserreason' => 'Motivo:',
-	'renameusermove' => 'Mover as páginas de usuário, páginas de discussão de usuário e sub-páginas para o novo nome',
+	'renameusermove' => 'Mover as páginas de usuário, páginas de discussão de usuário (e suas sub-páginas) para o novo nome',
 	'renameusersuppress' => 'Não criar redirecionamentos para o novo nome',
 	'renameuserreserve' => 'Impedir novos usos do antigo nome de usuário',
 	'renameuserwarnings' => 'Alertas:',
@@ -3531,18 +3532,18 @@ $messages['pt-br'] = array(
 Retorne e tente novamente.',
 	'renameuser-error-same-user' => 'Não é possível renomear um usuário para o nome anterior.',
 	'renameusersuccess' => 'O usuário "<nowiki>$1</nowiki>" foi renomeado para "<nowiki>$2</nowiki>".',
-	'renameuser-page-exists' => 'Já existe a página $1. Não é possível sobrescrever automaticamente.',
+	'renameuser-page-exists' => 'A página $1 já existe. Não foi possível sobrescreve-la automaticamente.',
 	'renameuser-page-moved' => 'A página $1 foi movida com sucesso para $2.',
 	'renameuser-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
 	'log-name-renameuser' => 'Registro de renomeação de usuários',
-	'log-description-renameuser' => 'Este é um registro de alterações efetuadas em nomes de usuários.',
+	'log-description-renameuser' => 'Este é um registro de alterações de nomes de usuários.',
 	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|renomeou}} $4 (com $6 ediç{{PLURAL:$6|ão|ões}}) para $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 renomeou $4 para $5',
-	'renameuser-move-log' => 'Páginas foram movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
+	'renameuser-move-log' => 'Páginas movidas automaticamente ao renomear o usuário "[[User:$1|$1]]" para "[[User:$2|$2]]"',
 	'action-renameuser' => 'renomear usuários',
 	'right-renameuser' => 'Renomear usuários',
 	'renameuser-renamed-notice' => 'Este usuário foi renomeado.
-O registro de renomeação é fornecido abaixo para referência.',
+O registro de renomeação é fornecido abaixo, para referência.',
 );
 
 /** Quechua (Runa Simi)
