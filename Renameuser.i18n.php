@@ -1103,6 +1103,7 @@ Protokol pśemjenjowanjow jo dołojce ako referenca pódany.',
  * @author Badseed
  * @author Consta
  * @author Dead3y3
+ * @author Geraki
  * @author Glavkos
  * @author Kiriakos
  * @author MF-Warburg
@@ -1123,6 +1124,7 @@ $messages['el'] = array(
 	'renameuserwarnings' => 'Προειδοποιήσεις:',
 	'renameuserconfirm' => 'Ναι, μετονομάστε τον χρήστη',
 	'renameusersubmit' => 'Καταχώριση',
+	'renameuser-submit-blocklog' => 'Εμφάνιση μητρώου φραγών του χρήστη',
 	'renameusererrordoesnotexist' => 'Ο χρήστης "<nowiki>$1</nowiki>" δεν υπάρχει',
 	'renameusererrorexists' => 'Ο χρήστης "<nowiki>$1</nowiki>" υπάρχει ήδη.',
 	'renameusererrorinvalid' => 'Το όνομα χρήστη "<nowiki>$1</nowiki>" είναι άκυρο.',
@@ -1133,6 +1135,9 @@ $messages['el'] = array(
 	'renameuser-page-moved' => 'Η σελίδα $1 μετακινήθηκε στο $2.',
 	'renameuser-page-unmoved' => 'Η σελίδα $1 δεν μπόρεσε να μετακινηθεί στο $2.',
 	'log-name-renameuser' => 'Αρχείο μετονομασίας χρηστών',
+	'log-description-renameuser' => 'Αυτό είναι ένα αρχείο καταγραφής αλλαγών σε ονόματα χρηστών',
+	'logentry-renameuser-renameuser' => '{{GENDER:$2|Ο|Η}} $1 μετονόμασε {{GENDER:$4|το χρήστη|τη χρήστρια}} $4 ({{PLURAL:$6|$6 επεξεργασία|$6 επεξεργασίες}}) σε $5',
+	'logentry-renameuser-renameuser-legacier' => '{{GENDER:$2|Ο|Η}} $1 μετονόμασε {{GENDER:$4|το χρήστη|τη χρήστρια}} $4 σε $5',
 	'renameuser-move-log' => 'Η σελίδα μετακινήθηκε αυτόματα κατά τη μετονομασία του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
 	'action-renameuser' => 'μετονομασία χρηστών',
 	'right-renameuser' => 'Μετονομασία χρηστών',
