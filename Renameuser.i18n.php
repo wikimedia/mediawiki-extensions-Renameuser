@@ -2543,7 +2543,7 @@ $messages['ku-latn'] = array(
 	'right-renameuser' => 'Navê bikarhêneran biguherîne:',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Chorobek
  */
 $messages['ky'] = array(
