@@ -4200,6 +4200,7 @@ $messages['su'] = array(
  * @author Lejonel
  * @author Lokal Profil
  * @author M.M.S.
+ * @author MagnusA
  * @author Najami
  * @author Per
  */
@@ -4229,7 +4230,7 @@ $messages['sv'] = array(
 	'renameuser-page-unmoved' => 'Sidan $1 kunde inte flyttas till $2.',
 	'log-name-renameuser' => 'Logg över användarnamnsbyten',
 	'log-description-renameuser' => 'Detta är en logg över ändringar av användarnamn',
-	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|omdöpt}} användare $4 ({{PLURAL:$6|$6 redigering|$6  redigeringar}}) till $5',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|bytte namn på}} användare $4 ({{PLURAL:$6|$6 redigering|$6  redigeringar}}) till $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 bytte namn på användare $4 till $5',
 	'renameuser-move-log' => 'Flyttade automatiskt sidan när namnet byttes på användaren "[[User:$1|$1]]" till "[[User:$2|$2]]"',
 	'action-renameuser' => 'ändra namn på användaren',
