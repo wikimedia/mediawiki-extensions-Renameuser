@@ -12,7 +12,7 @@ $messages['en'] = array(
 	'renameuser'          => 'Rename user',
 	'renameuser-linkoncontribs' => 'rename user',
 	'renameuser-linkoncontribs-text' => 'Rename this user',
-	'renameuser-desc'     => 'Adds a [[Special:Renameuser|special page]] to rename a user (need \'\'renameuser\'\' right)',
+	'renameuser-desc'     => 'Adds a special page to rename a user (need <em>renameuser</em> right)',
 	'renameuser-summary' => '', # do not translate or duplicate this message to other languages
 	'renameuserold'       => 'Current username:',
 	'renameusernew'       => 'New username:',
@@ -2129,7 +2129,7 @@ Vinsamlegast farðu til baka og reyndu aftur.',
 	'renameuser-move-log' => 'Færði síðuna sjálfvirkt þegar notendanafni "[[User:$1|$1]]" var breytt í "[[User:$2|$2]]"',
 	'action-renameuser' => 'endurnefna notendur',
 	'right-renameuser' => 'Breyta notandanafni notenda',
-	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt. 
+	'renameuser-renamed-notice' => 'Nafni notandans hefur verið breytt.
 Síðasta færsla notandans úr skrá yfir nafnabreytingar notenda er sýnd hér fyrir neðan til skýringar:',
 );
 
