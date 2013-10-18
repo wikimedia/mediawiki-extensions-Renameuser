@@ -1764,36 +1764,42 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Ansumang
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'renameuser' => 'सदस्यनाम बदलें',
 	'renameuser-linkoncontribs' => 'सदस्यनाम बदलें',
-	'renameuser-linkoncontribs-text' => 'इस सदस्य के नाम बदलें',
-	'renameuser-desc' => "सदस्यनाम बदलें (''सदस्यनाम बदलने अधिकार'' अनिवार्य)",
+	'renameuser-linkoncontribs-text' => 'इस सदस्य का नाम बदलें',
+	'renameuser-desc' => "सदस्यनाम बदलने के लिए एक [[Special:Renameuser|विशेष पृष्ठ]] जोड़ता है (''renameuser'' अधिकार आवश्यक)",
 	'renameuserold' => 'सद्य सदस्यनाम:',
 	'renameusernew' => 'नया सदस्यनाम:',
-	'renameuserreason' => 'नाम बदलने के कारण:', # Fuzzy
-	'renameusermove' => 'सदस्य पृष्ठ और वार्ता पृष्ठ (और उनके सबपेज) नये नाम की ओर भेजें',
-	'renameusersuppress' => 'नूतन नाम को अनुप्रेषित ना करें',
-	'renameuserreserve' => 'पुरानी सदस्यनाम को अवरोध करें',
+	'renameuserreason' => 'कारण:',
+	'renameusermove' => 'सदस्य पृष्ठ और वार्ता पृष्ठ (और उनके उपपृष्ठ) नये नाम पर स्थानांतरित करें',
+	'renameusersuppress' => 'नए नाम को अनुप्रेषित ना करें',
+	'renameuserreserve' => 'पुरान सदस्यनाम भविष्य में प्रयोग से अवरोधित करें',
 	'renameuserwarnings' => 'चेतावनी:',
-	'renameuserconfirm' => 'हाँ, सदस्य के नाम बदलें',
-	'renameusersubmit' => 'भेजें',
-	'renameusererrordoesnotexist' => 'सदस्य "<nowiki>$1</nowiki>" अस्तित्वमें नहीं हैं।',
-	'renameusererrorexists' => 'सदस्य "<nowiki>$1</nowiki>" पहले से अस्तित्वमें हैं।',
-	'renameusererrorinvalid' => 'सदस्यनाम "<nowiki>$1</nowiki>" गलत हैं।',
-	'renameuser-error-request' => 'यह मांग पूरी करने मे समस्या आई हैं।
-कृपया पीछे जाकर फिरसे यत्न करें।',
-	'renameuser-error-same-user' => 'आप सदस्यनाम को उसी नामसे बदल नहीं सकते हैं।',
-	'renameusersuccess' => '"<nowiki>$1</nowiki>" का सदस्यनाम "<nowiki>$2</nowiki>" कर दिया गया हैं।',
-	'renameuser-page-exists' => '$1 यह पन्ना पहले से अस्तित्वमें हैं और इसपर अपने आप पुनर्लेखन नहीं कर सकतें।',
-	'renameuser-page-moved' => '$1 का नाम बदलकर $2 कर दिया गया हैं।',
-	'renameuser-page-unmoved' => '$1 का नाम बदलकर $2 नहीं कर सकें हैं।',
-	'log-name-renameuser' => 'सदस्यनाम बदलाव सूची',
-	'renameuser-move-log' => '"[[User:$1|$1]]" को "[[User:$2|$2]]" करते वक्त अपने आप सदस्यपृष्ठ बदल दिया हैं',
-	'right-renameuser' => 'सदस्योंके नाम बदलें',
+	'renameuserconfirm' => 'हाँ, सदस्य का नाम बदलें',
+	'renameusersubmit' => 'जमा करें',
+	'renameuser-submit-blocklog' => 'सदस्य का ब्लॉक लॉग दिखाएँ',
+	'renameusererrordoesnotexist' => 'सदस्य "<nowiki>$1</nowiki>" मौजूद नहीं है।',
+	'renameusererrorexists' => 'सदस्य "<nowiki>$1</nowiki>" पहले से मौजूद है।',
+	'renameusererrorinvalid' => 'सदस्यनाम "<nowiki>$1</nowiki>" अमान्य है।',
+	'renameuser-error-request' => 'अनुरोध पाने में समस्या आई है।
+कृपया वापिस जाकर पुनः यत्न करें।',
+	'renameuser-error-same-user' => 'आप सदस्यनाम को उसी नाम से नहीं बदल सकते हैं।',
+	'renameusersuccess' => '"<nowiki>$1</nowiki>" का सदस्यनाम "<nowiki>$2</nowiki>" कर दिया गया है।',
+	'renameuser-page-exists' => '$1 पृष्ठ पहले से मौजूद है और स्वचालित रूप से पुनर्लेखित नहीं किया जा सकता।',
+	'renameuser-page-moved' => '$1 का नाम बदलकर $2 कर दिया गया है।',
+	'renameuser-page-unmoved' => '$1 का नाम बदलकर $2 नहीं किया जा सका।',
+	'log-name-renameuser' => 'सदस्यनाम बदलाव लॉग',
+	'log-description-renameuser' => 'यह सदस्य नाम में बदलावों का लॉग है।',
+	'logentry-renameuser-renameuser' => '$1 ने सदस्य $4 ({{PLURAL:$6|$6 सम्पादन}}) का नाम {{GENDER:$2|बदल}} कर $5 कर दिया',
+	'logentry-renameuser-renameuser-legacier' => '$1 ने सदस्य $4 का नाम बदल कर $5 कर दिया',
+	'renameuser-move-log' => 'सदस्य "[[User:$1|$1]]" का नाम "[[User:$2|$2]]" करते समय पृष्ठ स्वचालित रूप से स्थानांतरित कर दिया गया',
+	'action-renameuser' => 'सदस्यों के नाम बदलने',
+	'right-renameuser' => 'सदस्यों के नाम बदलें',
 	'renameuser-renamed-notice' => 'इस सदस्य का नाम बदल दिया गया है।
-संदर्भ के लिए नीचे नाम बदलने का चिट्ठा है।',
+संदर्भ के लिए नीचे नाम बदलने का लॉग है।',
 );
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
