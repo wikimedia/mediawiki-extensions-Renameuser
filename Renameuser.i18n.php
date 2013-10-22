@@ -1337,7 +1337,7 @@ $messages['fa'] = array(
 	'renameuser-submit-blocklog' => 'نمایش سیاههٔ بستن کاربر',
 	'renameusererrordoesnotexist' => 'نام کاربری «<nowiki>$1</nowiki>» وجود ندارد',
 	'renameusererrorexists' => 'نام کاربری «<nowiki>$1</nowiki>» استفاده شده‌است',
-	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» غیر مجاز است',
+	'renameusererrorinvalid' => 'نام کاربری «<nowiki>$1</nowiki>» نامجاز است.',
 	'renameuser-error-request' => 'در دریافت درخواست مشکلی پیش آمد. لطفاً به صفحهٔ قبل بازگردید و دوباره تلاش کنید.',
 	'renameuser-error-same-user' => 'شما نمی‌توانید نام یک کاربر را به همان نام قبلی‌اش تغییر دهید.',
 	'renameusersuccess' => 'نام کاربر «<nowiki>$1</nowiki>» به «<nowiki>$2</nowiki>» تغییر یافت.',
@@ -2362,6 +2362,7 @@ $messages['kk-arab'] = array(
 );
 
 /** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
  */
 $messages['kk-cyrl'] = array(
 	'renameuser' => 'Қатысушыны қайта атау',
@@ -2377,7 +2378,7 @@ $messages['kk-cyrl'] = array(
 	'renameuser-page-exists' => '$1 деген бет бар түге, және өздік түрде оның үстіне ештеңе жазылмайды.',
 	'renameuser-page-moved' => '$1 деген бет $2 деген бетке жылжытылды.',
 	'renameuser-page-unmoved' => '$1 деген бет $2 деген бетке жылжытылмады.',
-	'log-name-renameuser' => 'Қатысушыны қайта атау журналы',
+	'log-name-renameuser' => 'Қатысушыны есімін өзгеру журналы',
 	'renameuser-move-log' => '«[[User:$1|$1]]» деген қатысушы атын «[[User:$2|$2]]» дегенге ауысқанда бет өздік түрде жылжытылды',
 );
 
