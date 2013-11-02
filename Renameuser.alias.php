@@ -64,7 +64,7 @@ $specialPageAliases['ce'] = array(
 	'Renameuser' => array( 'Декъашхочун_цӀе_хийца' ),
 );
 
-/** Czech (česky) */
+/** Czech (čeština) */
 $specialPageAliases['cs'] = array(
 	'Renameuser' => array( 'Přejmenovat_uživatele' ),
 );
