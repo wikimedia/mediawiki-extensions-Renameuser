@@ -4836,6 +4836,7 @@ $messages['yo'] = array(
 );
 
 /** Cantonese (粵語)
+ * @author Liuxinyu970226
  */
 $messages['yue'] = array(
 	'renameuser' => '改用戶名',
