@@ -1022,6 +1022,7 @@ Zur Information folgt das Benutzernamenänderungs-Logbuch.',
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Gorizon
  * @author Mirzali
  * @author Xoser
  */
@@ -1036,7 +1037,7 @@ $messages['diq'] = array(
 	'renameusermove' => 'nameyê karberan u pelê werêaameyişan bıkırışi nameyo newe',
 	'renameusersuppress' => 'Name de newi re hetenayışo newe vıraştış',
 	'renameuserreserve' => 'nameyê karberi yo verini bloke bıker.',
-	'renameuserwarnings' => 'hişyariyi',
+	'renameuserwarnings' => 'İğtari:',
 	'renameuserconfirm' => 'bele karberi newe ra name bıker',
 	'renameusersubmit' => 'bierşawê/biruşnê',
 	'renameuser-submit-blocklog' => 'Rocekanê bloqandê karbari bıvin',
