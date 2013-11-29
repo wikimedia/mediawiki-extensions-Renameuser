@@ -2682,6 +2682,13 @@ $messages['li'] = array(
 Relevante regels oet 't logbook staon hieónger.",
 );
 
+/** لوری (لوری)
+ * @author Mogoeilor
+ */
+$messages['lrc'] = array(
+	'renameuserreason' => 'دلیل:',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
