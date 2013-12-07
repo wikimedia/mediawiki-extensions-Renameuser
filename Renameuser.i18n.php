@@ -824,7 +824,7 @@ $messages['crh-latn'] = array(
 	'log-name-renameuser' => 'Qullanıcı adı deñişikligi jurnalı',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Danny B.
  * @author Li-sung
  * @author Martin Kozák
@@ -866,7 +866,7 @@ $messages['cs'] = array(
 Pro přehled je níže zobrazen výpis z knihy přejmenování uživatelů.',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author Svetko
  * @author ОйЛ
  */
