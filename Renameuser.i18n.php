@@ -4542,6 +4542,7 @@ $messages['to'] = array(
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Karduelis
+ * @author Marmase
  * @author Runningfridgesrule
  * @author Uğur Başak
  * @author Vito Genovese
@@ -4553,7 +4554,7 @@ $messages['tr'] = array(
 	'renameuser-desc' => "Kullanıcıyı yeniden adlandırmak için bir [[Special:Renameuser|özel sayfa]] ekler (''kullanıcıyıyenidenadlandır'' hakkı gerekir)",
 	'renameuserold' => 'Şu anda ki kullanıcı adı:',
 	'renameusernew' => 'Yeni kullanıcı adı:',
-	'renameuserreason' => 'Neden:', # Fuzzy
+	'renameuserreason' => 'Neden:',
 	'renameusermove' => 'Kullanıcı ve tartışma sayfalarını (ve alt sayfalarını) yeni isme taşı',
 	'renameusersuppress' => 'Yeni ada yönlendirmeler oluşturma',
 	'renameuserreserve' => 'Eski kullanıcı adını ilerdeki kullanımlar için engelle',

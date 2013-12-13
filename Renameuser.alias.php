@@ -131,7 +131,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
-	'Renameuser' => array( 'Renomear_o_usuario' ),
+	'Renameuser' => array( 'Renomear_o_usuario', 'Renomear_usuario', 'Renomear_a_usuaria', 'Renomear_usuaria' ),
 );
 
 /** Swiss German (Alemannisch) */
