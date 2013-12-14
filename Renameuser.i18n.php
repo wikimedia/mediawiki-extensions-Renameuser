@@ -3467,9 +3467,12 @@ $messages['ps'] = array(
 	'renameuserold' => 'اوسنی کارن-نوم:',
 	'renameusernew' => 'نوی کارن-نوم:',
 	'renameuserreason' => 'سبب:',
+	'renameusermove' => 'د کارن او د خبرو اترو مخونه (او د هغوی څېرمه مخونه) نوي نوم ته ورلېږدول',
+	'renameusersuppress' => 'نوي نوم ته مخ گرځونی مه جوړوه',
 	'renameuserwarnings' => 'ګواښنې:',
 	'renameuserconfirm' => 'هو، کارن-نوم بدلوم',
 	'renameusersubmit' => 'سپارل',
+	'renameuser-submit-blocklog' => 'د کارن بنديز يادښت ښکاره کول',
 	'renameusererrordoesnotexist' => 'د "<nowiki>$1</nowiki>" په نامه کوم کارن نه شته.',
 	'renameusererrorexists' => 'د "<nowiki>$1</nowiki>" په نامه يو کارن له پخوا نه شته.',
 	'renameusererrorinvalid' => 'د "<nowiki>$1</nowiki>" کارن نوم سم نه دی.',
@@ -3599,6 +3602,13 @@ $messages['qu'] = array(
 	'right-renameuser' => 'Ruraqpa sutinkunata hukchay',
 	'renameuser-renamed-notice' => "Kay ruraqpa sutinqa hukchasqañam.
 Kay qatiqpiqa hukchay hallch'atam rikunki.",
+);
+
+/** Romansh (rumantsch)
+ * @author Kazu89
+ */
+$messages['rm'] = array(
+	'log-name-renameuser' => "Protocol da midadas da num d'utilisader",
 );
 
 /** Romani (Romani)
