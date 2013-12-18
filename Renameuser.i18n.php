@@ -1723,6 +1723,7 @@ $messages['gu'] = array(
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Guycn2
  * @author Ofekalef
  * @author Rotem Liss
  * @author Rotemliss
@@ -1748,7 +1749,7 @@ $messages['he'] = array(
 	'renameusererrorexists' => 'המשתמש "<nowiki>$1</nowiki>" כבר קיים.',
 	'renameusererrorinvalid' => 'שם המשתמש "<nowiki>$1</nowiki>" אינו תקין.',
 	'renameuser-error-request' => 'הייתה בעיה בקבלת הבקשה. אנא חזרו לדף הקודם ונסו שנית.',
-	'renameuser-error-same-user' => 'אינכם יכולים לשנות את שם המשתמש לשם זהה לשמו הישן.',
+	'renameuser-error-same-user' => 'לא ניתן לשנות את שם המשתמש לשם זהה לשמו הישן.',
 	'renameusersuccess' => 'שם המשתמש של "<nowiki>$1</nowiki>" שונה ל"<nowiki>$2</nowiki>".',
 	'renameuser-page-exists' => 'הדף $1 כבר קיים ולא ניתן לדרוס אותו אוטומטית.',
 	'renameuser-page-moved' => 'הדף $1 הועבר לשם $2.',
