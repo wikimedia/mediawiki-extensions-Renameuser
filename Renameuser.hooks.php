@@ -14,8 +14,9 @@ class RenameuserHooks {
 		if ( ($title->getNamespace() == NS_USER || $title->getNamespace() == NS_USER_TALK ) && ($oldUser && $oldUser->isAnon() )) {
 			// Get the title for the base userpage
 			$page = Title::makeTitle( NS_USER, str_replace( ' ', '_', $title->getBaseText() ) )->getPrefixedDBkey();
+			$out = $article->getContext()->getOutput();
 			LogEventsList::showLogExtract(
-				$article->getContext()->getOutput(),
+				$out,
 				'renameuser',
 				$page,
 				'',
