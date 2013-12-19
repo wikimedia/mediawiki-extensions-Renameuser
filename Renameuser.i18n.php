@@ -1760,7 +1760,7 @@ $messages['he'] = array(
 	'logentry-renameuser-renameuser-legacier' => '$1 {{GENDER:$2|שינה|שינתה}} את שם המשתמש $4 ל{{GRAMMAR:תחילית|$5}}',
 	'renameuser-move-log' => 'העברה אוטומטית בעקבות שינוי שם המשתמש "[[User:$1|$1]]" ל־"[[User:$2|$2]]"',
 	'action-renameuser' => 'לשנות שמות משתמש',
-	'right-renameuser' => 'שינוי שמות משתמש',
+	'right-renameuser' => 'שינוי שמות משתמשים',
 	'renameuser-renamed-notice' => 'שם המשתמש הזה שונה.
 יומן שינויי שמות המשתמש מוצג להלן.',
 );
