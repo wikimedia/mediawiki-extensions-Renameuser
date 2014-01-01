@@ -2607,6 +2607,13 @@ $messages['la'] = array(
 Commodule notatio renominationum usoris subter datur.',
 );
 
+/** Ladino (Ladino)
+ * @author Menachem.Moreira
+ */
+$messages['lad'] = array(
+	'renameuserreason' => 'Razon:',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
