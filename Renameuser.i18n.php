@@ -2611,7 +2611,9 @@ Commodule notatio renominationum usoris subter datur.',
  * @author Menachem.Moreira
  */
 $messages['lad'] = array(
+	'renameusernew' => 'Nombre de usuario muevo:',
 	'renameuserreason' => 'Razon:',
+	'renameuserwarnings' => 'Avisos:',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -4670,9 +4672,10 @@ $messages['ur'] = array(
 
 /** Uzbek (oʻzbekcha)
  * @author CoderSI
+ * @author Sociologist
  */
 $messages['uz'] = array(
-	'log-name-renameuser' => 'Ishtirokchilarni qayta nomlash qaydlari',
+	'log-name-renameuser' => 'Foydalanuvchilarni qayta nomlash qaydlari',
 );
 
 /** vèneto (vèneto)
