@@ -2609,9 +2609,10 @@ Commodule notatio renominationum usoris subter datur.',
 
 /** Ladino (Ladino)
  * @author Menachem.Moreira
+ * @author Universal Life
  */
 $messages['lad'] = array(
-	'renameusernew' => 'Nombre de usuario muevo:',
+	'renameusernew' => 'Nombre de kullaneador muevo:',
 	'renameuserreason' => 'Razon:',
 	'renameuserwarnings' => 'Avisos:',
 );
