@@ -2700,10 +2700,16 @@ Relevante regels oet 't logbook staon hieónger.",
 );
 
 /** لوری (لوری)
+ * @author Bonevarluri
  * @author Mogoeilor
  */
 $messages['lrc'] = array(
 	'renameuserreason' => 'دلیل:',
+	'renameuser-submit-blocklog' => 'قلف پهرستنومه سی کارور نشو بیه',
+	'log-name-renameuser' => 'پهرستنومه دواره نوم دئن د کارور',
+	'log-description-renameuser' => 'یه پهرستنومه آلشت دئن نوم کاروریا هئ.',
+	'renameuser-renamed-notice' => 'ای کارور یه گل نوم هنی وش دئه بیه.
+پهرستنومه نوم هنی دئن وا سرچشمه زیر دروس بیه.',
 );
 
 /** Lithuanian (lietuvių)
@@ -3925,10 +3931,23 @@ $messages['sgs'] = array(
 );
 
 /** Serbo-Croatian (srpskohrvatski / српскохрватски)
+ * @author Kolega2357
  * @author OC Ripper
  */
 $messages['sh'] = array(
+	'renameuser' => 'Promijeni ime korisnika',
+	'renameuserold' => 'Trenutno korisničko ime:',
+	'renameusernew' => 'Novo korisničko ime:',
+	'renameusermove' => 'Premjesti korisnikove stranice (glavnu, stranicu za razgovor i podstranice, ako postoje) na novo ime',
 	'renameusersubmit' => 'Unesi',
+	'renameusererrordoesnotexist' => 'Korisničko ime "<nowiki>$1</nowiki>" ne postoji',
+	'renameusererrorexists' => 'Korisničko ime "<nowiki>$1</nowiki>" već postoji',
+	'renameusererrorinvalid' => 'Korisničko ime "<nowiki>$1</nowiki>" ne valja',
+	'renameusersuccess' => 'Korisnik "<nowiki>$1</nowiki>" je preimenovan u "<nowiki>$2</nowiki>"',
+	'renameuser-page-exists' => 'Stranica $1 već postoji i ne može se automatski presnimiti.',
+	'renameuser-page-moved' => 'Stranica $1 je premeštena na $2.',
+	'renameuser-page-unmoved' => 'Strana $1 se ne može premestiti na $2.',
+	'renameuser-move-log' => 'Automatski premeštena stranica dok je korisnik "[[User:$1|$1]]" preimenovan u "[[User:$2|$2]]"',
 );
 
 /** Sinhala (සිංහල)
