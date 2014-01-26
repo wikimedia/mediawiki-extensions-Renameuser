@@ -112,6 +112,7 @@ class RenameuserSQL {
 
 		if ( !$dbw->affectedRows() && $this->checkIfUserExists ) {
 			$dbw->rollback();
+			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
