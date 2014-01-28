@@ -2706,6 +2706,8 @@ Relevante regels oet 't logbook staon hieónger.",
 $messages['lrc'] = array(
 	'renameuserreason' => 'دلیل:',
 	'renameuser-submit-blocklog' => 'قلف پهرستنومه سی کارور نشو بیه',
+	'renameuser-page-moved' => 'بلگه $1 د $2 جا وه جا بیه',
+	'renameuser-page-unmoved' => 'نبوئه بلگه $1 د $2 جا وه جا بوئه',
 	'log-name-renameuser' => 'پهرستنومه دواره نوم دئن د کارور',
 	'log-description-renameuser' => 'یه پهرستنومه آلشت دئن نوم کاروریا هئ.',
 	'renameuser-renamed-notice' => 'ای کارور یه گل نوم هنی وش دئه بیه.
