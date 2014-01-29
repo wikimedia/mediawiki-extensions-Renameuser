@@ -53,4 +53,14 @@ class RenameuserHooks {
 		}
 		return true;
 	}
+
+	/**
+	 * So users can just type in a username for target and it'll work
+	 * @param array $types
+	 * @return bool
+	 */
+	public static function onGetLogTypesOnUser( array &$types ) {
+		$types[] = 'renameuser';
+		return true;
+	}
 }
