@@ -4167,7 +4167,7 @@ $messages['sr-ec'] = array(
 	'renameuser-submit-blocklog' => 'Дневник блокирања за корисника',
 	'renameusererrordoesnotexist' => 'Корисник „<nowiki>$1</nowiki>“ не постоји.',
 	'renameusererrorexists' => 'Корисник „<nowiki>$1</nowiki>“ већ постоји.',
-	'renameusererrorinvalid' => 'Погрешно корисничко име: "<nowiki>$1</nowiki>"',
+	'renameusererrorinvalid' => 'Погрешно корисничко име: „<nowiki>$1</nowiki>“',
 	'renameuser-error-request' => 'Дошло је до проблема при примању захтева.
 Вратите се назад и покушајте поново.',
 	'renameuser-error-same-user' => 'Не можете преименовати корисника у исто име.',
