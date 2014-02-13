@@ -981,6 +981,7 @@ Til information er omdøbningsloggen vist nedenfor.',
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
+ * @author Purodha
  * @author Raimond Spekking
  * @author Spacebirdy
  * @author The Evil IP address
@@ -990,7 +991,7 @@ $messages['de'] = array(
 	'renameuser' => 'Benutzer umbenennen',
 	'renameuser-linkoncontribs' => 'Benutzer umbenennen',
 	'renameuser-linkoncontribs-text' => 'Diesen Benutzer umbenennen',
-	'renameuser-desc' => 'Ergänzt eine [[Special:Renameuser|Spezialseite]] zum Ändern eines Benutzernamens',
+	'renameuser-desc' => '[[Special:Renameuser|Spezialseite]] zum Ändern eines Benutzernamens (benötigt die "renameuser"-Berechtigung)',
 	'renameuserold' => 'Bisheriger Benutzername:',
 	'renameusernew' => 'Neuer Benutzername:',
 	'renameuserreason' => 'Grund:',
