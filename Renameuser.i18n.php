@@ -4921,6 +4921,7 @@ $messages['yo'] = array(
 );
 
 /** Cantonese (粵語)
+ * @author Antonytse
  * @author Liuxinyu970226
  */
 $messages['yue'] = array(
@@ -4928,7 +4929,7 @@ $messages['yue'] = array(
 	'renameuser-desc' => "幫用戶改名 (需要 ''renameuser'' 權限)",
 	'renameuserold' => '現時嘅用戶名:',
 	'renameusernew' => '新嘅用戶名:',
-	'renameuserreason' => '改名嘅原因:', # Fuzzy
+	'renameuserreason' => '原因：',
 	'renameusermove' => '搬用戶頁同埋佢嘅對話頁（同埋佢哋嘅細頁）到新名',
 	'renameuserwarnings' => '警告:',
 	'renameuserconfirm' => '係，改呢個用戶名',
