@@ -797,6 +797,7 @@ $messages['ce'] = array(
 	'renameuser-page-moved' => 'АгӀона $1 цӀе хийцина → $2.',
 	'log-name-renameuser' => 'Декъашхойн цӀераш хийцар долу тептар',
 	'log-description-renameuser' => 'ХӀокху тептар чохь гойту дӀабазбелла декъашхойн цӀераш хийцар.',
+	'logentry-renameuser-renameuser' => '$1 {{GENDER:$2|цӀе хийцина}} декъашхочун $4 ({{PLURAL:$6|$6 нисдар}}) → $5',
 	'logentry-renameuser-renameuser-legacier' => '$1 $4 декъашхочун цӀе хийцина → $5',
 	'renameuser-move-log' => 'Автоматически декъашхочун цӀе хийцина дела «[[User:$1|$1]]» → «[[User:$2|$2]]»',
 	'action-renameuser' => 'декъашхойн цӀераш хийцар',
