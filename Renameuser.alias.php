@@ -316,7 +316,7 @@ $specialPageAliases['sq'] = array(
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $specialPageAliases['sr-ec'] = array(
-	'Renameuser' => array( 'Преименуј_корисника' ),
+	'Renameuser' => array( 'ПреименујКорисника', 'Преименуј_корисника' ),
 );
 
 /** Swedish (svenska) */
