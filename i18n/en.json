@@ -5,7 +5,7 @@
     "renameuser": "Rename user",
     "renameuser-linkoncontribs": "rename user",
     "renameuser-linkoncontribs-text": "Rename this user",
-    "renameuser-desc": "Adds a [[Special:Renameuser|special page]] to rename a user (need ''renameuser'' right)",
+    "renameuser-desc": "Adds a [[Special:RenameUser|special page]] to rename a user (need ''renameuser'' right)",
     "renameuser-summary": "",
     "renameuserold": "Current username:",
     "renameusernew": "New username:",
