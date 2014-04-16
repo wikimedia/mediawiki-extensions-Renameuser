@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Schläsinger"
-        ]
-    },
-    "renameuserold": "Bisheriger Benutzernoame:",
-    "renameusernew": "Neuer Benutzernoame:",
-    "renameuserreason": "Grund:"
+	"@metadata": {
+		"authors": [
+			"Schläsinger"
+		]
+	},
+	"renameuserold": "Bisheriger Benutzernoame:",
+	"renameusernew": "Neuer Benutzernoame:",
+	"renameuserreason": "Grund:"
 }
