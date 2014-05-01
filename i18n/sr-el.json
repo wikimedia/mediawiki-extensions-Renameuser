@@ -24,7 +24,7 @@
 	"renameuser-submit-blocklog": "Dnevnik blokiranja za korisnika",
 	"renameusererrordoesnotexist": "Korisnik \"<nowiki>$1</nowiki>\" ne postoji",
 	"renameusererrorexists": "Korisnik \"<nowiki>$1</nowiki>\" već postoji",
-	"renameusererrorinvalid": "Pogrešno korisničko ime: \"<nowiki>$1</nowiki>\"",
+	"renameusererrorinvalid": "Pogrešno korisničko ime: „<nowiki>$1</nowiki>“",
 	"renameuser-error-request": "Javio se problem prilikom prihvatanja zahteva. Idi nazad i pokušaj ponovo.",
 	"renameuser-error-same-user": "Ne možeš preimenovati korisničko ime u isto kao i prethodno.",
 	"renameusersuccess": "Korisnik „<nowiki>$1</nowiki>“ je preimenovan na „<nowiki>$2</nowiki>“",
