@@ -156,7 +156,7 @@ $specialPageAliases['hr'] = array(
 
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
-	'Renameuser' => array( 'Wužiwarja přemjenować' ),
+	'Renameuser' => array( 'Wužiwarja_přemjenować' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
