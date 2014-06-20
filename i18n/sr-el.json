@@ -22,7 +22,7 @@
 	"renameuserconfirm": "Da, preimenuj korisničko ime.",
 	"renameusersubmit": "Prihvati",
 	"renameuser-submit-blocklog": "Dnevnik blokiranja za korisnika",
-	"renameusererrordoesnotexist": "Korisnik \"<nowiki>$1</nowiki>\" ne postoji",
+	"renameusererrordoesnotexist": "Korisnik „<nowiki>$1</nowiki>“ ne postoji.",
 	"renameusererrorexists": "Korisnik \"<nowiki>$1</nowiki>\" već postoji",
 	"renameusererrorinvalid": "Pogrešno korisničko ime: „<nowiki>$1</nowiki>“",
 	"renameuser-error-request": "Javio se problem prilikom prihvatanja zahteva. Idi nazad i pokušaj ponovo.",
