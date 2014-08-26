@@ -16,7 +16,7 @@
 	"renameuser-desc": "Mahdollistaa käyttäjän uudelleennimeämisen (vaatii ''renameuser''-oikeudet).",
 	"renameuserold": "Nykyinen tunnus",
 	"renameusernew": "Uusi tunnus",
-	"renameuserreason": "Syy",
+	"renameuserreason": "Syy:",
 	"renameusermove": "Siirrä käyttäjä- ja keskustelusivut alasivuineen uudelle nimelle",
 	"renameusersuppress": "Älä luo ohjauksia uuteen nimeen",
 	"renameuserreserve": "Estä entinen käyttäjänimi tulevalta käytöltä",
