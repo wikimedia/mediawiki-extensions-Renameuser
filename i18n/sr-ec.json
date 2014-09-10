@@ -36,6 +36,7 @@
 	"log-name-renameuser": "Дневник преименовања корисника",
 	"log-description-renameuser": "Испод је списак преименованих корисника.",
 	"logentry-renameuser-renameuser": "$1 је {{GENDER:$2|преименовао|преименовала}} корисника $4 ({{PLURAL:$6|$6 измену|$6 измена}}) у $5",
+	"logentry-renameuser-renameuser-legacier": "$1 је преименовао корисника $4 у $5",
 	"renameuser-move-log": "Аутоматско премештање странице због преименовања корисника „[[User:$1|$1]]“ у „[[User:$2|$2]]“",
 	"action-renameuser": "преименовање корисника",
 	"right-renameuser": "преименовање корисничких имена",
