@@ -33,7 +33,7 @@
 	"renameuser-page-exists": "Sivu $1 on jo olemassa eikä sitä korvattu.",
 	"renameuser-page-moved": "Sivu $1 siirrettiin nimelle $2.",
 	"renameuser-page-unmoved": "Sivun $1 siirtäminen nimelle $2 ei onnistunut.",
-	"log-name-renameuser": "Tunnusten vaihdot",
+	"log-name-renameuser": "Käyttäjänimien vaihtojen loki",
 	"log-description-renameuser": "Tämä on loki käyttäjätunnuksien vaihdoista.",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|nimesi}} käyttäjän $4 ({{PLURAL:$6|$6 muokkaus|$6 muokkausta}}) uudelle nimelle $5",
 	"logentry-renameuser-renameuser-legacier": "$1 nimesi käyttäjän $4 uudelle nimelle $5",
