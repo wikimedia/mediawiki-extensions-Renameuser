@@ -9,7 +9,7 @@
 	"renameuser": "Преименувај корисник",
 	"renameuser-linkoncontribs": "преименувај корисник",
 	"renameuser-linkoncontribs-text": "Преименувај го корисников",
-	"renameuser-desc": "Додава [[Special:RenameUser|специјална страница]] за преименување на корисник (бара право на ''renameuser'')",
+	"renameuser-desc": "Додава [[Special:RenameUser|службена страница]] за преименување на корисник (бара право на ''renameuser'')",
 	"renameuserold": "Сегашно корисничко име:",
 	"renameusernew": "Ново корисничко име:",
 	"renameuserreason": "Причина:",
