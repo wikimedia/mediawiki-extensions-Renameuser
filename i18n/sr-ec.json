@@ -22,7 +22,7 @@
 	"renameuserreserve": "Блокирај старо корисничко име за даљу употребу",
 	"renameuserwarnings": "Упозорења:",
 	"renameuserconfirm": "Да, преименуј корисника",
-	"renameusersubmit": "Прихвати",
+	"renameusersubmit": "Пошаљи",
 	"renameuser-submit-blocklog": "Дневник блокирања за корисника",
 	"renameusererrordoesnotexist": "Корисник „<nowiki>$1</nowiki>“ не постоји.",
 	"renameusererrorexists": "Корисник „<nowiki>$1</nowiki>“ већ постоји.",

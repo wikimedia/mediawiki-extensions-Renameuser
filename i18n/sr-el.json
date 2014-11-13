@@ -20,7 +20,7 @@
 	"renameuserreserve": "Blokiraj staro korisničko ime za dalju upotrebu",
 	"renameuserwarnings": "Upozorenja:",
 	"renameuserconfirm": "Da, preimenuj korisničko ime.",
-	"renameusersubmit": "Prihvati",
+	"renameusersubmit": "Pošalji",
 	"renameuser-submit-blocklog": "Dnevnik blokiranja za korisnika",
 	"renameusererrordoesnotexist": "Korisnik „<nowiki>$1</nowiki>“ ne postoji.",
 	"renameusererrorexists": "Korisnik \"<nowiki>$1</nowiki>\" već postoji",
