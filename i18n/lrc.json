@@ -18,6 +18,7 @@
 	"renameusererrordoesnotexist": "کاریار \"<nowiki>$1</nowiki>\" وجود ناره.",
 	"renameusererrorexists": "کاریار \"<nowiki>$1</nowiki>\" ایسه هئیش.",
 	"renameusererrorinvalid": "کاریار\"<nowiki>$1</nowiki>\" معتور نئ.",
+	"renameuser-page-exists": "بلگه $1 ایسنی هئیش و نبوئه خودانجومن فره نویس با.",
 	"renameuser-page-moved": "بلگه $1 د $2 جا وه جا بیه",
 	"renameuser-page-unmoved": "نبوئه بلگه $1 د $2 جا وه جا بوئه",
 	"log-name-renameuser": "پهرستنومه دواره نوم دئن د کارور",
