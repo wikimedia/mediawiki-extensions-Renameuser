@@ -17,7 +17,7 @@
 	"renameuser": "重新命名使用者",
 	"renameuser-linkoncontribs": "重新命名使用者",
 	"renameuser-linkoncontribs-text": "重新命名此使用者",
-	"renameuser-desc": "加入用來重新命名使用者的[[Special:RenameUser|特殊頁面]] （需要開啟 ''renameuser'' 權限）",
+	"renameuser-desc": "加入用來重新命名使用者的[[Special:RenameUser|特殊頁面]] (需要開啟 ''renameuser'' 權限)",
 	"renameuserold": "目前的使用者名稱：",
 	"renameusernew": "新的使用者名稱：",
 	"renameuserreason": "原因：",
