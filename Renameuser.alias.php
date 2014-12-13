@@ -354,6 +354,11 @@ $specialPageAliases['vi'] = array(
 	'Renameuser' => array( 'Đổi_tên_thành_viên', 'Đổi_tên_người_dùng' ),
 );
 
+/** Chinese (中文) */
+$specialPageAliases['zh'] = array(
+	'Renameuser' => array( '重命名用户', '重新命名用户', '重新命名用戶', '重新命名使用者' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Renameuser' => array( '重命名用户' ),
@@ -361,5 +366,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'Renameuser' => array( '重命名使用者' ),
+	'Renameuser' => array( '重新命名使用者' ),
 );
