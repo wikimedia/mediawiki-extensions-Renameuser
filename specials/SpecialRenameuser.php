@@ -54,7 +54,7 @@ class SpecialRenameuser extends SpecialPage {
 
 		$warnings = array();
 		if ( $oun && $nun && !$request->getCheck( 'confirmaction' )  ) {
-			wfRunHooks( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
+			Hooks::run( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
 		}
 
 		$out->addHTML(
@@ -263,7 +263,7 @@ class SpecialRenameuser extends SpecialPage {
 		$contribs = $olduser->getEditCount();
 
 		// Give other affected extensions a chance to validate or abort
-		if ( !wfRunHooks( 'RenameUserAbort', array( $uid, $oldusername->getText(), $newusername->getText() ) ) ) {
+		if ( !Hooks::run( 'RenameUserAbort', array( $uid, $oldusername->getText(), $newusername->getText() ) ) ) {
 			return;
 		}
 

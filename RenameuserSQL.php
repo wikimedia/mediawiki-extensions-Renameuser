@@ -97,7 +97,7 @@ class RenameuserSQL {
 			$this->tables['recentchanges'] = array( 'rc_user_text', 'rc_user' );
 		}
 
-		wfRunHooks( 'RenameUserSQL', array( $this ) );
+		Hooks::run( 'RenameUserSQL', array( $this ) );
 	}
 
 	protected function debug( $msg ) {
@@ -117,7 +117,7 @@ class RenameuserSQL {
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin();
-		wfRunHooks( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
+		Hooks::run( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
 
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
@@ -257,7 +257,7 @@ class RenameuserSQL {
 		// Clear caches and inform authentication plugins
 		$user = User::newFromId( $this->uid );
 		$wgAuth->updateExternalDB( $user );
-		wfRunHooks( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
+		Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
 		wfProfileOut( __METHOD__ );
