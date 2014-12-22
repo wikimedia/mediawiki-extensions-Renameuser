@@ -179,8 +179,8 @@ class RenameuserSQL {
 		// Update this users block/rights log. Ideally, the logs would be historical,
 		// but it is really annoying when users have "clean" block logs by virtue of
 		// being renamed, which makes admin tasks more of a pain...
-		$oldTitle = Title::makeTitle( NS_USER, $this->old );
-		$newTitle = Title::makeTitle( NS_USER, $this->new );
+		$oldTitleValue = new TitleValue( NS_USER, $this->old );
+		$newTitleValue = new TitleValue( NS_USER, $this->new );
 		$this->debug( "Updating logging table for {$this->old} to {$this->new}" );
 		if ( is_callable( 'SpecialLog::getLogTypesOnUser' ) ) { // 1.25+
 			$logTypesOnUser = SpecialLog::getLogTypesOnUser();
@@ -189,10 +189,10 @@ class RenameuserSQL {
 			$logTypesOnUser = array( 'block', 'rights' );
 		}
 		$dbw->update( 'logging',
-			array( 'log_title' => $newTitle->getDBkey() ),
+			array( 'log_title' => $newTitleValue->getDBkey() ),
 			array( 'log_type' => $logTypesOnUser,
 				'log_namespace' => NS_USER,
-				'log_title' => $oldTitle->getDBkey() ),
+				'log_title' => $oldTitleValue->getDBkey() ),
 			__METHOD__ );
 		// Do immediate updates!
 		foreach ( $this->tables as $table => $fieldSet ) {
@@ -244,6 +244,7 @@ class RenameuserSQL {
 			$jobParams['maxTimestamp'] = '0';
 			$jobParams['count'] = 0;
 
+			$oldTitle = Title::newFromTitleValue( $oldTitleValue );
 			// Insert jobs into queue!
 			while ( true ) {
 				$row = $dbw->fetchObject( $res );
