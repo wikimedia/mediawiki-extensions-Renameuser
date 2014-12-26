@@ -46,6 +46,13 @@ class RenameuserSQL {
 	public $checkIfUserExists;
 
 	/**
+	 * A prefix to use in all debug log messages
+	 *
+	 * @var string
+	 */
+	private $debugPrefix = '';
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
@@ -62,6 +69,10 @@ class RenameuserSQL {
 
 		if ( isset ( $options['checkIfUserExists'] ) ) {
 			$this->checkIfUserExists = $options['checkIfUserExists'];
+		}
+
+		if ( isset( $options['debugPrefix'] ) ) {
+			$this->debugPrefix = $options['debugPrefix'];
 		}
 
 		$this->tables = array(); // Immediate updates
@@ -89,6 +100,13 @@ class RenameuserSQL {
 		wfRunHooks( 'RenameUserSQL', array( $this ) );
 	}
 
+	protected function debug( $msg ) {
+		if ( $this->debugPrefix ) {
+			$msg = "{$this->debugPrefix}: $msg";
+		}
+		wfDebugLog( 'Renameuser', $msg );
+	}
+
 	/**
 	 * Do the rename operation
 	 */
@@ -104,6 +122,7 @@ class RenameuserSQL {
 		// Rename and touch the user before re-attributing edits,
 		// this avoids users still being logged in and making new edits while
 		// being renamed, which leaves edits at the old name.
+		$this->debug( "Starting rename of {$this->old} to {$this->new}" );
 		$dbw->update( 'user',
 			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
 			array( 'user_name' => $this->old, 'user_id' => $this->uid ),
@@ -112,6 +131,7 @@ class RenameuserSQL {
 
 		if ( !$dbw->affectedRows() && $this->checkIfUserExists ) {
 			$dbw->rollback();
+			$this->debug( "User {$this->old} does not exist, bailing out" );
 			wfProfileOut( __METHOD__ );
 			return false;
 		}
@@ -135,6 +155,7 @@ class RenameuserSQL {
 		// being renamed, which makes admin tasks more of a pain...
 		$oldTitle = Title::makeTitle( NS_USER, $this->old );
 		$newTitle = Title::makeTitle( NS_USER, $this->new );
+		$this->debug( "Updating logging table for {$this->old} to {$this->new}" );
 		$dbw->update( 'logging',
 			array( 'log_title' => $newTitle->getDBkey() ),
 			array( 'log_type' => array( 'block', 'rights' ),
@@ -221,8 +242,10 @@ class RenameuserSQL {
 			$dbw->freeResult( $res );
 		}
 
-		if ( count( $jobs ) > 0 ) {
+		$count = count( $jobs );
+		if ( $count > 0 ) {
 			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC ); // don't commit yet
+			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
 		}
 
 		// Commit the transaction
@@ -235,6 +258,7 @@ class RenameuserSQL {
 		$user = User::newFromId( $this->uid );
 		$wgAuth->updateExternalDB( $user );
 		wfRunHooks( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
+		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
 		wfProfileOut( __METHOD__ );
 		return true;
