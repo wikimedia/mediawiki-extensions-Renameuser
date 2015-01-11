@@ -68,4 +68,33 @@ class RenameuserLogFormatter extends LogFormatter {
 
 		return $key;
 	}
+
+	public function getPreloadTitles() {
+		$params = $this->extractParameters();
+		if ( !isset( $params[3] ) ) {
+			// Very old log format, everything in comment - legaciest
+			return array();
+		}
+		if ( !isset( $params[4] ) ) {
+			// Old log format - legacier
+			$params[4] = $params[3];
+			$params[3] = $this->entry->getTarget()->getText();
+		}
+
+		$preloadTitles = array();
+
+		// old user page
+		$title = Title::makeTitleSafe( NS_USER, $params[3] );
+		if ( $title ) {
+			$preloadTitles[] = $title;
+		}
+
+		// new user page
+		$title = Title::makeTitleSafe( NS_USER, $params[4] );
+		if ( $title ) {
+			$preloadTitles[] = $title;
+		}
+
+		return $preloadTitles;
+	}
 }
