@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ee703fc5_5729e398",
+        "filename": "RenameuserLogFormatter.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2015-01-11T13:02:32Z",
+      "side": 1,
+      "message": "See this comment",
+      "revId": "574a3b5c19321e0d373fce75fa36d85a9ba2e387",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ee703fc5_77a98720",
         "filename": "RenameuserLogFormatter.php",
         "patchSetId": 1
@@ -13,6 +30,24 @@
       "writtenOn": "2015-01-11T11:18:01Z",
       "side": 1,
       "message": "I think one of these is redundant. LogPage automatically adds (log_namespace, log_title) to LinkBatch. Did you check that?",
+      "revId": "574a3b5c19321e0d373fce75fa36d85a9ba2e387",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee703fc5_b744ff6f",
+        "filename": "RenameuserLogFormatter.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2015-01-11T13:02:32Z",
+      "side": 1,
+      "message": "That is right, but the log format changed in the meantime and therefor I used the save variant to add always both. LinkBatch will remove dupes. If that is no okay, it needs a second look, which field is to use.",
+      "parentUuid": "ee703fc5_77a98720",
       "revId": "574a3b5c19321e0d373fce75fa36d85a9ba2e387",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
