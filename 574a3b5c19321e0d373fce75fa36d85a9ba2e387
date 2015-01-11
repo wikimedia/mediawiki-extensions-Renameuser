@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ee703fc5_77a98720",
+        "filename": "RenameuserLogFormatter.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2015-01-11T11:18:01Z",
+      "side": 1,
+      "message": "I think one of these is redundant. LogPage automatically adds (log_namespace, log_title) to LinkBatch. Did you check that?",
+      "revId": "574a3b5c19321e0d373fce75fa36d85a9ba2e387",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
