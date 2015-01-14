@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arystanbek"
+			"Arystanbek",
+			"Нұрлан Рахымжанов"
 		]
 	},
 	"renameuser": "Қатысушы есімін өзгерту",
@@ -13,7 +14,7 @@
 	"renameuserreason": "Себебі:",
 	"renameusermove": "Қатысушының жеке және талқылау беттерін (және де олардың төменгі беттерін) жаңа атауға жылжыту",
 	"renameusersuppress": "Жаңа атауына бағыттау бетін бастамау",
-	"renameuserreserve": "Бұрыңғы қатысушы есімін келешекте қолдана алмайтындай ету",
+	"renameuserreserve": "Бұрынғы қатысушы есімін келешекте қолдана алмайтындай ету",
 	"renameuserwarnings": "Ескертулер:",
 	"renameuserconfirm": "Иә, қатысушы есімін өзгерт",
 	"renameusersubmit": "Жіберу",
