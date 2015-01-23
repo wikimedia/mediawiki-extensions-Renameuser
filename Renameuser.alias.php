@@ -29,6 +29,11 @@ $specialPageAliases['as'] = array(
 	'Renameuser' => array( 'সদস্য_পুনৰ্নামকৰণ' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'Renameuser' => array( 'Переименовать_участника' ),
+);
+
 /** Bashkir (башҡортса) */
 $specialPageAliases['ba'] = array(
 	'Renameuser' => array( 'RenameUser' ),
