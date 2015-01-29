@@ -20,6 +20,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author'         => array( 'Ævar Arnfjörð Bjarmason', 'Aaron Schulz' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Renameuser',
 	'descriptionmsg' => 'renameuser-desc',
+	'license-name'   => 'GPL-2.0+',
 );
 
 # Internationalisation files
