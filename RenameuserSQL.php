@@ -113,8 +113,6 @@ class RenameuserSQL {
 	function rename() {
 		global $wgMemc, $wgAuth, $wgUpdateRowsPerJob;
 
-		wfProfileIn( __METHOD__ );
-
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin();
 		Hooks::run( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
@@ -132,7 +130,6 @@ class RenameuserSQL {
 		if ( !$dbw->affectedRows() && $this->checkIfUserExists ) {
 			$dbw->rollback();
 			$this->debug( "User {$this->old} does not exist, bailing out" );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
@@ -260,7 +257,6 @@ class RenameuserSQL {
 		Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
-		wfProfileOut( __METHOD__ );
 		return true;
 	}
 }
