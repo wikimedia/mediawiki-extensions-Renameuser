@@ -46,6 +46,20 @@ class RenameuserSQL {
 	public $checkIfUserExists;
 
 	/**
+	 * User object of the user performing the rename, for logging purposes
+	 *
+	 * @var User
+	 */
+	private $renamer;
+
+	/**
+	 * Reason to be used in the log entry
+	 *
+	 * @var string
+	 */
+	private $reason = '';
+
+	/**
 	 * A prefix to use in all debug log messages
 	 *
 	 * @var string
@@ -58,13 +72,15 @@ class RenameuserSQL {
 	 * @param $old string The old username
 	 * @param $new string The new username
 	 * @param $uid
+	 * @param User $renamer
 	 * @param $options Array of options
 	 *	'checkIfUserExists' - bool, whether to update the user table
 	 */
-	function __construct( $old, $new, $uid, $options = array() ) {
+	function __construct( $old, $new, $uid, User $renamer, $options = array() ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
+		$this->renamer = $renamer;
 		$this->checkIfUserExists = true;
 
 		if ( isset ( $options['checkIfUserExists'] ) ) {
@@ -73,6 +89,10 @@ class RenameuserSQL {
 
 		if ( isset( $options['debugPrefix'] ) ) {
 			$this->debugPrefix = $options['debugPrefix'];
+		}
+
+		if ( isset( $options['reason'] ) ) {
+			$this->reason = $options['reason'];
 		}
 
 		$this->tables = array(); // Immediate updates
@@ -112,6 +132,9 @@ class RenameuserSQL {
 	 */
 	function rename() {
 		global $wgMemc, $wgAuth, $wgUpdateRowsPerJob;
+
+		// Grab the user's edit count first, used in log entry
+		$contribs = User::newfromId( $this->uid )->getEditCount();
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin();
@@ -255,6 +278,21 @@ class RenameuserSQL {
 		$user = User::newFromId( $this->uid );
 		$wgAuth->updateExternalDB( $user );
 		Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
+
+		// Log it!
+		$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
+		$logEntry->setPerformer( $this->renamer );
+		$logEntry->setTarget( $oldTitle );
+		$logEntry->setComment( $this->reason );
+		$logEntry->setParameters( array(
+			'4::olduser' => $this->old,
+			'5::newuser' => $this->new,
+			'6::edits' => $contribs
+		) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
+
+
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
 		return true;
