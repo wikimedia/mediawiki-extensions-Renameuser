@@ -176,9 +176,15 @@ class RenameuserSQL {
 		$oldTitle = Title::makeTitle( NS_USER, $this->old );
 		$newTitle = Title::makeTitle( NS_USER, $this->new );
 		$this->debug( "Updating logging table for {$this->old} to {$this->new}" );
+		if ( is_callable( 'SpecialLog::getLogTypesOnUser' ) ) { // 1.25+
+			$logTypesOnUser = SpecialLog::getLogTypesOnUser();
+		} else {
+			// Fallback to hardcoded list
+			$logTypesOnUser = array( 'block', 'rights' );
+		}
 		$dbw->update( 'logging',
 			array( 'log_title' => $newTitle->getDBkey() ),
-			array( 'log_type' => array( 'block', 'rights' ),
+			array( 'log_type' => $logTypesOnUser,
 				'log_namespace' => NS_USER,
 				'log_title' => $oldTitle->getDBkey() ),
 			__METHOD__ );
