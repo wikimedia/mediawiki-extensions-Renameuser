@@ -34,6 +34,24 @@
       "revId": "92f906c731535b137bf06cce416c34235bc0255d",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e7c4fa4_9a236d52",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2015-03-31T19:32:13Z",
+      "side": 1,
+      "message": "Okay, wenn it is added after the rename there is no problem. Maybe some days the update of logging table needs to be queued to job queue because of too many rows, than this needs an extra look.",
+      "parentUuid": "6e7c4fa4_d721c0ac",
+      "revId": "92f906c731535b137bf06cce416c34235bc0255d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
