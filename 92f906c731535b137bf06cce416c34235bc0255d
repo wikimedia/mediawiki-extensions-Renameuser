@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e7c4fa4_7746ac81",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2015-03-31T19:12:07Z",
+      "side": 1,
+      "message": "This also includes \u0027renameuser\u0027, I have not test if it would also rename the log entry for the rename, because that is usually added under the old name. Or get it added after the rename is done?",
+      "revId": "92f906c731535b137bf06cce416c34235bc0255d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
