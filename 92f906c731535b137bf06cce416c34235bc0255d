@@ -16,6 +16,24 @@
       "revId": "92f906c731535b137bf06cce416c34235bc0255d",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e7c4fa4_d721c0ac",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 458
+      },
+      "writtenOn": "2015-03-31T19:15:55Z",
+      "side": 1,
+      "message": "The log entry is added in after the rename completes.\n\nAlso, the log entry uses the old name, so if a user is renamed twice, the log entries shouldn\u0027t be updated.",
+      "parentUuid": "6e7c4fa4_7746ac81",
+      "revId": "92f906c731535b137bf06cce416c34235bc0255d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
