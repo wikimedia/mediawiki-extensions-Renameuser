@@ -25,7 +25,7 @@
 	"renameusersuppress": "不要為新的名稱建立重新導向頁面",
 	"renameuserreserve": "封鎖舊使用者名稱，禁止日後再使用",
 	"renameuserwarnings": "警告：",
-	"renameuserconfirm": "是，重新命名使用者",
+	"renameuserconfirm": "是的，重新命名此使用者",
 	"renameusersubmit": "送出",
 	"renameuser-submit-blocklog": "顯示使用者的封鎖日誌",
 	"renameusererrordoesnotexist": "使用者 \"<nowiki>$1</nowiki>\" 不存在。",
@@ -44,5 +44,5 @@
 	"renameuser-move-log": "重新命名使用者 \"[[User:$1|$1]]\" 為 \"[[User:$2|$2]]\" 時已自動移動使用者相關頁面",
 	"action-renameuser": "重新命名使用者",
 	"right-renameuser": "重新命名使用者",
-	"renameuser-renamed-notice": "該使用者已重新命名。\n下列為重新命名日誌以提供參考。"
+	"renameuser-renamed-notice": "本使用者已重新命名。\n下列為重新命名日誌以提供參考。"
 }
