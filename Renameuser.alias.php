@@ -44,6 +44,11 @@ $specialPageAliases['bg'] = array(
 	'Renameuser' => array( 'Преименуване' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'Renameuser' => array( 'کارمرزوکی_نامی_ٹگلینتین' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Renameuser' => array( 'Ganti_ngaran_pamakai' ),
