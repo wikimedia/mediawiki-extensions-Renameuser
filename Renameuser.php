@@ -32,7 +32,7 @@ $wgExtensionMessagesFiles['RenameuserAliases'] = __DIR__ . '/Renameuser.alias.ph
  * Users with more than this number of edits will have their rename operation
  * deferred via the job queue.
  */
-define( 'RENAMEUSER_CONTRIBJOB', 2500 );
+define( 'RENAMEUSER_CONTRIBJOB', 500 );
 
 # Add a new log type
 $wgLogTypes[] = 'renameuser';
