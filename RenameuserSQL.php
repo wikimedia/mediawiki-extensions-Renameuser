@@ -169,7 +169,7 @@ class RenameuserSQL {
 		$authUser->resetAuthToken();
 
 		// Delete from memcached.
-		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
+		$user->invalidateCache();
 
 		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
@@ -284,7 +284,7 @@ class RenameuserSQL {
 		$dbw->commit();
 
 		// Delete from memcached again to make sure
-		$wgMemc->delete( wfMemcKey( 'user', 'id', $this->uid ) );
+		$user->invalidateCache();
 
 		// Clear caches and inform authentication plugins
 		$user = User::newFromId( $this->uid );
