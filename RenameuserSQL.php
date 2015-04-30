@@ -67,6 +67,12 @@ class RenameuserSQL {
 	private $debugPrefix = '';
 
 	/**
+	 * Users with more than this number of edits will have their rename operation
+	 * deferred via the job queue.
+	 */
+	const CONTRIB_JOB = 500;
+
+	/**
 	 * Constructor
 	 *
 	 * @param $old string The old username
@@ -101,7 +107,7 @@ class RenameuserSQL {
 		$this->tables['filearchive'] = array('fa_user_text','fa_user');
 		$this->tablesJob = array(); // Slow updates
 		// If this user has a large number of edits, use the jobqueue
-		if ( User::newFromId( $uid )->getEditCount() > RENAMEUSER_CONTRIBJOB ) {
+		if ( User::newFromId( $uid )->getEditCount() > self::CONTRIB_JOB ) {
 			$this->tablesJob['revision'] = array( 'rev_user_text', 'rev_user', 'rev_timestamp' );
 			$this->tablesJob['archive'] = array( 'ar_user_text', 'ar_user', 'ar_timestamp' );
 			$this->tablesJob['logging'] = array( 'log_user_text', 'log_user', 'log_timestamp' );
