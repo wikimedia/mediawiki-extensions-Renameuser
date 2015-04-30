@@ -28,12 +28,6 @@ $wgMessagesDirs['Renameuser'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Renameuser'] = __DIR__ . '/Renameuser.i18n.php';
 $wgExtensionMessagesFiles['RenameuserAliases'] = __DIR__ . '/Renameuser.alias.php';
 
-/**
- * Users with more than this number of edits will have their rename operation
- * deferred via the job queue.
- */
-define( 'RENAMEUSER_CONTRIBJOB', 500 );
-
 # Add a new log type
 $wgLogTypes[] = 'renameuser';
 $wgLogActionsHandlers['renameuser/renameuser'] = 'RenameuserLogFormatter';
