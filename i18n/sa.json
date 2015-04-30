@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Ansumang",
-			"Shubha"
+			"Shubha",
+			"NehalDaveND"
 		]
 	},
 	"renameuser": "यॊजकस्य पुनर्नामकरणं क्रियताम्",
 	"renameuser-linkoncontribs": "यॊजकनाम परिवर्त्यताम्",
 	"renameuser-linkoncontribs-text": "अस्य योजकस्य नाम परिवर्त्यताम्",
-	"renameuser-desc": "योजकस्य पुनर्नामकरणं कर्तुं (''योजकपुनर्नाम''अधिकारः अपेक्षितः)  [[Special:RenameUser|विशेषपृष्ठम्]] योजयति",
+	"renameuser-desc": "योजकस्य पुनर्नामकरणं कर्तुं (''योजकपुनर्नाम''अधिकारः अपेक्षितः)  [[Special:RenameUser|विशिष्टपृष्ठम्]] योजयति",
 	"renameuserold": "प्रस्तुतयोजकनाम :",
 	"renameusernew": "नूतनयोजकनाम :",
 	"renameuserreason": "नामपरिवर्तनस्य कारणम् :",
