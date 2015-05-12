@@ -137,7 +137,7 @@ class RenameuserSQL {
 	 * Do the rename operation
 	 */
 	function rename() {
-		global $wgMemc, $wgAuth, $wgUpdateRowsPerJob;
+		global $wgAuth, $wgUpdateRowsPerJob;
 
 		// Grab the user's edit count first, used in log entry
 		$contribs = User::newfromId( $this->uid )->getEditCount();
