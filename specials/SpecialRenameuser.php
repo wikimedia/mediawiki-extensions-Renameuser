@@ -369,4 +369,8 @@ class SpecialRenameuser extends SpecialPage {
 		$out->addHTML( Xml::element( 'h2', null, $logPage->getName()->text() ) . "\n" );
 		LogEventsList::showLogExtract( $out, $type, $username->getPrefixedText() );
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }

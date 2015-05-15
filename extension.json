@@ -33,9 +33,6 @@
 	"JobClasses": {
 		"renameUser": "RenameUserJob"
 	},
-	"SpecialPageGroups": {
-		"Renameuser": "users"
-	},
 	"GroupPermissions": {
 		"bureaucrat": {
 			"renameuser": true
