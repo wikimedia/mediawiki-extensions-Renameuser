@@ -15,7 +15,7 @@
 	"renameuserreserve": "Takomst brûken fan de âlde meidoggersnamme foarkomme",
 	"renameuserwarnings": "Warskôgings:",
 	"renameuserconfirm": "Ja, feroarje de namme fan de meidogger",
-	"renameusersubmit": "Feroarje",
+	"renameusersubmit": "Ferstjoere",
 	"renameusererrordoesnotexist": "Der is gjin meidogger mei de namme \"<nowiki>$1</nowiki>\"",
 	"renameusererrorexists": "De meidochnamme \"<nowiki>$1</nowiki>\" wurdt al brûkt.",
 	"renameusererrorinvalid": "De meidochnamme \"<nowiki>$1</nowiki>\" mei net.",
