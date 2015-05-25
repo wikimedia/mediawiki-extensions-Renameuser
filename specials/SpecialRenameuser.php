@@ -40,10 +40,12 @@ class SpecialRenameuser extends SpecialPage {
 
 		$request = $this->getRequest();
 		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
-		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $par ) ) );
+		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
+		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
+		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', count( $usernames ) > 0 ? $usernames[1] : null ) ) );
 		// Force uppercase of newusername, otherwise wikis with wgCapitalLinks=false can create lc usernames
-		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $request->getText( 'newusername' ) ) );
+		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $newnamePar ) );
 		$oun = is_object( $oldusername ) ? $oldusername->getText() : '';
 		$nun = is_object( $newusername ) ? $newusername->getText() : '';
 		$token = $user->getEditToken();
