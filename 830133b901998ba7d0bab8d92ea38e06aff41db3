@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ed113e2_2c8436b5",
+        "filename": "specials/SpecialRenameuser.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 50
+      },
+      "writtenOn": "2015-05-26T00:01:59Z",
+      "side": 1,
+      "message": "Can you please split this line? It\u0027s very long :/",
+      "revId": "830133b901998ba7d0bab8d92ea38e06aff41db3",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
