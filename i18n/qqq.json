@@ -32,6 +32,7 @@
 	"renameusererrorexists": "Used as error message. Parameters:\n* $1 - username\nSee also:\n* {{msg-mw|Renameusererrordoesnotexist}}",
 	"renameusererrorinvalid": "Used as error message when renaming user in [[Special:Renameuser]]. Parameters:\n* $1 - old username, or new username",
 	"renameuser-error-request": "Used as error message when renaming user in [[Special:Renameuser]].",
+	"renameuser-warning-currentblock": "Displayed as a warning in [[Special:RenameUser]] before renaming a user that is currently blocked.",
 	"renameuser-error-same-user": "Used as error message when renaming user in [[Special:Renameuser]].",
 	"renameusersuccess": "Used as success message when renaming user in [[Special:Renameuser]]. Parameters:\n* $1 - old username\n* $2 - new username",
 	"renameuser-page-exists": "Used when renaming user in [[Special:Renameuser]]. Parameters:\n* $1 - new page title (with link)",
