@@ -39,9 +39,10 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		$request = $this->getRequest();
-		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
+
 		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
 		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
+
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
 		$newnamePar = isset( $usernames[1] ) ? $usernames[1] : null;
 		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', $newnamePar ) ) );
@@ -58,6 +59,12 @@ class SpecialRenameuser extends SpecialPage {
 
 		$warnings = array();
 		if ( $oun && $nun && !$request->getCheck( 'confirmaction' ) ) {
+			$oldU = User::newFromName( $oun );
+			if ( $oldU->isBlocked() ) {
+				$warnings[] = array( 'renameuser-warning-currentblock',
+					SpecialPage::getTitleFor( 'Log', 'block' )->getFullURL( array( 'page' => $oun ) )
+				);
+			}
 			Hooks::run( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
 		}
 
@@ -134,8 +141,8 @@ class SpecialRenameuser extends SpecialPage {
 			$warningsHtml = array();
 			foreach ( $warnings as $warning ) {
 				$warningsHtml[] = is_array( $warning ) ?
-					$this->msg( $warning[0] )->rawParams( array_slice( $warning, 1 ) )->escaped() :
-					$this->msg( $warning )->escaped();
+					$this->msg( $warning[0] )->params( array_slice( $warning, 1 ) )->parse() :
+					$this->msg( $warning )->parse();
 			}
 
 			$out->addHTML( "
@@ -169,6 +176,7 @@ class SpecialRenameuser extends SpecialPage {
 				<td>&#160;
 				</td>
 				<td class='mw-submit'>" .
+
 			Xml::submitButton(
 				$this->msg( 'renameusersubmit' )->text(),
 				array(
@@ -178,28 +186,14 @@ class SpecialRenameuser extends SpecialPage {
 				)
 			) .
 			' ' .
-			Xml::submitButton(
-				$this->msg( 'renameuser-submit-blocklog' )->text(),
-				array(
-					'name' => 'submit-showBlockLog',
-					'id' => 'submit-showBlockLog',
-					'tabindex' => '8'
-				)
-			) .
 			'</td>
 			</tr>' .
+
 			Xml::closeElement( 'table' ) .
 			Xml::closeElement( 'fieldset' ) .
 			Html::hidden( 'token', $token ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
-
-		// Show block log if requested
-		if ( $showBlockLog && is_object( $oldusername ) ) {
-			$this->showLogExtract( $oldusername, 'block', $out );
-
-			return;
-		}
 
 		if ( $request->getText( 'token' ) === '' ) {
 			# They probably haven't even submitted the form, so don't go further.
