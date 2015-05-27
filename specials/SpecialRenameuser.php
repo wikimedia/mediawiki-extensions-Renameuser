@@ -39,7 +39,6 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		$request = $this->getRequest();
-		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
 		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $par ) ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
 		// Force uppercase of newusername, otherwise wikis with wgCapitalLinks=false can create lc usernames
@@ -54,6 +53,10 @@ class SpecialRenameuser extends SpecialPage {
 
 		$warnings = array();
 		if ( $oun && $nun && !$request->getCheck( 'confirmaction' )  ) {
+			$oldU = User::newFromName( $oun );
+			if ( $oldU->isBlocked() ) {
+				$warnings[] = 'renameuser-warning-currentblock';
+			}
 			Hooks::run( 'RenameUserWarning', array( $oun, $nun, &$warnings ) );
 		}
 
@@ -165,14 +168,6 @@ class SpecialRenameuser extends SpecialPage {
 						)
 					) .
 					' ' .
-					Xml::submitButton(
-						$this->msg( 'renameuser-submit-blocklog' )->text(),
-						array (
-							'name' => 'submit-showBlockLog',
-							'id' => 'submit-showBlockLog',
-							'tabindex' => '8'
-						)
-					) .
 				"</td>
 			</tr>" .
 			Xml::closeElement( 'table' ) .
@@ -180,12 +175,6 @@ class SpecialRenameuser extends SpecialPage {
 			Html::hidden( 'token', $token ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
-
-		// Show block log if requested
-		if ( $showBlockLog && is_object( $oldusername ) ) {
-			$this->showLogExtract( $oldusername, 'block', $out ) ;
-			return;
-		}
 
 		if ( $request->getText( 'token' ) === '' ) {
 			# They probably haven't even submitted the form, so don't go further.
