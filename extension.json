@@ -53,5 +53,6 @@
 		"RenameuserLogFormatter": "RenameuserLogFormatter.php",
 		"RenameuserSQL": "RenameuserSQL.php",
 		"SpecialRenameuser": "specials/SpecialRenameuser.php"
-	}
+	},
+	"manifest_version": 1
 }
