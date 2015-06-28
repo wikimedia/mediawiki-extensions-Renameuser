@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"renameuser": "Preimenuj korisnika",
 	"renameuser-linkoncontribs": "preimenuj korisnika",
 	"renameuser-linkoncontribs-text": "Preimenuj ovog korisnika",
 	"renameuser-desc": "Dodaje [[Special:RenameUser|posebnu stranicu]] u svrhu promjene imena korisnika (zahtjeva pravo ''preimenovanja korisnika'')",
-	"renameuserold": "Trenutno ime korisnika:",
+	"renameuserold": "Trenutno korisničko ime:",
 	"renameusernew": "Novo korisničko ime:",
 	"renameuserreason": "Razlog promjene imena:",
 	"renameusermove": "Premještanje korisnika i njegove stranice za razgovor (zajedno sa podstranicama) na novo ime",
