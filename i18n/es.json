@@ -49,5 +49,5 @@
 	"renameuser-move-log": "Página trasladada automáticamente al cambiar el nombre de usuario de «[[User:$1|$1]]» a «[[User:$2|$2]]»",
 	"action-renameuser": "renombrar usuarios",
 	"right-renameuser": "Renombrar usuarios",
-	"renameuser-renamed-notice": "El nombre de este usuario ha sido modificado.\nEl registro de cambios de nombre de usuario se provee debajo para mayor referencia."
+	"renameuser-renamed-notice": "{{GENDER:$1|Este usuario|Esta usuaria}} se ha renombrado.\nEl registro de cambios de nombre de usuario se provee debajo para mayor referencia."
 }
