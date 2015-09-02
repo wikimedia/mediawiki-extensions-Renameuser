@@ -4,7 +4,8 @@
 			"Dori",
 			"FatosMorina",
 			"Mikullovci11",
-			"Olsi"
+			"Olsi",
+			"Ammartivari"
 		]
 	},
 	"renameuser": "Riemëroje përdoruesin",
@@ -13,7 +14,7 @@
 	"renameuser-desc": "Shton një [[Special:RenameUser|faqe speciale]] për të riemëruar një përdorues (duhet e drejta ''renameuser'')",
 	"renameuserold": "Emri i tanishëm",
 	"renameusernew": "Emri i ri",
-	"renameuserreason": "Arsyeja për riemërim:",
+	"renameuserreason": "Arsyeja:",
 	"renameusermove": "Zhvendos faqet e përdoruesit dhe të diskutimit (dhe nën-faqet e tyre) tek emri i ri",
 	"renameusersuppress": "Mos krijoni përcjellime tek emri i ri",
 	"renameuserreserve": "Bllokoni emrin e vjetër të përdoruesit të përdorim në të ardhmen",
