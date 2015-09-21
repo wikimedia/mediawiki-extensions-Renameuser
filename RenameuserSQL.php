@@ -109,8 +109,11 @@ class RenameuserSQL {
 		// If this user has a large number of edits, use the jobqueue
 		if ( User::newFromId( $uid )->getEditCount() > self::CONTRIB_JOB ) {
 			$this->tablesJob['revision'] = array( 'rev_user_text', 'rev_user', 'rev_timestamp' );
+			$this->tablesJob['revision']['uniqueKey'] = 'rev_id';
 			$this->tablesJob['archive'] = array( 'ar_user_text', 'ar_user', 'ar_timestamp' );
+			$this->tablesJob['archive']['uniqueKey'] = 'ar_id';
 			$this->tablesJob['logging'] = array( 'log_user_text', 'log_user', 'log_timestamp' );
+			$this->tablesJob['logging']['uniqueKey'] = 'log_id';
 		} else {
 			$this->tables['revision'] = array( 'rev_user_text', 'rev_user' );
 			$this->tables['archive'] = array( 'ar_user_text', 'ar_user' );
@@ -243,6 +246,10 @@ class RenameuserSQL {
 			$jobParams['minTimestamp'] = '0';
 			$jobParams['maxTimestamp'] = '0';
 			$jobParams['count'] = 0;
+			// Unique column for slave lag avoidance
+			if ( isset( $params['uniqueKey'] ) ) {
+				$jobParams['uniqueKey'] = $params['uniqueKey'];
+			}
 
 			// Insert jobs into queue!
 			while ( true ) {
