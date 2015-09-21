@@ -72,6 +72,11 @@ class RenameuserSQL {
 	 */
 	const CONTRIB_JOB = 500;
 
+	// B/C constants for tablesJob field
+	const NAME_COL = 0;
+	const UID_COL  = 1;
+	const TIME_COL = 2;
+
 	/**
 	 * Constructor
 	 *
@@ -108,9 +113,24 @@ class RenameuserSQL {
 		$this->tablesJob = array(); // Slow updates
 		// If this user has a large number of edits, use the jobqueue
 		if ( User::newFromId( $uid )->getEditCount() > self::CONTRIB_JOB ) {
-			$this->tablesJob['revision'] = array( 'rev_user_text', 'rev_user', 'rev_timestamp' );
-			$this->tablesJob['archive'] = array( 'ar_user_text', 'ar_user', 'ar_timestamp' );
-			$this->tablesJob['logging'] = array( 'log_user_text', 'log_user', 'log_timestamp' );
+			$this->tablesJob['revision'] = array(
+				self::NAME_COL => 'rev_user_text',
+				self::UID_COL  => 'rev_user',
+				self::TIME_COL => 'rev_timestamp',
+				'uniqueKey'    => 'rev_id'
+			);
+			$this->tablesJob['archive'] = array(
+				self::NAME_COL => 'ar_user_text',
+				self::UID_COL  => 'ar_user',
+				self::TIME_COL => 'ar_timestamp',
+				'uniqueKey'    => 'ar_id'
+			);
+			$this->tablesJob['logging'] = array(
+				self::NAME_COL => 'log_user_text',
+				self::UID_COL  => 'log_user',
+				self::TIME_COL => 'log_timestamp',
+				'uniqueKey'    => 'log_id'
+			);
 		} else {
 			$this->tables['revision'] = array( 'rev_user_text', 'rev_user' );
 			$this->tables['archive'] = array( 'ar_user_text', 'ar_user' );
@@ -220,9 +240,9 @@ class RenameuserSQL {
 		// randomly mixed between the two new names. Some sort of rename
 		// lock might be in order...
 		foreach ( $this->tablesJob as $table => $params ) {
-			$userTextC = $params[0]; // some *_user_text column
-			$userIDC = $params[1]; // some *_user column
-			$timestampC = $params[2]; // some *_timestamp column
+			$userTextC = $params[self::NAME_COL]; // some *_user_text column
+			$userIDC = $params[self::UID_COL]; // some *_user column
+			$timestampC = $params[self::TIME_COL]; // some *_timestamp column
 
 			$res = $dbw->select( $table,
 				array( $timestampC ),
@@ -243,6 +263,10 @@ class RenameuserSQL {
 			$jobParams['minTimestamp'] = '0';
 			$jobParams['maxTimestamp'] = '0';
 			$jobParams['count'] = 0;
+			// Unique column for slave lag avoidance
+			if ( isset( $params['uniqueKey'] ) ) {
+				$jobParams['uniqueKey'] = $params['uniqueKey'];
+			}
 
 			// Insert jobs into queue!
 			while ( true ) {
