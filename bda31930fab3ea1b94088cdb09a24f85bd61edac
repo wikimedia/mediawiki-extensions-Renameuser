@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ecb373e_883714ab",
+        "filename": "RenameUserJob.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1357
+      },
+      "writtenOn": "2015-09-30T13:46:09Z",
+      "side": 1,
+      "message": "chunk",
+      "revId": "bda31930fab3ea1b94088cdb09a24f85bd61edac",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ecb373e_884dd477",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1357
+      },
+      "writtenOn": "2015-09-30T13:46:09Z",
+      "side": 1,
+      "message": "Could you name the existing parameters instead? This plain array/hashmap mix is a bit meh.",
+      "revId": "bda31930fab3ea1b94088cdb09a24f85bd61edac",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
