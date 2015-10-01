@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ecb373e_a6e7970c",
+        "filename": "i18n/en.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 92
+      },
+      "writtenOn": "2015-10-01T12:58:45Z",
+      "side": 1,
+      "message": "Please use spaces for indentation instead of tabs as is done in the rest of the file. Alternatively, you can re-indent the complete file using tabs, as that is the standard.",
+      "revId": "7e7c633b75964a726629eb19093bd26bf4712a6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
