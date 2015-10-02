@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom job to perform updates on tables in busier environments
  */
@@ -27,7 +28,9 @@ class RenameUserJob extends Job {
 		$oldname = $this->params['oldname'];
 		$userID = isset( $this->params['userID'] ) ? $this->params['userID'] : null;
 		$uidColumn = isset( $this->params['uidColumn'] ) ? $this->params['uidColumn'] : null;
-		$timestampColumn = isset( $this->params['timestampColumn'] ) ? $this->params['timestampColumn'] : null;
+		$timestampColumn = isset( $this->params['timestampColumn'] ) ?
+			$this->params['timestampColumn'] :
+			null;
 		$minTimestamp = $this->params['minTimestamp'];
 		$maxTimestamp = $this->params['maxTimestamp'];
 		$uniqueKey = isset( $this->params['uniqueKey'] ) ? $this->params['uniqueKey'] : null;
@@ -45,7 +48,7 @@ class RenameUserJob extends Job {
 		if ( isset( $timestampColumn ) ) {
 			$conds[] = "$timestampColumn >= '$minTimestamp'";
 			$conds[] = "$timestampColumn <= '$maxTimestamp'";
-		# Otherwise, bound by key (B/C)
+			# Otherwise, bound by key (B/C)
 		} elseif ( isset( $uniqueKey ) ) {
 			$conds[$uniqueKey] = $keyId;
 		} else {
@@ -94,6 +97,7 @@ class RenameUserJob extends Job {
 				);
 			}
 		}
+
 		return true;
 	}
 }

@@ -3,9 +3,10 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 
-	var conf = grunt.file.readJSON( 'extension.json' );
 	grunt.initConfig( {
-		banana: conf.MessagesDirs,
+		banana: {
+			all: 'i18n/'
+		},
 		jsonlint: {
 			all: [
 				'**/*.json',
