@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ecb373e_84291ce3",
+        "filename": "i18n/en.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 92
+      },
+      "writtenOn": "2015-10-05T12:17:40Z",
+      "side": 1,
+      "message": "This should be a proper sentence with punctuation. Suggestion:\n\n The user \u003coldname\u003e was blocked, so \u003cnewname\u003e is blocked, too.",
+      "revId": "bb084ef657b0af1e5a4a509385883ca98ce0e813",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
