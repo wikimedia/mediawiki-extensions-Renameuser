@@ -84,7 +84,9 @@ class RenameuserSQL {
 	 * @param $new string The new username
 	 * @param $uid
 	 * @param User $renamer
-	 * @param $options Array of options
+	 * @param $options array Optional extra options.
+	 *    'reason' - string, reason for the rename
+	 *    'debugPrefix' - string, prefixed to debug messages
 	 *    'checkIfUserExists' - bool, whether to update the user table
 	 */
 	public function __construct( $old, $new, $uid, User $renamer, $options = array() ) {
