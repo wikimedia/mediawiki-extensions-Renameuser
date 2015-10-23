@@ -83,6 +83,7 @@ class RenameUserJob extends Job {
 			# Update these rows by PRIMARY KEY to avoid slave lag
 			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
 				$dbw->commit( __METHOD__, 'flush' );
+				wfWaitForSlaves();
 
 				$dbw->update( $table,
 					array( $column => $newname ),
