@@ -119,11 +119,14 @@ class RenameUserJob extends Job {
 				),
 				__METHOD__
 			);
-			if ( $ids ) {
+			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
+				$dbw->commit( __METHOD__, 'flush' );
+				wfWaitForSlaves();
+
 				$dbw->update(
 					'archive',
 					array( 'ar_user_text' => $newname ),
-					array( 'ar_user_text' => $oldname, 'ar_id' => $ids ),
+					array( 'ar_user_text' => $oldname, 'ar_id' => $batch ),
 					__METHOD__
 				);
 			}
@@ -145,11 +148,14 @@ class RenameUserJob extends Job {
 				),
 				__METHOD__
 			);
-			if ( $ids ) {
+			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
+				$dbw->commit( __METHOD__, 'flush' );
+				wfWaitForSlaves();
+
 				$dbw->update(
 					'revision',
 					array( 'rev_user_text' => $newname ),
-					array( 'rev_user_text' => $oldname, 'rev_id' => $ids ),
+					array( 'rev_user_text' => $oldname, 'rev_id' => $batch ),
 					__METHOD__
 				);
 			}
