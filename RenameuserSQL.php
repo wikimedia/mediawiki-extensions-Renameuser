@@ -227,13 +227,6 @@ class RenameuserSQL {
 			);
 		}
 
-		// Increase time limit (like CheckUser); this can take a while...
-		if ( $this->tablesJob ) {
-			wfSuppressWarnings();
-			set_time_limit( 120 );
-			wfRestoreWarnings();
-		}
-
 		$jobs = array(); // jobs for all tables
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she

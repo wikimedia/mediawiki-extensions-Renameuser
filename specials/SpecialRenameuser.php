@@ -38,6 +38,8 @@ class SpecialRenameuser extends SpecialPage {
 			throw new UserBlockedError( $this->getUser()->mBlock );
 		}
 
+		$this->useTransactionalTimeLimit();
+
 		$request = $this->getRequest();
 		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
 		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
