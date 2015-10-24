@@ -56,6 +56,8 @@ class RenameUserJob extends Job {
 		$uniqueKey = isset( $this->params['uniqueKey'] ) ? $this->params['uniqueKey'] : null;
 		$keyId = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
 
+		$dbw = wfGetDB( DB_MASTER );
+
 		# Conditions like "*_user_text = 'x'
 		$conds = array( $column => $oldname );
 		# If user ID given, add that to condition to avoid rename collisions
@@ -64,16 +66,14 @@ class RenameUserJob extends Job {
 		}
 		# Bound by timestamp if given
 		if ( $timestampColumn !== null ) {
-			$conds[] = "$timestampColumn >= '$minTimestamp'";
-			$conds[] = "$timestampColumn <= '$maxTimestamp'";
+			$conds[] = "$timestampColumn >= " . $dbw->addQuotes( $minTimestamp );
+			$conds[] = "$timestampColumn <= " . $dbw->addQuotes( $maxTimestamp );
 		# Bound by unique key if given (B/C)
 		} elseif ( $uniqueKey !== null && $keyId !== null ) {
 			$conds[$uniqueKey] = $keyId;
 		} else {
 			throw new InvalidArgumentException( "Expected ID batch or time range" );
 		}
-
-		$dbw = wfGetDB( DB_MASTER );
 
 		$affectedCount = 0;
 		# Actually update the rows for this job...
