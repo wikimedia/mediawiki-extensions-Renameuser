@@ -303,7 +303,7 @@ class RenameuserSQL {
 
 		$count = count( $jobs );
 		if ( $count > 0 ) {
-			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC ); // don't commit yet
+			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC );
 			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
 		}
 
