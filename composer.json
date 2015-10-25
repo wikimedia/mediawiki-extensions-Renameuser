@@ -1,4 +1,12 @@
 {
+	"name": "mediawiki/renameuser",
+	"type": "mediawiki-extension",
+	"autoload": {
+		"files": ["Renameuser.php"]
+	},
+	"require": {
+		"composer/installers": ">1.0.12"
+	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "0.9",
 		"mediawiki/mediawiki-codesniffer": "0.5.0"
