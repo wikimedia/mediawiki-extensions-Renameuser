@@ -10,7 +10,8 @@
 			"PhiLiP",
 			"Shizhao",
 			"Xiaomingyan",
-			"Yfdyh000"
+			"Yfdyh000",
+			"EagerLin"
 		]
 	},
 	"renameuser": "更改用户名",
@@ -33,7 +34,7 @@
 	"renameuser-error-request": "接收申请出错。请返回重试。",
 	"renameuser-error-same-user": "你不可以填写原来的用户名。",
 	"renameusersuccess": "用户“<nowiki>$1</nowiki>”已更名为“<nowiki>$2</nowiki>”。",
-	"renameuser-page-exists": "页面$1己经存在，不能被自动覆盖。",
+	"renameuser-page-exists": "页面$1已经存在，不能被自动覆盖。",
 	"renameuser-page-moved": "页面$1已移动至$2。",
 	"renameuser-page-unmoved": "页面$1不能移动至$2。",
 	"log-name-renameuser": "用户更名日志",
