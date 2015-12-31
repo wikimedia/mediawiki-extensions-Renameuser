@@ -220,12 +220,12 @@ class RenameUserCleanup extends Maintenance {
 
 				return ( 0 );
 			}
-			$dbw->begin();
+			$this->beginTransaction( $dbw, __METHOD__ );
 			$result = $dbw->select( $table, $timestampfield, $selectConds, __METHOD__,
 				array( 'ORDER BY' => $timestampfield . ' DESC', 'LIMIT' => $this->mBatchSize ) );
 			if ( !$result ) {
 				print "There were rows for updating but now they are gone. Skipping.\n";
-				$dbw->rollback();
+				$this->rollbackTransaction( $dbw, __METHOD__ );
 
 				return ( 0 );
 			}
@@ -236,10 +236,10 @@ class RenameUserCleanup extends Maintenance {
 			$success = $dbw->update( $table, $updateFields, $updateCondsWithTime, __METHOD__ );
 			if ( $success ) {
 				$rowsDone = $dbw->affectedRows();
-				$dbw->commit();
+				$this->commitTransaction( $dbw, __METHOD__ );
 			} else {
 				print "Problem with the update, rolling back and exiting\n";
-				$dbw->rollback();
+				$this->rollbackTransaction( $dbw, __METHOD__ );
 				exit( 1 );
 			}
 
