@@ -37,6 +37,8 @@ class RenameuserLogFormatter extends LogFormatter {
 		$title = Title::makeTitleSafe( NS_USER, $params[4] );
 		$link = $this->myPageLink( $title, $params[4] );
 		$params[4] = Message::rawParam( $link );
+		// GENDER support (using new user page)
+		$params[6] = $title->getText();
 
 		return $params;
 	}
@@ -91,3 +93,4 @@ class RenameuserLogFormatter extends LogFormatter {
 		return array();
 	}
 }
+
