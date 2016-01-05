@@ -4,9 +4,9 @@
 			"Hosseinblue"
 		]
 	},
-	"renameuser": "تغییر نام کاربر",
-	"renameuser-linkoncontribs": "تغییر نام کاربر",
-	"renameuser-linkoncontribs-text": "تغییر نام کاربر",
+	"renameuser": "گؤەڕانن/تغییر نام کاربر",
+	"renameuser-linkoncontribs": "گؤەڕانن/تغییر نام کاربر",
+	"renameuser-linkoncontribs-text": "گؤەڕانن/تغییر نام کاربر",
 	"renameuser-desc": "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از اختیارات ''تغییرنام''[[Special:RenameUser|وةڵگة ویژه]] است)",
 	"renameuserold": "نام کاربةری ایسة:",
 	"renameusernew": "نام کاربری تازه:",
@@ -32,7 +32,7 @@
 	"logentry-renameuser-renameuser": "$1 نام $4 ({{PLURAL:$6|$6 ویرایش|}}) را به $5 {{GENDER:$2|تغییر داد}}",
 	"logentry-renameuser-renameuser-legacier": "$1 نام کاربری $4 را به $5 تغییر داد",
 	"renameuser-move-log": "صفحه در ضمن تغییر نام کاربر «[[User:$1|$1]]» به «[[User:$2|$2]]» به طور خودکار منتقل شد",
-	"action-renameuser": "تغییر نام کاربران",
-	"right-renameuser": "تغییر نام کاربران",
+	"action-renameuser": "گؤەڕانن/تغییر نام کاربرەل",
+	"right-renameuser": "گؤەڕانن/تغییر نام کاربرەل",
 	"renameuser-renamed-notice": "این کاربر تغییر نام داده است.\nسیاهه تغییر نام در ادامه آمده است."
 }
