@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6eaa8f54_86bd9aff",
+        "filename": "RenameuserLogFormatter.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 105
+      },
+      "writtenOn": "2016-01-06T11:42:08Z",
+      "side": 1,
+      "message": "Doesn\u0027t the comment above say to use 5 for the new username?",
+      "revId": "84c1cc4418e8cbe32efd456eb1bccfa9ad742129",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6eaa8f54_e6cc8ec2",
+        "filename": "i18n/en.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 105
+      },
+      "writtenOn": "2016-01-06T11:42:08Z",
+      "side": 1,
+      "message": "We can\u0027t know the gender of a non-existing user.",
+      "revId": "84c1cc4418e8cbe32efd456eb1bccfa9ad742129",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
