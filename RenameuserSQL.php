@@ -165,12 +165,19 @@ class RenameuserSQL {
 		$contribs = User::newFromId( $this->uid )->getEditCount();
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
+
 		Hooks::run( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
 
-		// Rename and touch the user before re-attributing edits,
-		// this avoids users still being logged in and making new edits while
-		// being renamed, which leaves edits at the old name.
+		// Make sure the user exists if needed
+		if ( $this->checkIfUserExists && !self::lockUserAndGetId( $this->old ) ) {
+			$this->debug( "User {$this->old} does not exist, bailing out" );
+
+			return false;
+		}
+
+		// Rename and touch the user before re-attributing edits to avoid users still being
+		// logged in and making new edits (under the old name) while being renamed.
 		$this->debug( "Starting rename of {$this->old} to {$this->new}" );
 		$dbw->update( 'user',
 			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
@@ -178,27 +185,21 @@ class RenameuserSQL {
 			__METHOD__
 		);
 
-		if ( !$dbw->affectedRows() && $this->checkIfUserExists ) {
-			$dbw->rollback();
-			$this->debug( "User {$this->old} does not exist, bailing out" );
-
-			return false;
-		}
-
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
 		$authUser = $wgAuth->getUserInstance( $user );
 		$authUser->resetAuthToken();
 
-		// Delete from memcached.
+		// Purge user cache
 		$user->invalidateCache();
 
 		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
 			array( 'ipb_address' => $this->new ),
 			array( 'ipb_user' => $this->uid, 'ipb_address' => $this->old ),
-			__METHOD__ );
+			__METHOD__
+		);
 		// Update this users block/rights log. Ideally, the logs would be historical,
 		// but it is really annoying when users have "clean" block logs by virtue of
 		// being renamed, which makes admin tasks more of a pain...
@@ -216,8 +217,10 @@ class RenameuserSQL {
 			array( 'log_type' => $logTypesOnUser,
 				'log_namespace' => NS_USER,
 				'log_title' => $oldTitle->getDBkey() ),
-			__METHOD__ );
-		// Do immediate updates!
+			__METHOD__
+		);
+
+		// Do immediate re-attribution table updates...
 		foreach ( $this->tables as $table => $fieldSet ) {
 			list( $nameCol, $userCol ) = $fieldSet;
 			$dbw->update( $table,
@@ -227,6 +230,7 @@ class RenameuserSQL {
 			);
 		}
 
+		/** @var RenameUserJob[] $jobs */
 		$jobs = array(); // jobs for all tables
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she
@@ -294,23 +298,6 @@ class RenameuserSQL {
 			$dbw->freeResult( $res );
 		}
 
-		$count = count( $jobs );
-		if ( $count > 0 ) {
-			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC );
-			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
-		}
-
-		// Commit the transaction
-		$dbw->commit();
-
-		// Delete from memcached again to make sure
-		$user->invalidateCache();
-
-		// Clear caches and inform authentication plugins
-		$user = User::newFromId( $this->uid );
-		$wgAuth->updateExternalDB( $user );
-		Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
-
 		// Log it!
 		$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
 		$logEntry->setPerformer( $this->renamer );
@@ -322,10 +309,52 @@ class RenameuserSQL {
 			'6::edits' => $contribs
 		) );
 		$logid = $logEntry->insert();
-		$logEntry->publish( $logid );
+		// Include the log_id in the jobs as a DB commit marker
+		foreach ( $jobs as $job ) {
+			$job->params['logId'] = $logid;
+		}
+
+		// Insert any jobs as needed. If this fails, then an exception will be thrown and the
+		// DB transaction will be rolled back. If it succeeds but the DB commit fails, then the
+		// jobs will see that the transaction was not committed and will cancel themselves.
+		$count = count( $jobs );
+		if ( $count > 0 ) {
+			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC );
+			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
+		}
+
+		// Commit the transaction
+		$dbw->endAtomic( __METHOD__ );
+
+		$that = $this;
+		$dbw->onTransactionIdle( function() use ( $that, $dbw, $logEntry, $logid ) {
+			global $wgAuth;
+			// Keep any updates here in a transaction
+			$dbw->setFlag( DBO_TRX );
+			// Clear caches and inform authentication plugins
+			$user = User::newFromId( $that->uid );
+			$wgAuth->updateExternalDB( $user );
+			Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
+			// Publish to RC
+			$logEntry->publish( $logid );
+		} );
 
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
 		return true;
+	}
+
+	/**
+	 * @param string $name Current wiki local user name
+	 * @return integer Returns 0 if no row was found
+	 */
+	private static function lockUserAndGetId( $name ) {
+		return (int)wfGetDB( DB_MASTER )->selectField(
+			'user',
+			'user_id',
+			array( 'user_name' => $name ),
+			__METHOD__,
+			array( 'FOR UPDATE' )
+		);
 	}
 }

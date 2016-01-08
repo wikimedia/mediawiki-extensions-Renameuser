@@ -9,6 +9,7 @@
  *   - oldname   : The old user name
  *   - newname   : The new user name
  *   - count     : The expected number of rows to update in this batch
+ *   - logId     : The ID of the logging table row expected to exist if the rename was committed
  *
  * Additionally, one of the following groups of parameters must be set:
  * a) The timestamp based rename paramaters:
@@ -55,8 +56,29 @@ class RenameUserJob extends Job {
 		}
 		$uniqueKey = isset( $this->params['uniqueKey'] ) ? $this->params['uniqueKey'] : null;
 		$keyId = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
+		$logId = isset( $this->params['logId'] ) ? $this->params['logId'] : null;
 
 		$dbw = wfGetDB( DB_MASTER );
+		if ( $logId ) {
+			# Block until the transaction that inserted this job commits.
+			# The atomic section is for sanity as FOR UPDATE does not lock in auto-commit mode
+			# per http://dev.mysql.com/doc/refman/5.7/en/innodb-locking-reads.html.
+			$dbw->startAtomic( __METHOD__ );
+			$committed = $dbw->selectField( 'logging',
+				'1',
+				array( 'log_id' => $logId ),
+				__METHOD__,
+				array( 'FOR UPDATE' )
+			);
+			$dbw->endAtomic( __METHOD__ );
+			# If the transaction inserting this job was rolled back, detect that
+			if ( $committed === false ) { // rollback happened?
+				throw new LogicException( "Cannot run job if the account rename failed." );
+			}
+		}
+
+		# Flush any state snapshot data (and release the lock above)
+		$dbw->commit( __METHOD__, 'flush' );
 
 		# Conditions like "*_user_text = 'x'
 		$conds = array( $column => $oldname );
