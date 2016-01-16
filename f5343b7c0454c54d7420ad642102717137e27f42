@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6eaa8f54_ce604930",
+        "filename": "i18n/en.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2212
+      },
+      "writtenOn": "2016-01-16T16:19:33Z",
+      "side": 1,
+      "message": "I think you\u0027ll have to enclose \"has been renamed\" in the GENDER tags too, because I believe that in various languages, verbs have different forms depending on gender. I\u0027m not 100% sure though, so it\u0027s better to check with  Nemo.",
+      "revId": "f5343b7c0454c54d7420ad642102717137e27f42",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
