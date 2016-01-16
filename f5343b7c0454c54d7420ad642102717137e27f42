@@ -16,6 +16,24 @@
       "revId": "f5343b7c0454c54d7420ad642102717137e27f42",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6eaa8f54_91f356e2",
+        "filename": "i18n/en.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3039
+      },
+      "writtenOn": "2016-01-16T19:31:10Z",
+      "side": 1,
+      "message": "Gender of who? In English, the subject is the renamed user (passive form) but not all languages have passive, and I don\u0027t know who the subject of an active sentence is.",
+      "parentUuid": "6eaa8f54_ce604930",
+      "revId": "f5343b7c0454c54d7420ad642102717137e27f42",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
