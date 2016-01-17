@@ -33,6 +33,24 @@
       "revId": "83cd11e392af84c48dad4abaacf8b4e968d408d1",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6eaa8f54_3f2d89a3",
+        "filename": "i18n/en.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2016-01-17T11:02:59Z",
+      "side": 1,
+      "message": "It is okay to have GENDER once in the message to show the translator he/she can use it for his translation. If needed, a translator can use it twice or more often to build the correct sentence.",
+      "parentUuid": "6eaa8f54_146e74fe",
+      "revId": "83cd11e392af84c48dad4abaacf8b4e968d408d1",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
