@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6eaa8f54_d473fce2",
+        "filename": "i18n/en.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2212
+      },
+      "writtenOn": "2016-01-17T00:38:59Z",
+      "side": 1,
+      "message": "See line 25",
+      "revId": "83cd11e392af84c48dad4abaacf8b4e968d408d1",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6eaa8f54_146e74fe",
+        "filename": "i18n/en.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2212
+      },
+      "writtenOn": "2016-01-17T00:38:59Z",
+      "side": 1,
+      "message": "As an example, I can give French, in which in the passive tense (in this case, \"The user has been renamed to\") also uses gender (\"has been renamed\" will differ based on whether the object (\"The user\" here) is masculine or feminine. Even if you enclose \"has been renamed\" in GENDER tags, for languages like English, the gender-neutral form will be displayed, whereas the masculine/feminine form will be displayed for other languages. Even if  language doesn\u0027t have passive, the gender-neutral form will be displayed.\nAgain, I\u0027m just saying this based on my limited knowledge, so it\u0027s better to check with someone else. :)",
+      "revId": "83cd11e392af84c48dad4abaacf8b4e968d408d1",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
