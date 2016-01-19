@@ -9,6 +9,10 @@ class SpecialRenameuser extends SpecialPage {
 		parent::__construct( 'Renameuser', 'renameuser' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Show the special page
 	 *
