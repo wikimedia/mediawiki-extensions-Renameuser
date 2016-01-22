@@ -334,7 +334,7 @@ class RenameuserSQL {
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
 			$wgAuth->updateExternalDB( $user );
-			Hooks::run( 'RenameUserComplete', array( $this->uid, $this->old, $this->new ) );
+			Hooks::run( 'RenameUserComplete', array( $that->uid, $that->old, $that->new ) );
 			// Publish to RC
 			$logEntry->publish( $logid );
 		} );
