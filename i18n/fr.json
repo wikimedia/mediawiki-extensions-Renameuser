@@ -12,7 +12,8 @@
 			"Peter17",
 			"PieRRoMaN",
 			"Urhixidur",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"renameuser": "Renommer l’utilisateur",
@@ -34,7 +35,7 @@
 	"renameusererrorinvalid": "Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide",
 	"renameuser-error-request": "Un problème existe avec la réception de la requête. Revenez en arrière et essayez à nouveau.",
 	"renameuser-error-same-user": "Vous ne pouvez pas renommer un utilisateur du même nom qu’auparavant.",
-	"renameusersuccess": "L’{{GENDER:$1|utilisateur|utilisatrice}} « <nowiki>$1</nowiki> » a été {{GENDER:$1|renommé|renommée}} « <nowiki>$2</nowiki> ».",
+	"renameusersuccess": "L’{{GENDER:$1|utilisateur|utilisatrice}} « <nowiki>$1</nowiki> » a été {{GENDER:$1|renommé|renommée}} en « <nowiki>$2</nowiki> ».",
 	"renameuser-page-exists": "La page $1 existe déjà et ne peut pas être automatiquement remplacée.",
 	"renameuser-page-moved": "La page $1 a été déplacée vers $2.",
 	"renameuser-page-unmoved": "La page $1 ne peut pas être renommée en $2.",
