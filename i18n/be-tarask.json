@@ -22,7 +22,7 @@
 	"renameusersubmit": "Перайменаваць",
 	"renameuser-submit-blocklog": "Паказаць журнал блякаваньняў удзельніка",
 	"renameusererrordoesnotexist": "Рахунак «<nowiki>$1</nowiki>» не існуе.",
-	"renameusererrorexists": "Рахунак «<nowiki>$1</nowiki>» ужо існуе.",
+	"renameusererrorexists": "Рахунак {{GENDER:$1|удзельніка|удзельніцы}} «<nowiki>$1</nowiki>» ужо існуе.",
 	"renameusererrorinvalid": "Няслушнае імя ўдзельніка «<nowiki>$1</nowiki>».",
 	"renameuser-error-request": "Узьніклі праблемы з атрыманьнем запыту.\nКалі ласка, вярніцеся назад і паспрабуйце ізноў.",
 	"renameuser-error-same-user": "Немагчыма перайменаваць рахунак удзельніка ў тое ж самае імя.",
