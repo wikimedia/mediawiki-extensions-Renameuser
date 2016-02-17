@@ -149,7 +149,7 @@ class SpecialRenameuser extends SpecialPage {
 					<td class='mw-label'>" . $this->msg( 'renameuserwarnings' )->escaped() . "
 					</td>
 					<td class='mw-input'>" .
-				'<ul style="color: red; font-weight: bold"><li>' .
+				'<ul class="error"><li>' .
 				implode( '</li><li>', $warningsHtml ) . '</li></ul>' .
 				'</td>
 				</tr>'
