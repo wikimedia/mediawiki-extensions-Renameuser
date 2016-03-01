@@ -5,7 +5,7 @@
 			"Cedric31"
 		]
 	},
-	"renameuser": "Tornar nomenar l'utilizaire",
+	"renameuser": "Renomenar l'utilizaire",
 	"renameuser-linkoncontribs": "tornar nomenar l'utilizaire",
 	"renameuser-linkoncontribs-text": "Tornar nomenar l'utilizaire",
 	"renameuser-desc": "Torna nomenar un utilizaire (necessita los dreches de ''renameuser'')",
@@ -29,6 +29,6 @@
 	"log-name-renameuser": "Istoric dels cambiaments de nom d'utilizaire",
 	"log-description-renameuser": "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
 	"renameuser-move-log": "Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire \"[[User:$1|$1]]\" en \"[[User:$2|$2]]\"",
-	"right-renameuser": "Tornar nomenar d'utilizaires",
+	"right-renameuser": "Renomenar d'utilizaires",
 	"renameuser-renamed-notice": "Aqueste utilizaire es estat renomenat.\nLo jornal dels cambiaments de noms es disponible çaijós per informacion."
 }
