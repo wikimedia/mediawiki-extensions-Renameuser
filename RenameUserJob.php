@@ -26,7 +26,7 @@
  *   - uidColumn : The *_user_id column
  */
 class RenameUserJob extends Job {
-	public function __construct( Title $title, $params = array(), $id = 0 ) {
+	public function __construct( Title $title, $params = [], $id = 0 ) {
 		parent::__construct( 'renameUser', $title, $params, $id );
 	}
 
@@ -66,9 +66,9 @@ class RenameUserJob extends Job {
 			$dbw->startAtomic( __METHOD__ );
 			$committed = $dbw->selectField( 'logging',
 				'1',
-				array( 'log_id' => $logId ),
+				[ 'log_id' => $logId ],
 				__METHOD__,
-				array( 'FOR UPDATE' )
+				[ 'FOR UPDATE' ]
 			);
 			$dbw->endAtomic( __METHOD__ );
 			# If the transaction inserting this job was rolled back, detect that
@@ -81,7 +81,7 @@ class RenameUserJob extends Job {
 		$dbw->commit( __METHOD__, 'flush' );
 
 		# Conditions like "*_user_text = 'x'
-		$conds = array( $column => $oldname );
+		$conds = [ $column => $oldname ];
 		# If user ID given, add that to condition to avoid rename collisions
 		if ( $userID !== null ) {
 			$conds[$uidColumn] = $userID;
@@ -108,8 +108,8 @@ class RenameUserJob extends Job {
 				wfWaitForSlaves();
 
 				$dbw->update( $table,
-					array( $column => $newname ),
-					array( $column => $oldname, $uniqueKey => $batch ),
+					[ $column => $newname ],
+					[ $column => $oldname, $uniqueKey => $batch ],
 					__METHOD__
 				);
 				$affectedCount += $dbw->affectedRows();
@@ -117,7 +117,7 @@ class RenameUserJob extends Job {
 		} else {
 			# Update the chunk of rows directly
 			$dbw->update( $table,
-				array( $column => $newname ),
+				[ $column => $newname ],
 				$conds,
 				__METHOD__
 			);
@@ -131,14 +131,14 @@ class RenameUserJob extends Job {
 			$ids = $dbw->selectFieldValues(
 				'archive',
 				'ar_id',
-				array(
+				[
 					'ar_user_text' => $oldname,
 					'ar_user' => $userID,
 					// No user,rev_id index, so use timestamp to bound
 					// the rows. This can use the user,timestamp index.
 					"ar_timestamp >= '$minTimestamp'",
 					"ar_timestamp <= '$maxTimestamp'"
-				),
+				],
 				__METHOD__
 			);
 			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
@@ -147,8 +147,8 @@ class RenameUserJob extends Job {
 
 				$dbw->update(
 					'archive',
-					array( 'ar_user_text' => $newname ),
-					array( 'ar_user_text' => $oldname, 'ar_id' => $batch ),
+					[ 'ar_user_text' => $newname ],
+					[ 'ar_user_text' => $oldname, 'ar_id' => $batch ],
 					__METHOD__
 				);
 			}
@@ -160,14 +160,14 @@ class RenameUserJob extends Job {
 			$ids = $dbw->selectFieldValues(
 				'revision',
 				'rev_id',
-				array(
+				[
 					'rev_user_text' => $oldname,
 					'rev_user' => $userID,
 					// No user,rev_id index, so use timestamp to bound
 					// the rows. This can use the user,timestamp index.
 					"rev_timestamp >= '$minTimestamp'",
 					"rev_timestamp <= '$maxTimestamp'"
-				),
+				],
 				__METHOD__
 			);
 			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
@@ -176,8 +176,8 @@ class RenameUserJob extends Job {
 
 				$dbw->update(
 					'revision',
-					array( 'rev_user_text' => $newname ),
-					array( 'rev_user_text' => $oldname, 'rev_id' => $batch ),
+					[ 'rev_user_text' => $newname ],
+					[ 'rev_user_text' => $oldname, 'rev_id' => $batch ],
 					__METHOD__
 				);
 			}

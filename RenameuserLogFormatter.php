@@ -77,7 +77,7 @@ class RenameuserLogFormatter extends LogFormatter {
 		$params = $this->extractParameters();
 		if ( !isset( $params[3] ) ) {
 			// Very old log format, everything in comment - legaciest
-			return array();
+			return [];
 		}
 		if ( !isset( $params[4] ) ) {
 			// Old log format - legacier
@@ -88,9 +88,9 @@ class RenameuserLogFormatter extends LogFormatter {
 
 		$title = Title::makeTitleSafe( NS_USER, $newUserName );
 		if ( $title ) {
-			return array( $title );
+			return [ $title ];
 		}
 
-		return array();
+		return [];
 	}
 }
