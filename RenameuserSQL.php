@@ -89,7 +89,7 @@ class RenameuserSQL {
 	 *    'debugPrefix' - string, prefixed to debug messages
 	 *    'checkIfUserExists' - bool, whether to update the user table
 	 */
-	public function __construct( $old, $new, $uid, User $renamer, $options = array() ) {
+	public function __construct( $old, $new, $uid, User $renamer, $options = [] ) {
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
@@ -108,44 +108,44 @@ class RenameuserSQL {
 			$this->reason = $options['reason'];
 		}
 
-		$this->tables = array(); // Immediate updates
-		$this->tables['image'] = array( 'img_user_text', 'img_user' );
-		$this->tables['oldimage'] = array( 'oi_user_text', 'oi_user' );
-		$this->tables['filearchive'] = array( 'fa_user_text', 'fa_user' );
-		$this->tablesJob = array(); // Slow updates
+		$this->tables = []; // Immediate updates
+		$this->tables['image'] = [ 'img_user_text', 'img_user' ];
+		$this->tables['oldimage'] = [ 'oi_user_text', 'oi_user' ];
+		$this->tables['filearchive'] = [ 'fa_user_text', 'fa_user' ];
+		$this->tablesJob = []; // Slow updates
 		// If this user has a large number of edits, use the jobqueue
 		if ( User::newFromId( $uid )->getEditCount() > self::CONTRIB_JOB ) {
-			$this->tablesJob['revision'] = array(
+			$this->tablesJob['revision'] = [
 				self::NAME_COL => 'rev_user_text',
 				self::UID_COL  => 'rev_user',
 				self::TIME_COL => 'rev_timestamp',
 				'uniqueKey'    => 'rev_id'
-			);
-			$this->tablesJob['archive'] = array(
+			];
+			$this->tablesJob['archive'] = [
 				self::NAME_COL => 'ar_user_text',
 				self::UID_COL  => 'ar_user',
 				self::TIME_COL => 'ar_timestamp',
 				'uniqueKey'    => 'ar_id'
-			);
-			$this->tablesJob['logging'] = array(
+			];
+			$this->tablesJob['logging'] = [
 				self::NAME_COL => 'log_user_text',
 				self::UID_COL  => 'log_user',
 				self::TIME_COL => 'log_timestamp',
 				'uniqueKey'    => 'log_id'
-			);
+			];
 		} else {
-			$this->tables['revision'] = array( 'rev_user_text', 'rev_user' );
-			$this->tables['archive'] = array( 'ar_user_text', 'ar_user' );
-			$this->tables['logging'] = array( 'log_user_text', 'log_user' );
+			$this->tables['revision'] = [ 'rev_user_text', 'rev_user' ];
+			$this->tables['archive'] = [ 'ar_user_text', 'ar_user' ];
+			$this->tables['logging'] = [ 'log_user_text', 'log_user' ];
 		}
 		// Recent changes is pretty hot, deadlocks occur if done all at once
 		if ( wfQueriesMustScale() ) {
-			$this->tablesJob['recentchanges'] = array( 'rc_user_text', 'rc_user', 'rc_timestamp' );
+			$this->tablesJob['recentchanges'] = [ 'rc_user_text', 'rc_user', 'rc_timestamp' ];
 		} else {
-			$this->tables['recentchanges'] = array( 'rc_user_text', 'rc_user' );
+			$this->tables['recentchanges'] = [ 'rc_user_text', 'rc_user' ];
 		}
 
-		Hooks::run( 'RenameUserSQL', array( $this ) );
+		Hooks::run( 'RenameUserSQL', [ $this ] );
 	}
 
 	protected function debug( $msg ) {
@@ -167,7 +167,7 @@ class RenameuserSQL {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 
-		Hooks::run( 'RenameUserPreRename', array( $this->uid, $this->old, $this->new ) );
+		Hooks::run( 'RenameUserPreRename', [ $this->uid, $this->old, $this->new ] );
 
 		// Make sure the user exists if needed
 		if ( $this->checkIfUserExists && !self::lockUserAndGetId( $this->old ) ) {
@@ -180,8 +180,8 @@ class RenameuserSQL {
 		// logged in and making new edits (under the old name) while being renamed.
 		$this->debug( "Starting rename of {$this->old} to {$this->new}" );
 		$dbw->update( 'user',
-			array( 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ),
-			array( 'user_name' => $this->old, 'user_id' => $this->uid ),
+			[ 'user_name' => $this->new, 'user_touched' => $dbw->timestamp() ],
+			[ 'user_name' => $this->old, 'user_id' => $this->uid ],
 			__METHOD__
 		);
 
@@ -196,8 +196,8 @@ class RenameuserSQL {
 
 		// Update ipblock list if this user has a block in there.
 		$dbw->update( 'ipblocks',
-			array( 'ipb_address' => $this->new ),
-			array( 'ipb_user' => $this->uid, 'ipb_address' => $this->old ),
+			[ 'ipb_address' => $this->new ],
+			[ 'ipb_user' => $this->uid, 'ipb_address' => $this->old ],
 			__METHOD__
 		);
 		// Update this users block/rights log. Ideally, the logs would be historical,
@@ -210,10 +210,10 @@ class RenameuserSQL {
 		$logTypesOnUser = SpecialLog::getLogTypesOnUser();
 
 		$dbw->update( 'logging',
-			array( 'log_title' => $newTitle->getDBkey() ),
-			array( 'log_type' => $logTypesOnUser,
+			[ 'log_title' => $newTitle->getDBkey() ],
+			[ 'log_type' => $logTypesOnUser,
 				'log_namespace' => NS_USER,
-				'log_title' => $oldTitle->getDBkey() ),
+				'log_title' => $oldTitle->getDBkey() ],
 			__METHOD__
 		);
 
@@ -221,14 +221,14 @@ class RenameuserSQL {
 		foreach ( $this->tables as $table => $fieldSet ) {
 			list( $nameCol, $userCol ) = $fieldSet;
 			$dbw->update( $table,
-				array( $nameCol => $this->new ),
-				array( $nameCol => $this->old, $userCol => $this->uid ),
+				[ $nameCol => $this->new ],
+				[ $nameCol => $this->old, $userCol => $this->uid ],
 				__METHOD__
 			);
 		}
 
 		/** @var RenameUserJob[] $jobs */
-		$jobs = array(); // jobs for all tables
+		$jobs = []; // jobs for all tables
 		// Construct jobqueue updates...
 		// FIXME: if a bureaucrat renames a user in error, he/she
 		// must be careful to wait until the rename finishes before
@@ -242,13 +242,13 @@ class RenameuserSQL {
 			$timestampC = $params[self::TIME_COL]; // some *_timestamp column
 
 			$res = $dbw->select( $table,
-				array( $timestampC ),
-				array( $userTextC => $this->old, $userIDC => $this->uid ),
+				[ $timestampC ],
+				[ $userTextC => $this->old, $userIDC => $this->uid ],
 				__METHOD__,
-				array( 'ORDER BY' => "$timestampC ASC" )
+				[ 'ORDER BY' => "$timestampC ASC" ]
 			);
 
-			$jobParams = array();
+			$jobParams = [];
 			$jobParams['table'] = $table;
 			$jobParams['column'] = $userTextC;
 			$jobParams['uidColumn'] = $userIDC;
@@ -300,11 +300,11 @@ class RenameuserSQL {
 		$logEntry->setPerformer( $this->renamer );
 		$logEntry->setTarget( $oldTitle );
 		$logEntry->setComment( $this->reason );
-		$logEntry->setParameters( array(
+		$logEntry->setParameters( [
 			'4::olduser' => $this->old,
 			'5::newuser' => $this->new,
 			'6::edits' => $contribs
-		) );
+		] );
 		$logid = $logEntry->insert();
 		// Include the log_id in the jobs as a DB commit marker
 		foreach ( $jobs as $job ) {
@@ -331,7 +331,7 @@ class RenameuserSQL {
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
 			$wgAuth->updateExternalDB( $user );
-			Hooks::run( 'RenameUserComplete', array( $that->uid, $that->old, $that->new ) );
+			Hooks::run( 'RenameUserComplete', [ $that->uid, $that->old, $that->new ] );
 			// Publish to RC
 			$logEntry->publish( $logid );
 		} );
@@ -349,9 +349,9 @@ class RenameuserSQL {
 		return (int)wfGetDB( DB_MASTER )->selectField(
 			'user',
 			'user_id',
-			array( 'user_name' => $name ),
+			[ 'user_name' => $name ],
 			__METHOD__,
-			array( 'FOR UPDATE' )
+			[ 'FOR UPDATE' ]
 		);
 	}
 }

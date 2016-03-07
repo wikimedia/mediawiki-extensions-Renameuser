@@ -23,11 +23,11 @@ class RenameuserHooks {
 				'renameuser',
 				$page,
 				'',
-				array(
+				[
 					'lim' => 10,
 					'showIfEmpty' => false,
-					'msgKey' => array( 'renameuser-renamed-notice', $title->getBaseText() )
-				)
+					'msgKey' => [ 'renameuser-renamed-notice', $title->getBaseText() ]
+				]
 			);
 		}
 
@@ -50,8 +50,8 @@ class RenameuserHooks {
 			$tools[] = Linker::link(
 				SpecialPage::getTitleFor( 'Renameuser' ),
 				wfMessage( 'renameuser-linkoncontribs' )->escaped(),
-				array( 'title' => wfMessage( 'renameuser-linkoncontribs-text' )->parse() ),
-				array( 'oldusername' => $nt->getText() )
+				[ 'title' => wfMessage( 'renameuser-linkoncontribs-text' )->parse() ],
+				[ 'oldusername' => $nt->getText() ]
 			);
 		}
 
