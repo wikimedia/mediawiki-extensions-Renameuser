@@ -73,7 +73,7 @@ class RenameUserJob extends Job {
 			$dbw->endAtomic( __METHOD__ );
 			# If the transaction inserting this job was rolled back, detect that
 			if ( $committed === false ) { // rollback happened?
-				throw new LogicException( "Cannot run job if the account rename failed." );
+				throw new LogicException( 'Cannot run job if the account rename failed.' );
 			}
 		}
 
@@ -94,7 +94,7 @@ class RenameUserJob extends Job {
 		} elseif ( $uniqueKey !== null && $keyId !== null ) {
 			$conds[$uniqueKey] = $keyId;
 		} else {
-			throw new InvalidArgumentException( "Expected ID batch or time range" );
+			throw new InvalidArgumentException( 'Expected ID batch or time range' );
 		}
 
 		$affectedCount = 0;
