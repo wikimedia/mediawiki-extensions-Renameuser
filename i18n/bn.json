@@ -32,7 +32,7 @@
 	"log-name-renameuser": "ব্যবহারকারী নামান্তরের লগ",
 	"log-description-renameuser": "এটি ব্যাবহারকারী নামের পরিবর্তনের লগ",
 	"logentry-renameuser-renameuser": "$1 ব্যবহারকারী $4 কে ({{PLURAL:$6|$6টি সম্পাদনা}}) {{GENDER:$7|$5}}-এ {{GENDER:$2|নামান্তরিত করেছেন}}",
-	"logentry-renameuser-renameuser-legacier": "$1 ব্যবহারকারী $4 কে {{GENDER:$7|$5}-এ নামান্তরিত করেছেন",
+	"logentry-renameuser-renameuser-legacier": "$1 ব্যবহারকারী $4 কে {{GENDER:$7|$5}}-এ নামান্তরিত করেছেন",
 	"renameuser-move-log": "যখন {{GENDER:$2|ব্যবহারকারী}} \"[[User:$1|$1]]\" থেকে \"[[User:$2|$2]]\" তে নামান্তরিত হয় তখন স্বয়ংক্রিয়ভাবে পাতা সরিয়ে নেওয়া হয়েছে",
 	"action-renameuser": "ব্যবহারকারী নাম পরিবর্তন",
 	"right-renameuser": "ব্যবহারকারীদের পুনরায় নাম দাও",
