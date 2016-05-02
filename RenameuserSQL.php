@@ -80,9 +80,9 @@ class RenameuserSQL {
 	/**
 	 * Constructor
 	 *
-	 * @param $old string The old username
-	 * @param $new string The new username
-	 * @param $uid
+	 * @param string $old The old username
+	 * @param string $new The new username
+	 * @param integer $uid
 	 * @param User $renamer
 	 * @param $options array Optional extra options.
 	 *    'reason' - string, reason for the rename
@@ -90,6 +90,10 @@ class RenameuserSQL {
 	 *    'checkIfUserExists' - bool, whether to update the user table
 	 */
 	public function __construct( $old, $new, $uid, User $renamer, $options = [] ) {
+		if ( !$uid ) {
+			throw new InvalidArgumentException( "No user ID provided." );
+		}
+
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
