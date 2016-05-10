@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Session\SessionManager;
+
 /**
  * Class which performs the actual renaming of users
  */
@@ -189,8 +191,15 @@ class RenameuserSQL {
 		// Reset token to break login with central auth systems.
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
-		$authUser = $wgAuth->getUserInstance( $user );
-		$authUser->resetAuthToken();
+
+		if ( class_exists( SessionManager::class ) &&
+			is_callable( [ SessionManager::singleton(), 'invalidateSessionsForUser' ] )
+		) {
+			SessionManager::singleton()->invalidateSessionsForUser( $user );
+		} else {
+			$authUser = $wgAuth->getUserInstance( $user );
+			$authUser->resetAuthToken();
+		}
 
 		// Purge user cache
 		$user->invalidateCache();
