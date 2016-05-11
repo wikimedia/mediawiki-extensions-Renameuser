@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ae564743_e8692df7",
+        "filename": "RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 343,
+      "author": {
+        "id": 389
+      },
+      "writtenOn": "2016-05-11T21:31:23Z",
+      "side": 1,
+      "message": "Is this needed at all? If we want to support extensions which implement updateExternalDB instead of the hook, shouldn\u0027t that happen by core registering a hook handler which calls it?",
+      "revId": "48c319b7a54c709ec5c172d704b2750267c945c5",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
