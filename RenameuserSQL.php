@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Auth\AuthManager;
 use MediaWiki\Session\SessionManager;
 
 /**
@@ -335,12 +336,20 @@ class RenameuserSQL {
 
 		$that = $this;
 		$dbw->onTransactionIdle( function() use ( $that, $dbw, $logEntry, $logid ) {
-			global $wgAuth;
 			// Keep any updates here in a transaction
 			$dbw->setFlag( DBO_TRX );
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
-			$wgAuth->updateExternalDB( $user );
+			// Call $wgAuth for backwards compatibility
+			if ( class_exists( AuthManager::class ) ) {
+				AuthManager::callLegacyAuthPlugin( 'updateExternalDB', [ $user ] );
+			} else {
+				global $wgAuth;
+				$wgAuth->updateExternalDB( $user );
+			}
+			// Trigger the UserSaveSettings hook, which is the replacement for
+			// $wgAuth->updateExternalDB()
+			$user->saveSettings();
 			Hooks::run( 'RenameUserComplete', [ $that->uid, $that->old, $that->new ] );
 			// Publish to RC
 			$logEntry->publish( $logid );
