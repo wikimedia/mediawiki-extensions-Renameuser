@@ -11,6 +11,7 @@ to add events to the Renameuser extension.
 $uid: The user ID
 $oldusername: The old username
 $newusername: The new username
+&$reason: Abort reason
 
 'RenameUserComplete': Called after a user was renamed
 $uid: The user ID

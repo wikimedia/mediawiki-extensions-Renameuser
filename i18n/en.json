@@ -17,6 +17,8 @@
 	"renameuserconfirm": "Yes, rename the user",
 	"renameusersubmit": "Submit",
 	"renameuser-submit-blocklog": "Show block log for user",
+	"renameusererrorblocked": "This user is <span class=\"plainlinks\">[$1 currently blocked]</span>.",
+	"renameusererrorconfirm": "You did not check the confirmation box.",
 	"renameusererrordoesnotexist": "The user \"<nowiki>$1</nowiki>\" does not exist.",
 	"renameusererrorexists": "The {{GENDER:$1|user}} \"<nowiki>$1</nowiki>\" already exists.",
 	"renameusererrorinvalid": "The username \"<nowiki>$1</nowiki>\" is invalid.",

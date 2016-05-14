@@ -29,6 +29,8 @@
 	"renameuserconfirm": "Used as label for the \"Confirm action\" checkbox in the \"Rename user\" form in [[Special:RenameUser]].",
 	"renameusersubmit": "Used as label for the Submit button in the \"Rename user\" form in [[Special:RenameUser]].\n{{Identical|Submit}}",
 	"renameuser-submit-blocklog": "Button text. When clicked, the block log entries for a given user will be displayed.",
+	"renameusererrorblocked": "Used as error message in [[Special:RenameUser]] before renaming a user that is currently blocked. Parameters:\n* $1 - URL to the block log of the user in question",
+	"renameusererrorconfirm": "Used as error message when renaming user in [[Special:Renameuser]].",
 	"renameusererrordoesnotexist": "Used as error message. Parameters:\n* $1 - username\nSee also:\n* {{msg-mw|Renameusererrorexists}}",
 	"renameusererrorexists": "Used as error message. Parameters:\n* $1 - username, can be used for GENDER\nSee also:\n* {{msg-mw|Renameusererrordoesnotexist}}",
 	"renameusererrorinvalid": "Used as error message when renaming user in [[Special:Renameuser]]. Parameters:\n* $1 - old username, or new username",
