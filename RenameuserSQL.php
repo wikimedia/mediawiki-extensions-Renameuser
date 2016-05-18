@@ -195,6 +195,7 @@ class RenameuserSQL {
 		if ( class_exists( SessionManager::class ) &&
 			is_callable( [ SessionManager::singleton(), 'invalidateSessionsForUser' ] )
 		) {
+			$user->load( User::READ_LATEST );
 			SessionManager::singleton()->invalidateSessionsForUser( $user );
 		} else {
 			$authUser = $wgAuth->getUserInstance( $user );
