@@ -340,6 +340,7 @@ class RenameuserSQL {
 			$dbw->setFlag( DBO_TRX );
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
+			$user->load( User::READ_LATEST );
 			// Call $wgAuth for backwards compatibility
 			if ( class_exists( AuthManager::class ) ) {
 				AuthManager::callLegacyAuthPlugin( 'updateExternalDB', [ $user ] );
