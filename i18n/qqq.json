@@ -12,11 +12,12 @@
 			"Tacsipacsi",
 			"The Evil IP address",
 			"Umherirrender",
-			"Freddy2001"
+			"Freddy2001",
+			"Metalhead64"
 		]
 	},
 	"renameuser": "{{doc-special|RenameUser}}\n{{Identical|Rename user}}",
-	"renameuser-linkoncontribs": "Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to rename users.\n{{Identical|Rename user}}\nParameters:\n* $1 - username, for GENDER support",
+	"renameuser-linkoncontribs": "Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to rename users.\n{{Identical|Rename user}}",
 	"renameuser-linkoncontribs-text": "Tooltip for {{msg-mw|renameuser-linkoncontribs}}.",
 	"renameuser-desc": "{{desc|name=Rename user|url=https://www.mediawiki.org/wiki/Extension:Renameuser}}",
 	"renameuser-summary": "{{notranslate}}",
