@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAALX//7G8\u003d",
+        "filename": "Renameuser_body.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2016-08-11T05:25:48Z",
+      "side": 1,
+      "message": "$oldusername is a Title, this should have getText().",
+      "revId": "240c26c8d9192ac8d5a8c88b1f94b17c40a365f2",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
