@@ -33,7 +33,7 @@
 	"renameuser-page-exists": "$1 pel ca ra esto newe ra ser nênusiyeno.",
 	"renameuser-page-moved": "$1 pel kırışiya no $2 pel",
 	"renameuser-page-unmoved": "$1 pel nêkırışiya no $2 pel.",
-	"log-name-renameuser": "qeydê vuriyayişê nameyê karberi",
+	"log-name-renameuser": "Qeydê vurriyayışê nameyê karberi",
 	"log-description-renameuser": "Eno yew qeydê vurnayışê nameyanê karberiyo.",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|nameyê}} karberi $4 ({{PLURAL:$6|$6 vurnayış|$6 vurnayışi}}) ra berd be {{GENDER:$7|$5}}",
 	"logentry-renameuser-renameuser-legacier": "$1i nameyê karberi $4 vurna era {{GENDER:$7|$5}}",
