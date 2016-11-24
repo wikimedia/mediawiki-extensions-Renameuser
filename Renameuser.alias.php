@@ -356,7 +356,7 @@ $specialPageAliases['tr'] = array(
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
-	'Renameuser' => array( 'Перейменувати_користувача' ),
+	'Renameuser' => array( 'Перейменувати_користувача', 'Переименовать_участника' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
