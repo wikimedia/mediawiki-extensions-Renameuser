@@ -54,6 +54,11 @@ $specialPageAliases['bjn'] = array(
 	'Renameuser' => array( 'Ganti_ngaran_pamakai' ),
 );
 
+/** Bengali (বাংলা) */
+$specialPageAliases['bn'] = array(
+	'Renameuser' => array( 'ব্যবহারকারী_নামান্তর', 'ব্যবহারকারী_পুনঃনামকরণ' ),
+);
+
 /** Breton (brezhoneg) */
 $specialPageAliases['br'] = array(
 	'Renameuser' => array( 'AdenevelImplijer' ),
