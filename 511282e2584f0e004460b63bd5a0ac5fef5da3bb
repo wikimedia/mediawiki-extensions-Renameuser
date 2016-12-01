@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ed34346_ebc2115d",
+        "filename": "Renameuser.alias.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1453
+      },
+      "writtenOn": "2016-12-01T07:27:23Z",
+      "side": 1,
+      "message": "Why 2? What do they say?",
+      "range": {
+        "startLine": 59,
+        "startChar": 24,
+        "endLine": 59,
+        "endChar": 72
+      },
+      "revId": "511282e2584f0e004460b63bd5a0ac5fef5da3bb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
