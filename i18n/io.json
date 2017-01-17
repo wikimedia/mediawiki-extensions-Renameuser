@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Malafaya",
-			"Wyvernoid"
+			"Wyvernoid",
+			"Robin van der Vliet"
 		]
 	},
-	"renameuser": "Rinomar uzanto",
+	"renameuser": "Rinomar uzero",
 	"renameuserold": "Aktuala uzantonomo:",
 	"renameusernew": "Nova uzantonomo:",
 	"renameuserwarnings": "Averti:",
@@ -13,10 +14,10 @@
 	"renameusererrordoesnotexist": "L'uzanto \"<nowiki>$1</nowiki>\" ne existas.",
 	"renameusererrorexists": "L'uzanto \"<nowiki>$1</nowiki>\" ja existas.",
 	"renameusererrorinvalid": "L'uzantonomo \"<nowiki>$1</nowiki>\" esas ne-valida.",
-	"renameuser-error-same-user": "Vu ne povas renomar uzanto ad la sama nomo.",
+	"renameuser-error-same-user": "Vu ne povas renomar uzero ad la sama nomo.",
 	"renameusersuccess": "La uzanto \"<nowiki>$1</nowiki>\" rinomesis \"<nowiki>$2</nowiki>\".",
 	"renameuser-page-moved": "La pagino $1 movesis a $2.",
 	"renameuser-page-unmoved": "On ne povis movar la pagino $1 a $2.",
-	"log-name-renameuser": "Registro di uzanto-rinomizuri",
+	"log-name-renameuser": "Registro di uzero-rinomizuri",
 	"right-renameuser": "Rinomar uzanti"
 }
