@@ -3,7 +3,8 @@
 		"authors": [
 			"Malafaya",
 			"Wyvernoid",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Lakaoso"
 		]
 	},
 	"renameuser": "Rinomar uzero",
@@ -12,7 +13,7 @@
 	"renameuserwarnings": "Averti:",
 	"renameuserconfirm": "Yes, rinomez l'uzanto",
 	"renameusererrordoesnotexist": "L'uzanto \"<nowiki>$1</nowiki>\" ne existas.",
-	"renameusererrorexists": "L'uzanto \"<nowiki>$1</nowiki>\" ja existas.",
+	"renameusererrorexists": "La {{GENDER:$1|uzero}} \"<nowiki>$1</nowiki>\" ja existas.",
 	"renameusererrorinvalid": "L'uzantonomo \"<nowiki>$1</nowiki>\" esas ne-valida.",
 	"renameuser-error-same-user": "Vu ne povas renomar uzero ad la sama nomo.",
 	"renameusersuccess": "La uzanto \"<nowiki>$1</nowiki>\" rinomesis \"<nowiki>$2</nowiki>\".",
