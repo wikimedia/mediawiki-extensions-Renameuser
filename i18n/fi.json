@@ -8,7 +8,8 @@
 			"Nike",
 			"Pxos",
 			"Str4nd",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Lliehu"
 		]
 	},
 	"renameuser": "Käyttäjätunnuksen vaihto",
@@ -37,7 +38,7 @@
 	"log-name-renameuser": "Käyttäjänimien vaihtojen loki",
 	"log-description-renameuser": "Tämä on loki käyttäjätunnuksien vaihdoista.",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|uudelleennimesi}} käyttäjän $4 ({{PLURAL:$6|$6 muokkaus|$6 muokkausta}}) nimelle {{GENDER:$7|$5}}",
-	"logentry-renameuser-renameuser-legacier": "$1 uudelleennimesi käyttäjän $4 nimelle {{GENDER:$7|$5}}",
+	"logentry-renameuser-renameuser-legacier": "$1 vaihtoi käyttäjän $4 nimeksi {{GENDER:$7|$5}}",
 	"renameuser-move-log": "Sivu siirretty automaattisesti kun uudelleennimettiin {{GENDER:$2|käyttäjä}} \"[[User:$1|$1]]\" nimelle \"[[User:$2|$2]]\"",
 	"action-renameuser": "nimetä käyttäjätunnuksia uudelleen",
 	"right-renameuser": "Nimetä käyttäjätunnuksia uudelleen",
