@@ -28,7 +28,8 @@
 	"renameuser-page-unmoved": "La pagina $1 pòt pas èsser renomenada en $2.",
 	"log-name-renameuser": "Istoric dels cambiaments de nom d'utilizaire",
 	"log-description-renameuser": "Aquò es l'istoric dels cambiaments de nom dels utilizaires",
-	"renameuser-move-log": "Pagina desplaçada automaticament al moment del cambiament de nom de l’utilizaire \"[[User:$1|$1]]\" en \"[[User:$2|$2]]\"",
+	"renameuser-move-log": "Pagina desplaçada automaticament al moment del cambiament de nom de l’{{GENDER:$1|utilizaire|utilizaira}} \"[[User:$1|$1]]\" en \"[[User:$2|$2]]\"",
+	"action-renameuser": "renomenar los utilizaires",
 	"right-renameuser": "Renomenar d'utilizaires",
 	"renameuser-renamed-notice": "Aqueste utilizaire es estat renomenat.\nLo jornal dels cambiaments de noms es disponible çaijós per informacion."
 }
