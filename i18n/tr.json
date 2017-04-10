@@ -33,6 +33,7 @@
 	"renameuser-page-moved": "$1 sayfası $2 sayfasına taşındı.",
 	"renameuser-page-unmoved": "$1 sayfası $2 sayfasına taşınamıyor.",
 	"log-name-renameuser": "Kullanıcı adı değişikliği günlüğü",
+	"logentry-renameuser-renameuser-legacier": "$1, $4 adlı kullanıcının adını {{GENDER:$7|$5}} olarak değiştirdi",
 	"renameuser-move-log": "Kullanıcıyı \"[[User:$1|$1]]\" isminden \"[[User:$2|$2]]\" ismine yeniden adlandırırken, sayfa otomatik olarak taşındı",
 	"right-renameuser": "Kullanıcıların adlarını değiştirir",
 	"renameuser-renamed-notice": "Bu kullanıcının adı değiştirildi.\nReferans için ad değiştirme günlüğü aşağıda sağlanmıştır."
