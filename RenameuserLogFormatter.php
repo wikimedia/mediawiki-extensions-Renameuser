@@ -31,7 +31,8 @@ class RenameuserLogFormatter extends LogFormatter {
 
 		// Nice link to old user page
 		$title = Title::makeTitleSafe( NS_USER, $params[3] );
-		$link = $this->myPageLink( $title, $params[3] );
+		$link = $this->myPageLink( $title, $params[3],
+				[ 'redirect' => 'no' ] );
 		$params[3] = Message::rawParam( $link );
 
 		// Nice link to new user page
@@ -44,10 +45,10 @@ class RenameuserLogFormatter extends LogFormatter {
 		return $params;
 	}
 
-	protected function myPageLink( Title $title = null, $text ) {
+	protected function myPageLink( Title $title = null, $text, $query = [] ) {
 		if ( !$this->plaintext ) {
 			$text = htmlspecialchars( $text );
-			$link = Linker::link( $title, $text );
+			$link = Linker::link( $title, $text, [], $query );
 		} else {
 			if ( !$title instanceof Title ) {
 				$link = "[[User:$text]]";
