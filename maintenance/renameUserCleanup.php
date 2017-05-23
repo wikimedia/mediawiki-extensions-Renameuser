@@ -1,5 +1,6 @@
 <?php
 /**
+/* temp */
  * Maintenance script to clean up after incomplete user renames
  * Sometimes user edits are left lying around under the old name,
  * check for that and assign them to the new username
