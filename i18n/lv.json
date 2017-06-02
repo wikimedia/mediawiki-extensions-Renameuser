@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Papuass",
-			"Xil"
+			"Xil",
+			"Silraks"
 		]
 	},
 	"renameuser": "Pārsaukt lietotāju",
@@ -17,7 +18,7 @@
 	"renameusersubmit": "Iesniegt",
 	"renameusererrorexists": "Lietotājs \"<nowiki>$1</nowiki>\" jau ir.",
 	"renameusersuccess": "Lietotājs \"<nowiki>$1</nowiki>\" pārdēvēts par \"<nowiki>$2</nowiki>\".",
-	"log-name-renameuser": "Lietotāju pārdēvēšanas reģistrs",
+	"log-name-renameuser": "Dalībnieku pārdēvēšanas reģistrs",
 	"log-description-renameuser": "Lietotājvārdu maiņas reģistrs",
 	"action-renameuser": "pārsaukt lietotājus",
 	"right-renameuser": "Pārsaukt lietotājus"
