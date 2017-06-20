@@ -336,7 +336,7 @@ class RenameuserSQL {
 		$dbw->endAtomic( __METHOD__ );
 
 		$that = $this;
-		$dbw->onTransactionIdle( function() use ( $that, $dbw, $logEntry, $logid ) {
+		$dbw->onTransactionIdle( function () use ( $that, $dbw, $logEntry, $logid ) {
 			// Keep any updates here in a transaction
 			$dbw->setFlag( DBO_TRX );
 			// Clear caches and inform authentication plugins

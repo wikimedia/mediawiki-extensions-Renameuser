@@ -33,7 +33,7 @@ class RenameUserCleanup extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Maintenance script to finish incomplete rename user, ' .
-		 	'in particular to reassign edits that were missed';
+			 'in particular to reassign edits that were missed';
 		$this->addOption( 'olduser', 'Old user name', true, true );
 		$this->addOption( 'newuser', 'New user name', true, true );
 		$this->addOption( 'olduid', 'Old user id in revision records (DANGEROUS)', false, true );
