@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce8a9b6b_fa1516a0",
+        "filename": "renameUserCleanup.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2017-06-20T21:36:04Z",
+      "side": 1,
+      "message": "remove space",
+      "range": {
+        "startLine": 36,
+        "startChar": 3,
+        "endLine": 36,
+        "endChar": 4
+      },
+      "revId": "a29f06a17d30c43aa7061d8d9ffc33bba67e58b6",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
