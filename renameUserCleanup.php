@@ -32,8 +32,8 @@ require_once "$IP/maintenance/Maintenance.php";
 class RenameUserCleanup extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Maintenance script to finish incomplete rename user, ' .
-			'in particular to reassign edits that were missed';
+		$this->mDescription = 'Maintenance script to finish incomplete rename user,'
+			. ' in particular to reassign edits that were missed';
 		$this->addOption( 'olduser', 'Old user name', true, true );
 		$this->addOption( 'newuser', 'New user name', true, true );
 		$this->addOption( 'olduid', 'Old user id in revision records (DANGEROUS)', false, true );
@@ -55,36 +55,36 @@ class RenameUserCleanup extends Maintenance {
 		$this->doUpdates( $olduser, $newuser, $newuser->getId() );
 		$this->doUpdates( $olduser, $newuser, 0 );
 
-		print "Done!\n";
-		exit( 0 );
+		$this->output( "Done!\n" );
 	}
 
 	/**
-	 * @param $olduser User
-	 * @param $newuser User
+	 * @param User $olduser
+	 * @param User $newuser
 	 */
 	public function checkUserExistence( $olduser, $newuser ) {
 		if ( !$newuser->getId() ) {
 			$this->error( 'No such user: ' . $this->getOption( 'newuser' ), true );
-			exit( 1 );
 		}
 		if ( $olduser->getId() ) {
-			print 'WARNING!!: Old user still exists: ' . $this->getOption( 'olduser' ) . "\n";
-			print "proceed anyways? We'll only re-attribute edits that have the new user uid (or 0)";
-			print ' or the uid specified by the caller, and the old user name.  [N/y]   ';
+			$this->output( 'WARNING!!: Old user still exists: ' . $this->getOption( 'olduser' ) . "\n" );
+			$this->output( 'We\'ll only re-attribute edits that have the new user uid (or 0) ' );
+			$this->output( 'or the uid specified by the caller, and the old user name.' );
+			$this->output( 'Proceed anyway? [N/y] ' );
+                        
 			$stdin = fopen( 'php://stdin', 'rt' );
 			$line = fgets( $stdin );
 			fclose( $stdin );
+
 			if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
-				print "Exiting at user's request\n";
-				exit( 0 );
+				$this->output( "Exiting at users request\n" );
 			}
 		}
 	}
 
 	/**
-	 * @param $olduser User
-	 * @param $newuser User
+	 * @param User $olduser
+	 * @param User $newuser
 	 */
 	public function checkRenameLog( $olduser, $newuser ) {
 		$dbr = wfGetDB( DB_SLAVE );
@@ -102,7 +102,9 @@ class RenameUserCleanup extends Maintenance {
 		);
 		if ( !$result || !$result->numRows() ) {
 			// try the old format
-			$result = $dbr->select( 'logging', '*',
+			$result = $dbr->select(
+				'logging',
+				'*',
 				[ 'log_type' => 'renameuser',
 					'log_action' => 'renameuser',
 					'log_namespace' => NS_USER,
@@ -111,144 +113,212 @@ class RenameUserCleanup extends Maintenance {
 				__METHOD__
 			);
 			if ( !$result || !$result->numRows() ) {
-				print 'No log entry found for a rename of ' . $olduser->getName() .
-					' to ' . $newuser->getName() . ', proceed anyways??? [N/y] ';
+				$this->output( 'No log entry found for a rename of ' . $olduser->getName() .
+					' to ' . $newuser->getName() . ', proceed anyways? [N/y] ' );
+
 				$stdin = fopen( 'php://stdin', 'rt' );
 				$line = fgets( $stdin );
 				fclose( $stdin );
+
 				if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
-					print "Exiting at user's request\n";
+					$this->output( "Exiting at user's request\n" );
 					exit( 1 );
 				}
 			} else {
 				foreach ( $result as $row ) {
-					print 'Found possible log entry of the rename, please check: ' .
+					$this->output( 'Found possible log entry of the rename, please check: ' .
 						$row->log_title . ' with comment ' . $row->log_comment .
-						" on $row->log_timestamp\n";
+						" on $row->log_timestamp\n" );
 				}
 			}
 		} else {
 			foreach ( $result as $row ) {
-				print 'Found log entry of the rename: ' . $olduser->getName() .
-					' to ' . $newuser->getName() . " on $row->log_timestamp\n";
+				$this->output( 'Found log entry of the rename: ' . $olduser->getName() .
+					' to ' . $newuser->getName() . " on $row->log_timestamp\n" );
 			}
 		}
 		if ( $result && $result->numRows() > 1 ) {
 			print 'More than one rename entry found in the log, not sure ' .
-				'what to do. Continue anyways? [N/y]  ';
+				'what to do. Proceed anyways? [N/y] ';
+
 			$stdin = fopen( 'php://stdin', 'rt' );
 			$line = fgets( $stdin );
 			fclose( $stdin );
+
 			if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
-				print "Exiting at user's request\n";
+				$this->output( "Exiting at users request\n" );
 				exit( 1 );
 			}
 		}
 	}
 
 	/**
-	 * @param $olduser User
-	 * @param $newuser User
+	 * @param User $olduser
+	 * @param User $newuser
 	 * @param $uid
 	 */
 	public function doUpdates( $olduser, $newuser, $uid ) {
-		$this->updateTable( 'revision', 'rev_user_text', 'rev_user', 'rev_timestamp',
-			$olduser, $newuser, $uid );
-		$this->updateTable( 'archive', 'ar_user_text', 'ar_user', 'ar_timestamp',
-			$olduser, $newuser, $uid );
-		$this->updateTable( 'logging', 'log_user_text', 'log_user', 'log_timestamp',
-			$olduser, $newuser, $uid );
-		$this->updateTable( 'image', 'img_user_text', 'img_user', 'img_timestamp',
-			$olduser, $newuser, $uid );
-		$this->updateTable( 'oldimage', 'oi_user_text', 'oi_user', 'oi_timestamp',
-			$olduser, $newuser, $uid );
-		$this->updateTable( 'filearchive', 'fa_user_text', 'fa_user', 'fa_timestamp',
-			$olduser, $newuser, $uid );
+		$this->updateTable(
+			'revision',
+			'rev_user_text',
+			'rev_user',
+			'rev_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
+		$this->updateTable(
+			'archive',
+			'ar_user_text',
+			'ar_user',
+			'ar_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
+		$this->updateTable(
+			'logging',
+			'log_user_text',
+			'log_user',
+			'log_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
+		$this->updateTable(
+			'image',
+			'img_user_text',
+			'img_user',
+			'img_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
+		$this->updateTable(
+			'oldimage',
+			'oi_user_text',
+			'oi_user',
+			'oi_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
+		$this->updateTable(
+			'filearchive',
+			'fa_user_text',
+			'fa_user',
+			'fa_timestamp',
+			$olduser,
+			$newuser,
+			$uid
+		);
 	}
 
 	/**
-	 * @param $table
+	 * @param string $table
 	 * @param $usernamefield
 	 * @param $useridfield
 	 * @param $timestampfield
-	 * @param $olduser User
-	 * @param $newuser User
+	 * @param User $olduser
+	 * @param User $newuser
 	 * @param $uid
-	 * @return int
 	 */
 	public function updateTable( $table, $usernamefield, $useridfield,
 		$timestampfield, $olduser, $newuser, $uid
 	) {
 		$dbw = wfGetDB( DB_MASTER );
 
-		$contribs = $dbw->selectField( $table, 'count(*)',
-			[ $usernamefield => $olduser->getName(), $useridfield => $uid ], __METHOD__ );
+		$contribs = $dbw->selectField(
+			$table,
+			'count(*)',
+			[
+				$usernamefield => $olduser->getName(),
+				$useridfield => $uid
+			],
+			__METHOD__
+		);
 
 		if ( $contribs === 0 ) {
-			print "No edits to be re-attributed from table $table for uid $uid\n";
+			$this->output( "No edits to be re-attributed from table $table for uid $uid\n" );
 
-			return ( 0 );
+			return;
 		}
 
-		print "Found $contribs edits to be re-attributed from table $table for uid $uid\n";
+		$this->output( "Found $contribs edits to be re-attributed from table $table for uid $uid\n" );
 		if ( $uid !== $newuser->getId() ) {
-			print 'If you proceed, the uid field will be set to that ' .
-				'of the new user name (i.e. ' . $newuser->getId() . ") in these rows.\n";
+			$this->output( 'If you proceed, the uid field will be set to that ' .
+				'of the new user name (i.e. ' . $newuser->getId() . ") in these rows.\n" );
 		}
 
-		print 'Proceed? [N/y]  ';
+		$this->output( 'Proceed? [N/y] ' );
+
 		$stdin = fopen( 'php://stdin', 'rt' );
 		$line = fgets( $stdin );
 		fclose( $stdin );
-		if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
-			print "Skipping at user's request\n";
 
-			return ( 0 );
+		if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
+			$this->output( "Skipping at user's request\n" );
+			return;
 		}
 
 		$selectConds = [ $usernamefield => $olduser->getName(), $useridfield => $uid ];
 		$updateFields = [ $usernamefield => $newuser->getName(), $useridfield => $newuser->getId() ];
 
 		while ( $contribs > 0 ) {
-			print 'Doing batch of up to approximately ' . $this->mBatchSize . "\n";
-			print 'Do this batch? [N/y]  ';
+			$this->output( 'Doing batch of up to approximately ' . $this->mBatchSize . "\n" );
+			$this->output( 'Do this batch? [N/y] ' );
+
 			$stdin = fopen( 'php://stdin', 'rt' );
 			$line = fgets( $stdin );
 			fclose( $stdin );
-			if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
-				print "Skipping at user's request\n";
 
-				return ( 0 );
+			if ( $line[0] !== 'Y' && $line[0] !== 'y' ) {
+				$this->output( "Skipping at user's request\n" );
+				return;
 			}
+
 			$this->beginTransaction( $dbw, __METHOD__ );
-			$result = $dbw->select( $table, $timestampfield, $selectConds, __METHOD__,
-				[ 'ORDER BY' => $timestampfield . ' DESC', 'LIMIT' => $this->mBatchSize ] );
+			$result = $dbw->select(
+				$table,
+				$timestampfield,
+				$selectConds,
+				__METHOD__,
+				[
+					'ORDER BY' => $timestampfield . ' DESC',
+					'LIMIT' => $this->mBatchSize
+				]
+			);
+
 			if ( !$result ) {
-				print "There were rows for updating but now they are gone. Skipping.\n";
+				$this->output( "There were rows for updating but now they are gone. Skipping.\n" );
 				$this->rollbackTransaction( $dbw, __METHOD__ );
 
-				return ( 0 );
+				return;
 			}
+
 			$result->seek( $result->numRows() - 1 );
 			$row = $result->fetchObject();
 			$timestamp = $row->$timestampfield;
 			$updateCondsWithTime = array_merge( $selectConds, [ "$timestampfield >= $timestamp" ] );
-			$success = $dbw->update( $table, $updateFields, $updateCondsWithTime, __METHOD__ );
+			$success = $dbw->update(
+				$table,
+				$updateFields,
+				$updateCondsWithTime,
+				__METHOD__
+			);
+
 			if ( $success ) {
 				$rowsDone = $dbw->affectedRows();
 				$this->commitTransaction( $dbw, __METHOD__ );
 			} else {
-				print "Problem with the update, rolling back and exiting\n";
 				$this->rollbackTransaction( $dbw, __METHOD__ );
-				exit( 1 );
+				$this->error( "Problem with the update, rolling back and exiting\n", true );
 			}
 
 			// $contribs = User::edits( $olduser->getId() );
 			$contribs = $dbw->selectField( $table, 'count(*)', $selectConds, __METHOD__ );
-			print "Updated $rowsDone edits; $contribs edits remaining to be re-attributed\n";
+			$this->output( "Updated $rowsDone edits; $contribs edits remaining to be re-attributed\n" );
 		}
-
-		return ( 0 );
 	}
 }
 
