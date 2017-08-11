@@ -99,7 +99,7 @@ class RenameuserSQL {
 		$this->renamer = $renamer;
 		$this->checkIfUserExists = true;
 
-		if ( isset ( $options['checkIfUserExists'] ) ) {
+		if ( isset( $options['checkIfUserExists'] ) ) {
 			$this->checkIfUserExists = $options['checkIfUserExists'];
 		}
 
