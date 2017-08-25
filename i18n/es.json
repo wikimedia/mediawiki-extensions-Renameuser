@@ -17,7 +17,8 @@
 			"Translationista",
 			"Vivaelcelta",
 			"Macofe",
-			"AlvaroMolina"
+			"AlvaroMolina",
+			"Fitoschido"
 		]
 	},
 	"renameuser": "Renombrar usuario",
@@ -47,7 +48,7 @@
 	"log-description-renameuser": "Este es un registro de cambios en los nombres de usuario.",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|renombró}} {{GENDER:$7|al usuario|a la usuaria}} $4 ({{PLURAL:$6|$6 edición|$6 ediciones}}) como $5",
 	"logentry-renameuser-renameuser-legacier": "$1 renombró {{GENDER:$7|al usuario|a la usuaria}} $4 como $5",
-	"renameuser-move-log": "Página trasladada automáticamente al renombrar {{GENDER:$2|al usuario|a la usuaria}} «[[User:$1|$1]]» a «[[User:$2|$2]]»",
+	"renameuser-move-log": "Página trasladada automáticamente al cambiar el nombre {{GENDER:$2|del usuario|de la usuaria}} de «[[User:$1|$1]]» a «[[User:$2|$2]]»",
 	"action-renameuser": "renombrar usuarios",
 	"right-renameuser": "Renombrar usuarios",
 	"renameuser-renamed-notice": "{{GENDER:$1|Este usuario|Esta usuaria}} se ha renombrado.\nEl registro de cambios de nombre de usuario se provee debajo para mayor referencia."
