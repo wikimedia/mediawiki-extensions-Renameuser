@@ -102,15 +102,29 @@ class RenameUserCleanup extends Maintenance {
 		);
 		if ( !$result || !$result->numRows() ) {
 			// try the old format
+			if ( class_exists( CommentStore::class ) ) {
+				$commentStore = CommentStore::newKey( 'log_comment' );
+				$commentQuery = $commentStore->getJoin();
+			} else {
+				$commentStore = null;
+				$commentQuery = [
+					'tables' => [],
+					'fields' => [ 'log_comment' => 'log_comment' ],
+					'joins' => [],
+				];
+			}
 			$result = $dbr->select(
-				'logging',
-				'*',
-				[ 'log_type' => 'renameuser',
+				[ 'logging' ] + $commentQuery['tables'],
+				[ 'log_title', 'log_timestamp' ] + $commentQuery['fields'],
+				[
+					'log_type' => 'renameuser',
 					'log_action' => 'renameuser',
 					'log_namespace' => NS_USER,
 					'log_title' => $olduser->getName(),
 				],
-				__METHOD__
+				__METHOD__,
+				[],
+				$commentQuery['joins']
 			);
 			if ( !$result || !$result->numRows() ) {
 				$this->output( 'No log entry found for a rename of ' . $olduser->getName() .
@@ -126,8 +140,9 @@ class RenameUserCleanup extends Maintenance {
 				}
 			} else {
 				foreach ( $result as $row ) {
+					$comment = $commentStore ? $commentStore->getComment( $row )->text : $row->log_comment;
 					$this->output( 'Found possible log entry of the rename, please check: ' .
-						$row->log_title . ' with comment ' . $row->log_comment .
+						$row->log_title . ' with comment ' . $comment .
 						" on $row->log_timestamp\n" );
 				}
 			}
