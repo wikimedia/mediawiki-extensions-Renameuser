@@ -87,7 +87,7 @@ class RenameUserCleanup extends Maintenance {
 	 * @param User $newuser
 	 */
 	public function checkRenameLog( $olduser, $newuser ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$oldTitle = Title::makeTitle( NS_USER, $olduser->getName() );
 

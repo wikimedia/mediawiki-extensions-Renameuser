@@ -255,7 +255,7 @@ class SpecialRenameuser extends SpecialPage {
 		// Until r19631 it was possible to rename a user to a name with first character as lowercase
 		if ( $oldusername->getText() !== $wgContLang->ucfirst( $oldusername->getText() ) ) {
 			// oldusername was entered as lowercase -> check for existence in table 'user'
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$uid = $dbr->selectField( 'user', 'user_id',
 				[ 'user_name' => $oldusername->getText() ],
 				__METHOD__ );
@@ -315,7 +315,7 @@ class SpecialRenameuser extends SpecialPage {
 
 		// Move any user pages
 		if ( $request->getCheck( 'movepages' ) && $user->isAllowed( 'move' ) ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 
 			$pages = $dbr->select(
 				'page',
