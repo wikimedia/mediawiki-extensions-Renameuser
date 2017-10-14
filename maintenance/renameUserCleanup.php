@@ -170,7 +170,7 @@ class RenameUserCleanup extends Maintenance {
 	/**
 	 * @param User $olduser
 	 * @param User $newuser
-	 * @param $uid
+	 * @param int $uid
 	 */
 	public function doUpdates( $olduser, $newuser, $uid ) {
 		$this->updateTable(
@@ -231,12 +231,12 @@ class RenameUserCleanup extends Maintenance {
 
 	/**
 	 * @param string $table
-	 * @param $usernamefield
-	 * @param $useridfield
-	 * @param $timestampfield
+	 * @param string $usernamefield
+	 * @param string $useridfield
+	 * @param string $timestampfield
 	 * @param User $olduser
 	 * @param User $newuser
-	 * @param $uid
+	 * @param int $uid
 	 */
 	public function updateTable( $table, $usernamefield, $useridfield,
 		$timestampfield, $olduser, $newuser, $uid
