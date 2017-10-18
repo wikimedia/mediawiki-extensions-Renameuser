@@ -5,7 +5,7 @@ class RenameuserHooks {
 	 * Show a log if the user has been renamed and point to the new username.
 	 * Don't show the log if the $oldUserName exists as a user.
 	 *
-	 * @param $article Article
+	 * @param Article $article
 	 * @return bool
 	 */
 	public static function onShowMissingArticle( $article ) {
@@ -37,9 +37,9 @@ class RenameuserHooks {
 	/**
 	 * Shows link to Special:Renameuser on Special:Contributions/foo
 	 *
-	 * @param $id
-	 * @param $nt Title
-	 * @param $tools
+	 * @param int $id
+	 * @param Title $nt
+	 * @param array &$tools
 	 *
 	 * @return bool
 	 */

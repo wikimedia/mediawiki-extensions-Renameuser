@@ -390,9 +390,9 @@ class SpecialRenameuser extends SpecialPage {
 	}
 
 	/**
-	 * @param $username Title
-	 * @param $type
-	 * @param $out OutputPage
+	 * @param Title $username
+	 * @param string $type
+	 * @param OutputPage &$out
 	 */
 	protected function showLogExtract( $username, $type, &$out ) {
 		# Show relevant lines from the logs:

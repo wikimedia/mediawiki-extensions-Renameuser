@@ -83,11 +83,11 @@ class RenameuserSQL {
 	/**
 	 * Constructor
 	 *
-	 * @param $old string The old username
-	 * @param $new string The new username
-	 * @param $uid
+	 * @param string $old The old username
+	 * @param string $new The new username
+	 * @param int $uid
 	 * @param User $renamer
-	 * @param $options array Optional extra options.
+	 * @param array $options Optional extra options.
 	 *    'reason' - string, reason for the rename
 	 *    'debugPrefix' - string, prefixed to debug messages
 	 *    'checkIfUserExists' - bool, whether to update the user table
@@ -161,6 +161,7 @@ class RenameuserSQL {
 
 	/**
 	 * Do the rename operation
+	 * @return true
 	 */
 	public function rename() {
 		global $wgAuth, $wgUpdateRowsPerJob;
