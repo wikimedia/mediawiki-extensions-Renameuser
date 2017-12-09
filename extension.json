@@ -51,7 +51,7 @@
 		"Renameuser": "SpecialRenameuser"
 	},
 	"AutoloadClasses": {
-		"RenameuserHooks": "Renameuser.hooks.php",
+		"RenameuserHooks": "RenameuserHooks.php",
 		"RenameUserJob": "RenameUserJob.php",
 		"RenameuserLogFormatter": "RenameuserLogFormatter.php",
 		"RenameuserSQL": "RenameuserSQL.php",
