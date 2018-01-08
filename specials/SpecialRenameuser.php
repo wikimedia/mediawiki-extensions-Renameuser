@@ -25,6 +25,7 @@ class SpecialRenameuser extends SpecialPage {
 		global $wgContLang, $wgCapitalLinks;
 
 		$this->setHeaders();
+		$this->addHelpLink( 'Help:Extension:CentralAuth/Global rename' );
 
 		$out = $this->getOutput();
 		$out->addWikiMsg( 'renameuser-summary' );
