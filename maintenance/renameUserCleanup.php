@@ -38,6 +38,8 @@ class RenameUserCleanup extends Maintenance {
 		$this->addOption( 'newuser', 'New user name', true, true );
 		$this->addOption( 'olduid', 'Old user id in revision records (DANGEROUS)', false, true );
 		$this->setBatchSize( 1000 );
+
+		$this->requireExtension( 'Renameuser' );
 	}
 
 	public function execute() {
