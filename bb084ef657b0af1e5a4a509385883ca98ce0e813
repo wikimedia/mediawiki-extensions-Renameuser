@@ -34,6 +34,24 @@
       "revId": "bb084ef657b0af1e5a4a509385883ca98ce0e813",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5beb913e_3297139a",
+        "filename": "i18n/en.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1420
+      },
+      "writtenOn": "2018-02-03T13:36:18Z",
+      "side": 1,
+      "message": "(This is an old draft comment I accidentally saved; ignore)",
+      "parentUuid": "0ebaf39b_85104a54",
+      "revId": "bb084ef657b0af1e5a4a509385883ca98ce0e813",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
