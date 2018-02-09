@@ -335,13 +335,14 @@ class SpecialRenameuser extends SpecialPage {
 			}
 
 			$output = '';
+			$linkRenderer = $this->getLinkRenderer();
 			foreach ( $pages as $row ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
 					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 				# Do not autodelete or anything, title must not exist
 				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
-					$link = Linker::linkKnown( $newPage );
+					$link = $linkRenderer->makeKnownLink( $newPage );
 					$output .= Html::rawElement(
 						'li',
 						[ 'class' => 'mw-renameuser-pe' ],
@@ -359,10 +360,10 @@ class SpecialRenameuser extends SpecialPage {
 					);
 					if ( $success === true ) {
 						# oldPage is not known in case of redirect suppression
-						$oldLink = Linker::link( $oldPage, null, [], [ 'redirect' => 'no' ] );
+						$oldLink = $linkRenderer->makeLink( $oldPage, null, [], [ 'redirect' => 'no' ] );
 
 						# newPage is always known because the move was successful
-						$newLink = Linker::linkKnown( $newPage );
+						$newLink = $linkRenderer->makeKnownLink( $newPage );
 
 						$output .= Html::rawElement(
 							'li',
@@ -370,8 +371,8 @@ class SpecialRenameuser extends SpecialPage {
 							$this->msg( 'renameuser-page-moved' )->rawParams( $oldLink, $newLink )->escaped()
 						);
 					} else {
-						$oldLink = Linker::linkKnown( $oldPage );
-						$newLink = Linker::link( $newPage );
+						$oldLink = $linkRenderer->makeKnownLink( $oldPage );
+						$newLink = $linkRenderer->makeLink( $newPage );
 						$output .= Html::rawElement(
 							'li', [ 'class' => 'mw-renameuser-pu' ],
 							$this->msg( 'renameuser-page-unmoved' )->rawParams( $oldLink, $newLink )->escaped()
