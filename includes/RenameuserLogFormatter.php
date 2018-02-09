@@ -46,8 +46,11 @@ class RenameuserLogFormatter extends LogFormatter {
 
 	protected function myPageLink( Title $title = null, $text ) {
 		if ( !$this->plaintext ) {
-			$text = htmlspecialchars( $text );
-			$link = Linker::link( $title, $text );
+			if ( !$title instanceof Title ) {
+				$link = htmlspecialchars( $text );
+			} else {
+				$link = $this->getLinkRenderer()->makeLink( $title, $text );
+			}
 		} else {
 			if ( !$title instanceof Title ) {
 				$link = "[[User:$text]]";
