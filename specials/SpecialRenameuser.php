@@ -321,9 +321,11 @@ class SpecialRenameuser extends SpecialPage {
 				'page',
 				[ 'page_namespace', 'page_title' ],
 				[
-					'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
-					'(page_title ' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() ) .
-					' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ) . ')'
+					'page_namespace' => [ NS_USER, NS_USER_TALK ],
+					$dbr->makeList( [
+						'page_title ' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() ),
+						'page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ),
+					], LIST_OR ),
 				],
 				__METHOD__
 			);
