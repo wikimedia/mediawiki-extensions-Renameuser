@@ -315,7 +315,7 @@ class RenameUserCleanup extends Maintenance {
 
 			$result->seek( $result->numRows() - 1 );
 			$row = $result->fetchObject();
-			$timestamp = $row->$timestampfield;
+			$timestamp = $dbw->addQuotes( $row->$timestampfield );
 			$updateCondsWithTime = array_merge( $selectConds, [ "$timestampfield >= $timestamp" ] );
 			$success = $dbw->update(
 				$table,
