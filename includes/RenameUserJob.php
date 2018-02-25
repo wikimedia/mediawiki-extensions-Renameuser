@@ -26,8 +26,8 @@
  *   - uidColumn : The *_user_id column
  */
 class RenameUserJob extends Job {
-	public function __construct( Title $title, $params = [], $id = 0 ) {
-		parent::__construct( 'renameUser', $title, $params, $id );
+	public function __construct( Title $title, $params = [] ) {
+		parent::__construct( 'renameUser', $title, $params );
 	}
 
 	public function run() {

@@ -40,6 +40,13 @@ class RenameuserSQL {
 	public $tables;
 
 	/**
+	 * tables => fields to be updated in a deferred job
+	 *
+	 * @var array
+	 */
+	public $tablesJob;
+
+	/**
 	 * Flag that can be set to false, in case another process has already started
 	 * the updates and the old username may have already been renamed in the user table.
 	 *
@@ -329,7 +336,7 @@ class RenameuserSQL {
 		// jobs will see that the transaction was not committed and will cancel themselves.
 		$count = count( $jobs );
 		if ( $count > 0 ) {
-			JobQueueGroup::singleton()->push( $jobs, JobQueue::QOS_ATOMIC );
+			JobQueueGroup::singleton()->push( $jobs );
 			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
 		}
 
