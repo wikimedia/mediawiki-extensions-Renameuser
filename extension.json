@@ -51,11 +51,11 @@
 		"Renameuser": "SpecialRenameuser"
 	},
 	"AutoloadClasses": {
-		"RenameuserHooks": "RenameuserHooks.php",
-		"RenameUserJob": "RenameUserJob.php",
-		"RenameuserLogFormatter": "RenameuserLogFormatter.php",
-		"RenameuserSQL": "RenameuserSQL.php",
-		"SpecialRenameuser": "specials/SpecialRenameuser.php"
+		"RenameuserHooks": "includes/RenameuserHooks.php",
+		"RenameUserJob": "includes/RenameUserJob.php",
+		"RenameuserLogFormatter": "includes/RenameuserLogFormatter.php",
+		"RenameuserSQL": "includes/RenameuserSQL.php",
+		"SpecialRenameuser": "includes/SpecialRenameuser.php"
 	},
 	"manifest_version": 1
 }
