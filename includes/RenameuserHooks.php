@@ -40,22 +40,17 @@ class RenameuserHooks {
 	 * @param int $id
 	 * @param Title $nt
 	 * @param array &$tools
-	 *
-	 * @return bool
+	 * @param SpecialPage $sp
 	 */
-	public static function onContributionsToolLinks( $id, $nt, &$tools ) {
-		global $wgUser;
-
-		if ( $id && $wgUser->isAllowed( 'renameuser' ) ) {
-			$tools[] = Linker::link(
+	public static function onContributionsToolLinks( $id, $nt, array &$tools, SpecialPage $sp ) {
+		if ( $id && $sp->getUser()->isAllowed( 'renameuser' ) ) {
+			$tools['renameuser'] = $sp->getLinkRenderer()->makeKnownLink(
 				SpecialPage::getTitleFor( 'Renameuser' ),
-				wfMessage( 'renameuser-linkoncontribs' )->escaped(),
-				[ 'title' => wfMessage( 'renameuser-linkoncontribs-text' )->parse() ],
+				$sp->msg( 'renameuser-linkoncontribs' )->text(),
+				[ 'title' => $sp->msg( 'renameuser-linkoncontribs-text' )->parse() ],
 				[ 'oldusername' => $nt->getText() ]
 			);
 		}
-
-		return true;
 	}
 
 	/**
