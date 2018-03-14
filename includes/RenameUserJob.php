@@ -26,15 +26,60 @@
  *   - uidColumn : The *_user_id column
  */
 class RenameUserJob extends Job {
+	/** @var array Core tables+columns that are being migrated to the `actor` table */
+	private static $actorMigratedColumns = [
+		'revision.rev_user_text',
+		'archive.ar_user_text',
+		'ipblocks.ipb_by_text',
+		'image.img_user_text',
+		'oldimage.oi_user_text',
+		'filearchive.fa_user_text',
+		'recentchanges.rc_user_text',
+		'logging.log_user_text',
+	];
+
 	public function __construct( Title $title, $params = [] ) {
 		parent::__construct( 'renameUser', $title, $params );
 	}
 
 	public function run() {
-		global $wgUpdateRowsPerQuery;
+		global $wgUpdateRowsPerQuery, $wgActorTableSchemaMigrationStage;
 
+		$dbw = wfGetDB( DB_MASTER );
 		$table = $this->params['table'];
 		$column = $this->params['column'];
+
+		// Skip core tables that were migrated to the actor table, even if the
+		// field still exists in the database.
+		if ( in_array( "$table.$column", self::$actorMigratedColumns[$table], false ) ) {
+			$stage = isset( $wgActorTableSchemaMigrationStage )
+				? $wgActorTableSchemaMigrationStage
+				: ( class_exists( ActorMigration::class ) ? MIGRATION_NEW : MIGRATION_OLD );
+
+			// We still run the job for MIGRATION_WRITE_NEW because reads might
+			// still be falling back.
+			if ( $stage >= MIGRATION_NEW ) {
+				wfDebugLog( 'Renameuser',
+					"Ignoring job {$this->toString()}, column $table.$column actor migration stage = $stage\n"
+				);
+				return true;
+			}
+		}
+
+		// It's not worth a hook to let extensions add themselves to that list.
+		// Just check whether the table and column still exist instead.
+		if ( !$dbw->tableExists( $table, __METHOD__ ) ) {
+			wfDebugLog( 'Renameuser',
+				"Ignoring job {$this->toString()}, table $table does not exist\n"
+			);
+			return true;
+		} elseif ( !$dbw->fieldExists( $table, $column, __METHOD__ ) ) {
+			wfDebugLog( 'Renameuser',
+				"Ignoring job {$this->toString()}, column $table.$column does not exist\n"
+			);
+			return true;
+		}
+
 		$oldname = $this->params['oldname'];
 		$newname = $this->params['newname'];
 		$count = $this->params['count'];
@@ -58,7 +103,6 @@ class RenameUserJob extends Job {
 		$keyId = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
 		$logId = isset( $this->params['logId'] ) ? $this->params['logId'] : null;
 
-		$dbw = wfGetDB( DB_MASTER );
 		if ( $logId ) {
 			# Block until the transaction that inserted this job commits.
 			# The atomic section is for sanity as FOR UPDATE does not lock in auto-commit mode

@@ -20,6 +20,16 @@ class CleanupArchiveUserText extends Maintenance {
 	}
 
 	public function execute() {
+		global $wgActorTableSchemaMigrationStage;
+
+		$stage = isset( $wgActorTableSchemaMigrationStage )
+			? $wgActorTableSchemaMigrationStage
+			: ( class_exists( ActorMigration::class ) ? MIGRATION_NEW : MIGRATION_OLD );
+		if ( $stage >= MIGRATION_NEW ) {
+			$this->output( "archive.ar_user_text is no longer used.\n" );
+			return;
+		}
+
 		$dbw = wfGetDB( DB_MASTER );
 		do {
 			$res = $dbw->select(

@@ -43,6 +43,16 @@ class RenameUserCleanup extends Maintenance {
 	}
 
 	public function execute() {
+		global $wgActorTableSchemaMigrationStage;
+
+		$stage = isset( $wgActorTableSchemaMigrationStage )
+			? $wgActorTableSchemaMigrationStage
+			: ( class_exists( ActorMigration::class ) ? MIGRATION_NEW : MIGRATION_OLD );
+		if ( $stage >= MIGRATION_NEW ) {
+			$this->output( "Core xx_user_text fields are no longer used, no updates should be needed.\n" );
+			return;
+		}
+
 		$this->output( "Rename User Cleanup starting...\n\n" );
 		$olduser = User::newFromName( $this->getOption( 'olduser' ) );
 		$newuser = User::newFromName( $this->getOption( 'newuser' ) );
