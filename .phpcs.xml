@@ -6,9 +6,6 @@
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
 	</rule>
-	<rule ref="MediaWiki.Files.ClassMatchesFilename.WrongCase">
-		<exclude-pattern>*/maintenance/*</exclude-pattern>
-	</rule>
 	<rule ref="Generic.Files.LineLength">
 		<exclude-pattern>Renameuser\.alias\.php</exclude-pattern>
 	</rule>
