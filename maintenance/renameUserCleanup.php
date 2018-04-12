@@ -105,8 +105,8 @@ class RenameUserCleanup extends Maintenance {
 		if ( !$result || !$result->numRows() ) {
 			// try the old format
 			if ( class_exists( CommentStore::class ) ) {
-				$commentStore = CommentStore::newKey( 'log_comment' );
-				$commentQuery = $commentStore->getJoin();
+				$commentStore = CommentStore::getStore();
+				$commentQuery = $commentStore->getJoin( 'log_comment' );
 			} else {
 				$commentStore = null;
 				$commentQuery = [
@@ -142,7 +142,9 @@ class RenameUserCleanup extends Maintenance {
 				}
 			} else {
 				foreach ( $result as $row ) {
-					$comment = $commentStore ? $commentStore->getComment( $row )->text : $row->log_comment;
+					$comment = $commentStore
+						? $commentStore->getComment( 'log_comment', $row )->text
+						: $row->log_comment;
 					$this->output( 'Found possible log entry of the rename, please check: ' .
 						$row->log_title . ' with comment ' . $comment .
 						" on $row->log_timestamp\n" );
