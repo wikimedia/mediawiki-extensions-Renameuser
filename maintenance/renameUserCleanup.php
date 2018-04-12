@@ -43,6 +43,11 @@ class RenameUserCleanup extends Maintenance {
 	}
 
 	public function execute() {
+		if ( RenameuserSQL::getActorMigrationStage() >= MIGRATION_NEW ) {
+			$this->output( "Core xx_user_text fields are no longer used, no updates should be needed.\n" );
+			return;
+		}
+
 		$this->output( "Rename User Cleanup starting...\n\n" );
 		$olduser = User::newFromName( $this->getOption( 'olduser' ) );
 		$newuser = User::newFromName( $this->getOption( 'newuser' ) );
