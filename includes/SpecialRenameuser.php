@@ -68,75 +68,57 @@ class SpecialRenameuser extends SpecialPage {
 			Hooks::run( 'RenameUserWarning', [ $oun, $nun, &$warnings ] );
 		}
 
-		$out->addHTML(
-			Xml::openElement( 'form', [
-				'method' => 'post',
-				'action' => $this->getPageTitle()->getLocalURL(),
-				'id' => 'renameuser'
-			] ) .
-			Xml::openElement( 'fieldset' ) .
-			Xml::element( 'legend', null, $this->msg( 'renameuser' )->text() ) .
-			Xml::openElement( 'table', [ 'id' => 'mw-renameuser-table' ] ) .
-			"<tr>
-				<td class='mw-label'>" .
-			Xml::label( $this->msg( 'renameuserold' )->text(), 'oldusername' ) .
-			"</td>
-				<td class='mw-input'>" .
-			Xml::input( 'oldusername', 20, $oun, [ 'type' => 'text', 'tabindex' => '1' ] ) . ' ' .
-			"</td>
-			</tr>
-			<tr>
-				<td class='mw-label'>" .
-			Xml::label( $this->msg( 'renameusernew' )->text(), 'newusername' ) .
-			"</td>
-				<td class='mw-input'>" .
-			Xml::input( 'newusername', 20, $nun, [ 'type' => 'text', 'tabindex' => '2' ] ) .
-			"</td>
-			</tr>
-			<tr>
-				<td class='mw-label'>" .
-			Xml::label( $this->msg( 'renameuserreason' )->text(), 'reason' ) .
-			"</td>
-				<td class='mw-input'>" .
-			Xml::input(
-				'reason',
-				40,
-				$reason,
-				[ 'type' => 'text', 'tabindex' => '3', 'maxlength' => 255 ]
-			) .
-			'</td>
-			</tr>'
-		);
+		$formDescriptor['oldusername'] = [
+			'type' => 'user',
+			'name' => 'oldusername',
+			'id' => 'mw-input',
+			'label' => $this->msg( 'renameuserold' )->text(),
+			'size' => 20,
+			'default' => $oun,
+			'tabindex' => '1',
+		];
+		$formDescriptor['newusername'] = [
+			'type' => 'text',
+			'name' => 'newusername',
+			'id' => 'mw-input',
+			'label' => $this->msg( 'renameusernew' )->text(),
+			'size' => 20,
+			'default' => $nun,
+			'tabindex' => '2',
+		];
+		$formDescriptor['reason'] = [
+			'type' => 'text',
+			'name' => 'reason',
+			'id' => 'mw-input',
+			'label' => $this->msg( 'renameuserreason' )->text(),
+			'size' => 40,
+			'default' => $reason,
+			'tabindex' => '3',
+			'maxlength' => 255,
+		];
+
 		if ( $user->isAllowed( 'move' ) ) {
-			$out->addHTML( "
-				<tr>
-					<td>&#160;
-					</td>
-					<td class='mw-input'>" .
-				Xml::checkLabel( $this->msg( 'renameusermove' )->text(), 'movepages', 'movepages',
-					$move_checked, [ 'tabindex' => '4' ] ) .
-				'</td>
-				</tr>'
-			);
+			$formDescriptor['movepages'] = [
+				'type' => 'check',
+				'name' => 'movepages',
+				'id' => 'movepages',
+				'label-message' => 'renameusermove',
+				'default' => $move_checked,
+				'tabindex' => '4',
+			];
 
 			if ( $user->isAllowed( 'suppressredirect' ) ) {
-				$out->addHTML( "
-					<tr>
-						<td>&#160;
-						</td>
-						<td class='mw-input'>" .
-					Xml::checkLabel(
-						$this->msg( 'renameusersuppress' )->text(),
-						'suppressredirect',
-						'suppressredirect',
-						$suppress_checked,
-						[ 'tabindex' => '5' ]
-					) .
-					'</td>
-					</tr>'
-				);
+				$formDescriptor['suppressredirect'] = [
+					'type' => 'check',
+					'name' => 'suppressredirect',
+					'id' => 'suppressredirect',
+					'label-message' => 'renameusersuppress',
+					'default' => $suppress_checked,
+					'tabindex' => '5',
+				];
 			}
 		}
+
 		if ( $warnings ) {
 			$warningsHtml = [];
 			foreach ( $warnings as $warning ) {
@@ -155,51 +137,36 @@ class SpecialRenameuser extends SpecialPage {
 				'</td>
 				</tr>'
 			);
-			$out->addHTML( "
-				<tr>
-					<td>&#160;
-					</td>
-					<td class='mw-input'>" .
-				Xml::checkLabel(
-					$this->msg( 'renameuserconfirm' )->text(),
-					'confirmaction',
-					'confirmaction',
-					false,
-					[ 'tabindex' => '6' ]
-				) .
-				'</td>
-				</tr>'
-			);
+			$formDescriptor['confirmaction'] = [
+				'type' => 'check',
+				'name' => 'confirmaction',
+				'id' => 'confirmaction',
+				'label-message' => 'renameuserconfirm',
+				'default' => false,
+				'tabindex' => '6',
+			];
 		}
-		$out->addHTML( "
-			<tr>
-				<td>&#160;
-				</td>
-				<td class='mw-submit'>" .
-			Xml::submitButton(
-				$this->msg( 'renameusersubmit' )->text(),
-				[
-					'name' => 'submit',
-					'tabindex' => '7',
-					'id' => 'submit'
-				]
-			) .
-			' ' .
-			Xml::submitButton(
-				$this->msg( 'renameuser-submit-blocklog' )->text(),
-				[
-					'name' => 'submit-showBlockLog',
-					'id' => 'submit-showBlockLog',
-					'tabindex' => '8'
-				]
-			) .
-			'</td>
-			</tr>' .
-			Xml::closeElement( 'table' ) .
-			Xml::closeElement( 'fieldset' ) .
-			Html::hidden( 'token', $token ) .
-			Xml::closeElement( 'form' ) . "\n"
-		);
+
+		$formDescriptor['submit-showBlockLog'] = [
+			'type' => 'submit',
+			'name' => 'submit-showBlockLog',
+			'default' => $this->msg( 'renameuser-submit-blocklog' )->text(),
+			'id' => 'submit-showBlockLog',
+			'flags' => [ 'primary' ],
+		];
+
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->addHiddenField( 'token', $token )
+			->setMethod( 'post' )
+			->setAction( $this->getPageTitle()->getLocalURL() )
+			->setId( 'renameuser' )
+			->setSubmitTextMsg( 'renameusersubmit' )
+			->setSubmitID( 'submit' )
+			->setSubmitName( 'submit' )
+			->setWrapperLegendMsg( 'renameuser' )
+			->prepareForm()
+			->displayForm( false );
 
 		// Show block log if requested
 		if ( $showBlockLog && is_object( $oldusername ) ) {
