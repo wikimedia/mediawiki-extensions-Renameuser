@@ -18,8 +18,8 @@
 		]
 	},
 	"renameuser": "Renommer l’utilisateur",
-	"renameuser-linkoncontribs": "renommer l’utilisateur",
-	"renameuser-linkoncontribs-text": "Renommer cet utilisateur",
+	"renameuser-linkoncontribs": "renommer l’utilisat{{GENDER:$1|eur|rice}}",
+	"renameuser-linkoncontribs-text": "Renommer cet{{GENDER:$1| utilisateur|te utilisatrice}}",
 	"renameuser-desc": "Renomme un utilisateur (nécessite les droits de ''renameuser'')",
 	"renameuserold": "Nom actuel de l’utilisateur :",
 	"renameusernew": "Nouveau nom de l’utilisateur :",

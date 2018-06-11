@@ -18,8 +18,8 @@
 		]
 	},
 	"renameuser": "Byt användarnamn",
-	"renameuser-linkoncontribs": "byt användarnamn",
-	"renameuser-linkoncontribs-text": "byt namn på denna användare",
+	"renameuser-linkoncontribs": "byt namn på {{GENDER:$1|användare}}",
+	"renameuser-linkoncontribs-text": "Byt namn på denna {{GENDER:$1|användare}}",
 	"renameuser-desc": "Lägger till en [[Special:RenameUser|specialsida]] för att byta namn på en användare (kräver behörigheten ''renameuser'')",
 	"renameuserold": "Nuvarande användarnamn:",
 	"renameusernew": "Nytt användarnamn:",

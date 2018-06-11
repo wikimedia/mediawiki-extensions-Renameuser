@@ -7,8 +7,8 @@
 		]
 	},
 	"renameuser": "Benotzernumm änneren",
-	"renameuser-linkoncontribs": "Benotzer ëmbenennen",
-	"renameuser-linkoncontribs-text": "Dëse Benotzer ëmbenennen",
+	"renameuser-linkoncontribs": " {{GENDER:$1|Benotzer}} ëmbenennen",
+	"renameuser-linkoncontribs-text": "Dëse {{GENDER:$1|Benotzer}} ëmbenennen",
 	"renameuser-desc": "Benotzernumm änneren (Dir braucht dofir  ''renameuser''-Rechter)",
 	"renameuserold": "Aktuelle Benotzernumm:",
 	"renameusernew": "Neie Benotzernumm:",

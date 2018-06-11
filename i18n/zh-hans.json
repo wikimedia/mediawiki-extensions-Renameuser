@@ -16,8 +16,8 @@
 		]
 	},
 	"renameuser": "更改用户名",
-	"renameuser-linkoncontribs": "更改用户名",
-	"renameuser-linkoncontribs-text": "更改该用户名",
+	"renameuser-linkoncontribs": "更改{{GENDER:$1|用户}}名",
+	"renameuser-linkoncontribs-text": "更改该{{GENDER:$1|用户}}名",
 	"renameuser-desc": "添加更改用户名的[[Special:RenameUser|特殊页面]]（需要''renameuser''权限）",
 	"renameuserold": "当前用户名：",
 	"renameusernew": "新用户名：",
