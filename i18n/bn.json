@@ -7,8 +7,8 @@
 		]
 	},
 	"renameuser": "ব্যবহারকারী নামান্তর করো",
-	"renameuser-linkoncontribs": "ব্যবহারকারী নামান্তর",
-	"renameuser-linkoncontribs-text": "এই ব্যবহারকারী নামান্তর করো",
+	"renameuser-linkoncontribs": "{{GENDER:$1|ব্যবহারকারী}} নামান্তর",
+	"renameuser-linkoncontribs-text": "এই {{GENDER:$1|ব্যবহারকারীকে}} নামান্তর করুন",
 	"renameuser-desc": "একজন ব্যবহারকারীকে নামান্তর করতে [[Special:RenameUser|বিশেষ পাতা]] যুক্ত করে (''ব্যবহারকারী নামান্তর'' অধিকার প্রয়োজন)",
 	"renameuserold": "বর্তমান ব্যবহারকারী নাম:",
 	"renameusernew": "নতুন ব্যবহারকারী নাম:",

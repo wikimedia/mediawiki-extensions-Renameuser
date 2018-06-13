@@ -8,12 +8,13 @@
 			"Opraco",
 			"Waldir",
 			"555",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Athena in Wonderland"
 		]
 	},
 	"renameuser": "Alterar o nome do utilizador",
-	"renameuser-linkoncontribs": "alterar o nome do utilizador",
-	"renameuser-linkoncontribs-text": "Alterar o nome deste utilizador",
+	"renameuser-linkoncontribs": "alterar o nome {{GENDER:$1|do utilizador|da utilizadora}}",
+	"renameuser-linkoncontribs-text": "Alterar o nome {{GENDER:$1|deste utilizador|desta utilizadora}}",
 	"renameuser-desc": "[[Special:RenameUser|Página especial]] para alterar o nome de um utilizador (requer o privilégio ''renameuser'')",
 	"renameuserold": "Nome de utilizador atual:",
 	"renameusernew": "Novo nome de utilizador:",
