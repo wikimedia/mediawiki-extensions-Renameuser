@@ -5,11 +5,12 @@
 			"Li-sung",
 			"Martin Kozák",
 			"Matěj Grabovský",
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"renameuser": "Přejmenovat uživatele",
-	"renameuser-linkoncontribs": "přejmenovat uživatele",
+	"renameuser-linkoncontribs": "přejmenovat {{GENDER:$1|uživatele|uživatelku}}",
 	"renameuser-linkoncontribs-text": "Přejmenovat tohoto uživatele",
 	"renameuser-desc": "Přejmenování uživatele (vyžadováno oprávnění ''renameuser'')",
 	"renameuserold": "Stávající uživatelské jméno:",
