@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d2c06cfa_62d6b4c4",
+        "filename": "includes/RenameUserJob.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 106
+      },
+      "writtenOn": "2018-06-27T08:30:58Z",
+      "side": 1,
+      "message": "This is not an array, but a string, https://phabricator.wikimedia.org/T198285",
+      "range": {
+        "startLine": 54,
+        "startChar": 35,
+        "endLine": 54,
+        "endChar": 70
+      },
+      "revId": "b0655c7600f0bd01f94873902127289c196d00ed",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
