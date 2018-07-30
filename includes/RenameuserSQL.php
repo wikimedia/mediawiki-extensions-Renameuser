@@ -240,7 +240,7 @@ class RenameuserSQL {
 		$newTitle = Title::makeTitle( NS_USER, $this->new );
 		$this->debug( "Updating logging table for {$this->old} to {$this->new}" );
 
-		$logTypesOnUser = SpecialLog::getLogTypesOnUser();
+		$logTypesOnUser = array_diff( SpecialLog::getLogTypesOnUser(), [ 'renameuser' ] ); // Do not include previous user renames: T200731
 
 		$dbw->update( 'logging',
 			[ 'log_title' => $newTitle->getDBkey() ],
