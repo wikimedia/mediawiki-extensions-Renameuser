@@ -44,6 +44,6 @@
 	"logentry-renameuser-renameuser-legacier": "$1已重命名用户$4为{{GENDER:$7|$5}}",
 	"renameuser-move-log": "当重命名{{GENDER:$2|用户}}“[[User:$1|$1]]”为“[[User:$2|$2]]”时自动移动页面",
 	"action-renameuser": "重命名用户",
-	"right-renameuser": "更改用户名",
+	"right-renameuser": "重命名用户",
 	"renameuser-renamed-notice": "本用户已更名。下面提供更名日志以供参考。"
 }
