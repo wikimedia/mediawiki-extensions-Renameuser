@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b3dc4183_0eb29bae",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 2664
+      },
+      "writtenOn": "2018-08-01T09:25:16Z",
+      "side": 1,
+      "message": "please, shorten the line",
+      "range": {
+        "startLine": 243,
+        "startChar": 84,
+        "endLine": 243,
+        "endChar": 133
+      },
+      "revId": "fdf696c2f0dfe8a347816840ec53f0b6fc5d812f",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
