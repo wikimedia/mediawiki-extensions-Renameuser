@@ -8,7 +8,8 @@
 			"Sasa Stefanovic",
 			"Жељко Тодоровић",
 			"Михајло Анђелковић",
-			"Сербијана"
+			"Сербијана",
+			"BadDog"
 		]
 	},
 	"renameuser": "Преименуј корисника",
@@ -24,7 +25,7 @@
 	"renameuserwarnings": "Упозорења:",
 	"renameuserconfirm": "Да, преименуј корисника",
 	"renameusersubmit": "Пошаљи",
-	"renameuser-submit-blocklog": "Дневник блокирања за корисника",
+	"renameuser-submit-blocklog": "Евиденција блокирања за корисника",
 	"renameusererrordoesnotexist": "Корисник „<nowiki>$1</nowiki>“ не постоји.",
 	"renameusererrorexists": "{{GENDER:$1|Корисник}} „<nowiki>$1</nowiki>“ већ постоји.",
 	"renameusererrorinvalid": "Погрешно корисничко име: „<nowiki>$1</nowiki>“",
@@ -34,7 +35,7 @@
 	"renameuser-page-exists": "Страница $1 већ постоји и не може се заменити.",
 	"renameuser-page-moved": "Страница $1 је премештена на $2.",
 	"renameuser-page-unmoved": "Страница $1 не може да се премести на $2.",
-	"log-name-renameuser": "Дневник преименовања корисника",
+	"log-name-renameuser": "Евиденција преименовања корисника",
 	"log-description-renameuser": "Испод је списак преименованих корисника.",
 	"logentry-renameuser-renameuser": "$1 је {{GENDER:$2|преименовао|преименовала}} {{GENDER:$7|корисника|korisnicu}} $4 ({{PLURAL:$6|$6 измена|$6 измене|$6 измена}}) у $5",
 	"logentry-renameuser-renameuser-legacier": "$1 је преименовао {{GENDER:$7|корисника|корисницу}} $4 у $5",
