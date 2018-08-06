@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9d53024a_02e2d05c",
+        "filename": "includes/RenameUserJob.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2018-08-06T10:58:06Z",
+      "side": 1,
+      "message": "The needle and haystack both are strings. So I would assume a strict handling is not needed here.",
+      "range": {
+        "startLine": 54,
+        "startChar": 62,
+        "endLine": 54,
+        "endChar": 68
+      },
+      "revId": "ee68db0db98b2f5cd342453cd77ce08de8b480e4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
