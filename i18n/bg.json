@@ -8,7 +8,8 @@
 			"Turin",
 			"Vodnokon4e",
 			"Termininja",
-			"ShockD"
+			"ShockD",
+			"Vlad5250"
 		]
 	},
 	"renameuser": "Преименуване на потребител",
@@ -40,6 +41,6 @@
 	"logentry-renameuser-renameuser-legacier": "$1 преименува потребител $4 на {{GENDER:$7|$5}}",
 	"renameuser-move-log": "Автоматично преместена страница при преименуването на потребител \"[[User:$1|$1]]\" като \"[[User:$2|$2]]\"",
 	"action-renameuser": "преименуване на потребител",
-	"right-renameuser": "преименуване на потребители",
+	"right-renameuser": "Преименуване на потребители",
 	"renameuser-renamed-notice": "Потребителят беше преименуван.\nЗа справка по-долу е показан Дневникът на преименуванията."
 }
