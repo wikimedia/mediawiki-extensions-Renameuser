@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bbc21e14_156979b6",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 2664
+      },
+      "writtenOn": "2018-08-09T13:08:11Z",
+      "side": 1,
+      "message": "you should have at most 100 chars per line, now you have 120",
+      "range": {
+        "startLine": 243,
+        "startChar": 2,
+        "endLine": 243,
+        "endChar": 120
+      },
+      "revId": "63f2191100f2f4d79379af321a21cc622b96f99d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
