@@ -16,7 +16,7 @@
 	"renameuser-linkoncontribs": "преименуј корисника",
 	"renameuser-linkoncontribs-text": "Преименуј овог корисника",
 	"renameuser-desc": "Додаје [[Special:RenameUser|посебну страницу]] за преименовање корисника (потребно право ''renameuser'')",
-	"renameuserold": "Тренутно корисничко име:",
+	"renameuserold": "Актуелно корисничко име:",
 	"renameusernew": "Ново корисничко име:",
 	"renameuserreason": "Разлог:",
 	"renameusermove": "Премести корисничку страницу и страницу за разговор (и њихове подстранице) на нови назив",
