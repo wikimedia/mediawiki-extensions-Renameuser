@@ -20,7 +20,7 @@ class CleanupArchiveUserText extends Maintenance {
 	}
 
 	public function execute() {
-		if ( RenameuserSQL::getActorMigrationStage() >= MIGRATION_NEW ) {
+		if ( !RenameuserSQL::actorMigrationWriteOld() ) {
 			$this->output( "archive.ar_user_text is no longer used.\n" );
 			return;
 		}
