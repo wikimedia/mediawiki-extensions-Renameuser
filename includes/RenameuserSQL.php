@@ -121,9 +121,7 @@ class RenameuserSQL {
 		$this->tables = []; // Immediate updates
 		$this->tablesJob = []; // Slow updates
 
-		// We still do the table updates here for MIGRATION_WRITE_NEW because reads might
-		// still be falling back.
-		if ( self::getActorMigrationStage() < MIGRATION_NEW ) {
+		if ( self::actorMigrationWriteOld() ) {
 			$this->tables['image'] = [ 'img_user_text', 'img_user' ];
 			$this->tables['oldimage'] = [ 'oi_user_text', 'oi_user' ];
 			$this->tables['filearchive'] = [ 'fa_user_text', 'fa_user' ];
@@ -202,7 +200,7 @@ class RenameuserSQL {
 			[ 'user_name' => $this->old, 'user_id' => $this->uid ],
 			__METHOD__
 		);
-		if ( self::getActorMigrationStage() >= MIGRATION_WRITE_BOTH ) {
+		if ( self::actorMigrationWriteNew() ) {
 			$dbw->update( 'actor',
 				[ 'actor_name' => $this->new ],
 				[ 'actor_name' => $this->old, 'actor_user' => $this->uid ],
@@ -398,14 +396,45 @@ class RenameuserSQL {
 	}
 
 	/**
-	 * Fetch the core actor table schema migration stage
-	 * @return int MIGRATION_* constant
+	 * Indicate whether we should still write old user fields
+	 * @return bool
 	 */
-	public static function getActorMigrationStage() {
+	public static function actorMigrationWriteOld() {
 		global $wgActorTableSchemaMigrationStage;
 
-		return isset( $wgActorTableSchemaMigrationStage )
-			? $wgActorTableSchemaMigrationStage
-			: ( is_callable( User::class, 'getActorId' ) ? MIGRATION_NEW : MIGRATION_OLD );
+		if ( !is_callable( User::class, 'getActorId' ) ) {
+			return true;
+		}
+		if ( !isset( $wgActorTableSchemaMigrationStage ) ) {
+			return false;
+		}
+
+		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
+			return (bool)( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_WRITE_OLD );
+		} else {
+			// Return true even for MIGRATION_WRITE_NEW because reads might still be falling back
+			return $wgActorTableSchemaMigrationStage < MIGRATION_NEW;
+		}
+	}
+
+	/**
+	 * Indicate whether we should write new actor fields
+	 * @return bool
+	 */
+	public static function actorMigrationWriteNew() {
+		global $wgActorTableSchemaMigrationStage;
+
+		if ( !is_callable( User::class, 'getActorId' ) ) {
+			return false;
+		}
+		if ( !isset( $wgActorTableSchemaMigrationStage ) ) {
+			return true;
+		}
+
+		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
+			return (bool)( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_WRITE_NEW );
+		} else {
+			return $wgActorTableSchemaMigrationStage > MIGRATION_OLD;
+		}
 	}
 }
