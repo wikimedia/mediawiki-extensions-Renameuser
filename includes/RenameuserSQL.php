@@ -357,8 +357,9 @@ class RenameuserSQL {
 		$dbw->endAtomic( __METHOD__ );
 
 		$that = $this;
-		$dbw->onTransactionIdle( function () use ( $that, $dbw, $logEntry, $logid ) {
-			$dbw->startAtomic( __METHOD__ );
+		$fname = __METHOD__;
+		$dbw->onTransactionIdle( function () use ( $that, $dbw, $logEntry, $logid, $fname ) {
+			$dbw->startAtomic( $fname );
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
 			$user->load( User::READ_LATEST );
@@ -375,7 +376,7 @@ class RenameuserSQL {
 			Hooks::run( 'RenameUserComplete', [ $that->uid, $that->old, $that->new ] );
 			// Publish to RC
 			$logEntry->publish( $logid );
-			$dbw->endAtomic( __METHOD__ );
+			$dbw->endAtomic( $fname );
 		} );
 
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
