@@ -13,7 +13,8 @@
 			"Sp5uhe",
 			"WarX",
 			"Wpedzich",
-			"Chrumps"
+			"Chrumps",
+			"Railfail536"
 		]
 	},
 	"renameuser": "Zmiana nazwy użytkownika",
@@ -44,7 +45,7 @@
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|zmienił|zmieniła}} nazwę użytkownika $4 ({{PLURAL:$6|$6 edycja|$6 edycje|$6 edycji}}) na {{GENDER:$7|$5}}",
 	"logentry-renameuser-renameuser-legacier": "$1 zmienił(a) nazwę użytkownika $4 na {{GENDER:$7|$5}}",
 	"renameuser-move-log": "Automatyczne przeniesienie strony {{GENDER:$2|użytkownika|użytkowniczki}} po zmianie nazwy konta z „[[User:$1|$1]]” na „[[User:$2|$2]]”",
-	"action-renameuser": "zmiana nazw użytkowników",
+	"action-renameuser": "zmieniania nazw użytkowników",
 	"right-renameuser": "Zmiana nazw kont użytkowników",
 	"renameuser-renamed-notice": "Nazwa konta {{GENDER:$1|tego użytkownika|tej użytkowniczki|użytkownika(‐czki)}} została zmieniona.\nRejestr zmian nazw kont użytkowników znajduje się poniżej."
 }
