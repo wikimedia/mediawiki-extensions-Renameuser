@@ -3,12 +3,13 @@
 		"authors": [
 			"Bjankuloski06",
 			"Brest",
-			"Misos"
+			"Misos",
+			"Vlad5250"
 		]
 	},
 	"renameuser": "Преименувај корисник",
 	"renameuser-linkoncontribs": "преименувај {{GENDER:$1|корисник}}",
-	"renameuser-linkoncontribs-text": "Преименувај го {{GENDER:$1|корисников}}",
+	"renameuser-linkoncontribs-text": "Преименувај го овој {{GENDER:$1|корисник}}",
 	"renameuser-desc": "Додава [[Special:RenameUser|службена страница]] за преименување на корисник (бара право на ''renameuser'')",
 	"renameuserold": "Сегашно корисничко име:",
 	"renameusernew": "Ново корисничко име:",
