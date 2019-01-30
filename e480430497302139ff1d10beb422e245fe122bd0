@@ -123,6 +123,24 @@
       "revId": "e480430497302139ff1d10beb422e245fe122bd0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "afbd3254_53aafc4e",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2842
+      },
+      "writtenOn": "2019-01-30T16:40:12Z",
+      "side": 1,
+      "message": "Here: https://integration.wikimedia.org/ci/job/mwext-php70-phan-seccheck-docker/35822/console",
+      "parentUuid": "df15f508_19f4a64e",
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
