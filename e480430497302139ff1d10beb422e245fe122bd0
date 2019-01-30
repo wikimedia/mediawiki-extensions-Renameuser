@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "97bbd3e2_90555030",
+        "filename": "includes/RenameuserHooks.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1453
+      },
+      "writtenOn": "2019-01-30T15:13:26Z",
+      "side": 1,
+      "message": "I think it would be better to use a more narrow LinkTarget type hint here. As far as I can see that\u0027s all the code below needs.",
+      "range": {
+        "startLine": 46,
+        "startChar": 7,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c2d47511_d1265405",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1453
+      },
+      "writtenOn": "2019-01-30T15:13:26Z",
+      "side": 1,
+      "message": "This does not look like it should change anything. How is it possible this suppresses a Phan issue?",
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
