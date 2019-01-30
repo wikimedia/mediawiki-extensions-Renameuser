@@ -6,9 +6,9 @@ class RenameuserHooks {
 	 * Don't show the log if the $oldUserName exists as a user.
 	 *
 	 * @param Article $article
-	 * @return bool
+	 * @return true
 	 */
-	public static function onShowMissingArticle( $article ) {
+	public static function onShowMissingArticle( Article $article ) {
 		$title = $article->getTitle();
 		$oldUser = User::newFromName( $title->getBaseText() );
 		if ( ( $title->getNamespace() === NS_USER || $title->getNamespace() === NS_USER_TALK ) &&
@@ -42,7 +42,9 @@ class RenameuserHooks {
 	 * @param array &$tools
 	 * @param SpecialPage $sp
 	 */
-	public static function onContributionsToolLinks( $id, $nt, array &$tools, SpecialPage $sp ) {
+	public static function onContributionsToolLinks(
+		$id, Title $nt, array &$tools, SpecialPage $sp
+	) {
 		if ( $id && $sp->getUser()->isAllowed( 'renameuser' ) ) {
 			$tools['renameuser'] = $sp->getLinkRenderer()->makeKnownLink(
 				SpecialPage::getTitleFor( 'Renameuser' ),
@@ -56,7 +58,7 @@ class RenameuserHooks {
 	/**
 	 * So users can just type in a username for target and it'll work
 	 * @param array &$types
-	 * @return bool
+	 * @return true
 	 */
 	public static function onGetLogTypesOnUser( array &$types ) {
 		$types[] = 'renameuser';
