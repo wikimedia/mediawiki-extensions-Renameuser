@@ -352,13 +352,14 @@ class SpecialRenameuser extends SpecialPage {
 						$this->msg( 'renameuser-page-exists' )->rawParams( $link )->escaped()
 					);
 				} else {
+					$reason = $this->msg(
+						'renameuser-move-log', $oldusername->getText(), $newusername->getText()
+					)->inContentLanguage()->text();
+
 					$success = $oldPage->moveTo(
 						$newPage,
 						false,
-						$this->msg(
-							'renameuser-move-log',
-							$oldusername->getText(),
-							$newusername->getText() )->inContentLanguage()->text(),
+						$reason,
 						!$suppressRedirect
 					);
 					if ( $success === true ) {
