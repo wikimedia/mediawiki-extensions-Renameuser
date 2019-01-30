@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4d6ee6b3_a2c286c3",
+        "filename": "includes/RenameuserHooks.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2842
+      },
+      "writtenOn": "2019-01-30T15:35:41Z",
+      "side": 1,
+      "message": "Hmmm... Errmm maybe we should just use Title here for the moment? Then propose the use of LinkTarget (and of course update phpdoc) in a follow up patch? Thanks :)",
+      "parentUuid": "97bbd3e2_90555030",
+      "range": {
+        "startLine": 46,
+        "startChar": 7,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c2d47511_d1265405",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 5
@@ -36,6 +60,24 @@
       "writtenOn": "2019-01-30T15:13:26Z",
       "side": 1,
       "message": "This does not look like it should change anything. How is it possible this suppresses a Phan issue?",
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8ac45e5c_3548febc",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2842
+      },
+      "writtenOn": "2019-01-30T15:35:41Z",
+      "side": 1,
+      "message": "I\u0027m not exactly sure but I just looked at how -\u003emoveTo() callers pass arguments to the method. My guess is callers to this method shouldn\u0027t pass $this-\u003emsg() directly for some reason or could this be a phan false positive?",
+      "parentUuid": "c2d47511_d1265405",
       "revId": "e480430497302139ff1d10beb422e245fe122bd0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
