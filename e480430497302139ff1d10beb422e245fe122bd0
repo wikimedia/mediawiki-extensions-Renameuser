@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "e4a47ec3_c99e6022",
+        "filename": "includes/RenameuserHooks.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1453
+      },
+      "writtenOn": "2019-01-30T16:37:52Z",
+      "side": 1,
+      "message": "It does not make much of a difference. The hook that calls this code is currently guaranteed to provide a Title object. But the code here does not need it. All it needs to know is that the object it gets conforms to the LinkTarget interface.\n\nSince there is no hard binding between caller and callee of a hook it\u0027s possible to use signatures that are not 100% identical.\n\nCould be a separate patch, sure.",
+      "parentUuid": "4d6ee6b3_a2c286c3",
+      "range": {
+        "startLine": 46,
+        "startChar": 7,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c2d47511_d1265405",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 5
@@ -78,6 +102,24 @@
       "side": 1,
       "message": "I\u0027m not exactly sure but I just looked at how -\u003emoveTo() callers pass arguments to the method. My guess is callers to this method shouldn\u0027t pass $this-\u003emsg() directly for some reason or could this be a phan false positive?",
       "parentUuid": "c2d47511_d1265405",
+      "revId": "e480430497302139ff1d10beb422e245fe122bd0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df15f508_19f4a64e",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1453
+      },
+      "writtenOn": "2019-01-30T16:37:52Z",
+      "side": 1,
+      "message": "moveTo() expects a string, as far as I can see.\n\nWhat is the actual error message Phan reports for this?",
+      "parentUuid": "8ac45e5c_3548febc",
       "revId": "e480430497302139ff1d10beb422e245fe122bd0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
