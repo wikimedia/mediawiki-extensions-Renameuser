@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9b64faa8_20d3da21",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 7
+      },
+      "lineNbr": 358,
+      "author": {
+        "id": 34
+      },
+      "writtenOn": "2019-02-06T17:04:08Z",
+      "side": 1,
+      "message": "From Jenkins:\n\n \u003cerror line\u003d\"359\" severity\u003d\"warning\" message\u003d\"Calling method \\Title::moveTo() in \\SpecialRenameuser::execute that outputs using tainted argument $reason. (Caused by: ../../includes/Title.php +4119) (Caused by: ./includes/SpecialRenameuser.php +61; ./includes/SpecialRenameuser.php +355; ./includes/SpecialRenameuser.php +359)\" source\u003d\"SecurityCheck-XSS\"/\u003e\n\n\nThis didn\u0027t change, but it\u0027s possible that this is a real problem that it was not able to detect previously.\n\nHowever, looking at MovePage::moveTo, I do not see any problem with plain text being passed as $reason within moveTo(). In fact, escaping it would be bad, because this is not used as HTML or SQL. It is always escaped before use, so escaping it here would actually break things.",
+      "revId": "9e16b9b590c6868de0e1074a09716474f1714466",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
