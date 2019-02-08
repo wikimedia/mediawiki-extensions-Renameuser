@@ -356,9 +356,12 @@ class SpecialRenameuser extends SpecialPage {
 						$this->msg( 'renameuser-page-exists' )->rawParams( $link )->escaped()
 					);
 				} else {
-					$logReason = $this->msg(
-						'renameuser-move-log', $oldusername->getText(), $newusername->getText()
-					)->inContentLanguage()->text();
+					$logReason = $this->msg( 'renameuser-move-log' )
+						->params(
+							wfEscapeWikiText( $oldusername->getText() ),
+							wfEscapeWikiText( $newusername->getText() )
+						)
+						->inContentLanguage()->text();
 
 					$moveStatus = $mp->move( $user, $logReason, !$suppressRedirect );
 
