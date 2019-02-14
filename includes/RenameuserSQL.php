@@ -175,7 +175,7 @@ class RenameuserSQL {
 	 * @return true
 	 */
 	public function rename() {
-		global $wgAuth, $wgUpdateRowsPerJob;
+		global $wgUpdateRowsPerJob;
 
 		// Grab the user's edit count first, used in log entry
 		$contribs = User::newFromId( $this->uid )->getEditCount();
@@ -212,15 +212,8 @@ class RenameuserSQL {
 		// Again, avoids user being logged in with old name.
 		$user = User::newFromId( $this->uid );
 
-		if ( class_exists( SessionManager::class ) &&
-			is_callable( [ SessionManager::singleton(), 'invalidateSessionsForUser' ] )
-		) {
-			$user->load( User::READ_LATEST );
-			SessionManager::singleton()->invalidateSessionsForUser( $user );
-		} else {
-			$authUser = $wgAuth->getUserInstance( $user );
-			$authUser->resetAuthToken();
-		}
+		$user->load( User::READ_LATEST );
+		SessionManager::singleton()->invalidateSessionsForUser( $user );
 
 		// Purge user cache
 		$user->invalidateCache();
@@ -360,15 +353,7 @@ class RenameuserSQL {
 			// Clear caches and inform authentication plugins
 			$user = User::newFromId( $that->uid );
 			$user->load( User::READ_LATEST );
-			// Call $wgAuth for backwards compatibility
-			if ( class_exists( AuthManager::class ) ) {
-				AuthManager::callLegacyAuthPlugin( 'updateExternalDB', [ $user ] );
-			} else {
-				global $wgAuth;
-				$wgAuth->updateExternalDB( $user );
-			}
-			// Trigger the UserSaveSettings hook, which is the replacement for
-			// $wgAuth->updateExternalDB()
+			// Trigger the UserSaveSettings hook
 			$user->saveSettings();
 			Hooks::run( 'RenameUserComplete', [ $that->uid, $that->old, $that->new ] );
 			// Publish to RC
