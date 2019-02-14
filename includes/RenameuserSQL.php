@@ -323,7 +323,6 @@ class RenameuserSQL {
 					$jobParams['count'] = 0;
 				}
 			}
-			$dbw->freeResult( $res );
 		}
 
 		// Log it!
