@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a7f1dfa9_17bb68c2",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 221
+      },
+      "writtenOn": "2019-02-15T19:10:59Z",
+      "side": 0,
+      "message": "https://www.mediawiki.org/wiki/Extension:Renameuser doesn\u0027t specify a compatibility policy. Since extension.json says 1.30, most of the changes here are ok since SessionManager::invalidateSessionsForUser() and AuthManager were both present in that release. But removing line 365 here would break compat with 1.30.\n\nIf we don\u0027t want to assume \"master\", we should keep line 365 with a feature check for the AuthPlugin removal in 1.33, like\n\n if ( class_exists( AuthPlugin::class ) ) {\n     AuthManager::callLegacyAuthPlugin( \u0027updateExternalDB\u0027, [ $user ] );\n }\n\nOr I\u0027d be happy if someone would declare \"master\" as Renameuser\u0027s compatibility policy.",
+      "revId": "6eb7fa0485a4b9cb4cefcaba27ee33f5fc35d8c4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
