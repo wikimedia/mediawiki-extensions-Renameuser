@@ -122,10 +122,6 @@ class RenameuserSQL {
 		$this->tablesJob = []; // Slow updates
 
 		if ( self::actorMigrationWriteOld() ) {
-			$this->tables['image'] = [ 'img_user_text', 'img_user' ];
-			$this->tables['oldimage'] = [ 'oi_user_text', 'oi_user' ];
-			$this->tables['filearchive'] = [ 'fa_user_text', 'fa_user' ];
-
 			// If this user has a large number of edits, use the jobqueue
 			// T134136: if this is for user_id=0, then use the queue as the edit count is unknown.
 			if ( !$uid || User::newFromId( $uid )->getEditCount() > self::CONTRIB_JOB ) {
@@ -147,11 +143,32 @@ class RenameuserSQL {
 					self::TIME_COL => 'log_timestamp',
 					'uniqueKey'    => 'log_id'
 				];
+				$this->tablesJob['image'] = [
+					self::NAME_COL => 'img_user_text',
+					self::UID_COL  => 'img_user',
+					self::TIME_COL => 'img_timestamp',
+					'uniqueKey'    => 'img_name'
+				];
+				$this->tablesJob['oldimage'] = [
+					self::NAME_COL => 'oi_user_text',
+					self::UID_COL  => 'oi_user',
+					self::TIME_COL => 'oi_timestamp'
+				];
+				$this->tablesJob['filearchive'] = [
+					self::NAME_COL => 'fa_user_text',
+					self::UID_COL  => 'fa_user',
+					self::TIME_COL => 'fa_timestamp',
+					'uniqueKey'    => 'fa_id'
+				];
 			} else {
 				$this->tables['revision'] = [ 'rev_user_text', 'rev_user' ];
 				$this->tables['archive'] = [ 'ar_user_text', 'ar_user' ];
 				$this->tables['logging'] = [ 'log_user_text', 'log_user' ];
+				$this->tables['image'] = [ 'img_user_text', 'img_user' ];
+				$this->tables['oldimage'] = [ 'oi_user_text', 'oi_user' ];
+				$this->tables['filearchive'] = [ 'fa_user_text', 'fa_user' ];
 			}
+
 			// Recent changes is pretty hot, deadlocks occur if done all at once
 			if ( wfQueriesMustScale() ) {
 				$this->tablesJob['recentchanges'] = [ 'rc_user_text', 'rc_user', 'rc_timestamp' ];
