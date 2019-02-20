@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8fb741d0_3dc31f9c",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2019-02-20T00:39:27Z",
+      "side": 1,
+      "message": "Don\u0027t image upload create description pages (even blank) these days? The count doesn\u0027t go down either, so deletions don\u0027t matter. I doubt the oldimage is worth counting itself as someone would have to keep re-uploading the same image.\n\nSo maybe the counts can be skipped here?",
+      "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
