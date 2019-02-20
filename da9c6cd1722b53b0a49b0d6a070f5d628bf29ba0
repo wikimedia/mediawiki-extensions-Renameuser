@@ -52,6 +52,24 @@
       "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "77716cf9_4dc72cb7",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 389
+      },
+      "writtenOn": "2019-02-20T03:05:22Z",
+      "side": 1,
+      "message": "Well, it is unlikely but if it happens it would break renames again. I\u0027d rather err on the side of using jobs when I don\u0027t have to.\n\nEditcounts are a reasonable approach if you think the exact queries are not worth the effort. Although the code here is not performance-sensitive and the exact logic is simple enough to be worth keeping IMO.\n\n(It would probably make more sense to unify tables/tablesJob and do this kind of \"select count() ... limit\" query automatically and use direct query or job based on that. But all this will go away when actor migration is done so not worth the effort.)",
+      "parentUuid": "1a015732_7dca9e90",
+      "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
