@@ -34,6 +34,24 @@
       "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a015732_7dca9e90",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2019-02-20T02:34:55Z",
+      "side": 1,
+      "message": "Yes, but I meant that those are reflected in editcount as well and even \u0027image\u0027 alone would normally be good enough since the user\u0027s file uploads would probably not be spread across only a few images if they made tens of thousands of file uploads (e.g. many re-uploads of the same image is unlikely). I was thinking of Pigeonhole Principle.",
+      "parentUuid": "1859b8f4_a94699d5",
+      "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
