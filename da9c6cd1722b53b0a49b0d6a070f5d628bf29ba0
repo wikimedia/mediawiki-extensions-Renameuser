@@ -16,6 +16,24 @@
       "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1859b8f4_a94699d5",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 389
+      },
+      "writtenOn": "2019-02-20T01:19:58Z",
+      "side": 1,
+      "message": "Yeah, we could use editcount for this as well. It would affect way more users (plenty of people have more than 500 edits but less than 500 uploads), not sure if that\u0027s worth worrying about (not sure why we have the editcount check here instead of just always using jobs, TBH). Soon all this will be made unnecessary by the actor migration, anyway.\n\nOldimage is the total number of non-current file versions the user has uploaded, not a single image.",
+      "parentUuid": "8fb741d0_3dc31f9c",
+      "revId": "da9c6cd1722b53b0a49b0d6a070f5d628bf29ba0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
