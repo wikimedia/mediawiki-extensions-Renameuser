@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8d82771f_36d91919",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 2842
+      },
+      "writtenOn": "2019-02-23T17:50:55Z",
+      "side": 1,
+      "message": "Could this be $movePage? Just wondering!",
+      "range": {
+        "startLine": 347,
+        "startChar": 4,
+        "endLine": 347,
+        "endChar": 7
+      },
+      "revId": "04692090bf465e8ede55b8851b54a21719f7ec2d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
