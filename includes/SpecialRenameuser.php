@@ -308,7 +308,7 @@ class SpecialRenameuser extends SpecialPage {
 			return;
 		}
 
-		// If this user is renaming his/herself, make sure that Title::moveTo()
+		// If this user is renaming his/herself, make sure that MovePage::move()
 		// doesn't make a bunch of null move edits under the old name!
 		if ( $user->getId() === $uid ) {
 			$user->setName( $newusername->getText() );
@@ -343,8 +343,12 @@ class SpecialRenameuser extends SpecialPage {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
 					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
+
+				$movePage = new MovePage( $oldPage, $newPage );
+				$validMoveStatus = $movePage->isValidMove();
+
 				# Do not autodelete or anything, title must not exist
-				if ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) ) {
+				if ( $newPage->exists() && !$validMoveStatus->isOK() ) {
 					$link = $linkRenderer->makeKnownLink( $newPage );
 					$output .= Html::rawElement(
 						'li',
@@ -352,17 +356,13 @@ class SpecialRenameuser extends SpecialPage {
 						$this->msg( 'renameuser-page-exists' )->rawParams( $link )->escaped()
 					);
 				} else {
-					$reason = $this->msg(
+					$logReason = $this->msg(
 						'renameuser-move-log', $oldusername->getText(), $newusername->getText()
 					)->inContentLanguage()->text();
 
-					$success = $oldPage->moveTo(
-						$newPage,
-						false,
-						$reason,
-						!$suppressRedirect
-					);
-					if ( $success === true ) {
+					$moveStatus = $movePage->move( $user, $logReason, !$suppressRedirect );
+
+					if ( $moveStatus->isOK() ) {
 						# oldPage is not known in case of redirect suppression
 						$oldLink = $linkRenderer->makeLink( $oldPage, null, [], [ 'redirect' => 'no' ] );
 
