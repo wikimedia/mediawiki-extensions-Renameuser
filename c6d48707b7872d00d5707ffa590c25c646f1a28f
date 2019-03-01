@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "399b7dfa_51b6a753",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 359,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2019-03-01T17:36:24Z",
+      "side": 1,
+      "message": "This is handled in T211471",
+      "range": {
+        "startLine": 359,
+        "startChar": 5,
+        "endLine": 359,
+        "endChar": 54
+      },
+      "revId": "c6d48707b7872d00d5707ffa590c25c646f1a28f",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
