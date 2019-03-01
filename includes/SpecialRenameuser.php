@@ -356,6 +356,7 @@ class SpecialRenameuser extends SpecialPage {
 						'renameuser-move-log', $oldusername->getText(), $newusername->getText()
 					)->inContentLanguage()->text();
 
+					/** @phan-suppress-next-line SecurityCheck-XSS */
 					$success = $oldPage->moveTo(
 						$newPage,
 						false,
