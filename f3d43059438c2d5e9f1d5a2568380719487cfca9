@@ -22,6 +22,30 @@
       "revId": "f3d43059438c2d5e9f1d5a2568380719487cfca9",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3f55c8b_254805e7",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 359,
+      "author": {
+        "id": 2664
+      },
+      "writtenOn": "2019-03-01T17:54:42Z",
+      "side": 1,
+      "message": "However, I\u0027m told to do so... https://www.mediawiki.org/wiki/Continuous_integration/Tutorials/Add_phan_to_a_MediaWiki_extension#Migrating_from_phan_0.8.0",
+      "parentUuid": "86cec468_1aa25546",
+      "range": {
+        "startLine": 359,
+        "startChar": 9,
+        "endLine": 359,
+        "endChar": 51
+      },
+      "revId": "f3d43059438c2d5e9f1d5a2568380719487cfca9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
