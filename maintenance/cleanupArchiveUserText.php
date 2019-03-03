@@ -63,5 +63,5 @@ class CleanupArchiveUserText extends Maintenance {
 	}
 }
 
-$maintClass = 'CleanupArchiveUserText';
+$maintClass = CleanupArchiveUserText::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
