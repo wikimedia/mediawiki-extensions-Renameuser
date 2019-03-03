@@ -416,9 +416,6 @@ class SpecialRenameuser extends SpecialPage {
 	 * @return string[] Matching subpages
 	 */
 	public function prefixSearchSubpages( $search, $limit, $offset ) {
-		if ( !class_exists( 'UserNamePrefixSearch' ) ) { // check for version 1.27
-			return [];
-		}
 		$user = User::newFromName( $search );
 		if ( !$user ) {
 			// No prefix suggestion for invalid user
