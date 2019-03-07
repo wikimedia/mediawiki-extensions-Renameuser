@@ -181,13 +181,14 @@ class RenameuserSQL {
 		$contribs = User::newFromId( $this->uid )->getEditCount();
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->startAtomic( __METHOD__ );
+		$atomicId = $dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		Hooks::run( 'RenameUserPreRename', [ $this->uid, $this->old, $this->new ] );
 
 		// Make sure the user exists if needed
 		if ( $this->checkIfUserExists && !self::lockUserAndGetId( $this->old ) ) {
 			$this->debug( "User {$this->old} does not exist, bailing out" );
+			$dbw->cancelAtomic( __METHOD__, $atomicId );
 
 			return false;
 		}
