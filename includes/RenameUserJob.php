@@ -94,9 +94,9 @@ class RenameUserJob extends Job {
 			$minTimestamp = null;
 			$maxTimestamp = null;
 		}
-		$uniqueKey = isset( $this->params['uniqueKey'] ) ? $this->params['uniqueKey'] : null;
-		$keyId = isset( $this->params['keyId'] ) ? $this->params['keyId'] : null;
-		$logId = isset( $this->params['logId'] ) ? $this->params['logId'] : null;
+		$uniqueKey = $this->params['uniqueKey'] ?? null;
+		$keyId = $this->params['keyId'] ?? null;
+		$logId = $this->params['logId'] ?? null;
 
 		if ( $logId ) {
 			# Block until the transaction that inserted this job commits.

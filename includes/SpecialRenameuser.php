@@ -51,7 +51,7 @@ class SpecialRenameuser extends SpecialPage {
 		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
 		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
-		$newnamePar = isset( $usernames[1] ) ? $usernames[1] : null;
+		$newnamePar = $usernames[1] ?? null;
 		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', $newnamePar ) ) );
 		// Force uppercase of newusername, otherwise wikis
 		// with wgCapitalLinks=false can create lc usernames
