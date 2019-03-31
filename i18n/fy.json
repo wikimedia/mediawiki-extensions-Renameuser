@@ -27,7 +27,7 @@
 	"renameuser-page-exists": "De side $1 bestiet al en kin net automatysk oerskreaun wurde.",
 	"renameuser-page-moved": "Sidenamme $1 is feroare yn $2.",
 	"renameuser-page-unmoved": "Sidenamme $1 koe net feroare wurde yn $2.",
-	"log-name-renameuser": "Nammeferoar-loch",
+	"log-name-renameuser": "Meidoggeromneamloch",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|hat}} meidogger $4 ({{PLURAL:$6|$6 bewurking|$6 bewurkings}}) omneamd ta {{GENDER:$7|$5}}",
 	"renameuser-move-log": "Side automatysk omneamd by it omneamen fan {{GENDER:$2|meidogger|meidochster}} \"[[User:$1|$1]]\" ta \"[[User:$2|$2]]\"",
 	"right-renameuser": "Meidoggers omneame"
