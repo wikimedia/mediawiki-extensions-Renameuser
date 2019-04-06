@@ -13,8 +13,8 @@ require_once "$IP/maintenance/Maintenance.php";
 class CleanupArchiveUserText extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Update the archive table where users were ' .
-			'previously renamed, but their archive contributions were not';
+		$this->addDescription( 'Update the archive table where users were ' .
+			'previously renamed, but their archive contributions were not' );
 
 		$this->requireExtension( 'Renameuser' );
 	}
