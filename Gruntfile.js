@@ -4,12 +4,12 @@ module.exports = function ( grunt ) {
 
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-eslint' );
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
 
 	grunt.initConfig( {
 		eslint: {
 			options: {
 				reportUnusedDisableDirectives: true,
+				extensions: [ '.js', '.json' ],
 				cache: true
 			},
 			all: [
@@ -17,15 +17,9 @@ module.exports = function ( grunt ) {
 				'!{vendor,node_modules}/**'
 			]
 		},
-		jsonlint: {
-			all: [
-				'**/*.json',
-				'!{vendor,node_modules}/**'
-			]
-		},
 		banana: conf.MessagesDirs
 	} );
 
-	grunt.registerTask( 'test', [ 'eslint', 'jsonlint', 'banana' ] );
+	grunt.registerTask( 'test', [ 'eslint', 'banana' ] );
 	grunt.registerTask( 'default', 'test' );
 };
