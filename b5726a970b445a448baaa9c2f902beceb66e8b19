@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf8dbb44_64fa5915",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2019-06-01T06:43:46Z",
+      "side": 1,
+      "message": "You can still use it nowadays, but it shows deprecation notice since 1.33 (Ibc989479e057460aa3883689fa416d0ac9c7c462), so it is safe to remove it a release later, 1.34 where we are now.\n\nBut I would not leave the question here",
+      "range": {
+        "startLine": 10,
+        "startChar": 12,
+        "endLine": 10,
+        "endChar": 32
+      },
+      "revId": "b5726a970b445a448baaa9c2f902beceb66e8b19",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
