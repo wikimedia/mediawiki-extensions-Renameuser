@@ -8,12 +8,13 @@
 			"Memo18",
 			"Minisarm",
 			"Stelistcristi",
-			"Andrei Stroe"
+			"Andrei Stroe",
+			"Matěj Suchánek"
 		]
 	},
 	"renameuser": "Redenumire utilizator",
 	"renameuser-linkoncontribs": "redenumirea {{GENDER:$1|utilizatorului|utilizatoarei|utilizatorului}}",
-	"renameuser-linkoncontribs-text": "Redenumeşte {{GENDERL$1|acest utilizator|această utilizatoare|acest utilizator}}",
+	"renameuser-linkoncontribs-text": "Redenumeşte {{GENDER:$1|acest utilizator|această utilizatoare|acest utilizator}}",
 	"renameuser-desc": "Adaugă o [[Special:RenameUser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	"renameuserold": "Numele de utilizator existent:",
 	"renameusernew": "Noul nume de utilizator:",
