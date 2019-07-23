@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mostafadaneshvar"
+			"Mostafadaneshvar",
+			"Sultanselim baloch"
 		]
 	},
 	"renameuser": "کاربر نامی بدل کن",
@@ -12,7 +13,7 @@
 	"renameusermove": "صفحات گپ و کاربر (و آیانی زیر صفحات) په نوکین نام جاه په جاه کن",
 	"renameuserwarnings": "هوژاریان:",
 	"renameuserconfirm": "بله، کاربر نامی عوض کن",
-	"renameusersubmit": "دیم دی",
+	"renameusersubmit": "سپت کن",
 	"renameusererrordoesnotexist": "کاربر \"<nowiki>$1</nowiki>\" موجود نهنت.",
 	"renameusererrorexists": "کاربر \"<nowiki>$1</nowiki>\" هنو هستن.",
 	"renameusererrorinvalid": "نام کاربری \"<nowiki>$1</nowiki>\"  نامعتبر انت.",
