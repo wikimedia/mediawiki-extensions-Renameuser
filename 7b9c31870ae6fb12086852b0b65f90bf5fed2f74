@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7a1a23f_7b083f32",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 21
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 366
+      },
+      "writtenOn": "2019-08-27T22:55:37Z",
+      "side": 1,
+      "message": "This feel likes a bit of a hack, but I don\u0027t have a better suggestion…",
+      "range": {
+        "startLine": 252,
+        "startChar": 0,
+        "endLine": 252,
+        "endChar": 84
+      },
+      "revId": "7b9c31870ae6fb12086852b0b65f90bf5fed2f74",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
