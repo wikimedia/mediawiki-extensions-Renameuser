@@ -44,7 +44,7 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		if ( $user->isBlocked() ) {
-			throw new UserBlockedError( $this->getUser()->mBlock );
+			throw new UserBlockedError( $this->getUser()->getBlock() );
 		}
 
 		$this->useTransactionalTimeLimit();
