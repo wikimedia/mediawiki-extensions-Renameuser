@@ -31,12 +31,14 @@ class RenameuserLogFormatter extends LogFormatter {
 
 		// Nice link to old user page
 		$title = Title::makeTitleSafe( NS_USER, $params[3] );
+		// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 		$link = $this->myPageLink( $title, $params[3],
 			[ 'redirect' => 'no' ] );
 		$params[3] = Message::rawParam( $link );
 
 		// Nice link to new user page
 		$title = Title::makeTitleSafe( NS_USER, $params[4] );
+		// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 		$link = $this->myPageLink( $title, $params[4] );
 		$params[4] = Message::rawParam( $link );
 		// GENDER support (using new user page)
