@@ -1,0 +1,8 @@
+Code-Review+1: SBassett <sbassett@wikimedia.org>
+Code-Review+2: Jforrester <jforrester@wikimedia.org>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 01 Oct 2019 19:28:06 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/540200
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/master
