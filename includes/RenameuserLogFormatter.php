@@ -54,7 +54,7 @@ class RenameuserLogFormatter extends LogFormatter {
 	 * @return string
 	 * @suppress PhanParamReqAfterOpt
 	 */
-	protected function myPageLink( Title $title = null, $text, $query = [] ) {
+	protected function myPageLink( ?Title $title, $text, $query = [] ) {
 		if ( !$this->plaintext ) {
 			if ( !$title instanceof Title ) {
 				$link = htmlspecialchars( $text );
