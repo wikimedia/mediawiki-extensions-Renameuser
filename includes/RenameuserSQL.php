@@ -41,7 +41,7 @@ class RenameuserSQL {
 	/**
 	 * tables => fields to be updated in a deferred job
 	 *
-	 * @var array
+	 * @var array[]
 	 */
 	public $tablesJob;
 

@@ -141,6 +141,7 @@ class SpecialRenameuser extends SpecialPage {
 				);
 			}
 		}
+		// @phan-suppress-next-line PhanImpossibleCondition May set by hook
 		if ( $warnings ) {
 			$warningsHtml = [];
 			foreach ( $warnings as $warning ) {
