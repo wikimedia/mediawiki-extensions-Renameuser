@@ -188,7 +188,7 @@ class RenameuserSQL {
 
 	/**
 	 * Do the rename operation
-	 * @return true
+	 * @return bool
 	 */
 	public function rename() {
 		global $wgUpdateRowsPerJob;
