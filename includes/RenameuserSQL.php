@@ -405,7 +405,7 @@ class RenameuserSQL {
 	public static function actorMigrationWriteOld() {
 		global $wgActorTableSchemaMigrationStage;
 
-		if ( !is_callable( User::class, 'getActorId' ) ) {
+		if ( !is_callable( [ User::class, 'getActorId' ] ) ) {
 			return true;
 		}
 		if ( !isset( $wgActorTableSchemaMigrationStage ) ) {
@@ -427,7 +427,7 @@ class RenameuserSQL {
 	public static function actorMigrationWriteNew() {
 		global $wgActorTableSchemaMigrationStage;
 
-		if ( !is_callable( User::class, 'getActorId' ) ) {
+		if ( !is_callable( [ User::class, 'getActorId' ] ) ) {
 			return false;
 		}
 		if ( !isset( $wgActorTableSchemaMigrationStage ) ) {
