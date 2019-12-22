@@ -23,7 +23,8 @@ class RenameuserLogFormatter extends LogFormatter {
 		if ( !isset( $params[3] ) ) {
 			// The oldest format
 			return $params;
-		} elseif ( !isset( $params[4] ) ) {
+		}
+		if ( !isset( $params[4] ) ) {
 			// See comments above
 			$params[4] = $params[3];
 			$params[3] = $this->entry->getTarget()->getText();
