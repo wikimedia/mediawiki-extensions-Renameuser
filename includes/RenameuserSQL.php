@@ -386,7 +386,7 @@ class RenameuserSQL {
 
 	/**
 	 * @param string $name Current wiki local user name
-	 * @return integer Returns 0 if no row was found
+	 * @return int Returns 0 if no row was found
 	 */
 	private static function lockUserAndGetId( $name ) {
 		return (int)wfGetDB( DB_MASTER )->selectField(
