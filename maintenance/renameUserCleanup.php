@@ -337,6 +337,7 @@ class RenameUserCleanup extends Maintenance {
 			} else {
 				$this->rollbackTransaction( $dbw, __METHOD__ );
 				$this->fatalError( "Problem with the update, rolling back and exiting\n" );
+				throw new LogicException();
 			}
 
 			// $contribs = User::edits( $olduser->getId() );

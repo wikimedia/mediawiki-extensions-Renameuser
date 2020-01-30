@@ -6,7 +6,6 @@
 class RenameuserLogFormatter extends LogFormatter {
 
 	/**
-	 * @suppress PhanTypePossiblyInvalidDimOffset Key 3 and 4 always set when needed
 	 * @inheritDoc
 	 */
 	protected function getMessageParameters() {
