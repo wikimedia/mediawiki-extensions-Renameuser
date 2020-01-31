@@ -25,7 +25,7 @@
 	"renameuser-submit-blocklog": "Montri forbarprotokolon de la uzanto",
 	"renameusererrordoesnotexist": "La uzanto \"<nowiki>$1</nowiki>\" ne ekzistas",
 	"renameusererrorexists": "La {{GENDER:$1|uzanto}}  \"<nowiki>$1</nowiki>\" jam ekzistas",
-	"renameusererrorinvalid": "La salutnomo \"<nowiki>$1</nowiki>\" estas malvalida",
+	"renameusererrorinvalid": "La uzantnomo \"<nowiki>$1</nowiki>\" estas nevalida",
 	"renameuser-error-request": "Estis problemo recivante la peton.\nBonvolu retroigi kaj reprovi.",
 	"renameuser-error-same-user": "Vi ne povas alinomi uzanton al la sama nomo.",
 	"renameusersuccess": "La {{GENDER:$1|uzanto}} \"<nowiki>$1</nowiki>\" estas alinomita al \"<nowiki>$2</nowiki>\"",
