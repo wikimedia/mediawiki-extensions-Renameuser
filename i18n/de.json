@@ -14,7 +14,7 @@
 	"renameuser": "Benutzer umbenennen",
 	"renameuser-linkoncontribs": "{{GENDER:$1|Benutzer|Benutzerin}} umbenennen",
 	"renameuser-linkoncontribs-text": "{{GENDER:$1|Diesen Benutzer|Diese Benutzerin}} umbenennen",
-	"renameuser-desc": "Eine [[Special:RenameUser|Spezialseite]] zum Ändern eines Benutzernamens",
+	"renameuser-desc": "Erweitert das Wiki um eine [[Special:RenameUser|Spezialseite]] zum Ändern eines Benutzernamens",
 	"renameuserold": "Bisheriger Benutzername:",
 	"renameusernew": "Neuer Benutzername:",
 	"renameuserreason": "Grund:",
