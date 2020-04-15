@@ -39,9 +39,7 @@ class SpecialRenameuser extends SpecialPage {
 			throw new PermissionsError( 'renameuser' );
 		}
 
-		if ( wfReadOnly() ) {
-			throw new ReadOnlyError;
-		}
+		$this->checkReadOnly();
 
 		if ( $user->isBlocked() ) {
 			throw new UserBlockedError( $this->getUser()->getBlock() );
