@@ -22,6 +22,30 @@
       "revId": "4a4f821ee66d32dfbdb00cde40829583e3a4aa1a",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7cff6b99_ee94cb93",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2945
+      },
+      "writtenOn": "2020-04-20T10:56:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3d5c253_ee07c2fe",
+      "range": {
+        "startLine": 58,
+        "startChar": 3,
+        "endLine": 58,
+        "endChar": 13
+      },
+      "revId": "4a4f821ee66d32dfbdb00cde40829583e3a4aa1a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
