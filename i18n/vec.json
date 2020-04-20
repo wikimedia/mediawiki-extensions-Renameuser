@@ -13,7 +13,7 @@
 	"renameuserold": "Vecio nome utente:",
 	"renameusernew": "Novo nome utente:",
 	"renameuserreason": "Motivo:",
-	"renameusermove": "Rinomina anca la pagina utente, la pagina de discussion e le relative sotopagine",
+	"renameusermove": "Sposta anca ła pàjina utente e de discusion (e łe so soto-pàjine) al novo nome",
 	"renameusersuppress": "No stà crear rimandi al nome novo",
 	"renameuserreserve": "Tien da conto el vecio nome utente par inpedir che'l vegna doparà in futuro",
 	"renameuserwarnings": "Avertimenti:",
@@ -36,5 +36,5 @@
 	"renameuser-move-log": "Spostamento automatico de la pagina - utente rinominà da \"[[User:$1|$1]]\" a \"[[User:$2|$2]]\"",
 	"action-renameuser": "rinominar i utenti",
 	"right-renameuser": "Rinomina utenti",
-	"renameuser-renamed-notice": "Sto utente el gà canbià nome.\nQua soto ghe xe el riferimento sul registro de rinomina."
+	"renameuser-renamed-notice": "Sto utente el gà canbià nome.\nCuà soto ghe xe el referimento in tel rejistro de renomena."
 }
