@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a3d5c253_ee07c2fe",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-04-20T10:52:30Z",
+      "side": 1,
+      "message": "Now this can be null (though with these parameters it shouldn\u0027t be) and so phan complains",
+      "range": {
+        "startLine": 58,
+        "startChar": 3,
+        "endLine": 58,
+        "endChar": 13
+      },
+      "revId": "4a4f821ee66d32dfbdb00cde40829583e3a4aa1a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
