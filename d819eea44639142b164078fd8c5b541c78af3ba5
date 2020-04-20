@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4240c7ee_1496d284",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-04-20T10:22:18Z",
+      "side": 1,
+      "message": "Can I suggest storing $oldName and $newName at the start, and using those instead of calling $this\u003egetOption each time?",
+      "range": {
+        "startLine": 47,
+        "startChar": 17,
+        "endLine": 47,
+        "endChar": 24
+      },
+      "revId": "d819eea44639142b164078fd8c5b541c78af3ba5",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3d0344c5_8d4f3af4",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-04-20T10:22:18Z",
+      "side": 1,
+      "message": "Suggest `User::newSystemUser( \u0027Maintenance script\u0027, [ \u0027steal\u0027 \u003d\u003e true ] );`",
+      "range": {
+        "startLine": 58,
+        "startChar": 16,
+        "endLine": 58,
+        "endChar": 58
+      },
+      "revId": "d819eea44639142b164078fd8c5b541c78af3ba5",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
