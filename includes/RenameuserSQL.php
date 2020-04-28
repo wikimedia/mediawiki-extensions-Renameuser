@@ -253,9 +253,11 @@ class RenameuserSQL {
 
 		$dbw->update( 'logging',
 			[ 'log_title' => $newTitle->getDBkey() ],
-			[ 'log_type' => $logTypesOnUser,
+			[
+				'log_type' => $logTypesOnUser,
 				'log_namespace' => NS_USER,
-				'log_title' => $oldTitle->getDBkey() ],
+				'log_title' => $oldTitle->getDBkey()
+			],
 			__METHOD__
 		);
 
