@@ -10,7 +10,6 @@ class RenameuserSQL {
 	 * The old username
 	 *
 	 * @var string
-	 * @access private
 	 */
 	public $old;
 
@@ -18,7 +17,6 @@ class RenameuserSQL {
 	 * The new username
 	 *
 	 * @var string
-	 * @access private
 	 */
 	public $new;
 
@@ -26,7 +24,6 @@ class RenameuserSQL {
 	 * The user ID
 	 *
 	 * @var integer
-	 * @access private
 	 */
 	public $uid;
 
@@ -34,7 +31,6 @@ class RenameuserSQL {
 	 * The tables => fields to be updated
 	 *
 	 * @var array
-	 * @access private
 	 */
 	public $tables;
 
@@ -50,7 +46,6 @@ class RenameuserSQL {
 	 * the updates and the old username may have already been renamed in the user table.
 	 *
 	 * @var bool
-	 * @access private
 	 */
 	public $checkIfUserExists;
 
