@@ -57,5 +57,5 @@
 		"RenameuserSQL": "includes/RenameuserSQL.php",
 		"SpecialRenameuser": "includes/SpecialRenameuser.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
