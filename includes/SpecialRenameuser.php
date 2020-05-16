@@ -342,12 +342,13 @@ class SpecialRenameuser extends SpecialPage {
 
 			$output = '';
 			$linkRenderer = $this->getLinkRenderer();
+			$movePageFactory = MediaWikiServices::getInstance()->getMovePageFactory();
 			foreach ( $pages as $row ) {
 				$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 				$newPage = Title::makeTitleSafe( $row->page_namespace,
 					preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 
-				$movePage = new MovePage( $oldPage, $newPage );
+				$movePage = $movePageFactory->newMovePage( $oldPage, $newPage );
 				$validMoveStatus = $movePage->isValidMove();
 
 				# Do not autodelete or anything, title must not exist
