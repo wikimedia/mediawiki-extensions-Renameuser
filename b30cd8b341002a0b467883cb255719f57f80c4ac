@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f92fe0c_6626cb69",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 11
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-05-29T00:58:29Z",
+      "side": 1,
+      "message": "Should just be @phan-var instead of recreating",
+      "range": {
+        "startLine": 68,
+        "startChar": 2,
+        "endLine": 68,
+        "endChar": 54
+      },
+      "revId": "b30cd8b341002a0b467883cb255719f57f80c4ac",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
