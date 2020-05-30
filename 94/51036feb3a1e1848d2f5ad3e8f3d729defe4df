@@ -1,0 +1,7 @@
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Sat, 30 May 2020 05:51:06 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/600213
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/master
