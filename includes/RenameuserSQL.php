@@ -74,12 +74,12 @@ class RenameuserSQL {
 	 * Users with more than this number of edits will have their rename operation
 	 * deferred via the job queue.
 	 */
-	const CONTRIB_JOB = 500;
+	private const CONTRIB_JOB = 500;
 
 	// B/C constants for tablesJob field
-	const NAME_COL = 0;
-	const UID_COL  = 1;
-	const TIME_COL = 2;
+	public const NAME_COL = 0;
+	public const UID_COL  = 1;
+	public const TIME_COL = 2;
 
 	/**
 	 * Constructor
