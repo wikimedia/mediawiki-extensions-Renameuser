@@ -374,7 +374,7 @@ class RenameuserSQL {
 			// Publish to RC
 			$logEntry->publish( $logid );
 			$dbw->endAtomic( $fname );
-		} );
+		}, $fname );
 
 		$this->debug( "Finished rename for {$this->old} to {$this->new}" );
 
