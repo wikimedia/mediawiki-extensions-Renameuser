@@ -299,7 +299,7 @@ class RenameuserSQL {
 			$jobParams['minTimestamp'] = '0';
 			$jobParams['maxTimestamp'] = '0';
 			$jobParams['count'] = 0;
-			// Unique column for slave lag avoidance
+			// Unique column for replica lag avoidance
 			if ( isset( $params['uniqueKey'] ) ) {
 				$jobParams['uniqueKey'] = $params['uniqueKey'];
 			}

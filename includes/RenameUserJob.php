@@ -145,7 +145,7 @@ class RenameUserJob extends Job {
 		if ( $uniqueKey !== null ) {
 			# Select the rows to update by PRIMARY KEY
 			$ids = $dbw->selectFieldValues( $table, $uniqueKey, $conds, __METHOD__ );
-			# Update these rows by PRIMARY KEY to avoid slave lag
+			# Update these rows by PRIMARY KEY to avoid replica lag
 			foreach ( array_chunk( $ids, $wgUpdateRowsPerQuery ) as $batch ) {
 				$dbw->commit( __METHOD__, 'flush' );
 				$lbFactory->waitForReplication();
