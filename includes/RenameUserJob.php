@@ -54,13 +54,11 @@ class RenameUserJob extends Job {
 		// Skip core tables that were migrated to the actor table, even if the
 		// field still exists in the database.
 		if ( in_array( "$table.$column", self::$actorMigratedColumns, true ) ) {
-			if ( !RenameuserSQL::actorMigrationWriteOld() ) {
-				wfDebugLog( 'Renameuser',
-					"Ignoring job {$this->toString()}, column $table.$column "
-						. "actor migration stage lacks WRITE_OLD\n"
-				);
-				return true;
-			}
+			wfDebugLog( 'Renameuser',
+				"Ignoring job {$this->toString()}, column $table.$column "
+					. "actor migration stage lacks WRITE_OLD\n"
+			);
+			return true;
 		}
 
 		// It's not worth a hook to let extensions add themselves to that list.
