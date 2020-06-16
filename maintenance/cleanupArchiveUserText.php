@@ -22,44 +22,8 @@ class CleanupArchiveUserText extends Maintenance {
 	}
 
 	public function execute() {
-		if ( !RenameuserSQL::actorMigrationWriteOld() ) {
-			$this->output( "archive.ar_user_text is no longer used.\n" );
-			return;
-		}
-
-		$dbw = wfGetDB( DB_MASTER );
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-
-		do {
-			$res = $dbw->select(
-				[ 'archive', 'user' ],
-				[ 'DISTINCT ar_user_text', 'user_name', 'ar_user' ],
-				[
-					'ar_user_text <> user_name',
-					'ar_user = user_id',
-				],
-				__METHOD__,
-				[ 'LIMIT' => 50 ]
-			);
-			$results = 0;
-			foreach ( $res as $row ) {
-				$results++;
-				$this->output( "User:{$row->ar_user_text} => User:{$row->user_name} " );
-				$dbw->update(
-					'archive',
-					[ 'ar_user_text' => $row->user_name ],
-					[
-						'ar_user_text' => $row->ar_user_text,
-						'ar_user' => $row->ar_user,
-					],
-					__METHOD__,
-					[ 'LIMIT' => 50 ]
-				);
-				$affected = $dbw->affectedRows();
-				$this->output( "$affected rows\n" );
-				$lbFactory->waitForReplication();
-			}
-		} while ( $results === 50 );
+		$this->output( "archive.ar_user_text is no longer used.\n" );
+		return;
 	}
 
 	public function getDbType() {
