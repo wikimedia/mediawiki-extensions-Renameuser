@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d265af95_8aac46f0",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 15
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 920
+      },
+      "writtenOn": "2020-07-11T12:40:32Z",
+      "side": 1,
+      "message": "I think performer should be removed and everything should be done with \"Maintenance script\". I haven\u0027t seen edits or any action that is done via maintenance script recorded as a normal mediawiki user. I\u0027d like to keep the distinction between what\u0027s been done through UI and CLI. Also, it makes me nervous that we can do things on behalf of any arbitrary user.\nHave you seen other maintenance scripts with similar options in them?",
+      "range": {
+        "startLine": 40,
+        "startChar": 2,
+        "endLine": 40,
+        "endChar": 81
+      },
+      "revId": "7dd4c77d1495acdea40d2479e0324cefe7c8a89e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "939f3b79_4dfc3fe6",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 15
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 920
+      },
+      "writtenOn": "2020-07-11T12:40:32Z",
+      "side": 1,
+      "message": "Note to future: We really should stop depending on kitchen sink called User class. RenameuserSQL should not depend on it and depend on something smaller like UserIdentity but this is out of scope of this patch.",
+      "range": {
+        "startLine": 67,
+        "startChar": 2,
+        "endLine": 67,
+        "endChar": 29
+      },
+      "revId": "7dd4c77d1495acdea40d2479e0324cefe7c8a89e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
