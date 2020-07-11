@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "45b42eb8_bbb1edb6",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 15
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2945
+      },
+      "writtenOn": "2020-07-11T12:50:03Z",
+      "side": 1,
+      "message": "Well, sysadmins can always do things on behalf of any arbitrary user, be it using a regular script, eval.php, or direct UPDATE queries.\n\nRegarding other examples, https://github.com/wikimedia/mediawiki/blob/master/maintenance/edit.php#L37, https://github.com/wikimedia/mediawiki/blob/master/maintenance/deleteBatch.php#L45, https://github.com/wikimedia/mediawiki/blob/master/maintenance/undelete.php#L30, https://github.com/wikimedia/mediawiki/blob/master/maintenance/blockUsers.php#L48 and probably also others.",
+      "parentUuid": "d265af95_8aac46f0",
+      "range": {
+        "startLine": 40,
+        "startChar": 2,
+        "endLine": 40,
+        "endChar": 81
+      },
+      "revId": "7dd4c77d1495acdea40d2479e0324cefe7c8a89e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "939f3b79_4dfc3fe6",
         "filename": "maintenance/renameUser.php",
         "patchSetId": 15
@@ -45,6 +69,30 @@
       "revId": "7dd4c77d1495acdea40d2479e0324cefe7c8a89e",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1699546e_0e134447",
+        "filename": "maintenance/renameUser.php",
+        "patchSetId": 15
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2945
+      },
+      "writtenOn": "2020-07-11T12:50:03Z",
+      "side": 1,
+      "message": "Ack :).",
+      "parentUuid": "939f3b79_4dfc3fe6",
+      "range": {
+        "startLine": 67,
+        "startChar": 2,
+        "endLine": 67,
+        "endChar": 29
+      },
+      "revId": "7dd4c77d1495acdea40d2479e0324cefe7c8a89e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
