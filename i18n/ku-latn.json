@@ -4,7 +4,8 @@
 			"Bikarhêner",
 			"George Animal",
 			"Ghybu",
-			"Gomada"
+			"Gomada",
+			"Guherto"
 		]
 	},
 	"renameuser": "Navê bikarhêner biguherîne",
@@ -26,5 +27,5 @@
 	"renameuser-page-unmoved": "Rûpela $1 nikanî çûba ciha $2.",
 	"log-name-renameuser": "Guhertina navê bikarhêner",
 	"renameuser-move-log": "Otomatîk hate guherandin, ji ber ku \"[[User:$1|$1]]\" navê xwe guherand û niha bû \"[[User:$2|$2]]\"",
-	"right-renameuser": "Navê bikarhêneran biguherîne:"
+	"right-renameuser": "Navê bikarhêneran biguherîne"
 }
