@@ -9,8 +9,8 @@
 		]
 	},
 	"renameuser": "Navê bikarhêner biguherîne",
-	"renameuser-linkoncontribs": "navê bikarhêner biguherîne",
-	"renameuser-linkoncontribs-text": "Navê vî bikarhênerî biguherîne",
+	"renameuser-linkoncontribs": "navê {{GENDER:$1|bikarhêner}} biguherîne",
+	"renameuser-linkoncontribs-text": "Navê v{{GENDER:$1|î|ê}} bikarhêner{{GENDER:$1|î|ê}} biguherîne",
 	"renameuserold": "Navê niha:",
 	"renameusernew": "Navê nû:",
 	"renameuserreason": "Sedem:",
