@@ -36,7 +36,7 @@
 	"renameusererrorexists": "{{GENDER:$1|Użytkownik|Użytkowniczka}} „<nowiki>$1</nowiki>” już istnieje.",
 	"renameusererrorinvalid": "Niepoprawna nazwa użytkownika „<nowiki>$1</nowiki>”",
 	"renameuser-error-request": "Wystąpił problem z odbiorem żądania.\nCofnij się i spróbuj jeszcze raz.",
-	"renameuser-error-same-user": "Nie możesz zmienić nazwy użytkownika na taką samą jaka była wcześniej.",
+	"renameuser-error-same-user": "Nie możesz zmienić nazwy użytkownika na taką samą, jak poprzednia.",
 	"renameusersuccess": "Nazwa {{GENDER:$2|użytkownika|użytkowniczki}} „<nowiki>$1</nowiki>” została zmieniona na „<nowiki>$2</nowiki>”.",
 	"renameuser-page-exists": "Strona „$1” już istnieje i nie może być automatycznie nadpisana.",
 	"renameuser-page-moved": "Strona „$1” została przeniesiona pod nazwę „$2”.",
