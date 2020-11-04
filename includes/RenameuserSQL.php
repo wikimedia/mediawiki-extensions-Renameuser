@@ -23,7 +23,7 @@ class RenameuserSQL {
 	/**
 	 * The user ID
 	 *
-	 * @var integer
+	 * @var int
 	 */
 	public $uid;
 
