@@ -7,8 +7,13 @@ use MediaWiki\MediaWikiServices;
  * user accounts
  */
 class SpecialRenameuser extends SpecialPage {
+	/** @var RenameuserHookRunner */
+	private $hookRunner;
+
 	public function __construct() {
 		parent::__construct( 'Renameuser', 'renameuser' );
+
+		$this->hookRunner = new RenameuserHookRunner( $this->getHookContainer() );
 	}
 
 	public function doesWrites() {
@@ -67,7 +72,7 @@ class SpecialRenameuser extends SpecialPage {
 
 		$warnings = [];
 		if ( $oun && $nun && !$request->getCheck( 'confirmaction' ) ) {
-			Hooks::run( 'RenameUserWarning', [ $oun, $nun, &$warnings ] );
+			$this->hookRunner->onRenameUserWarning( $oun, $nun, $warnings );
 		}
 
 		$out->addHTML(
@@ -292,10 +297,7 @@ class SpecialRenameuser extends SpecialPage {
 		}
 
 		// Give other affected extensions a chance to validate or abort
-		if ( !Hooks::run(
-			'RenameUserAbort',
-			[ $uid, $oldusername->getText(), $newusername->getText() ]
-		) ) {
+		if ( !$this->hookRunner->onRenameUserAbort( $uid, $oldusername->getText(), $newusername->getText() ) ) {
 			return;
 		}
 

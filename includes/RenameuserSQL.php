@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Session\SessionManager;
 
 /**
@@ -81,6 +82,9 @@ class RenameuserSQL {
 	public const UID_COL  = 1;
 	public const TIME_COL = 2;
 
+	/** @var RenameuserHookRunner */
+	private $hookRunner;
+
 	/**
 	 * Constructor
 	 *
@@ -94,6 +98,8 @@ class RenameuserSQL {
 	 *    'checkIfUserExists' - bool, whether to update the user table
 	 */
 	public function __construct( $old, $new, $uid, User $renamer, $options = [] ) {
+		$this->hookRunner = new RenameuserHookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+
 		$this->old = $old;
 		$this->new = $new;
 		$this->uid = $uid;
@@ -171,7 +177,7 @@ class RenameuserSQL {
 			}
 		}
 
-		Hooks::run( 'RenameUserSQL', [ $this ] );
+		$this->hookRunner->onRenameUserSQL( $this );
 	}
 
 	protected function debug( $msg ) {
@@ -194,7 +200,7 @@ class RenameuserSQL {
 		$dbw = wfGetDB( DB_MASTER );
 		$atomicId = $dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
-		Hooks::run( 'RenameUserPreRename', [ $this->uid, $this->old, $this->new ] );
+		$this->hookRunner->onRenameUserPreRename( $this->uid, $this->old, $this->new );
 
 		// Make sure the user exists if needed
 		if ( $this->checkIfUserExists && !self::lockUserAndGetId( $this->old ) ) {
@@ -371,7 +377,7 @@ class RenameuserSQL {
 				$user->load( User::READ_LATEST );
 				// Trigger the UserSaveSettings hook
 				$user->saveSettings();
-				Hooks::run( 'RenameUserComplete', [ $that->uid, $that->old, $that->new ] );
+				$this->hookRunner->onRenameUserRenameCompleteHook( $that->uid, $that->old, $that->new );
 				// Publish to RC
 				$logEntry->publish( $logid );
 				$dbw->endAtomic( $fname );
