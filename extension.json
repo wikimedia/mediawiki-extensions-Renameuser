@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.36.0"
 	},
 	"ExtensionMessagesFiles": {
 		"RenameuserAliases": "Renameuser.alias.php"
@@ -50,7 +50,19 @@
 		"renameuser"
 	],
 	"SpecialPages": {
-		"Renameuser": "SpecialRenameuser"
+		"Renameuser": {
+			"class": "SpecialRenameuser",
+			"services": [
+				"HookContainer",
+				"ContentLanguage",
+				"MovePageFactory",
+				"PermissionManager",
+				"TitleFactory",
+				"UserFactory",
+				"UserNamePrefixSearch",
+				"UserNameUtils"
+			]
+		}
 	},
 	"AutoloadClasses": {
 		"RenameUserAbortHook": "includes/Hook/RenameUserAbortHook.php",
