@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66b00103_1bc67b76",
+        "filename": "includes/RenameUserJob.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-28T10:28:13Z",
+      "side": 1,
+      "message": "needs update - perhaps \"predates actor migration\"?",
+      "range": {
+        "startLine": 59,
+        "startChar": 5,
+        "endLine": 59,
+        "endChar": 48
+      },
+      "revId": "06448d9e333ca0aa86e5afc2523360eac0f5c04d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
