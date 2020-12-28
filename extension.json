@@ -50,7 +50,16 @@
 		"renameuser"
 	],
 	"SpecialPages": {
-		"Renameuser": "SpecialRenameuser"
+		"Renameuser": {
+			"class": "SpecialRenameuser",
+			"services": [
+				"ContentLanguage",
+				"PermissionManager",
+				"MovePageFactory",
+				"UserNameUtils",
+				"UserNamePrefixSearch"
+			]
+		}
 	},
 	"AutoloadClasses": {
 		"RenameUserAbortHook": "includes/Hook/RenameUserAbortHook.php",
