@@ -167,6 +167,30 @@
     },
     {
       "key": {
+        "uuid": "7ed67752_d8c8da90",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:32:35Z",
+      "side": 1,
+      "message": "Sorry, done now. PhpStorm didn\u0027t give me an option to auto import, I just thought that PHP doesn\u0027t allow `use`ing classes if there is already a class with that name in the current (root) namespace.",
+      "parentUuid": "94d2570c_b97a02c4",
+      "range": {
+        "startLine": 35,
+        "startChar": 18,
+        "endLine": 35,
+        "endChar": 38
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f8a49cfd_99f52a72",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
