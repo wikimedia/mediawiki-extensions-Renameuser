@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "461ccd8f_76c4394f",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-29T21:17:38Z",
+      "side": 1,
+      "message": "perhaps inject the HookContainer too?",
+      "range": {
+        "startLine": 40,
+        "startChar": 48,
+        "endLine": 40,
+        "endChar": 73
+      },
+      "revId": "2fcf15769d4a0debcfa5277d53a841359dfa20bb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf0eaa23_09aa6e31",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-29T21:17:38Z",
+      "side": 1,
+      "message": "its usually named $par - if you want to rename it, suggest doing separately if at all",
+      "range": {
+        "startLine": 55,
+        "startChar": 18,
+        "endLine": 55,
+        "endChar": 26
+      },
+      "revId": "2fcf15769d4a0debcfa5277d53a841359dfa20bb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5622b14e_856bb36d",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-29T21:17:38Z",
+      "side": 1,
+      "message": "this is also changing the behavior, and should be done separately",
+      "range": {
+        "startLine": 72,
+        "startChar": 17,
+        "endLine": 72,
+        "endChar": 82
+      },
+      "revId": "2fcf15769d4a0debcfa5277d53a841359dfa20bb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3103bca2_180ace72",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 450,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-29T21:17:38Z",
+      "side": 1,
+      "message": "can also inject a UserFactory",
+      "range": {
+        "startLine": 450,
+        "startChar": 10,
+        "endLine": 450,
+        "endChar": 27
+      },
+      "revId": "2fcf15769d4a0debcfa5277d53a841359dfa20bb",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
