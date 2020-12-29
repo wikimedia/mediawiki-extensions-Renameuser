@@ -22,6 +22,167 @@
       "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6633c801_e3953f74",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "Same here",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 46
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a89dad38_1a143ad2",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "Add a use statement for this. Keeps it consistent",
+      "range": {
+        "startLine": 35,
+        "startChar": 18,
+        "endLine": 35,
+        "endChar": 38
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8a49cfd_99f52a72",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "Isn\u0027t this a change of signature? It\u0027s not there in the parent class.... I know Phan and such can complain about certain narrowing",
+      "range": {
+        "startLine": 47,
+        "startChar": 30,
+        "endLine": 47,
+        "endChar": 36
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a2ca70e5_7a5b8c3d",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "code style here is odd!",
+      "range": {
+        "startLine": 82,
+        "startChar": 2,
+        "endLine": 83,
+        "endChar": 64
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d4f9cebf_a9ec8e8c",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "One tab too much",
+      "range": {
+        "startLine": 349,
+        "startChar": 3,
+        "endLine": 349,
+        "endChar": 66
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d08033c_ff9b38c5",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "And here",
+      "range": {
+        "startLine": 368,
+        "startChar": 4,
+        "endLine": 368,
+        "endChar": 79
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "26f87021_32771b72",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:08:35Z",
+      "side": 1,
+      "message": "Here too",
+      "range": {
+        "startLine": 459,
+        "startChar": 35,
+        "endLine": 459,
+        "endChar": 43
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
     }
   ]
 }
