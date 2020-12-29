@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ac3a41b0_d6a8345e",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "068a9607_82cf2177",
+      "range": {
+        "startLine": 12,
+        "startChar": 16,
+        "endLine": 12,
+        "endChar": 25
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6633c801_e3953f74",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
