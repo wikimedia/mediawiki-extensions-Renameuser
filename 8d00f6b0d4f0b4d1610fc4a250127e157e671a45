@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "068a9607_82cf2177",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T18:50:24Z",
+      "side": 1,
+      "message": "Needs to be 1.36; looks like UserNamePrefixSearch wasn\u0027t serviceified until 1.36",
+      "range": {
+        "startLine": 12,
+        "startChar": 16,
+        "endLine": 12,
+        "endChar": 25
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    }
+  ]
+}
