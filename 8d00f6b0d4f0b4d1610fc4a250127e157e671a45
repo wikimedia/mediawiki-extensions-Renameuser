@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "483d3a33_65973903",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "see below",
+      "parentUuid": "6633c801_e3953f74",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 46
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a89dad38_1a143ad2",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
@@ -68,6 +92,30 @@
       "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0dca7dc0_a717208f",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "Can\u0027t, \\UserNamePrefixSearch is a deprecated static wrapper for this service :/",
+      "parentUuid": "a89dad38_1a143ad2",
+      "range": {
+        "startLine": 35,
+        "startChar": 18,
+        "endLine": 35,
+        "endChar": 38
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     },
     {
       "key": {
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "bcb11116_69da2ae8",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "hmm, I\u0027ve seen it in some other places so I just thought it was a thing that can be added in new code. removed it, for now at least",
+      "parentUuid": "f8a49cfd_99f52a72",
+      "range": {
+        "startLine": 47,
+        "startChar": 30,
+        "endLine": 47,
+        "endChar": 36
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a2ca70e5_7a5b8c3d",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
@@ -114,6 +186,30 @@
       "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd43f07f_76d42cb0",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "not sure how I did that, fixed",
+      "parentUuid": "a2ca70e5_7a5b8c3d",
+      "range": {
+        "startLine": 82,
+        "startChar": 2,
+        "endLine": 83,
+        "endChar": 64
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     },
     {
       "key": {
@@ -140,6 +236,30 @@
     },
     {
       "key": {
+        "uuid": "db2066d1_e64544b7",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d4f9cebf_a9ec8e8c",
+      "range": {
+        "startLine": 349,
+        "startChar": 3,
+        "endLine": 349,
+        "endChar": 66
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3d08033c_ff9b38c5",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
@@ -163,6 +283,30 @@
     },
     {
       "key": {
+        "uuid": "1df974ce_44c1e79e",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d08033c_ff9b38c5",
+      "range": {
+        "startLine": 368,
+        "startChar": 4,
+        "endLine": 368,
+        "endChar": 79
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26f87021_32771b72",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
@@ -183,6 +327,30 @@
       "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9be50c3_a9cdc7d5",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-29T19:14:38Z",
+      "side": 1,
+      "message": "same as above",
+      "parentUuid": "26f87021_32771b72",
+      "range": {
+        "startLine": 459,
+        "startChar": 35,
+        "endLine": 459,
+        "endChar": 43
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
