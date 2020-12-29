@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "94d2570c_b97a02c4",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-29T19:29:22Z",
+      "side": 1,
+      "message": "I think you misunderstood. I\u0027m not saying to stop injecting this, I\u0027m saying add a \"use statement\" (import in other parlance) for UserNamePrefixSearch, so you don\u0027t need to use the fully qualified name here (or above), you can just use `UserNamePrefixSearch` here like the other classes above to reference them.\n\nCalling it statically might be deprecated, the class itself isn\u0027t. The Service is still passing you an instance of it.",
+      "parentUuid": "0dca7dc0_a717208f",
+      "range": {
+        "startLine": 35,
+        "startChar": 18,
+        "endLine": 35,
+        "endChar": 38
+      },
+      "revId": "8d00f6b0d4f0b4d1610fc4a250127e157e671a45",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f8a49cfd_99f52a72",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 1
