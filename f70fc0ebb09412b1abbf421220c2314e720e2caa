@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "59e4fa17_0d183c49",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4130f370_feade77f",
+      "range": {
+        "startLine": 98,
+        "startChar": 17,
+        "endLine": 98,
+        "endChar": 47
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1de0ae3d_8149fbd7",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 5
@@ -45,6 +69,30 @@
       "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa5b80a6_df752ad9",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1de0ae3d_8149fbd7",
+      "range": {
+        "startLine": 103,
+        "startChar": 17,
+        "endLine": 103,
+        "endChar": 51
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "f7187f37_771556a6",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "846899f0_c5a040c4",
+      "range": {
+        "startLine": 104,
+        "startChar": 2,
+        "endLine": 104,
+        "endChar": 66
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3d7f47_ea30fa93",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 5
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "1e9108ae_de231f6f",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 251,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba3d7f47_ea30fa93",
+      "range": {
+        "startLine": 251,
+        "startChar": 24,
+        "endLine": 251,
+        "endChar": 49
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cd829c40_2cc4e858",
         "filename": "includes/SpecialRenameuser.php",
         "patchSetId": 5
@@ -105,6 +201,30 @@
       "writtenOn": "2020-12-30T09:25:23Z",
       "side": 1,
       "message": "I guess Phan isn\u0027t happy that makeTitleSafe can return null (or rather, a nullable object)\n\nProbably easiest to just check they\u0027re not null, and possibly throw some form of an error if they are.\n\nThough, you could argue because they\u0027re from the DB, you don\u0027t need to use makeTitleSafe, makeTitle might be sufficient... At least for $oldPage anyway\n\nIt\u0027s possible, the regex breaks something, so $newPage might want to stay with the extra validation",
+      "range": {
+        "startLine": 388,
+        "startChar": 4,
+        "endLine": 392,
+        "endChar": 74
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "79989d4e_50a44521",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "I changed $oldPage to makeTitle, it\u0027s from the database so it should be always valid. Wouldn\u0027t using makeTitle() instead of makeTitleSafe() with newTitle do the job by throwing an exception if we want to validate it?",
+      "parentUuid": "cd829c40_2cc4e858",
       "range": {
         "startLine": 388,
         "startChar": 4,
@@ -137,6 +257,30 @@
       "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2818504_1f7351d8",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 6949
+      },
+      "writtenOn": "2020-12-30T09:42:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7d08e3b2_fdc8d6f6",
+      "range": {
+        "startLine": 397,
+        "startChar": 43,
+        "endLine": 397,
+        "endChar": 51
+      },
+      "revId": "f70fc0ebb09412b1abbf421220c2314e720e2caa",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
