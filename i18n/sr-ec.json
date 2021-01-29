@@ -28,7 +28,6 @@
 	"renameuserwarnings": "Упозорења:",
 	"renameuserconfirm": "Да, преименуј корисника",
 	"renameusersubmit": "Пошаљи",
-	"renameuser-submit-blocklog": "Дневник блокирања за корисника",
 	"renameusererrordoesnotexist": "Корисник „<nowiki>$1</nowiki>“ не постоји.",
 	"renameusererrorexists": "{{GENDER:$1|Корисник}} „<nowiki>$1</nowiki>“ већ постоји.",
 	"renameusererrorinvalid": "Погрешно корисничко име: „<nowiki>$1</nowiki>“",

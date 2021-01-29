@@ -26,7 +26,6 @@
 	"renameuserwarnings": "Uyarılar:",
 	"renameuserconfirm": "Evet, kullanıcıyı yeniden adlandır",
 	"renameusersubmit": "Gönder",
-	"renameuser-submit-blocklog": "Kullanıcının engel günlüğünü göster",
 	"renameusererrordoesnotexist": "\"<nowiki>$1</nowiki>\" kullanıcısı bulunmamaktadır.",
 	"renameusererrorexists": "\"<nowiki>$1</nowiki>\" {{GENDER:$1|kullanıcısı}} zaten mevcut.",
 	"renameusererrorinvalid": "\"<nowiki>$1</nowiki>\" kullanıcı adı geçersiz.",

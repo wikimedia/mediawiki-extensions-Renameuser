@@ -26,7 +26,6 @@
 	"renameuserwarnings": "Avertizări:",
 	"renameuserconfirm": "Da, redenumește utilizatorul",
 	"renameusersubmit": "Trimite",
-	"renameuser-submit-blocklog": "Arată jurnalul blocărilor utilizatorului",
 	"renameusererrordoesnotexist": "Utilizatorul „<nowiki>$1</nowiki>” nu există.",
 	"renameusererrorexists": "{{GENDER:$1|Utilizatorul|Utilizatoarea}} „<nowiki>$1</nowiki>” există deja.",
 	"renameusererrorinvalid": "Numele de utilizator „<nowiki>$1</nowiki>” este invalid.",

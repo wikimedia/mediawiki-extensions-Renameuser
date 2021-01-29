@@ -22,7 +22,6 @@
 	"renameuserwarnings": "คำเตือน:",
 	"renameuserconfirm": "ใช่, เปลี่ยนชื่อผู้ใช้นี้",
 	"renameusersubmit": "ตกลง",
-	"renameuser-submit-blocklog": "แสดงปูมการบล็อกสำหรับผู้ใช้",
 	"renameusererrordoesnotexist": "ไม่พบผู้ใช้ \"<nowiki>$1</nowiki>\" ในระบบ",
 	"renameusererrorexists": "มี{{GENDER:$1|ผู้ใช้}} \"<nowiki>$1</nowiki>\" อยู่แล้ว",
 	"renameusererrorinvalid": "ไม่สามารถใช้ชื่อผู้ใช้ \"<nowiki>$1</nowiki>\" ได้",

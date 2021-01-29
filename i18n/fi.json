@@ -27,7 +27,6 @@
 	"renameuserwarnings": "Varoitukset:",
 	"renameuserconfirm": "Kyllä, uudelleennimeä käyttäjä",
 	"renameusersubmit": "Nimeä",
-	"renameuser-submit-blocklog": "Näytä käyttäjän estoloki",
 	"renameusererrordoesnotexist": "Tunnusta ”<nowiki>$1</nowiki>” ei ole",
 	"renameusererrorexists": "{{GENDER:$1|käyttäjä}} ”<nowiki>$1</nowiki>” on jo olemassa.",
 	"renameusererrorinvalid": "Tunnus ”<nowiki>$1</nowiki>” ei ole kelvollinen",

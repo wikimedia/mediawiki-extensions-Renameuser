@@ -24,7 +24,6 @@
 	"renameuserwarnings": "경고:",
 	"renameuserconfirm": "예, 이름을 바꿉니다.",
 	"renameusersubmit": "바꾸기",
-	"renameuser-submit-blocklog": "사용자 차단 기록 보이기",
 	"renameusererrordoesnotexist": "\"<nowiki>$1</nowiki>\" 사용자가 존재하지 않습니다.",
 	"renameusererrorexists": "\"<nowiki>$1</nowiki>\" {{GENDER:$1|사용자}}가 이미 존재합니다.",
 	"renameusererrorinvalid": "\"<nowiki>$1</nowiki>\" 사용자 이름이 잘못되었습니다.",

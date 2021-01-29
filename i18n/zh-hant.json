@@ -34,7 +34,6 @@
 	"renameuserwarnings": "警告：",
 	"renameuserconfirm": "是的，重新命名此使用者",
 	"renameusersubmit": "送出",
-	"renameuser-submit-blocklog": "顯示使用者的封鎖日誌",
 	"renameusererrordoesnotexist": "使用者 \"<nowiki>$1</nowiki>\" 不存在。",
 	"renameusererrorexists": "{{GENDER:$1|使用者}} \"<nowiki>$1</nowiki>\" 已存在。",
 	"renameusererrorinvalid": "使用者名稱 \"<nowiki>$1</nowiki>\" 無效。",

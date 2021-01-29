@@ -19,7 +19,6 @@
 	"renameuserwarnings": "Opozorila:",
 	"renameuserconfirm": "Da, preimenuj uporabnika",
 	"renameusersubmit": "Potrdi",
-	"renameuser-submit-blocklog": "Pokaži dnevnik blokiranja uporabnika",
 	"renameusererrordoesnotexist": "Uporabnik »<nowiki>$1</nowiki>« ne obstaja.",
 	"renameusererrorexists": "{{GENDER:$1|Uporabnik|Uporabnica}} »<nowiki>$1</nowiki>« že obstaja.",
 	"renameusererrorinvalid": "Uporabniško ime »<nowiki>$1</nowiki>« ni veljavno.",

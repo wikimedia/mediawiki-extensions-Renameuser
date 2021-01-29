@@ -21,7 +21,6 @@
 	"renameuserwarnings": "Peringatan:",
 	"renameuserconfirm": "Ya, ganti nama pengguna tersebut",
 	"renameusersubmit": "Kirim",
-	"renameuser-submit-blocklog": "Tampilkan catatan pemblokiran pengguna",
 	"renameusererrordoesnotexist": "Pengguna \"<nowiki>$1</nowiki>\" tidak ada",
 	"renameusererrorexists": "Pengguna \"<nowiki>$1</nowiki>\" telah ada",
 	"renameusererrorinvalid": "Nama pengguna \"<nowiki>$1</nowiki>\" tidak sah",

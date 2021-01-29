@@ -32,7 +32,6 @@
 	"renameuserwarnings": "Avertissements :",
 	"renameuserconfirm": "Oui, renommer l’utilisateur",
 	"renameusersubmit": "Soumettre",
-	"renameuser-submit-blocklog": "Afficher le journal de blocage de l'utilisateur",
 	"renameusererrordoesnotexist": "L’utilisateur « <nowiki>$1</nowiki> » n’existe pas",
 	"renameusererrorexists": "L’{{GENDER:$1|utilisateur|utilisatrice}} « <nowiki>$1</nowiki> » existe déjà.",
 	"renameusererrorinvalid": "Le nom d’utilisateur « <nowiki>$1</nowiki> » n’est pas valide",

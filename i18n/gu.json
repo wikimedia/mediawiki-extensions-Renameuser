@@ -20,7 +20,6 @@
 	"renameuserwarnings": "ચેતવણીઓ:",
 	"renameuserconfirm": "હા, સભ્યનું નામ બદલો",
 	"renameusersubmit": "જમા કરો",
-	"renameuser-submit-blocklog": "સભ્ય માટે પ્રતિબંધ લૉગ બતાવો",
 	"renameusererrordoesnotexist": "આ સભ્ય  \"<nowiki>$1</nowiki>\" મોજૂદ નથી.",
 	"renameusererrorexists": "આ સભ્ય  \"<nowiki>$1</nowiki>\" પહેલેથી હાજર છે.",
 	"renameusererrorinvalid": "સભ્યનામ \"<nowiki>$1</nowiki>\" અયોગ્ય છે.",

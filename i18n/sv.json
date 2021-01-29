@@ -30,7 +30,6 @@
 	"renameuserwarnings": "Varningar:",
 	"renameuserconfirm": "Ja, byt namn på användaren",
 	"renameusersubmit": "Verkställ",
-	"renameuser-submit-blocklog": "Visa blockeringslogg för användare",
 	"renameusererrordoesnotexist": "Användaren \"<nowiki>$1</nowiki>\" finns inte",
 	"renameusererrorexists": "{{GENDER:$1|Användaren}} \"<nowiki>$1</nowiki>\" finns redan.",
 	"renameusererrorinvalid": "Användarnamnet \"<nowiki>$1</nowiki>\" är ogiltigt.",

@@ -23,7 +23,6 @@
 	"renameuserwarnings": "Upozornění:",
 	"renameuserconfirm": "Ano, přejmenovat uživatele",
 	"renameusersubmit": "Přejmenovat",
-	"renameuser-submit-blocklog": "Zobrazit knihu zablokování tohoto uživatele",
 	"renameusererrordoesnotexist": "Uživatel se jménem „<nowiki>$1</nowiki>“ neexistuje",
 	"renameusererrorexists": "{{GENDER:$1|Uživatel|Uživatelka}} se jménem „<nowiki>$1</nowiki>“ již existuje.",
 	"renameusererrorinvalid": "Uživatelské jméno „<nowiki>$1</nowiki>“ nelze použít",

@@ -23,7 +23,6 @@
 	"renameuserwarnings": "אזהרות:",
 	"renameuserconfirm": "כן, לשנות את שם המשתמש",
 	"renameusersubmit": "שינוי שם משתמש",
-	"renameuser-submit-blocklog": "הצגת יומן החסימות של המשתמש",
 	"renameusererrordoesnotexist": "המשתמש \"<nowiki>$1</nowiki>\" אינו קיים.",
 	"renameusererrorexists": "{{GENDER:$1|המשתמש|המשתמשת}} \"<nowiki>$1</nowiki>\" כבר {{GENDER:$1|קיים|קיימת}}.",
 	"renameusererrorinvalid": "שם המשתמש \"<nowiki>$1</nowiki>\" אינו תקין.",

@@ -20,7 +20,6 @@
 	"renameuserwarnings": "Предупредувања:",
 	"renameuserconfirm": "Да, преименувај го корисникот",
 	"renameusersubmit": "Внеси",
-	"renameuser-submit-blocklog": "Дневник на блокирања за корисникот",
 	"renameusererrordoesnotexist": "Корисникот „<nowiki>$1</nowiki>“ не постои",
 	"renameusererrorexists": "{{GENDER:$1|Корисникот}} „<nowiki>$1</nowiki>“ веќе постои.",
 	"renameusererrorinvalid": "Корисничкото име „<nowiki>$1</nowiki>“ не е важечко.",

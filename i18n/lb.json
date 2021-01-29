@@ -19,7 +19,6 @@
 	"renameuserwarnings": "Warnungen:",
 	"renameuserconfirm": "Jo, Benotzer ëmbenennen",
 	"renameusersubmit": "Ëmbenennen",
-	"renameuser-submit-blocklog": "Lëscht vun de Späre fir de Benotzer weisen",
 	"renameusererrordoesnotexist": "De Benotzer \"<nowiki>$1</nowiki>\" gëtt et net.",
 	"renameusererrorexists": "De {{GENDER:$1|Benotzernumm}} \"<nowiki>$1</nowiki>\" gëtt et schonn.",
 	"renameusererrorinvalid": "De Benotzernumm \"<nowiki>$1</nowiki>\" kann net benotzt ginn.",
