@@ -39,6 +39,7 @@
 	"renameuser-page-exists": "Sidan $1 finns redan och kan inte skrivas över automatiskt.",
 	"renameuser-page-moved": "Sidan $1 har flyttats till $2.",
 	"renameuser-page-unmoved": "Sidan $1 kunde inte flyttas till $2.",
+	"renameuser-warning-currentblock": "Denna användare är [$1 för tillfället blockerad].",
 	"log-name-renameuser": "Logg över användarnamnsbyten",
 	"log-description-renameuser": "Detta är en logg över ändringar av användarnamn",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|bytte namn på}} användare $4 ({{PLURAL:$6|$6 redigering|$6  redigeringar}}) till {{GENDER:$7|$5}}",
