@@ -35,5 +35,5 @@
 	"renameuser-move-log": "Samodejno prestavljanje strani pri preimenovanju {{GENDER:$1|uporabnika|uporabnice}} »[[User:$1|$1]]« v »[[User:$2|$2]]«",
 	"action-renameuser": "preimenovanje uporabnikov",
 	"right-renameuser": "Preimenovanje uporabnikov",
-	"renameuser-renamed-notice": "Ta uporabnik je bil preimenovan.\nDnevnik preimenovanja je naveden spodaj."
+	"renameuser-renamed-notice": "Ta uporabnik je preimenovan.\nDnevnik preimenovanja je naveden spodaj."
 }
