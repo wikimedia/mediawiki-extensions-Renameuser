@@ -71,7 +71,7 @@
 		"RenameUserJob": "includes/RenameUserJob.php",
 		"RenameuserLogFormatter": "includes/RenameuserLogFormatter.php",
 		"RenameUserPreRenameHook": "includes/Hook/RenameUserPreRenameHook.php",
-		"RenameUserRenameCompleteHook": "includes/Hook/RenameUserRenameCompleteHook.php",
+		"RenameUserCompleteHook": "includes/Hook/RenameUserCompleteHook.php",
 		"RenameuserSQL": "includes/RenameuserSQL.php",
 		"RenameUserSQLHook": "includes/Hook/RenameUserSQLHook.php",
 		"RenameUserWarningHook": "includes/Hook/RenameUserWarningHook.php",

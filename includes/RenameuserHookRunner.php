@@ -5,7 +5,7 @@ use MediaWiki\HookContainer\HookContainer;
 class RenameuserHookRunner implements
 	RenameUserAbortHook,
 	RenameUserPreRenameHook,
-	RenameUserRenameCompleteHook,
+	RenameUserCompleteHook,
 	RenameUserSQLHook,
 	RenameUserWarningHook
 {
@@ -24,17 +24,17 @@ class RenameuserHookRunner implements
 		);
 	}
 
-	public function onRenameUserPreRename( int $uid, string $old, string $new ) : void {
+	public function onRenameUserComplete( int $uid, string $old, string $new ) : void {
 		$this->container->run(
-			'RenameUserPreRename',
+			'RenameUserComplete',
 			[ $uid, $old, $new ],
 			[ 'abortable' => false ]
 		);
 	}
 
-	public function onRenameUserRenameComplete( int $uid, string $old, string $new ) : void {
+	public function onRenameUserPreRename( int $uid, string $old, string $new ) : void {
 		$this->container->run(
-			'RenameUserRenameComplete',
+			'RenameUserPreRename',
 			[ $uid, $old, $new ],
 			[ 'abortable' => false ]
 		);

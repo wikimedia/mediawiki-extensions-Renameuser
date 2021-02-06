@@ -319,7 +319,7 @@ class RenameuserSQL {
 				$user->load( User::READ_LATEST );
 				// Trigger the UserSaveSettings hook
 				$user->saveSettings();
-				$this->hookRunner->onRenameUserRenameComplete( $that->uid, $that->old, $that->new );
+				$this->hookRunner->onRenameUserComplete( $that->uid, $that->old, $that->new );
 				// Publish to RC
 				$logEntry->publish( $logid );
 				$dbw->endAtomic( $fname );
