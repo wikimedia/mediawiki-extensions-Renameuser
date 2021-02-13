@@ -2,19 +2,19 @@
 
 /**
  * This is a hook handler interface, see docs/Hooks.md.
- * Use the hook name "RenameUserRenameComplete" to register handlers implementing this interface.
+ * Use the hook name "RenameUserComplete" to register handlers implementing this interface.
  *
  * @stable to implement
  * @ingroup Hooks
  * @since 1.36
  */
-interface RenameUserRenameCompleteHook {
+interface RenameUserCompleteHook {
 
 	/**
 	 * @param int $uid The user ID
 	 * @param string $old The old username
 	 * @param string $new The new username
 	 */
-	public function onRenameUserRenameComplete( int $uid, string $old, string $new ) : void;
+	public function onRenameUserComplete( int $uid, string $old, string $new ) : void;
 
 }
