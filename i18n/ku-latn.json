@@ -23,10 +23,10 @@
 	"renameusererrorexists": "{{GENDER:$1|Bikarhêner}} \"<nowiki>$1</nowiki>\"jixwe heye.",
 	"renameusererrorinvalid": "Navê \"<nowiki>$1</nowiki>\" ji bikarhêneran re nayê qebûlkirin.",
 	"renameusersuccess": "Navê {{GENDER:$2|bikarhênerî|bikarhênerê}} \"<nowiki>$1</nowiki>\" bû \"<nowiki>$2</nowiki>\"",
-	"renameuser-page-exists": "Rûpelê $1 berê heye û nikane otomatîk were guherandin.",
+	"renameuser-page-exists": "Rûpelê $1 berê heye û nikane otomatîk were guhartin.",
 	"renameuser-page-moved": "Navê $1 weke $2 hate guhertin.",
 	"renameuser-page-unmoved": "Rûpela $1 nikanî çûba ciha $2.",
 	"log-name-renameuser": "Guhartina navê bikarhêner",
-	"renameuser-move-log": "Otomatîk hate guherandin, ji ber ku {{GENDER:$2|bikarhêner}} \"[[User:$1|$1]]\" navê xwe guherand û kir \"[[User:$2|$2]]\"",
+	"renameuser-move-log": "Otomatîk hate guhartin, ji ber ku {{GENDER:$2|bikarhêner}} \"[[User:$1|$1]]\" navê xwe guhart û kir \"[[User:$2|$2]]\"",
 	"right-renameuser": "Navê bikarhêneran biguherîne"
 }
