@@ -39,7 +39,7 @@
 	"renameuser-warning-currentblock": "Bu kullanıcı [$1 şuanda engellendi].",
 	"log-name-renameuser": "Kullanıcı adı değişikliği günlüğü",
 	"log-description-renameuser": "Bu, kullanıcı adlarındaki değişikliklerin bir günlüğüdür.",
-	"logentry-renameuser-renameuser": "$1, $4 ({{PLURAL:$6|$6 değişiklik}}) adlı kullanıcıyı {{GENDER:$7|$5}} olarak {{GENDER:$2|yeniden adlandırdı}}",
+	"logentry-renameuser-renameuser": "$1, $4 ({{PLURAL:$6|$6 değişiklik}}) kullanıcısını {{GENDER:$7|$5}} olarak {{GENDER:$2|yeniden adlandırdı}}",
 	"logentry-renameuser-renameuser-legacier": "$1, $4 adlı kullanıcının adını {{GENDER:$7|$5}} olarak değiştirdi",
 	"renameuser-move-log": "\"[[User:$1|$1]]\" {{GENDER:$2|kullanıcısı}} \"[[User:$2|$2]]\" olarak yeniden adlandırılırken sayfa otomatik olarak taşındı",
 	"action-renameuser": "kullanıcıları yeniden adlandır",
