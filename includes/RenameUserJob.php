@@ -14,12 +14,12 @@ use MediaWiki\MediaWikiServices;
  *   - logId     : The ID of the logging table row expected to exist if the rename was committed
  *
  * Additionally, one of the following groups of parameters must be set:
- * a) The timestamp based rename paramaters:
+ * a) The timestamp based rename parameters:
  *   - timestampColumn : The *_timestamp column
  *   - minTimestamp    : The minimum bound of the timestamp column range for this batch
  *   - maxTimestamp    : The maximum bound of the timestamp column range for this batch
  *   - uniqueKey       : A column that is unique (preferrably the PRIMARY KEY) [optional]
- * b) The unique key based rename paramaters:
+ * b) The unique key based rename parameters:
  *   - uniqueKey : A column that is unique (preferrably the PRIMARY KEY)
  *   - keyId     : A list of values for this column to determine rows to update for this batch
  *
