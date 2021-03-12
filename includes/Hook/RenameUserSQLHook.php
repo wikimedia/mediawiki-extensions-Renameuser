@@ -10,6 +10,11 @@
  */
 interface RenameUserSQLHook {
 
+	/**
+	 * Called in the constructer of RenameuserSQL (which performs the actual renaming of users).
+	 *
+	 * @param RenameuserSQL $renameUserSql
+	 */
 	public function onRenameUserSQL( RenameuserSQL $renameUserSql ) : void;
 
 }
