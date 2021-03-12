@@ -11,6 +11,8 @@
 interface RenameUserPreRenameHook {
 
 	/**
+	 * Called before a user is renamed.
+	 *
 	 * @param int $uid The user ID
 	 * @param string $old The old username
 	 * @param string $new The new username

@@ -13,9 +13,9 @@ interface RenameUserAbortHook {
 	/**
 	 * Allows the renaming to be aborted.
 	 *
-	 * @param int $uid
-	 * @param string $old
-	 * @param string $new
+	 * @param int $uid The user ID
+	 * @param string $old The old username
+	 * @param string $new The new username
 	 *
 	 * @return bool|void
 	 */

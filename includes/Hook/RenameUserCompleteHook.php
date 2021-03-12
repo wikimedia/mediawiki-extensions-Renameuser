@@ -11,6 +11,8 @@
 interface RenameUserCompleteHook {
 
 	/**
+	 * Called after a user was renamed.
+	 *
 	 * @param int $uid The user ID
 	 * @param string $old The old username
 	 * @param string $new The new username
