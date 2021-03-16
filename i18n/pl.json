@@ -15,6 +15,7 @@
 			"SemanticPioneer",
 			"Sovq",
 			"Sp5uhe",
+			"The Polish",
 			"WarX",
 			"Wpedzich"
 		]
@@ -42,7 +43,7 @@
 	"renameuser-page-moved": "Strona „$1” została przeniesiona pod nazwę „$2”.",
 	"renameuser-page-unmoved": "Strona „$1” nie mogła zostać przeniesiona pod nazwę „$2”.",
 	"renameuser-warning-currentblock": "Ten użytkownik [$1 jest obecnie zablokowany].",
-	"log-name-renameuser": "Zmiany nazw użytkowników",
+	"log-name-renameuser": "Rejestr zmian nazw użytkowników",
 	"log-description-renameuser": "To jest rejestr zmian nazw użytkowników",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|zmienił|zmieniła}} nazwę użytkownika $4 ({{PLURAL:$6|$6 edycja|$6 edycje|$6 edycji}}) na {{GENDER:$7|$5}}",
 	"logentry-renameuser-renameuser-legacier": "$1 zmienił(a) nazwę użytkownika $4 na {{GENDER:$7|$5}}",
