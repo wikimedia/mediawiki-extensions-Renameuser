@@ -5,6 +5,7 @@
 			"Farras",
 			"Irwangatot",
 			"IvanLanin",
+			"Naufal06",
 			"Rex"
 		]
 	},
@@ -14,7 +15,7 @@
 	"renameuser-desc": "Mengganti nama pengguna (perlu hak akses ''renameuser'')",
 	"renameuserold": "Nama sekarang:",
 	"renameusernew": "Nama baru:",
-	"renameuserreason": "Alasan penggantian nama:",
+	"renameuserreason": "Alasan:",
 	"renameusermove": "Pindahkan halaman pengguna dan pembicaraannya (berikut subhalamannya) ke nama baru",
 	"renameusersuppress": "Jangan membuat pengalihan untuk nama baru",
 	"renameuserreserve": "Cadangkan nama pengguna lama sehingga tidak dapat digunakan lagi",
