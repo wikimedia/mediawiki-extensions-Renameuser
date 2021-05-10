@@ -21,7 +21,7 @@
 	"renameusererrordoesnotexist": "ЦӀарца «<nowiki>$1</nowiki>» дӀабазбелларш  бац.",
 	"renameusererrorexists": "ЦӀарца «<nowiki>$1</nowiki>» дӀабазбелларш  бац.",
 	"renameusererrorinvalid": "Магийна йоцу декъашхочун «<nowiki>$1</nowiki>» цӀе",
-	"renameuser-error-request": "Дехар кхочушдан цаделира. Дехар до юху гӀой кхин гӀорта.",
+	"renameuser-error-request": "Дехар кхочушдан цаделира. Дехар до, йуха гӀой кхин гӀорта.",
 	"renameuser-error-same-user": "Хьуна цало хьалха хилла цӀеран тӀе хийца.",
 	"renameusersuccess": "Декъашхочун цӀе«<nowiki>$1</nowiki>» хийцина → «<nowiki>$2</nowiki>».",
 	"renameuser-page-exists": "АгӀо $1 йолуш йу цундела авто-дӀайазйан йиш йац.",
