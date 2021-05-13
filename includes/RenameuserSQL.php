@@ -141,7 +141,7 @@ class RenameuserSQL {
 		// Grab the user's edit count first, used in log entry
 		$contribs = User::newFromId( $this->uid )->getEditCount();
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$atomicId = $dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		$this->hookRunner->onRenameUserPreRename( $this->uid, $this->old, $this->new );
@@ -337,7 +337,7 @@ class RenameuserSQL {
 	 * @return int Returns 0 if no row was found
 	 */
 	private static function lockUserAndGetId( $name ) {
-		return (int)wfGetDB( DB_MASTER )->selectField(
+		return (int)wfGetDB( DB_PRIMARY )->selectField(
 			'user',
 			'user_id',
 			[ 'user_name' => $name ],
