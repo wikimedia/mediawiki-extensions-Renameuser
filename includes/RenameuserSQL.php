@@ -309,17 +309,16 @@ class RenameuserSQL {
 		// Commit the transaction
 		$dbw->endAtomic( __METHOD__ );
 
-		$that = $this;
 		$fname = __METHOD__;
 		$dbw->onTransactionCommitOrIdle(
-			function () use ( $that, $dbw, $logEntry, $logid, $fname ) {
+			function () use ( $this, $dbw, $logEntry, $logid, $fname ) {
 				$dbw->startAtomic( $fname );
 				// Clear caches and inform authentication plugins
-				$user = User::newFromId( $that->uid );
+				$user = User::newFromId( $this->uid );
 				$user->load( User::READ_LATEST );
 				// Trigger the UserSaveSettings hook
 				$user->saveSettings();
-				$this->hookRunner->onRenameUserComplete( $that->uid, $that->old, $that->new );
+				$this->hookRunner->onRenameUserComplete( $this->uid, $this->old, $this->new );
 				// Publish to RC
 				$logEntry->publish( $logid );
 				$dbw->endAtomic( $fname );
