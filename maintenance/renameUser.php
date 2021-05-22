@@ -57,7 +57,7 @@ class RenameUser extends Maintenance {
 		}
 
 		if ( $this->getOption( 'performer' ) === null ) {
-			$performer = User::newSystemUser( 'Maintenance script', [ 'steal' => true ] );
+			$performer = User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] );
 		} else {
 			$performer = User::newFromName( $this->getOption( 'performer' ) );
 		}
