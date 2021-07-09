@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anoop rao",
 			"Nayvik",
 			"Shushruth",
 			"VASANTH S.N."
@@ -12,6 +13,7 @@
 	"renameuserreason": "ಕಾರಣ:",
 	"renameuserwarnings": "ಎಚ್ಚರಿಕೆಗಳು:",
 	"renameusersubmit": "ಸಲ್ಲಿಸಿ",
+	"log-name-renameuser": "ಸದಸ್ಯರ ಮರುನಾಮಕರಣ ದಾಖಲೆ",
 	"action-renameuser": "ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ",
 	"right-renameuser": "ಸದಸ್ಯರನ್ನು ಮರುನಾಮಕರಣ ಮಾಡಿ"
 }
