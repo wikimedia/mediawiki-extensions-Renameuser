@@ -204,6 +204,27 @@ class RenameuserSQL {
 			__METHOD__
 		);
 
+		$this->debug( "Updating recentchanges table for {$this->old} to {$this->new}" );
+		$ids = $dbw->selectFieldValues(
+			'recentchanges',
+			'rc_id',
+			[
+				'rc_type' => RC_LOG,
+				'rc_log_type' => $logTypesOnUser,
+				'rc_namespace' => NS_USER,
+				'rc_title' => $oldTitle->getDBkey()
+			],
+			__METHOD__
+		);
+		if ( $ids ) {
+			$dbw->update(
+				'recentchanges',
+				[ 'rc_title' => $newTitle->getDBkey() ],
+				[ 'rc_id' => array_map( 'intval', $ids ) ],
+				__METHOD__
+			);
+		}
+
 		// Do immediate re-attribution table updates...
 		foreach ( $this->tables as $table => $fieldSet ) {
 			list( $nameCol, $userCol ) = $fieldSet;
