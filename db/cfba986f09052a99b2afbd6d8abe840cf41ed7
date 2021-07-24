@@ -1,0 +1,9 @@
+Verified+1: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: jenkins-bot
+Code-Review+2: Umherirrender <umherirrender_de.wp@web.de>
+Code-Review+2: DannyS712 <dannys712.wiki@gmail.com>
+Submitted-by: jenkins-bot
+Submitted-at: Sat, 24 Jul 2021 05:23:45 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Renameuser/+/707585
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/master
