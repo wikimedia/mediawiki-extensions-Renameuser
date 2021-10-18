@@ -11,7 +11,8 @@
 			"Memo18",
 			"Minisarm",
 			"NGC 54",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Strainu"
 		]
 	},
 	"renameuser": "Redenumire utilizator",
@@ -36,6 +37,7 @@
 	"renameuser-page-exists": "Pagina $1 există deja și nu poate fi suprascrisă automat.",
 	"renameuser-page-moved": "Pagina $1 a fost redenumită în $2.",
 	"renameuser-page-unmoved": "Pagina $1 nu poate fi redenumită în $2.",
+	"renameuser-warning-currentblock": "Acest utilizator este [$1 momentan blocat].",
 	"log-name-renameuser": "Jurnal redenumiri utilizatori",
 	"log-description-renameuser": "Acesta este un jurnal al modificărilor de nume de utilizator",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|a redenumit}} utilizatorul $4 ({{PLURAL:$6|o contribuție|$6 contribuții|$6 de contribuții}}) în {{GENDER:$7|$5}}",
