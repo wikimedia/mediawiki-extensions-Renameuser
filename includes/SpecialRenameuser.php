@@ -111,7 +111,7 @@ class SpecialRenameuser extends SpecialPage {
 		$warnings = [];
 		if ( $oun && $nun && !$request->getCheck( 'confirmaction' ) ) {
 			$oldU = $this->userFactory->newFromName( $oldusername->getText(), $this->userFactory::RIGOR_NONE );
-			if ( $oldU && $oldU->isBlocked() ) {
+			if ( $oldU && $oldU->getBlock() ) {
 				$warnings[] = [
 					'renameuser-warning-currentblock',
 					SpecialPage::getTitleFor( 'Log', 'block' )->getFullURL( [ 'page' => $oun ] )
