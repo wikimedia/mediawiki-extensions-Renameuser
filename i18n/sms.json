@@ -4,5 +4,6 @@
 			"Yupik"
 		]
 	},
-	"renameusernew": "Ođđ õõʹnninõmm:"
+	"renameusernew": "Ođđ õõʹnninõmm:",
+	"renameusererrorinvalid": "Õõʹnninõmm \"<nowiki>$1</nowiki>\" ij ââʹnet."
 }
