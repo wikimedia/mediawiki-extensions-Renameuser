@@ -9,12 +9,15 @@
 			"Matěj Suchánek",
 			"Memo18",
 			"Minisarm",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Andreyyshore",
+			"NGC 54",
+			"Strainu"
 		]
 	},
 	"renameuser": "Redenumire utilizator",
 	"renameuser-linkoncontribs": "redenumirea {{GENDER:$1|utilizatorului|utilizatoarei|utilizatorului}}",
-	"renameuser-linkoncontribs-text": "Redenumeşte {{GENDER:$1|acest utilizator|această utilizatoare|acest utilizator}}",
+	"renameuser-linkoncontribs-text": "Redenumește {{GENDER:$1|acest utilizator|această utilizatoare|acest utilizator}}",
 	"renameuser-desc": "Adaugă o [[Special:RenameUser|pagină specială]] pentru a redenumi un utilizator (necesită drept de ''renameuser'')",
 	"renameuserold": "Numele de utilizator existent:",
 	"renameusernew": "Noul nume de utilizator:",
@@ -39,7 +42,7 @@
 	"log-description-renameuser": "Acesta este un jurnal al modificărilor de nume de utilizator",
 	"logentry-renameuser-renameuser": "$1 {{GENDER:$2|a redenumit}} utilizatorul $4 ({{PLURAL:$6|o contribuție|$6 contribuții|$6 de contribuții}}) în {{GENDER:$7|$5}}",
 	"logentry-renameuser-renameuser-legacier": "$1 a redenumit utilizatorul $4 în {{GENDER:$7|$5}}",
-	"renameuser-move-log": "Pagină mutată automat la redenumirea {{GENDER:$2|utilizatorului|utilizatoarei}} de la „[[User:$1|$1]]” la „[[User:$2|$2]]”",
+	"renameuser-move-log": "Pagină mutată automat la redenumirea {{GENDER:$2|utilizatorului|utilizatoarei|utilizatorului}} „[[User:$1|$1]]” în „[[User:$2|$2]]”",
 	"action-renameuser": "redenumește utilizatori",
 	"right-renameuser": "Redenumește utilizatori",
 	"renameuser-renamed-notice": "Acestui utilizator i-a fost schimbat numele.\nJurnalul redenumirilor este furnizat mai jos pentru referință."

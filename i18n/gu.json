@@ -3,12 +3,13 @@
 		"authors": [
 			"Ashok modhvadia",
 			"KartikMistry",
-			"Sushant savla"
+			"Sushant savla",
+			"CptViraj"
 		]
 	},
 	"renameuser": "સભ્યનામ બદલો",
-	"renameuser-linkoncontribs": "સભ્યનામ બદલો",
-	"renameuser-linkoncontribs-text": "આ સભ્યનું નામ બદલો",
+	"renameuser-linkoncontribs": "{{GENDER:$1|સભ્ય}}નું નામ બદલો",
+	"renameuser-linkoncontribs-text": "આ {{GENDER:$1|સભ્ય}}નું નામ બદલો",
 	"renameuser-desc": "સભ્યનું નામાંતરણ કરવા માટે [[Special:RenameUser|special page]] ઉમેરે છે (''renameuser'' હક્ક જરૂરી)",
 	"renameuserold": "હાલનું સભ્યનામ:",
 	"renameusernew": "નવું સભ્યનામ:",
