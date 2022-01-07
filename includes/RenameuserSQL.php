@@ -314,7 +314,7 @@ class RenameuserSQL {
 		// jobs will see that the transaction was not committed and will cancel themselves.
 		$count = count( $jobs );
 		if ( $count > 0 ) {
-			JobQueueGroup::singleton()->push( $jobs );
+			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $jobs );
 			$this->debug( "Queued $count jobs for {$this->old} to {$this->new}" );
 		}
 
