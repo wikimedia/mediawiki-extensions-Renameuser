@@ -265,15 +265,7 @@ class RenameuserSQL {
 			}
 
 			// Insert jobs into queue!
-			while ( true ) {
-				$row = $dbw->fetchObject( $res );
-				if ( !$row ) {
-					# If there are any job rows left, add it to the queue as one job
-					if ( $jobParams['count'] > 0 ) {
-						$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
-					}
-					break;
-				}
+			foreach ( $res as $row ) {
 				# Since the ORDER BY is ASC, set the min timestamp with first row
 				if ( $jobParams['count'] === 0 ) {
 					$jobParams['minTimestamp'] = $row->$timestampC;
@@ -290,6 +282,10 @@ class RenameuserSQL {
 					$jobParams['maxTimestamp'] = '0';
 					$jobParams['count'] = 0;
 				}
+			}
+			# If there are any job rows left, add it to the queue as one job
+			if ( $jobParams['count'] > 0 ) {
+				$jobs[] = Job::factory( 'renameUser', $oldTitle, $jobParams );
 			}
 		}
 
