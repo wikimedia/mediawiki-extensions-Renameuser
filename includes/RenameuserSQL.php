@@ -266,7 +266,7 @@ class RenameuserSQL {
 
 			// Insert jobs into queue!
 			while ( true ) {
-				$row = $dbw->fetchObject( $res );
+				$row = $res->fetchObject();
 				if ( !$row ) {
 					# If there are any job rows left, add it to the queue as one job
 					if ( $jobParams['count'] > 0 ) {
