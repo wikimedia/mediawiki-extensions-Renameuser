@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05810d01_aefcfd19",
+        "filename": "includes/RenameuserSQL.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 920
+      },
+      "writtenOn": "2022-01-20T02:04:58Z",
+      "side": 1,
+      "message": "This whole thing is weird, just put a foreach() in res, like most place in mediawiki. That\u0027s much easier to understand.",
+      "range": {
+        "startLine": 268,
+        "startChar": 3,
+        "endLine": 269,
+        "endChar": 31
+      },
+      "revId": "fcfeb5d37f60faab95b700302ac15a87f0262129",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
