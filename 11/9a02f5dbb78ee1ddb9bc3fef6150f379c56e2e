@@ -1,0 +1,7 @@
+Code-Review+2: L10n-bot <l10n-bot@translatewiki.net>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 01 Feb 2022 06:12:20 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Renameuser/+/758674
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/REL1_36
