@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "35e3399c_e841ec2c",
+        "filename": "extension.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-03-06T16:43:50Z",
+      "side": 1,
+      "message": "This one isn\u0027t actually used in our hosted repos... But if we\u0027re aliasing everything else in the short term, this doesn\u0027t harm",
+      "range": {
+        "startLine": 71,
+        "startChar": 2,
+        "endLine": 72,
+        "endChar": 105
+      },
+      "revId": "af018728d3344d6e759fd3d37a119aec8997fd6b",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
