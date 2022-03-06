@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a587ab60_f915b5ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-03-06T17:04:08Z",
+      "side": 1,
+      "message": "Usage in maintenance script wasn\u0027t updated... But can be caught when the aliases get removed",
+      "revId": "af018728d3344d6e759fd3d37a119aec8997fd6b",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "35e3399c_e841ec2c",
