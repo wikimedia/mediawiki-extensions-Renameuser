@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\Renameuser;
+
 use MediaWiki\HookContainer\HookContainer;
 
 class RenameuserHookRunner implements

@@ -1,7 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\Renameuser;
+
+use ManualLogEntry;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Session\SessionManager;
+use Title;
+use User;
 
 /**
  * Class which performs the actual renaming of users
@@ -353,3 +358,5 @@ class RenameuserSQL {
 		);
 	}
 }
+
+class_alias( RenameuserSQL::class, 'RenameuserSQL' );
