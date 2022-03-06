@@ -1,11 +1,18 @@
 <?php
 
+namespace MediaWiki\Extension\Renameuser;
+
+use Article;
+use LogEventsList;
 use MediaWiki\Hook\ContributionsToolLinksHook;
 use MediaWiki\Hook\GetLogTypesOnUserHook;
 use MediaWiki\Page\Hook\ShowMissingArticleHook;
 use MediaWiki\Permissions\PermissionManager;
+use SpecialPage;
+use Title;
+use User;
 
-class RenameuserHooks implements
+class Hooks implements
 	ShowMissingArticleHook,
 	ContributionsToolLinksHook,
 	GetLogTypesOnUserHook
