@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alirezaaa",
+			"Beginneruser",
 			"Calak",
 			"Ebraminio",
 			"Huji",
@@ -13,7 +14,7 @@
 	"renameuser": "تغییر نام کاربر",
 	"renameuser-linkoncontribs": "تغییر نام {{GENDER:$1|کاربر}}",
 	"renameuser-linkoncontribs-text": "تغییر نام این {{GENDER:$1|کاربر}}",
-	"renameuser-desc": "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از اختیارات ''تغییرنام'' است)",
+	"renameuser-desc": "نام یک کاربر را تغییر می‌دهد (نیازمند برخورداری از امتیاز ''تغییرنام'' است)",
 	"renameuserold": "نام کاربری کنونی:",
 	"renameusernew": "نام کاربری تازه:",
 	"renameuserreason": "دلیل:",
