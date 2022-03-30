@@ -16,6 +16,23 @@
       "message": "Locally tested each branch one by one, and everything looks good.",
       "revId": "1ee940226accc59dc9ade9e39bebb16f79a6a37c",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fa87b41_045ad563",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3039
+      },
+      "writtenOn": "2022-03-30T19:04:32Z",
+      "side": 1,
+      "message": "That was quick! Thanks, Bartosz!",
+      "revId": "1ee940226accc59dc9ade9e39bebb16f79a6a37c",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
     }
   ]
 }
