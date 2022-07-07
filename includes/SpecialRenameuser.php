@@ -6,6 +6,15 @@ use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserNamePrefixSearch;
 use MediaWiki\User\UserNameUtils;
+<<<<<<< HEAD   (4d0525 Localisation updates from https://translatewiki.net.)
+=======
+use OutputPage;
+use SpecialPage;
+use Title;
+use TitleFactory;
+use UserBlockedError;
+use Xml;
+>>>>>>> CHANGE (10d8bc SpecialRenameuser: Don't pass null to explode)
 
 /**
  * Special page that allows authorised users to rename
@@ -65,11 +74,7 @@ class SpecialRenameuser extends SpecialPage {
 	/**
 	 * Show the special page
 	 *
-	 * @param mixed $par Parameter passed to the page
-	 *
-	 * @throws PermissionsError
-	 * @throws ReadOnlyError
-	 * @throws UserBlockedError
+	 * @param null|string $par Parameter passed to the page
 	 */
 	public function execute( $par ) {
 		$this->setHeaders();
@@ -92,8 +97,9 @@ class SpecialRenameuser extends SpecialPage {
 
 		$request = $this->getRequest();
 
-		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
-		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
+		// this works as "/" is not valid in usernames
+		$usernames = $par !== null ? explode( '/', $par, 2 ) : [];
+		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ?? '' ) ) );
 		$oldusername = $this->titleFactory->makeTitle( NS_USER, $oldnamePar );
 		$newnamePar = $usernames[1] ?? '';
 		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', $newnamePar ) ) );
