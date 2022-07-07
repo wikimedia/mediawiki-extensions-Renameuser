@@ -18,11 +18,15 @@ class SpecialRenameuser extends SpecialPage {
 	/**
 	 * Show the special page
 	 *
+<<<<<<< HEAD   (cf611b Localisation updates from https://translatewiki.net.)
 	 * @param mixed $par Parameter passed to the page
 	 * @suppress SecurityCheck-XSS T211471
 	 * @throws PermissionsError
 	 * @throws ReadOnlyError
 	 * @throws UserBlockedError
+=======
+	 * @param null|string $par Parameter passed to the page
+>>>>>>> CHANGE (de2316 SpecialRenameuser: Don't pass null to explode)
 	 */
 	public function execute( $par ) {
 		global $wgCapitalLinks;
@@ -48,10 +52,18 @@ class SpecialRenameuser extends SpecialPage {
 		$this->useTransactionalTimeLimit();
 
 		$request = $this->getRequest();
+<<<<<<< HEAD   (cf611b Localisation updates from https://translatewiki.net.)
 		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
 		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
 		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
+=======
+
+		// this works as "/" is not valid in usernames
+		$usernames = $par !== null ? explode( '/', $par, 2 ) : [];
+		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ?? '' ) ) );
+		$oldusername = $this->titleFactory->makeTitle( NS_USER, $oldnamePar );
+>>>>>>> CHANGE (de2316 SpecialRenameuser: Don't pass null to explode)
 		$newnamePar = $usernames[1] ?? '';
 		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', $newnamePar ) ) );
 		// Force uppercase of newusername, otherwise wikis
