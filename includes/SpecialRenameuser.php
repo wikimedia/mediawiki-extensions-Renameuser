@@ -18,11 +18,8 @@ class SpecialRenameuser extends SpecialPage {
 	/**
 	 * Show the special page
 	 *
-	 * @param mixed $par Parameter passed to the page
+	 * @param null|string $par Parameter passed to the page
 	 * @suppress SecurityCheck-XSS T211471
-	 * @throws PermissionsError
-	 * @throws ReadOnlyError
-	 * @throws UserBlockedError
 	 */
 	public function execute( $par ) {
 		global $wgCapitalLinks;
@@ -49,8 +46,8 @@ class SpecialRenameuser extends SpecialPage {
 
 		$request = $this->getRequest();
 		$showBlockLog = $request->getBool( 'submit-showBlockLog' );
-		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
-		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
+		$usernames = $par !== null ? explode( '/', $par, 2 ) : []; // this works as "/" is not valid in usernames
+		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ?? '' ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldnamePar );
 		$newnamePar = $usernames[1] ?? '';
 		$newnamePar = trim( str_replace( '_', ' ', $request->getText( 'newusername', $newnamePar ) ) );
