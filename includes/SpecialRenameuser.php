@@ -107,7 +107,8 @@ class SpecialRenameuser extends SpecialPage {
 
 		$request = $this->getRequest();
 
-		$usernames = explode( '/', $par, 2 ); // this works as "/" is not valid in usernames
+		// this works as "/" is not valid in usernames
+		$usernames = $par !== null ? explode( '/', $par, 2 ) : [];
 		$oldnamePar = trim( str_replace( '_', ' ', $request->getText( 'oldusername', $usernames[0] ) ) );
 		$oldusername = $this->titleFactory->makeTitle( NS_USER, $oldnamePar );
 		$newnamePar = $usernames[1] ?? '';
