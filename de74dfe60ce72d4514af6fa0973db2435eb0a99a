@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a67babc4_c863fff6",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2022-07-11T19:29:24Z",
+      "side": 1,
+      "message": "The exceptions no longer refered in the code and needs to be removed here",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 18
+      },
+      "revId": "de74dfe60ce72d4514af6fa0973db2435eb0a99a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
