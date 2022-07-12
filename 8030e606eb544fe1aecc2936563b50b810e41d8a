@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87299c30_2d9b4068",
+        "filename": "includes/SpecialRenameuser.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2022-07-12T17:07:15Z",
+      "side": 1,
+      "message": "Needs a check now, because this could be empty. Before the explode() always returns an array with empty string ([ \u0027\u0027 ])",
+      "range": {
+        "startLine": 106,
+        "startChar": 79,
+        "endLine": 106,
+        "endChar": 92
+      },
+      "revId": "8030e606eb544fe1aecc2936563b50b810e41d8a",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
