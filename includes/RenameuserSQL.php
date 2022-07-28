@@ -58,6 +58,11 @@ class RenameuserSQL {
 	public $checkIfUserExists;
 
 	/**
+	 * @var bool
+	 */
+	private $log = false;
+
+	/**
 	 * User object of the user performing the rename, for logging purposes
 	 *
 	 * @var User
@@ -103,6 +108,7 @@ class RenameuserSQL {
 	 *    'reason' - string, reason for the rename
 	 *    'debugPrefix' - string, prefixed to debug messages
 	 *    'checkIfUserExists' - bool, whether to update the user table
+	 *    'log' - bool, whether to log the rename
 	 */
 	public function __construct( $old, $new, $uid, User $renamer, $options = [] ) {
 		$this->hookRunner = new RenameuserHookRunner( MediaWikiServices::getInstance()->getHookContainer() );
@@ -123,6 +129,10 @@ class RenameuserSQL {
 
 		if ( isset( $options['reason'] ) ) {
 			$this->reason = $options['reason'];
+		}
+
+		if ( isset( $options['log'] ) ) {
+			$this->log = $options['log'];
 		}
 
 		$this->tables = []; // Immediate updates
@@ -296,20 +306,22 @@ class RenameuserSQL {
 			}
 		}
 
-		// Log it!
-		$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
-		$logEntry->setPerformer( $this->renamer );
-		$logEntry->setTarget( $oldTitle );
-		$logEntry->setComment( $this->reason );
-		$logEntry->setParameters( [
-			'4::olduser' => $this->old,
-			'5::newuser' => $this->new,
-			'6::edits' => $contribs
-		] );
-		$logid = $logEntry->insert();
-		// Include the log_id in the jobs as a DB commit marker
-		foreach ( $jobs as $job ) {
-			$job->params['logId'] = $logid;
+		if ( $this->log ) {
+			// Log it!
+			$logEntry = new ManualLogEntry( 'renameuser', 'renameuser' );
+			$logEntry->setPerformer( $this->renamer );
+			$logEntry->setTarget( $oldTitle );
+			$logEntry->setComment( $this->reason );
+			$logEntry->setParameters( [
+				'4::olduser' => $this->old,
+				'5::newuser' => $this->new,
+				'6::edits' => $contribs
+			] );
+			$logid = $logEntry->insert();
+			// Include the log_id in the jobs as a DB commit marker
+			foreach ( $jobs as $job ) {
+				$job->params['logId'] = $logid;
+			}
 		}
 
 		// Insert any jobs as needed. If this fails, then an exception will be thrown and the
