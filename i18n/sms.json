@@ -4,7 +4,14 @@
 			"Yupik"
 		]
 	},
+	"renameuser-linkoncontribs": "uuʹd {{GENDER:$1|ooʹnnʼja}} ođđ nõõm",
+	"renameuser-linkoncontribs-text": "Uuʹd tän {{GENDER:$1|ooʹnnʼja}} ođđ nõõm",
+	"renameuserold": "Ânnʼjõž õõʹnninõmm:",
 	"renameusernew": "Ođđ õõʹnninõmm:",
-	"renameusersubmit": "Uuʹd õõʹnnja ođđ nõõm",
-	"renameusererrorinvalid": "Õõʹnninõmm \"<nowiki>$1</nowiki>\" ij ââʹnet."
+	"renameuserreason": "Mäinn:",
+	"renameusersubmit": "Uuʹd õõʹnnʼja ođđ nõõm",
+	"renameusererrorinvalid": "Õõʹnninõmm \"<nowiki>$1</nowiki>\" ij ââʹnet.",
+	"renameuser-error-same-user": "Ton jiõk vuäǯǯ ooʹnnʼja uʹvdded seämma nõõm, kååʹtt suʹst juʹn lij.",
+	"action-renameuser": "õõʹnnʼja ođđ nõõm uʹvdded",
+	"right-renameuser": "Oõʹnnʼja ođđ nõõm uʹvdded"
 }
