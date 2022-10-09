@@ -58,7 +58,8 @@ class RenameuserLogFormatter extends LogFormatter {
 	 * @param Title|null $title
 	 * @param string $text
 	 * @param array $query
-	 * @return string
+	 * @return string wikitext or html
+	 * @return-taint onlysafefor_html
 	 */
 	protected function myPageLink( ?Title $title, $text, $query = [] ) {
 		if ( !$this->plaintext ) {
