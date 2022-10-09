@@ -40,12 +40,14 @@ class RenameuserLogFormatter extends LogFormatter {
 
 		// Nice link to old user page
 		$title = Title::makeTitleSafe( NS_USER, $params[3] );
+		// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 		$link = $this->myPageLink( $title, $params[3],
 			[ 'redirect' => 'no' ] );
 		$params[3] = Message::rawParam( $link );
 
 		// Nice link to new user page
 		$title = Title::makeTitleSafe( NS_USER, $params[4] );
+		// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 		$link = $this->myPageLink( $title, $params[4] );
 		$params[4] = Message::rawParam( $link );
 		// GENDER support (using new user page)
@@ -58,7 +60,8 @@ class RenameuserLogFormatter extends LogFormatter {
 	 * @param Title|null $title
 	 * @param string $text
 	 * @param array $query
-	 * @return string
+	 * @return string wikitext or html
+	 * @return-taint onlysafefor_html
 	 */
 	protected function myPageLink( ?Title $title, $text, $query = [] ) {
 		if ( !$this->plaintext ) {
