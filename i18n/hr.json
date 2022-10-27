@@ -6,13 +6,14 @@
 			"Dnik",
 			"Ex13",
 			"MaGa",
+			"Ponor",
 			"Roberta F.",
 			"SpeedyGonsales",
 			"Tivek"
 		]
 	},
 	"renameuser": "Preimenuj suradnika",
-	"renameuser-linkoncontribs": "preimenuj suradnika",
+	"renameuser-linkoncontribs": "preimenuj {{GENDER:$1|suradnika|suradnicu|suradnika/suradnicu}}",
 	"renameuser-linkoncontribs-text": "Preimenuj ovog suradnika",
 	"renameuser-desc": "Dodaje [[Special:RenameUser|posebnu stranicu]] za preimenovanje suradnika (potrebno je ''renameuser'' pravo)",
 	"renameuserold": "Trenutačno suradničko ime:",
