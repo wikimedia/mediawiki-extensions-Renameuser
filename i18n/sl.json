@@ -7,7 +7,7 @@
 		]
 	},
 	"renameuser": "Preimenovanje uporabnika",
-	"renameuser-linkoncontribs": "Preimenuj {{GENDER:$1|uporabnika|uporabnico|uporabnika_co}}",
+	"renameuser-linkoncontribs": "Preimenuj {{GENDER:$1|uporabnika|uporabnico|uporabnika}}",
 	"renameuser-linkoncontribs-text": "Preimenuj {{GENDER:$1|tega uporabnika|to uporabnico}}",
 	"renameuser-desc": "Doda [[Special:RenameUser|posebno stran]] za preimenovanje uporabnika (potrebna je pravica ''renameuser'')",
 	"renameuserold": "Trenutno uporabniško ime:",
