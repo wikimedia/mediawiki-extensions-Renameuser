@@ -5,65 +5,13 @@
 		"Aaron Schulz"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:Renameuser",
-	"descriptionmsg": "renameuser-desc",
+	"description": "Renameuser compatibility stub",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.37.0"
+		"MediaWiki": ">= 1.40.0"
 	},
-	"ExtensionMessagesFiles": {
-		"RenameuserAliases": "Renameuser.alias.php"
-	},
-	"LogTypes": [
-		"renameuser"
-	],
-	"MessagesDirs": {
-		"Renameuser": [
-			"i18n"
-		]
-	},
-	"Hooks": {
-		"ShowMissingArticle": "main",
-		"ContributionsToolLinks": "main",
-		"GetLogTypesOnUser": "main"
-	},
-	"HookHandlers": {
-		"main": {
-			"class": "MediaWiki\\Extension\\Renameuser\\Hooks",
-			"services": [
-				"PermissionManager"
-			]
-		}
-	},
-	"JobClasses": {
-		"renameUser": "MediaWiki\\Extension\\Renameuser\\RenameUserJob"
-	},
-	"GroupPermissions": {
-		"bureaucrat": {
-			"renameuser": true
-		}
-	},
-	"LogActionsHandlers": {
-		"renameuser/renameuser": "MediaWiki\\Extension\\Renameuser\\RenameuserLogFormatter"
-	},
-	"AvailableRights": [
-		"renameuser"
-	],
-	"SpecialPages": {
-		"Renameuser": {
-			"class": "MediaWiki\\Extension\\Renameuser\\SpecialRenameuser",
-			"services": [
-				"HookContainer",
-				"ContentLanguage",
-				"MovePageFactory",
-				"PermissionManager",
-				"TitleFactory",
-				"UserFactory",
-				"UserNamePrefixSearch",
-				"UserNameUtils"
-			]
-		}
-	},
+	"callback": "MediaWiki\\Extension\\Renameuser\\RenameUserSetup::setup",
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Renameuser\\": "includes/"
 	},
