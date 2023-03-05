@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d15eca69_e0379a64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17
+      },
+      "writtenOn": "2023-03-05T23:03:17Z",
+      "side": 1,
+      "message": "PS3, PS4: phpcs/phan fixes in the new setup file",
+      "revId": "52d4af77910ede3caee94138fd5a72cf07122df9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
