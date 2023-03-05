@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58a56b83_86571db1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34
+      },
+      "writtenOn": "2023-03-05T02:29:18Z",
+      "side": 1,
+      "message": "Satisfy CI by fixing Gruntfile to not invoke banana without undefined `.MessageDirs` result.",
+      "revId": "8edc91cabe5071ab07c3d4e84cd1b9161cd686d3",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
