@@ -1,7 +1,7 @@
 {
 	"name": "Renameuser",
 	"author": [
-		"Ævar Arnfjörð Bjarmason",
+		"\u00c6var Arnfj\u00f6r\u00f0 Bjarmason",
 		"Aaron Schulz"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:Renameuser",
@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.37.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"ExtensionMessagesFiles": {
 		"RenameuserAliases": "Renameuser.alias.php"
