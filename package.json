@@ -7,6 +7,6 @@
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.24.0",
 		"grunt": "1.6.1",
-		"grunt-eslint": "24.0.0"
+		"grunt-eslint": "24.0.1"
 	}
 }
