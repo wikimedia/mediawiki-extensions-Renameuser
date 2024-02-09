@@ -1,0 +1,7 @@
+Verified+2: jenkins-bot
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Submitted-by: jenkins-bot
+Submitted-at: Fri, 09 Feb 2024 11:57:03 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Renameuser/+/999634
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/master
