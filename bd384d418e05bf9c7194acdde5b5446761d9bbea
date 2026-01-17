@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c139f91_d4bb5448",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2026-01-17T21:06:26Z",
+      "side": 1,
+      "message": "Not empty, not yet ready for read-only\nKeeping this patch avoids libup to regenerate new ones until the repo is read-only",
+      "revId": "bd384d418e05bf9c7194acdde5b5446761d9bbea",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ],
   "submitRequirementResults": []
 }
