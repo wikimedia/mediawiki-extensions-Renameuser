@@ -1,0 +1,8 @@
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: Reedy <reedy@wikimedia.org>
+Code-Review+2: Reedy <reedy@wikimedia.org>
+Submitted-by: Reedy <reedy@wikimedia.org>
+Submitted-at: Thu, 25 Jun 2026 23:23:52 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/Renameuser/+/1231982
+Project: mediawiki/extensions/Renameuser
+Branch: refs/heads/REL1_43
